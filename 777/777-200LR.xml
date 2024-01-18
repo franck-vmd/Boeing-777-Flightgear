@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--777-200 LR yasim
+
+The 777-200LR ("LR" for Longer Range), the C-market model, became the world's longest-range commercial airliner when it entered service in 2006.
+Boeing named this aircraft the Worldliner, highlighting its ability to connect almost any two airports in the world.
+It holds the world record for the longest nonstop flight by a commercial airliner, and has a maximum range of 9,380 nautical miles (17,370 km).
+The 200LR was intended for ultra-long-haul routes such as Los Angeles to Singapore.
+
+Developed alongside the 200ER, the 200LR features an increased MTOW and three optional auxiliary fuel tanks in the rear cargo hold.
+Other new features include raked wingtips, redesigned main landing gear, and additional structural strengthening.
+As with the 300ER and 777F, the 200LR is equipped with wingtip extensions of 12.8 ft (3.90 m).
+The 200LR is powered by GE90-110B1 or GE90-115B turbofans. The first 200LR was delivered to Pakistan International Airlines on February 26, 2006.
+As of July 2011, nine different 200LR customers have taken delivery of 52 aircraft, with 3 unfilled orders.
+Airlines operated 48 of the 200LR variant as of July 2011. The closest competing aircraft from Airbus is the A340-500HGW.
+
+(Taken from the Wikipedia)
+
+777-200LR - Range with 301 passengers 17,3957km (9,395nm) - 19hrs.
+
+Wing span: 64.8m
+Length: 63.7 m
+Tail Height: 18.6m
+Diameter : 6.19 m
+Max Fuel :53,515 US gal
+Max TO weight: 766,000 lbs
+Max Landing weight: 492,000 lbs
+-->
+<airplane mass="320000" version="2018.1" mtow-lbs="766000">
+
+  <!-- Approach configuration -->
+  <approach speed="132" alt="0.0" aoa="5.0" fuel="0.2" glide-angle="0.0">
+      <control-setting axis="/controls/engines/engine[0]/throttle-act" value="0.25"></control-setting>
+      <control-setting axis="/controls/engines/engine[1]/throttle-act" value="0.25"></control-setting>
+      <control-setting axis="/controls/flight/flaps" value="1"></control-setting>
+      <control-setting axis="/surface-positions/slats" value="1"></control-setting>
+      <control-setting axis="/controls/gear/gear-down" value="1"></control-setting>
+      <solve-weight idx="0" weight="360"></solve-weight>
+      <solve-weight idx="1" weight="42072"></solve-weight>
+  </approach>
+
+  <!-- Cruise configuration -->
+  <cruise speed="512" alt="35000" fuel="0.8" glide-angle="0.0">
+      <control-setting axis="/controls/engines/engine[0]/throttle-act" value="0.95"></control-setting>
+      <control-setting axis="/controls/engines/engine[1]/throttle-act" value="0.95"></control-setting>
+      <control-setting axis="/controls/flight/flaps" value="0.0"></control-setting>
+      <control-setting axis="/controls/flight/elevator-trim" value="0"></control-setting>
+      <control-setting axis="/controls/gear/gear-down" value="0"></control-setting>
+      <solve-weight idx="0" weight="360"></solve-weight>
+      <solve-weight idx="1" weight="42072"></solve-weight>
+  </cruise>
+
+  <cockpit x="22.8" y="0.5" z="0.75"></cockpit>
+
+  <fuselage ax="25.36" ay="0" az="-0.64" bx="16.231" by="0.00" bz="0.0" width="6.2" taper="0.0" midpoint="1.0"></fuselage>
+  <fuselage ax="16.231" ay="0" az="0" bx="-20.0" by="0.00" bz="0.0" width="6.2" taper="1.0" midpoint="0.5"></fuselage>
+  <fuselage ax="-20.0" ay="0" az="0" bx="-37.0" by="0.00" bz="1.2" width="6.2" taper="0.0" midpoint="0.0"></fuselage>
+  <fuselage ax="4.0" ay="9.8" az="-3" bx="-1.8" by="9.8" bz="-3" width="3.8" taper="1.0"></fuselage>
+  <fuselage ax="4.0" ay="-9.8" az="-3" bx="-1.8" by="-9.8" bz="-3" width="3.8" taper="1.0"></fuselage>
+
+  <wing x="-0.0" y="3.095" z="-1.66" length="31.6" chord="12.8" sweep="32" taper="0.15" dihedral="7" camber="0.01" incidence="2" twist="-2">
+      <stall aoa="16" width="6" peak="1.5"></stall>
+      <flap0 start="0" end=".56" lift="1.5" drag="1.7"></flap0>
+      <flap1 start=".64" end=".88" lift="1.5" drag="1.2"></flap1>
+      <slat start="0" end="1" aoa="2" drag="1"></slat>
+      <spoiler start="0.2" end="0.6" lift="0.2" drag="2.0"></spoiler>
+      <control-input axis="/controls/flight/flaps" control="FLAP0"></control-input>
+      <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"></control-output>
+      <control-input axis="/surface-positions/flap-pos-norm" control="SLAT" src0="0" dst0="0" src1="0.1428" dst1="1.0"></control-input>
+      <control-output control="SLAT" prop="/surface-positions/slats"></control-output>
+      <control-speed control="FLAP0" transition-time="78"></control-speed>
+      <control-input axis="/fcs/output/drag-spoiler" control="SPOILER"></control-input>
+      <control-output control="SPOILER" prop="/surface-positions/speedbrake-pos-norm"></control-output>
+      <control-speed control="SPOILER" transition-time="2"></control-speed>
+      <control-input axis="/fcs/output/roll" control="FLAP1" split="true"></control-input>
+      <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"></control-output>
+      <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"></control-output>
+  </wing>
+
+  <hstab x="-31.0" y="1.5" z="1.0" chord="6.0" length="10.84" taper=".20" sweep="28" dihedral="7" camber="0.0">
+    <stall aoa="18" width="5" peak="1.5"></stall>
+    <flap0 start="0" end="1" lift="1.4" drag="1.2"></flap0>
+    <control-input axis="/fcs/output/pitch" control="FLAP0"></control-input>
+    <control-input axis="/controls/flight/elevator-trim" control="FLAP0"></control-input>
+    <control-output control="FLAP0" prop="/surface-positions/elevator-trim-tab-pos-norm"></control-output>
+  </hstab>
+
+  <vstab x="-30.0" y="0.00" z="2.7" chord="8.0" length="12.2" taper="0.3" sweep="33">
+    <stall aoa="14" width="5" peak="1.5"></stall>
+    <flap0 start="0" end="1" lift="1.4" drag="1.2"></flap0>
+    <control-input axis="/fcs/output/yaw" control="FLAP0" invert="true"></control-input>
+    <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"></control-output>
+  </vstab>
+
+<!-- General Electric GE90-115B
+
+
+General characteristics
+
+    Type: axial flow, twin-shaft, bypass turbofan engine
+    Length: 287 in (7,290 mm)[14]
+    Diameter: overall: 135 in (3.429 m);[14] fan: 128 in (3.251 m)
+    Dry weight: 18,260 lb (8,283 kg)[14]
+
+Components
+
+    Compressors: axial: 1 wide chord swept fan, 4 low pressure stages, 9 high pressure stages
+    Turbines: axial: 6 low pressure stages, 2 high pressure stages
+
+Performance
+
+    Maximum thrust: max at sea level: 115,540 lbf (514 kN) ; world record set at 127,900 lbf (568,9 kN) 827 feet above sea level
+    Overall pressure ratio: 42:1
+    Thrust-to-weight ratio: approx. 6.3:1
+
+
+-->
+
+  <!-- due to a strange problem with yasim, add 3.7 to maximum n1 -->
+  <jet x="1.16" y="9.89" z="-2.995" mass="18260" thrust="115540" spool-time="4.5" egt="825" tsfc="0.23 " epr="40" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121">
+    <control-input axis="/controls/engines/engine[0]/throttle-act" control="THROTTLE"></control-input>
+    <control-input axis="/controls/engines/engine[0]/reverser-act" control="REVERSE_THRUST"></control-input>
+    <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"></control-output>
+    <control-speed control="REVERSE_THRUST" transition-time="3"></control-speed>
+    <actionpt x="-2.7" y="9.89" z="-2.995"></actionpt>
+  </jet>
+
+  <jet x="1.16" y="-9.89" z="-2.995" mass="18260" thrust="115540" spool-time="4.5" egt="825" tsfc="0.23" epr="40" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121">
+    <control-input axis="/controls/engines/engine[1]/throttle-act" control="THROTTLE"></control-input>
+    <control-input axis="/controls/engines/engine[1]/reverser-act" control="REVERSE_THRUST"></control-input>
+    <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"></control-output>
+    <control-speed control="REVERSE_THRUST" transition-time="3"></control-speed>
+    <actionpt x="-2.7" y="-9.89" z="-2.995"></actionpt>
+  </jet>
+
+  <!-- nose -->
+  <gear x="19.28" y="0.00" z="-5.55" compression="0.7" spring="1.2" damp="1" sfric="1.5" dfric="1.0">
+    <!-- up to 70 degrees max steering angle with tiller, input is limited to 7 degrees with rudder (see Nasal/ground_steering.nas) -->
+    <control-input control="STEER" axis="/controls/gear/nosegear-steering-cmd-norm" src0="-1.0" dst0="-1.2217304764" src1="1.0" dst1="1.2217304764"></control-input>
+    <control-output control="STEER" prop="/controls/gear/nosegear-steering-angle-rad"></control-output>
+    <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
+    <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"></control-output>
+    <control-speed control="EXTEND" transition-time="19"></control-speed>
+  </gear>
+
+  <gear x="-6.39" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
+    <control-input axis="/autopilot/autobrake/left-brake-output" control="BRAKE"></control-input>
+    <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
+    <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
+    <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"></control-output>
+    <control-speed control="EXTEND" transition-time="20"></control-speed>
+  </gear>
+
+  <gear x="-6.39" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
+    <control-input axis="/autopilot/autobrake/right-brake-output" control="BRAKE"></control-input>
+    <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
+    <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
+    <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"></control-output>
+    <control-speed control="EXTEND" transition-time="20"></control-speed>
+  </gear>
+
+  <!-- aft axle on left main gear -->
+  <gear x="-7.8" y="5.6" z="-6.22" compression="3.0" spring="1.2">
+    <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
+    <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"></control-output>
+    <control-speed control="EXTEND" transition-time="20"></control-speed>
+    <!-- 8 degrees main gear steering when nose gear steering above 13 degrees commanded (see Nasal/ground_steering.nas) -->
+    <control-input control="STEER" axis="/controls/gear/maingear-steering-cmd-norm" src0="-1.0" dst0="-0.1396263402" src1="1.0" dst1="0.1396263402"></control-input>
+    <control-output control="STEER" prop="/controls/gear/maingear-l-steering-angle-rad"></control-output>
+  </gear>
+
+  <!-- aft axle on right main gear -->
+  <gear x="-7.8" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
+    <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
+    <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"></control-output>
+    <control-speed control="EXTEND" transition-time="20"></control-speed>
+    <!-- 8 degrees main gear steering when nose gear steering above 13 degrees commanded (see Nasal/ground_steering.nas) -->
+    <control-input control="STEER" axis="/controls/gear/maingear-steering-cmd-norm" src0="-1.0" dst0="-0.1396263402" src1="1.0" dst1="0.1396263402"></control-input>
+    <control-output control="STEER" prop="/controls/gear/maingear-r-steering-angle-rad"></control-output>
+  </gear>
+    <!-- apu -->
+  <vstab x="0" y="0" z="0" length="0" chord="0">
+      <flap0 start="0" end="1" lift="0" drag="0"></flap0>
+    <control-input axis="/controls/APU/running" control="FLAP0"></control-input>
+    <control-output control="FLAP0" prop="controls/APU/rpm"></control-output>
+    <control-speed control="FLAP0" transition-time="30"></control-speed>
+  </vstab>
+
+<!--Fuel
+
+Maximum Fuel Capacity   Basic - 47,890 U.S. gallons
+(181,280 L)
+With three optional fuel tanks -
+53,515 U.S. gallons (202,570 L)
+
+Source: http://www.boeing.com/commercial/777family/pf/pf_lrproduct.html
+
+-->
+
+
+  <tank x="-4.3" y="5" z="-1.5" jet="true" capacity="70475"></tank>
+  <tank x="-4.3" y="0" z="-2.5" jet="true" capacity="180870"></tank>
+  <tank x="-4.3" y="-5" z="-1.5" jet="true" capacity="70475"></tank>
+
+  <tank x="-4.3" y="1" z="-8" jet="true" capacity="12600"></tank>
+  <tank x="-4.3" y="0" z="-9.5" jet="true" capacity="12600"></tank>
+  <tank x="-4.3" y="-1" z="-8" jet="true" capacity="12600"></tank>
+
+
+
+  <weight x="22.0" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"></weight>
+  <weight x="-4.3" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"></weight>
+  <weight x="19.19" y="0" z="0" mass-prop="sim/weight[2]/weight-lb"></weight>
+  <weight x="9.36" y="0" z="0" mass-prop="sim/weight[3]/weight-lb"></weight>
+  <weight x="-26.5" y="0" z="0" mass-prop="sim/weight[4]/weight-lb"></weight>
+
+  <ballast x="-30" y="0" z="4" mass="-40000"></ballast>
+
+ <thruster x="-19.284" y="0" z="-5.4" vx="1" vy="0" vz="0" thrust="100000.0">
+  <control-input axis="/sim/model/autopush/force-x-yasim" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+ </thruster>
+ <thruster x="-19.284" y="0" z="-5.4" vx="0" vy="1" vz="0" thrust="100000.0">
+  <control-input axis="/sim/model/autopush/force-y-yasim" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+ </thruster>
+ <thruster x="-19.284" y="0Y" z="-5.4" vx="0" vy="0" vz="1" thrust="100000.0">
+  <control-input axis="/sim/model/autopush/force-z-yasim" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
+ </thruster>
+</airplane>

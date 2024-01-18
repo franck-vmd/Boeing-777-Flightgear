@@ -1,0 +1,170 @@
+
+<PropertyList>
+
+<!-- Car Service -->
+
+  <model>
+    <name>Car Service</name>
+    <path>Aircraft/777/Models/Ground/Services/Car/car.xml</path>
+    <condition>
+      <and>
+        <property>controls/switches/car_service</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>15</value>
+        </less-than>
+      </and>
+    </condition>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+  
+  <!-- Cargo -->
+  
+  <model>
+    <name>Cargo</name>
+    <path>Aircraft/777/Models/Ground/Services/cargo/cargo.xml</path>
+    <condition>
+      <and>
+        <property>controls/switches/cargo_service</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>15</value>
+        </less-than>
+      </and>
+    </condition>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+
+  <!-- Mecanicien -->
+
+  <model>
+    <name>Mecanicien</name>
+    <path>Aircraft/777/Models/Ground/Services/Mecanicien/Mecanicien.xml</path>
+    <condition>
+      <and>
+        <property>controls/switches/Mecanicien</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>15</value>
+        </less-than>
+      </and>
+    </condition>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Mecanicien</name>
+    <path>Aircraft/777/Models/Ground/Services/Mecanicien/Mecanicien1.xml</path>
+    <condition>
+      <and>
+        <property>controls/switches/Mecanicien1</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>15</value>
+        </less-than>
+      </and>
+    </condition>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+
+<!-- Engine Protection -->
+
+  <model>
+    <name>Engine Protection</name>
+    <path>Aircraft/777/Models/Ground/Services/EngineProtectionX9/EngineProtectionX9.xml</path>
+    <condition>
+      <equals>
+        <property>controls/switches/protection</property>
+        <value type="bool">true</value>
+      </equals>
+      <less-than>
+        <property>velocities/airspeed-kt</property>
+        <value>15</value>
+      </less-than>
+    </condition>
+    <offsets>
+      <x-m>0.00</x-m>
+      <y-m>0.00</y-m>
+      <z-m>0.00</z-m>
+    </offsets>
+  </model>
+
+<!-- Filet Protection -->
+
+  <model>
+    <name>Filet Protection</name>
+    <path>Aircraft/777/Models/Ground/Services/FiletProtection/FiletProtection.xml</path>
+    <condition>
+      <equals>
+        <property>controls/switches/FiletProtection</property>
+        <value type="bool">true</value>
+      </equals>
+      <less-than>
+        <property>velocities/airspeed-kt</property>
+        <value>15</value>
+      </less-than>
+    </condition>
+    <offsets>
+      <x-m>0.00</x-m>
+      <y-m>0.00</y-m>
+      <z-m>0.00</z-m>
+    </offsets>
+  </model>
+
+<!-- flight attendants -->
+
+  <model>
+ <name>flight_attendants</name>
+ <path>Aircraft/777/Models/Ground/Services/Flight/flight_attendants_door5l.xml</path>
+ <condition>
+      <and>
+        <property>controls/switches/Flight</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>400</value>
+        </less-than>
+      </and>
+    </condition>
+ <offsets>
+  <x-m>0</x-m>
+  <y-m>0</y-m>
+  <z-m>0</z-m>
+ </offsets>
+</model>
+
+  <model>
+ <name>passagers</name>
+ <path>Aircraft/777/Models/Ground/Services/passagers/passagers.xml</path>
+ <condition>
+      <and>
+        <property>controls/switches/passagers</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>400</value>
+        </less-than>
+      </and>
+    </condition>
+ <offsets>
+  <x-m>0</x-m>
+  <y-m>0</y-m>
+  <z-m>0</z-m>
+ </offsets>
+</model>
+
+</PropertyList>

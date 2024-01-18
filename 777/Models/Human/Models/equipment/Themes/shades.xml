@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <sim>
+        <walker>
+						<equipment-name>Eyewear Shades</equipment-name>
+						<eyewear>1</eyewear>
+        </walker>
+
+  </sim>
+
+</PropertyList>

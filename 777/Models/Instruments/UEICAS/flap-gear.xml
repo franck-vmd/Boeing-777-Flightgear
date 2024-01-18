@@ -1,0 +1,193 @@
+<!-- 
+Syd Adams
+-->
+
+<PropertyList>
+
+    <path>flap-gear.ac</path>
+
+    <animation>
+        <type>select</type>
+        <object-name>flap.slider</object-name>
+        <object-name>flap-on</object-name>
+        <condition>
+            <greater-than>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0.0001</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Gr-on</object-name>
+        <condition>
+            <greater-than>
+                <property>gear/gear[0]/position-norm</property>
+                <value>0.0001</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>gearlocked</object-name>
+        <condition>
+            <equals>
+                <property>gear/gear[0]/position-norm</property>
+                <value>1.0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>flap.slider</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>0.2388</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind1.set</object-name>
+        <condition>
+            <equals>
+                <property>controls/flight/flaps</property>
+                <value>0.033</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind5.set</object-name>
+        <condition>
+            <equals>
+                <property>controls/flight/flaps</property>
+                <value>0.166</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind15.set</object-name>
+        <condition>
+            <equals>
+                <property>controls/flight/flaps</property>
+                <value>0.500</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind20.set</object-name>
+        <condition>
+            <equals>
+                <property>controls/flight/flaps</property>
+                <value>0.666</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind25.set</object-name>
+        <condition>
+            <equals>
+                <property>controls/flight/flaps</property>
+                <value>0.833</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind30.set</object-name>
+        <condition>
+            <equals>
+                <property>controls/flight/flaps</property>
+                <value>1.0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind1.on</object-name>
+        <condition>
+            <equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0.033</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind5.on</object-name>
+        <condition>
+            <equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0.166</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind15.on</object-name>
+        <condition>
+            <equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0.5</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind20.on</object-name>
+        <condition>
+            <equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0.666</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind25.on</object-name>
+        <condition>
+            <equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>0.833</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ind30.on</object-name>
+        <condition>
+            <equals>
+                <property>surface-positions/flap-pos-norm</property>
+                <value>1.0</value>
+            </equals>
+        </condition>
+    </animation>
+
+
+
+
+
+
+
+</PropertyList>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <PropertyList>
+ 
+ <particlesystem>
+   <name>smoke</name>
+   <texture>smoke.png</texture>
+ 
+   <emissive type="bool">false</emissive>
+   <lighting type="bool">false</lighting>
+ 
+   <condition>
+     <and>
+       <greater-than>
+         <property>velocities/airspeed-kt</property>
+         <value>120</value>
+       </greater-than>
+       <less-than>
+         <property>/position/altitude-ft</property>
+         <value>1500</value>
+       </less-than>
+     </and>
+   </condition>
+ 
+   <attach>world</attach>
+ 
+   <placer>
+     <type>point</type> 
+   </placer>
+ 
+   <shooter>
+			<theta-min-deg>20</theta-min-deg>
+			<theta-max-deg>35</theta-max-deg>
+			<phi-min-deg>-15</phi-min-deg>
+			<phi-max-deg> 15</phi-max-deg>
+			<speed-mps>
+       <value>5</value>
+       <spread>0</spread>
+     </speed-mps>
+     <rotation-speed>
+	<x-min-deg-sec>0</x-min-deg-sec>
+	<y-min-deg-sec>0</y-min-deg-sec>
+	<z-min-deg-sec>-180</z-min-deg-sec>
+	<x-max-deg-sec>0</x-max-deg-sec>
+	<y-max-deg-sec>0</y-max-deg-sec>
+	<z-max-deg-sec>180</z-max-deg-sec>
+    </rotation-speed>
+   </shooter>
+ 
+   <counter>
+     <particles-per-sec>
+       <value>50</value>
+       <spread>0</spread>
+     </particles-per-sec>
+   </counter>
+      
+   <align>billboard</align>
+ 
+   <particle>
+     <start>
+       <color>
+         <red><value>   1 </value></red>
+         <green><value> 1 </value></green>
+         <blue><value>  1 </value></blue>
+         <alpha><value> 0.3 </value></alpha>
+       </color>
+       <size>
+         <value>0.8</value>
+       </size>
+     </start>
+ 
+     <end>
+       <color>
+         <red><value>   1.0 </value></red>
+         <green><value> 1.0 </value></green>
+         <blue><value>  1.0 </value></blue>
+         <alpha><value> 0.3 </value></alpha>
+       </color>
+       <size>
+         <value>0.8</value>
+       </size>
+     </end>
+ 
+     <life-sec>
+       <value>1</value>
+     </life-sec>
+        
+     <mass-kg>  0.5 </mass-kg>
+     <radius-m> 0.5 </radius-m>
+   </particle>
+ 
+   <program>
+     <fluid>               air  </fluid>
+     <gravity type="bool"> true </gravity>
+     <wind typ="bool">     true </wind>
+   </program>
+ 
+ </particlesystem>
+ 
+ </PropertyList>

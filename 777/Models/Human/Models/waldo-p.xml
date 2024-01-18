@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>waldo.ac</path>
+
+	<animation>
+		<enable-hot type="bool">false</enable-hot>
+	</animation>
+
+
+ <animation>
+  <type>select</type>
+	<object-name>head</object-name>
+	<object-name>hair</object-name>
+	<object-name>eyes</object-name>
+  <condition>
+ <not-equals>
+    <property>sim/current-view/name</property>
+    <value>Cockpit View</value>
+   </not-equals>
+  </condition>
+ </animation>
+
+
+</PropertyList>

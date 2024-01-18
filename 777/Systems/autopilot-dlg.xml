@@ -1,0 +1,833 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <name>autopilot-dlg</name>
+    <layout>vbox</layout>
+    <default-padding>1</default-padding>
+    <y>-40</y>
+
+
+    <group>
+        <layout>hbox</layout>
+
+        <text>
+            <halign>left</halign>
+            <label> Autopilot Control</label>
+        </text>
+
+        <button>
+            <halign>right</halign>
+            <pref-width>20</pref-width>
+            <pref-height>20</pref-height>
+            <legend>X</legend>
+            <key>Esc</key>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+
+    </group>
+
+    <hrule/>
+
+    <group>
+        <layout>hbox</layout>
+
+        <text>
+            <halign>left</halign>
+            <label>[ Active ]</label>
+        </text>
+
+    <vrule/>
+
+        <text>
+            <border>1</border>
+            <label>9999999</label>
+            <halign>left</halign>
+            <property>instrumentation/afds/ap-modes/speed-mode</property>
+            <live>1</live>
+        </text>
+
+<vrule/>
+
+        <text>
+            <border>1</border>
+            <label>9999999</label>
+            <halign>center</halign>
+            <property>instrumentation/afds/ap-modes/roll-mode</property>
+            <live>1</live>
+        </text>
+
+<vrule/>
+
+        <text>
+            <border>1</border>
+            <label>9999999</label>
+            <halign>right</halign>
+            <property>instrumentation/afds/ap-modes/pitch-mode</property>
+            <live>1</live>
+        </text>
+
+    </group>
+
+    <hrule/>
+
+        <group><!-- Power buttons-->
+            <layout>hbox</layout>
+
+            <button>
+                <pref-width>40</pref-width>
+                <pref-height>35</pref-height>
+                <one-shot>false</one-shot>
+                <legend>AP</legend>
+                <property>instrumentation/afds/inputs/AP</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </button>
+
+            <button>
+                <one-shot>false</one-shot>
+                <legend>AP DISENGAGE</legend>
+                <property>instrumentation/afds/inputs/AP-disengage</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </button>
+
+            <button>
+                <pref-width>40</pref-width>
+                <pref-height>35</pref-height>
+                <one-shot>false</one-shot>
+                <legend>FD</legend>
+                <property>instrumentation/afds/inputs/FD</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </button>
+
+        </group>
+
+        <hrule/>
+
+        <group><!-- Modes toggles-->
+            <layout>hbox</layout>
+
+            <checkbox>
+                <label>ias/mach</label>
+                <property>instrumentation/afds/inputs/ias-mach-selected</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </checkbox>
+
+            <checkbox>
+                <label>hdg/trk</label>
+                <property>instrumentation/efis/hdg-trk-selected</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </checkbox>
+
+            <checkbox>
+                <label>vs/fpa</label>
+                <property>instrumentation/afds/inputs/vs-fpa-selected</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </checkbox>
+
+        </group>
+
+        <group>
+            <layout>hbox</layout>
+            <hrule>
+                <stretch>true</stretch>
+            </hrule>
+
+            <text>
+                <halign>center</halign>
+                <label>Lateral Modes</label>
+            </text>
+
+            <hrule>
+                <stretch>true</stretch>
+            </hrule>
+        </group>
+
+        <group><!-- Heading Bug Hold -->
+            <layout>hbox</layout>
+
+            <button>
+                <pref-width>50</pref-width>
+                <pref-height>25</pref-height>
+                <halign>left</halign>
+                <legend>HDG</legend>
+                <binding>
+                    <command>nasal</command>
+                    <script>b777.afds.input(0,1);</script>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>35</pref-width>
+                <pref-height>25</pref-height>
+                <legend>&lt;&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/heading-bug-deg</property>
+                    <step type="double">-10.0</step>
+                    <min>1</min>
+                    <max>361</max>
+                    <wrap>true</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>25</pref-width>
+                <pref-height>25</pref-height>
+                <legend>&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/heading-bug-deg</property>
+                    <step type="double">-1.0</step>
+                    <min>1</min>
+                    <max>361</max>
+                    <wrap>true</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <input>
+                <halign>left</halign>
+                <pref-width>50</pref-width>
+                <pref-height>25</pref-height>
+                <property>autopilot/settings/heading-bug-deg</property>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </input>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>25</pref-width>
+                <pref-height>25</pref-height>
+                <legend>&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/heading-bug-deg</property>
+                    <step type="double">1.0</step>
+                    <min>1</min>
+                    <max>361</max>
+                    <wrap>true</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>35</pref-width>
+                <pref-height>25</pref-height>
+                <legend>&gt;&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/heading-bug-deg</property>
+                    <step type="double">10.0</step>
+                    <min>1</min>
+                    <max>361</max>
+                    <wrap>true</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+        </group>
+
+        <group><!-- Lateral Navigation-->
+            <layout>hbox</layout>
+
+            <button>
+                <pref-width>55</pref-width>
+                <pref-height>25</pref-height>
+                <halign>left</halign>
+                <legend>LNAV</legend>
+                <binding>
+                    <command>nasal</command>
+                    <script>b777.afds.input(0,3);</script>
+                </binding>
+            </button>
+
+            <!--checkbox>
+                <label>FMS</label>
+                <property>autopilot/route-manager/active</property>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </checkbox-->
+
+        </group>
+
+        <group><!-- Localizer Arm-->
+            <layout>hbox</layout>
+
+            <button>
+                <pref-width>55</pref-width>
+                <pref-height>25</pref-height>
+                <halign>left</halign>
+                <one-shot>true</one-shot>
+                <legend>LOC</legend>
+                <binding>
+                <command>nasal</command>
+                <script>controls.click(4);b777.afds.input(3,0);</script>
+                </binding>
+            </button>
+
+            <checkbox>
+                <label>BC</label>
+                <property>instrumentation/nav/back-course-btn</property>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </checkbox>
+
+            </group>
+
+        <group><!-- Radials-->
+            <layout>hbox</layout>
+
+            <input>
+                <halign>left</halign>
+                <label>nav1 crs</label>
+                <pref-width>50</pref-width>
+                <pref-height>20</pref-height>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <format>%03.0f</format>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </input>
+
+            <input>
+                <halign>left</halign>
+                <label>nav2 crs</label>
+                <pref-width>50</pref-width>
+                <pref-height>20</pref-height>
+                <property>instrumentation/nav[1]/radials/selected-deg</property>
+                <format>%03.0f</format>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </input>
+
+            </group>
+
+        <group>
+            <layout>hbox</layout>
+            <hrule>
+                <stretch>true</stretch>
+            </hrule>
+
+            <text>
+                <halign>center</halign>
+                <label>Vertical Modes</label>
+            </text>
+
+            <hrule>
+                <stretch>true</stretch>
+            </hrule>
+        </group>
+
+        <group><!-- ALT -->
+            <layout>hbox</layout>
+
+            <button>
+                <pref-width>45</pref-width>
+                <pref-height>25</pref-height>
+                <halign>left</halign>
+                <legend>ALT</legend>
+                <binding>
+                    <command>nasal</command>
+                    <script>b777.afds.input(1,1);</script>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>35</pref-width>
+                <pref-height>25</pref-height>
+                <legend>&lt;&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/counter-set-altitude-ft</property>
+                    <step type="double">-1000.0</step>
+                    <min>0</min>
+                    <max>50000</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>25</pref-width>
+                <pref-height>25</pref-height>
+                <legend>&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/counter-set-altitude-ft</property>
+                    <step type="double">-100.0</step>
+                    <min>0</min>
+                    <max>50000</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <input>
+                <pref-width>70</pref-width>
+                <pref-height>25</pref-height>
+                <name>altset</name>
+                <property>autopilot/settings/counter-set-altitude-ft</property>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </input>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>25</pref-width>
+                <pref-height>25</pref-height>
+                <legend>&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/counter-set-altitude-ft</property>
+                    <step type="double">100.0</step>
+                    <min>0</min>
+                    <max>50000</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>35</pref-width>
+                <pref-height>25</pref-height>
+                <legend>&gt;&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/counter-set-altitude-ft</property>
+                    <step type="double">1000.0</step>
+                    <min>0</min>
+                    <max>50000</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+        </group>
+
+        <group><!-- VS -->
+            <layout>hbox</layout>
+
+            <button>
+                <pref-width>45</pref-width>
+                 <pref-height>25</pref-height>
+                 <halign>left</halign>
+                <legend>V/S</legend>
+                <binding>
+                    <command>nasal</command>
+                    <script>b777.afds.input(1,2);</script>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>35</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&lt;&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/vertical-speed-fpm</property>
+                    <step type="double">-1000.0</step>
+                    <min>-8000</min>
+                    <max>6000</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>25</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/vertical-speed-fpm</property>
+                    <step type="double">-100.0</step>
+                    <min>-8000</min>
+                    <max>6000</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <input>
+                <pref-width>70</pref-width>
+                 <pref-height>25</pref-height>
+                 <name>vs-set</name>
+                <live>true</live>
+                <property>autopilot/settings/vertical-speed-fpm</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </input>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>25</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/vertical-speed-fpm</property>
+                    <step type="double">100.0</step>
+                    <min>-8000</min>
+                    <max>6000</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <halign>left</halign>
+                <pref-width>35</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&gt;&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/vertical-speed-fpm</property>
+                    <step type="double">1000.0</step>
+                    <min>-8000</min>
+                    <max>6000</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+        </group>
+
+        <group>
+            <layout>hbox</layout>
+
+            <button>
+                <pref-width>45</pref-width>
+                 <pref-height>25</pref-height>
+                 <halign>left</halign>
+                <one-shot>true</one-shot>
+                <legend>APP</legend>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(4);b777.afds.input(3,1);</script>
+            </binding>
+            </button>
+			
+            <button>
+                <pref-width>45</pref-width>
+                 <pref-height>25</pref-height>
+                 <halign>left</halign>
+                <one-shot>true</one-shot>
+                <legend>FLCH</legend>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(4);b777.afds.input(1,8);</script>
+            </binding>
+            </button>
+			
+            <button>
+                <pref-width>45</pref-width>
+                 <pref-height>25</pref-height>
+                 <halign>left</halign>
+                <one-shot>true</one-shot>
+                <legend>VNAV</legend>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(4);b777.afds.input(1,5);</script>
+            </binding>
+            </button>
+
+            <text>
+                <label>Transition alt</label>
+            </text>
+            <input>
+                <halign>left</halign>
+                <pref-width>60</pref-width>
+                 <pref-height>20</pref-height>
+                 <name>transition-alt</name>
+                <live>true</live>
+                <property>autopilot/settings/transition-altitude</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </input>
+        </group>
+
+        <group>
+            <layout>hbox</layout>
+            <hrule>
+                <stretch>true</stretch>
+            </hrule>
+
+            <text>
+                <halign>center</halign>
+                <label>Speed Modes</label>
+            </text>
+
+            <hrule>
+                <stretch>true</stretch>
+            </hrule>
+        </group>
+
+    <layout>vbox</layout>
+        <padding>4</padding>
+        <group>
+            <layout>hbox</layout>
+            <checkbox>
+                <label>LH throttle arm</label>
+                <property>instrumentation/afds/inputs/at-armed</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </checkbox>
+
+            <checkbox>
+                <label>RH throttle arm</label>
+                <property>instrumentation/afds/inputs/at-armed[1]</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </checkbox>
+
+        </group>
+
+        <group><!-- Auto Throttle-->
+            <layout>hbox</layout>
+
+            <button>
+                <pref-width>40</pref-width>
+                 <pref-height>25</pref-height>
+                <legend>A/T</legend>
+                <binding>
+                    <command>nasal</command>
+                    <script>b777.afds.input(2,5);</script>
+                </binding>
+            </button>
+
+            <button>
+                <pref-width>35</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&lt;&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/target-speed-kt</property>
+                    <step type="double">-10.0</step>
+                    <min>100</min>
+                    <max>399</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <pref-width>25</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/target-speed-kt</property>
+                    <step type="double">-1.0</step>
+                    <min>100</min>
+                    <max>399</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <input>
+                <pref-width>50</pref-width>
+                <property>autopilot/settings/target-speed-kt</property>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </input>
+
+            <button>
+                <pref-width>25</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/target-speed-kt</property>
+                    <step type="double">1.0</step>
+                    <min>100</min>
+                    <max>399</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <pref-width>35</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&gt;&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/target-speed-kt</property>
+                    <step type="double">10.0</step>
+                    <min>100</min>
+                    <max>399</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+        </group>
+
+        <group>
+            <layout>hbox</layout>
+
+            <text>
+                <label>Mach</label>
+            </text>
+
+            <button>
+                <pref-width>35</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&lt;&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/target-speed-mach</property>
+                    <step type="double">-0.05</step>
+                    <min>0.40</min>
+                    <max>0.95</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <pref-width>25</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&lt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/target-speed-mach</property>
+                    <step type="double">-0.01</step>
+                    <min>0.40</min>
+                    <max>0.95</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <input>
+                 <pref-width>55</pref-width>
+               <property>autopilot/settings/target-speed-mach</property>
+                <live>true</live>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+            </input>
+
+            <button>
+                <pref-width>25</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/target-speed-mach</property>
+                    <step type="double">0.01</step>
+                    <min>0.40</min>
+                    <max>0.95</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+            <button>
+                <pref-width>35</pref-width>
+                 <pref-height>25</pref-height>
+                 <legend>&gt;&gt;</legend>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>autopilot/settings/target-speed-mach</property>
+                    <step type="double">0.05</step>
+                    <min>0.40</min>
+                    <max>0.95</max>
+                    <wrap>false</wrap>
+                </binding>
+                <binding>
+                    <command>dialog-update</command>
+                </binding>
+            </button>
+
+        </group>
+
+
+</PropertyList>

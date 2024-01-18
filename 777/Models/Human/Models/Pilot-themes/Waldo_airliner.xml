@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <sim>
+
+     <model>
+			 <crew>
+				<pilot>
+            <theme-name>Waldo Airliner Pilot</theme-name>
+            <character>0</character>
+		        <gender>0</gender>
+	          <outfit>2</outfit>
+        </pilot>
+			</crew>
+		</model>
+  </sim>
+
+</PropertyList>

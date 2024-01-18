@@ -1,0 +1,33 @@
+How to run tests :
+------------------
+
+You need to have a standalone nasal interpreter available 
+see http://wiki.flightgear.org/Nasal_Unit_Testing_Framework
+
+Download the narcisse project form gitorious : https://gitorious.org/narcisse
+
+Run the test using nasal :
+
+nasal <narcisselocation>/run_test.nas test_fuel.nas  --narcissedir="<narcisselocation>"
+
+All tests should pass :
+
+a fuel panel
+   should be able to be created: Ok
+   can init pumps: Ok
+   can init valves: Ok
+a label
+   should be able to be updated: Ok
+   should apply ratio: Ok
+a pump
+   changed color to start on start: Ok
+   changed color to stop on stop: Ok
+a valve
+   can be closed: Ok
+   can be opened: Ok
+a pipe
+   feeded with one pump started: Ok
+   not feeded when pump stop: Ok
+   not feeded when valve is closed: Ok
+   can be feeded by many pumps, still opened when one is stopped: Ok
+

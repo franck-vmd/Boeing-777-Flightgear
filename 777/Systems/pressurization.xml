@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- Cabin Pressurization Altitude and Rate Calculator
+	by John Williams (tikibar), March 2015
+-->
+
+    <filter>
+	<name>1 Attenuation</name>
+	<debug>false</debug>
+	<type>gain</type>
+	<gain>1.0</gain>
+	<input>
+	    <expression>
+		<div>
+		    <product>
+			<value>0.1</value>
+			<dif>
+			    <property>instrumentation/altimeter/pressure-alt-ft</property>
+			    <property>systems/pressurization/cabin-altitude-ft</property>
+			</dif>
+		    </product>
+		    <property>systems/pressurization/internal/atten-m</property>
+		</div>
+	    </expression>
+	    <offset>
+		<property>systems/pressurization/internal/atten-b</property>
+	    </offset>
+	    <min>-1.0</min>
+	    <max>1.0</max>
+	</input>
+	<output>systems/pressurization/internal/diff_p</output>
+    </filter>
+
+    <filter>
+	<name>2 Outflow</name>
+	<debug>false</debug>
+	<type>gain</type>
+	<gain>
+	    <property>systems/pressurization/internal/valve-state</property>
+	    <offset>
+		<property>systems/pressurization/internal/valve-offset</property>
+	    </offset>
+	</gain>
+	<input>
+	    <property>systems/pressurization/internal/max-outflow-rate</property>
+	    <scale>
+		<property>systems/pressurization/internal/diff_p</property>
+	    </scale>
+	</input>
+	<output>systems/pressurization/internal/outflow-rate</output>
+    </filter>
+
+    <filter>
+	<name>3 Cabin Rate</name>
+	<debug>false</debug>
+	<type>gain</type>
+	<gain>1.0</gain>
+	<input>
+	    <property>systems/pressurization/internal/inflow-rate</property>
+	    <scale>-1.0</scale>
+	    <offset>systems/pressurization/internal/outflow-rate</offset>
+	</input>
+	<output>systems/pressurization/cabin-rate-fpm</output>
+    </filter>
+	    
+    <pi-simple-controller>
+	<name>4 Target Rate</name>
+	<debug>false</debug>
+	<input>
+	    <prop>systems/pressurization/cabin-altitude-ft</prop>
+	</input>
+	<reference>
+	    <prop>systems/pressurization/target-cabin-alt-ft</prop>
+	</reference>
+	<output>
+	    <prop>systems/pressurization/internal/target-rate</prop>
+	</output>
+	<config>
+	    <Kp>1.1</Kp>
+	    <Ki>0.0</Ki>
+	    <u_min>
+		<prop>systems/pressurization/max-cabin-rate-fpm</prop>
+		<scale>-1.0</scale>
+	    </u_min>
+	    <u_max>
+		<prop>systems/pressurization/max-cabin-rate-fpm</prop>
+	    </u_max>
+	</config>
+    </pi-simple-controller>
+
+    <pi-simple-controller>
+	<name>5 Valve State</name>
+	<debug>false</debug>
+	<enable>
+	    <condition>
+		<and>
+		    <not-equals>
+			<property>systems/pressurization/mode</property>
+			<value>0</value>
+		    </not-equals>
+		    <not>
+			<property>systems/pressurization/internal/manual</property>
+		    </not>
+		</and>
+	    </condition>
+	</enable>
+	<input>
+	    <prop>systems/pressurization/cabin-rate-fpm</prop>
+	</input>
+	<reference>
+	    <prop>systems/pressurization/internal/target-rate</prop>
+	</reference>
+	<output>
+	    <prop>systems/pressurization/internal/valve-state</prop>
+	</output>
+	<config>
+	    <Kp>0.00006</Kp>
+	    <Ki>0.001</Ki>
+	    <u_min>
+		<value>0.0</value>
+	    </u_min>
+	    <u_max>
+		<property>systems/pressurization/internal/valve-max</property>
+	    </u_max>
+	</config>
+    </pi-simple-controller>
+
+</PropertyList>
+

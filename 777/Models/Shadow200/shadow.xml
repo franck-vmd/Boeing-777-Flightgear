@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>shadow.ac</path>
+    
+		<!-- No preview for fgrun-->
+		<animation>
+			<object-name>shadow</object-name>
+			<object-name>shadow1</object-name>
+			<nopreview/>
+		</animation>
+		
+		<effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>shadow</object-name>
+	<object-name>shadow1</object-name>
+    </effect>
+		
+
+
+    <!-- Pitch -->
+    <animation>
+        <type>rotate</type>
+        <object-name>shadow</object-name>
+        <property>sim/multiplay/generic/float[8]</property>
+        <factor>-1.0</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    
+
+    <animation>
+        <type>translate</type>
+        <object-name>shadow</object-name>
+        <property>sim/multiplay/generic/float[7]</property>
+        <factor>0.3048</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>shadow</object-name>
+        <condition>
+         <and>
+          <less-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>100</value>
+          </less-than>
+          <greater-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>0</value>
+          </greater-than>
+         </and>
+        </condition>
+    </animation>
+    
+    <!-- Pitch -->
+    <animation>
+        <type>rotate</type>
+        <object-name>shadow1</object-name>
+        <property>sim/multiplay/generic/float[8]</property>
+        <factor>-1.0</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!-- roll -->
+    <animation>
+        <type>rotate</type>
+        <object-name>shadow1</object-name>
+        <property>sim/multiplay/generic/float[9]</property>
+        <factor>1.0</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>shadow1</object-name>
+        <property>sim/multiplay/generic/float[7]</property>
+        <factor>0.3048</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>shadow1</object-name>
+        <condition>
+         <and>
+          <less-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>6500</value>
+          </less-than>
+          <greater-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>100</value>
+          </greater-than>
+         </and>
+        </condition>
+    </animation>        
+   
+</PropertyList>	

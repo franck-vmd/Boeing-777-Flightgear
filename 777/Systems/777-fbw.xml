@@ -1,0 +1,1474 @@
+<?xml version="1.0"?>
+
+<!-- Boeing 777 FlyByWire System -->
+<!-- Copyright (c) 2019 Joshua Davidson (Octal450) -->
+<!-- It is simplified because of YAsim, but should be somewhat convincing -->
+
+<PropertyList>
+	
+	<!-- Libraries -->
+	
+	<logic>
+		<input>
+			<or>
+				<equals>
+					<property>/gear/gear[0]/wow</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/gear/gear[1]/wow</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/gear/gear[2]/wow</property>
+					<value>1</value>
+				</equals>
+			</or>
+		</input>
+		<output>/fcs/position/wow</output>
+	</logic>
+	
+	<logic>
+		<input>
+			<and>
+				<property>/instrumentation/afds/inputs/AP</property>
+				<equals>
+					<property>/instrumentation/afds/ap-modes/roll-mode</property>
+					<value>ROLLOUT</value>
+				</equals>
+			</and>
+		</input>
+		<output>/fcs/fbw/rollout-active</output>
+	</logic>
+	
+	<filter>
+		<name>Aileron Nul</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<property>/instrumentation/afds/inputs/AP</property>
+			</condition>
+			<property>/fcs/fbw/ap/roll-cmd</property>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/controls/flight/aileron</property>
+					<entry><ind>-1.00</ind><dep>-1.0</dep></entry>
+					<entry><ind>-0.02</ind><dep> 0.0</dep></entry>
+					<entry><ind> 0.00</ind><dep> 0.0</dep></entry>
+					<entry><ind> 0.02</ind><dep> 0.0</dep></entry>
+					<entry><ind> 1.00</ind><dep> 1.0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/controls/flight/aileron-nul</output>
+	</filter>
+	
+	<filter>
+		<name>A/P Pitch Rate Filter</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<property>/instrumentation/afds/inputs/AP</property>
+			</condition>
+			<expression>
+				<table>
+					<property>/autopilot/internal/pitch-rate</property>
+					<entry><ind>-6</ind><dep> 1</dep></entry>
+					<entry><ind> 0</ind><dep> 0</dep></entry>
+					<entry><ind> 6</ind><dep>-1</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>/controls/flight/elevator</input>
+		<output>/fcs/fbw/ap/pitch-rate-cmd</output>
+		<max-rate-of-change>
+			<condition>
+				<property>/instrumentation/afds/inputs/AP</property>
+			</condition>
+			<value>0.8</value>
+		</max-rate-of-change>
+		<max-rate-of-change>10</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Elevator Nul</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<property>/instrumentation/afds/inputs/AP</property>
+			</condition>
+			<property>/fcs/fbw/ap/pitch-rate-cmd</property>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/controls/flight/elevator</property>
+					<entry><ind>-1.00</ind><dep>-1.0</dep></entry>
+					<entry><ind>-0.02</ind><dep> 0.0</dep></entry>
+					<entry><ind> 0.00</ind><dep> 0.0</dep></entry>
+					<entry><ind> 0.02</ind><dep> 0.0</dep></entry>
+					<entry><ind> 1.00</ind><dep> 1.0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/controls/flight/elevator-nul</output>
+	</filter>
+	
+	<filter>
+		<name>Rudder Nul</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<property>/instrumentation/afds/inputs/AP</property>
+			</condition>
+			<property>/fcs/fbw/ap/yaw-cmd</property>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/controls/flight/rudder</property>
+					<entry><ind>-1.00</ind><dep>-1.0</dep></entry>
+					<entry><ind>-0.02</ind><dep> 0.0</dep></entry>
+					<entry><ind> 0.00</ind><dep> 0.0</dep></entry>
+					<entry><ind> 0.02</ind><dep> 0.0</dep></entry>
+					<entry><ind> 1.00</ind><dep> 1.0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/controls/flight/rudder-nul</output>
+	</filter>
+	
+	<logic>
+		<input>
+			<and>
+				<equals>
+					<property>/fcs/left-out-aileron/hyd-avail</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/fcs/left-in-aileron/hyd-avail</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/fcs/right-in-aileron/hyd-avail</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/fcs/right-out-aileron/hyd-avail</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/fcs/left-elevator/hyd-avail</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/fcs/right-elevator/hyd-avail</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/fcs/rudder/hyd-avail</property>
+					<value>1</value>
+				</equals>
+			</and>
+		</input>
+		<output>/fcs/fbw/hyd-avail</output>
+	</logic>
+	
+	<logic>
+		<input>
+			<and>
+				<equals>
+					<property>/fcs/fbw/hyd-avail</property>
+					<value>1</value>
+				</equals>
+				<or> <!-- Wrong, but 777's electrical doesn't have the right sources modelled -->
+					<greater-than-equals>
+						<property>/systems/electrical/L-MAIN-AC</property>
+						<value>110</value>
+					</greater-than-equals>
+					<greater-than-equals>
+						<property>/systems/electrical/R-MAIN-AC</property>
+						<value>110</value>
+					</greater-than-equals>
+				</or>
+			</and>
+		</input>
+		<output>/fcs/fbw/has-power</output>
+	</logic>
+	
+	<filter> <!-- Not the best way to do this, but AFDS.nas doesn't give a better way with significant refactoring -->
+		<name>A/P Killer Power</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<enable>
+			<condition>
+				<and>
+					<property>/instrumentation/afds/inputs/AP</property>
+					<or>
+						<not-equals>
+							<property>/fcs/pfc-enable</property>
+							<value>1</value>
+						</not-equals>
+						<not-equals>
+							<property>/fcs/fbw/has-power</property>
+							<value>1</value>
+						</not-equals>
+					</or>
+				</and>
+			</condition>
+		</enable>
+		<input>0</input>
+		<output>/instrumentation/afds/inputs/AP</output>
+	</filter>
+	
+	<filter> <!-- Not the best way to do this, but AFDS.nas doesn't give a better way with significant refactoring -->
+		<name>A/P Killer Wheel</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<update-interval-secs type="double">0.1</update-interval-secs>
+		<enable>
+			<condition>
+				<and>
+					<property>/instrumentation/afds/inputs/AP</property>
+					<or>
+						<less-than-equals>
+							<property>/controls/flight/aileron</property>
+							<value>-0.2</value>
+						</less-than-equals>
+						<greater-than-equals>
+							<property>/controls/flight/aileron</property>
+							<value>0.2</value>
+						</greater-than-equals>
+						<less-than-equals>
+							<property>/controls/flight/elevator</property>
+							<value>-0.2</value>
+						</less-than-equals>
+						<greater-than-equals>
+							<property>/controls/flight/elevator</property>
+							<value>0.2</value>
+						</greater-than-equals>
+					</or>
+				</and>
+			</condition>
+		</enable>
+		<input>0</input>
+		<output>/instrumentation/afds/inputs/AP</output>
+	</filter>
+	
+	<logic>
+		<input>
+			<and>
+				<equals>
+					<property>/fcs/pfc-enable</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/fcs/position/wow</property>
+					<value>0</value>
+				</equals>
+				<equals>
+					<property>/fcs/fbw/has-power</property>
+					<value>1</value>
+				</equals>
+			</and>
+		</input>
+		<output>/fcs/fbw/active</output>
+	</logic>
+	
+	<!-- Roll Axis -->
+	
+	<logic>
+		<input>
+			<and>
+				<equals>
+					<property>/fcs/fbw/active</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/controls/flight/aileron-nul</property>
+					<value>0</value>
+				</equals>
+				<equals> <!-- Not confirmed, but I am pretty sure it only holds with no lateral inputs -->
+					<property>/controls/flight/rudder-nul</property>
+					<value>0</value>
+				</equals>
+				<not><property>/instrumentation/afds/inputs/AP</property></not>
+			</and>
+		</input>
+		<output>/fcs/fbw/roll/att-law-active</output>
+	</logic>
+	
+	<filter> <!-- Logic switch for wheel forceback engage -->
+		<name>Roll Wheel Forceback Engage</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<or>
+					<and>
+						<greater-than-equals>
+							<property>/orientation/roll-deg</property>
+							<value>-30</value>
+						</greater-than-equals>
+						<less-than-equals>
+							<property>/orientation/roll-deg</property>
+							<value>30</value>
+						</less-than-equals>
+					</and>
+					<and>
+						<not-equals>
+							<property>/fcs/fbw/roll/att-law-active</property>
+							<value>1</value>
+						</not-equals>
+						<greater-than-equals>
+							<property>/orientation/roll-deg</property>
+							<value>-35</value>
+						</greater-than-equals>
+						<less-than-equals>
+							<property>/orientation/roll-deg</property>
+							<value>35</value>
+						</less-than-equals>
+					</and>
+				</or>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<condition>
+				<or>
+					<less-than>
+						<property>/orientation/roll-deg</property>
+						<value>-35</value>
+					</less-than>
+					<greater-than>
+						<property>/orientation/roll-deg</property>
+						<value>35</value>
+					</greater-than>
+				</or>
+			</condition>
+			<value>1</value>
+		</input>
+		<input>/fcs/fbw/roll/forceback-active</input>
+		<output>/fcs/fbw/roll/forceback-active</output>
+	</filter>
+	
+	<logic>
+		<input>
+			<and>
+				<equals>
+					<property>/fcs/fbw/roll/att-law-active</property>
+					<value>1</value>
+				</equals>
+				<not-equals>
+					<property>/fcs/fbw/roll/forceback-active</property>
+					<value>1</value>
+				</not-equals>
+			</and>
+		</input>
+		<output>/fcs/fbw/roll/att-rate-active</output>
+	</logic>
+	
+	<filter> <!-- Delay the rate hold from engaging, is a timer basically -->
+		<name>Roll Rate Hold Active</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/fbw/roll/att-rate-active</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<value>1</value>
+		</input>
+		<input>0</input>
+		<output>/fcs/fbw/roll/att-rate-active-delay</output>
+		<max-rate-of-change>
+			<condition>
+				<equals>
+					<property>/fcs/fbw/roll/att-rate-active</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<value>4</value>
+		</max-rate-of-change>
+		<max-rate-of-change>20</max-rate-of-change>
+	</filter>
+	
+	<filter> <!-- Logic switch for capturing attitude and holding it -->
+		<name>Roll Attitude Hold Active</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/fbw/roll/att-rate-active-delay</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<condition>
+				<and>
+					<greater-than>
+						<property>/orientation/roll-rate-degps</property>
+						<value>-0.5</value>
+					</greater-than>
+					<less-than>
+						<property>/orientation/roll-rate-degps</property>
+						<value>0.5</value>
+					</less-than>
+				</and>
+			</condition>
+			<value>1</value>
+		</input>
+		<input>/fcs/fbw/roll/att-hold-active</input>
+		<output>/fcs/fbw/roll/att-hold-active</output>
+	</filter>
+	
+	<filter> <!-- Store roll attitude -->
+		<name>Roll Attitude Command</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<enable>
+			<condition>
+				<not-equals>
+					<property>/fcs/fbw/roll/att-hold-active</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+		</enable>
+		<input>/orientation/roll-deg</input>
+		<output>/fcs/fbw/roll/att-cmd</output>
+		<min>-35</min>
+		<max>35</max>
+	</filter>
+	
+	<filter>
+		<name>Roll Attitude Rate Command</name>
+		<type>gain</type>
+		<gain>-2.5</gain>
+		<input>
+			<expression>
+				<difference>
+					<property>/orientation/roll-deg</property>
+					<property>/fcs/fbw/roll/att-cmd</property>
+				</difference>
+			</expression>
+		</input>
+		<output>/fcs/fbw/roll/att-roll-rate</output>
+		<min>-5</min>
+		<max>5</max>
+	</filter>
+	
+	<filter>
+		<name>System Controller: Roll Rate P</name>
+		<type>gain</type>
+		<gain>
+			<expression>
+				<product>
+					<table>
+						<property>/velocities/airspeed-kt</property>
+						<entry><ind>130</ind><dep>-0.25</dep></entry>
+						<entry><ind>330</ind><dep>-0.10</dep></entry>
+					</table>
+					<table>
+						<property>/fcs/logic/outer-aileron-locked</property>
+						<entry><ind>0</ind><dep>1.0</dep></entry>
+						<entry><ind>1</ind><dep>1.4</dep></entry>
+					</table>
+				</product>
+			</expression>
+		</gain>
+		<!-- For tuning -->
+		<!--gain>
+			<expression>
+				<product>
+					<property>/tune/kp</property>
+					<table>
+						<property>/fcs/logic/outer-aileron-locked</property>
+						<entry><ind>0</ind><dep>1.0</dep></entry>
+						<entry><ind>1</ind><dep>1.4</dep></entry>
+					</table>
+				</product>
+			</expression>
+		</gain-->
+		<input>/orientation/roll-rate-degps</input>
+		<reference>/fcs/fbw/roll/att-roll-rate</reference>
+		<output>/fcs/fbw/roll/rate-p</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<filter>
+		<name>System Controller: Roll Rate D</name>
+		<type>derivative</type>
+		<input>/orientation/roll-rate-degps</input>
+		<reference>/fcs/fbw/roll/att-roll-rate</reference>
+		<output>/fcs/fbw/roll/rate-d</output>
+		<filter-time>
+			<expression>
+				<product>
+					<table>
+						<property>/velocities/airspeed-kt</property>
+						<entry><ind>130</ind><dep>-0.02</dep></entry>
+						<entry><ind>330</ind><dep>-0.01</dep></entry>
+					</table>
+					<table>
+						<property>/fcs/logic/outer-aileron-locked</property>
+						<entry><ind>0</ind><dep>1.0</dep></entry>
+						<entry><ind>1</ind><dep>1.4</dep></entry>
+					</table>
+				</product>
+			</expression>
+		</filter-time>
+		<!-- For tuning -->
+		<!--filter-time>
+			<expression>
+				<product>
+					<property>/tune/kd</property>
+					<table>
+						<property>/fcs/logic/outer-aileron-locked</property>
+						<entry><ind>0</ind><dep>1.0</dep></entry>
+						<entry><ind>1</ind><dep>1.4</dep></entry>
+					</table>
+				</product>
+			</expression>
+		</filter-time-->
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<filter>
+		<name>Roll Rate Hold</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/fbw/roll/att-rate-active-delay</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<expression>
+				<sum>
+					<property>/fcs/fbw/roll/rate-p</property>
+					<property>/fcs/fbw/roll/rate-d</property>
+				</sum>
+			</expression>
+		</input>
+		<input>0</input>
+		<output>/fcs/fbw/roll/att-rate-demand</output>
+	</filter>
+	
+	<filter> <!-- Opposing wheel forces as bank increases -->
+		<name>Roll Wheel Forceback</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<and>
+					<equals>
+						<property>/fcs/fbw/active</property>
+						<value>1</value>
+					</equals>
+					<equals>
+						<property>/fcs/fbw/roll/forceback-active</property>
+						<value>1</value>
+					</equals>
+				</and>
+			</condition>
+			<expression>
+				<table>
+					<property>/orientation/roll-deg</property>
+					<entry><ind>-60.0</ind><dep> 0.9</dep></entry>
+					<entry><ind>-40.0</ind><dep> 0.6</dep></entry>
+					<entry><ind>-29.5</ind><dep> 0.0</dep></entry>
+					<entry><ind> 29.5</ind><dep> 0.0</dep></entry>
+					<entry><ind> 40.0</ind><dep>-0.6</dep></entry>
+					<entry><ind> 60.0</ind><dep>-0.9</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>0</input>
+		<output>/fcs/fbw/roll/forceback</output>
+	</filter>
+	
+	<filter>
+		<name>Aileron Wheel Command</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/fbw/active</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<expression>
+				<sum>
+					<property>/controls/flight/aileron-nul</property>
+					<product>
+						<property>/controls/flight/aileron-trim</property>
+						<value>0.2</value> <!-- 6 out of 30 degrees -->
+					</product>
+					<property>/fcs/fbw/roll/forceback</property>
+				</sum>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<sum>
+					<property>/controls/flight/aileron-nul</property>
+					<product>
+						<property>/controls/flight/aileron-trim</property>
+						<value>0.2</value> <!-- 6 out of 30 degrees -->
+					</product>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/fbw/roll/wheel-cmd</output>
+		<output>/fcs/fbw/roll/spoiler-cmd</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<filter>
+		<name>Aileron Command</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/fbw/active</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<expression>
+				<sum>
+					<property>/fcs/fbw/roll/wheel-cmd</property>
+					<property>/fcs/fbw/roll/att-rate-demand</property>
+				</sum>
+			</expression>
+		</input>
+		<input>/controls/flight/aileron-nul</input>
+		<output>/fcs/fbw/roll/aileron-cmd</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<!-- Pitch Axis -->
+	
+	<logic>
+		<input>
+			<or>
+				<not-equals>
+					<property>/fcs/fbw/active</property>
+					<value>1</value>
+				</not-equals>
+				<property>/instrumentation/afds/inputs/AP</property>
+				<equals>
+					<property>/sim/replay/replay-state</property>
+					<value>1</value>
+				</equals>
+			</or>
+		</input>
+		<output>/fcs/fbw/pitch/trim-kts-sync</output>
+	</logic>
+	
+	<filter>
+		<name>System Controller: Trim Speed Adjuster</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<update-interval-secs type="double">0.1</update-interval-secs>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/position/wow</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<expression>
+				<floor>
+					<sum>
+						<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+						<value>5.5</value> <!-- Add 5 and round correctly -->
+					</sum>
+				</floor>
+			</expression>
+		</input>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/fbw/pitch/trim-kts-sync</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<expression>
+				<floor>
+					<sum>
+						<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+						<value>0.5</value> <!-- Round correctly -->
+					</sum>
+				</floor>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<sum>
+					<property>/fcs/fbw/pitch/trim-kts</property>
+					<property>/fcs/fbw/pitch/trim-kts-switch</property>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/fbw/pitch/trim-kts</output>
+		<min>
+			<expression>
+				<floor>
+					<sum>
+						<property>/instrumentation/weu/state/stall-speed</property>
+						<value>0.5</value>
+					</sum>
+				</floor>
+			</expression>
+		</min>
+		<max>
+			<expression>
+				<floor>
+					<sum>
+						<property>/instrumentation/afds/max-airspeed-kts</property>
+						<value>0.5</value>
+					</sum>
+				</floor>
+			</expression>
+		</max>
+	</filter>
+	
+	<filter>
+		<name>Trim Speed Error</name>
+		<type>exponential</type>
+		<input>
+			<expression>
+				<difference>
+					<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+					<property>/fcs/fbw/pitch/trim-kts</property>
+				</difference>
+			</expression>
+		</input>
+		<output>/fcs/fbw/pitch/trim-kts-error</output>
+		<filter-time>0.08</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Airspeed Rate</name>
+		<type>derivative</type>
+		<input>/velocities/airspeed-kt</input>
+		<output>/fcs/fbw/pitch/airspeed-rate</output>
+		<filter-time>1.0</filter-time>
+	</filter>
+
+	<filter>
+		<name>Airspeed Rate Lag</name>
+		<type>double-exponential</type>
+		<input>/fcs/fbw/pitch/airspeed-rate</input>
+		<output>/fcs/fbw/pitch/airspeed-rate-lag</output>
+		<filter-time>0.16</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Trim Speed Error</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<difference>
+					<property>/fcs/fbw/pitch/airspeed-rate-lag</property>
+					<product>
+						<table>
+							<property>/fcs/fbw/pitch/trim-kts-error</property>
+							<entry><ind>-100.00</ind><dep>-100</dep></entry>
+							<entry><ind>  -0.75</ind><dep>   0</dep></entry>
+							<entry><ind>   0.00</ind><dep>   0</dep></entry>
+							<entry><ind>   0.75</ind><dep>   0</dep></entry>
+							<entry><ind> 100.00</ind><dep> 100</dep></entry>
+						</table>
+						<table> <!-- Basic Flare Compensation by fading the U part of the C*U law -->
+							<property>/position/gear-agl-ft</property>
+							<entry><ind>10</ind><dep>-0.05</dep></entry>
+							<entry><ind>50</ind><dep>-0.30</dep></entry>
+						</table>
+					</product>
+				</difference>
+			</expression>
+		</input>
+		<output>/fcs/fbw/pitch/airspeed-rate-error</output>
+	</filter>
+	
+	<filter>
+		<name>Pitch Rate Command Input</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<table>
+					<property>/controls/flight/elevator-nul</property>
+					<entry><ind>-1</ind><dep> 6</dep></entry>
+					<entry><ind> 0</ind><dep> 0</dep></entry>
+					<entry><ind> 1</ind><dep>-6</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/fbw/pitch/rate-command-input</output>
+		<min>-6</min>
+		<max>6</max>
+	</filter>
+	
+	<filter>
+		<name>Pitch Rate Command</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<property>/instrumentation/afds/inputs/AP</property>
+			</condition>
+			<property>/autopilot/internal/pitch-rate</property>
+		</input>
+		<input>
+			<expression>
+				<sum>
+					<property>/fcs/fbw/pitch/rate-command-input</property>
+					<table>
+						<property>/fcs/fbw/pitch/airspeed-rate-error</property>
+						<entry><ind>-35</ind><dep>-6</dep></entry>
+						<entry><ind>  0</ind><dep> 0</dep></entry>
+						<entry><ind> 35</ind><dep> 6</dep></entry>
+					</table>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/fbw/pitch/rate-command</output>
+	</filter>
+	
+	<filter>
+		<name>Pitch Rate Command Rate Limit</name>
+		<type>noise-spike</type>
+		<input>/fcs/fbw/pitch/rate-command</input>
+		<output>/fcs/fbw/pitch/rate-command-mroc</output>
+		<max-rate-of-change>14</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Accel Computed</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<sum>
+					<property>/accelerations/pilot-g</property>
+					<div>
+						<value>-1</value>
+						<cos>
+							<deg2rad><property>/orientation/roll-deg</property></deg2rad>
+						</cos>
+					</div>
+					<value>1</value>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/fbw/pitch/accel-computed</output>
+	</filter>
+	
+	<filter>
+		<name>Control Law Polarity</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<or>
+					<less-than>
+						<property>/orientation/roll-deg</property>
+						<value>-90</value>
+					</less-than>
+					<greater-than>
+						<property>/orientation/roll-deg</property>
+						<value>90</value>
+					</greater-than>
+				</or>
+			</condition>
+			<value>-1</value>
+		</input>
+		<input>1</input>
+		<output>/fcs/fbw/pitch/control-law-polarity</output>
+	</filter>
+	
+	<filter>
+		<name>Accel Command Input</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/pitch/rate-command-mroc</property>
+					<entry><ind>-6</ind><dep>-0.5</dep></entry>
+					<entry><ind> 0</ind><dep> 1.0</dep></entry>
+					<entry><ind> 6</ind><dep> 2.5</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/fbw/pitch/accel-command-input</output>
+		<min>-6</min>
+		<max>6</max>
+	</filter>
+	
+	<pi-simple-controller>
+		<name>System Command: Accel PI</name>
+		<input>/fcs/fbw/pitch/accel-command-input</input>
+		<reference>/fcs/fbw/pitch/accel-computed</reference>
+		<output>/fcs/fbw/pitch/accel-pi</output>
+		<config>
+			<Kp>
+				<expression>
+					<table>
+						<property>/velocities/airspeed-kt</property>
+						<entry><ind>140</ind><dep>-6.0</dep></entry>
+						<entry><ind>350</ind><dep>-3.0</dep></entry>
+					</table>
+				</expression>
+			</Kp>
+			<Ki>
+				<condition>
+					<equals>
+						<property>/fcs/fbw/active</property>
+						<value>1</value>
+					</equals>
+				</condition>
+				<expression>
+					<table>
+						<property>/velocities/airspeed-kt</property>
+						<entry><ind>140</ind><dep>-6.0</dep></entry>
+						<entry><ind>350</ind><dep>-3.0</dep></entry>
+					</table>
+				</expression>
+			</Ki>
+			<Ki>0.0</Ki>
+			<min>
+				<condition>
+					<less-than>
+						<property>/fcs/fbw/pitch/rate-command-mroc</property>
+						<value>0</value>
+					</less-than>
+				</condition>
+				<property>/fcs/fbw/pitch/rate-command-mroc</property>
+			</min>
+			<min>0.0</min>
+			<max>
+				<condition>
+					<greater-than>
+						<property>/fcs/fbw/pitch/rate-command-mroc</property>
+						<value>0</value>
+					</greater-than>
+				</condition>
+				<property>/fcs/fbw/pitch/rate-command-mroc</property>
+			</max>
+			<max>0.0</max>
+		</config>
+	</pi-simple-controller>
+	
+	<filter>
+		<name>Pitch Rate Command Lag</name>
+		<type>exponential</type>
+		<input>
+			<expression>
+				<product>
+					<property>/fcs/fbw/pitch/accel-pi</property>
+					<property>/fcs/fbw/pitch/control-law-polarity</property>
+				</product>
+			</expression>
+		</input>
+		<!--input>/fcs/fbw/pitch/rate-command-mroc</input--> <!-- Tuning G Bypass -->
+		<output>/fcs/fbw/pitch/rate-command-lag</output>
+		<filter-time>0.16</filter-time>
+	</filter>
+	
+	<pi-simple-controller>
+		<name>System Command: Pitch Rate PI</name>
+		<enable>
+			<condition>
+				<equals>
+					<property>/fcs/fbw/active</property>
+					<value>1</value>
+				</equals>
+			</condition>
+		</enable>
+		<input>/fcs/fbw/pitch/rate-command-lag</input>
+		<reference>/orientation/pitch-rate-degps</reference>
+		<output>/fcs/fbw/pitch/thetadot-pi</output>
+		<config>
+			<Kp>
+				<expression>
+					<table>
+						<property>/velocities/airspeed-kt</property>
+						<entry><ind>130</ind><dep>0.4</dep></entry>
+						<entry><ind>330</ind><dep>0.3</dep></entry>
+					</table>
+				</expression>
+			</Kp>
+			<Ki>
+				<expression>
+					<table>
+						<property>/velocities/airspeed-kt</property>
+						<entry><ind>130</ind><dep>0.6</dep></entry>
+						<entry><ind>330</ind><dep>0.5</dep></entry>
+					</table>
+				</expression>
+			</Ki>
+			<!-- For tuning -->
+			<!--Kp>/tune/kp</Kp>
+			<Ki>/tune/ki</Ki-->
+			<min>-1.0</min>
+			<max>1.0</max>
+		</config>
+	</pi-simple-controller>
+	
+	<filter>
+		<name>System Command: Pitch Rate D</name>
+		<type>derivative</type>
+		<input>/orientation/pitch-rate-degps</input>
+		<reference>/fcs/fbw/pitch/rate-command-lag</reference>
+		<output>/fcs/fbw/pitch/thetadot-d</output>
+		<filter-time>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind>130</ind><dep>0.03</dep></entry>
+					<entry><ind>330</ind><dep>0.01</dep></entry>
+				</table>
+			</expression>
+		</filter-time>
+		<!-- For tuning -->
+		<!--filter-time>/tune/kd</filter-time-->
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<filter> <!-- Delay the C*U from engaging, is a timer basically -->
+		<name>Control Law Gain</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/position/wow</property>
+					<value>0</value>
+				</equals>
+			</condition>
+			<value>1</value>
+		</input>
+		<input>0</input>
+		<output>/fcs/fbw/pitch/control-law-gain</output>
+		<max-rate-of-change>
+			<condition>
+				<equals>
+					<property>/fcs/position/wow</property>
+					<value>0</value>
+				</equals>
+			</condition>
+			<value>0.5</value>
+		</max-rate-of-change>
+		<max-rate-of-change>20</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Direct Gain</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/pitch/control-law-gain</property>
+					<entry><ind>0</ind><dep>1</dep></entry>
+					<entry><ind>1</ind><dep>0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/fbw/pitch/direct-gain</output>
+	</filter>
+	
+	<filter>
+		<name>Elevator Command</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/fbw/active</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<expression> <!-- Ease transition from ground to flight -->
+				<sum>
+					<product>
+						<sum>
+							<property>/fcs/fbw/pitch/thetadot-pi</property>
+							<property>/fcs/fbw/pitch/thetadot-d</property>
+						</sum>
+						<property>/fcs/fbw/pitch/control-law-gain</property>
+						<property>/fcs/fbw/pitch/control-law-polarity</property>
+					</product>
+					<product>
+						<property>/controls/flight/elevator-nul</property>
+						<property>/fcs/fbw/pitch/direct-gain</property>
+					</product>
+				</sum>
+			</expression>
+		</input>
+		<input> <!-- Lower nose on touchdown -->
+			<condition>
+				<and>
+					<property>/instrumentation/afds/inputs/AP</property>
+					<equals>
+						<property>/gear/gear[0]/wow</property>
+						<value>0</value>
+					</equals>
+					<or>
+						<equals>
+							<property>/gear/gear[1]/wow</property>
+							<value>1</value>
+						</equals>
+						<equals>
+							<property>/gear/gear[2]/wow</property>
+							<value>1</value>
+						</equals>
+					</or>
+				</and>
+			</condition>
+			<value>0.15</value>
+		</input>
+		<input> <!-- Keep some forward pressure once nose wheel on ground -->
+			<condition>
+				<and>
+					<property>/instrumentation/afds/inputs/AP</property>
+					<equals>
+						<property>/gear/gear[0]/wow</property>
+						<value>1</value>
+					</equals>
+				</and>
+			</condition>
+			<value>0.075</value>
+		</input>
+		<input>/controls/flight/elevator-nul</input>
+		<output>/fcs/fbw/pitch/elevator-cmd</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<filter>
+		<name>System Command: Pitch Trim</name>
+		<type>noise-spike</type>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<initialize-to>output</initialize-to>
+		<enable>
+			<condition>
+				<and>
+					<equals>
+						<property>/gear/gear[1]/wow</property>
+						<value>0</value>
+					</equals>
+					<equals>
+						<property>/gear/gear[2]/wow</property>
+						<value>0</value>
+					</equals>
+					<equals>
+						<property>/fcs/fbw/active</property>
+						<value>1</value>
+					</equals>
+					<greater-than-equals>
+						<property>/position/gear-agl-ft</property>
+						<value>50</value>
+					</greater-than-equals>
+					<or>
+						<greater-than>
+							<property>/fcs/fbw/pitch/elevator-cmd</property>
+							<value>0.01</value>
+						</greater-than>
+						<less-than>
+							<property>/fcs/fbw/pitch/elevator-cmd</property>
+							<value>-0.01</value>
+						</less-than>
+					</or>
+				</and>
+			</condition>
+		</enable>
+		<input>
+			<condition>
+				<greater-than>
+					<property>/fcs/fbw/pitch/elevator-cmd</property>
+					<value>0.01</value>
+				</greater-than>
+			</condition>
+			<value>1</value>
+		</input>
+		<input>
+			<condition>
+				<less-than>
+					<property>/fcs/fbw/pitch/elevator-cmd</property>
+					<value>-0.01</value>
+				</less-than>
+			</condition>
+			<value>-1</value>
+		</input>
+		<output>/controls/flight/elevator-trim</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+		<max-rate-of-change>0.01</max-rate-of-change>
+	</filter>
+	
+	<!-- Yax Axis -->
+	
+	<filter>
+		<name>System Controller: Beta P</name>
+		<type>gain</type>
+		<gain>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind>130</ind><dep>3.0</dep></entry>
+					<entry><ind>330</ind><dep>0.5</dep></entry>
+				</table>
+			</expression>
+		</gain>
+		<!-- For tuning -->
+		<!--gain>/tune/kp</gain-->
+		<input>/orientation/side-slip-rad</input>
+		<reference>0.0</reference>
+		<output>/fcs/fbw/yaw/beta-p</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<filter>
+		<name>System Controller: Beta D</name>
+		<type>derivative</type>
+		<input>/orientation/side-slip-rad</input>
+		<reference>0.0</reference>
+		<output>/fcs/fbw/yaw/beta-d</output>
+		<filter-time>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind>130</ind><dep>6.0</dep></entry>
+					<entry><ind>330</ind><dep>1.0</dep></entry>
+				</table>
+			</expression>
+		</filter-time>
+		<!-- For tuning -->
+		<!--filter-time>/tune/kd</filter-time-->
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<filter>
+		<name>Rudder Ratio Output</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input> <!-- AP Rollout Overide -->
+			<condition>
+				<equals>
+					<property>/fcs/fbw/rollout-active</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<value>1.0</value>
+		</input>
+		<input> <!-- PFCs on -->
+			<condition>
+				<equals>
+					<property>/fcs/fbw/active</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind>130</ind><dep>1.00</dep></entry>
+					<entry><ind>330</ind><dep>0.25</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input> <!-- PFCs off, high speed mode -->
+			<condition>
+				<and>
+					<not-equals>
+						<property>/fcs/pfc-enable</property>
+						<value>1</value>
+					</not-equals>
+					<less-than>
+						<property>/surface-positions/flap-pos-norm</property>
+						<value>0.01</value>
+					</less-than>
+				</and>
+			</condition>
+			<value>0.5</value>
+		</input>
+		<input>1.0</input>
+		<output>/fcs/fbw/yaw/rudder-ratio</output>
+	</filter>
+	
+	<filter>
+		<name>Rudder Ratio Output</name>
+		<type>gain</type>
+		<gain>/fcs/fbw/yaw/rudder-ratio</gain>
+		<input>/controls/flight/rudder-nul</input>
+		<output>/fcs/fbw/yaw/rudder-ratio-out</output>
+	</filter>
+	
+	<filter>
+		<name>Rudder Command</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<and>
+					<equals>
+						<property>/fcs/fbw/active</property>
+						<value>1</value>
+					</equals>
+					<not-equals>
+						<property>/fcs/fbw/rollout-active</property>
+						<value>1</value>
+					</not-equals>
+				</and>
+			</condition>
+			<expression>
+				<sum> <!-- Beta control use as yaw damper due to property rule limitations -->
+					<property>/fcs/fbw/yaw/rudder-ratio-out</property>
+					<product>
+						<property>/controls/flight/rudder-trim</property>
+						<value>0.62271</value> <!-- About 17 out of 27.3 degrees -->
+					</product>
+					<property>/fcs/fbw/yaw/beta-p</property>
+					<property>/fcs/fbw/yaw/beta-d</property>
+				</sum>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<sum>
+					<property>/fcs/fbw/yaw/rudder-ratio-out</property>
+					<product>
+						<property>/controls/flight/rudder-trim</property>
+						<value>0.62271</value> <!-- About 17 out of 27.3 degrees -->
+					</product>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/fbw/yaw/rudder-cmd</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<!-- Yokes, Pedals, and Tillers -->
+	
+	<filter>
+		<name>Yokes Aileron Lag</name>
+		<type>exponential</type>
+		<input>/fcs/fbw/roll/wheel-cmd</input>
+		<output>/fcs/fbw/yoke-aileron</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Yokes Elevator Lag</name>
+		<type>exponential</type>
+		<input>
+			<condition>
+				<and>
+					<property>/instrumentation/afds/inputs/AP</property>
+					<equals>
+						<property>/gear/gear[0]/wow</property>
+						<value>0</value>
+					</equals>
+					<or>
+						<equals>
+							<property>/gear/gear[1]/wow</property>
+							<value>1</value>
+						</equals>
+						<equals>
+							<property>/gear/gear[2]/wow</property>
+							<value>1</value>
+						</equals>
+					</or>
+				</and>
+			</condition>
+			<value>0.15</value>
+		</input>
+		<input>
+			<condition>
+				<and>
+					<property>/instrumentation/afds/inputs/AP</property>
+					<equals>
+						<property>/gear/gear[0]/wow</property>
+						<value>1</value>
+					</equals>
+				</and>
+			</condition>
+			<value>0.075</value>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/pitch/rate-command-input</property>
+					<entry><ind>-6</ind><dep> 1</dep></entry>
+					<entry><ind> 0</ind><dep> 0</dep></entry>
+					<entry><ind> 6</ind><dep>-1</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/fbw/yoke-elevator</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Pedals Lag</name>
+		<type>exponential</type>
+		<input>/controls/flight/rudder-nul</input>
+		<output>/fcs/fbw/pedals</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Tillers Lag</name>
+		<type>exponential</type>
+		<input>/controls/gear/nosegear-steering-cmd</input>
+		<output>/controls/gear/nosegear-steering-lag</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<!-- PFD -->
+	
+	<filter>
+		<name>Slip/Skid Indicator</name>
+		<type>exponential</type>
+		<input>
+			<condition>
+				<property>/fcs/position/wow</property>
+			</condition>
+			<expression>
+				<product>
+					<property>/fdm/yasim/accelerations/a-y</property>
+					<value>2.5</value>
+				</product>
+			</expression>
+		</input>
+		<input>/orientation/side-slip-deg</input>
+		<output>/instrumentation/pfd/slip-skid</output>
+		<filter-time>0.16</filter-time>
+		<min>-15</min>
+		<max>15</max>
+	</filter>
+
+</PropertyList>

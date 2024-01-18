@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <sim>
+        <walker>
+						<equipment-name>Headgear Headset</equipment-name>
+						<headgear>1</headgear>
+						<hair>1</hair>
+        </walker>
+
+  </sim>
+
+</PropertyList>

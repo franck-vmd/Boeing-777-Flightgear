@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--== walker animation v1.1 for FlightGear versions 1.0 and 1.9 OSG   ==-->
+
+<PropertyList>
+	<path>chute.ac</path>
+
+	<animation>
+		<type>select</type>
+		<object-name>Chute</object-name>
+		<condition>
+			<and>
+				<greater-than>
+					<property>sim/walker/parachute-opened-sec</property>
+					<value>0</value>
+				</greater-than>
+				<greater-than>
+					<property>sim/walker/parachute-opened-altitude-ft</property>
+					<value>0</value>
+				</greater-than>
+			</and>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Chute</object-name>
+		<offset-deg>0</offset-deg>
+		<property>sim/model/walker[1]/limb[0]/y-deg</property>
+		<center>
+			<x-m>-0.015</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.212</z-m>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>-1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>scale</type>
+		<object-name>Chute</object-name>
+		<property>sim/walker/parachute-opened-sec</property>
+		<x-factor>0.3</x-factor>
+		<y-factor>0.25</y-factor>
+		<z-factor>0.3</z-factor>
+		<x-offset>0.2</x-offset>
+		<y-offset>0</y-offset>
+		<z-offset>0.2</z-offset>
+		<x-min>0.2</x-min>
+		<y-min>0.1</y-min>
+		<z-min>0.2</z-min>
+		<x-max>1.0</x-max>
+		<y-max>1.0</y-max>
+		<z-max>1.0</z-max>
+	</animation>
+</PropertyList>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <name>catering</name>
+    <layout>vbox</layout>
+    <pref-width>360</pref-width>
+    
+    <group>
+    <layout>hbox</layout>
+        <text>
+            <label>Catering Galleys overview</label>
+        </text>
+        
+        <empty>
+            <stretch>true</stretch>
+        </empty>
+        
+        <button>
+            <halign>right</halign>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <legend/>
+            <key>Esc</key>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+        
+    </group>
+
+    <hrule />
+    
+    <group>
+        <layout>table</layout>
+        
+        <text>
+            <row>0</row>
+            <col>0</col>
+            <pref-width>80</pref-width>
+            <pref-height>12</pref-height>
+            <label>Front Galley:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>1</row>
+            <col>0</col>
+            <pref-width>80</pref-width>
+            <pref-height>12</pref-height>
+            <label>Center Galley:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>2</row>
+            <col>0</col>
+            <pref-width>80</pref-width>
+            <pref-height>12</pref-height>
+            <label>Rear Galley:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>3</row>
+            <col>0</col>
+            <pref-width>80</pref-width>
+            <pref-height>12</pref-height>
+            <label>Total:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>0</row>
+            <col>1</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>sim/weight[2]/weight-lb</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>1</row>
+            <col>1</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>sim/weight[3]/weight-lb</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>2</row>
+            <col>1</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>sim/weight[4]/weight-lb</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>3</row>
+            <col>1</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>services/payload/catering-onboard-lbs</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>0</row>
+            <col>2</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Lbs.</label>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>1</row>
+            <col>2</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Lbs.</label>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>2</row>
+            <col>2</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Lbs.</label>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>3</row>
+            <col>2</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Lbs.</label>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>0</row>
+            <col>3</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>services/payload/catering-galley-1-trolley-nr</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>1</row>
+            <col>3</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>services/payload/catering-galley-2-trolley-nr</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>2</row>
+            <col>3</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>services/payload/catering-galley-3-trolley-nr</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>3</row>
+            <col>3</col>
+            <pref-width>40</pref-width>
+            <pref-height>12</pref-height>
+            <property>services/payload/catering-trolley-nr</property>
+            <halign>right</halign>
+            <live>true</live>
+        </text>
+        
+        <text>
+            <row>0</row>
+            <col>4</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Trolleys</label>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>1</row>
+            <col>4</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Trolleys</label>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>2</row>
+            <col>4</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Trolleys</label>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>3</row>
+            <col>4</col>
+            <pref-width>20</pref-width>
+            <pref-height>12</pref-height>
+            <label>Trolleys</label>
+            <halign>left</halign>
+        </text>        
+    
+    </group>    
+
+    <hrule />
+
+    <group>
+    <layout>hbox</layout>
+
+        <button>
+            <legend>Close</legend>
+            <default>true</default>
+            <key>Esc</key>
+        <padding>5</padding>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
+
+</PropertyList>

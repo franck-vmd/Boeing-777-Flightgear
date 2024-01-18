@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
+
+<PropertyList>
+	<name>Checklist: Preflight</name>
+	<description>Welcome aboard your 777 aircraft!
+
+Passengers are embarking and our lovely cabin crew is taking care of cabin preparations. You've filed a flight-plan and have just completed the briefing with your copilot. Now it's time to work preflight checklists and prepare the aircraft.
+
+This preflight tutorial walks you through all the steps of preparing your aircraft.
+
+Well, you could just press "s" for autostart and skip all this - but you're a real captain, aren't you?
+	</description>
+
+	<audio-dir>Aircraft/777/Tutorials</audio-dir>
+
+	<init>
+		<set>
+			<property>controls/electric/battery-switch</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>controls/flight/flaps</property>
+			<value>0.0</value>
+		</set>
+		<set>
+			<property>controls/electric/APU-generator</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>controls/electric/engine[0]/bus-tie</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>controls/electric/engine[1]/bus-tie</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>controls/engines/engine[0]/cutoff</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/engines/engine[1]/cutoff</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/electric/engine/generator</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>controls/electric/engine[1]/generator</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>sim/model/armrest</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>controls/flight/speedbrake-lever</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>instrumentation/transponder/mode-switch</property>
+			<value>1</value>
+		</set>
+	</init>
+
+        <step>   <!--1-->
+		<message></message>
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>180.0</heading-offset-deg>
+			<pitch-offset-deg>-4.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.3</x-offset-m>
+			<y-offset-m>-0.1</y-offset-m>
+			<z-offset-m>-40.0</z-offset-m>
+			<field-of-view>70</field-of-view>
+		</view>
+	</step>
+
+       <step>   <!--1/2-->
+		<message></message>
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>180.0</heading-offset-deg>
+			<pitch-offset-deg>-4.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.3</x-offset-m>
+			<y-offset-m>5.0</y-offset-m>
+			<z-offset-m>-40.0</z-offset-m>
+		</view>
+	</step>
+       
+       <step>    <!--2-->
+		<message></message>
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>197.0</heading-offset-deg>
+			<pitch-offset-deg>-4.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.3</x-offset-m>
+			<y-offset-m>-0.1</y-offset-m>
+			<z-offset-m>-35.0</z-offset-m>
+		</view>
+	</step>
+
+       <step>    <!--3-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>195.0</heading-offset-deg>
+			<pitch-offset-deg>-4.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.8</x-offset-m>
+			<y-offset-m>8.0</y-offset-m>
+			<z-offset-m>-20.0</z-offset-m>
+		</view>
+	</step>
+	
+	<step>   <!--4-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>235.6</heading-offset-deg>
+			<pitch-offset-deg>-12.9</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>0.0</y-offset-m>
+			<z-offset-m>-20.0</z-offset-m>
+		</view>
+	</step>
+
+        <step>    <!--5-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>-117.2</heading-offset-deg>
+			<pitch-offset-deg>10.1</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>10.0</y-offset-m>
+			<z-offset-m>-60.0</z-offset-m>
+		</view>
+	</step>
+
+       <step>    <!--5/2-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>-65.0</heading-offset-deg>
+			<pitch-offset-deg>10.1</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>-3.0</y-offset-m>
+			<z-offset-m>-45.0</z-offset-m>
+		</view>
+	</step>
+
+        <step>    <!--6-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>300.0</heading-offset-deg>
+			<pitch-offset-deg>-12.9</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>0.0</y-offset-m>
+			<z-offset-m>-20.0</z-offset-m>
+		</view>
+	</step>
+
+        <step>    <!--7-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>345.0</heading-offset-deg>
+			<pitch-offset-deg>10.1</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>10.0</y-offset-m>
+			<z-offset-m>-60.5</z-offset-m>
+		</view>
+	</step>
+
+        <step>     <!--8-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>359.99</heading-offset-deg>
+			<pitch-offset-deg>10.1</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>20.0</y-offset-m>
+			<z-offset-m>-65.0</z-offset-m>
+		</view>
+	</step>
+
+        <step>    <!--9-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>15.0</heading-offset-deg>
+			<pitch-offset-deg>10.1</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>10.0</y-offset-m>
+			<z-offset-m>-60.5</z-offset-m>
+		</view>
+	</step>
+
+       <step>     <!--10-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>52.8</heading-offset-deg>
+			<pitch-offset-deg>-12.9</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>0.0</y-offset-m>
+			<z-offset-m>-20.0</z-offset-m>
+		</view>
+	</step>
+
+	<step>      <!--11-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>117.2</heading-offset-deg>
+			<pitch-offset-deg>-12.9</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>0.0</y-offset-m>
+			<z-offset-m>-20.0</z-offset-m>
+		</view>
+	</step>
+
+        <step>    <!--11/2-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>65.0</heading-offset-deg>
+			<pitch-offset-deg>10.1</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>-3.0</y-offset-m>
+			<z-offset-m>-45.0</z-offset-m>
+		</view>
+	</step>
+
+        <step>     <!--12-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>117.2</heading-offset-deg>
+			<pitch-offset-deg>10.1</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.0</x-offset-m>
+			<y-offset-m>10.0</y-offset-m>
+			<z-offset-m>-60.0</z-offset-m>
+		</view>
+	</step>
+
+       <step>      <!--13-->
+		<message></message>	
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>165.0</heading-offset-deg>
+			<pitch-offset-deg>-4.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.8</x-offset-m>
+			<y-offset-m>8.0</y-offset-m>
+			<z-offset-m>-20.0</z-offset-m>
+		</view>
+	</step>
+
+        <step>       <!--14-->
+		<message></message>
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>167.0</heading-offset-deg>
+			<pitch-offset-deg>-4.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.3</x-offset-m>
+			<y-offset-m>-0.1</y-offset-m>
+			<z-offset-m>-35.0</z-offset-m>
+		</view>
+	</step>
+
+        <step>      <!--15-->
+		<message></message>
+		<view>
+			<view-number>1</view-number>
+			<heading-offset-deg>179.99</heading-offset-deg>
+			<pitch-offset-deg>-4.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>0.3</x-offset-m>
+			<y-offset-m>-0.1</y-offset-m>
+			<z-offset-m>-40.0</z-offset-m>
+			<field-of-view>70</field-of-view>
+		</view>
+	</step>
+
+	<end>
+	</end>
+
+</PropertyList>

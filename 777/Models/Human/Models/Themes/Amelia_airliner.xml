@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <sim>
+        <walker>
+            <theme-name>Amelia Airline Pilot</theme-name>
+            <character>0</character>
+		        <gender>1</gender>
+	          <outfit>2</outfit>
+        </walker>
+
+  </sim>
+</PropertyList>

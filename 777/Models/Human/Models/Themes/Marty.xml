@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <sim>
+        <walker>
+            <theme-name>Marty the Mechanic</theme-name>
+            <character>2</character>
+		        <gender>0</gender>
+	          <outfit>3</outfit>
+        </walker>
+
+  </sim>
+
+</PropertyList>

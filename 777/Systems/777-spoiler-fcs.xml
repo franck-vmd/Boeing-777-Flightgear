@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <filter>
+        <name>Speedbrake Arm reset</name>
+        <type>gain</type>
+        <update-interval-secs type="double">0.2</update-interval-secs>
+        <gain>1.0</gain>
+        <enable>
+            <condition>
+                <and>
+                    <property>controls/engines/engine[0]/throttle-lever</property>
+                    <not><property>controls/flight/air-sensing-sw</property></not>
+                    <equals>
+                        <property>controls/flight/speedbrake-lever</property>
+                        <value>1</value>
+                    </equals>
+                </and>
+            </condition>
+        </enable>
+        <input>
+            <value>0</value>
+        </input>
+        <output>
+            <property>controls/flight/speedbrake-lever</property>
+        </output>
+    </filter>
+
+    <flipflop>
+        <name>Auto Speedbrake Engage logic</name>
+        <update-interval-secs type="double">0.2</update-interval-secs>
+        <type>RS</type>
+        <S>
+            <and>
+                <equals>
+                    <property>controls/flight/speedbrake-lever</property>
+                    <value>1</value>
+                </equals>
+                <or>
+                    <property>gear/gear[1]/wow</property>
+                    <property>gear/gear[2]/wow</property>
+                </or>
+                <greater-than>
+                    <property>velocities/groundspeed-kt</property>
+                    <value>60</value>
+                </greater-than>
+            </and>
+        </S>
+        <R>
+            <and>
+                <equals>
+                    <property>controls/flight/speedbrake-lever</property>
+                    <value>2</value>
+                </equals>
+                <not><property>controls/engines/engine[0]/reverser</property></not>
+                <property>controls/engines/engine[0]/throttle-lever</property>
+                <not><property>controls/flight/air-sensing-sw</property></not>
+            </and>
+        </R>
+        <output>controls/flight/speedbrake</output>
+    </flipflop>
+
+    <flipflop>
+        <name>Ground/Air sensing switch</name>
+        <update-interval-secs type="double">0.2</update-interval-secs>
+        <type>RS</type>
+        <S>
+            <and>
+                <not><property>gear/gear[1]/wow</property></not>
+                <not><property>gear/gear[2]/wow</property></not>
+            </and>
+        </S>
+        <R>
+            <and>
+                <property>gear/gear[1]/wow</property>
+                <property>gear/gear[2]/wow</property>
+            </and>
+        </R>
+        <output>controls/flight/air-sensing-sw</output>
+    </flipflop>
+
+    <!-- flap protection -->
+
+    <filter>
+        <name>Flap Load Relief</name>
+        <!-- compute the amount to reduce controls/flight/flaps by, to keep
+             flaps within placard limits -->
+        <type>gain</type>
+        <update-interval-secs type="double">0.2</update-interval-secs>
+        <gain>1.0</gain>
+        <debug>false</debug>
+
+        <reference>
+            <expression>
+                <table>
+                    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+                    <entry><ind>255</ind><dep>0.033</dep></entry>
+                    <entry><ind>235</ind><dep>0.166</dep></entry>
+                    <entry><ind>215</ind><dep>0.5</dep></entry>
+                    <entry><ind>195</ind><dep>0.666</dep></entry>
+                    <entry><ind>185</ind><dep>0.833</dep></entry>
+                    <entry><ind>170</ind><dep>1</dep></entry>
+                    <entry><ind>0</ind><dep>1</dep></entry>
+                </table>
+            </expression>
+        </reference>
+        <input>/controls/flight/flaps</input>
+
+        <min>0.0</min>
+        <output>instrumentation/afds/flap-position</output>
+    </filter>
+
+    <logic>
+        <name>Flap Load Relief Active</name>
+        <update-interval-secs type="double">0.2</update-interval-secs>
+        <input>
+            <less-than>
+                <property>instrumentation/afds/flap-position</property>
+                <property>controls/flight/flaps</property>
+            </less-than>
+        </input>
+        <output>instrumentation/afds/flap-load-relief-active</output>
+    </logic>
+
+</PropertyList>

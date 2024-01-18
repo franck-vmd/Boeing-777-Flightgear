@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <name type="string">threat_gun</name>
+  <loop-enabled type="bool">true</loop-enabled>
+  <loop-to type="int">0</loop-to>
+  <trigger-upon type="string">Disabled</trigger-upon>
+  <position>
+    <name type="string">1</name>
+    <rest-sec type="double">0</rest-sec>
+    <transit-sec type="double">1</transit-sec>
+    <limb>
+      <y-deg type="double">0</y-deg>
+      <z-m type="double">-0.0573282</z-m>
+    </limb>
+    <limb n="1">
+      <y-deg type="double">-6.5625</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="2">
+      <y-deg type="double">8.66666</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="3">
+      <x-deg type="double">-85</x-deg>
+      <y-deg type="double">-15.5172</y-deg>
+      <z-deg type="double">-98.5283</z-deg>
+    </limb>
+    <limb n="4">
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="5">
+      <x-deg type="double">13.8095</x-deg>
+      <y-deg type="double">3.6</y-deg>
+      <hand-pose type="double">2</hand-pose>
+    </limb>
+    <limb n="6">
+      <x-deg type="double">-80</x-deg>
+      <y-deg type="double">8.53448</y-deg>
+      <z-deg type="double">-97.5943</z-deg>
+    </limb>
+    <limb n="7">
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">2.86624</z-deg>
+    </limb>
+    <limb n="8">
+      <x-deg type="double">-4.28572</x-deg>
+      <y-deg type="double">-30</y-deg>
+      <hand-pose type="double">0</hand-pose>
+    </limb>
+    <limb n="9">
+      <x-deg type="double">-10.7609</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="10">
+      <y-deg type="double">0</y-deg>
+    </limb>
+    <limb n="11">
+      <y-deg type="double">0</y-deg>
+    </limb>
+    <limb n="12">
+      <x-deg type="double">-15.6522</x-deg>
+      <y-deg type="double">0</y-deg>
+      <z-deg type="double">0</z-deg>
+    </limb>
+    <limb n="13">
+      <y-deg type="double">0.210526</y-deg>
+    </limb>
+    <limb n="14">
+      <y-deg type="double">0</y-deg>
+    </limb>
+  </position>
+</PropertyList>

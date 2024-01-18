@@ -1,0 +1,82 @@
+\section{Tutorials} % Taken from the wiki
+\subsection{Autopilot using LNAV/VNAV e.g. from KATL to KMIA}
+\begin{enumerate}
+\item Location$\rightarrow$Position Aircraft On Ground. Enter KATL to Airport and select Runway 09L then press Go To Airport.
+\item Press BATTERY button on OHP then rotate APU knob to START. This switch automatically spring back to ON. Press APU GEN button if its not on.
+\item Press L BUS TIE, R BUS TIE breaker to AUTO and L and R engine generator to ON.
+\item Adjust backlight of Overhead panel and Instrument using OVHD and PNL/FLOOD outer knob.
+\item Open Autopilot$\rightarrow$Route Manager. KATL is already entered at Departure: so enter KMIA to Arrival: and select Rwy: 27.
+\item Note the distance to KMIA-27(27) is 518.0nm.
+\item Click arrow of Approach: then reselect DEFAULT. Approach waypoints are added.
+\item Click arrow of SID: then select DEFAULT. Departure waypoints are added. Make sure 1st approach way point does not have altitude restriction. If it has add the fix before that.
+\item Equipment$\rightarrow$Map. Check and modify route not to have sharp angle way point.
+\item Equipment$\rightarrow$Fuel and Payload. Set Total fuel wight to noted mileage 518 * 45 + 10000 = 33500lbs then press Balance button. Check Gross Weight not exceed Maximum Take Off wight then Press Close.
+\item Set cruise altitude in Route Manager to 41000 feet. Be careful that if you have heavy weight you can not reach high altitude and of cause if you don't have enough distance you can not reach that cruise altitude ether and that will cause VNAV not available.
+\item Now you can save this route for later use.
+\item Press Activate button then Close Route Manager.
+\item You may close Map or keep it open with Transparent to check course.
+\item Set cruise Alt to MCP Altitude counter to 41000. Left click on AUTO to 1000 then press and hold the left button or scroll center button on left lower of knob to adjust.
+\item Set IAS counter to V2+15knot. This time 145knot. You can check with /instrumentation/weu/state/v2. Press and hold center button of mouse on IAS knob you can decrease the value.
+\item Press LNAV, VNAV buttons.
+\item Set both A/T ARM switches to arm.
+\item Adjust QNE. Set Autobrake to RTO.
+\item Rotate SEAT BELTS knob to ON 4 times to notice cabin crew to close door and set door mode to auto.
+\item Set Left START IGNITION knob to start.
+\item Once engine start to rotate, set left FUEL CONTROL switch on pedestal to RUN.
+\item When engine starts and is stable, continue to Right engine as well.
+\item Stop APU.
+\item Make sure no warning light is lit on overhead panel.
+\item Release parking brake (Shift + b).
+\item Lower the flap to 15.
+\item Turn on Landing Light, Logo light and Wing light. Turn off the cabin light (Ctrl-l).
+\item Once you are on runway 08R, then press Heading HOLD button to set heading to runway heading.
+\item Turn off the Taxi light.
+\item Advance thrust lever to half way then press Ctrl-t to engage A/T to TO/GA mode.
+\item Rotate when you reach VR.
+\item Keep pitch angle 15deg then gear up when V/S ind plus.
+\item Wait until gear up, then adjust pitch trim to maintain F/D pitch bar center.
+\item Flap up according to the speed.
+\item Once ship stable without any force apply to control, then press AP.
+\item Turn on the cabin light.
+\item Now ship follows LNAV course and climb to cruise altitude by VNAV.
+\item Around 10000ft, turn off the landing light.
+\item When you pass the FL14(Japan) or FL18(USA)(You can change in Autopilot Control menu), press STD button to set STD to QNH.
+\item Once reach to the cruise altitude and before you reach the TOD(Top Of Descent) (Green circle on route ), set Altitude counter to 2500 (Arrival airport AGL 2500, this time KMIA elevation is 8ft thus 2500ft). If you get “Reset Altitude” warning message you may not use VNAV any more so please use normal Autopilot such as V/S or FLCH mode till approach.
+\item When ship reaches TOD, automatically start to descent with 0.78M or 280Knot.
+\item When pass the transition altitude (FL14) press STD button and adjust QNH to KMIA pressure.
+\item Around 10000ft, turn on the landing light. Turn off the cabin light.
+\item Equipment$\rightarrow$Radio settings <F12>, Set 109.50 of KMIA 27 ILS frequency to Nav1.
+\item Press IAS knob to speed intervention. Set FlapUP placard speed+5 when you reach 3200AGL.
+\item Set Flap to 1.
+\item Press APP button at place 3nm to APP-4.
+\item Once you capture localizer then set speed to flap1 placard speed+5 and set flap to 5.
+\item When capture the GS, set Airspeed to flap5 placard speed+5 then set flap to 15.
+\item When pass the altitude 2000 feet (AGL 2000ft) down the Landing Gear and set Airspeed to flap15 placard speed+5 and set flap to 20.
+\item Set Airspeed to vref+5 around flap5 placard speed.
+\item Set flap to 25 around vref+30.
+\item Set flap to 30 around vref+20.
+\item After touch down, enable Thrust Reverse until Airspeed reduce to 60knot. Do not use manual brake.
+\item AP disengaged automatically at 50knots then exit nearest taxi way then go to your parking spot with flap up. Turn off landing light. Turn on taxi light. Start APU.
+\item Stop at parking, set parking brake then shut down the engine.
+\item After embankment, stop APU then BATTERY off.
+\end{enumerate}
+\subsection{Autolanding}
+\begin{enumerate}
+\item Start 777-200ER at any place.
+\item Set flap to 5. You don't need to wait it is set.
+\item Select menu 'Location' -> 'Position Aricrft in Air'
+\item Select Airport 'KATL' Runway '9L', set Distance 10nm, Altitude 3500ft (AGL 2500ft), Airspeed /instrumentation/weu/state/fl1 +5knots (~=190) then Press OK.
+\item ILS is automatically tuned so you don't need to set it.
+\item Press 'APP' button. (APP lights come on)
+\item Set Autobrake to '2'.
+\item Set Left VOR switch on to VOR L to see distance from airport.
+\item When capture the GS, set Airspeed to flap 5 placard speed+5 (~=170) then set Flap to 15.
+\item When pass the altitude 3000feet (AGL 2000feet) down the Landing Gear and set Airspeed to flap15 placard speed+5 (!= 150) and set Flap to 20.
+\item Set Speedbrake (Spoiler) to Auto ('='key).
+\item Set Airspeed to vref+5 (~=130) when current speed is reduced to flap5 placard speed (~=155).
+\item Set flap to 25 around vref+20.
+\item Set flap to 30 around vref+15.
+\item You are now stable 130knot around 2000feet (AGL 1000feet).
+\item After touch down, enable Thrust Reverse until Airspeed reduce to 60knot. Do not use manual brake.
+\item Wait for ship stops.
+\end{enumerate}

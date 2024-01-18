@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+    <name>LHegt</name>
+    <w-base>55</w-base>
+    <h-base>55</h-base>
+
+    <layers>
+
+        <layer>
+            <name>Legt</name>
+            <emissive>true</emissive>
+            <w>256</w>
+            <h>256</h>
+            <texture>
+                <path>Aircraft/777/Models/Instruments/EICAS/eicas.png</path>
+                <x1>0.0</x1>
+                <y1>0.0</y1>
+                <x2>1.0</x2>
+                <y2>1.0</y2>
+            </texture>
+        </layer>
+
+    </layers>
+
+</PropertyList>

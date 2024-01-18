@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
+
+<PropertyList>
+	<name>Checklist: Takeoff</name>
+	<description>You're already on or at the runway. Your crew just reported the cabin to be ready. All passengers are tightly fastened in their seats - nervously awaiting a timely departure. And they trust their admired captain in performing an uneventful takeoff.
+
+This tutorial takes you through the final aircraft preparations - and actual takeoff.
+
+Are you ready for takeoff?
+	</description>
+
+	<audio-dir>Aircraft/777/Tutorials</audio-dir>
+
+	<init>
+		<set>
+			<property>controls/flight/speedbrake-lever</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>autopilot/autobrake/step</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>instrumentation/transponder/mode-switch</property>
+			<value>0</value>
+		</set>
+	</init>
+
+	<step>
+		<message>Ok, captain, I'll walk you through the takeoff checklist.</message>
+	</step>
+
+	<step>
+		<message>Check: flap takeoff setting. Adjust to "flaps 20".</message>
+		<exit>
+			<condition>
+				<equals>
+					<property>controls/flight/flaps</property>
+					<value>0.666</value>
+				</equals>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.4167</x-m>
+			<y-m>0.1500</y-m>
+			<z-m>0.1600</z-m>
+			<scale>7.0000</scale>
+		</marker>
+		<view>
+			<heading-offset-deg>312.0</heading-offset-deg>
+			<pitch-offset-deg>-29.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: parking-brake OFF</message>
+		<exit>
+			<condition>
+				<not>
+					<property>controls/gear/brake-parking</property>
+				</not>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.3258</x-m>
+			<y-m>-0.1842</y-m>
+			<z-m>0.0683</z-m>
+			<scale>3.0000</scale>
+		</marker>
+		<view>
+			<heading-offset-deg>3.8</heading-offset-deg>
+			<pitch-offset-deg>-57.8</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.3</x-offset-m>
+			<y-offset-m>0.7</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Apply minimal thrust, enter the runway, align with the center-line and stop.</message>
+		<view>
+			<heading-offset-deg>360</heading-offset-deg>
+			<pitch-offset-deg>0</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: NAV lights ON</message>
+		<exit>
+			<condition>
+				<property>controls/lighting/nav-lights</property>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.4900</x-m>
+			<y-m>0.0608</y-m>
+			<z-m>1.0816</z-m>
+			<scale>1.5667</scale>
+		</marker>
+		<view>
+			<heading-offset-deg>305.1</heading-offset-deg>
+			<pitch-offset-deg>18.2</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: strobe light ON</message>
+		<!--exit>
+			<condition>
+				<property>controls/lighting/strobe</property>
+			</condition>
+		</exit-->
+	</step>
+
+	<step>
+		<message>Check: cabin lights OFF (Ctrl-L)</message>
+		<exit>
+			<condition>
+				<not>
+					<property>controls/lighting/cabin-lights</property>
+				</not>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>Check: transponder TA/RA SET</message>
+		<marker>
+			<x-m>-1.0842</x-m>
+			<y-m>0.1750</y-m>
+			<z-m>0.0150</z-m>
+			<scale>3.0000</scale>
+		</marker>
+		<exit>
+			<condition>
+				<equals>
+					<property>instrumentation/transponder/mode-switch</property>
+					<value>4</value>
+				</equals>
+			</condition>
+		</exit>
+		<view>
+			<heading-offset-deg>269.4</heading-offset-deg>
+			<pitch-offset-deg>-48.9</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.5</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+			<field-of-view>14.8</field-of-view>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: speed-brakes AUTO (armed for rejected takeoff)</message>
+		<exit>
+			<condition>
+				<equals>
+					<property>controls/flight/speedbrake-lever</property>
+					<value>1</value>
+				</equals>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.3800</x-m>
+			<y-m>-0.0483</y-m>
+			<z-m>0.1817</z-m>
+			<scale>5.0000</scale>
+		</marker>
+		<view>
+			<heading-offset-deg>312.0</heading-offset-deg>
+			<pitch-offset-deg>-29.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+			<field-of-view>70</field-of-view>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: auto-brakes RTO (armed for rejected takeoff)</message>
+		<exit>
+			<condition>
+				<equals>
+					<property>autopilot/autobrake/step</property>
+					<value>-2</value>
+				</equals>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.7833</x-m>
+			<y-m>0.1658</y-m>
+			<z-m>0.2725</z-m>
+			<scale>5.0000</scale>
+		</marker>
+		<view>
+			<heading-offset-deg>312.0</heading-offset-deg>
+			<pitch-offset-deg>-29.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Tower, 777-heavy. We're ready for departure!</message>
+		<view>
+			<heading-offset-deg>360.0</heading-offset-deg>
+			<pitch-offset-deg>0</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>777-heavy, cleared for takeoff. Maintain runway heading. Climb to 4000.</message> 
+		<view>
+			<view-number>3</view-number>
+		</view>
+	</step>
+
+	<step>
+		<message>Cleared for takeoff. Check: Both thrust-levers 75%</message>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>controls/engines/engine[0]/throttle</property>
+					<value>0.75</value>
+				</greater-than>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.4708</x-m>
+			<y-m>0.0783</y-m>
+			<z-m>0.1758</z-m>
+			<scale>7.0000</scale>
+		</marker>
+		<view>
+			<view-number>0</view-number>
+			<heading-offset-deg>312.0</heading-offset-deg>
+			<pitch-offset-deg>-29.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>When above 130kts: rotate!</message>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>velocities/airspeed-kt</property>
+					<value>110</value>
+				</greater-than>
+			</condition>
+		</exit>
+		<view>
+			<heading-offset-deg>360.0</heading-offset-deg>
+			<pitch-offset-deg>0</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-22.8</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Rotate!</message>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>orientation/pitch-deg</property>
+					<value>5</value>
+				</greater-than>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>Climb nice and easy. Do not exceed 15 degree pitch.</message>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>position/altitude-agl-ft</property>
+					<value>200</value>
+				</greater-than>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>Positive climb - gear up!</message>
+		<exit>
+			<condition>
+				<not>
+					<property>controls/gear/gear-down</property>
+				</not>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.8033</x-m>
+			<y-m>0.1458</y-m>
+			<z-m>0.3758</z-m>
+			<scale>3.0000</scale>
+		</marker>
+	</step>
+
+	<step>
+		<message>Continue climbing to 4000. Do not exceed 15 degree pitch.</message>
+	</step>
+
+	<step>
+		<message>Check: airspeed. Maintain above 170kts.</message>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>velocities/airspeed-kt</property>
+					<value>170</value>
+				</greater-than>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>Retract flaps!</message>
+		<exit>
+			<condition>
+				<equals>
+					<property>controls/flight/flaps</property>
+					<value>0</value>
+				</equals>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.4167</x-m>
+			<y-m>0.1500</y-m>
+			<z-m>0.1600</z-m>
+			<scale>7.0000</scale>
+		</marker>
+	</step>
+
+	<step>
+		<message>Continue climbing to 4000. Maintain runway heading. Do not exceed 15 degree pitch.</message>
+		<exit>
+			<condition>
+				<greater-than>
+					<property>instrumentation/altimeter/indicated-altitude-ft</property>
+					<value>4000</value>
+				</greater-than>
+			</condition>
+		</exit>
+	</step>
+
+	<step>
+		<message>Ok, well done, captain! We're roaring through the skies!</message>
+	</step>
+
+	<end>
+		<message>Takeoff checklist complete. I can walk you through the "Approach and Landing" tutorial later.</message>
+	</end>
+
+</PropertyList>

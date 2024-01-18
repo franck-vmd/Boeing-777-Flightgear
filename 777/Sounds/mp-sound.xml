@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<fx>
+
+    <engine>
+        <name>left engine</name>
+        <path>/Aircraft/777/Sounds/jet-trent2.wav</path>
+        <mode>looped</mode>
+        <condition>
+            <property>engines/engine[0]/rpm</property>
+        </condition>
+        <volume>
+            <property>engines/engine[0]/rpm</property>
+            <offset>-0.75</offset>
+            <factor>0.0125</factor>
+            <min>0.0</min>
+            <max>5.0</max>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>9.8</y>
+            <z>-3</z>
+        </position>
+        <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>right engine</name>
+        <path>/Aircraft/777/Sounds/jet-trent2.wav</path>
+        <mode>looped</mode>
+        <condition>
+            <property>engines/engine[1]/rpm</property>
+        </condition>
+        <volume>
+            <property>engines/engine[1]/rpm</property>
+            <offset>-0.75</offset>
+            <factor>0.0125</factor>
+            <min>0.0</min>
+            <max>5.0</max>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>-9.8</y>
+            <z>-3</z>
+        </position>
+        <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>left n1</name>
+        <path>/Aircraft/777/Sounds/jet-trent1.wav</path>
+        <mode>looped</mode>
+        <property>engines/engine[0]/rpm</property>
+        <pitch>
+            <property>engines/engine[0]/rpm</property>
+            <offset>0.8</offset>
+            <factor>0.01</factor>
+            <min>0.0</min>
+            <max>100.0</max>
+        </pitch>
+        <volume>
+            <property>engines/engine[0]/rpm</property>
+            <factor>0.1</factor>
+            <min>0.0</min>
+            <max>0.5</max>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>9.8</y>
+            <z>-3</z>
+        </position>
+        <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>right n1</name>
+        <path>/Aircraft/777/Sounds/jet-trent1.wav</path>
+        <mode>looped</mode>
+        <property>engines/engine[1]/rpm</property>
+        <volume>
+            <property>engines/engine[1]/rpm</property>
+            <factor>0.1</factor>
+            <min>0.0</min>
+            <max>0.5</max>
+        </volume>
+        <pitch>
+            <property>engines/engine[1]/rpm</property>
+            <offset>0.8</offset>
+            <factor>0.01</factor>
+            <min>0.0</min>
+            <max>100.0</max>
+        </pitch>
+        <position>
+            <x>0</x>
+            <y>-9.8</y>
+            <z>-3</z>
+        </position>
+        <reference-dist>600.0</reference-dist>
+        <max-dist>6000.0</max-dist>
+    </engine>
+
+</fx>
+
+</PropertyList>

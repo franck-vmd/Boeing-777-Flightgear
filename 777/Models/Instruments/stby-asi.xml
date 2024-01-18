@@ -1,0 +1,101 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+ <path>stby-asi.ac</path>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>stbytxt.100</object-name>
+   <property>/instrumentation/airspeed-indicator/indicator-speed-kt</property>
+   <factor>0.001</factor>
+   <step>100</step>
+        <scroll>1</scroll>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>stbytxt.10</object-name>
+   <property>/instrumentation/airspeed-indicator/indicator-speed-kt</property>
+   <factor>0.01</factor>
+   <step>10</step>
+        <scroll>1</scroll>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>stbytxt.1</object-name>
+   <property>/instrumentation/airspeed-indicator/indicator-speed-kt</property>
+   <factor>0.1</factor>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>Stbyneedle</object-name>
+   <property>/instrumentation/airspeed-indicator/indicator-speed-kt</property>
+   <interpolation>
+    <entry>
+      <ind>30</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>80</ind>
+      <dep>25</dep>
+    </entry>
+    <entry>
+      <ind>160</ind>
+      <dep>130</dep>
+    </entry>
+    <entry>
+      <ind>250</ind>
+      <dep>245</dep>
+    </entry>
+    <entry>
+      <ind>300</ind>
+      <dep>270</dep>
+    </entry>
+    <entry>
+      <ind>450</ind>
+      <dep>330</dep>
+    </entry>
+   </interpolation>
+  <center>
+   <x-m>0.01282</x-m>
+   <y-m>0</y-m>
+   <z-m>0.000662</z-m>
+  </center>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>StbyAsi.screenoff</object-name>
+        <condition>
+            <less-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </less-than>
+        </condition>
+    </animation>
+
+</PropertyList>

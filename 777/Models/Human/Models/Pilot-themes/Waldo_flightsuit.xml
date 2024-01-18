@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <sim>
+     <model>
+			 <crew>
+				<pilot>
+            <theme-name>Waldo Scifi</theme-name>
+            <character>0</character>
+		        <gender>0</gender>
+	          <outfit>1</outfit>
+        </pilot>
+			</crew>
+		</model>
+  </sim>
+
+</PropertyList>

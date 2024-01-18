@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>Cone2.ac</path>
+
+<animation>
+    <type>select</type>
+    <object-name>Cone4</object-name>
+    <object-name>Cone5</object-name>
+    <object-name>Cone6</object-name>
+    <condition>
+        <equals>
+            <property>services/cones/cone2-enable</property>
+            <value>1</value>
+        </equals>
+    </condition>
+</animation>
+
+<!--animation>
+    <type>material</type>
+    <object-name>Cone4</object-name>
+    <object-name>Cone5</object-name>
+    <object-name>Cone6</object-name>
+    <condition>
+        <greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+        </greater-than>
+    </condition>
+    <emission>
+        <red>0.9</red>
+        <green>0.9</green>
+        <blue>0.9</blue>
+    </emission>
+</animation-->
+
+<animation>
+    <type>translate</type>
+    <object-name>Cone4</object-name>
+    <object-name>Cone5</object-name>
+    <object-name>Cone6</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+        <entry><ind>0.18</ind><dep>0</dep></entry>
+        <entry><ind>0.21</ind><dep>0.03</dep></entry>
+    </interpolation>
+    <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+    </axis>
+</animation>
+  
+<animation>
+    <type>pick</type>
+    <object-name>Cone4</object-name>
+    <object-name>Cone5</object-name>
+    <object-name>Cone6</object-name>
+    <action>
+        <button>0</button>
+        <binding>
+            <command>property-toggle</command>
+            <property>services/cones/cone2-enable</property>
+        </binding>
+    </action>
+</animation>
+
+
+</PropertyList>
