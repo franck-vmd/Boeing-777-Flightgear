@@ -233,6 +233,10 @@ Franck.VMD
         <object-name>Plate_Base</object-name>
         <object-name>SidePlate</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -246,6 +250,12 @@ Franck.VMD
     <animation>
         <type>material</type>
                 <object-name>Lettering_L_MSP</object-name>
+                <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>

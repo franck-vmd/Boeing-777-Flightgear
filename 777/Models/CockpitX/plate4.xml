@@ -124,21 +124,7 @@ Franck.VMD
             <red>0.1</red>
             <green>0.1</green>
             <blue>0.1</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
         </emission>
-        <ambient>
-            <red>1.0</red>
-            <green>1.0</green>
-            <blue>1.0</blue>
-        </ambient>
-        <diffuse>
-            <red>0</red>
-            <green>0</green>
-            <blue>0</blue>
-        </diffuse>
-        <specular>
-            <red>0</red>
-            <green>0</green>
-            <blue>0</blue>
-        </specular>
     </animation>
 </PropertyList>

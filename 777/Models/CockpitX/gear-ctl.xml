@@ -651,6 +651,10 @@ Franck.VMD
         <object-name>GearLever.001</object-name>
         <object-name>Lock.OVR</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -668,6 +672,12 @@ Franck.VMD
                 <object-name>FLAP_OVRD_Switch</object-name>
                 <object-name>GEAR_OVRD_Switch</object-name>
                 <object-name>TERRAIN_OVRD_Switch</object-name>
+                <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>

@@ -60,7 +60,7 @@ Franck.VMD
 
     <animation>
         <type>material</type>
-                <object-name>Lettering_GB</object-name>
+        <object-name>Lettering_GB</object-name>
         <object-name>Lettering_SW_L</object-name>
         <object-name>Lettering_SW_R</object-name>
         <object-name>Lettering_TS_L</object-name>
@@ -81,6 +81,21 @@ Franck.VMD
         <object-name>Lettering_OxMask_4</object-name>
         <object-name>Lettering_MTerm_1</object-name>
         <object-name>Lettering_MTerm_2</object-name>
+        <object-name>MC_Marker</object-name>
+        <object-name>MC_Ring</object-name>
+        <object-name>Brake_Press.btn</object-name>
+        <object-name>Brake_Press_Bezel</object-name>
+        <object-name>Brake_Press_Index</object-name>
+        <object-name>MST_WRN_L</object-name>
+        <object-name>MST_WRN_R</object-name>
+        <object-name>MST_CTN_L</object-name>
+        <object-name>MST_CTN_R</object-name>
+        <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>
@@ -180,7 +195,7 @@ Franck.VMD
 
     <model>
         <name>APpanel</name>
-        <path>Aircraft/777/Models/Cockpit/APpanel3.xml</path>
+        <path>Aircraft/777/Models/Cockpit/APpanel.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -556,6 +571,17 @@ Franck.VMD
 
 <!--  controls -->
 
+    <animation>
+        <type>select</type>
+        <object-name>MTerm_PView_Disp.of</object-name>
+        <condition>
+         <less-than>
+		<property>systems/electrical/outputs/efis</property>
+		<value>15</value>
+	</less-than>
+        </condition>
+    </animation>
+
      <animation>
         <type>rotate</type>
         <object-name>MC_Ring</object-name>
@@ -924,11 +950,11 @@ Franck.VMD
            <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
         </condition>
 	</animation>
@@ -1167,11 +1193,11 @@ Franck.VMD
         <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
         </condition>
 	</animation>
@@ -1210,14 +1236,7 @@ Franck.VMD
 			</binding>
 		</action>
            <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+            <property>controls/switches/DOOR_Switch</property>
         </condition>
 	</animation>
 
@@ -1380,16 +1399,6 @@ Franck.VMD
 				</script>
 			</binding>
 		</action>
-        <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
 	</animation>
 
     <animation>
@@ -1405,16 +1414,6 @@ Franck.VMD
 				</script>
 			</binding>
 		</action>
-        <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
 	</animation>
 	
     <animation>
@@ -1786,6 +1785,10 @@ Franck.VMD
         <object-name>Window_L_Slide</object-name>
         <object-name>PanelL.wall_Top2</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -1832,6 +1835,10 @@ Franck.VMD
        <object-name>RHpedal</object-name>
        <object-name>LHpedal</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -1862,6 +1869,10 @@ Franck.VMD
        <object-name>Yoke_R_TrimL.Switch</object-name>
        <object-name>Yoke_R_TrimR.Switch</object-name>
        <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -1876,6 +1887,10 @@ Franck.VMD
         <type>material</type>
        <object-name>FloodR.light.001</object-name>
        <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>

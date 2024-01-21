@@ -91,7 +91,7 @@ Franck.VMD
         <object-name>gauche.017</object-name>
         <property-base>sim/model/fuselage</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR1.png</texture>
+        <texture>Liveries-KC/AFR1KC.png</texture>
     </animation>
 
     <animation>
@@ -104,7 +104,7 @@ Franck.VMD
         <object-name>Sphere.003</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR2.png</texture>
+        <texture>Liveries-KC/AFR2KC.png</texture>
     </animation>
     
     <animation>
@@ -115,9 +115,11 @@ Franck.VMD
         <object-name>Fuselage.002</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>Rmain.geardoor</object-name>
+        <object-name>Lmain.geardoor.001</object-name>
+        <object-name>Rmain.geardoor.001</object-name>
         <property-base>sim/model/fuselage1</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR3.png</texture>
+        <texture>Liveries-KC/AFR3KC.png</texture>
     </animation>
     
     <animation>
@@ -138,7 +140,7 @@ Franck.VMD
         <object-name>entry1rC2</object-name>
         <property-base>sim/model/fuselage2</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR4.png</texture>
+        <texture>Liveries-KC/AFR4KC.png</texture>
     </animation>
     
     <animation>
@@ -164,7 +166,7 @@ Franck.VMD
         <object-name>Wings.004</object-name>
         <property-base>sim/model/fuselage3</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR5.png</texture>
+        <texture>Liveries-KC/AFR5KC.png</texture>
     </animation>
 
     <animation>
@@ -201,7 +203,7 @@ Franck.VMD
         <object-name>Rgear1</object-name>
         <property-base>sim/model/fuselage4</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR6.png</texture>
+        <texture>Liveries-KC/AFR6KC.png</texture>
     </animation>
 
     <animation>
@@ -241,7 +243,7 @@ Franck.VMD
         <object-name>clapetGD7</object-name>
         <property-base>sim/model/fuselage5</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR7.png</texture>
+        <texture>Liveries-KC/AFR7KC.png</texture>
     </animation>
 
     <animation>
@@ -261,7 +263,7 @@ Franck.VMD
         <object-name>moteur4</object-name>
         <property-base>sim/model/fuselage6</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR8.png</texture>
+        <texture>Liveries-KC/AFR8KC.png</texture>
     </animation>
     
     <animation>
@@ -314,7 +316,7 @@ Franck.VMD
         <object-name>Rgear</object-name>
         <property-base>sim/model/fuselage7</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR9.png</texture>
+        <texture>Liveries-KC/AFR9KC.png</texture>
     </animation>
 
       <effect>
@@ -510,11 +512,11 @@ Franck.VMD
         <object-name>LFdoor</object-name>
         <object-name>LFdoor.002</object-name>
         <object-name>LRdoor</object-name>
-        <object-name>Lmain.geardoor</object-name>
+        <object-name>Lmain.geardoor.001</object-name>
         <object-name>RFdoor</object-name>
         <object-name>RFdoor.002</object-name>
         <object-name>RRdoor</object-name>
-        <object-name>Rmain.geardoor</object-name>
+        <object-name>Rmain.geardoor.001</object-name>
         <object-name>taxiL-on.002</object-name>
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
@@ -1348,6 +1350,7 @@ Franck.VMD
 		<name>c33</name>
 		<type>rotate</type>
 		<object-name>Lmain.geardoor</object-name>
+                <object-name>Lmain.geardoor.001</object-name>
 		<property>sim/multiplay/generic/float[55]</property>
 		<factor>80</factor>
         <center>
@@ -1446,6 +1449,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lmain.geardoor</object-name>
+        <object-name>Lmain.geardoor.001</object-name>
         <property>gear/gear[1]/position-norm</property>
         <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
@@ -2011,6 +2015,7 @@ Franck.VMD
 		<name>c33</name>
 		<type>rotate</type>
 		<object-name>Rmain.geardoor</object-name>
+		<object-name>Rmain.geardoor.001</object-name>
 		<property>sim/multiplay/generic/float[55]</property>
 		<factor>-80</factor>
         <center>
@@ -2083,6 +2088,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rmain.geardoor</object-name>
+        <object-name>Rmain.geardoor.001</object-name>
         <property>gear/gear[2]/position-norm</property>
         <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>

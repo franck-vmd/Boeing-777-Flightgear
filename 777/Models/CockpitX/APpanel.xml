@@ -2522,6 +2522,10 @@ Franck.VMD
         <object-name>ALT.knob</object-name>
         <object-name>ALTmode.knob</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -2570,6 +2574,12 @@ Franck.VMD
         <object-name>AP_Lettering.002</object-name>
         <object-name>HDG.sel</object-name>
         <object-name>BLimit.knob.001</object-name>
+        <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>

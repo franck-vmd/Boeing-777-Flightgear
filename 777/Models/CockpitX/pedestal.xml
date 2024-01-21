@@ -96,7 +96,7 @@ Franck.VMD
 
    <model>
         <name>MFD</name>
-        <path>Aircraft/777/Models/InstrumentsX/MFD/MFD1.xml</path>
+        <path>Aircraft/777/Models/Instruments/MFD/MFD1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -107,7 +107,7 @@ Franck.VMD
 
     <model>
         <name>CDU1</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.681</x-m>
             <y-m>-0.184</y-m>
@@ -141,7 +141,7 @@ Franck.VMD
 
     <model>
         <name>CDU1</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing1.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -162,7 +162,7 @@ Franck.VMD
 
     <model>
         <name>CDU2</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.681</x-m>
             <y-m>0.185</y-m>
@@ -196,7 +196,7 @@ Franck.VMD
 
     <model>
         <name>CDU2</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing2.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing2.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -217,7 +217,7 @@ Franck.VMD
 
     <model>
         <name>CDU3</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.077</x-m>
             <y-m>-0.000299</y-m>
@@ -251,7 +251,7 @@ Franck.VMD
 
    <model>
         <name>CDU3</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing3.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing3.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -272,7 +272,7 @@ Franck.VMD
 
     <model>
         <name>RadioL1</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioL1.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioL1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -282,7 +282,7 @@ Franck.VMD
 
    <model>
         <name>RadioL</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioL.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioL.xml</path>
         <offsets>
             <x-m>-1.25914</x-m>
             <y-m>-0.13209</y-m>
@@ -292,7 +292,7 @@ Franck.VMD
 
     <model>
         <name>RadioR1</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioR1.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioR1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -302,7 +302,7 @@ Franck.VMD
 
     <model>
         <name>RadioR</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioR.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioR.xml</path>
         <offsets>
             <x-m>-1.25914</x-m>
             <y-m>0.14420</y-m>
@@ -312,7 +312,7 @@ Franck.VMD
 
     <model>
         <name>RadioC1</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioC1.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioC1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -322,7 +322,7 @@ Franck.VMD
 
     <model>
         <name>RadioC</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioC.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioC.xml</path>
         <offsets>
             <x-m>-1.04656</x-m>
             <y-m>-0.13209</y-m>
@@ -332,7 +332,7 @@ Franck.VMD
 
     <model>
         <name>tcas-ctl1</name>
-        <path>Aircraft/777/Models/InstrumentsX/tcas-ctl1.xml</path>
+        <path>Aircraft/777/Models/Instruments/tcas-ctl1.xml</path>
         <pitch-deg>1.70</pitch-deg>
         <offsets>
             <x-m>0.0</x-m>
@@ -343,7 +343,7 @@ Franck.VMD
 
     <model>
         <name>tcas-ctl</name>
-        <path>Aircraft/777/Models/InstrumentsX/tcas-ctl.xml</path>
+        <path>Aircraft/777/Models/Instruments/tcas-ctl.xml</path>
         <pitch-deg>1.70</pitch-deg>
         <offsets>
             <x-m>-1.11579</x-m>
@@ -386,6 +386,37 @@ Franck.VMD
     </effect>
 
 <!--  controls -->
+
+    <animation>
+        <type>translate</type>
+        <object-name>DOOR_Switch</object-name>
+        <property>controls/switches/DOOR_Switch</property>
+        <factor>0.004</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>DOOR_Switch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/switches/DOOR_Switch</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(2);
+                </script>
+            </binding>
+        </action>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -852,9 +883,9 @@ Franck.VMD
         <property>controls/switches/AFASwitchTimer/position-norm</property>
         <factor>-92</factor>
         <center>
-            <x-m>-0.091</x-m>
-            <y-m>0</y-m>
-            <z-m>0.440</z-m>
+            <x-m>-1.37724</x-m>
+            <y-m>0.216028</y-m>
+            <z-m>0.04458</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -941,8 +972,8 @@ Franck.VMD
             <z>-0.013</z>
         </axis>
         <center>
-            <x-m>0.0904</x-m>
-            <y-m>-0.1822</y-m>
+            <x-m>-1.1978</x-m>
+            <y-m>-0.182246</y-m>
             <z-m>0.41480</z-m>
         </center>
     </animation>
@@ -1039,8 +1070,8 @@ Franck.VMD
             <z>-0.013</z>
         </axis>
         <center>
-            <x-m>0.0904</x-m>
-            <y-m>-0.1647</y-m>
+            <x-m>-1.1978</x-m>
+            <y-m>-0.164707</y-m>
             <z-m>0.41480</z-m>
         </center>
     </animation>
@@ -1137,8 +1168,8 @@ Franck.VMD
             <z>-0.013</z>
         </axis>
         <center>
-            <x-m>0.0904</x-m>
-            <y-m>-0.1473</y-m>
+            <x-m>-1.1978</x-m>
+            <y-m>-0.147361</y-m>
             <z-m>0.41480</z-m>
         </center>
     </animation>
@@ -1163,9 +1194,9 @@ Franck.VMD
         <property>controls/switches/AFASwitchTimer/position-norm</property>
         <factor>92</factor>
         <center>
-            <x-m>-0.091</x-m>
-            <y-m>0</y-m>
-            <z-m>0.440</z-m>
+            <x-m>-1.37724</x-m>
+            <y-m>0.216028</y-m>
+            <z-m>0.04458</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -1199,9 +1230,9 @@ Franck.VMD
         <property>controls/switches/afa_switch_cover</property>
         <factor>-90</factor>
         <center>
-            <x-m>-0.094</x-m>
-            <y-m>0.216</y-m>
-            <z-m>0.4416</z-m>
+            <x-m>-1.38208</x-m>
+            <y-m>0.21607</y-m>
+            <z-m>0.051658</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -1444,6 +1475,10 @@ Franck.VMD
         <object-name>RudderTrim_Wing1</object-name>
         <object-name>bar</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -1488,6 +1523,15 @@ Franck.VMD
         <object-name>Lettering_CS.TCAS</object-name>
         <object-name>Lettering_CS.TPH</object-name>
         <object-name>ruddertrim.needle</object-name>
+        <object-name>StabTrim_L_Mark</object-name>
+        <object-name>StabTrim_L.plane</object-name>
+        <object-name>Audio.pnl.007</object-name>
+        <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>

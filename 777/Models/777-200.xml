@@ -27,12 +27,14 @@ Franck.VMD
         <object-name>Fuselage</object-name>
         <object-name>Fuselage.004</object-name>
         <object-name>Fuselage.005</object-name>
+        <object-name>Fuselage.006</object-name>
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>ApuG.001</object-name>
         <object-name>ApuD.001</object-name>
         <object-name>entry8r</object-name>
         <object-name>entry9r</object-name>
+        <object-name>entry8r.001</object-name>
         <object-name>entry10r</object-name>
         <object-name>rlightext</object-name>
         <object-name>LFdoor</object-name>
@@ -43,7 +45,7 @@ Franck.VMD
         <object-name>wiper.r</object-name>
         <property-base>sim/model/fuselage</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR1.png</texture>
+        <texture>Liveries-200LR/AFR1.png</texture>
     </animation>
 
     <animation>
@@ -55,7 +57,7 @@ Franck.VMD
         <object-name>Wings4</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR2.png</texture>
+        <texture>Liveries-200LR/AFR2.png</texture>
     </animation>
     
     <animation>
@@ -64,11 +66,14 @@ Franck.VMD
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
         <object-name>Fuselage.002</object-name>
+        <object-name>Fuselage.003</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>Rmain.geardoor</object-name>
+        <object-name>Lmain.geardoor.001</object-name>
+        <object-name>Rmain.geardoor.001</object-name>
         <property-base>sim/model/fuselage1</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR3.png</texture>
+        <texture>Liveries-200LR/AFR3.png</texture>
     </animation>
     
     <animation>
@@ -89,7 +94,7 @@ Franck.VMD
         <object-name>entry4r</object-name>
         <property-base>sim/model/fuselage2</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR4.png</texture>
+        <texture>Liveries-200LR/AFR4.png</texture>
     </animation>
     
     <animation>
@@ -115,7 +120,7 @@ Franck.VMD
         <object-name>Wings.004</object-name>
         <property-base>sim/model/fuselage3</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR5.png</texture>
+        <texture>Liveries-200LR/AFR5.png</texture>
     </animation>
 
     <animation>
@@ -152,7 +157,7 @@ Franck.VMD
         <object-name>Rgear1</object-name>
         <property-base>sim/model/fuselage4</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR6.png</texture>
+        <texture>Liveries-200LR/AFR6.png</texture>
     </animation>
 
     <animation>
@@ -192,7 +197,7 @@ Franck.VMD
         <object-name>clapetGD7</object-name>
         <property-base>sim/model/fuselage5</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR7.png</texture>
+        <texture>Liveries-200LR/AFR7.png</texture>
     </animation>
 
     <animation>
@@ -203,16 +208,20 @@ Franck.VMD
         <object-name>Reversers3</object-name>
         <object-name>Reversers4</object-name>
         <object-name>Reversers1.001</object-name>
+        <object-name>Reversers1.002</object-name>
         <object-name>Reversers2.001</object-name>
+        <object-name>Reversers2.002</object-name>
         <object-name>Reversers3.001</object-name>
+        <object-name>Reversers3.002</object-name>
         <object-name>Reversers4.001</object-name>
+        <object-name>Reversers4.002</object-name>
         <object-name>moteur1</object-name>
         <object-name>moteur2</object-name>
         <object-name>moteur3</object-name>
         <object-name>moteur4</object-name>
         <property-base>sim/model/fuselage6</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR8.png</texture>
+        <texture>Liveries-200LR/AFR8.png</texture>
     </animation>
     
     <animation>
@@ -265,24 +274,18 @@ Franck.VMD
         <object-name>Rgear</object-name>
         <property-base>sim/model/fuselage7</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200/AFR9.png</texture>
+        <texture>Liveries-200LR/AFR9.png</texture>
     </animation>
 
       <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect2</inherits-from>
         <object-name>Fuselage</object-name>
         <object-name>entry8r</object-name>
-        <object-name>entry9r</object-name>
         <object-name>entry10r</object-name>
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>Fuselage.004</object-name>
       </effect>
-
-    <effect>
-        <inherits-from>Aircraft/777/Models/Effects/reflect6</inherits-from>
-        <object-name>Fuselage.003</object-name>
-    </effect>
 
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect1</inherits-from>
@@ -315,38 +318,6 @@ Franck.VMD
         <object-name>Reversers2.001</object-name>
         <object-name>Reversers3.001</object-name>
         <object-name>Reversers4.001</object-name>
-        <object-name>cage1</object-name>
-        <object-name>cage2</object-name>
-        <object-name>cage3</object-name>
-        <object-name>cage4</object-name>
-        <object-name>clapetDD1</object-name>
-        <object-name>clapetDD2</object-name>
-        <object-name>clapetDD3</object-name>
-        <object-name>clapetDD4</object-name>
-        <object-name>clapetDD5</object-name>
-        <object-name>clapetDD6</object-name>
-        <object-name>clapetDD7</object-name>
-        <object-name>clapetDG1</object-name>
-        <object-name>clapetDG2</object-name>
-        <object-name>clapetDG3</object-name>
-        <object-name>clapetDG4</object-name>
-        <object-name>clapetDG5</object-name>
-        <object-name>clapetDG6</object-name>
-        <object-name>clapetDG7</object-name>
-        <object-name>clapetGG1</object-name>
-        <object-name>clapetGG2</object-name>
-        <object-name>clapetGG3</object-name>
-        <object-name>clapetGG4</object-name>
-        <object-name>clapetGG5</object-name>
-        <object-name>clapetGG6</object-name>
-        <object-name>clapetGG7</object-name>
-        <object-name>clapetGD1</object-name>
-        <object-name>clapetGD2</object-name>
-        <object-name>clapetGD3</object-name>
-        <object-name>clapetGD4</object-name>
-        <object-name>clapetGD5</object-name>
-        <object-name>clapetGD6</object-name>
-        <object-name>clapetGD7</object-name>
         <object-name>moteur1</object-name>
         <object-name>moteur4</object-name>
         <object-name>FrtGear.lines</object-name>
@@ -554,9 +525,6 @@ Franck.VMD
         <usage>interior</usage>
         <path>Aircraft/777/Models/Cockpit/flightdeck-200.xml</path>
     </model>
-
-    <!-- Cam -->
-
     
     <!-- Seating -->
     
@@ -1240,29 +1208,12 @@ Franck.VMD
 		<name>c33</name>
 		<type>rotate</type>
 		<object-name>Lmain.geardoor</object-name>
+                <object-name>Lmain.geardoor.001</object-name>
 		<property>sim/multiplay/generic/float[55]</property>
 		<factor>80</factor>
         <center>
             <x-m>6.34297</x-m>
             <y-m>-1.12196</y-m>
-            <z-m>-3.43624</z-m>
-        </center>
-        <axis>
-            <x>1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-	</animation>
-
-   <animation>
-		<name>c33</name>
-		<type>rotate</type>
-		<object-name>Rmain.geardoor</object-name>
-		<property>sim/multiplay/generic/float[55]</property>
-		<factor>-80</factor>
-        <center>
-            <x-m>6.34297</x-m>
-            <y-m>1.12196</y-m>
             <z-m>-3.43624</z-m>
         </center>
         <axis>
@@ -1289,11 +1240,11 @@ Franck.VMD
           <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
         </condition>
 	</animation>
@@ -1356,6 +1307,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lmain.geardoor</object-name>
+        <object-name>Lmain.geardoor.001</object-name>
         <property>gear/gear[1]/position-norm</property>
         <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
@@ -1918,6 +1870,25 @@ Franck.VMD
   <!--       Right Gear      -->
 
     <animation>
+		<name>c33</name>
+		<type>rotate</type>
+		<object-name>Rmain.geardoor</object-name>
+                <object-name>Rmain.geardoor.001</object-name>
+		<property>sim/multiplay/generic/float[55]</property>
+		<factor>-80</factor>
+        <center>
+            <x-m>6.34297</x-m>
+            <y-m>1.12196</y-m>
+            <z-m>-3.43624</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+	</animation>
+
+    <animation>
         <name>RHaxle</name>
         <object-name>Raxle</object-name>
         <object-name>Raxle.001</object-name>
@@ -1975,6 +1946,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rmain.geardoor</object-name>
+        <object-name>Rmain.geardoor.001</object-name>
         <property>gear/gear[2]/position-norm</property>
         <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
@@ -2536,7 +2508,6 @@ Franck.VMD
     <animation>
 		<type>pick</type>
 		<object-name>ApuG</object-name>
-                <object-name>ApuD</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
@@ -2550,21 +2521,21 @@ Franck.VMD
           <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
         </condition>
 	</animation>
 	
 	<animation>
-		<name>c31</name>
+		<name>c32</name>
 		<type>rotate</type>
 		<object-name>ApuD</object-name>
 		<object-name>ApuD.001</object-name>
-		<property>sim/multiplay/generic/float[53]</property>
+		<property>sim/multiplay/generic/float[54]</property>
 		<factor>50</factor>
         <axis>
         <x1-m>33.1163</x1-m>
@@ -2574,6 +2545,31 @@ Franck.VMD
         <y2-m>0.25729</y2-m>
         <z2-m>0.94253</z2-m>
     </axis>
+	</animation>
+
+    <animation>
+		<type>pick</type>
+		<object-name>ApuD</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c32");
+				</script>
+			</binding>
+		</action>
+              <condition>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+         </condition>
 	</animation>
     
     <!-- Door Pick Animations cabine -->
@@ -2758,14 +2754,10 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 	
@@ -2783,14 +2775,10 @@ Franck.VMD
 			</binding>
 		</action>
         <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>	
 	
@@ -2808,14 +2796,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 	
@@ -2833,14 +2817,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -2858,14 +2838,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -2883,14 +2859,10 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -2908,14 +2880,10 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -2933,14 +2901,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>	
 	
@@ -2958,14 +2922,10 @@ Franck.VMD
 			</binding>
 		</action>
         <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>	
 	
@@ -2983,14 +2943,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3008,14 +2964,10 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3033,14 +2985,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3058,14 +3006,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3083,14 +3027,10 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3108,14 +3048,10 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3133,14 +3069,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3158,14 +3090,10 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3183,14 +3111,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3208,14 +3132,10 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3244,7 +3164,18 @@ Franck.VMD
         </condition>
 	</animation>
 
-   <!-- Portes Animations -->	
+   <!-- Portes Animations -->
+   
+   <animation>
+    <type>select</type>
+    <object-name>lumiere auto porte eteint</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>	
 
 <!-- Door1l Animations -->
 
@@ -3490,6 +3421,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+      <animation>
+    <type>select</type>
+    <object-name>porte automatique L1b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L1</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
   <!-- Door1r Animations -->
 	
@@ -3735,6 +3688,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+   <animation>
+    <type>select</type>
+    <object-name>porte automatique R1b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R1</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
    <!-- Door2l Animations -->
 	
@@ -3974,6 +3949,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+   <animation>
+    <type>select</type>
+    <object-name>porte automatique L2b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L2</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
    <!-- Door2r Animations -->
 
@@ -4213,6 +4210,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+   <animation>
+    <type>select</type>
+    <object-name>porte automatique R2b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R2</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
    <!-- Door3l Animations -->
 
@@ -4452,6 +4471,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+   <animation>
+    <type>select</type>
+    <object-name>porte automatique L3b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L3</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door3r Animations -->
 
@@ -4691,6 +4732,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+   <animation>
+    <type>select</type>
+    <object-name>porte automatique R3b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R3</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door4l Animations -->
 
@@ -4930,6 +4993,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+   <animation>
+    <type>select</type>
+    <object-name>porte automatique L4b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L4</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door4r Animations -->
 
@@ -5169,6 +5254,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+   <animation>
+    <type>select</type>
+    <object-name>porte automatique R4b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R4</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door moteur Animations -->	
 	
@@ -5249,14 +5356,15 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers1</object-name>
 		<object-name>Reversers1.001</object-name>
+                <object-name>Reversers1.002</object-name>
 		<object-name>cage3</object-name>
                 <object-name>cage3.001</object-name>
 		<property>sim/multiplay/generic/float[16]</property>
 		<factor>35</factor>
         <center>
-            <x-m>-0.929517</x-m>
-            <y-m>-9.6189</y-m>
-            <z-m>-1.00847</z-m>
+            <x-m>0.29672</x-m>
+            <y-m>-9.54727</y-m>
+            <z-m>-1.23495</z-m>
         </center>
 		<axis>
 			<x>1</x>
@@ -5270,14 +5378,15 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers2</object-name>
 		<object-name>Reversers2.001</object-name>
+                <object-name>Reversers2.002</object-name>
 		<object-name>cage1</object-name>
                 <object-name>cage1.001</object-name>
 		<property>sim/multiplay/generic/float[17]</property>
 		<factor>45</factor>
         <center>
-            <x-m>-0.929517</x-m>
-            <y-m>-10.1693</y-m>
-            <z-m>-1.00847</z-m>
+            <x-m>0.29672</x-m>
+            <y-m>-10.2407</y-m>
+            <z-m>-1.23495</z-m>
         </center>
 		<axis>
 			<x>-1</x>
@@ -5291,6 +5400,7 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers3</object-name>
 		<object-name>Reversers3.001</object-name>
+                <object-name>Reversers3.002</object-name>
 		<object-name>cage2</object-name>
                 <object-name>cage2.001</object-name>
 		<property>sim/multiplay/generic/float[18]</property>
@@ -5312,6 +5422,7 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers4</object-name>
 		<object-name>Reversers4.001</object-name>
+                <object-name>Reversers4.002</object-name>
 		<object-name>cage4</object-name>
                 <object-name>cage4.001</object-name>
 		<property>sim/multiplay/generic/float[19]</property>
@@ -5404,12 +5515,13 @@ Franck.VMD
 		<name>C12</name>
 		<type>rotate</type>
 		<object-name>entry8r</object-name>
+                <object-name>entry8r.001</object-name>
 		<property>sim/multiplay/generic/float[29]</property>
-		<factor>90</factor>
+		<factor>-80</factor>
         <center>
-            <x-m>-24.4024</x-m>
-            <y-m>-1.01762</y-m>
-            <z-m>-0.52632</z-m>
+            <x-m>-24.4914</x-m>
+            <y-m>-0.22074</y-m>
+            <z-m>-0.549672</z-m>
         </center>
 		<axis>
 			<x>0</x>
@@ -5423,11 +5535,11 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>entry9r</object-name>
 		<property>sim/multiplay/generic/float[29]</property>
-		<factor>115</factor>
+		<factor>165</factor>
         <center>
             <x-m>-24.4914</x-m>
-            <y-m>-0.803256</y-m>
-            <z-m>-0.543026</z-m>
+            <y-m>-0.803271</y-m>
+            <z-m>-0.544933</z-m>
         </center>
 		<axis>
 			<x>0</x>
@@ -6087,6 +6199,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Reversers1</object-name>
+        <object-name>Reversers1.002</object-name>
         <property>sim/multiplay/generic/float[6]</property>
         <factor>0.7</factor>
         <axis>
@@ -6099,6 +6212,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Reversers2</object-name>
+        <object-name>Reversers2.002</object-name>
         <property>sim/multiplay/generic/float[6]</property>
         <factor>0.7</factor>
         <axis>
@@ -6111,6 +6225,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Reversers3</object-name>
+        <object-name>Reversers3.002</object-name>
         <property>sim/multiplay/generic/float[6]</property>
         <factor>0.7</factor>
         <axis>
@@ -6123,6 +6238,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Reversers4</object-name>
+        <object-name>Reversers4.002</object-name>
         <property>sim/multiplay/generic/float[6]</property>
         <factor>0.7</factor>
         <axis>

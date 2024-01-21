@@ -8,7 +8,6 @@ Franck.VMD
 
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
-        <object-name>OHpanel.Lettering_Day</object-name>
         <object-name>Lettering_CB</object-name>
         <object-name>Lettering_Maint</object-name>
     </effect>
@@ -89,7 +88,6 @@ Franck.VMD
     </animation>
     <animation>
         <type>material</type>
-        <object-name>OHpanel.Lettering_Day</object-name>
         <object-name>Placard</object-name>
         <condition>
             <greater-than>
@@ -194,128 +192,6 @@ Franck.VMD
             </binding>
         </action>
     </animation>
-
- <animation>
-   <type>textranslate</type>
-   <object-name>P_OFV_L_Switch</object-name>
-    <property>controls/air/ofvfwd</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>translate</type>
-   <object-name>P_OFV_L_AcryFace</object-name>
-   <object-name>P_OFV_L_Switch</object-name>
-   <object-name>P_OFV_L_Shutter.Top</object-name>
-   <object-name>P_OFV_L_Shutter.Bottom</object-name>
-   <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>P_OFV_L_Shutter.Top</object-name>
-   <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
-        <factor>-92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.232</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>P_OFV_L_Shutter.Bottom</object-name>
-   <property>controls/switches/OFVFWDSwitchTimer/position-norm</property>
-        <factor>92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.232</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
- </animation>
-
- <animation>
-   <type>textranslate</type>
-   <object-name>P_OFV_R_Switch</object-name>
-    <property>controls/air/ofvaft</property>
-   <factor>0.0781</factor>
-   <axis>
-     <x>0</x>
-     <y>1</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>translate</type>
-   <object-name>P_OFV_R_AcryFace</object-name>
-   <object-name>P_OFV_R_Switch</object-name>
-   <object-name>P_OFV_R_Shutter.Top</object-name>
-   <object-name>P_OFV_R_Shutter.Bottom</object-name>
-   <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>P_OFV_R_Shutter.Top</object-name>
-   <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
-        <factor>-92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.232</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
- </animation>
-
- <animation>
-   <type>rotate</type>
-   <object-name>P_OFV_R_Shutter.Bottom</object-name>
-   <property>controls/switches/OFVAFTSwitchTimer/position-norm</property>
-        <factor>92</factor>
-        <center>
-            <x-m>0.0134</x-m>
-            <y-m>0</y-m>
-            <z-m>-0.232</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
- </animation>
 
   <animation>
    <type>textranslate</type>
@@ -1817,9 +1693,9 @@ Franck.VMD
      <z>0</z>
    </axis>
    <center>
-   <x-m>0.02675</x-m>
-   <y-m>-0.03114</y-m>
-   <z-m>-0.45365</z-m>
+   <x-m>0.01155</x-m>
+   <y-m>-0.031299</y-m>
+   <z-m>-0.453644</z-m>
   </center>
  </animation>
 
@@ -1931,23 +1807,6 @@ Franck.VMD
    <x-m>0.01439</x-m>
    <y-m>0.33713</y-m>
    <z-m>0.07473</z-m>
-  </center>
- </animation>
-
-<animation>
-   <type>rotate</type>
-   <object-name>LDG_ALT.knob</object-name>
-    <property>aaa/oh/PD3/LdgAlt</property>
-   <factor>180</factor>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
-   <center>
-   <x-m>0.02480</x-m>
-   <y-m>0.33951</y-m>
-   <z-m>-0.26387</z-m>
   </center>
  </animation>
 
@@ -3268,52 +3127,6 @@ Franck.VMD
         </action>
     </animation>
 
-<animation>
-        <type>pick</type>
-        <object-name>LDG_ALT.knob</object-name>
-        <action>
-            <button>0</button>
-            <button>3</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>aaa/oh/PD3/LdgAlt</property>
-                <step>0.1</step>
-                <min>0</min>
-                <max>1</max>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                controls.click(2);
-                </script>
-            </binding>
-        </action>
-    </animation>
-
-<animation>
-        <type>pick</type>
-        <object-name>LDG_ALT.knob</object-name>
-        <action>
-            <button>1</button>
-            <button>4</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>aaa/oh/PD3/LdgAlt</property>
-                <step>-0.1</step>
-                <min>0</min>
-                <max>1</max>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                controls.click(2);
-            </script>
-            </binding>
-        </action>
-    </animation>
-
     <animation>
         <type>pick</type>
         <object-name>EngineL.START</object-name>
@@ -4554,40 +4367,6 @@ Franck.VMD
         </axis>
     </animation>
 
-    <animation>
-        <type>rotate</type>
-        <object-name>OutFlow_FWD.toggle</object-name>
-        <property>controls/air/outflow_fwd</property>
-        <factor>15</factor>
-        <center>
-            <x-m>0.0121</x-m>
-            <y-m>0.2401</y-m>
-            <z-m>-0.2826</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>OutFlow_AFT.toggle</object-name>
-        <property>controls/air/outflow_aft</property>
-        <factor>15</factor>
-        <center>
-            <x-m>0.0121</x-m>
-            <y-m>0.2949</y-m>
-            <z-m>-0.2826</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
  <animation>
    <type>textranslate</type>
    <object-name>LHboost1_Switch</object-name>
@@ -5326,94 +5105,6 @@ Franck.VMD
             <binding>
                 <command>nasal</command>
                 <script>controls.click(1);</script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>OutFlow_FWD.toggle</object-name>
-        <action>
-            <button>0</button>
-            <button>3</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/air/outflow_fwd</property>
-                <step>1</step>
-                <min>-1</min>
-                <max>1</max>
-                <wrap>0</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(2);</script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>OutFlow_FWD.toggle</object-name>
-        <action>
-            <button>1</button>
-            <button>4</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/air/outflow_fwd</property>
-                <step>-1</step>
-                <min>-1</min>
-                <max>1</max>
-                <wrap>0</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(2);</script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>OutFlow_AFT.toggle</object-name>
-        <action>
-            <button>0</button>
-            <button>3</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/air/outflow_aft</property>
-                <step>1</step>
-                <min>-1</min>
-                <max>1</max>
-                <wrap>0</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(2);</script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>OutFlow_AFT.toggle</object-name>
-        <action>
-            <button>1</button>
-            <button>4</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/air/outflow_aft</property>
-                <step>-1</step>
-                <min>-1</min>
-                <max>1</max>
-                <wrap>0</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(2);</script>
             </binding>
         </action>
     </animation>
@@ -6878,44 +6569,6 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
-        <object-name>P_OFV_L_Switch</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-toggle</command>
-                <property>controls/air/ofvfwd-switch</property>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                controls.click(4);
-            </script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>P_OFV_R_Switch</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-toggle</command>
-                <property>controls/air/ofvaft-switch</property>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                controls.click(4);
-            </script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
         <object-name>AIR-EQCOOL_Switch</object-name>
         <action>
             <button>0</button>
@@ -7027,6 +6680,379 @@ Franck.VMD
             <z>0</z>
         </axis>
     </animation>
+    
+  
+ <!-- CABIN PRESSURIZATION PANEL --> 
+ <!-- Landing Alt--> 
+
+<animation>
+	<type>pick</type>
+	<object-name>OutFlow_FWD.toggle</object-name>
+	<action>
+	    <button>0</button>
+	    <repeatable>true</repeatable>
+	    <binding>
+		<command>nasal</command>
+		<script>pressurization.valve_adjust(1);</script>
+	    </binding>
+	    <binding>
+		<command>property-assign</command>
+		<property>controls/pressurization/valve-switch</property>
+		<value>1</value>
+	    </binding>
+	    <mod-up>
+		<binding>
+		    <command>property-assign</command>
+		    <property>controls/pressurization/valve-switch</property>
+		    <value>0</value>
+		</binding>
+	    </mod-up>
+	</action>
+	<action>
+	    <button>1</button>
+	    <repeatable>true</repeatable>
+	    <binding>
+		<command>nasal</command>
+		<script>pressurization.valve_adjust(-1);</script>
+	    </binding>
+	    <binding>
+		<command>property-assign</command>
+		<property>controls/pressurization/valve-switch</property>
+		<value>-1</value>
+	    </binding>
+	    <mod-up>
+		<binding>
+		    <command>property-assign</command>
+		    <property>controls/pressurization/valve-switch</property>
+		    <value>0</value>
+		</binding>
+	    </mod-up>
+	</action>
+</animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>OutFlow_AFT.toggle</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/air/outflow_aft</property>
+                <step>1</step>
+                <min>-1</min>
+                <max>1</max>
+                <wrap>0</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(2);</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>OutFlow_AFT.toggle</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>controls/air/outflow_aft</property>
+                <step>-1</step>
+                <min>-1</min>
+                <max>1</max>
+                <wrap>0</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(2);</script>
+            </binding>
+        </action>
+    </animation>  
+     
+     <animation>
+        <type>rotate</type>
+        <object-name>OutFlow_FWD.toggle</object-name>
+        <property>controls/pressurization/valve-switch</property>
+        <factor>15</factor>
+        <center>
+            <x-m>0.0121</x-m>
+            <y-m>0.2401</y-m>
+            <z-m>-0.2826</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>OutFlow_AFT.toggle</object-name>
+        <property>controls/air/outflow_aft</property>
+        <factor>15</factor>
+        <center>
+            <x-m>0.0121</x-m>
+            <y-m>0.2949</y-m>
+            <z-m>-0.2826</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+ 
+    <animation>
+   <type>textranslate</type>
+   <object-name>P_OFV_L_Switch</object-name>
+    <property>controls/pressurization/valve-manual[0]</property>
+   <factor>0.0781</factor>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>translate</type>
+   <object-name>P_OFV_L_AcryFace</object-name>
+   <object-name>P_OFV_L_Switch</object-name>
+   <object-name>P_OFV_L_Shutter.Top</object-name>
+   <object-name>P_OFV_L_Shutter.Bottom</object-name>
+   <property>controls/pressurization/valve-manual[0]</property>
+   <factor>0.004</factor>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>P_OFV_L_Shutter.Top</object-name>
+   <property>controls/pressurization/valve-manual[0]</property>
+        <factor>-92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.232</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>P_OFV_L_Shutter.Bottom</object-name>
+   <property>controls/pressurization/valve-manual[0]</property>
+        <factor>92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.232</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>P_OFV_R_Switch</object-name>
+    <property>controls/pressurization/valve-manual[1]</property>
+   <factor>0.0781</factor>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>translate</type>
+   <object-name>P_OFV_R_AcryFace</object-name>
+   <object-name>P_OFV_R_Switch</object-name>
+   <object-name>P_OFV_R_Shutter.Top</object-name>
+   <object-name>P_OFV_R_Shutter.Bottom</object-name>
+   <property>controls/pressurization/valve-manual[1]</property>
+   <factor>0.004</factor>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>P_OFV_R_Shutter.Top</object-name>
+   <property>controls/pressurization/valve-manual[1]</property>
+        <factor>-92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.232</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>P_OFV_R_Shutter.Bottom</object-name>
+   <property>controls/pressurization/valve-manual[1]</property>
+        <factor>92</factor>
+        <center>
+            <x-m>0.0134</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.232</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+   
+   
+    <animation>
+        <type>pick</type>
+        <object-name>P_OFV_L_Switch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/pressurization/valve-manual[0]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(4);
+            </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>P_OFV_R_Switch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/pressurization/valve-manual[1]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(4);
+            </script>
+            </binding>
+        </action>
+    </animation> 
+    
+<animation>
+        <type>pick</type>
+        <object-name>LDG_ALT.knob.001</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/pressurization/landing-alt-manual</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(4);
+            </script>
+            </binding>
+        </action>
+    </animation>
+    
+<animation>
+   <type>translate</type>
+   <object-name>LDG_ALT.knob.001</object-name>
+    <property>controls/pressurization/landing-alt-manual</property>
+   <factor>0.001</factor>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>  
+
+<animation>
+   <type>rotate</type>
+   <object-name>LDG_ALT.knob</object-name>
+    <property>controls/pressurization/landing-alt-ft</property>
+   <factor>180</factor>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+   <center>
+   <x-m>0.02480</x-m>
+   <y-m>0.33951</y-m>
+   <z-m>-0.26387</z-m>
+  </center>
+ </animation>
+ 
+<animation>
+	<type>pick</type>
+	<object-name>LDG_ALT.knob</object-name>
+	<action>
+	    <button>0</button>
+	    <button>3</button>
+	    <repeatable>true</repeatable>
+	    <binding>
+		<command>property-adjust</command>
+		<property>controls/pressurization/landing-alt-ft</property>
+		<min>-1000</min>
+		<max>14000</max>
+		<step>100</step>
+	    </binding>
+	</action>
+	<action>
+	    <button>1</button>
+	    <button>4</button>
+	    <repeatable>true</repeatable>
+	    <binding>
+		<command>property-adjust</command>
+		<property>controls/pressurization/landing-alt-ft</property>
+		<min>-1000</min>
+		<max>14000</max>
+		<step>-100</step>
+	    </binding>
+	</action>
+	<hovered>
+	    <binding>
+		<command>set-tooltip</command>
+		<tooltip-id>landing-alt-man</tooltip-id>
+		<label>Landing Altitude: %.0f</label>
+		<property>controls/pressurization/landing-alt-ft</property>
+	    </binding>
+	</hovered>
+</animation>
 
     <animation>
         <type>material</type>
@@ -7090,6 +7116,10 @@ Franck.VMD
         <object-name>Relec.fault</object-name>
         <object-name>LPCK.btn.012</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -7102,7 +7132,6 @@ Franck.VMD
 
     <animation>
         <type>material</type>
-                <object-name>OHpanel.Lettering_Day</object-name>
                 <object-name>Lettering_CB</object-name>
                 <object-name>Lettering_Maint</object-name>
                 <object-name>Placard</object-name>
@@ -7285,6 +7314,12 @@ Franck.VMD
    <object-name>XFeedFWD_Shutter.Bottom</object-name>
    <object-name>XFeedAFT_Shutter.Top</object-name>
    <object-name>XFeedAFT_Shutter.Bottom</object-name>
+        <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>

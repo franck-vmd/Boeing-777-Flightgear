@@ -1,4 +1,4 @@
-<!-- 777-300
+<!-- 777-200
 Franck.VMD
 -->
 
@@ -58,36 +58,56 @@ Franck.VMD
         </emission>
     </animation>
 
+    <animation>
+        <type>material</type>
+        <object-name>Lettering_GB</object-name>
+        <object-name>Lettering_SW_L</object-name>
+        <object-name>Lettering_SW_R</object-name>
+        <object-name>Lettering_TS_L</object-name>
+        <object-name>Lettering_TS_R</object-name>
+        <object-name>Lettering_FLP_R</object-name>
+        <object-name>Lettering_Tray_Top</object-name>
+        <object-name>OxMask_1_Base_Lettering</object-name>
+        <object-name>OxMask_1_Panel_Lettering</object-name>
+        <object-name>OxMask_2_Base_Lettering</object-name>
+        <object-name>OxMask_2_Panel_Lettering</object-name>
+        <object-name>OxMask_3_Base_Lettering</object-name>
+        <object-name>OxMask_3_Panel_Lettering</object-name>
+        <object-name>OxMask_4_Base_Lettering</object-name>
+        <object-name>OxMask_4_Panel_Lettering</object-name>
+        <object-name>Lettering_OxMask_1</object-name>
+        <object-name>Lettering_OxMask_2</object-name>
+        <object-name>Lettering_OxMask_3</object-name>
+        <object-name>Lettering_OxMask_4</object-name>
+        <object-name>Lettering_MTerm_1</object-name>
+        <object-name>Lettering_MTerm_2</object-name>
+        <object-name>MC_Marker</object-name>
+        <object-name>MC_Ring</object-name>
+        <object-name>Brake_Press.btn</object-name>
+        <object-name>Brake_Press_Bezel</object-name>
+        <object-name>Brake_Press_Index</object-name>
+        <object-name>MST_WRN_L</object-name>
+        <object-name>MST_WRN_R</object-name>
+        <object-name>MST_CTN_L</object-name>
+        <object-name>MST_CTN_R</object-name>
+        <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+    </animation>
+
      <!-- instrument-->
     <model>
         <name>panel1</name>
         <path>Aircraft/777/Models/Cockpit/panel.xml</path>
-    </model>
-
-    <model>
-        <name>EFB1</name>
-        <path>Aircraft/777/Models/Instruments/EFB/EFB.xml</path>
-        <offsets>
-            <x-m>-1.48634</x-m>
-            <y-m>-1.05282</y-m>
-            <z-m>0.34062</z-m>
-            <roll-deg>0.602</roll-deg>
-            <pitch-deg>-29.995</pitch-deg>
-            <heading-deg>39.697</heading-deg>
-        </offsets>
-    </model>
-
-    <model>
-        <name>EFB2</name>
-        <path>Aircraft/777/Models/Instruments/EFB/EFB.xml</path>
-        <offsets>
-            <x-m>-1.48448</x-m>
-            <y-m>1.05517</y-m>
-            <z-m>0.34054</z-m>
-            <roll-deg>-0.602</roll-deg>
-            <pitch-deg>-29.995</pitch-deg>
-            <heading-deg>-39.697</heading-deg>
-        </offsets>
     </model>
 
     <model>
@@ -375,7 +395,11 @@ Franck.VMD
    <effect>
         <name>interior-glass</name>
         <inherits-from>Aircraft/777/Models/Effects/interior-glass</inherits-from>
+        <parameters>
+        <rain-enabled>1</rain-enabled>
+        </parameters>
         <object-name>Glassinterrieur</object-name>
+        <object-name>Glassinterrieur.001</object-name>
         <object-name>GlassGinterieur</object-name>
         <object-name>GlassDinterieur</object-name>
     </effect>
@@ -397,8 +421,6 @@ Franck.VMD
         <object-name>Plate1</object-name>
         <object-name>Plate2</object-name>
         <object-name>Plate4</object-name>
-        <object-name>FMC_R.knob</object-name>
-        <object-name>InBoardDspl_R.knob</object-name>
         <object-name>Shield_Bottom_Tray</object-name>
         <object-name>Shield_Bottom_Plate</object-name>
         <object-name>Panel.Rwall.bottom</object-name>
@@ -409,38 +431,16 @@ Franck.VMD
         <object-name>Panel.Rwall.top</object-name>
         <object-name>SideWall_L.pnl</object-name>
         <object-name>TopSidePanel_L</object-name>
-        <object-name>MAPLightR.knob</object-name>
-        <object-name>CLOCKR.btn</object-name>
-        <object-name>MICR.btn</object-name>
-        <object-name>RShoulderHeat.knob</object-name>
-        <object-name>RFootHeat.knob</object-name>
-        <object-name>RBright_PnlFld1.knob</object-name>
-        <object-name>RBright_PnlFld2.knob</object-name>
-        <object-name>RBright_InbdDsp1.knob</object-name>
-        <object-name>LBright_InbdDsp2.knob</object-name>
-        <object-name>RBright_OutbdDsp.knob.003</object-name>
         <object-name>EFB_R.Txt.Map</object-name>
         <object-name>AirVentL.Sphere</object-name>
         <object-name>AirVentL.Base.001</object-name>
         <object-name>EFB_R.Txt.Chart</object-name>
-        <object-name>PanelR.wall.EFBKnob1</object-name>
-        <object-name>PanelR.wall.EFBKnob2</object-name>
         <object-name>EFB_R.Txt.Towing</object-name>
         <object-name>TillerR_Handle</object-name>
         <object-name>TillerR_Pivot2</object-name>
         <object-name>TillerR_Lever</object-name>
         <object-name>TillerR_Pivot1</object-name>
         <object-name>EFB_R.Txt.Tiller</object-name>
-        <object-name>MICL.btn</object-name>
-        <object-name>MAPLightL.knob</object-name>
-        <object-name>CLOCKL.btn</object-name>
-        <object-name>LFootHeat.knob</object-name>
-        <object-name>LShoulderHeat.knob</object-name>
-        <object-name>LBright_PnlFld2.knob</object-name>
-        <object-name>LBright_PnlFld1.knob</object-name>
-        <object-name>LBright_InbdDsp2.knob.001</object-name>
-        <object-name>LBright_InbdDsp1.knob</object-name>
-        <object-name>LBright_OutbdDsp.knob</object-name>
         <object-name>TillerL_Handle</object-name>
         <object-name>TillerL_Lever</object-name>
         <object-name>TillerL_Pivot2</object-name>
@@ -450,8 +450,6 @@ Franck.VMD
         <object-name>AirVentL.Base</object-name>
         <object-name>EFB_L.Txt.Towing</object-name>
         <object-name>EFB_L.Txt.Chart</object-name>
-        <object-name>PanelL.wall.EFBKnob1</object-name>
-        <object-name>PanelL.wall.EFBKnob2</object-name>
         <object-name>Tray_Left</object-name>
         <object-name>Tray_Right</object-name>
         <object-name>Tray_Right_Spring</object-name>
@@ -526,11 +524,8 @@ Franck.VMD
         <object-name>PanelR._Base2.002</object-name>
         <object-name>MTerm_Base</object-name>
         <object-name>MTerm_PView_Disp</object-name>
-        <object-name>MTerm_MLvl.knob</object-name>
-        <object-name>PilotView_Btn2</object-name>
         <object-name>Panel.Rwall_Cabinet_Txt4</object-name>
         <object-name>Panel.Rwall_Cabinet_Txt3</object-name>
-        <object-name>OBS_Audio_Lvl.knob</object-name>
         <object-name>Cseat.002</object-name>
         <object-name>Pseat.001</object-name>
         <object-name>Panel.Rwall_Cabinet_Txt6</object-name>
@@ -562,7 +557,30 @@ Franck.VMD
         <object-name>Yoke_R_TrimR.Switch</object-name>
     </effect>
 
+<!-- Hide interior glass when in exterior view unless raining-->
+    <animation>
+        <type>select</type>
+        <object-name>Glassinterrieur</object-name>
+        <condition>
+            <or>
+                <property>/sim/current-view/internal</property>
+                <property>/environment/rain-norm</property>
+            </or>
+        </condition>
+    </animation>
+
 <!--  controls -->
+
+    <animation>
+        <type>select</type>
+        <object-name>MTerm_PView_Disp.of</object-name>
+        <condition>
+         <less-than>
+		<property>systems/electrical/outputs/efis</property>
+		<value>15</value>
+	</less-than>
+        </condition>
+    </animation>
 
      <animation>
         <type>rotate</type>
@@ -932,11 +950,11 @@ Franck.VMD
            <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
         </condition>
 	</animation>
@@ -1175,11 +1193,11 @@ Franck.VMD
         <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
         </condition>
 	</animation>
@@ -1218,14 +1236,7 @@ Franck.VMD
 			</binding>
 		</action>
            <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+            <property>controls/switches/DOOR_Switch</property>
         </condition>
 	</animation>
 
@@ -1388,16 +1399,6 @@ Franck.VMD
 				</script>
 			</binding>
 		</action>
-        <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
 	</animation>
 
     <animation>
@@ -1413,16 +1414,6 @@ Franck.VMD
 				</script>
 			</binding>
 		</action>
-        <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
 	</animation>
 	
     <animation>
@@ -1666,11 +1657,7 @@ Franck.VMD
 
     <animation>
         <type>material</type>
-        <object-name>Yokeshaft</object-name>
-        <object-name>Yoke</object-name>
-        <object-name>Yoke.001</object-name>
         <object-name>Shield</object-name>
-        <object-name>Panel.center_L</object-name>
         <object-name>Panel.main</object-name>
         <object-name>Panel.main.001</object-name>
         <object-name>Shield_Bottom_Plate</object-name>
@@ -1743,59 +1730,27 @@ Franck.VMD
         <object-name>Tray_Left_Spring</object-name>
         <object-name>Tray_Left_Txt</object-name>
         <object-name>Tray_Left_Pivot</object-name>
-        <object-name>cockpit_Windows</object-name>
-        <object-name>cockpit_WindowsG</object-name>
-        <object-name>cockpit_WindowsD</object-name>
-        <object-name>PseatD</object-name>
-        <object-name>PseatG</object-name>
-        <object-name>Pseat.armrest</object-name>
-        <object-name>Cseat.armrest</object-name>
         <object-name>cockpit_ORIGINAL.002</object-name>
         <object-name>Seat_OBS2</object-name>
         <object-name>Seat_OBS1_HeadC</object-name>
         <object-name>Seat_OBS2_HeadC</object-name>
         <object-name>Seat_OBS1.001</object-name>
-        <object-name>cockpit.door</object-name>
         <object-name>Tray_Top</object-name>
         <object-name>Tray</object-name>
         <object-name>Cseat_Top</object-name>
-        <object-name>cockpit_ORIGINAL</object-name>
-        <object-name>Panel.Lwall_Cabinet</object-name>
-        <object-name>cockpit_floor</object-name>
-        <object-name>Rail_R_2</object-name>
-        <object-name>Rail_R_1</object-name>
-        <object-name>Panel.Lwall_Cabinet.002</object-name>
         <object-name>OxMask_1_Base</object-name>
-        <object-name>Panel.Rwall_Cabinet</object-name>
         <object-name>Panel.LwallTray</object-name>
         <object-name>Panel.LwallTray.001</object-name>
         <object-name>PanelL.wall_Top1</object-name>
-        <object-name>Panel.Lwall_Cabinet_Bottom</object-name>
         <object-name>FlashLight</object-name>
         <object-name>FE_Pin</object-name>
         <object-name>Hammer_Head</object-name>
-        <object-name>Window_L_Air_Hinge2</object-name>
-        <object-name>Window_L_Air_Hinge1</object-name>
-        <object-name>Window_R_Air_Hinge2</object-name>
-        <object-name>Window_R_Air_Hinge1</object-name>
         <object-name>Gloves</object-name>
-        <object-name>Panel.Lwall_Cab_Latch2</object-name>
-        <object-name>PanelL.wall.Txt1.001</object-name>
-        <object-name>PanelL.wall.Txt1.002</object-name>
-        <object-name>PanelL.wall.Txt4</object-name>
-        <object-name>SpotLight_FO</object-name>
-        <object-name>Handle_R</object-name>
-        <object-name>cockpit_Windows.002</object-name>
-        <object-name>MC_Casing</object-name>
         <object-name>MC_Bezel</object-name>
         <object-name>PanelL.WH_Ball</object-name>
         <object-name>PanelL.WH_Base</object-name>
         <object-name>PanelL.WH_Base2</object-name>
         <object-name>Window_LHinge</object-name>
-        <object-name>Window_L_Air_Hinge4</object-name>
-        <object-name>Panel.Lwall.WHandleG</object-name>
-        <object-name>Window_R_Air_Hinge4</object-name>
-        <object-name>Panel.Lwall.WHandleD</object-name>
         <object-name>PanelR.WH_Ball</object-name>
         <object-name>PanelR.WH_Base</object-name>
         <object-name>PanelR.WH_Base2</object-name>
@@ -1814,8 +1769,6 @@ Franck.VMD
         <object-name>Panel.Rwall_Cabinet_Txt4</object-name>
         <object-name>Panel.Rwall_Cabinet_Txt3</object-name>
         <object-name>OBS_Audio_Lvl.knob</object-name>
-        <object-name>Cseat.002</object-name>
-        <object-name>Pseat.001</object-name>
         <object-name>Panel.Rwall_Cabinet_Txt6</object-name>
         <object-name>Panel.Rwall_Cabinet_Txt8</object-name>
         <object-name>Panel.Rwall_Cabinet_Txt9</object-name>
@@ -1829,27 +1782,122 @@ Franck.VMD
         <object-name>Panel.RwallOxMask00</object-name>
         <object-name>verinBasD</object-name>
         <object-name>verinBasG</object-name>
-        <object-name>RHpedal</object-name>
-        <object-name>LHpedal</object-name>
         <object-name>Window_L_Slide</object-name>
         <object-name>PanelL.wall_Top2</object-name>
-        <object-name>Yoke_L_BTN.Btn</object-name>
-        <object-name>Yoke_L_BTN_Base</object-name>
-        <object-name>Yoke_L_TrimBase</object-name>
-        <object-name>Yoke_L_TrimL.Switch</object-name>
-        <object-name>Yoke_L_TrimR.Switch</object-name>
-        <object-name>Yoke_R_BTN.Btn</object-name>
-        <object-name>Yoke_R_BTN_Base</object-name>
-        <object-name>Yoke_R_TrimBase</object-name>
-        <object-name>Yoke_R_TrimL.Switch</object-name>
-        <object-name>Yoke_R_TrimR.Switch</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
-            <red>0.5</red>
-            <green>0.5</green>
-            <blue>0.5</blue>
+            <red>0.15</red>
+            <green>0.15</green>
+            <blue>0.15</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+       <object-name>Handle_R</object-name>
+       <object-name>MC_Casing</object-name>
+       <object-name>Panel.Lwall_Cab_Latch2</object-name>
+       <object-name>Panel.Lwall_Cabinet</object-name>
+       <object-name>Panel.Lwall_Cabinet.002</object-name>
+       <object-name>Panel.Lwall_Cabinet_Bottom</object-name>
+       <object-name>Panel.Rwall_Cabinet</object-name>
+       <object-name>PanelL.wall.Txt1.001</object-name>
+       <object-name>PanelL.wall.Txt1.002</object-name>
+       <object-name>PanelL.wall.Txt4</object-name>
+       <object-name>SpotLight_FO</object-name>
+       <object-name>Window_L_Air_Hinge2</object-name>
+       <object-name>Window_L_Air_Hinge1</object-name>
+       <object-name>Window_R_Air_Hinge2</object-name>
+       <object-name>Window_R_Air_Hinge1</object-name>
+       <object-name>Window_L_Air_Hinge4</object-name>
+       <object-name>Window_R_Air_Hinge4</object-name>
+       <object-name>cockpit.door</object-name>
+       <object-name>cockpit_ORIGINAL</object-name> 
+       <object-name>cockpit_Windows</object-name>
+       <object-name>cockpit_Windows.002</object-name>
+       <object-name>cockpit_WindowsG</object-name>
+       <object-name>cockpit_WindowsD</object-name>
+       <object-name>Panel.Lwall.WHandleG</object-name>
+       <object-name>Panel.Lwall.WHandleD</object-name>
+       <object-name>cockpit_floor</object-name>
+       <object-name>Rail_R_2</object-name>
+       <object-name>Rail_R_1</object-name>
+       <object-name>Cseat.002</object-name>
+       <object-name>Pseat.001</object-name>
+       <object-name>Panel.center_L</object-name>
+       <object-name>RHpedal</object-name>
+       <object-name>LHpedal</object-name>
+        <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.05</red>
+            <green>0.05</green>
+            <blue>0.05</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+       <object-name>PseatD</object-name>
+       <object-name>PseatG</object-name>
+       <object-name>Yokeshaft</object-name>
+       <object-name>Yoke</object-name>
+       <object-name>Yoke.001</object-name>
+       <object-name>Pseat.armrest</object-name>
+       <object-name>Cseat.armrest</object-name>
+       <object-name>Yoke_L_BTN.Btn</object-name>
+       <object-name>Yoke_L_BTN_Base</object-name>
+       <object-name>Yoke_L_TrimBase</object-name>
+       <object-name>Yoke_L_TrimL.Switch</object-name>
+       <object-name>Yoke_L_TrimR.Switch</object-name>
+       <object-name>Yoke_R_BTN.Btn</object-name>
+       <object-name>Yoke_R_BTN_Base</object-name>
+       <object-name>Yoke_R_TrimBase</object-name>
+       <object-name>Yoke_R_TrimL.Switch</object-name>
+       <object-name>Yoke_R_TrimR.Switch</object-name>
+       <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.25</red>
+            <green>0.25</green>
+            <blue>0.25</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+       <object-name>FloodR.light.001</object-name>
+       <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
         </emission>
     </animation>
 
