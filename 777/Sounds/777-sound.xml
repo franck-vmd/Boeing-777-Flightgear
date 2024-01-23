@@ -199,7 +199,7 @@
         <property>/sim/sound/bouton-poussoir</property>
         <factor>1.00</factor>
         <offset>0.00</offset>
-        <min>0.3</min>
+        <min>1.0</min>
         <max>1.0</max>
       </volume>
     </wc>
@@ -215,7 +215,7 @@
         <property>/sim/sound/robinet</property>
         <factor>1.00</factor>
         <offset>0.00</offset>
-        <min>0.3</min>
+        <min>1.0</min>
         <max>1.0</max>
       </volume>
     </wc>
