@@ -161,6 +161,10 @@ Franck.VMD
         <object-name>ET.switch</object-name>
         <object-name>Chrono.bezel</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>

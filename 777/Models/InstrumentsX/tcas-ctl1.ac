@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "Flatglow.knob.009" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "greenglow.008" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "greenglow.008" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "Material.010" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__tcas-ctl1.ac"

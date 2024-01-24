@@ -52,6 +52,10 @@ Franck.VMD
         <object-name>Screw_Fixing.005</object-name>
         <object-name>TO_Check.btn</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -79,14 +83,13 @@ Franck.VMD
             <red>0.2</red>
             <green>0.8</green>
             <blue>0.2</blue>
-            <factor-prop>controls/lighting/GLRSFlood-intencity</factor-prop>
+            <factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
         </emission>
     </animation>  
 
     <animation>
         <type>material</type>
                 <object-name>MFD.screen</object-name>
-                <object-name>Lettering_S_Dsp</object-name>
         <emission>
             <red>1.0</red>
             <green>1.0</green>
@@ -94,6 +97,23 @@ Franck.VMD
             <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
         </emission>
     </animation> 
+    
+    <animation>
+        <type>material</type>
+                <object-name>Lettering_S_Dsp</object-name>
+        <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+    </animation>
 
     <animation>
         <type>select</type>

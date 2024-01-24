@@ -23,6 +23,10 @@ Franck.VMD
         <object-name>StbyAsi.knob.001</object-name>
         <object-name>StbyAsibtn</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>

@@ -46,6 +46,10 @@ Franck.VMD
         <object-name>hf-l.toggle</object-name>
         <object-name>hf-r.toggle</object-name>
         <condition>
+            <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
             <property>systems/electrical/outputs/avionics</property>
         </condition>
     </animation>

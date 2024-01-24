@@ -870,6 +870,8 @@ Franck.VMD
         <object-name>Radio_L</object-name>
         <object-name>Screw_Fixing.003</object-name>
         <condition>
+                <property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>

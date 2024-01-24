@@ -866,6 +866,10 @@ Franck.VMD
         <object-name>ND.center</object-name>
         <object-name>DH.reset</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -880,6 +884,12 @@ Franck.VMD
         <type>material</type>
                 <object-name>EFIS_Lettering</object-name>
                 <object-name>EFIS_Lettering_Btns</object-name>
+                <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>

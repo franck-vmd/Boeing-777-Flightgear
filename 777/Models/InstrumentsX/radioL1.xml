@@ -54,6 +54,8 @@ Franck.VMD
         <object-name>hf-l.toggle</object-name>
         <object-name>hf-r.toggle</object-name>
         <condition>
+             <property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
             <property>systems/electrical/outputs/avionics</property>
         </condition>
     </animation>
@@ -870,6 +872,8 @@ Franck.VMD
         <object-name>Radio_L</object-name>
         <object-name>Screw_Fixing.003</object-name>
         <condition>
+                <property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>

@@ -1,20 +1,20 @@
 AC3Db
-MATERIAL "Flatglow.knob" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "Flatglow.knob.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "greenglow.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "interior.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "greenglow" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "greenglow.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Gloss.emit.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "flatblack.001" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Gloss.emit.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "Flatglow.knob.010" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "Flatglow.knob.011" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "greenglow.023" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "interior.007" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "greenglow.024" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "greenglow.025" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Gloss.emit.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "flatblack.007" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Gloss.emit.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__efis-ctl2.ac"
 kids 26
 OBJECT poly
 name "BARO.knob"
-data 9
-BARO.knob
+data 13
+BARO.knob.003
 crease 30.0
 texture "TopSidePanel.png"
 texrep 1 1
@@ -6550,8 +6550,8 @@ refs 3
 kids 0
 OBJECT poly
 name "BARO.knob2"
-data 10
-BARO.knob2
+data 14
+BARO.knob2.003
 crease 30.0
 texture "APpanel_1.png"
 texrep 1 1
@@ -12519,8 +12519,8 @@ refs 3
 kids 0
 OBJECT poly
 name "DH.reset"
-data 8
-DH.reset
+data 12
+DH.reset.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -12563,8 +12563,8 @@ refs 3
 kids 0
 OBJECT poly
 name "EFIS.panel"
-data 10
-EFIS.panel
+data 14
+EFIS.panel.003
 crease 45.0
 texture "APpanel_1.png"
 texrep 1 1
@@ -12700,8 +12700,8 @@ refs 3
 kids 0
 OBJECT poly
 name "EFIS_Lettering"
-data 14
-EFIS_Lettering
+data 18
+EFIS_Lettering.003
 crease 45.0
 texture "Lettering_EFISpanel.png"
 texrep 1 1
@@ -12721,8 +12721,8 @@ refs 4
 kids 0
 OBJECT poly
 name "EFIS_Lettering_Btns"
-data 19
-EFIS_Lettering_Btns
+data 23
+EFIS_Lettering_Btns.003
 crease 45.0
 texture "Lettering_EFISpanel1.png"
 texrep 1 1
@@ -12742,8 +12742,8 @@ refs 4
 kids 0
 OBJECT poly
 name "FPV.btn"
-data 7
-FPV.btn
+data 11
+FPV.btn.003
 crease 45.0
 texture "APpanel_1.png"
 texrep 1 1
@@ -13475,8 +13475,8 @@ refs 40
 kids 0
 OBJECT poly
 name "inhg.reset"
-data 10
-inhg.reset
+data 14
+inhg.reset.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -13519,8 +13519,8 @@ refs 3
 kids 0
 OBJECT poly
 name "LVOR.toggle"
-data 11
-LVOR.toggle
+data 15
+LVOR.toggle.003
 crease 45.0
 texture "APpanel_1.png"
 texrep 1 1
@@ -13714,8 +13714,8 @@ refs 3
 kids 0
 OBJECT poly
 name "Lvoradf"
-data 7
-Lvoradf
+data 11
+Lvoradf.003
 crease 45.0
 numvert 9
 -1.82164 0.57288 -0.31291
@@ -13779,8 +13779,8 @@ refs 3
 kids 0
 OBJECT poly
 name "MINS.knob"
-data 9
-MINS.knob
+data 13
+MINS.knob.003
 crease 30.0
 texture "TopSidePanel.png"
 texrep 1 1
@@ -20316,8 +20316,8 @@ refs 3
 kids 0
 OBJECT poly
 name "MINS.knob2"
-data 10
-MINS.knob2
+data 14
+MINS.knob2.003
 crease 30.0
 texture "APpanel_1.png"
 texrep 1 1
@@ -26285,8 +26285,8 @@ refs 3
 kids 0
 OBJECT poly
 name "MODE.knob"
-data 9
-MODE.knob
+data 13
+MODE.knob.003
 crease 30.0
 texture "TopSidePanel.png"
 texrep 1 1
@@ -32319,8 +32319,8 @@ refs 4
 kids 0
 OBJECT poly
 name "Mtrs.btn"
-data 8
-Mtrs.btn
+data 12
+Mtrs.btn.003
 crease 45.0
 texture "APpanel_1.png"
 texrep 1 1
@@ -33052,8 +33052,8 @@ refs 40
 kids 0
 OBJECT poly
 name "ND.center"
-data 9
-ND.center
+data 13
+ND.center.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -33096,8 +33096,8 @@ refs 3
 kids 0
 OBJECT poly
 name "Range.knob"
-data 10
-Range.knob
+data 14
+Range.knob.003
 crease 30.0
 texture "TopSidePanel.png"
 texrep 1 1
@@ -39633,8 +39633,8 @@ refs 3
 kids 0
 OBJECT poly
 name "RDR.arpt"
-data 8
-RDR.arpt
+data 12
+RDR.arpt.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -39778,8 +39778,8 @@ refs 4
 kids 0
 OBJECT poly
 name "RDR.data"
-data 8
-RDR.data
+data 12
+RDR.data.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -39923,8 +39923,8 @@ refs 4
 kids 0
 OBJECT poly
 name "RDR.pos"
-data 7
-RDR.pos
+data 11
+RDR.pos.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -40068,8 +40068,8 @@ refs 4
 kids 0
 OBJECT poly
 name "RDR.sta"
-data 7
-RDR.sta
+data 11
+RDR.sta.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -40213,8 +40213,8 @@ refs 4
 kids 0
 OBJECT poly
 name "RDR.terr"
-data 8
-RDR.terr
+data 12
+RDR.terr.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -40358,8 +40358,8 @@ refs 4
 kids 0
 OBJECT poly
 name "RDR.wpt"
-data 7
-RDR.wpt
+data 11
+RDR.wpt.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -40503,8 +40503,8 @@ refs 4
 kids 0
 OBJECT poly
 name "RDR.wxr"
-data 7
-RDR.wxr
+data 11
+RDR.wxr.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1
@@ -40648,8 +40648,8 @@ refs 4
 kids 0
 OBJECT poly
 name "RVOR.toggle"
-data 11
-RVOR.toggle
+data 15
+RVOR.toggle.003
 crease 45.0
 texture "APpanel_1.png"
 texrep 1 1
@@ -40843,8 +40843,8 @@ refs 3
 kids 0
 OBJECT poly
 name "Rvoradf"
-data 7
-Rvoradf
+data 11
+Rvoradf.003
 crease 45.0
 numvert 9
 -1.82164 0.57288 -0.41801
@@ -40908,8 +40908,8 @@ refs 3
 kids 0
 OBJECT poly
 name "TFC"
-data 3
-TFC
+data 7
+TFC.003
 crease 45.0
 texture "EFISctl.png"
 texrep 1 1

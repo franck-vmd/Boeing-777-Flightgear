@@ -61,6 +61,12 @@
 		<object-name>airportmarker</object-name>
 		<object-name>Chart</object-name>
                 <object-name>text</object-name>
+                <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>
@@ -95,6 +101,10 @@
         <type>material</type>
         <object-name>EFB</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -109,6 +119,12 @@
         <type>material</type>
                 <object-name>Lettering_Btn</object-name>
                 <object-name>Lettering_EFB</object-name>
+                <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>

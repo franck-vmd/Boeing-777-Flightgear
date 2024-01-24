@@ -1,20 +1,20 @@
 AC3Db
-MATERIAL "Flatglow.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "Glass_Transp.000" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.708 0.708 0.708  spec 1.000 1.000 1.000  shi 100 trans 0.992
-MATERIAL "instr-lights.001" rgb 0.802 0.802 0.802  amb 0.802 0.802 0.802  emis 0.700 0.700 0.700  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "interior" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "glossblack" rgb 0.600 0.600 0.600  amb 0.092 0.092 0.092  emis 0.000 0.000 0.000  spec 0.019 0.019 0.019  shi 0 trans 0.000
-MATERIAL "greenglow" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "lights.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 2.000 2.000 2.000  spec 0.000 0.000 0.000  shi 50 trans 0.000
-MATERIAL "instr-lights" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 50 trans 0.000
-MATERIAL "Flat" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "Flatglow.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "Glass_Transp.001" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 100 trans 0.992
+MATERIAL "instr-lights.003" rgb 0.802 0.802 0.802  amb 0.802 0.802 0.802  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "interior.004" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "glossblack.002" rgb 0.600 0.600 0.600  amb 0.092 0.092 0.092  emis 0.000 0.000 0.000  spec 0.019 0.019 0.019  shi 0 trans 0.000
+MATERIAL "greenglow.009" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "lights.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 2.000 2.000 2.000  spec 0.000 0.000 0.000  shi 50 trans 0.000
+MATERIAL "instr-lights.004" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 50 trans 0.000
+MATERIAL "Flat.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__mfd1.ac"
 kids 23
 OBJECT poly
 name "Bright_LwrDisp1.knob"
 data 10
-Circle.001
+Circle.008
 crease 40.0
 texture "Buttons_03.png"
 texrep 1 1
@@ -2465,8 +2465,8 @@ refs 4
 kids 0
 OBJECT poly
 name "Bright_LwrDisp2.knob"
-data 6
-Circle
+data 10
+Circle.009
 crease 40.0
 texture "Buttons_03.png"
 texrep 1 1
@@ -4595,7 +4595,7 @@ kids 0
 OBJECT poly
 name "Bright_UprDisp.knob"
 data 23
-Bright_UprDisp.knob.003
+Bright_UprDisp.knob.000
 crease 40.2
 texture "Buttons_03.png"
 texrep 1 1
@@ -11737,8 +11737,8 @@ refs 4
 kids 0
 OBJECT poly
 name "DSPL_CTRL_AcryFace"
-data 18
-DSPL_CTRL_AcryFace
+data 22
+DSPL_CTRL_AcryFace.001
 crease 179.0
 numvert 84
 -1.60026 0.09788 0.09321
@@ -12252,8 +12252,8 @@ refs 28
 kids 0
 OBJECT poly
 name "DSPL_CTRL_Placard"
-data 17
-DSPL_CTRL_Placard
+data 21
+DSPL_CTRL_Placard.001
 crease 179.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -12280,8 +12280,8 @@ refs 3
 kids 0
 OBJECT poly
 name "DSPL_CTRL_Shutter.Bottom"
-data 24
-DSPL_CTRL_Shutter.Bottom
+data 28
+DSPL_CTRL_Shutter.Bottom.001
 crease 179.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -12445,8 +12445,8 @@ refs 4
 kids 0
 OBJECT poly
 name "DSPL_CTRL_Shutter.Top"
-data 21
-DSPL_CTRL_Shutter.Top
+data 25
+DSPL_CTRL_Shutter.Top.001
 crease 179.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -12610,8 +12610,8 @@ refs 4
 kids 0
 OBJECT poly
 name "DSPL_CTRL_Switch"
-data 16
-DSPL_CTRL_Switch
+data 20
+DSPL_CTRL_Switch.001
 crease 179.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -13377,8 +13377,8 @@ refs 3
 kids 0
 OBJECT poly
 name "EFIS_bezel"
-data 10
-EFIS_bezel
+data 14
+EFIS_bezel.001
 crease 45.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -13622,8 +13622,8 @@ refs 4
 kids 0
 OBJECT poly
 name "Eicas_EventRCD.btn"
-data 18
-Eicas_EventRCD.btn
+data 22
+Eicas_EventRCD.btn.001
 crease 45.0
 numvert 120
 -1.57985 0.09199 0.07667
@@ -14353,8 +14353,8 @@ refs 4
 kids 0
 OBJECT poly
 name "Lettering_S_Dsp"
-data 15
-Lettering_S_Dsp
+data 19
+Lettering_S_Dsp.001
 crease 45.0
 texture "Lettering_S_Dsp.png"
 texrep 1 1
@@ -14383,8 +14383,8 @@ refs 4
 kids 0
 OBJECT poly
 name "MFD.screen"
-data 10
-MFD.screen
+data 14
+MFD.screen.001
 crease 45.0
 texture "screen.png"
 texrep 1 1
@@ -14404,8 +14404,8 @@ refs 4
 kids 0
 OBJECT poly
 name "MFD.screenoff"
-data 13
-MFD.screenoff
+data 17
+MFD.screenoff.001
 crease 45.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -14426,7 +14426,7 @@ kids 0
 OBJECT poly
 name "NDB2_Panel.001"
 data 14
-NDB2_Panel.001
+NDB2_Panel.000
 crease 45.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -15007,7 +15007,7 @@ kids 0
 OBJECT poly
 name "Screw.000"
 data 9
-Screw.000
+Screw.001
 crease 45.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -16364,7 +16364,7 @@ kids 0
 OBJECT poly
 name "Screw.002"
 data 9
-Screw.005
+Screw.002
 crease 45.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -17721,7 +17721,7 @@ kids 0
 OBJECT poly
 name "Screw.003"
 data 9
-Screw.006
+Screw.003
 crease 45.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -19078,7 +19078,7 @@ kids 0
 OBJECT poly
 name "Screw_Fixing.001"
 data 12
-Cylinder.001
+Cylinder.005
 crease 40.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -19923,7 +19923,7 @@ kids 0
 OBJECT poly
 name "Screw_Fixing.002"
 data 12
-Cylinder.002
+Cylinder.006
 crease 40.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -20768,7 +20768,7 @@ kids 0
 OBJECT poly
 name "Screw_Fixing.003"
 data 12
-Cylinder.003
+Cylinder.007
 crease 40.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -21613,7 +21613,7 @@ kids 0
 OBJECT poly
 name "Screw_Fixing.004"
 data 12
-Cylinder.004
+Cylinder.008
 crease 40.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -22457,8 +22457,8 @@ refs 32
 kids 0
 OBJECT poly
 name "Screw_Fixing.005"
-data 8
-Cylinder
+data 12
+Cylinder.009
 crease 40.0
 texture "Scnd_Display.png"
 texrep 1 1
@@ -23302,8 +23302,8 @@ refs 32
 kids 0
 OBJECT poly
 name "TO_Check.btn"
-data 12
-TO_Check.btn
+data 16
+TO_Check.btn.001
 crease 45.0
 numvert 120
 -1.58626 0.09621 0.00654

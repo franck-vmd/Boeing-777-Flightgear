@@ -1,12 +1,12 @@
 AC3Db
 MATERIAL "Flatglow.knob" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "Flatglow.knob.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "greenglow.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "interior.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "greenglow" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "greenglow.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Flatglow.knob.009" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "greenglow.020" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "interior.006" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "greenglow.021" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "greenglow.022" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "Gloss.emit.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "flatblack.001" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "flatblack.006" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "Gloss.emit.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__efis-ctl1.ac"

@@ -18,6 +18,10 @@ Franck.VMD
         <object-name>Bezel</object-name>
         <object-name>Logo_Placard</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>

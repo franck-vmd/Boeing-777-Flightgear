@@ -33,6 +33,10 @@ Franck.VMD
         <type>material</type>
         <object-name>CDU</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -75,6 +79,12 @@ Franck.VMD
                 <object-name>Lettering_Numbers</object-name>
                 <object-name>Lettering_Commands</object-name>
                 <object-name>Lettering_Btns</object-name>
+        <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>
@@ -1056,6 +1066,10 @@ Franck.VMD
         <object-name>Bright_UprDisp.knob</object-name>
         <object-name>Plane_Commands</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>

@@ -14,7 +14,7 @@
             <w>256</w>
             <h>256</h>
             <texture>
-                <path>Aircraft/777/Models/InstrumentsX/UEICAS/ueicas.png</path>
+                <path>Aircraft/777/Models/InstrumentsX/UEICAS/eicas.png</path>
                 <x1>0.0</x1>
                 <y1>0.0</y1>
                 <x2>1.0</x2>
