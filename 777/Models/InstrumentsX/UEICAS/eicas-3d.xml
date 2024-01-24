@@ -20,7 +20,7 @@ Syd Adams
 
     <model>
         <name>N1</name>
-        <path>Aircraft/777/Models/Instruments/UEICAS/N1.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/UEICAS/N1.xml</path>
         <offsets>
             <x-m>0.002</x-m>
             <y-m>-0.048</y-m>
@@ -30,7 +30,7 @@ Syd Adams
 
     <model>
         <name>EGT</name>
-        <path>Aircraft/777/Models/Instruments/UEICAS/EGT.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/UEICAS/EGT.xml</path>
         <offsets>
             <x-m>0.002</x-m>
             <y-m>-0.048</y-m>
@@ -40,7 +40,7 @@ Syd Adams
 
     <model>
         <name>FlapGear</name>
-        <path>Aircraft/777/Models/Instruments/UEICAS/flap-gear.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/UEICAS/flap-gear.xml</path>
         <offsets>
             <x-m>0.003</x-m>
             <y-m>0.050</y-m>

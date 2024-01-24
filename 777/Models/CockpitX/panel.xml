@@ -6,7 +6,7 @@ Franck.VMD
 
     <model>
         <name>PFD1</name>
-        <path>Aircraft/777/Models/Instruments/PFD/PFD_L.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/PFD/PFD_L.xml</path>
         <offsets>
             <x-m>-1.83825</x-m>
             <y-m>-0.54541</y-m>
@@ -17,7 +17,7 @@ Franck.VMD
 
     <model>
         <name>PFD2</name>
-        <path>Aircraft/777/Models/Instruments/PFD/PFD_R.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/PFD/PFD_R.xml</path>
         <offsets>
             <x-m>-1.83825</x-m>
             <y-m>0.54882</y-m>
@@ -30,7 +30,7 @@ Franck.VMD
  
     <model>
         <name>PFD3</name>
-        <path>Aircraft/777/Models/Instruments/PFD/PFD_C.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/PFD/PFD_C.xml</path>
         <offsets>
             <x-m>49.85</x-m>
             <y-m>0.75</y-m>
@@ -44,7 +44,7 @@ Franck.VMD
 
     <model>
         <name>ND1</name>
-        <path>Aircraft/777/Models/Instruments/ND/ND_L.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/ND/ND_L.xml</path>
         <offsets>
             <x-m>-1.83807</x-m>
             <y-m>-0.32091</y-m>
@@ -55,7 +55,7 @@ Franck.VMD
 
     <model>
         <name>ND2</name>
-        <path>Aircraft/777/Models/Instruments/ND/ND_R.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/ND/ND_R.xml</path>
         <offsets>
             <x-m>-1.83807</x-m>
             <y-m>0.32477</y-m>
@@ -66,7 +66,7 @@ Franck.VMD
 
     <model>
         <name>UEICAS</name>
-        <path>Aircraft/777/Models/Instruments/UEICAS/UEICAS.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/UEICAS/UEICAS.xml</path>
         <offsets>
             <x-m>-1.83825</x-m>
             <y-m>0.0</y-m>
@@ -77,7 +77,7 @@ Franck.VMD
 
     <model>
         <name>UEICAS</name>
-        <path>Aircraft/777/Models/Instruments/UEICAS/UEICAS1.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/UEICAS/UEICAS1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>

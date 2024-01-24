@@ -14,7 +14,7 @@
             <w>20</w>
             <h>100</h>
             <texture>
-                <path>Aircraft/777/Models/Instruments/EICAS/gauges.png</path>
+                <path>Aircraft/777/Models/InstrumentsX/UEICAS/gauges.png</path>
                 <x1>0.019</x1>
                 <y1>0.001</y1>
                 <x2>0.100</x2>
@@ -39,7 +39,7 @@
             <w>20</w>
             <h>110</h>
             <texture>
-                <path>Aircraft/777/Models/Instruments/EICAS/gauges.png</path>
+                <path>Aircraft/777/Models/InstrumentsX/UEICAS/gauges.png</path>
                 <x1>0.512</x1>
                 <y1>0.535</y1>
                 <x2>0.668</x2>

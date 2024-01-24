@@ -96,7 +96,7 @@ Franck.VMD
 
    <model>
         <name>MFD</name>
-        <path>Aircraft/777/Models/Instruments/MFD/MFD1.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/MFD/MFD1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -107,7 +107,7 @@ Franck.VMD
 
     <model>
         <name>CDU1</name>
-        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.681</x-m>
             <y-m>-0.184</y-m>
@@ -141,7 +141,7 @@ Franck.VMD
 
     <model>
         <name>CDU1</name>
-        <path>Aircraft/777/Models/Instruments/CDU/boeing1.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -162,7 +162,7 @@ Franck.VMD
 
     <model>
         <name>CDU2</name>
-        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.681</x-m>
             <y-m>0.185</y-m>
@@ -196,7 +196,7 @@ Franck.VMD
 
     <model>
         <name>CDU2</name>
-        <path>Aircraft/777/Models/Instruments/CDU/boeing2.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing2.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -217,7 +217,7 @@ Franck.VMD
 
     <model>
         <name>CDU3</name>
-        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.077</x-m>
             <y-m>-0.000299</y-m>
@@ -251,7 +251,7 @@ Franck.VMD
 
    <model>
         <name>CDU3</name>
-        <path>Aircraft/777/Models/Instruments/CDU/boeing3.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing3.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -272,7 +272,7 @@ Franck.VMD
 
     <model>
         <name>RadioL1</name>
-        <path>Aircraft/777/Models/Instruments/radioL1.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/radioL1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -282,7 +282,7 @@ Franck.VMD
 
    <model>
         <name>RadioL</name>
-        <path>Aircraft/777/Models/Instruments/radioL.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/radioL.xml</path>
         <offsets>
             <x-m>-1.25914</x-m>
             <y-m>-0.13209</y-m>
@@ -292,7 +292,7 @@ Franck.VMD
 
     <model>
         <name>RadioR1</name>
-        <path>Aircraft/777/Models/Instruments/radioR1.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/radioR1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -302,7 +302,7 @@ Franck.VMD
 
     <model>
         <name>RadioR</name>
-        <path>Aircraft/777/Models/Instruments/radioR.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/radioR.xml</path>
         <offsets>
             <x-m>-1.25914</x-m>
             <y-m>0.14420</y-m>
@@ -312,7 +312,7 @@ Franck.VMD
 
     <model>
         <name>RadioC1</name>
-        <path>Aircraft/777/Models/Instruments/radioC1.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/radioC1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -322,7 +322,7 @@ Franck.VMD
 
     <model>
         <name>RadioC</name>
-        <path>Aircraft/777/Models/Instruments/radioC.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/radioC.xml</path>
         <offsets>
             <x-m>-1.04656</x-m>
             <y-m>-0.13209</y-m>
@@ -332,7 +332,7 @@ Franck.VMD
 
     <model>
         <name>tcas-ctl1</name>
-        <path>Aircraft/777/Models/Instruments/tcas-ctl1.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/tcas-ctl1.xml</path>
         <pitch-deg>1.70</pitch-deg>
         <offsets>
             <x-m>0.0</x-m>
@@ -343,7 +343,7 @@ Franck.VMD
 
     <model>
         <name>tcas-ctl</name>
-        <path>Aircraft/777/Models/Instruments/tcas-ctl.xml</path>
+        <path>Aircraft/777/Models/InstrumentsX/tcas-ctl.xml</path>
         <pitch-deg>1.70</pitch-deg>
         <offsets>
             <x-m>-1.11579</x-m>
