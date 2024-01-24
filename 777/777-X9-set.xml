@@ -15,7 +15,7 @@
         <model n="0">
             <path>Aircraft/777/Models/777-X9.xml</path>
             <livery>
-				<file>AAL</file>
+				<file>AFR2</file>
 			</livery>
 			<livery-dir type="string">Aircraft/777/Models/Liveries-X9</livery-dir>
             <door>
@@ -265,13 +265,13 @@
         </menubar>
 
         <tutorials>
-            <tutorial include="Tutorials/300/777-cockpit-overview.xml"/>
-            <tutorial include="Tutorials/300/777-cockpit-pfd.xml"/>
-            <tutorial include="Tutorials/300/777-cockpit-autopilot.xml"/>
-            <tutorial include="Tutorials/300/777-preflight.xml"/>
-            <tutorial include="Tutorials/300/777-pushback-startup.xml"/>
-            <tutorial include="Tutorials/300/777-takeoff.xml"/>
-            <!-- <tutorial include="Tutorials/300/777-approach-landing.xml"/> -->
+            <tutorial include="Tutorials/X9/777-cockpit-overview.xml"/>
+            <tutorial include="Tutorials/X9/777-cockpit-pfd.xml"/>
+            <tutorial include="Tutorials/X9/777-cockpit-autopilot.xml"/>
+            <tutorial include="Tutorials/X9/777-preflight.xml"/>
+            <tutorial include="Tutorials/X9/777-pushback-startup.xml"/>
+            <tutorial include="Tutorials/X9/777-takeoff.xml"/>
+            <!-- <tutorial include="Tutorials/X9/777-approach-landing.xml"/> -->
         </tutorials>
 
         <weight n="1">
@@ -302,7 +302,7 @@
             <max-lb type="double">2675</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
-        <aircraft-operator>JAL</aircraft-operator>
+        <aircraft-operator>AFR</aircraft-operator>
     </sim>
 
     <consumables n="0">

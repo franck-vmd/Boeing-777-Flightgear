@@ -301,7 +301,7 @@
             <max-lb type="double">2675</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
-        <aircraft-operator>BAW</aircraft-operator>
+        <aircraft-operator>AFR</aircraft-operator>
     </sim>
 
     <instrumentation n="0">

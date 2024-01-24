@@ -103,7 +103,7 @@ Franck.VMD
             <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
         </emission>
     </animation>
-    
+
    <!-- HUDs -->
 
 	<model>

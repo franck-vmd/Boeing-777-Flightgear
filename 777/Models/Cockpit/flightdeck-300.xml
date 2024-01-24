@@ -947,16 +947,6 @@ Franck.VMD
 				</script>
 			</binding>
 		</action>
-           <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>30</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>30</value>
-            </less-than>
-        </condition>
 	</animation>
 	
 	<!-- Copilot window -->
@@ -1190,16 +1180,6 @@ Franck.VMD
 				</script>
 			</binding>
 		</action>
-        <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>30</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>30</value>
-            </less-than>
-        </condition>
 	</animation>
 	
 	

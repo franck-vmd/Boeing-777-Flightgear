@@ -15,7 +15,7 @@
         <model n="0">
             <path>Aircraft/777/Models/777-200LR.xml</path>
             <livery>
-				<file>AAL</file>
+				<file>AFR</file>
 			</livery>
 			<livery-dir type="string">Aircraft/777/Models/Liveries-200LR</livery-dir>
             <door>
@@ -301,7 +301,7 @@
             <max-lb type="double">2675</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
-        <aircraft-operator>BAW</aircraft-operator>
+        <aircraft-operator>AFR</aircraft-operator>
     </sim>
 
     <consumables n="0">

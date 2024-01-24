@@ -1,14 +1,14 @@
 AC3Db
-MATERIAL "interior" rgb 0.900 0.900 0.900  amb 0.900 0.900 0.900  emis 0.053 0.053 0.053  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "interior" rgb 0.900 0.900 0.900  amb 0.900 0.900 0.900  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "Flatglow.013" rgb 1.000 0.765 0.670  amb 0.700 0.700 0.700  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Material.004" rgb 0.500 0.100 0.000  amb 0.200 0.200 0.200  emis 0.012 0.012 0.012  spec 0.922 0.582 0.582  shi 40 trans 0.000
-MATERIAL "Glass_Transp.000" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.708 0.708 0.708  spec 1.000 1.000 1.000  shi 100 trans 0.992
-MATERIAL "instr-lights" rgb 0.802 0.802 0.802  amb 0.802 0.802 0.802  emis 0.700 0.700 0.700  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Glass_Transp.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.050 0.050 0.050  spec 1.000 1.000 1.000  shi 100 trans 0.900
+MATERIAL "Material.004" rgb 0.500 0.100 0.000  amb 0.200 0.200 0.200  emis 0.000 0.000 0.000  spec 0.922 0.582 0.582  shi 40 trans 0.000
+MATERIAL "Glass_Transp.000" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 100 trans 0.992
+MATERIAL "instr-lights" rgb 0.802 0.802 0.802  amb 0.802 0.802 0.802  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Glass_Transp.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 100 trans 0.900
 MATERIAL "flatblack" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "glossblack.001" rgb 0.600 0.600 0.600  amb 0.092 0.092 0.092  emis 0.000 0.000 0.000  spec 0.019 0.019 0.019  shi 0 trans 0.000
-MATERIAL "Transp_Gear" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.720 0.720 0.720  spec 1.000 1.000 1.000  shi 99 trans 0.600
-MATERIAL "greenglow" rgb 0.600 0.600 0.600  amb 0.600 0.600 0.600  emis 0.400 0.400 0.400  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Transp_Gear" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 99 trans 0.600
+MATERIAL "greenglow" rgb 0.600 0.600 0.600  amb 0.600 0.600 0.600  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "glossblack" rgb 0.600 0.600 0.600  amb 0.092 0.092 0.092  emis 0.000 0.000 0.000  spec 0.019 0.019 0.019  shi 0 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__gear-ctl.ac"
