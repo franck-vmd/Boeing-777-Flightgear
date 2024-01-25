@@ -7963,6 +7963,11 @@ Franck.VMD
             </less-than>
         </and>
     </condition>
+ <offsets>
+  <x-m>-7.0</x-m>
+  <y-m>0.0</y-m>
+  <z-m>0.0</z-m>
+ </offsets>
 </model>
 
 <model>
@@ -8048,7 +8053,7 @@ Franck.VMD
 <model>
     <path>Aircraft/777/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_1R.xml</path>
     <offsets>
-  	<x-m>0</x-m>
+  	<x-m>-2.0</x-m>
   	<y-m>0</y-m>
   	<z-m>0.2</z-m>
      </offsets>
@@ -8057,7 +8062,7 @@ Franck.VMD
 <model>
     <path>Aircraft/777/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_2R.xml</path>
     <offsets>
-  	<x-m>0</x-m>
+  	<x-m>-2.0</x-m>
   	<y-m>0</y-m>
   	<z-m>0.1</z-m>
      </offsets>
@@ -8066,7 +8071,7 @@ Franck.VMD
 <model>
     <path>Aircraft/777/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_3R.xml</path>
     <offsets>
-  	<x-m>0</x-m>
+  	<x-m>11.0</x-m>
   	<y-m>0</y-m>
   	<z-m>0</z-m>
      </offsets>
@@ -8075,7 +8080,7 @@ Franck.VMD
 <model>
     <path>Aircraft/777/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_4R_200.xml</path>
     <offsets>
-  	<x-m>0</x-m>
+  	<x-m>11.0</x-m>
   	<y-m>0</y-m>
   	<z-m>0.1</z-m>
      </offsets>
@@ -8096,7 +8101,7 @@ Franck.VMD
 <!--Stairs-->
 
 <model>
-    <path>Aircraft/777/Models/Ground/Services/Stairs/stairs-200.xml</path>
+    <path>Aircraft/777/Models/Ground/Services/Stairs/stairs-X9.xml</path>
     <condition>
         <less-than>
             <property>velocities/groundspeed-kt</property>
@@ -8174,7 +8179,7 @@ Franck.VMD
 		</equals>
 	</condition>
 	<offsets>
-		<x-m>55</x-m>
+		<x-m>65</x-m>
 		<y-m>-7.5</y-m>
 		<z-m>-5.33</z-m>
 		<heading-deg>360</heading-deg>
@@ -8191,7 +8196,7 @@ Franck.VMD
 		</equals>
 	</condition>
 	<offsets>
-		<x-m>55</x-m>
+		<x-m>65</x-m>
 		<y-m>7.5</y-m>
 		<z-m>-5.33</z-m>
 		<heading-deg>360</heading-deg>
@@ -8242,7 +8247,7 @@ Franck.VMD
 		</equals>
 	</condition>
 	<offsets>
-		<x-m>-35</x-m>
+		<x-m>-40</x-m>
 		<y-m>0</y-m>
 		<z-m>-5.33</z-m>
 		<heading-deg>180</heading-deg>
@@ -8261,7 +8266,7 @@ Franck.VMD
 		</equals>
 	</condition>
 	<offsets>
-		<x-m>-27</x-m>
+		<x-m>-34.2</x-m>
 		<y-m>5</y-m>
 		<z-m>-5.33</z-m>
 		<heading-deg>180</heading-deg>
@@ -8278,6 +8283,11 @@ Franck.VMD
             <value>1</value>
         </less-than>
     </condition>
+	<offsets>
+		<x-m>-2.5</x-m>
+		<y-m>1.0</y-m>
+		<z-m>0.0</z-m>
+	</offsets>
 </model>
 
 <model>
@@ -8288,6 +8298,11 @@ Franck.VMD
             <value>1</value>
         </less-than>
     </condition>
+	<offsets>
+		<x-m>-2.5</x-m>
+		<y-m>-1.0</y-m>
+		<z-m>0.0</z-m>
+	</offsets>
 </model>
 
 <!-- Air Start Unit -->

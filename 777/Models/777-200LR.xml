@@ -85,13 +85,55 @@ Franck.VMD
         <object-name>entry1lP</object-name>
         <object-name>entry1lPE</object-name>
         <object-name>entry1lC2</object-name>
-        <object-name>entry1r</object-name>
         <object-name>entry2l</object-name>
-        <object-name>entry2r</object-name>
+        <object-name>entry2l2</object-name>
+        <object-name>entry2lA</object-name>
+        <object-name>entry2lC</object-name>
+        <object-name>entry2lP</object-name>
+        <object-name>entry2lPE</object-name>
+        <object-name>entry2lC2</object-name>
         <object-name>entry3l</object-name>
-        <object-name>entry3r</object-name>
+        <object-name>entry3l2</object-name>
+        <object-name>entry3lA</object-name>
+        <object-name>entry3lC</object-name>
+        <object-name>entry3lP</object-name>
+        <object-name>entry3lPE</object-name>
+        <object-name>entry3lC2</object-name>
         <object-name>entry4l</object-name>
+        <object-name>entry4l2</object-name>
+        <object-name>entry4lA</object-name>
+        <object-name>entry4lC</object-name>
+        <object-name>entry4lP</object-name>
+        <object-name>entry4lPE</object-name>
+        <object-name>entry4lC2</object-name>
+        <object-name>entry1r</object-name>
+        <object-name>entry1r2</object-name>
+        <object-name>entry1rA</object-name>
+        <object-name>entry1rC</object-name>
+        <object-name>entry1rP</object-name>
+        <object-name>entry1rPE</object-name>
+        <object-name>entry1rC2</object-name>
+        <object-name>entry2r</object-name>
+        <object-name>entry2r2</object-name>
+        <object-name>entry2rA</object-name>
+        <object-name>entry2rC</object-name>
+        <object-name>entry2rP</object-name>
+        <object-name>entry2rPE</object-name>
+        <object-name>entry2rC2</object-name>
+        <object-name>entry3r</object-name>
+        <object-name>entry3r2</object-name>
+        <object-name>entry3rA</object-name>
+        <object-name>entry3rC</object-name>
+        <object-name>entry3rP</object-name>
+        <object-name>entry3rPE</object-name>
+        <object-name>entry3rC2</object-name>
         <object-name>entry4r</object-name>
+        <object-name>entry4r2</object-name>
+        <object-name>entry4rA</object-name>
+        <object-name>entry4rC</object-name>
+        <object-name>entry4rP</object-name>
+        <object-name>entry4rPE</object-name>
+        <object-name>entry4rC2</object-name>
         <property-base>sim/model/fuselage2</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-200LR/AFR4.png</texture>
@@ -423,18 +465,60 @@ Franck.VMD
         <inherits-from>Aircraft/777/Models/Effects/reflect16</inherits-from>
         <object-name>entry1l</object-name>
         <object-name>entry1l2</object-name>
-        <object-name>entry1lC</object-name>
         <object-name>entry1lA</object-name>
+        <object-name>entry1lC</object-name>
         <object-name>entry1lP</object-name>
         <object-name>entry1lPE</object-name>
         <object-name>entry1lC2</object-name>
-        <object-name>entry1r</object-name>
         <object-name>entry2l</object-name>
-        <object-name>entry2r</object-name>
+        <object-name>entry2l2</object-name>
+        <object-name>entry2lA</object-name>
+        <object-name>entry2lC</object-name>
+        <object-name>entry2lP</object-name>
+        <object-name>entry2lPE</object-name>
+        <object-name>entry2lC2</object-name>
         <object-name>entry3l</object-name>
-        <object-name>entry3r</object-name>
+        <object-name>entry3l2</object-name>
+        <object-name>entry3lA</object-name>
+        <object-name>entry3lC</object-name>
+        <object-name>entry3lP</object-name>
+        <object-name>entry3lPE</object-name>
+        <object-name>entry3lC2</object-name>
         <object-name>entry4l</object-name>
+        <object-name>entry4l2</object-name>
+        <object-name>entry4lA</object-name>
+        <object-name>entry4lC</object-name>
+        <object-name>entry4lP</object-name>
+        <object-name>entry4lPE</object-name>
+        <object-name>entry4lC2</object-name>
+        <object-name>entry1r</object-name>
+        <object-name>entry1r2</object-name>
+        <object-name>entry1rA</object-name>
+        <object-name>entry1rC</object-name>
+        <object-name>entry1rP</object-name>
+        <object-name>entry1rPE</object-name>
+        <object-name>entry1rC2</object-name>
+        <object-name>entry2r</object-name>
+        <object-name>entry2r2</object-name>
+        <object-name>entry2rA</object-name>
+        <object-name>entry2rC</object-name>
+        <object-name>entry2rP</object-name>
+        <object-name>entry2rPE</object-name>
+        <object-name>entry2rC2</object-name>
+        <object-name>entry3r</object-name>
+        <object-name>entry3r2</object-name>
+        <object-name>entry3rA</object-name>
+        <object-name>entry3rC</object-name>
+        <object-name>entry3rP</object-name>
+        <object-name>entry3rPE</object-name>
+        <object-name>entry3rC2</object-name>
         <object-name>entry4r</object-name>
+        <object-name>entry4r2</object-name>
+        <object-name>entry4rA</object-name>
+        <object-name>entry4rC</object-name>
+        <object-name>entry4rP</object-name>
+        <object-name>entry4rPE</object-name>
+        <object-name>entry4rC2</object-name>
     </effect>
     
     <effect>

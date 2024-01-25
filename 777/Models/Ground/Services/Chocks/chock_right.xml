@@ -22,7 +22,7 @@
 	<animation>
         <type>pick</type>
 		<object-name>Chock_front</object-name>
-        <object-name>Chock_back</object-name>
+                <object-name>Chock_back</object-name>
         <action>
             <button>0</button>
             <binding>

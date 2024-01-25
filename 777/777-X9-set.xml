@@ -159,7 +159,7 @@
         </view>
         <view n="124">
             <config n="0">
-            <z-offset-m type="double">-22.84</z-offset-m>
+            <z-offset-m type="double">-29.8</z-offset-m>
             </config>
         </view>
         <view n="125">
@@ -204,12 +204,12 @@
         </view>
         <view n="133">
             <config n="0">
-            <z-offset-m type="double">40</z-offset-m>
+            <z-offset-m type="double">50</z-offset-m>
             </config>
         </view>
         <view n="134">
             <config n="0">
-            <z-offset-m type="double">-27.84</z-offset-m>
+            <z-offset-m type="double">-40.0</z-offset-m>
             </config>
         </view>
         <view n="135">

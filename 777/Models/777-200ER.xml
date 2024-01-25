@@ -45,7 +45,7 @@ Franck.VMD
         <object-name>wiper.r</object-name>
         <property-base>sim/model/fuselage</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR1.png</texture>
+        <texture>Liveries-200ER/AFR1.png</texture>
     </animation>
 
     <animation>
@@ -57,7 +57,7 @@ Franck.VMD
         <object-name>Wings4</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR2.png</texture>
+        <texture>Liveries-200ER/AFR2.png</texture>
     </animation>
     
     <animation>
@@ -73,7 +73,7 @@ Franck.VMD
         <object-name>Rmain.geardoor.001</object-name>
         <property-base>sim/model/fuselage1</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR3.png</texture>
+        <texture>Liveries-200ER/AFR3.png</texture>
     </animation>
     
     <animation>
@@ -85,16 +85,58 @@ Franck.VMD
         <object-name>entry1lP</object-name>
         <object-name>entry1lPE</object-name>
         <object-name>entry1lC2</object-name>
-        <object-name>entry1r</object-name>
         <object-name>entry2l</object-name>
-        <object-name>entry2r</object-name>
+        <object-name>entry2l2</object-name>
+        <object-name>entry2lA</object-name>
+        <object-name>entry2lC</object-name>
+        <object-name>entry2lP</object-name>
+        <object-name>entry2lPE</object-name>
+        <object-name>entry2lC2</object-name>
         <object-name>entry3l</object-name>
-        <object-name>entry3r</object-name>
+        <object-name>entry3l2</object-name>
+        <object-name>entry3lA</object-name>
+        <object-name>entry3lC</object-name>
+        <object-name>entry3lP</object-name>
+        <object-name>entry3lPE</object-name>
+        <object-name>entry3lC2</object-name>
         <object-name>entry4l</object-name>
+        <object-name>entry4l2</object-name>
+        <object-name>entry4lA</object-name>
+        <object-name>entry4lC</object-name>
+        <object-name>entry4lP</object-name>
+        <object-name>entry4lPE</object-name>
+        <object-name>entry4lC2</object-name>
+        <object-name>entry1r</object-name>
+        <object-name>entry1r2</object-name>
+        <object-name>entry1rA</object-name>
+        <object-name>entry1rC</object-name>
+        <object-name>entry1rP</object-name>
+        <object-name>entry1rPE</object-name>
+        <object-name>entry1rC2</object-name>
+        <object-name>entry2r</object-name>
+        <object-name>entry2r2</object-name>
+        <object-name>entry2rA</object-name>
+        <object-name>entry2rC</object-name>
+        <object-name>entry2rP</object-name>
+        <object-name>entry2rPE</object-name>
+        <object-name>entry2rC2</object-name>
+        <object-name>entry3r</object-name>
+        <object-name>entry3r2</object-name>
+        <object-name>entry3rA</object-name>
+        <object-name>entry3rC</object-name>
+        <object-name>entry3rP</object-name>
+        <object-name>entry3rPE</object-name>
+        <object-name>entry3rC2</object-name>
         <object-name>entry4r</object-name>
+        <object-name>entry4r2</object-name>
+        <object-name>entry4rA</object-name>
+        <object-name>entry4rC</object-name>
+        <object-name>entry4rP</object-name>
+        <object-name>entry4rPE</object-name>
+        <object-name>entry4rC2</object-name>
         <property-base>sim/model/fuselage2</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR4.png</texture>
+        <texture>Liveries-200ER/AFR4.png</texture>
     </animation>
     
     <animation>
@@ -120,7 +162,7 @@ Franck.VMD
         <object-name>Wings.004</object-name>
         <property-base>sim/model/fuselage3</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR5.png</texture>
+        <texture>Liveries-200ER/AFR5.png</texture>
     </animation>
 
     <animation>
@@ -157,7 +199,7 @@ Franck.VMD
         <object-name>Rgear1</object-name>
         <property-base>sim/model/fuselage4</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR6.png</texture>
+        <texture>Liveries-200ER/AFR6.png</texture>
     </animation>
 
     <animation>
@@ -197,7 +239,7 @@ Franck.VMD
         <object-name>clapetGD7</object-name>
         <property-base>sim/model/fuselage5</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR7.png</texture>
+        <texture>Liveries-200ER/AFR7.png</texture>
     </animation>
 
     <animation>
@@ -221,7 +263,7 @@ Franck.VMD
         <object-name>moteur4</object-name>
         <property-base>sim/model/fuselage6</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR8.png</texture>
+        <texture>Liveries-200ER/AFR8.png</texture>
     </animation>
     
     <animation>
@@ -274,7 +316,7 @@ Franck.VMD
         <object-name>Rgear</object-name>
         <property-base>sim/model/fuselage7</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-200LR/AFR9.png</texture>
+        <texture>Liveries-200ER/AFR9.png</texture>
     </animation>
 
       <effect>
@@ -423,18 +465,60 @@ Franck.VMD
         <inherits-from>Aircraft/777/Models/Effects/reflect16</inherits-from>
         <object-name>entry1l</object-name>
         <object-name>entry1l2</object-name>
-        <object-name>entry1lC</object-name>
         <object-name>entry1lA</object-name>
+        <object-name>entry1lC</object-name>
         <object-name>entry1lP</object-name>
         <object-name>entry1lPE</object-name>
         <object-name>entry1lC2</object-name>
-        <object-name>entry1r</object-name>
         <object-name>entry2l</object-name>
-        <object-name>entry2r</object-name>
+        <object-name>entry2l2</object-name>
+        <object-name>entry2lA</object-name>
+        <object-name>entry2lC</object-name>
+        <object-name>entry2lP</object-name>
+        <object-name>entry2lPE</object-name>
+        <object-name>entry2lC2</object-name>
         <object-name>entry3l</object-name>
-        <object-name>entry3r</object-name>
+        <object-name>entry3l2</object-name>
+        <object-name>entry3lA</object-name>
+        <object-name>entry3lC</object-name>
+        <object-name>entry3lP</object-name>
+        <object-name>entry3lPE</object-name>
+        <object-name>entry3lC2</object-name>
         <object-name>entry4l</object-name>
+        <object-name>entry4l2</object-name>
+        <object-name>entry4lA</object-name>
+        <object-name>entry4lC</object-name>
+        <object-name>entry4lP</object-name>
+        <object-name>entry4lPE</object-name>
+        <object-name>entry4lC2</object-name>
+        <object-name>entry1r</object-name>
+        <object-name>entry1r2</object-name>
+        <object-name>entry1rA</object-name>
+        <object-name>entry1rC</object-name>
+        <object-name>entry1rP</object-name>
+        <object-name>entry1rPE</object-name>
+        <object-name>entry1rC2</object-name>
+        <object-name>entry2r</object-name>
+        <object-name>entry2r2</object-name>
+        <object-name>entry2rA</object-name>
+        <object-name>entry2rC</object-name>
+        <object-name>entry2rP</object-name>
+        <object-name>entry2rPE</object-name>
+        <object-name>entry2rC2</object-name>
+        <object-name>entry3r</object-name>
+        <object-name>entry3r2</object-name>
+        <object-name>entry3rA</object-name>
+        <object-name>entry3rC</object-name>
+        <object-name>entry3rP</object-name>
+        <object-name>entry3rPE</object-name>
+        <object-name>entry3rC2</object-name>
         <object-name>entry4r</object-name>
+        <object-name>entry4r2</object-name>
+        <object-name>entry4rA</object-name>
+        <object-name>entry4rC</object-name>
+        <object-name>entry4rP</object-name>
+        <object-name>entry4rPE</object-name>
+        <object-name>entry4rC2</object-name>
     </effect>
     
     <effect>
