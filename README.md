@@ -33,6 +33,14 @@ Porte Cockpite ---> Cabine : ouverture et fermeture pas de condition, sauf bouto
 
 Alarme Toutes les portes confondus " CAUTION ", visuel sur le MFD et écriture sur UEICAS
 
+Pilots : Pas de condition
+
+
+Éclairage Cockpite : sur OHpanel Bouton BATTERY, Bouton à tourner Master BRIGHT pour les instruments, Bouton STORM et tourner Bouton DOME pour éclairage intérieur Cockpite .
+
+De nuit Bouton a tourné OVHD et CB ainsi que GLARSHIELD et PNL/FLOOD
+
+
 
 
 Anglais :
@@ -69,6 +77,13 @@ Cockpite windows: opening and closing no conditions
 Cockpit door ---> Cabin: opening and closing no conditions, except Pedestal button next to the telephone
 
 Alarm All doors combined “CAUTION”, visual on the MFD and writing on UEICAS
+
+Pilots: No conditions
+
+
+Cockpite lighting: on OHpanel BATTERY button, Master BRIGHT turn button for instruments, STORM button and turn DOME button for Cockpite interior lighting.
+
+At night Bouton shot OVHD and CB as well as GLARSHIELD and PNL/FLOOD
 
 
 
