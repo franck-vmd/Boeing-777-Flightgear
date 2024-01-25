@@ -1330,6 +1330,10 @@ Franck.VMD
                 <property>engines/engine[1]/rpm</property>
                 <value>30</value>
             </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+            </less-than>
         </condition>
 	</animation>
 
@@ -2611,6 +2615,10 @@ Franck.VMD
                 <property>engines/engine[1]/rpm</property>
                 <value>30</value>
             </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+            </less-than>
         </condition>
 	</animation>
 	
@@ -2653,7 +2661,11 @@ Franck.VMD
                 <property>engines/engine[1]/rpm</property>
                 <value>30</value>
             </less-than>
-         </condition>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+            </less-than>
+        </condition>
 	</animation>
     
     <!-- Door Pick Animations cabine -->
@@ -2838,10 +2850,18 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 	
@@ -2859,10 +2879,18 @@ Franck.VMD
 			</binding>
 		</action>
         <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>	
 	
@@ -2880,10 +2908,18 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 	
@@ -2901,10 +2937,18 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 
@@ -2922,10 +2966,18 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 
@@ -2943,10 +2995,18 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 
@@ -2964,10 +3024,18 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 
@@ -2985,10 +3053,18 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>	
 	
@@ -3174,10 +3250,18 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 
@@ -3195,10 +3279,18 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 
@@ -3216,10 +3308,18 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-        <less-than>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>
-        </less-than>
+            </less-than>
         </condition>
 	</animation>
 
@@ -3239,11 +3339,15 @@ Franck.VMD
            <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
             </less-than>
         </condition>
 	</animation>

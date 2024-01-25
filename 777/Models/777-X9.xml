@@ -3361,6 +3361,56 @@ Franck.VMD
             </less-than>
         </condition>
 	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>entry5l</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c54");
+				</script>
+			</binding>
+		</action>
+          <condition>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>01</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>01</value>
+            </less-than>
+        </condition>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>entry5r.001</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c55");
+				</script>
+			</binding>
+		</action>
+         <condition>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>01</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>01</value>
+            </less-than>
+        </condition>
+	</animation>
 
         <animation>
 		<type>pick</type>
@@ -5368,6 +5418,485 @@ Franck.VMD
 		<type>rotate</type>
                 <object-name>entry4rC2</object-name>
 		<property>sim/multiplay/generic/float[25]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+                        <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>130</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>24.9622</x-m>
+            <y-m>2.4191</y-m>
+            <z-m>0.7927</z-m>
+            </center>
+            <axis>
+	    <x>0</x>
+	    <y>0</y>
+	    <z>1</z>
+	   </axis>
+	</animation>
+	
+	
+    <!-- Door5l Animations -->
+
+       <animation>
+		<name>L5PE Door y-translate</name>
+		<type>translate</type>
+		<object-name>entry5lPE</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
+                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
+			<entry><ind>0.25</ind><dep>0.03</dep></entry>
+                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
+			<entry><ind>1</ind><dep>0.03</dep></entry>
+		</interpolation>
+        <axis>
+        <x1-m>24.6183</x1-m>
+        <y1-m>-2.43939</y1-m>
+        <z1-m>0.464811</z1-m>
+        <x2-m>24.6183</x2-m>
+        <y2-m>-2.6891</y2-m>
+        <z2-m>0.464811</z2-m>
+        </axis>
+          <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+	</animation>
+
+       <animation>
+		<name>L5P Door y-rotate</name>
+		<type>rotate</type>
+		<object-name>entry5lPE</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>-180</dep></entry>
+                        <entry><ind>0.50</ind><dep>-180</dep></entry>
+			<entry><ind>1</ind><dep>-180</dep></entry>
+		</interpolation>
+            <axis>
+        <x1-m>24.6183</x1-m>
+        <y1-m>-2.43939</y1-m>
+        <z1-m>0.464811</z1-m>
+        <x2-m>24.6183</x2-m>
+        <y2-m>-2.6891</y2-m>
+        <z2-m>0.464811</z2-m>
+        </axis>
+          <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+	</animation>
+
+        <animation>
+		<name>L5P Door y-rotate</name>
+		<type>rotate</type>
+		<object-name>entry5lP</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>180</dep></entry>
+                        <entry><ind>0.50</ind><dep>180</dep></entry>
+			<entry><ind>1</ind><dep>180</dep></entry>
+		</interpolation>
+        <center>
+        <x-m>24.6987</x-m>
+        <y-m>-2.17098</y-m>
+        <z-m>0.36034</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>L5A Door x-rotate</name>
+		<type>rotate</type>
+		<object-name>entry5lA</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>-15</dep></entry>
+                        <entry><ind>0.50</ind><dep>-15</dep></entry>
+			<entry><ind>1</ind><dep>-15</dep></entry>
+		</interpolation>
+            <axis>
+        <x1-m>-7.99692</x1-m>
+        <y1-m>-2.86648</y1-m>
+        <z1-m>1.19061</z1-m>
+        <x2-m>-7.60549</x2-m>
+        <y2-m>-2.86648</y2-m>
+        <z2-m>1.19061</z2-m>
+        </axis>
+          <axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
+	</animation>
+
+        <animation>
+		<name>L5 Door z-translate</name>
+		<type>translate</type>
+		<object-name>entry5l</object-name>
+                <object-name>entry5l2</object-name>
+                <object-name>entry5lG</object-name>
+                <object-name>entry5lC2</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0.05</dep></entry>
+                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
+			<entry><ind>1</ind><dep>0.05</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>L5 Door z-rotation</name>
+		<type>rotate</type>
+		<object-name>entry5l</object-name>
+                <object-name>entry5l2</object-name>
+                <object-name>entry5lG</object-name>
+                <object-name>entry5lC2</object-name>
+                <object-name>entry5lC</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+                        <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-130</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>24.1835</x-m>
+            <y-m>-2.42541</y-m>
+            <z-m>0.77978</z-m>
+           </center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>L5 Door z-rotation</name>
+		<type>rotate</type>
+		<object-name>entry5l</object-name>
+                <object-name>entry5l2</object-name>
+                <object-name>entry5lG</object-name>
+                <object-name>entry5lC2</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+                        <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>130</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>24.9622</x-m>
+            <y-m>-2.4191</y-m>
+            <z-m>0.7927</z-m>
+            </center>
+            <axis>
+	    <x>0</x>
+	    <y>0</y>
+	    <z>1</z>
+	   </axis>
+	</animation>
+
+        <animation>
+		<name>l5 Door X-translate</name>
+		<type>translate</type>
+		<object-name>entry5l</object-name>
+                <object-name>entry5l2</object-name>
+                <object-name>entry5lG</object-name>
+                <object-name>entry5lC2</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+                        <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.2</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>L5 Door z-rotation</name>
+		<type>rotate</type>
+                <object-name>entry5lC2</object-name>
+		<property>sim/multiplay/generic/float[73]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+                        <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-130</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>24.9622</x-m>
+            <y-m>-2.4191</y-m>
+            <z-m>0.7927</z-m>
+            </center>
+            <axis>
+	    <x>0</x>
+	    <y>0</y>
+	    <z>1</z>
+	   </axis>
+	</animation>
+
+    <!-- Door5r Animations -->
+
+       <animation>
+		<name>R5PE Door y-translate</name>
+		<type>translate</type>
+		<object-name>entry5rPE</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
+                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
+			<entry><ind>0.25</ind><dep>0.03</dep></entry>
+                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
+			<entry><ind>1</ind><dep>0.03</dep></entry>
+		</interpolation>
+        <axis>
+        <x1-m>24.6183</x1-m>
+        <y1-m>2.43939</y1-m>
+        <z1-m>0.464811</z1-m>
+        <x2-m>24.6183</x2-m>
+        <y2-m>2.6891</y2-m>
+        <z2-m>0.464811</z2-m>
+        </axis>
+          <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+	</animation>
+
+       <animation>
+		<name>R5P Door y-rotate</name>
+		<type>rotate</type>
+		<object-name>entry5rPE</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>-180</dep></entry>
+                        <entry><ind>0.50</ind><dep>-180</dep></entry>
+			<entry><ind>1</ind><dep>-180</dep></entry>
+		</interpolation>
+            <axis>
+        <x1-m>24.6183</x1-m>
+        <y1-m>2.43939</y1-m>
+        <z1-m>0.464811</z1-m>
+        <x2-m>24.6183</x2-m>
+        <y2-m>2.6891</y2-m>
+        <z2-m>0.464811</z2-m>
+        </axis>
+          <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+	</animation>
+
+        <animation>
+		<name>R5P Door y-rotate</name>
+		<type>rotate</type>
+		<object-name>entry5rP</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>180</dep></entry>
+                        <entry><ind>0.50</ind><dep>180</dep></entry>
+			<entry><ind>1</ind><dep>180</dep></entry>
+		</interpolation>
+        <center>
+        <x-m>24.6987</x-m>
+        <y-m>2.17098</y-m>
+        <z-m>0.36034</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>R5A Door x-rotate</name>
+		<type>rotate</type>
+		<object-name>entry5rA</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>15</dep></entry>
+                        <entry><ind>0.50</ind><dep>15</dep></entry>
+			<entry><ind>1</ind><dep>15</dep></entry>
+		</interpolation>
+            <axis>
+        <x1-m>-7.99692</x1-m>
+        <y1-m>2.86648</y1-m>
+        <z1-m>1.19061</z1-m>
+        <x2-m>-7.60549</x2-m>
+        <y2-m>2.86648</y2-m>
+        <z2-m>1.19061</z2-m>
+        </axis>
+          <axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
+	</animation>
+
+        <animation>
+		<name>R5 Door z-translate</name>
+		<type>translate</type>
+		<object-name>entry5r.001</object-name>
+                <object-name>entry5r2</object-name>
+                <object-name>entry5rG</object-name>
+                <object-name>entry5rC2</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0.05</dep></entry>
+                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
+			<entry><ind>1</ind><dep>0.05</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>R5 Door z-rotation</name>
+		<type>rotate</type>
+		<object-name>entry5r.001</object-name>
+                <object-name>entry5r2</object-name>
+                <object-name>entry5rG</object-name>
+                <object-name>entry5rC2</object-name>
+                <object-name>entry5rC</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+                        <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>130</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>24.1835</x-m>
+            <y-m>2.42541</y-m>
+            <z-m>0.77978</z-m>
+           </center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>R5 Door z-rotation</name>
+		<type>rotate</type>
+		<object-name>entry5r.001</object-name>
+                <object-name>entry5r2</object-name>
+                <object-name>entry5rG</object-name>
+                <object-name>entry5rC2</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+                        <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-130</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>24.9622</x-m>
+            <y-m>2.4191</y-m>
+            <z-m>0.7927</z-m>
+            </center>
+            <axis>
+	    <x>0</x>
+	    <y>0</y>
+	    <z>1</z>
+	   </axis>
+	</animation>
+
+        <animation>
+		<name>R5 Door X-translate</name>
+		<type>translate</type>
+		<object-name>entry5r.001</object-name>
+                <object-name>entry5r2</object-name>
+                <object-name>entry5rG</object-name>
+                <object-name>entry5rC2</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+                        <entry><ind>0.5</ind><dep>0</dep></entry>
+                        <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+                        <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.2</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>R5 Door z-rotation</name>
+		<type>rotate</type>
+                <object-name>entry5rC2</object-name>
+		<property>sim/multiplay/generic/float[74]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
                         <entry><ind>0.5</ind><dep>0</dep></entry>
