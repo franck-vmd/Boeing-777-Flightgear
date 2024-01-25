@@ -1,16 +1,75 @@
+Français :
+
 Bienvenue
 
 FlightGear Flight Simulator , souvent abrégé FlightGear ou FGFS est un jeu vidéo libre de simulation de vol , gratuit, open-source et multiplate-forme développé par le projet FlightGear .
 Principalement écrit dans le langage de programmation C++ , FlightGear est , tout comme Fly ! Legacy , un simulateur de vol dont les sources sont libres .
+
+Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,pour le 28 janvier 2024
+
+
+
+Portes 777-séries 200: L1, L2 ,L3, L4 ,R1, R2 ,R3, R4 , ouverture et fermeture jusqu'à 35 knots
+
+Portes X9: L1, L2 ,L3, L4 ,L5, R1 ,R2, R3 ,R4, R5 ouverture et fermeture jusqu'à 35 knots
+
+Portes F et KFC: L1, L2 ,R1, R2 ouverture et fermeture jusqu'à 35 knots
+
+Indication visuelle intérieure cabine pour les portes : éclairage à gauche et à droite de chaque bas de portes ainsi que la manette Automatique> Manuel en haut de chaque porte 
+
+Portes Motrices : ouverture et fermeture jusqu'aux régimes moteurs 30 et jusqu'à 10 knots
+
+Portes APU : ouverture et fermeture jusqu'aux régimes moteurs 30 et jusqu'à 10 knots
+
+Porte RADAR : ouverture et fermeture jusqu'aux régimes moteurs 30 et jusqu'à 10 knots
+
+Portes Lgear et Rgear : ouverture et fermeture jusqu'aux régimes moteurs 30 et jusqu'à 10 knots
+
+Portes Soutes : ouverture et fermeture jusqu'aux régimes moteurs 30 et jusqu'à 10 knots
+
+Fenêtres Cockpite : ouverture et fermeture pas de condition
+
+Porte Cockpite ---> Cabine : ouverture et fermeture pas de condition, sauf bouton Pedestal à côté du téléphone
+
+Alarme Toutes les portes confondus " CAUTION ", visuel sur le MFD et écriture sur UEICAS
+
+
+
+Anglais :
 
 Welcome
 
 FlightGear Flight Simulator, often abbreviated FlightGear or FGFS is a free, open-source, cross-platform flight simulation video game developed by the FlightGear project.
 Mainly written in the C++ programming language, FlightGear is, just like Fly! Legacy, a flight simulator with open sources.
 
-
-Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,pour le 28 janvier 2024 
-
 Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,for January 28, 2024
+
+
+
+777-series 200 doors: L1, L2, L3, L4, R1, R2, R3, R4, opening and closing up to 35 knots
+
+Doors X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5 opening and closing up to 35 knots
+
+F and KFC doors: L1, L2, R1, R2 opening and closing up to 35 knots
+
+Cabin interior visual indication for the doors: lighting on the left and right of each door bottom as well as the Automatic > Manual lever at the top of each door
+
+Power Doors: opening and closing up to 30 engine speeds and up to 10 knots
+
+APU doors: opening and closing up to 30 engine speeds and up to 10 knots
+
+RADAR door: opening and closing up to 30 engine speeds and up to 10 knots
+
+Lgear and Rgear doors: opening and closing up to engine speeds 30 and up to 10 knots
+
+Hold doors: opening and closing up to engine speeds 30 and up to 10 knots
+
+Cockpite windows: opening and closing no conditions
+
+Cockpit door ---> Cabin: opening and closing no conditions, except Pedestal button next to the telephone
+
+Alarm All doors combined “CAUTION”, visual on the MFD and writing on UEICAS
+
+
 
 https://youtu.be/7qVpbbwSf3o?si=JpPAMUL3vsy3p7Ar
