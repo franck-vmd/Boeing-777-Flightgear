@@ -7,7 +7,7 @@ Principalement écrit dans le langage de programmation C++ , FlightGear est , to
 
 Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,pour le 28 janvier 2024
 
-
+----------------------------------------------------------------------------------
 
 Portes 777-séries 200: L1, L2 ,L3, L4 ,R1, R2 ,R3, R4 , ouverture et fermeture jusqu'à 35 knots
 
@@ -40,8 +40,18 @@ Pilots : Pas de condition
 
 De nuit Bouton a tourné OVHD et CB ainsi que GLARSHIELD et PNL/FLOOD
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Téléchargement : Bouton "Code" de couleur vert , "Download Zip" en bas 
+
+Dézipper le dossier Zip "Boeing-777-Flightgear-main.zip"
+
+Prendre le dossier "777" dans le dossier "Boeing-777-Flightgear-main" pour installer dans flightgear
+
+Prévoir 3 go disponible sur disque dur
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Anglais :
 
@@ -52,7 +62,7 @@ Mainly written in the C++ programming language, FlightGear is, just like Fly! Le
 
 Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,for January 28, 2024
 
-
+-------------------------------------------------------------------------------
 
 777-series 200 doors: L1, L2, L3, L4, R1, R2, R3, R4, opening and closing up to 35 knots
 
@@ -85,6 +95,16 @@ Cockpite lighting: on OHpanel BATTERY button, Master BRIGHT turn button for inst
 
 At night Bouton shot OVHD and CB as well as GLARSHIELD and PNL/FLOOD
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Download: Green “Code” button, “Download Zip” at the bottom
+
+Unzip the Zip folder "Boeing-777-Flightgear-main.zip"
+
+Take the "777" folder in the "Boeing-777-Flightgear-main" folder to install in flightgear
+
+Allow 3 GB available on hard drive
+
+---------------------------------------------------------------------------------------------
 
 https://youtu.be/7qVpbbwSf3o?si=JpPAMUL3vsy3p7Ar
