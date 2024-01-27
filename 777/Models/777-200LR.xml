@@ -1332,7 +1332,7 @@ Franck.VMD
             </less-than>
             <less-than>
             <property>velocities/groundspeed-kt</property>
-            <value>30</value>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>

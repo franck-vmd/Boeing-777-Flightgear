@@ -263,6 +263,14 @@
                  </script>
              </binding>
                   </item>
+                  <item n="15">
+                    <label>DoorsKFC</label>
+                    <name>doorsKFC</name>
+                    <binding>
+                        <command>dialog-show</command>
+                        <dialog-name>doorsKFC</dialog-name>
+                    </binding>
+                </item>
 				</menu>
 			</default>
         </menubar>

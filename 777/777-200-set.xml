@@ -257,6 +257,14 @@
                  </script>
              </binding>
                   </item>
+                  <item n="14">
+                    <label>Doors</label>
+                    <name>doors</name>
+                    <binding>
+                        <command>dialog-show</command>
+                        <dialog-name>doors</dialog-name>
+                    </binding>
+                </item>
                 </menu>
             </default>
         </menubar>

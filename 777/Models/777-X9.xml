@@ -674,6 +674,8 @@ Franck.VMD
         <object-name>entry3rG</object-name>
         <object-name>entry4lG</object-name>
         <object-name>entry4rG</object-name>
+        <object-name>entry5lG</object-name>
+        <object-name>entry5rG</object-name>
    </effect>
     
     <model>
@@ -8968,7 +8970,7 @@ Franck.VMD
 <!--    evacuations traps    -->	
 	<model>
  <name>evacuation</name>
- <path>Aircraft/777/Models/Ground/Services/Evacuation/evacuation.xml</path>
+ <path>Aircraft/777/Models/Ground/Services/Evacuation/evacuationX9.xml</path>
  <offsets>
   <x-m>0</x-m>
   <y-m>0</y-m>

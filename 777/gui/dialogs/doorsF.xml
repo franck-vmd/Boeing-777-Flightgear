@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <name>doorsF</name>
+    <layout>vbox</layout>
+    <padding>20</padding>
+
+<group>
+
+    <layout>hbox</layout>
+    <text>
+    <label>Doors Close Open</label>
+    </text>
+    <empty><stretch>true</stretch></empty>
+
+<button>
+    <legend/>
+    <key>Esc</key>
+    <pref-width>16</pref-width>
+    <pref-height>16</pref-height>
+    <border>2</border>
+    <binding>
+    <command>dialog-close</command>
+    </binding>
+</button>
+    
+</group>
+
+<hrule/>
+    
+<group>
+    <stretch>true</stretch>  
+    <layout>hbox</layout>
+    <halign>center</halign>  
+    <text> 
+    <label>Doors L - Doors R</label>
+    </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+    <pref-width>70</pref-width>
+    <desc>Close</desc>
+    <legend>Close</legend>
+    <equal>true</equal>
+    <repeatable type="bool">false</repeatable>
+    <binding>
+    <command>nasal</command>
+    <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/l1/position-norm", 0);
+				setprop("/aaa/door-positions/l2/position-norm", 0);
+				setprop("/aaa/door-positions/l3/position-norm", 0);
+				setprop("/aaa/door-positions/l4/position-norm", 0);
+				setprop("/aaa/door-positions/r1/position-norm", 0);
+				setprop("/aaa/door-positions/r2/position-norm", 0);
+				setprop("/aaa/door-positions/r3/position-norm", 0);
+				setprop("/aaa/door-positions/r4/position-norm", 0);
+				setprop("/aaa/door-positions/c54/position-norm", 0);
+				setprop("/aaa/door-positions/c55/position-norm", 0);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/l1/position-norm", 1);
+				setprop("/aaa/door-positions/l2/position-norm", 1);
+				setprop("/aaa/door-positions/l3/position-norm", 1);
+				setprop("/aaa/door-positions/l4/position-norm", 1);
+				setprop("/aaa/door-positions/r1/position-norm", 1);
+				setprop("/aaa/door-positions/r2/position-norm", 1);
+				setprop("/aaa/door-positions/r3/position-norm", 1);
+				setprop("/aaa/door-positions/r4/position-norm", 1);
+				setprop("/aaa/door-positions/c54/position-norm", 1);
+				setprop("/aaa/door-positions/c55/position-norm", 1);
+				controls.click(2);
+				</script>
+     </binding>
+</button>
+</group>
+   
+<hrule/>  
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Soutes</label>
+     </text>
+</group>
+
+<hrule/>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>     
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c9/position-norm", 0);
+				setprop("/aaa/door-positions/c10/position-norm", 0);
+				setprop("/aaa/door-positions/c11/position-norm", 0);
+				controls.click(2);
+				</script>
+     </binding>
+</button>
+
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c9/position-norm", 1);
+				setprop("/aaa/door-positions/c10/position-norm", 1);
+				setprop("/aaa/door-positions/c11/position-norm", 1);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+</group>
+        
+<hrule/>
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>RADAR</label>
+     </text>
+</group>
+
+     <hrule/>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c12/position-norm", 0);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c12/position-norm", 1);
+				controls.click(2);
+				</script>
+     </binding>
+</button>
+        
+</group>
+        
+<hrule/>
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>APU G-D</label>
+     </text>
+</group>
+
+<hrule/>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c31/position-norm", 0);
+				setprop("/aaa/door-positions/c32/position-norm", 0);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c31/position-norm", 1);
+				setprop("/aaa/door-positions/c32/position-norm", 1);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+</group>
+        
+<hrule/>
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Moteur G-D</label>
+     </text>
+</group>
+
+<hrule/>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c1/position-norm", 0);
+				setprop("/aaa/door-positions/c2/position-norm", 0);
+				setprop("/aaa/door-positions/c3/position-norm", 0);
+				setprop("/aaa/door-positions/c4/position-norm", 0);
+				setprop("/aaa/door-positions/c5/position-norm", 0);
+				setprop("/aaa/door-positions/c6/position-norm", 0);
+				setprop("/aaa/door-positions/c7/position-norm", 0);
+				setprop("/aaa/door-positions/c8/position-norm", 0);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c1/position-norm", 1);
+				setprop("/aaa/door-positions/c2/position-norm", 1);
+				setprop("/aaa/door-positions/c3/position-norm", 1);
+				setprop("/aaa/door-positions/c4/position-norm", 1);
+				setprop("/aaa/door-positions/c5/position-norm", 1);
+				setprop("/aaa/door-positions/c6/position-norm", 1);
+				setprop("/aaa/door-positions/c7/position-norm", 1);
+				setprop("/aaa/door-positions/c8/position-norm", 1);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>L R Gear</label>
+     </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c33/position-norm", 0);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c33/position-norm", 1);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Cargo</label>
+     </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c30/position-norm", 0);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/c30/position-norm", 1);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Close-Open automatique</label>
+     </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/l1/position-norm", 0);
+				setprop("/aaa/door-positions/l2/position-norm", 0);
+				setprop("/aaa/door-positions/l3/position-norm", 0);
+				setprop("/aaa/door-positions/l4/position-norm", 0);
+				setprop("/aaa/door-positions/r1/position-norm", 0);
+				setprop("/aaa/door-positions/r2/position-norm", 0);
+				setprop("/aaa/door-positions/r3/position-norm", 0);
+				setprop("/aaa/door-positions/r4/position-norm", 0);
+				setprop("/aaa/door-positions/c54/position-norm", 0);
+				setprop("/aaa/door-positions/c55/position-norm", 0);
+				setprop("/aaa/door-positions/c9/position-norm", 0);
+				setprop("/aaa/door-positions/c10/position-norm", 0);
+				setprop("/aaa/door-positions/c11/position-norm", 0);
+				setprop("/aaa/door-positions/c12/position-norm", 0);
+				setprop("/aaa/door-positions/c31/position-norm", 0);
+				setprop("/aaa/door-positions/c32/position-norm", 0);
+				setprop("/aaa/door-positions/c1/position-norm", 0);
+				setprop("/aaa/door-positions/c2/position-norm", 0);
+				setprop("/aaa/door-positions/c3/position-norm", 0);
+				setprop("/aaa/door-positions/c4/position-norm", 0);
+				setprop("/aaa/door-positions/c5/position-norm", 0);
+				setprop("/aaa/door-positions/c6/position-norm", 0);
+				setprop("/aaa/door-positions/c7/position-norm", 0);
+				setprop("/aaa/door-positions/c8/position-norm", 0);
+				setprop("/aaa/door-positions/c33/position-norm", 0);
+				setprop("/aaa/door-positions/c30/position-norm", 0);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+				if (getprop("/aaa/switches/EVAC_Cover")==0)
+				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/l1/position-norm", 1);
+				setprop("/aaa/door-positions/l2/position-norm", 1);
+				setprop("/aaa/door-positions/l3/position-norm", 1);
+				setprop("/aaa/door-positions/l4/position-norm", 1);
+				setprop("/aaa/door-positions/r1/position-norm", 1);
+				setprop("/aaa/door-positions/r2/position-norm", 1);
+				setprop("/aaa/door-positions/r3/position-norm", 1);
+				setprop("/aaa/door-positions/r4/position-norm", 1);
+				setprop("/aaa/door-positions/c54/position-norm", 1);
+				setprop("/aaa/door-positions/c55/position-norm", 1);
+				setprop("/aaa/door-positions/c9/position-norm", 1);
+				setprop("/aaa/door-positions/c10/position-norm", 1);
+				setprop("/aaa/door-positions/c11/position-norm", 1);
+				setprop("/aaa/door-positions/c12/position-norm", 1);
+				setprop("/aaa/door-positions/c31/position-norm", 1);
+				setprop("/aaa/door-positions/c32/position-norm", 1);
+				setprop("/aaa/door-positions/c1/position-norm", 1);
+				setprop("/aaa/door-positions/c2/position-norm", 1);
+				setprop("/aaa/door-positions/c3/position-norm", 1);
+				setprop("/aaa/door-positions/c4/position-norm", 1);
+				setprop("/aaa/door-positions/c5/position-norm", 1);
+				setprop("/aaa/door-positions/c6/position-norm", 1);
+				setprop("/aaa/door-positions/c7/position-norm", 1);
+				setprop("/aaa/door-positions/c8/position-norm", 1);
+				setprop("/aaa/door-positions/c33/position-norm", 1);
+				setprop("/aaa/door-positions/c30/position-norm", 1);
+				controls.click(2);
+     </script>
+     </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+<group>
+        <layout>hbox</layout>
+        <halign>right</halign>
+        <default-padding>6</default-padding>
+
+<button>
+            <legend>Close</legend>
+            <key>Esc</key>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+</button>
+   
+</group>
+
+</PropertyList>

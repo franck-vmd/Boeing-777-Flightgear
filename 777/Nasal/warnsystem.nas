@@ -382,16 +382,16 @@ var WEU =
 	if ((me.smoking_sign>-1) and (me.seatbelts == -1))
 	    append(me.msgs_info,"NO SMOKING ON");
 
-       if (getprop("/aaa/door-positions/l1/position-norm")==1 or getprop("/aaa/door-positions/l2/position-norm")==1 or getprop("/aaa/door-positions/l3/position-norm")==1 or getprop("/aaa/door-positions/l4/position-norm")==1)
+       if (getprop("/aaa/door-positions/l1/position-norm")==1 or getprop("/aaa/door-positions/l2/position-norm")==1 or getprop("/aaa/door-positions/l3/position-norm")==1 or getprop("/aaa/door-positions/l4/position-norm")==1 or getprop("/aaa/door-positions/c54/position-norm")==1)
 			    append(me.msgs_caution,">DOOR L");
 
-       if (getprop("/aaa/door-positions/r1/position-norm")==1 or getprop("/aaa/door-positions/r2/position-norm")==1 or getprop("/aaa/door-positions/r3/position-norm")==1 or getprop("/aaa/door-positions/r4/position-norm")==1)
+       if (getprop("/aaa/door-positions/r1/position-norm")==1 or getprop("/aaa/door-positions/r2/position-norm")==1 or getprop("/aaa/door-positions/r3/position-norm")==1 or getprop("/aaa/door-positions/r4/position-norm")==1 or getprop("/aaa/door-positions/c55/position-norm")==1)
 			    append(me.msgs_caution,">DOOR R");				
 	
 			if (getprop("/aaa/door-positions/c9/position-norm")==1 or getprop("/aaa/door-positions/c10/position-norm")==1 or getprop("/aaa/door-positions/c41/position-norm")==1 or getprop("/aaa/door-positions/c30/position-norm")==1 or getprop("/aaa/door-positions/c11/position-norm")==1)
 			    append(me.msgs_caution,">CARGO DOOR");
 
-                 if (getprop("/aaa/door-positions/c31/position-norm")==1)
+                 if (getprop("/aaa/door-positions/c31/position-norm")==1 or getprop("/aaa/door-positions/c32/position-norm")==1)
 			    append(me.msgs_caution,">APU DOOR");
 
                  if (getprop("/aaa/door-positions/c33/position-norm")==1)

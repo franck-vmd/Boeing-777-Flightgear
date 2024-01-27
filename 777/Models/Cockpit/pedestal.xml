@@ -1301,6 +1301,16 @@ Franck.VMD
                 <script>
 				if (getprop("/aaa/switches/EVAC_Cover")==0)
 				setprop("/aaa/switches/EVACPnl.toggle", 0);
+				setprop("/aaa/door-positions/l1/position-norm", 0);
+				setprop("/aaa/door-positions/l2/position-norm", 0);
+				setprop("/aaa/door-positions/l3/position-norm", 0);
+				setprop("/aaa/door-positions/l4/position-norm", 0);
+				setprop("/aaa/door-positions/r1/position-norm", 0);
+				setprop("/aaa/door-positions/r2/position-norm", 0);
+				setprop("/aaa/door-positions/r3/position-norm", 0);
+				setprop("/aaa/door-positions/r4/position-norm", 0);
+				setprop("/aaa/door-positions/c54/position-norm", 0);
+				setprop("/aaa/door-positions/c55/position-norm", 0);
 				controls.click(2);
 				</script>
          </binding>	
@@ -1352,6 +1362,8 @@ Franck.VMD
 				setprop("/aaa/door-positions/r2/position-norm", 1);
 				setprop("/aaa/door-positions/r3/position-norm", 1);
 				setprop("/aaa/door-positions/r4/position-norm", 1);
+				setprop("/aaa/door-positions/c54/position-norm", 1);
+				setprop("/aaa/door-positions/c55/position-norm", 1);
 				</script>
             </binding>			
         </action>
