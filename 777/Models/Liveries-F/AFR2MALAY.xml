@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">07 MALAYSIA 777-F</name>
+				<texture>Liveries-F/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-F/AFR1malaysia.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-F/AFR3malaysia.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-F/AFR4malaysia.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-F/AFR5malaysia.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-F/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-F/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-F/AFR8malaysia.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-F/AFR9.png</texture>
+                        </fuselage7>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>MALAYSIA</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+
