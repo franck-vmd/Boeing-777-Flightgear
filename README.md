@@ -31,7 +31,7 @@ Fenêtres Cockpite : ouverture et fermeture pas de condition
 
 Porte Cockpite ---> Cabine : ouverture et fermeture pas de condition, sauf bouton Pedestal à côté du téléphone
 
-Alarme Toutes les portes confondus " CAUTION ", visuel sur le MFD et écriture sur UEICAS
+Alarme Toutes les portes confondus " CAUTION ", visuel sur le MFD et écriture sur EICAS
 
 Pilots : Pas de condition
 
@@ -86,14 +86,14 @@ Cockpite windows: opening and closing no conditions
 
 Cockpit door ---> Cabin: opening and closing no conditions, except Pedestal button next to the telephone
 
-Alarm All doors combined “CAUTION”, visual on the MFD and writing on UEICAS
+Alarm All doors combined “CAUTION”, visual on the MFD and on the EICAS
 
 Pilots: No conditions
 
 
-Cockpite lighting: on OHpanel BATTERY button, Master BRIGHT turn button for instruments, STORM button and turn DOME button for Cockpite interior lighting.
+Cockpit lighting: on OH panel BATTERY button, Master BRIGHT knob for instruments, STORM button and DOME knob for Cockpit interior lighting.
 
-At night Bouton shot OVHD and CB as well as GLARSHIELD and PNL/FLOOD
+At night OVHD knob and CB knob as well as GLARESHIELD and PNL/FLOOD
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -103,7 +103,7 @@ Unzip the Zip folder "Boeing-777-Flightgear-main.zip"
 
 Take the "777" folder in the "Boeing-777-Flightgear-main" folder to install in flightgear
 
-Allow 3 GB available on hard drive
+Make sure you have 3 GB available on your hard drive
 
 ---------------------------------------------------------------------------------------------
 
