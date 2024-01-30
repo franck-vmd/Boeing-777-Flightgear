@@ -53,12 +53,11 @@ Prévoir 3 go disponible sur disque dur
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Anglais :
+English:
 
 Welcome
 
-FlightGear Flight Simulator, often abbreviated FlightGear or FGFS is a free, open-source, cross-platform flight simulation video game developed by the FlightGear project.
-Mainly written in the C++ programming language, FlightGear is, just like Fly! Legacy, a flight simulator with open sources.
+FlightGear Flight Simulator, often abbreviated FlightGear or FGFS is a free, open-source, cross-platform flight simulator developed by volunteers.
 
 Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,for January 28, 2024
 
@@ -78,11 +77,11 @@ APU doors: opening and closing up to 30 engine speeds and up to 10 knots
 
 RADAR door: opening and closing up to 30 engine speeds and up to 10 knots
 
-Lgear and Rgear doors: opening and closing up to engine speeds 30 and up to 10 knots
+Left gear and Right gear doors: opening and closing up to engine speeds 30 and up to 10 knots
 
 Hold doors: opening and closing up to engine speeds 30 and up to 10 knots
 
-Cockpite windows: opening and closing no conditions
+Cockpit windows: opening and closing no conditions
 
 Cockpit door ---> Cabin: opening and closing no conditions, except Pedestal button next to the telephone
 
