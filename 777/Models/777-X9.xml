@@ -2720,10 +2720,10 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[53]</property>
 		<factor>-50</factor>
         <axis>
-        <x1-m>33.1163</x1-m>
+        <x1-m>39.064</x1-m>
         <y1-m>-0.98822</y1-m>
         <z1-m>0.604</z1-m>
-        <x2-m>36.1778</x2-m>
+        <x2-m>42.1254</x2-m>
         <y2-m>-0.25729</y2-m>
         <z2-m>0.94253</z2-m>
     </axis>
@@ -2762,10 +2762,10 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[54]</property>
 		<factor>50</factor>
         <axis>
-        <x1-m>33.1163</x1-m>
+        <x1-m>39.064</x1-m>
         <y1-m>0.98822</y1-m>
         <z1-m>0.604</z1-m>
-        <x2-m>36.1778</x2-m>
+        <x2-m>42.1254</x2-m>
         <y2-m>0.25729</y2-m>
         <z2-m>0.94253</z2-m>
     </axis>
@@ -5928,9 +5928,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[12]</property>
 		<factor>50</factor>
         <center>
-            <x-m>-3.06955</x-m>
-            <y-m>-10.2779</y-m>
-            <z-m>-0.958704</z-m>
+            <x-m>-4.68003</x-m>
+            <y-m>-11.1191</y-m>
+            <z-m>-0.394745</z-m>
         </center>
 		<axis>
 			<x>-1</x>
@@ -5946,9 +5946,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[13]</property>
 		<factor>45</factor>
         <center>
-            <x-m>-3.06955</x-m>
-            <y-m>-9.51031</y-m>
-            <z-m>-0.958704</z-m>
+            <x-m>-4.68003</x-m>
+            <y-m>-10.2088</y-m>
+            <z-m>-0.394745</z-m>
         </center>
 		<axis>
 			<x>1</x>
@@ -5964,9 +5964,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[14]</property>
 		<factor>45</factor>
         <center>
-            <x-m>-2.25655</x-m>
-            <y-m>9.53155</y-m>
-            <z-m>-1.1716</z-m>
+            <x-m>-4.68003</x-m>
+            <y-m>10.2088</y-m>
+            <z-m>-0.39474</z-m>
         </center>
 		<axis>
 			<x>-1</x>
@@ -5982,9 +5982,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[15]</property>
 		<factor>50</factor>
         <center>
-            <x-m>-2.25655</x-m>
-            <y-m>10.2564</y-m>
-            <z-m>-1.1716</z-m>
+            <x-m>-4.68003</x-m>
+            <y-m>11.1191</y-m>
+            <z-m>-0.39474</z-m>
         </center>
 		<axis>
 			<x>1</x>
@@ -6004,9 +6004,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[16]</property>
 		<factor>35</factor>
         <center>
-            <x-m>0.29672</x-m>
-            <y-m>-9.54727</y-m>
-            <z-m>-1.23495</z-m>
+            <x-m>-0.86322</x-m>
+            <y-m>-10.2791</y-m>
+            <z-m>-0.75157</z-m>
         </center>
 		<axis>
 			<x>1</x>
@@ -6026,9 +6026,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[17]</property>
 		<factor>45</factor>
         <center>
-            <x-m>0.29672</x-m>
-            <y-m>-10.2407</y-m>
-            <z-m>-1.23495</z-m>
+            <x-m>-0.86322</x-m>
+            <y-m>-11.0488</y-m>
+            <z-m>-0.75157</z-m>
         </center>
 		<axis>
 			<x>-1</x>
@@ -6048,9 +6048,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[18]</property>
 		<factor>45</factor>
         <center>
-            <x-m>0.29672</x-m>
-            <y-m>10.2407</y-m>
-            <z-m>-1.23495</z-m>
+            <x-m>-0.86322</x-m>
+            <y-m>11.0488</y-m>
+            <z-m>-0.751559</z-m>
         </center>
 		<axis>
 			<x>1</x>
@@ -6070,9 +6070,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[19]</property>
 		<factor>35</factor>
         <center>
-            <x-m>0.29672</x-m>
-            <y-m>9.54727</y-m>
-            <z-m>-1.23495</z-m>
+            <x-m>-0.86322</x-m>
+            <y-m>10.2791</y-m>
+            <z-m>-0.751559</z-m>
         </center>
 		<axis>
 			<x>-1</x>
@@ -6142,9 +6142,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[29]</property>
 		<factor>25</factor>
         <center>
-            <x-m>-24.4323</x-m>
-            <y-m>0.000175</y-m>
-            <z-m>-1.58639</z-m>
+            <x-m>-31.4835</x-m>
+            <y-m>0.000172</y-m>
+            <z-m>-1.58543</z-m>
         </center>
 		<axis>
 			<x>0</x>
@@ -6161,9 +6161,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[29]</property>
 		<factor>-80</factor>
         <center>
-            <x-m>-24.4914</x-m>
+            <x-m>-31.5419</x-m>
             <y-m>-0.22074</y-m>
-            <z-m>-0.549672</z-m>
+            <z-m>-0.549675</z-m>
         </center>
 		<axis>
 			<x>0</x>
@@ -6179,9 +6179,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[29]</property>
 		<factor>165</factor>
         <center>
-            <x-m>-24.4914</x-m>
-            <y-m>-0.803271</y-m>
-            <z-m>-0.544933</z-m>
+            <x-m>-31.5419</x-m>
+            <y-m>-0.80327</y-m>
+            <z-m>-0.54493</z-m>
         </center>
 		<axis>
 			<x>0</x>
