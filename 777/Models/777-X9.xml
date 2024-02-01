@@ -698,7 +698,7 @@ Franck.VMD
     
     <model>
     <name>Passenger Seating1</name>
-    <path>Aircraft/777/Models/Seating/passenger_seating1.xml</path>
+    <path>Aircraft/777/Models/Seating/passenger_seating1X9.xml</path>
     <offsets>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -708,7 +708,7 @@ Franck.VMD
   
   <model>
     <name>Passenger Seating2</name>
-    <path>Aircraft/777/Models/Seating/passenger_seating2.xml</path>
+    <path>Aircraft/777/Models/Seating/passenger_seating2X9.xml</path>
     <offsets>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -2805,8 +2805,8 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[32]</property>
 		<factor>90</factor>
         <center>
-            <x-m>-7.95509</x-m>
-            <y-m>-0.384104</y-m>
+            <x-m>-15.0106</x-m>
+            <y-m>-0.3841</y-m>
             <z-m>0.44339</z-m>
         </center>
 		<axis>
@@ -2838,8 +2838,8 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[33]</property>
 		<factor>90</factor>
         <center>
-            <x-m>23.2346</x-m>
-            <y-m>-0.384104</y-m>
+            <x-m>29.1872</x-m>
+            <y-m>-0.38410</y-m>
             <z-m>0.44339</z-m>
         </center>
 		<axis>
@@ -2871,8 +2871,8 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[34]</property>
 		<factor>90</factor>
         <center>
-            <x-m>11.5343</x-m>
-            <y-m>-0.384104</y-m>
+            <x-m>17.487</x-m>
+            <y-m>-0.38410</y-m>
             <z-m>0.44339</z-m>
         </center>
 		<axis>
@@ -2904,8 +2904,8 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[35]</property>
 		<factor>90</factor>
         <center>
-            <x-m>9.88263</x-m>
-            <y-m>-0.384104</y-m>
+            <x-m>15.8253</x-m>
+            <y-m>-0.38410</y-m>
             <z-m>0.44339</z-m>
         </center>
 		<axis>
@@ -2937,8 +2937,8 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[36]</property>
 		<factor>90</factor>
         <center>
-            <x-m>-6.94271</x-m>
-            <y-m>-0.384104</y-m>
+            <x-m>-13.9882</x-m>
+            <y-m>-0.38410</y-m>
             <z-m>0.44339</z-m>
         </center>
 		<axis>
@@ -3532,12 +3532,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>-18.3929</x1-m>
+        <x1-m>-25.4434</x1-m>
         <y1-m>-2.80121</y1-m>
         <z1-m>0.455165</z1-m>
-        <x2-m>-18.4154</x2-m>
-        <y2-m>-3.00955</y2-m>
-        <z2-m>0.496249</z2-m>
+        <x2-m>-25.4592</x2-m>
+        <y2-m>-2.94756</y2-m>
+        <z2-m>0.484023</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -3560,12 +3560,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-18.3929</x1-m>
+        <x1-m>-25.4434</x1-m>
         <y1-m>-2.80121</y1-m>
         <z1-m>0.455165</z1-m>
-        <x2-m>-18.4154</x2-m>
-        <y2-m>-3.00955</y2-m>
-        <z2-m>0.496249</z2-m>
+        <x2-m>-25.4592</x2-m>
+        <y2-m>-2.94756</y2-m>
+        <z2-m>0.484023</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -3588,12 +3588,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>-18.2757</x1-m>
-        <y1-m>-2.42801</y1-m>
-        <z1-m>0.36034</z1-m>
-        <x2-m>-18.3137</x2-m>
+        <x1-m>-25.3263</x1-m>
+        <y1-m>-2.42415</y1-m>
+        <z1-m>0.360335</z1-m>
+        <x2-m>-25.3642</x2-m>
         <y2-m>-2.63692</y2-m>
-        <z2-m>0.36034</z2-m>
+        <z2-m>0.360335</z2-m>
         </axis>
 		<axis>
 			<x>0</x>
@@ -3616,10 +3616,10 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-18.5209</x1-m>
+        <x1-m>-25.5714</x1-m>
         <y1-m>-2.55389</y1-m>
         <z1-m>1.18915</z1-m>
-        <x2-m>-18.1268</x2-m>
+        <x2-m>-25.1774</x2-m>
         <y2-m>-2.60409</y2-m>
         <z2-m>1.18915</z2-m>
         </axis>
@@ -3671,9 +3671,9 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-143</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-18.8176</x-m>
+            <x-m>-25.8681</x-m>
             <y-m>-2.59909</y-m>
-            <z-m>0.7927</z-m>
+            <z-m>0.77978</z-m>
            </center>
 		<axis>
 			<x>0</x>
@@ -3699,7 +3699,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>138</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-18.0425</x-m>
+            <x-m>-25.093</x-m>
             <y-m>-2.67422</y-m>
             <z-m>0.64324</z-m>
             </center>
@@ -3747,12 +3747,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>130</dep></entry>
 		</interpolation>
             <axis>
-            <x1-m>-18.0425</x1-m>
+            <x1-m>-25.093</x1-m>
             <y1-m>-2.67422</y1-m>
-            <z1-m>0.792703</z1-m>
-            <x2-m>-18.0425</x2-m>
+            <z1-m>0.7927</z1-m>
+            <x2-m>-25.093</x2-m>
             <y2-m>-2.67422</y2-m>
-            <z2-m>0.493783</z2-m>
+            <z2-m>0.49378</z2-m>
             </axis>
             <axis>
 	    <x>0</x>
@@ -3777,12 +3777,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>-18.3929</x1-m>
+        <x1-m>-25.4434</x1-m>
         <y1-m>2.80121</y1-m>
         <z1-m>0.455165</z1-m>
-        <x2-m>-18.4154</x2-m>
-        <y2-m>3.00955</y2-m>
-        <z2-m>0.496249</z2-m>
+        <x2-m>-25.4592</x2-m>
+        <y2-m>2.94756</y2-m>
+        <z2-m>0.484023</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -3805,12 +3805,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-18.3929</x1-m>
+        <x1-m>-25.4434</x1-m>
         <y1-m>2.80121</y1-m>
         <z1-m>0.455165</z1-m>
-        <x2-m>-18.4154</x2-m>
-        <y2-m>3.00955</y2-m>
-        <z2-m>0.496249</z2-m>
+        <x2-m>-25.4592</x2-m>
+        <y2-m>2.94756</y2-m>
+        <z2-m>0.484023</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -3833,12 +3833,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>180</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>-18.2757</x1-m>
-        <y1-m>2.42801</y1-m>
-        <z1-m>0.36034</z1-m>
-        <x2-m>-18.3137</x2-m>
+        <x1-m>-25.3263</x1-m>
+        <y1-m>2.42415</y1-m>
+        <z1-m>0.360335</z1-m>
+        <x2-m>-25.3642</x2-m>
         <y2-m>2.63692</y2-m>
-        <z2-m>0.36034</z2-m>
+        <z2-m>0.360335</z2-m>
         </axis>
 		<axis>
 			<x>0</x>
@@ -3861,10 +3861,10 @@ Franck.VMD
 			<entry><ind>1</ind><dep>15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-18.5209</x1-m>
+        <x1-m>-25.5714</x1-m>
         <y1-m>2.55389</y1-m>
         <z1-m>1.18915</z1-m>
-        <x2-m>-18.1268</x2-m>
+        <x2-m>-25.1774</x2-m>
         <y2-m>2.60409</y2-m>
         <z2-m>1.18915</z2-m>
         </axis>
@@ -3916,9 +3916,9 @@ Franck.VMD
 			<entry><ind>1</ind><dep>143</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-18.8176</x-m>
+            <x-m>-25.8681</x-m>
             <y-m>2.59909</y-m>
-            <z-m>0.7927</z-m>
+            <z-m>0.77978</z-m>
            </center>
 		<axis>
 			<x>0</x>
@@ -3944,7 +3944,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-138</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-18.0425</x-m>
+            <x-m>-25.093</x-m>
             <y-m>2.67422</y-m>
             <z-m>0.64324</z-m>
             </center>
@@ -3992,12 +3992,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-130</dep></entry>
 		</interpolation>
             <axis>
-            <x1-m>-18.0425</x1-m>
+            <x1-m>-25.093</x1-m>
             <y1-m>2.67422</y1-m>
-            <z1-m>0.792703</z1-m>
-            <x2-m>-18.0425</x2-m>
+            <z1-m>0.7927</z1-m>
+            <x2-m>-25.093</x2-m>
             <y2-m>2.67422</y2-m>
-            <z2-m>0.493783</z2-m>
+            <z2-m>0.49378</z2-m>
             </axis>
             <axis>
 	    <x>0</x>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Sieges2777X9.ac</path>
+  
+  <animation>
+		<type>material</type>
+		<texture>texture_sieges2.png</texture>
+	</animation>
+
+        <effect>
+         <inherits-from>Aircraft/777/Models/Effects/reflect20</inherits-from>
+                         <object-name>Sieges777200</object-name>
+               </effect>
+
+  
+ 
+</PropertyList>
