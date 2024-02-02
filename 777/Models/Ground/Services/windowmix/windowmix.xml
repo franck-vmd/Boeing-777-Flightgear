@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>windowmix.ac</path>
+  
+  <animation>
+		<type>material</type>
+		<texture>windowmix.png</texture>
+                <object-name>window mix exterieur</object-name>
+       </animation>
+       
+       <animation>
+		<type>material</type>
+		<texture>wall.png</texture>
+		<object-name>window mix interieur</object-name>
+       </animation>
+       
+       <effect>
+         <inherits-from>Aircraft/777/Models/Effects/reflect2</inherits-from>
+                <object-name>window mix exterieur</object-name>
+       </effect>
+       
+       <effect>
+         <inherits-from>Aircraft/777/Models/Effects/reflect20</inherits-from>
+                <object-name>window mix interieur</object-name>
+       </effect>
+ 
+</PropertyList>
