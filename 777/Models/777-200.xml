@@ -582,15 +582,7 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect29</inherits-from>
         <object-name>mur</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777/Models/Effects/reflect29</inherits-from>
         <object-name>mur.001</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777/Models/Effects/reflect29</inherits-from>
         <object-name>mur.002</object-name>
     </effect>
 
