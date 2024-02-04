@@ -8891,7 +8891,7 @@ Franck.VMD
  <name>flight_attendants_door1l</name>
  <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door1l.xml</path>
  <offsets>
-  <x-m>0</x-m>
+  <x-m>-7.05</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
@@ -8911,7 +8911,7 @@ Franck.VMD
  <name>flight_attendants_door2l</name>
  <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door2l.xml</path>
  <offsets>
-  <x-m>0</x-m>
+  <x-m>-7.05</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
@@ -8931,7 +8931,7 @@ Franck.VMD
  <name>flight_attendants_door3l</name>
  <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door3l.xml</path>
  <offsets>
-  <x-m>0</x-m>
+  <x-m>5</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
@@ -8951,7 +8951,7 @@ Franck.VMD
  <name>flight_attendants_door4l</name>
  <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door4l.xml</path>
  <offsets>
-  <x-m>0</x-m>
+  <x-m>5</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
@@ -8962,6 +8962,26 @@ Franck.VMD
     <condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[24]</property>
+			<value>0</value>
+		</greater-than>
+    </condition>
+</animation>
+
+<model>
+ <name>flight_attendants_door5l</name>
+ <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door5l.xml</path>
+ <offsets>
+  <x-m>5</x-m>
+  <y-m>0</y-m>
+  <z-m>0</z-m>
+ </offsets>
+</model>
+<animation>
+    <type>select</type>
+    <object-name>flight_attendants_door4l</object-name>
+    <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[73]</property>
 			<value>0</value>
 		</greater-than>
     </condition>
