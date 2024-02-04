@@ -709,7 +709,7 @@
     <!-- x/y/z == right/up/back -->
     <from-model type="bool">true</from-model>
     <from-model-idx type="int">0</from-model-idx>
-    <x-offset-m type="double">-2.0</x-offset-m>
+    <x-offset-m type="double">-20.0</x-offset-m>
     <y-offset-m type="double">0.0</y-offset-m>
     <heading-offset-deg type="double">0.0</heading-offset-deg>
     <pitch-offset-deg type="double">0.0</pitch-offset-deg>

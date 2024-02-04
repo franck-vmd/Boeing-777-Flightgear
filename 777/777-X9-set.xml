@@ -44,52 +44,52 @@
         
         <view n="0">
             <config n="0">
-                <z-offset-m type="double">-29.8</z-offset-m>
+                <z-offset-m type="double">-29.89</z-offset-m>
             </config>
         </view>
         <view n="100">
             <config n="0">
-                <z-offset-m type="double">-29.8</z-offset-m>
+                <z-offset-m type="double">-29.89</z-offset-m>
             </config>
         </view>
         <view n="101">
             <config n="0">
-                <z-offset-m type="double">-28.0781</z-offset-m>
+                <z-offset-m type="double">-29.89</z-offset-m>
             </config>
         </view>
         <view n="102">
             <config n="0">
-                <z-offset-m type="double">-27.6981</z-offset-m>
+                <z-offset-m type="double">-29.51</z-offset-m>
             </config>
         </view>
         <view n="103">
             <config n="0">
-            <z-offset-m type="double">-12.347988889</z-offset-m>
+            <z-offset-m type="double">-14.15098</z-offset-m>
             </config>
         </view>
         <view n="104">
             <config n="0">
-            <z-offset-m type="double">-26.7381</z-offset-m>
+            <z-offset-m type="double">-28.55</z-offset-m>
             </config>
         </view>
         <view n="105">
             <config n="0">
-            <z-offset-m type="double">-26.90185</z-offset-m>
+            <z-offset-m type="double">-29</z-offset-m>
             </config>
         </view>
         <view n="106">
             <config n="0">
-            <z-offset-m type="double">-26.9781</z-offset-m>
+            <z-offset-m type="double">-29</z-offset-m>
             </config>
         </view>
         <view n="107">
             <config n="0">
-            <z-offset-m type="double">-27.55035</z-offset-m>
+            <z-offset-m type="double">-29.36125</z-offset-m>
             </config>
         </view>
         <view n="108">
             <config n="0">
-            <z-offset-m type="double">-27.55035</z-offset-m>
+            <z-offset-m type="double">-29.36125</z-offset-m>
             </config>
         </view>
         <view n="111">
@@ -99,37 +99,37 @@
         </view>
         <view n="112">
             <config n="0">
-            <z-offset-m type="double">-27.8658777</z-offset-m>
+            <z-offset-m type="double">-29.67777778</z-offset-m>
             </config>
         </view>
         <view n="113">
             <config n="0">
-            <z-offset-m type="double">-27.8658777</z-offset-m>
+            <z-offset-m type="double">-29.67777778</z-offset-m>
             </config>
         </view>
         <view n="114">
             <config n="0">
-            <z-offset-m type="double">-27.54935</z-offset-m>
+            <z-offset-m type="double">-29.36125</z-offset-m>
             </config>
         </view>
         <view n="115">
             <config n="0">
-            <z-offset-m type="double">-27.54935</z-offset-m>
+            <z-offset-m type="double">-29.36125</z-offset-m>
             </config>
         </view>
         <view n="116">
             <config n="0">
-            <z-offset-m type="double">-19.82</z-offset-m>
+            <z-offset-m type="double">-26.87</z-offset-m>
             </config>
         </view>
         <view n="117">
             <config n="0">
-            <z-offset-m type="double">-13.30</z-offset-m>
+            <z-offset-m type="double">-20.35</z-offset-m>
             </config>
         </view>
         <view n="118">
             <config n="0">
-            <z-offset-m type="double">-7.45</z-offset-m>
+            <z-offset-m type="double">-14.5</z-offset-m>
             </config>
         </view>
         <view n="119">
@@ -144,7 +144,7 @@
         </view>
         <view n="121">
             <config n="0">
-            <z-offset-m type="double">17.65</z-offset-m>
+            <z-offset-m type="double">22.65</z-offset-m>
             </config>
         </view>
         <view n="122">
@@ -154,22 +154,22 @@
         </view>
         <view n="123">
             <config n="0">
-            <z-offset-m type="double">-18.0053</z-offset-m>
+            <z-offset-m type="double">-25.0553</z-offset-m>
             </config>
         </view>
         <view n="124">
             <config n="0">
-            <z-offset-m type="double">-29.8</z-offset-m>
+            <z-offset-m type="double">-29.89</z-offset-m>
             </config>
         </view>
         <view n="125">
             <config n="0">
-            <z-offset-m type="double">-18.0053</z-offset-m>
+            <z-offset-m type="double">-25.0553</z-offset-m>
             </config>
         </view>
         <view n="126">
             <config n="0">
-            <z-offset-m type="double">-7.45</z-offset-m>
+            <z-offset-m type="double">-14.5</z-offset-m>
             </config>
         </view>
         <view n="127">
@@ -194,12 +194,12 @@
         </view>
         <view n="131">
             <config n="0">
-            <z-offset-m type="double">-9.39</z-offset-m>
+            <z-offset-m type="double">-16.44</z-offset-m>
             </config>
         </view>
         <view n="132">
             <config n="0">
-            <z-offset-m type="double">-9.39</z-offset-m>
+            <z-offset-m type="double">-16.44</z-offset-m>
             </config>
         </view>
         <view n="133">
@@ -209,17 +209,17 @@
         </view>
         <view n="134">
             <config n="0">
-            <z-offset-m type="double">-40.0</z-offset-m>
+            <z-offset-m type="double">-34.89</z-offset-m>
             </config>
         </view>
         <view n="135">
             <config n="0">
-            <z-offset-m type="double">-1.13</z-offset-m>
+            <z-offset-m type="double">-8.18</z-offset-m>
             </config>
         </view>
         <view n="136">
             <config n="0">
-            <z-offset-m type="double">-18.00</z-offset-m>
+            <z-offset-m type="double">-35.02</z-offset-m>
             </config>
         </view>
 
@@ -243,11 +243,11 @@
                         </binding>
                     </item>
                  <item n="9">
-                    <label>Handy Viewer</label>
-                    <name>handyviewer</name>
+                    <label>Handy Viewer X9</label>
+                    <name>handyviewerx9</name>
                     <binding>
                         <command>dialog-show</command>
-                        <dialog-name>handyviewer</dialog-name>
+                        <dialog-name>handyviewerx9</dialog-name>
                     </binding>
                 </item>
                   <item n="13">
@@ -414,10 +414,10 @@
    <file>Aircraft/777/Models/WalkView/walkview.nas</file>
   </walkview>
   <WalkViews>
-   <file>Aircraft/777/Systems/walk-views.nas</file>
+   <file>Aircraft/777/Systems/walk-views X9.nas</file>
   </WalkViews>
   <WalkViews1>
-   <file>Aircraft/777/Systems/walk-views1.nas</file>
+   <file>Aircraft/777/Systems/walk-views1 X9.nas</file>
   </WalkViews1>
     </nasal>
     
