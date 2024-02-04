@@ -84,16 +84,6 @@
         <property>controls/switches/passagers</property>
       </binding>
     </checkbox>
-    
-    <checkbox>
-      <halign>left</halign>
-      <label>windowmix</label>
-      <property>controls/switches/windowmix</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>controls/switches/windowmix</property>
-      </binding>
-    </checkbox>
 
   </group>
 

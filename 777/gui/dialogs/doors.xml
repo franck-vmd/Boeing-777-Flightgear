@@ -505,6 +505,41 @@
 <hrule/>
 
 <group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Open-Mix Hublot</label>
+     </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open-Mix</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/windowmix</property>
+      </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+
+<group>
         <layout>hbox</layout>
         <halign>right</halign>
         <default-padding>6</default-padding>
