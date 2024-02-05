@@ -831,13 +831,13 @@
         <live>true</live>
     </checkbox>
     
-    <checkbox> <!-- This is only used for calculating the boarding speed and will not move any jetway models!!-->
+    <checkbox>
         <row>0</row>
         <col>1</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Jetway Door 1L</label>
-        <property>services/payload/jetway1_enable</property>
+        <label>Front Baggage Truck</label>
+        <property>services/payload/baggage-truck1-enable</property>
         <binding>
             <command>dialog-apply</command>
         </binding>
@@ -845,13 +845,13 @@
         <live>true</live>
     </checkbox>
     
-    <checkbox> <!-- This is only used for calculating the boarding speed and will not move any jetway models!!-->
+    <checkbox>
         <row>1</row>
         <col>1</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Jetway Door 2L</label>
-        <property>services/payload/jetway2_enable</property>
+        <label>Aft Baggage Truck</label>
+        <property>services/payload/baggage-truck2-enable</property>
         <binding>
             <command>dialog-apply</command>
         </binding>
@@ -920,8 +920,8 @@
         <col>2</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Front Baggage Truck</label>
-        <property>services/payload/baggage-truck1-enable</property>
+        <label>Front Mouvement</label>
+        <property>services/cargo1/move6</property>
         <binding>
             <command>dialog-apply</command>
         </binding>
@@ -934,8 +934,8 @@
         <col>2</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Aft Baggage Truck</label>
-        <property>services/payload/baggage-truck2-enable</property>
+        <label>Aft Mouvement</label>
+        <property>services/cargo2/move7</property>
         <binding>
             <command>dialog-apply</command>
         </binding>

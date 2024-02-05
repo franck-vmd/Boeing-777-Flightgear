@@ -62,15 +62,31 @@ Distribute under the terms of GPLv2.
                 <command>dialog-apply</command>
             </binding>
         </checkbox>
+        
+        <checkbox>
+            <halign>center</halign>
+            <label>Personage</label>
+            <live>true</live>
+            <binding>
+    <command>nasal</command>
+    <script>
+     b777.doors.toggle("c34");
+     controls.click(2);
+     </script>
+     </binding>
+        </checkbox>
 
         <checkbox>
             <halign>left</halign>
             <label>Connect</label>
-            <property>sim/multiplay/generic/float[57]</property>
             <live>true</live>
             <binding>
-                <command>dialog-apply</command>
-            </binding>
+    <command>nasal</command>
+    <script>
+     b777.doors.toggle("c35");
+     controls.click(2);
+     </script>
+     </binding>
         </checkbox>
 
         <group>

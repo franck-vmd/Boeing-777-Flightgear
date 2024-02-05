@@ -55,19 +55,17 @@
     <binding>
     <command>nasal</command>
     <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/l1/position-norm", 0);
-				setprop("/aaa/door-positions/l2/position-norm", 0);
-				setprop("/aaa/door-positions/l3/position-norm", 0);
-				setprop("/aaa/door-positions/l4/position-norm", 0);
-				setprop("/aaa/door-positions/r1/position-norm", 0);
-				setprop("/aaa/door-positions/r2/position-norm", 0);
-				setprop("/aaa/door-positions/r3/position-norm", 0);
-				setprop("/aaa/door-positions/r4/position-norm", 0);
-				setprop("/aaa/door-positions/c54/position-norm", 0);
-				setprop("/aaa/door-positions/c55/position-norm", 0);
-				controls.click(2);
+     b777.doors.toggle("l1");
+     b777.doors.toggle("l2");
+     b777.doors.toggle("l3");
+     b777.doors.toggle("l4");
+     b777.doors.toggle("r1");
+     b777.doors.toggle("r2");
+     b777.doors.toggle("r3");
+     b777.doors.toggle("r4");
+     b777.doors.toggle("c54");
+     b777.doors.toggle("c55");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -81,20 +79,18 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/l1/position-norm", 1);
-				setprop("/aaa/door-positions/l2/position-norm", 1);
-				setprop("/aaa/door-positions/l3/position-norm", 1);
-				setprop("/aaa/door-positions/l4/position-norm", 1);
-				setprop("/aaa/door-positions/r1/position-norm", 1);
-				setprop("/aaa/door-positions/r2/position-norm", 1);
-				setprop("/aaa/door-positions/r3/position-norm", 1);
-				setprop("/aaa/door-positions/r4/position-norm", 1);
-				setprop("/aaa/door-positions/c54/position-norm", 1);
-				setprop("/aaa/door-positions/c55/position-norm", 1);
-				controls.click(2);
-				</script>
+     b777.doors.toggle("l1");
+     b777.doors.toggle("l2");
+     b777.doors.toggle("l3");
+     b777.doors.toggle("l4");
+     b777.doors.toggle("r1");
+     b777.doors.toggle("r2");
+     b777.doors.toggle("r3");
+     b777.doors.toggle("r4");
+     b777.doors.toggle("c54");
+     b777.doors.toggle("c55");
+     controls.click(2);
+     </script>
      </binding>
 </button>
 </group>
@@ -127,13 +123,11 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c9/position-norm", 0);
-				setprop("/aaa/door-positions/c10/position-norm", 0);
-				setprop("/aaa/door-positions/c11/position-norm", 0);
-				controls.click(2);
-				</script>
+     b777.doors.toggle("c9");
+     b777.doors.toggle("c10");
+     b777.doors.toggle("c11");
+     controls.click(2);
+     </script>
      </binding>
 </button>
 
@@ -146,12 +140,10 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c9/position-norm", 1);
-				setprop("/aaa/door-positions/c10/position-norm", 1);
-				setprop("/aaa/door-positions/c11/position-norm", 1);
-				controls.click(2);
+     b777.doors.toggle("c9");
+     b777.doors.toggle("c10");
+     b777.doors.toggle("c11");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -187,10 +179,8 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c12/position-norm", 0);
-				controls.click(2);
+     b777.doors.toggle("c12");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -204,11 +194,9 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c12/position-norm", 1);
-				controls.click(2);
-				</script>
+     b777.doors.toggle("c12");
+     controls.click(2);
+     </script>
      </binding>
 </button>
         
@@ -243,11 +231,9 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c31/position-norm", 0);
-				setprop("/aaa/door-positions/c32/position-norm", 0);
-				controls.click(2);
+     b777.doors.toggle("c31");
+     b777.doors.toggle("c32");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -261,11 +247,9 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c31/position-norm", 1);
-				setprop("/aaa/door-positions/c32/position-norm", 1);
-				controls.click(2);
+     b777.doors.toggle("c31");
+     b777.doors.toggle("c32");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -301,17 +285,15 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c1/position-norm", 0);
-				setprop("/aaa/door-positions/c2/position-norm", 0);
-				setprop("/aaa/door-positions/c3/position-norm", 0);
-				setprop("/aaa/door-positions/c4/position-norm", 0);
-				setprop("/aaa/door-positions/c5/position-norm", 0);
-				setprop("/aaa/door-positions/c6/position-norm", 0);
-				setprop("/aaa/door-positions/c7/position-norm", 0);
-				setprop("/aaa/door-positions/c8/position-norm", 0);
-				controls.click(2);
+     b777.doors.toggle("c1");
+     b777.doors.toggle("c2");
+     b777.doors.toggle("c3");
+     b777.doors.toggle("c4");
+     b777.doors.toggle("c5");
+     b777.doors.toggle("c6");
+     b777.doors.toggle("c7");
+     b777.doors.toggle("c8");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -325,17 +307,15 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c1/position-norm", 1);
-				setprop("/aaa/door-positions/c2/position-norm", 1);
-				setprop("/aaa/door-positions/c3/position-norm", 1);
-				setprop("/aaa/door-positions/c4/position-norm", 1);
-				setprop("/aaa/door-positions/c5/position-norm", 1);
-				setprop("/aaa/door-positions/c6/position-norm", 1);
-				setprop("/aaa/door-positions/c7/position-norm", 1);
-				setprop("/aaa/door-positions/c8/position-norm", 1);
-				controls.click(2);
+     b777.doors.toggle("c1");
+     b777.doors.toggle("c2");
+     b777.doors.toggle("c3");
+     b777.doors.toggle("c4");
+     b777.doors.toggle("c5");
+     b777.doors.toggle("c6");
+     b777.doors.toggle("c7");
+     b777.doors.toggle("c8");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -371,10 +351,8 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c33/position-norm", 0);
-				controls.click(2);
+     b777.doors.toggle("c33");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -388,10 +366,8 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c33/position-norm", 1);
-				controls.click(2);
+     b777.doors.toggle("c33");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -427,10 +403,8 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c30/position-norm", 0);
-				controls.click(2);
+     b777.doors.toggle("c30");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -444,10 +418,8 @@
      <binding>
      <command>nasal</command>
      <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/c30/position-norm", 1);
-				controls.click(2);
+     b777.doors.toggle("c30");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -481,37 +453,35 @@
      <equal>true</equal>
      <repeatable type="bool">false</repeatable>
      <binding>
-     <command>nasal</command>
-     <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/l1/position-norm", 0);
-				setprop("/aaa/door-positions/l2/position-norm", 0);
-				setprop("/aaa/door-positions/l3/position-norm", 0);
-				setprop("/aaa/door-positions/l4/position-norm", 0);
-				setprop("/aaa/door-positions/r1/position-norm", 0);
-				setprop("/aaa/door-positions/r2/position-norm", 0);
-				setprop("/aaa/door-positions/r3/position-norm", 0);
-				setprop("/aaa/door-positions/r4/position-norm", 0);
-				setprop("/aaa/door-positions/c54/position-norm", 0);
-				setprop("/aaa/door-positions/c55/position-norm", 0);
-				setprop("/aaa/door-positions/c9/position-norm", 0);
-				setprop("/aaa/door-positions/c10/position-norm", 0);
-				setprop("/aaa/door-positions/c11/position-norm", 0);
-				setprop("/aaa/door-positions/c12/position-norm", 0);
-				setprop("/aaa/door-positions/c31/position-norm", 0);
-				setprop("/aaa/door-positions/c32/position-norm", 0);
-				setprop("/aaa/door-positions/c1/position-norm", 0);
-				setprop("/aaa/door-positions/c2/position-norm", 0);
-				setprop("/aaa/door-positions/c3/position-norm", 0);
-				setprop("/aaa/door-positions/c4/position-norm", 0);
-				setprop("/aaa/door-positions/c5/position-norm", 0);
-				setprop("/aaa/door-positions/c6/position-norm", 0);
-				setprop("/aaa/door-positions/c7/position-norm", 0);
-				setprop("/aaa/door-positions/c8/position-norm", 0);
-				setprop("/aaa/door-positions/c33/position-norm", 0);
-				setprop("/aaa/door-positions/c30/position-norm", 0);
-				controls.click(2);
+    <command>nasal</command>
+    <script>
+     b777.doors.toggle("l1");
+     b777.doors.toggle("l2");
+     b777.doors.toggle("l3");
+     b777.doors.toggle("l4");
+     b777.doors.toggle("r1");
+     b777.doors.toggle("r2");
+     b777.doors.toggle("r3");
+     b777.doors.toggle("r4");
+     b777.doors.toggle("c54");
+     b777.doors.toggle("c55");
+     b777.doors.toggle("c9");
+     b777.doors.toggle("c10");
+     b777.doors.toggle("c11");
+     b777.doors.toggle("c12");
+     b777.doors.toggle("c31");
+     b777.doors.toggle("c32");
+     b777.doors.toggle("c1");
+     b777.doors.toggle("c2");
+     b777.doors.toggle("c3");
+     b777.doors.toggle("c4");
+     b777.doors.toggle("c5");
+     b777.doors.toggle("c6");
+     b777.doors.toggle("c7");
+     b777.doors.toggle("c8");
+     b777.doors.toggle("c33");
+     b777.doors.toggle("c30");
+     controls.click(2);
      </script>
      </binding>
 </button>
@@ -523,37 +493,35 @@
      <equal>true</equal>
      <repeatable type="bool">false</repeatable>
      <binding>
-     <command>nasal</command>
-     <script>
-				if (getprop("/aaa/switches/EVAC_Cover")==0)
-				setprop("/aaa/switches/EVACPnl.toggle", 0);
-				setprop("/aaa/door-positions/l1/position-norm", 1);
-				setprop("/aaa/door-positions/l2/position-norm", 1);
-				setprop("/aaa/door-positions/l3/position-norm", 1);
-				setprop("/aaa/door-positions/l4/position-norm", 1);
-				setprop("/aaa/door-positions/r1/position-norm", 1);
-				setprop("/aaa/door-positions/r2/position-norm", 1);
-				setprop("/aaa/door-positions/r3/position-norm", 1);
-				setprop("/aaa/door-positions/r4/position-norm", 1);
-				setprop("/aaa/door-positions/c54/position-norm", 1);
-				setprop("/aaa/door-positions/c55/position-norm", 1);
-				setprop("/aaa/door-positions/c9/position-norm", 1);
-				setprop("/aaa/door-positions/c10/position-norm", 1);
-				setprop("/aaa/door-positions/c11/position-norm", 1);
-				setprop("/aaa/door-positions/c12/position-norm", 1);
-				setprop("/aaa/door-positions/c31/position-norm", 1);
-				setprop("/aaa/door-positions/c32/position-norm", 1);
-				setprop("/aaa/door-positions/c1/position-norm", 1);
-				setprop("/aaa/door-positions/c2/position-norm", 1);
-				setprop("/aaa/door-positions/c3/position-norm", 1);
-				setprop("/aaa/door-positions/c4/position-norm", 1);
-				setprop("/aaa/door-positions/c5/position-norm", 1);
-				setprop("/aaa/door-positions/c6/position-norm", 1);
-				setprop("/aaa/door-positions/c7/position-norm", 1);
-				setprop("/aaa/door-positions/c8/position-norm", 1);
-				setprop("/aaa/door-positions/c33/position-norm", 1);
-				setprop("/aaa/door-positions/c30/position-norm", 1);
-				controls.click(2);
+    <command>nasal</command>
+    <script>
+     b777.doors.toggle("l1");
+     b777.doors.toggle("l2");
+     b777.doors.toggle("l3");
+     b777.doors.toggle("l4");
+     b777.doors.toggle("r1");
+     b777.doors.toggle("r2");
+     b777.doors.toggle("r3");
+     b777.doors.toggle("r4");
+     b777.doors.toggle("c54");
+     b777.doors.toggle("c55");
+     b777.doors.toggle("c9");
+     b777.doors.toggle("c10");
+     b777.doors.toggle("c11");
+     b777.doors.toggle("c12");
+     b777.doors.toggle("c31");
+     b777.doors.toggle("c32");
+     b777.doors.toggle("c1");
+     b777.doors.toggle("c2");
+     b777.doors.toggle("c3");
+     b777.doors.toggle("c4");
+     b777.doors.toggle("c5");
+     b777.doors.toggle("c6");
+     b777.doors.toggle("c7");
+     b777.doors.toggle("c8");
+     b777.doors.toggle("c33");
+     b777.doors.toggle("c30");
+     controls.click(2);
      </script>
      </binding>
 </button>

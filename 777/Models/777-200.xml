@@ -318,6 +318,18 @@ Franck.VMD
         <texture-prop>texture</texture-prop>
         <texture>Liveries-200/AFR9.png</texture>
     </animation>
+    
+    <animation>
+		<type>material</type>
+		<texture>wall.png</texture>
+		<object-name>window mix interieur</object-name>
+      </animation>
+      
+      <animation>
+		<type>material</type>
+		<texture>windowmix.png</texture>
+                <object-name>window mix exterieur</object-name>
+       </animation>
 
       <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect2</inherits-from>
@@ -327,6 +339,7 @@ Franck.VMD
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>Fuselage.004</object-name>
+        <object-name>window mix exterieur</object-name>
       </effect>
 
     <effect>
@@ -577,6 +590,7 @@ Franck.VMD
         <object-name>sortiewc</object-name>
         <object-name>galleycart</object-name>
         <object-name>cafetiere1</object-name>
+        <object-name>window mix interieur</object-name>
     </effect>
     
     <effect>
@@ -7557,6 +7571,8 @@ Franck.VMD
       <animation>
         <type>select</type>
         <object-name>mur.001</object-name>
+        <object-name>window mix exterieur</object-name>
+        <object-name>window mix interieur</object-name>
         <condition>
             <greater-than>
                 <property>controls/switches/windowmix</property>
