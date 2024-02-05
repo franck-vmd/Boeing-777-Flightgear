@@ -56,7 +56,7 @@ Distribute under the terms of GPLv2.
         <checkbox>
             <halign>left</halign>
             <label>Enable</label>
-            <property>sim/model/autopush/connected</property>
+            <property>sim/model/autopush/enabled</property>
             <live>true</live>
             <binding>
                 <command>dialog-apply</command>
@@ -66,7 +66,7 @@ Distribute under the terms of GPLv2.
         <checkbox>
             <halign>left</halign>
             <label>Connect</label>
-            <property>sim/model/autopush/enabled</property>
+            <property>sim/multiplay/generic/float[57]</property>
             <live>true</live>
             <binding>
                 <command>dialog-apply</command>
