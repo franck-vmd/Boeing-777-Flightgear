@@ -1020,7 +1020,7 @@ Franck.VMD
         <repeatable>false</repeatable>
         <binding>
             <command>nasal</command>
-            <script>cdu.input('/');</script>
+            <script>cdu.input('@');</script>
         </binding>
     </action>
 </animation>

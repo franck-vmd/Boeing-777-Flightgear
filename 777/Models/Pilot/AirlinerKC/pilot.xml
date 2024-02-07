@@ -8,14 +8,14 @@
 		<texture type="string">airliner.png</texture>
 		<head>
 			<roll-animation>
-				<property type="string">controls/flight/aileron</property>
+				<property type="string">fcs/fbw/yoke-aileron</property>
 				<factor type="float">-10</factor>
 				<offset-deg type="float">0</offset-deg>
 				<min type="float">-10</min>
 				<max type="float">10</max>
 			</roll-animation>
 			<pitch-animation>
-				<property type="string">controls/flight/elevator</property>
+				<property type="string">fcs/fbw/yoke-elevator</property>
 				<factor type="float">15</factor>
 				<offset-deg type="float">0</offset-deg>
 				<min type="float">-15</min>
@@ -31,21 +31,21 @@
 		</head>
 		<arms>
 			<upper-animation>
-				<property type="string">controls/flight/aileron</property>
+				<property type="string">fcs/fbw/yoke-aileron</property>
 				<factor type="float">-20</factor>
 				<offset-deg type="float">0</offset-deg>
 				<min type="float">-20</min>
 				<max type="float">20</max>
 			</upper-animation>
 			<lower-animation>
-				<property type="string">controls/flight/elevator</property>
+				<property type="string">fcs/fbw/yoke-elevator</property>
 				<factor type="float">30</factor>
 				<offset-deg type="float">0</offset-deg>
 				<min type="float">-30</min>
 				<max type="float">30</max>
 			</lower-animation>
                         <lower1-animation>
-				<property type="string">controls/flight/elevator</property>
+				<property type="string">fcs/fbw/yoke-elevator</property>
 				<factor type="float">-18</factor>
 				<offset-deg type="float">0</offset-deg>
 				<min type="float">-18</min>
@@ -70,7 +70,7 @@
 		</legs>
                 <body>
                         <body-animation>
-				<property type="string">controls/flight/elevator</property>
+				<property type="string">fcs/fbw/yoke-elevator</property>
 				<factor type="float">15</factor>
 				<offset-deg type="float">0</offset-deg>
 				<min type="float">-15</min>
@@ -79,7 +79,7 @@
 		</body>
                 <body1>
                         <body1-animation>
-				<property type="string">controls/flight/aileron</property>
+				<property type="string">fcs/fbw/yoke-aileron</property>
 				<factor type="float">8</factor>
 				<offset-deg type="float">0</offset-deg>
 				<min type="float">-8</min>
@@ -97,7 +97,7 @@
 		<type>material</type>
 		<texture alias="../../params/texture" />
 	</animation>
-   
+
         <effect>
          <name>777-interior</name>
         <inherits-from>Aircraft/777/Models/Effects/777-interior</inherits-from>
@@ -144,9 +144,9 @@
         </emission>
     </animation>
 
-        <!-- siege -->
+         <!-- Siege -->
 
-                <animation>
+             <animation>
 		<type>translate</type>
     <object-name>Body</object-name>
     <object-name>LeftFoot</object-name>
@@ -194,7 +194,7 @@
         </axis>
 	</animation>
 
-      <animation>
+       <animation>
 		<type>rotate</type>
     <object-name>LeftFoot</object-name>
     <object-name>LeftLowerLeg</object-name>
@@ -454,7 +454,7 @@
 		</center>
 	</animation>
 
-    <!-- Mask -->
+       <!-- Mask -->
 
  <animation>
 	<name>mask</name>
