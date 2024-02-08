@@ -4022,12 +4022,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>-7.87716</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>-7.87769</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
+        <x1-m>-14.928</x1-m>
+        <y1-m>-3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>-14.9281</x2-m>
+        <y2-m>-3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -4050,12 +4050,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-7.87716</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>-7.87769</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
+        <x1-m>-14.928</x1-m>
+        <y1-m>-3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>-14.9281</x2-m>
+        <y2-m>-3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -4077,11 +4077,14 @@ Franck.VMD
                         <entry><ind>0.50</ind><dep>180</dep></entry>
 			<entry><ind>1</ind><dep>180</dep></entry>
 		</interpolation>
-        <center>
-        <x-m>-7.7926</x-m>
-        <y-m>-2.6596</y-m>
-        <z-m>0.360335</z-m>
-        </center>
+        <axis>
+        <x1-m>-14.8431</x1-m>
+        <y1-m>-2.6596</y1-m>
+        <z1-m>0.36034</z1-m>
+        <x2-m>-14.8431</x2-m>
+        <y2-m>-2.87534</y2-m>
+        <z2-m>0.36034</z2-m>
+        </axis>
 		<axis>
 			<x>0</x>
 			<y>1</y>
@@ -8978,7 +8981,7 @@ Franck.VMD
 </model>
 <animation>
     <type>select</type>
-    <object-name>flight_attendants_door4l</object-name>
+    <object-name>flight_attendants_door5l</object-name>
     <condition>
 		<greater-than>
 			<property>sim/multiplay/generic/float[73]</property>

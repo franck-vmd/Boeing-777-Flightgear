@@ -314,6 +314,10 @@
       	<equal>true</equal>
 	  	<repeatable type="bool">false</repeatable>
 	  	<binding>
+            <command>property-toggle</command>
+			<property>services/stairs/stairs1_enable</property>
+            </binding>
+	  	<binding>
 	    		<command>nasal</command>
 	    		<script>
 	      		setprop("/sim/current-view/view-number", "44");
