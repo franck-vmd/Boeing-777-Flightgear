@@ -2,17 +2,17 @@
 
 <PropertyList>
 
-  <path>flight_attendants_door4l.ac</path>
+  <path>flight_attendants_door5l.ac</path>
 
   <animation>
 		<type>material</type>
-		<object-name>Flight_attend.4l</object-name>
+		<object-name>Flight_attend.5l</object-name>
 		<texture>ensemble.png</texture>
 	</animation>
 
         <effect>
          <inherits-from>Aircraft/777/Models/Effects/reflect20</inherits-from>
-                         <object-name>Flight_attend.4l</object-name>
+                         <object-name>Flight_attend.5l</object-name>
                </effect>
  
 </PropertyList>

@@ -51,20 +51,20 @@ Franck.VMD
     <animation>
         <type>material</type>
         <object-name>Fuselageraccord</object-name>
-        <object-name>entry5l</object-name>
-        <object-name>entry5lA</object-name>
-        <object-name>entry5lP</object-name>
-        <object-name>entry5lPE</object-name>
-        <object-name>entry5l2</object-name>
-        <object-name>entry5lC</object-name>
-        <object-name>entry5lC2</object-name>
-        <object-name>entry5r.001</object-name>
-        <object-name>entry5rA</object-name>
-        <object-name>entry5rP</object-name>
-        <object-name>entry5rPE</object-name>
-        <object-name>entry5r2</object-name>
-        <object-name>entry5rC</object-name>
-        <object-name>entry5rC2</object-name>
+        <object-name>entry3l</object-name>
+        <object-name>entry3lA</object-name>
+        <object-name>entry3lP</object-name>
+        <object-name>entry3lPE</object-name>
+        <object-name>entry3l2</object-name>
+        <object-name>entry3lC</object-name>
+        <object-name>entry3lC2</object-name>
+        <object-name>entry3r</object-name>
+        <object-name>entry3rA</object-name>
+        <object-name>entry3rP</object-name>
+        <object-name>entry3rPE</object-name>
+        <object-name>entry3r2</object-name>
+        <object-name>entry3rC</object-name>
+        <object-name>entry3rC2</object-name>
         <property-base>sim/model/fuselage8</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X9/AFR1rac.png</texture>
@@ -114,13 +114,13 @@ Franck.VMD
         <object-name>entry2lP</object-name>
         <object-name>entry2lPE</object-name>
         <object-name>entry2lC2</object-name>
-        <object-name>entry3l</object-name>
-        <object-name>entry3l2</object-name>
-        <object-name>entry3lA</object-name>
-        <object-name>entry3lC</object-name>
-        <object-name>entry3lP</object-name>
-        <object-name>entry3lPE</object-name>
-        <object-name>entry3lC2</object-name>
+        <object-name>entry5l</object-name>
+        <object-name>entry5l2</object-name>
+        <object-name>entry5lA</object-name>
+        <object-name>entry5lC</object-name>
+        <object-name>entry5lP</object-name>
+        <object-name>entry5lPE</object-name>
+        <object-name>entry5lC2</object-name>
         <object-name>entry4l</object-name>
         <object-name>entry4l2</object-name>
         <object-name>entry4lA</object-name>
@@ -142,13 +142,13 @@ Franck.VMD
         <object-name>entry2rP</object-name>
         <object-name>entry2rPE</object-name>
         <object-name>entry2rC2</object-name>
-        <object-name>entry3r</object-name>
-        <object-name>entry3r2</object-name>
-        <object-name>entry3rA</object-name>
-        <object-name>entry3rC</object-name>
-        <object-name>entry3rP</object-name>
-        <object-name>entry3rPE</object-name>
-        <object-name>entry3rC2</object-name>
+        <object-name>entry5r.001</object-name>
+        <object-name>entry5r2</object-name>
+        <object-name>entry5rA</object-name>
+        <object-name>entry5rC</object-name>
+        <object-name>entry5rP</object-name>
+        <object-name>entry5rPE</object-name>
+        <object-name>entry5rC2</object-name>
         <object-name>entry4r</object-name>
         <object-name>entry4r2</object-name>
         <object-name>entry4rA</object-name>
@@ -3760,6 +3760,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+      <animation>
+    <type>select</type>
+    <object-name>porte automatique L1b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L1</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
   <!-- Door1r Animations -->
 	
@@ -4005,6 +4027,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+   <animation>
+    <type>select</type>
+    <object-name>porte automatique R1b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R1</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
    <!-- Door2l Animations -->
 	
@@ -4077,14 +4121,11 @@ Franck.VMD
                         <entry><ind>0.50</ind><dep>180</dep></entry>
 			<entry><ind>1</ind><dep>180</dep></entry>
 		</interpolation>
-        <axis>
-        <x1-m>-14.8431</x1-m>
-        <y1-m>-2.6596</y1-m>
-        <z1-m>0.36034</z1-m>
-        <x2-m>-14.8431</x2-m>
-        <y2-m>-2.87534</y2-m>
-        <z2-m>0.36034</z2-m>
-        </axis>
+        <center>
+        <x-m>-14.8431</x-m>
+        <y-m>-2.6596</y-m>
+        <z-m>0.360335</z-m>
+        </center>
 		<axis>
 			<x>0</x>
 			<y>1</y>
@@ -4106,10 +4147,10 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-7.99692</x1-m>
+        <x1-m>-15.0475</x1-m>
         <y1-m>-2.86648</y1-m>
         <z1-m>1.19061</z1-m>
-        <x2-m>-7.60549</x2-m>
+        <x2-m>-14.656</x2-m>
         <y2-m>-2.86648</y2-m>
         <z2-m>1.19061</z2-m>
         </axis>
@@ -4161,8 +4202,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-143</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-8.30778</x-m>
-            <y-m>-2.91403</y-m>
+            <x-m>-15.3583</x-m>
+            <y-m>-2.91402</y-m>
             <z-m>0.77978</z-m>
            </center>
 		<axis>
@@ -4189,9 +4230,9 @@ Franck.VMD
 			<entry><ind>1</ind><dep>143</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-7.52907</x-m>
-            <y-m>-2.90772</y-m>
-            <z-m>0.7927</z-m>
+            <x-m>-14.5796</x-m>
+            <y-m>-2.90771</y-m>
+            <z-m>0.64324</z-m>
             </center>
             <axis>
 	    <x>0</x>
@@ -4237,9 +4278,9 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-7.52907</x-m>
-            <y-m>-2.90772</y-m>
-            <z-m>0.7927</z-m>
+            <x-m>-14.5796</x-m>
+            <y-m>-2.90771</y-m>
+            <z-m>0.64324</z-m>
             </center>
             <axis>
 	    <x>0</x>
@@ -4247,6 +4288,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>porte automatique L2b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L2</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
    <!-- Door2r Animations -->
 
@@ -4264,12 +4327,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>-7.87716</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>-7.87769</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
+        <x1-m>-14.928</x1-m>
+        <y1-m>3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>-14.9281</x2-m>
+        <y2-m>3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -4292,12 +4355,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-7.87716</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>-7.87769</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
+        <x1-m>-14.928</x1-m>
+        <y1-m>3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>-14.9281</x2-m>
+        <y2-m>3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -4320,9 +4383,9 @@ Franck.VMD
 			<entry><ind>1</ind><dep>180</dep></entry>
 		</interpolation>
         <center>
-        <x-m>-7.7926</x-m>
+        <x-m>-14.8431</x-m>
         <y-m>2.6596</y-m>
-        <z-m>0.360335</z-m>
+        <z-m>0.36034</z-m>
         </center>
 		<axis>
 			<x>0</x>
@@ -4345,10 +4408,10 @@ Franck.VMD
 			<entry><ind>1</ind><dep>15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-7.99692</x1-m>
+        <x1-m>-15.0475</x1-m>
         <y1-m>2.86648</y1-m>
         <z1-m>1.19061</z1-m>
-        <x2-m>-7.60549</x2-m>
+        <x2-m>-14.656</x2-m>
         <y2-m>2.86648</y2-m>
         <z2-m>1.19061</z2-m>
         </axis>
@@ -4400,8 +4463,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>143</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-8.30778</x-m>
-            <y-m>2.91403</y-m>
+            <x-m>-15.3583</x-m>
+            <y-m>2.91402</y-m>
             <z-m>0.77978</z-m>
            </center>
 		<axis>
@@ -4428,9 +4491,9 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-143</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-7.52907</x-m>
-            <y-m>2.90772</y-m>
-            <z-m>0.7927</z-m>
+            <x-m>-14.5796</x-m>
+            <y-m>2.90771</y-m>
+            <z-m>0.64324</z-m>
             </center>
             <axis>
 	    <x>0</x>
@@ -4476,9 +4539,9 @@ Franck.VMD
 			<entry><ind>1</ind><dep>130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>-7.52907</x-m>
-            <y-m>2.90772</y-m>
-            <z-m>0.7927</z-m>
+            <x-m>-14.5796</x-m>
+            <y-m>2.90771</y-m>
+            <z-m>0.64324</z-m>
             </center>
             <axis>
 	    <x>0</x>
@@ -4486,6 +4549,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>porte automatique R2b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R2</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
    <!-- Door3l Animations -->
 
@@ -4503,12 +4588,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>11.518</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>11.518</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
+        <x1-m>11.5178</x1-m>
+        <y1-m>-3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>11.5177</x2-m>
+        <y2-m>-3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -4531,12 +4616,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>11.518</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>11.518</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
+        <x1-m>11.5178</x1-m>
+        <y1-m>-3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>11.5177</x2-m>
+        <y2-m>-3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -4584,7 +4669,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>11.3984</x1-m>
+        <x1-m>11.3983</x1-m>
         <y1-m>-2.86648</y1-m>
         <z1-m>1.19061</z1-m>
         <x2-m>11.7898</x2-m>
@@ -4725,6 +4810,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>porte automatique L3b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L3</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door3r Animations -->
 
@@ -4743,11 +4850,11 @@ Franck.VMD
 		</interpolation>
         <axis>
         <x1-m>11.5178</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>11.5178</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
+        <y1-m>3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>11.5177</x2-m>
+        <y2-m>3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -4771,11 +4878,11 @@ Franck.VMD
 		</interpolation>
             <axis>
         <x1-m>11.5178</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>11.5178</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
+        <y1-m>3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>11.5177</x2-m>
+        <y2-m>3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -4800,7 +4907,7 @@ Franck.VMD
         <center>
         <x-m>11.6027</x-m>
         <y-m>2.6596</y-m>
-        <z-m>0.360335</z-m>
+        <z-m>0.36034</z-m>
         </center>
 		<axis>
 			<x>0</x>
@@ -4823,10 +4930,10 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>11.7898</x1-m>
+        <x1-m>11.3983</x1-m>
         <y1-m>2.86648</y1-m>
         <z1-m>1.19061</z1-m>
-        <x2-m>11.3984</x2-m>
+        <x2-m>11.7898</x2-m>
         <y2-m>2.86648</y2-m>
         <z2-m>1.19061</z2-m>
         </axis>
@@ -4879,7 +4986,7 @@ Franck.VMD
 		</interpolation>
             <center>
             <x-m>11.0875</x-m>
-            <y-m>2.91403</y-m>
+            <y-m>2.91402</y-m>
             <z-m>0.77978</z-m>
            </center>
 		<axis>
@@ -4907,7 +5014,7 @@ Franck.VMD
 		</interpolation>
             <center>
             <x-m>11.8662</x-m>
-            <y-m>2.90772</y-m>
+            <y-m>2.90771</y-m>
             <z-m>0.7927</z-m>
             </center>
             <axis>
@@ -4955,7 +5062,7 @@ Franck.VMD
 		</interpolation>
             <center>
             <x-m>11.8662</x-m>
-            <y-m>2.90772</y-m>
+            <y-m>2.90771</y-m>
             <z-m>0.7927</z-m>
             </center>
             <axis>
@@ -4964,6 +5071,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>porte automatique R3b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R3</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door4l Animations -->
 
@@ -4981,12 +5110,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>24.6183</x1-m>
-        <y1-m>-2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>24.6183</x2-m>
-        <y2-m>-2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
+        <x1-m>17.4655</x1-m>
+        <y1-m>-3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>17.4654</x2-m>
+        <y2-m>-3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -5009,12 +5138,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>24.6183</x1-m>
-        <y1-m>-2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>24.6183</x2-m>
-        <y2-m>-2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
+        <x1-m>17.4655</x1-m>
+        <y1-m>-3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>17.4654</x2-m>
+        <y2-m>-3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -5037,8 +5166,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>180</dep></entry>
 		</interpolation>
         <center>
-        <x-m>24.6987</x-m>
-        <y-m>-2.17098</y-m>
+        <x-m>17.5503</x-m>
+        <y-m>-2.6596</y-m>
         <z-m>0.36034</z-m>
         </center>
 		<axis>
@@ -5062,10 +5191,10 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-7.99692</x1-m>
+        <x1-m>17.346</x1-m>
         <y1-m>-2.86648</y1-m>
         <z1-m>1.19061</z1-m>
-        <x2-m>-7.60549</x2-m>
+        <x2-m>17.7374</x2-m>
         <y2-m>-2.86648</y2-m>
         <z2-m>1.19061</z2-m>
         </axis>
@@ -5117,8 +5246,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.1835</x-m>
-            <y-m>-2.42541</y-m>
+            <x-m>17.0351</x-m>
+            <y-m>-2.91402</y-m>
             <z-m>0.77978</z-m>
            </center>
 		<axis>
@@ -5145,8 +5274,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.9622</x-m>
-            <y-m>-2.4191</y-m>
+            <x-m>17.8138</x-m>
+            <y-m>-2.90771</y-m>
             <z-m>0.7927</z-m>
             </center>
             <axis>
@@ -5193,8 +5322,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.9622</x-m>
-            <y-m>-2.4191</y-m>
+            <x-m>17.8138</x-m>
+            <y-m>-2.90771</y-m>
             <z-m>0.7927</z-m>
             </center>
             <axis>
@@ -5203,6 +5332,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>porte automatique L4b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L4</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door4r Animations -->
 
@@ -5220,12 +5371,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>24.6183</x1-m>
-        <y1-m>2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>24.6183</x2-m>
-        <y2-m>2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
+        <x1-m>17.4655</x1-m>
+        <y1-m>3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>17.4654</x2-m>
+        <y2-m>3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -5248,12 +5399,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>24.6183</x1-m>
-        <y1-m>2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>24.6183</x2-m>
-        <y2-m>2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
+        <x1-m>17.4655</x1-m>
+        <y1-m>3.06376</y1-m>
+        <z1-m>0.46389</z1-m>
+        <x2-m>17.4654</x2-m>
+        <y2-m>3.16265</y2-m>
+        <z2-m>0.478694</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -5276,8 +5427,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>180</dep></entry>
 		</interpolation>
         <center>
-        <x-m>24.6987</x-m>
-        <y-m>2.17098</y-m>
+        <x-m>17.5503</x-m>
+        <y-m>2.6596</y-m>
         <z-m>0.36034</z-m>
         </center>
 		<axis>
@@ -5301,10 +5452,10 @@ Franck.VMD
 			<entry><ind>1</ind><dep>15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-7.99692</x1-m>
+        <x1-m>17.346</x1-m>
         <y1-m>2.86648</y1-m>
         <z1-m>1.19061</z1-m>
-        <x2-m>-7.60549</x2-m>
+        <x2-m>17.7374</x2-m>
         <y2-m>2.86648</y2-m>
         <z2-m>1.19061</z2-m>
         </axis>
@@ -5356,8 +5507,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.1835</x-m>
-            <y-m>2.42541</y-m>
+            <x-m>17.0351</x-m>
+            <y-m>2.91402</y-m>
             <z-m>0.77978</z-m>
            </center>
 		<axis>
@@ -5384,8 +5535,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.9622</x-m>
-            <y-m>2.4191</y-m>
+            <x-m>17.8138</x-m>
+            <y-m>2.90771</y-m>
             <z-m>0.7927</z-m>
             </center>
             <axis>
@@ -5432,8 +5583,8 @@ Franck.VMD
 			<entry><ind>1</ind><dep>130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.9622</x-m>
-            <y-m>2.4191</y-m>
+            <x-m>17.8138</x-m>
+            <y-m>2.90771</y-m>
             <z-m>0.7927</z-m>
             </center>
             <axis>
@@ -5442,6 +5593,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>porte automatique R4b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R4</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 	
 	
     <!-- Door5l Animations -->
@@ -5460,12 +5633,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>24.6183</x1-m>
-        <y1-m>-2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>24.6183</x2-m>
-        <y2-m>-2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
+        <x1-m>30.5659</x1-m>
+        <y1-m>-2.5782</y1-m>
+        <z1-m>0.46481</z1-m>
+        <x2-m>30.5773</x2-m>
+        <y2-m>-2.67746</y2-m>
+        <z2-m>0.469071</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -5488,12 +5661,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>24.6183</x1-m>
-        <y1-m>-2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>24.6183</x2-m>
-        <y2-m>-2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
+        <x1-m>30.5659</x1-m>
+        <y1-m>-2.5782</y1-m>
+        <z1-m>0.46481</z1-m>
+        <x2-m>30.5773</x2-m>
+        <y2-m>-2.67746</y2-m>
+        <z2-m>0.469071</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -5516,7 +5689,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>180</dep></entry>
 		</interpolation>
         <center>
-        <x-m>24.6987</x-m>
+        <x-m>30.6463</x-m>
         <y-m>-2.17098</y-m>
         <z-m>0.36034</z-m>
         </center>
@@ -5541,12 +5714,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-7.99692</x1-m>
-        <y1-m>-2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>-7.60549</x2-m>
-        <y2-m>-2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
+        <x1-m>30.4417</x1-m>
+        <y1-m>-2.4752</y1-m>
+        <z1-m>1.18639</z1-m>
+        <x2-m>30.8331</x2-m>
+        <y2-m>-2.4398</y2-m>
+        <z2-m>1.18639</z2-m>
         </axis>
           <axis>
 	<x>1</x>
@@ -5596,7 +5769,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.1835</x-m>
+            <x-m>30.1311</x-m>
             <y-m>-2.42541</y-m>
             <z-m>0.77978</z-m>
            </center>
@@ -5624,7 +5797,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.9622</x-m>
+            <x-m>30.9098</x-m>
             <y-m>-2.4191</y-m>
             <z-m>0.7927</z-m>
             </center>
@@ -5672,7 +5845,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.9622</x-m>
+            <x-m>30.9098</x-m>
             <y-m>-2.4191</y-m>
             <z-m>0.7927</z-m>
             </center>
@@ -5682,6 +5855,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>porte automatique L5b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique L5</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door5r Animations -->
 
@@ -5699,12 +5894,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
         <axis>
-        <x1-m>24.6183</x1-m>
-        <y1-m>2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>24.6183</x2-m>
-        <y2-m>2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
+        <x1-m>30.5659</x1-m>
+        <y1-m>2.5782</y1-m>
+        <z1-m>0.46481</z1-m>
+        <x2-m>30.5773</x2-m>
+        <y2-m>2.67746</y2-m>
+        <z2-m>0.469071</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -5727,12 +5922,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-180</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>24.6183</x1-m>
-        <y1-m>2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>24.6183</x2-m>
-        <y2-m>2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
+        <x1-m>30.5659</x1-m>
+        <y1-m>2.5782</y1-m>
+        <z1-m>0.46481</z1-m>
+        <x2-m>30.5773</x2-m>
+        <y2-m>2.67746</y2-m>
+        <z2-m>0.469071</z2-m>
         </axis>
           <axis>
 	<x>0</x>
@@ -5755,7 +5950,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>180</dep></entry>
 		</interpolation>
         <center>
-        <x-m>24.6987</x-m>
+        <x-m>30.6463</x-m>
         <y-m>2.17098</y-m>
         <z-m>0.36034</z-m>
         </center>
@@ -5780,12 +5975,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>15</dep></entry>
 		</interpolation>
             <axis>
-        <x1-m>-7.99692</x1-m>
-        <y1-m>2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>-7.60549</x2-m>
-        <y2-m>2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
+        <x1-m>30.4417</x1-m>
+        <y1-m>2.4752</y1-m>
+        <z1-m>1.18639</z1-m>
+        <x2-m>30.8331</x2-m>
+        <y2-m>2.4398</y2-m>
+        <z2-m>1.18639</z2-m>
         </axis>
           <axis>
 	<x>1</x>
@@ -5835,7 +6030,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.1835</x-m>
+            <x-m>30.1311</x-m>
             <y-m>2.42541</y-m>
             <z-m>0.77978</z-m>
            </center>
@@ -5863,7 +6058,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.9622</x-m>
+            <x-m>30.9098</x-m>
             <y-m>2.4191</y-m>
             <z-m>0.7927</z-m>
             </center>
@@ -5911,7 +6106,7 @@ Franck.VMD
 			<entry><ind>1</ind><dep>130</dep></entry>
 		</interpolation>
             <center>
-            <x-m>24.9622</x-m>
+            <x-m>30.9098</x-m>
             <y-m>2.4191</y-m>
             <z-m>0.7927</z-m>
             </center>
@@ -5921,6 +6116,28 @@ Franck.VMD
 	    <z>1</z>
 	   </axis>
 	</animation>
+	
+	<animation>
+    <type>select</type>
+    <object-name>porte automatique R5b</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>porte automatique R5</object-name>
+    <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </greater-than>
+        </condition>
+  </animation>
 
     <!-- Door moteur Animations -->	
 	
@@ -8899,6 +9116,7 @@ Franck.VMD
   <z-m>0</z-m>
  </offsets>
 </model>
+
 <animation>
     <type>select</type>
     <object-name>flight_attendants_door1l</object-name>
@@ -8919,6 +9137,7 @@ Franck.VMD
   <z-m>0</z-m>
  </offsets>
 </model>
+
 <animation>
     <type>select</type>
     <object-name>flight_attendants_door2l</object-name>
@@ -8934,11 +9153,12 @@ Franck.VMD
  <name>flight_attendants_door3l</name>
  <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door3l.xml</path>
  <offsets>
-  <x-m>5</x-m>
+  <x-m>-0.345241</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
 </model>
+
 <animation>
     <type>select</type>
     <object-name>flight_attendants_door3l</object-name>
@@ -8954,11 +9174,12 @@ Franck.VMD
  <name>flight_attendants_door4l</name>
  <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door4l.xml</path>
  <offsets>
-  <x-m>5</x-m>
-  <y-m>0</y-m>
+  <x-m>-7.14083</x-m>
+  <y-m>-0.717785</y-m>
   <z-m>0</z-m>
  </offsets>
 </model>
+
 <animation>
     <type>select</type>
     <object-name>flight_attendants_door4l</object-name>
@@ -8974,11 +9195,12 @@ Franck.VMD
  <name>flight_attendants_door5l</name>
  <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door5l.xml</path>
  <offsets>
-  <x-m>5</x-m>
+  <x-m>0</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
 </model>
+
 <animation>
     <type>select</type>
     <object-name>flight_attendants_door5l</object-name>
