@@ -35,16 +35,6 @@
       </binding>
     </checkbox>
     
-    <checkbox>
-      <halign>left</halign>
-      <label>Cargo</label>
-      <property>controls/switches/cargo_service</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>controls/switches/cargo_service</property>
-      </binding>
-    </checkbox>
-    
    <checkbox>
       <halign>left</halign>
       <label>mecanicien</label>
@@ -72,16 +62,6 @@
       <binding>
         <command>property-toggle</command>
         <property>controls/switches/protection</property>
-      </binding>
-    </checkbox>
-
-    <checkbox>
-      <halign>left</halign>
-      <label>Filet Protection</label>
-      <property>controls/switches/FiletProtection</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>controls/switches/FiletProtection</property>
       </binding>
     </checkbox>
 

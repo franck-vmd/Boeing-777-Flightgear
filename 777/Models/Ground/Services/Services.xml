@@ -21,27 +21,6 @@
       <z-m>0</z-m>
     </offsets>
   </model>
-  
-  <!-- Cargo -->
-  
-  <model>
-    <name>Cargo</name>
-    <path>Aircraft/777/Models/Ground/Services/cargo/cargo.xml</path>
-    <condition>
-      <and>
-        <property>controls/switches/cargo_service</property>
-        <less-than>
-          <property>velocities/airspeed-kt</property>
-          <value>15</value>
-        </less-than>
-      </and>
-    </condition>
-    <offsets>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </offsets>
-  </model>
 
   <!-- Mecanicien -->
 
@@ -91,28 +70,6 @@
     <condition>
       <equals>
         <property>controls/switches/protection</property>
-        <value type="bool">true</value>
-      </equals>
-      <less-than>
-        <property>velocities/airspeed-kt</property>
-        <value>15</value>
-      </less-than>
-    </condition>
-    <offsets>
-      <x-m>0.00</x-m>
-      <y-m>0.00</y-m>
-      <z-m>0.00</z-m>
-    </offsets>
-  </model>
-
-<!-- Filet Protection -->
-
-  <model>
-    <name>Filet Protection</name>
-    <path>Aircraft/777/Models/Ground/Services/FiletProtection/FiletProtection.xml</path>
-    <condition>
-      <equals>
-        <property>controls/switches/FiletProtection</property>
         <value type="bool">true</value>
       </equals>
       <less-than>

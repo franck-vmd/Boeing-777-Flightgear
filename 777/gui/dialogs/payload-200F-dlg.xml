@@ -311,7 +311,7 @@
     </checkbox>
     
     <button>
-        <row>4</row>
+        <row>1</row>
         <col>0</col>
         <halign>left</halign>
         <legend>Stairs appearance</legend>
@@ -324,7 +324,7 @@
     </button>
     
     <checkbox>
-        <row>5</row>
+        <row>2</row>
         <col>0</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
@@ -338,11 +338,11 @@
     </checkbox>
     
     <checkbox>
-        <row>6</row>
+        <row>3</row>
         <col>0</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Mouvement</label>
+        <label>Radar move</label>
         <property>services/camion/move4</property>
         <binding>
             <command>dialog-apply</command>
@@ -351,13 +351,13 @@
         <live>true</live>
     </checkbox>
     
-    <checkbox> <!-- This is only used for calculating the boarding speed and will not move any jetway models!!-->
-        <row>0</row>
-        <col>1</col>
+    <checkbox>
+        <row>4</row>
+        <col>0</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Jetway Door 1L</label>
-        <property>services/payload/jetway1_enable</property>
+        <label>bagage2</label>
+        <property>services/payload/bagage2</property>
         <binding>
             <command>dialog-apply</command>
         </binding>
@@ -366,22 +366,8 @@
     </checkbox>
     
     <checkbox>
-        <row>2</row>
-        <col>1</col>
-        <pref-width>120</pref-width>
-        <pref-height>20</pref-height>
-        <label>Catering Door 1R</label>
-        <property>services/catering/enable</property>
-        <binding>
-            <command>dialog-apply</command>
-        </binding>
-        <halign>left</halign>
-        <live>true</live>
-    </checkbox>
-
-    <checkbox>
         <row>0</row>
-        <col>2</col>
+        <col>1</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
         <label>Front Bag Truck</label>
@@ -394,11 +380,25 @@
     </checkbox>
     
     <checkbox>
-        <row>1</row>
+        <row>0</row>
         <col>2</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Aft Bag Truck</label>
+        <label>Front move</label>
+        <property>services/cargo1/move6</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>1</row>
+        <col>1</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Aft Baggage Truck</label>
         <property>services/payload/baggage-truck2-enable</property>
         <binding>
             <command>dialog-apply</command>
@@ -408,7 +408,77 @@
     </checkbox>
     
     <checkbox>
+        <row>1</row>
+        <col>2</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Aft move</label>
+        <property>services/cargo2/move7</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
         <row>2</row>
+        <col>1</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Cargo</label>
+        <property>services/payload/cargo_service</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>2</row>
+        <col>2</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Cargo move</label>
+        <property>services/cargo/move5</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>3</row>
+        <col>1</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Filet Protection Cargo</label>
+        <property>services/payload/FiletProtection</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>4</row>
+        <col>1</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Catering Door 1R</label>
+        <property>services/catering/enable</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>4</row>
         <col>2</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
