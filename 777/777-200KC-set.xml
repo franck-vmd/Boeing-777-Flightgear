@@ -234,15 +234,15 @@
                     <label>Ground Services Control</label>
                     <binding>
                         <command>dialog-show</command>
-                        <dialog-name>ground_servicesF</dialog-name>
+                        <dialog-name>ground_servicesUSAF</dialog-name>
                     </binding>
                 </item>
 		  <item n="3">
 					    <label>Weight and payload</label>
-                        <name>payload_200F</name>
+                        <name>payload_200USAF</name>
 						<binding>
                             <command>dialog-show</command>
-			    <dialog-name>payload_200F</dialog-name>
+			    <dialog-name>payload_200USAF</dialog-name>
                         </binding>
                     </item>
                     <item n="9">
