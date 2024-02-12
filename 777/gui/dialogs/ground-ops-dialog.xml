@@ -84,16 +84,6 @@
         <property>controls/switches/passagers</property>
       </binding>
     </checkbox>
-    
-    <checkbox>
-      <halign>left</halign>
-      <label>bagage2</label>
-      <property>controls/switches/bagage2</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>controls/switches/bagage2</property>
-      </binding>
-    </checkbox>
 
   </group>
 

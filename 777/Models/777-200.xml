@@ -8037,6 +8037,25 @@ Franck.VMD
     </offsets>
 </model>
 
+<model>
+    <name>Bagage2</name>
+    <path>Aircraft/777/Models/Ground/Services/Baggage 2/bagage2.xml</path>
+    <condition>
+      <and>
+        <property>services/payload/bagage2</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>15</value>
+        </less-than>
+      </and>
+    </condition>
+    <offsets>
+      <x-m>0.0</x-m>
+      <y-m>0.0</y-m>
+      <z-m>0.0</z-m>
+    </offsets>
+  </model>
+
 <!--Catering Truck-->
 
 <model>

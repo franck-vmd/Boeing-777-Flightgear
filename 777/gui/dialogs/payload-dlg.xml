@@ -999,6 +999,20 @@
         <halign>left</halign>
         <live>true</live>
     </checkbox>
+    
+    <checkbox>
+        <row>6</row>
+        <col>1</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>bagage2</label>
+        <property>services/payload/bagage2</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
 
 </group>
 
