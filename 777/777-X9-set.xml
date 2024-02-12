@@ -236,10 +236,10 @@
                 </item>
                     <item n="3">
                         <label>Weight and payload</label>
-                        <name>payload</name>
+                        <name>payloadX9</name>
                         <binding>
                             <command>dialog-show</command>
-                            <dialog-name>payload</dialog-name>
+                            <dialog-name>payloadX9</dialog-name>
                         </binding>
                     </item>
                  <item n="9">
@@ -255,7 +255,7 @@
              <binding>
                <command>nasal</command>
                  <script>
-                var mal = gui.Dialog.new("/sim/gui/dialogs/ground-ops-config/dialog", "Aircraft/777/gui/dialogs/ground-ops-dialog.xml");
+                var mal = gui.Dialog.new("/sim/gui/dialogs/ground-ops-config/dialog", "Aircraft/777/gui/dialogs/ground-ops-dialogX9.xml");
                  mal.open();
                  </script>
              </binding>

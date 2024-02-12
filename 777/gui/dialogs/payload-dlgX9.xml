@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-    <name>payload</name>
+    <name>payloadX9</name>
     <layout>vbox</layout>
     
     <group>
@@ -767,7 +767,7 @@
         <col>0</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Stairs Door 4L</label>
+        <label>Stairs Door 3L</label>
         <property>services/stairs/stairs3_enable</property>
         <binding>
             <command>dialog-apply</command>
@@ -781,7 +781,7 @@
         <col>0</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Stairs Door 5L</label>
+        <label>Stairs Door 4L</label>
         <property>services/stairs/stairs4_enable</property>
         <binding>
             <command>dialog-apply</command>
@@ -790,8 +790,22 @@
         <live>true</live>
     </checkbox>
     
-    <button>
+    <checkbox>
         <row>4</row>
+        <col>0</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Stairs Door 5L</label>
+        <property>services/stairs/stairs5_enable</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <button>
+        <row>5</row>
         <col>0</col>
         <halign>left</halign>
         <legend>Stairs appearance</legend>
@@ -804,7 +818,7 @@
     </button>
     
     <checkbox>
-        <row>5</row>
+        <row>6</row>
         <col>0</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
@@ -818,7 +832,7 @@
     </checkbox>
     
     <checkbox>
-        <row>6</row>
+        <row>7</row>
         <col>0</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
@@ -908,6 +922,20 @@
         <pref-height>20</pref-height>
         <label>Catering Truck Door 5R</label>
         <property>services/catering/enable3</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>6</row>
+        <col>1</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>bagage2</label>
+        <property>services/payload/bagage2</property>
         <binding>
             <command>dialog-apply</command>
         </binding>

@@ -17,6 +17,8 @@
         <object-name>cover_3</object-name>
         <object-name>paint_4</object-name>
         <object-name>cover_4</object-name>
+        <object-name>paint_5</object-name>
+        <object-name>cover_5</object-name>
         <property-base>/services/stairs</property-base>
         <texture-prop>paint-end</texture-prop>
     </animation>
@@ -35,6 +37,9 @@
     <object-name>cover_4</object-name>
     <object-name>cover-under_4</object-name>
     <object-name>cover-rods_4</object-name>
+    <object-name>cover_5</object-name>
+    <object-name>cover-under_5</object-name>
+    <object-name>cover-rods_5</object-name>
     <condition>
         <property>services/stairs/cover</property>
     </condition>
@@ -86,6 +91,17 @@
     </condition>
 </animation>
 
+<animation>
+    <type>select</type>
+    <object-name>cover_5</object-name>
+    <object-name>cover-under_5</object-name>
+    <object-name>cover-rods_5</object-name>
+    <object-name>stairs_5</object-name>
+    <condition>
+        <property>services/stairs/stairs5_enable</property>
+    </condition>
+</animation>
+
 <!--Counteract gear compression -->
 
 <animation>
@@ -112,6 +128,8 @@
     <object-name>stairs_3</object-name>
     <object-name>cover-rods_4</object-name>
     <object-name>stairs_4</object-name>
+    <object-name>cover-rods_5</object-name>
+    <object-name>stairs_5</object-name>
     <property>gear/gear[1]/compression-norm</property>
     <interpolation>
         <entry><ind>0.15</ind><dep>0.0</dep></entry>
@@ -173,6 +191,19 @@
             <binding>
                 <command>property-toggle</command>
                 <property>services/stairs/stairs4_enable</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>stairs_5</object-name>
+        <object-name>cover-rods_5</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/stairs/stairs5_enable</property>
             </binding>
         </action>
     </animation>

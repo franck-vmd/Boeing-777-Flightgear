@@ -6647,7 +6647,7 @@ Franck.VMD
   </model>
   
   <model>
-    <name>Filet Protection</name>
+    <name>Bagage2</name>
     <path>Aircraft/777/Models/Ground/Services/Baggage 2/bagage2.xml</path>
     <condition>
       <and>
