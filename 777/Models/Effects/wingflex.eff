@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PropertyList>
+	<name>wingflex</name>
+	<inherits-from>Effects/model-wingflex</inherits-from>
+	<parameters>
+		<wingflex-type>0</wingflex-type>
+		<wingflex-z><use>sim/systems/wingflexer/z-m</use></wingflex-z>
+		<body-width>0.48</body-width>
+		<wing-span>15.0</wing-span>
+	</parameters>
+
+</PropertyList>

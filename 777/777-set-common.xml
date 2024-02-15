@@ -76,6 +76,7 @@
 
         <view n="0">
             <name>Pilot View</name>
+            <enabled type="bool">true</enabled>
             <type>lookfrom</type>
             <internal type="bool">true</internal>
             <config n="0">
@@ -98,10 +99,22 @@
                 </limits>
             </config>
         </view>
+        
+        <view n="1">
+      <name>Helicopter View</name>
+      <enabled type="bool">true</enabled>
+      <type>lookat</type>
+      <config>
+        <from-model type="bool">false</from-model>
+        <at-model type="bool">true</at-model>
+        <eye-heading-deg-path>/orientation/true-heading-deg</eye-heading-deg-path>
+        <z-offset-m alias="/sim/chase-distance-m"/>
+      </config>
+    </view>
 
         <view n="100">
             <name>CoPilot View</name>
-            <enabled type="bool">true</enabled>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
             <internal type="bool">true</internal>
             <config n="0">
@@ -181,6 +194,7 @@
 
     <view n="102">
         <name>OH Panel</name>
+        <enabled type="bool">true</enabled>
         <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -195,6 +209,7 @@
 
     <view n="103">
         <name>Right side view</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal type="bool">false</internal>
         <config>
@@ -207,6 +222,7 @@
 
     <view n="104">
         <name>Front gear view</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal type="bool">false</internal>
         <config>
@@ -219,6 +235,7 @@
 
     <view n="105">
         <name>Observer 1 view</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -233,6 +250,7 @@
 
     <view n="106">
         <name>Observer 2 view</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -248,6 +266,7 @@
 
     <view n="107">
         <name>Top Left view</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -263,6 +282,7 @@
 
     <view n="108">
         <name>Top Right view</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -278,6 +298,7 @@
 
     <view n="109">
         <name>LWing View</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal archive="y">false</internal>
         <config>
@@ -295,6 +316,7 @@
 
     <view n="110">
         <name>RWing View</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal archive="y">false</internal>
         <config>
@@ -312,6 +334,7 @@
 
     <view n="111">
         <name>Tail View</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal archive="y">false</internal>
         <config>
@@ -328,6 +351,7 @@
 
     <view n="112">
         <name>EFB CPT View</name>
+        <enabled type="bool">true</enabled>
         <type>lookfrom</type>
         <internal archive="y">true</internal>
             <config>
@@ -345,6 +369,7 @@
 
     <view n="113">
         <name>EFB FO View</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal archive="y">true</internal>
             <config>
@@ -362,6 +387,7 @@
 
     <view n="114">
         <name>Tiller CPT View</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal archive="y">true</internal>
             <config>
@@ -379,6 +405,7 @@
 
     <view n="115">
         <name>Tiller FO View</name>
+        <enabled type="bool">false</enabled>
         <type>lookfrom</type>
         <internal archive="y">true</internal>
             <config>
@@ -396,6 +423,7 @@
     
     <view n="116">
             <name>Cuisine 1</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -410,6 +438,7 @@
         
         <view n="117">
             <name>Siege premier class</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -424,6 +453,7 @@
         
         <view n="118">
             <name>Porte L2</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -439,6 +469,7 @@
 
     <view n="119">
             <name>Sieges cabine 1</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -453,6 +484,7 @@
         
         <view n="120">
             <name>Porte L3</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -468,6 +500,7 @@
         
         <view n="121">
             <name>Sieges cabine 2</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -481,6 +514,7 @@
     </view>
     <view n="122">
             <name>Porte L4</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -495,6 +529,7 @@
     </view>
     <view n="123">
             <name>Porte L1</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -509,7 +544,7 @@
     </view>
     <view n="124">
             <name>View pilote pushback</name>
-            <enabled type="bool">true</enabled>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
             <internal type="bool">true</internal>
             <config n="0">
@@ -548,6 +583,7 @@
         </view>
         <view n="125">
             <name>Porte R1</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -562,6 +598,7 @@
     </view>
     <view n="126">
             <name>Porte R2</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -576,6 +613,7 @@
     </view>
     <view n="127">
             <name>Porte R3</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -590,6 +628,7 @@
     </view>
     <view n="128">
             <name>Porte R4</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -604,6 +643,7 @@
     </view>
     <view n="129">
             <name>Hublot R Wing</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -618,6 +658,7 @@
     </view>
     <view n="130">
             <name>Hublot L Wing</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -632,6 +673,7 @@
     </view>
     <view n="131">
             <name>Hublot ML Wing</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -646,6 +688,7 @@
     </view>
     <view n="132">
             <name>Hublot MR Wing</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -660,6 +703,7 @@
     </view>
     <view n="133">
             <name>APU</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -674,6 +718,7 @@
     </view>
     <view n="134">
             <name>RADAR</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -689,6 +734,7 @@
     <view n="135">
    <!-- Copilot's position. -->
    <name>Passenger View</name>
+   <enabled type="bool">false</enabled>
    <internal>true</internal>
    <config>
     <!-- x/y/z == right/up/back -->
@@ -704,6 +750,7 @@
   <view n="136">
    <!-- Copilot's position. -->
    <name>Passerelle View</name>
+   <enabled type="bool">false</enabled>
    <internal>true</internal>
    <config>
     <!-- x/y/z == right/up/back -->
@@ -718,6 +765,7 @@
   </view>
   <view n="137">
             <name>Cabine 4</name>
+            <enabled type="bool">false</enabled>
             <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -1083,6 +1131,11 @@ Service Ceiling: 43,100ft
             </autopilot>
             <autopilot>
                 <path>Systems/777-sound.xml</path>
+            </autopilot>
+            <wingflexer include="Systems/wingflexer-params.xml"/>
+            <autopilot>
+                <name>wing flexer property rule</name>
+                <path>Aircraft/Generic/wingflexer.xml</path>
             </autopilot>
 
             <!--  slow running property-rules (running at frame rate) -->
