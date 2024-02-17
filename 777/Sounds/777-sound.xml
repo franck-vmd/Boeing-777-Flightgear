@@ -2381,10 +2381,10 @@
   <property>sim/sound/music2</property>
  </condition>
         <volume>
-            <factor>300</factor>
+            <factor>100</factor>
         </volume>
   <position>
-      <x>2.00</x>
+      <x>0.00</x>
       <y>0.00</y>
       <z>0.00</z>
  </position>

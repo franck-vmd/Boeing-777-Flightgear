@@ -28,15 +28,15 @@
 		</empty>
 
 		<button>
-			<legend/>
-			<key>Esc</key>
-			<pref-width>16</pref-width>
-			<pref-height>16</pref-height>
-			<border>2</border>
-			<binding>
-				<command>dialog-close</command>
-			</binding>
-		</button>
+            <halign>right</halign>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <legend>x</legend>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+        
 	</group>
 
 	<hrule/>
@@ -113,5 +113,7 @@
 		<label>Tiller is controlled via rudder when disabled here.</label>
 	</text>
 
+       <hrule/>
+       
 </PropertyList>
 

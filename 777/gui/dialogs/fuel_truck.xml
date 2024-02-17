@@ -21,7 +21,7 @@
             <halign>right</halign>
             <pref-width>16</pref-width>
             <pref-height>16</pref-height>
-            <legend/>
+            <legend>x</legend>
             <binding>
                 <command>dialog-close</command>
             </binding>
@@ -29,7 +29,7 @@
 
     </group>
     
-    <hrule />
+    <hrule/>
 
     <group>
     <layout>vbox</layout>
@@ -103,7 +103,7 @@
         
         </group>
         
-        <hrule />
+        <hrule/>
         
         <group>
         <layout>vbox</layout>
@@ -234,7 +234,7 @@
     
     </group>
 
-    <hrule />
+    <hrule/>
     
     <group>
     <layout>table</layout>
@@ -340,7 +340,7 @@
     
     </group>
     
-    <hrule />
+    <hrule/>
     
     <group>
     
@@ -420,24 +420,6 @@
     
     </group>
     
-    <hrule />
-    
-    <group>
-    <layout>hbox</layout>
-
-        <button>
-            <legend>Close</legend>
-            <default>true</default>
-            <key>Esc</key>
-        <padding>5</padding>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-            <binding>
-                <command>dialog-close</command>
-            </binding>
-        </button>
-        
-    </group>
+    <hrule/>
 
 </PropertyList>

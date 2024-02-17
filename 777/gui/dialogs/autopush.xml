@@ -15,32 +15,26 @@ Distribute under the terms of GPLv2.
 -->
 
 <PropertyList>
-
     <name>autopush</name>
     <layout>vbox</layout>
 
     <group>
-
-        <layout>hbox</layout>
-
+    <layout>hbox</layout>
         <text>
             <label>Pushback</label>
         </text>
+        <empty><stretch>true</stretch></empty>
 
-        <empty>
-            <stretch>true</stretch>
-        </empty>
-
-        <button>
-            <halign>right</halign>
-            <pref-width>16</pref-width>
-            <pref-height>16</pref-height>
-            <legend/>
-            <key>Esc</key>
-            <binding>
-                <command>dialog-close</command>
-            </binding>
-        </button>
+    <button>
+      <legend>x</legend>
+      <key>Esc</key>
+      <pref-width>16</pref-width>
+      <pref-height>16</pref-height>
+      <border>2</border>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
 
     </group>
 
@@ -379,9 +373,12 @@ Distribute under the terms of GPLv2.
                     <command>dialog-apply</command>
                 </binding>
             </checkbox>
-
-        </group>
-
-    </group>
+      </group>
+      
+      </group>
+      <hrule/>
+      <group>
+      <hrule/>
+      </group>
 
 </PropertyList>

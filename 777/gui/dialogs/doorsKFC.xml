@@ -498,20 +498,4 @@
 
 <hrule/>
 
-
-<group>
-        <layout>hbox</layout>
-        <halign>right</halign>
-        <default-padding>6</default-padding>
-
-<button>
-            <legend>Close</legend>
-            <key>Esc</key>
-            <binding>
-                <command>dialog-close</command>
-            </binding>
-</button>
-   
-</group>
-
 </PropertyList>

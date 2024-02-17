@@ -247,6 +247,8 @@ Franck.VMD
         <object-name>Rgear1</object-name>
         <object-name>BaileG</object-name>
         <object-name>BaileD</object-name>
+        <object-name>Wingsred</object-name>
+        <object-name>Wingsgreen</object-name>
         <property-base>sim/model/fuselage4</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X9/AFR6.png</texture>
@@ -7998,12 +8000,12 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>whiteflash</object-name>
-        <offset-m>37.594927276196</offset-m>
+        <offset-m>42.2942857</offset-m>
         <axis>
-            <x>37.58887</x>
-            <y>0</y>
-            <z>0.67484</z>
-        </axis>
+        <x>42.2892</x>
+        <y>0.01</y>
+        <z>0.67485</z>
+    </axis>
     </animation>
 
     <animation>
@@ -8012,14 +8014,14 @@ Franck.VMD
     </animation>
 
     <animation>
-        <type>translate</type>
-        <object-name>redflash</object-name>
-        <offset-m>34.02</offset-m>
-        <axis>
-            <x>0.449</x>
-            <y>-0.892</y>
-            <z>0.046</z>
-        </axis>
+    <type>translate</type>
+    <object-name>redflash</object-name>
+       <offset-m>34.78</offset-m>
+    <axis>
+        <x>0.607</x>
+        <y>-1.21</y>
+        <z>0.0637</z>
+    </axis>
     </animation>
 
     <animation>
@@ -8028,14 +8030,14 @@ Franck.VMD
     </animation>
 
     <animation>
-        <type>translate</type>
-        <object-name>greenflash</object-name>
-        <offset-m>34.02</offset-m>
-        <axis>
-            <x>0.449</x>
-            <y>0.892</y>
-            <z>0.046</z>
-        </axis>
+    <type>translate</type>
+    <object-name>greenflash</object-name>
+    <offset-m>34.78</offset-m>
+    <axis>
+        <x>0.607</x>
+        <y>1.21</y>
+        <z>0.0637</z>
+    </axis>
     </animation>
 
     <animation>
@@ -8057,7 +8059,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Strobe01</object-name>
-        <offset-m>34.26</offset-m>
+        <offset-m>32.12</offset-m>
         <axis>
             <x>0.455</x>
             <y>-0.889</y>
@@ -8512,8 +8514,8 @@ Franck.VMD
 		<path>Aircraft/777/Models/Effects/smoke_1.xml</path>
 		<offsets>
 			<x-m>2.1</x-m>
-			<y-m>-10.0</y-m>
-			<z-m>-3</z-m>
+			<y-m>-10.66</y-m>
+			<z-m>-2.68</z-m>
 		</offsets>
 	</model>
 	
@@ -8521,8 +8523,8 @@ Franck.VMD
 		<path>Aircraft/777/Models/Effects/smoke_12.xml</path>
 		<offsets>
 			<x-m>2.1</x-m>
-			<y-m>-10.0</y-m>
-			<z-m>-3</z-m>
+			<y-m>-10.66</y-m>
+			<z-m>-2.68</z-m>
 		</offsets>
 	</model>
 	
@@ -8530,8 +8532,8 @@ Franck.VMD
 		<path>Aircraft/777/Models/Effects/smoke_13.xml</path>
 		<offsets>
 			<x-m>4.1</x-m>
-			<y-m>-10.0</y-m>
-			<z-m>-3</z-m>
+			<y-m>-10.66</y-m>
+			<z-m>-2.68</z-m>
 		</offsets>
 	</model>
 	
@@ -8539,8 +8541,8 @@ Franck.VMD
 		<path>Aircraft/777/Models/Effects/smoke_2.xml</path>
 		<offsets>
 			<x-m>2.1</x-m>
-			<y-m>10.0</y-m>
-			<z-m>-3</z-m>
+			<y-m>10.66</y-m>
+			<z-m>-2.68</z-m>
 		</offsets>
 	</model>
 	
@@ -8548,8 +8550,8 @@ Franck.VMD
 		<path>Aircraft/777/Models/Effects/smoke_22.xml</path>
 		<offsets>
 			<x-m>2.1</x-m>
-			<y-m>10.0</y-m>
-			<z-m>-3</z-m>
+			<y-m>10.66</y-m>
+			<z-m>-2.68</z-m>
 		</offsets>
 	</model>
 	
@@ -8557,17 +8559,17 @@ Franck.VMD
 		<path>Aircraft/777/Models/Effects/smoke_23.xml</path>
 		<offsets>
 			<x-m>4.1</x-m>
-			<y-m>10.0</y-m>
-			<z-m>-3</z-m>
+			<y-m>10.66</y-m>
+			<z-m>-2.68</z-m>
 		</offsets>
 	</model>
 	
 	<model>
 		<path>Aircraft/777/Models/Effects/smoke_3.xml</path>
 		<offsets>
-			<x-m>37.0</x-m>
+			<x-m>42.70761</x-m>
 			<y-m>-0.5</y-m>
-			<z-m>1.5</z-m>
+			<z-m>1.22530</z-m>
 		</offsets>
 	</model>
 	
@@ -8576,18 +8578,18 @@ Franck.VMD
 	 <model>
   <path>Aircraft/777/Models/Effects/vapour1.xml</path>
   <offsets>
-   <x-m>17.63</x-m>
-   <y-m>-32.27</y-m>
-   <z-m>1.75</z-m>
+   <x-m>19.51648</x-m>
+   <y-m>-35.91257</y-m>
+   <z-m>2.37510</z-m>
   </offsets>
  </model>
  
  <model>
   <path>Aircraft/777/Models/Effects/vapour1.xml</path>
   <offsets>
-   <x-m>17.63</x-m>
-   <y-m>32.27</y-m>
-   <z-m>1.75</z-m>
+   <x-m>19.51648</x-m>
+   <y-m>35.91257</y-m>
+   <z-m>2.37510</z-m>
   </offsets>
  </model>
 
@@ -8597,8 +8599,8 @@ Franck.VMD
 <path>Aircraft/777/Models/Effects/contrail1.xml</path>
 <offsets>
 <x-m>15.10</x-m>
-<y-m>-9.90</y-m>
-<z-m>-3.0</z-m>
+<y-m>-10.66</y-m>
+<z-m>-2.68</z-m>
 <heading-deg>0</heading-deg>
  <roll-deg>0</roll-deg>
  <pitch-deg>0 </pitch-deg>
@@ -8609,8 +8611,8 @@ Franck.VMD
 <path>Aircraft/777/Models/Effects/contrail1.xml</path>
 <offsets>
 <x-m>15.10</x-m>
-<y-m>9.90</y-m>
-<z-m>-3.0</z-m>
+<y-m>10.66</y-m>
+<z-m>-2.68</z-m>
 <heading-deg>0</heading-deg>
  <roll-deg>0</roll-deg>
  <pitch-deg>0</pitch-deg>

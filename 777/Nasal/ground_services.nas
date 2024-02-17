@@ -79,10 +79,6 @@ var ground_services = {
     setprop("services/cargo2/move7", 0);	
     setprop("services/cargo2/position7", 0);
 
-    # F-14b 
-    setprop("services/f14/move8", 0);	
-    setprop("services/f14/position8", 0);
-
     # De-icing Truck
 	
     setprop("services/deicing_truck/enable", 0);
@@ -408,26 +404,6 @@ var ground_services = {
         } else {
             setprop("services/cargo2/position7", 0);
             setprop("services/cargo2/move7", 0);
-        }
-
-        var cater_move = getprop("services/f14/move8");
-        var cater_position = getprop("services/f14/position8");
-        
-        if (getprop("services/f14/enable8") != 0) {
-            if (cater_position < cater_move) { #raise catering truck 
-                setprop("services/f14/position8", cater_position + 0.001);  
-                if (cater_move - getprop("services/f14/position8") < 0.0001) {
-                    setprop("services/f14/position8", cater_move);
-                }
-            } elsif (cater_position > cater_move) { #lower catering truck 
-                setprop("services/f14/position8", cater_position - 0.001);  
-                if ((getprop("services/f14/position8") - cater_move) < 0.0001) {
-                    setprop("services/f14/position8", cater_move);
-                }
-            }
-        } else {
-            setprop("services/f14/position8", 0);
-            setprop("services/f14/move8", 0);
         }
         
         # Pax and baggage

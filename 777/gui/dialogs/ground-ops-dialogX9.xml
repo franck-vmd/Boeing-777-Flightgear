@@ -8,7 +8,7 @@
       <label>Ground Operations</label>
     </text>
 		<button>
-      <pref-width>16</pref-width>
+                        <pref-width>16</pref-width>
 			<pref-height>16</pref-height>
 			<legend>x</legend>
 			<default>1</default>
@@ -86,5 +86,6 @@
     </checkbox>
 
   </group>
+  <hrule/>
 
 </PropertyList>

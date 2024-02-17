@@ -1,8 +1,8 @@
 var autoannunciator_active = "aircraft-config/auto-annunciator";
 var landed = 0;
 
-setlistener("controls/lighting/beacon", func(){
-    var running = getprop("controls/lighting/beacon");
+setlistener("controls/electric/battery-switch", func(){
+    var running = getprop("controls/electric/battery-switch");
     var phase = getprop("flight-management/phase");
     if(running and phase == "T/O"){
         settimer(func(){
