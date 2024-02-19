@@ -7,6 +7,7 @@ Principalement écrit dans le langage de programmation C++ , FlightGear est , to
 
 Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,pour le 28 janvier 2024
 
+![Image](https://i.ibb.co/k8q7KqK/debut-video-777.png)
 ----------------------------------------------------------------------------------
 
 Portes 777-séries 200: L1, L2 ,L3, L4 ,R1, R2 ,R3, R4 , ouverture et fermeture jusqu'à 35 knots
