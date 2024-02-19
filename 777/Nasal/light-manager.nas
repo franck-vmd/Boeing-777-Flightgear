@@ -215,11 +215,11 @@ var light_manager = {
         
         me.light3_xpos =  -13.9018;
         me.light3_ypos =  34.1173;
-        me.light3_zpos =  2.13452;
+        me.light3_zpos =  0.5;
         
         me.light4_xpos =  -13.9018;
         me.light4_ypos =  -34.1173;
-        me.light4_zpos =  2.13452;
+        me.light4_zpos =  0.5;
         
         me.light5_xpos =  1.0;
         me.light5_ypos =  0.0;
