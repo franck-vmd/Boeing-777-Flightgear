@@ -108,4 +108,4 @@ Make sure you have 3 GB available on your hard drive
 
 ---------------------------------------------------------------------------------------------
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/H_WArHTCnDc?si=xqA4DEU08xIYZEAn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="280" height="158" src="https://www.youtube.com/embed/H_WArHTCnDc?si=xqA4DEU08xIYZEAn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
