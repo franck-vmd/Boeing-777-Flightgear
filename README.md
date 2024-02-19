@@ -108,4 +108,4 @@ Make sure you have 3 GB available on your hard drive
 
 ---------------------------------------------------------------------------------------------
 
-<iframe width="280" height="158" src="https://www.youtube.com/embed/H_WArHTCnDc?si=xqA4DEU08xIYZEAn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![FlightGear 777-X9 LFQQ / LFPG](https://img.youtube.com/vi/H_WArHTCnDc)](https://www.youtube.com/watch?v=H_WArHTCnDc)
