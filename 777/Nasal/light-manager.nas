@@ -205,21 +205,21 @@ var light_manager = {
         # lights ########
         # offsets to aircraft center
  
-        me.light1_xpos =  78.0;
+        me.light1_xpos =  73.0;
         me.light1_ypos =  0.0;
         me.light1_zpos =  0.5;
         
-        me.light2_xpos =  80.0;
+        me.light2_xpos =  75.0;
         me.light2_ypos =  0.0;
         me.light2_zpos =  -3.0;
         
-        me.light3_xpos =  -15.0;
-        me.light3_ypos =  34.0;
-        me.light3_zpos =  0.5;
+        me.light3_xpos =  -13.9018;
+        me.light3_ypos =  34.1173;
+        me.light3_zpos =  2.13452;
         
-        me.light4_xpos =  -15.0;
-        me.light4_ypos =  -34.0;
-        me.light4_zpos =  0.5;
+        me.light4_xpos =  -13.9018;
+        me.light4_ypos =  -34.1173;
+        me.light4_zpos =  2.13452;
         
         me.light5_xpos =  1.0;
         me.light5_ypos =  0.0;
@@ -508,11 +508,12 @@ var light_manager = {
 };
 
 var modelvariant = substr(getprop("sim/aero"), 3);
-if (modelvariant == "-300" or vmodel == "-300ER") {
-    light_manager.init_300();
+if (modelvariant == "-X9" or vmodel == "-300ER") {
+    light_manager.init_X9();
 } else {
     light_manager.init_200();
 }
+
 
 
 

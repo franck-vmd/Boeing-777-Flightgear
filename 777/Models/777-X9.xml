@@ -8000,12 +8000,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>whiteflash</object-name>
-        <offset-m>42.2942857</offset-m>
+        <offset-m>43.66</offset-m>
         <axis>
-        <x>42.2892</x>
-        <y>0.01</y>
-        <z>0.67485</z>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>43.6596</x2-m>
+        <y2-m>0.0</y2-m>
+        <z2-m>0.64848</z2-m>
     </axis>
+    <axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -8016,12 +8024,20 @@ Franck.VMD
     <animation>
     <type>translate</type>
     <object-name>redflash</object-name>
-       <offset-m>34.78</offset-m>
+       <offset-m>35.09</offset-m>
     <axis>
-        <x>0.607</x>
-        <y>-1.21</y>
-        <z>0.0637</z>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>13.9809</x2-m>
+        <y2-m>-32.1099</y2-m>
+        <z2-m>2.13452</z2-m>
     </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -8032,12 +8048,20 @@ Franck.VMD
     <animation>
     <type>translate</type>
     <object-name>greenflash</object-name>
-    <offset-m>34.78</offset-m>
+    <offset-m>35.09</offset-m>
     <axis>
-        <x>0.607</x>
-        <y>1.21</y>
-        <z>0.0637</z>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>13.9809</x2-m>
+        <y2-m>32.1099</y2-m>
+        <z2-m>2.13452</z2-m>
     </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -8059,12 +8083,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Strobe01</object-name>
-        <offset-m>32.12</offset-m>
+        <offset-m>35.09</offset-m>
         <axis>
-            <x>0.455</x>
-            <y>-0.889</y>
-            <z>0.046</z>
-        </axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>13.9809</x2-m>
+        <y2-m>32.1099</y2-m>
+        <z2-m>2.13452</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -8095,12 +8127,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Strobe02</object-name>
-        <offset-m>34.26</offset-m>
+        <offset-m>35.09</offset-m>
         <axis>
-            <x>0.455</x>
-            <y>0.889</y>
-            <z>0.046</z>
-        </axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>13.9809</x2-m>
+        <y2-m>-32.1099</y2-m>
+        <z2-m>2.13452</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -8131,12 +8171,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Strobe03</object-name>
-        <offset-m>37.747259197156</offset-m>
+        <offset-m>43.8</offset-m>
         <axis>
-            <x>37.69757</x>
-            <y>0</y>
-            <z>1.93618</z>
-        </axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>43.7544</x2-m>
+        <y2-m>0.0</y2-m>
+        <z2-m>1.90724</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
