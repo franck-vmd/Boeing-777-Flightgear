@@ -101,12 +101,12 @@ var light_manager = {
         me.light2_ypos =  0.0;
         me.light2_zpos =  -3.0;
         
-        me.light3_xpos =  -15.0;
-        me.light3_ypos =  31.5;
+        me.light3_xpos =  -15.51;
+        me.light3_ypos =  31.1;
         me.light3_zpos =  0.5;
         
-        me.light4_xpos =  -15.0;
-        me.light4_ypos =  -31.5;
+        me.light4_xpos =  -15.51;
+        me.light4_ypos =  -31.1;
         me.light4_zpos =  0.5;
         
         me.light5_xpos =  1.0;

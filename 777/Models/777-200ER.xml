@@ -460,11 +460,15 @@ Franck.VMD
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
-        <object-name>Fuselage.002</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>Rmain.geardoor</object-name>
         <object-name>Lgear1</object-name>
         <object-name>Rgear1</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect30</inherits-from>
+        <object-name>Fuselage.002</object-name>
     </effect>
     
     <effect>

@@ -383,15 +383,19 @@ Franck.VMD
    </effect>
     
     <effect>
-        <inherits-from>Aircraft/777/Models/Effects/reflect2</inherits-from>
+        <inherits-from>Aircraft/777/Models/Effects/reflect33</inherits-from>
         <object-name>Fuselage</object-name>
         <object-name>entry8r</object-name>
         <object-name>entry10r</object-name>
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>Fuselage.004</object-name>
-        <object-name>Fuselageraccord</object-name>
       </effect>
+      
+      <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect34</inherits-from>
+        <object-name>Fuselageraccord</object-name>
+    </effect>
 
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect1</inherits-from>
@@ -516,13 +520,17 @@ Franck.VMD
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
-        <object-name>Fuselage.002</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>Rmain.geardoor</object-name>
         <object-name>Lgear1</object-name>
         <object-name>Rgear1</object-name>
         <object-name>BaileG</object-name>
         <object-name>BaileD</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect32</inherits-from>
+        <object-name>Fuselage.002</object-name>
     </effect>
     
     <effect>
@@ -8191,8 +8199,8 @@ Franck.VMD
         <z2-m>1.90724</z2-m>
     </axis>
     <axis>
-	<x>0</x>
-	<y>1</y>
+	<x>1</x>
+	<y>0</y>
 	<z>0</z>
 	</axis>
     </animation>
