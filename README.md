@@ -16,6 +16,8 @@ Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,pour le 28 janvier 202
 
 Portes 777-séries 200: L1, L2 ,L3, L4 ,R1, R2 ,R3, R4 , ouverture et fermeture jusqu'à 35 knots
 
+Portes 777-séries 300: L1, L2 ,L3, L4 ,R1, R2 ,R3, R4 , ouverture et fermeture jusqu'à 35 knots
+
 Portes X9: L1, L2 ,L3, L4 ,L5, R1 ,R2, R3 ,R4, R5 ouverture et fermeture jusqu'à 35 knots
 
 Portes F et KFC: L1, L2 ,R1, R2 ouverture et fermeture jusqu'à 35 knots
@@ -70,6 +72,8 @@ Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,for January 28, 2024
 -------------------------------------------------------------------------------
 
 777-series 200 doors: L1, L2, L3, L4, R1, R2, R3, R4, opening and closing up to 35 knots
+
+777-series 300 doors: L1, L2, L3, L4, R1, R2, R3, R4, opening and closing up to 35 knots
 
 Doors X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5 opening and closing up to 35 knots
 
