@@ -9,7 +9,7 @@ Bienvenue
 FlightGear Flight Simulator , souvent abrégé FlightGear ou FGFS est un jeu vidéo libre de simulation de vol , gratuit, open-source et multiplate-forme développé par le projet FlightGear .
 Principalement écrit dans le langage de programmation C++ , FlightGear est , tout comme Fly ! Legacy , un simulateur de vol dont les sources sont libres .
 
-Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,pour le 28 janvier 2024
+Boeing 777 Series 200 , ER , LR , F , 777-300 , USAF (Tanker) , X9 ,pour le 28 janvier 2024
 
 ![Image](https://i.ibb.co/k8q7KqK/debut-video-777.png)
 ----------------------------------------------------------------------------------
@@ -66,7 +66,7 @@ Welcome
 
 FlightGear Flight Simulator, often abbreviated FlightGear or FGFS is a free, open-source, cross-platform flight simulator developed by volunteers.
 
-Boeing 777 Series 200 , ER , LR , F , USAF (Tanker) , X9 ,for January 28, 2024
+Boeing 777 Series 200 , ER , LR , F , 777-300 , USAF (Tanker) , X9 ,for January 28, 2024
 
 ![Image](https://i.ibb.co/nCtw9ty/X9.png)
 -------------------------------------------------------------------------------
