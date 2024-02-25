@@ -1,4 +1,4 @@
-<!-- 777-200
+<!-- 777-200KC
 Franck.VMD
 -->
 
@@ -107,7 +107,7 @@ Franck.VMD
      <!-- instrument-->
     <model>
         <name>panel1</name>
-        <path>Aircraft/777/Models/Cockpit/panel.xml</path>
+        <path>Aircraft/777/Models/Cockpit/panelKC.xml</path>
     </model>
 
     <model>

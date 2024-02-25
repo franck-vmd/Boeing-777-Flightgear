@@ -717,48 +717,6 @@ Franck.VMD
     </condition>
   </animation>
 
-   <!-- light -->
-
-    <model>
-        <name>LandingLights</name>
-        <path>Aircraft/777/Models/Lights/light-coneLR.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
-
-    <model>
-        <name>LandingLights</name>
-        <path>Aircraft/777/Models/Lights/light-coneC.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
-
-   <model>
-        <name>LandingLights</name>
-        <path>Aircraft/777/Models/Lights/light-runwayLR.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
-
-   <model>
-        <name>LandingLights</name>
-        <path>Aircraft/777/Models/Lights/light-wingLR.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
-
 <!--   ################  Gear ###############       -->
 
   <!--front Gear -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 777-200
+<!-- 777-X9
 Franck.VMD
 -->
 <PropertyList>
@@ -370,6 +370,18 @@ Franck.VMD
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X9/AFR9.png</texture>
     </animation>
+    
+    <animation>
+		<type>material</type>
+		<texture>wall.png</texture>
+		<object-name>window mix interieur</object-name>
+      </animation>
+      
+      <animation>
+		<type>material</type>
+		<texture>windowmix.png</texture>
+                <object-name>window mix exterieur</object-name>
+       </animation>
 
     <!-- Lightmap -->
    <effect>
@@ -850,48 +862,6 @@ Franck.VMD
             <z>0</z>
         </axis>
 	</animation>
-
-   <!-- light -->
-
-    <model>
-        <name>LandingLights</name>
-        <path>Aircraft/777/Models/Lights/light-coneLR.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
-
-    <model>
-        <name>LandingLights</name>
-        <path>Aircraft/777/Models/Lights/light-coneC.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
-
-   <model>
-        <name>LandingLights</name>
-        <path>Aircraft/777/Models/Lights/light-runwayLR.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
-
-   <model>
-        <name>LandingLights</name>
-        <path>Aircraft/777/Models/Lights/light-wingLR.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
 
 <!--   ################  Gear ###############       -->
 
@@ -8415,6 +8385,30 @@ Franck.VMD
     <two-sides type="bool">false</two-sides>
     <min>0.5</min>
     <max>5</max>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>mur.001</object-name>
+        <object-name>window mix exterieur</object-name>
+        <object-name>window mix interieur</object-name>
+        <condition>
+            <greater-than>
+                <property>controls/switches/windowmix</property>
+                <value>00</value>
+            </greater-than>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>mur.002</object-name>
+        <condition>
+            <less-than>
+                <property>controls/switches/windowmix</property>
+                <value>01</value>
+            </less-than>
+        </condition>
     </animation>
 
 <!--   engines   -->
