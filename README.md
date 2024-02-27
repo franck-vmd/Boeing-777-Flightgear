@@ -144,7 +144,7 @@ Gui :
 
 USAF :
 
-[![FlightGear 777-X9 LFQQ / LFPG](https://i.ibb.co/80pzVxF/Flight-Gear-Boeing-777-US-AIR-FORCE.png)](https://www.youtube.com/watch?v=aHSQxtGoFQQ "FlightGear Boeing 777-US AIR FORCE")
+[![FlightGear Boeing 777-US AIR FORCE](https://i.ibb.co/80pzVxF/Flight-Gear-Boeing-777-US-AIR-FORCE.png)](https://www.youtube.com/watch?v=aHSQxtGoFQQ "FlightGear Boeing 777-US AIR FORCE")
 
 
 
