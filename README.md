@@ -44,7 +44,7 @@ Alarme Toutes les portes confondus " CAUTION ", visuel sur le MFD et écriture s
 
 Pilots : Pas de condition
 
-![Image](https://i.ibb.co/wSRvjVG/doors.png)
+![Image](https://i.ibb.co/HTY0FZ8/doors.png)
 
 
 Éclairage Cockpite : sur OHpanel Bouton BATTERY, Bouton à tourner Master BRIGHT pour les instruments, Bouton STORM et tourner Bouton DOME pour éclairage intérieur Cockpite .
