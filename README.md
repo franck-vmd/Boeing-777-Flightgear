@@ -105,10 +105,14 @@ Alarm All doors combined “CAUTION”, visual on the MFD and on the EICAS
 
 Pilots: No conditions
 
+![Image](https://i.ibb.co/P5Y29H9/doors2.png)
+
 
 Cockpit lighting: on OH panel BATTERY button, Master BRIGHT knob for instruments, STORM button and DOME knob for Cockpit interior lighting.
 
 At night OVHD knob and CB knob as well as GLARESHIELD and PNL/FLOOD
+
+![Image](https://i.ibb.co/bmHbNDD/bouton.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
