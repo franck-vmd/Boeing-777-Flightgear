@@ -26,22 +26,6 @@ Franck.VMD
         </offsets>
     </model>
 
-    <!-- Observtoir -->
- 
-    <model>
-        <name>PFD3</name>
-        <path>Aircraft/777/Models/InstrumentsX/PFD/PFD_C.xml</path>
-        <offsets>
-            <x-m>49.85</x-m>
-            <y-m>0.75</y-m>
-            <z-m>0.0</z-m>
-            <pitch-deg>-20</pitch-deg>
-            <heading-deg>210.0</heading-deg>
-        </offsets>
-    </model>
-  
-  <!-- Observtoir -->
-
     <model>
         <name>ND1</name>
         <path>Aircraft/777/Models/InstrumentsX/ND/ND_L.xml</path>
