@@ -7537,14 +7537,14 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>whiteflash</object-name>
-        <offset-m>37.73</offset-m>
+        <offset-m>42.67</offset-m>
         <axis>
         <x1-m>0.0</x1-m>
         <y1-m>0.0</y1-m>
         <z1-m>0.0</z1-m>
-        <x2-m>37.727</x2-m>
+        <x2-m>42.647</x2-m>
         <y2-m>0.0</y2-m>
-        <z2-m>0.64848</z2-m>
+        <z2-m>0.60434</z2-m>
     </axis>
     <axis>
 	<x>1</x>
@@ -7708,12 +7708,12 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Strobe03</object-name>
-        <offset-m>37.9</offset-m>
+        <offset-m>42.80</offset-m>
         <axis>
         <x1-m>0.0</x1-m>
         <y1-m>0.0</y1-m>
         <z1-m>0.0</z1-m>
-        <x2-m>37.8568</x2-m>
+        <x2-m>42.7568</x2-m>
         <y2-m>0.0</y2-m>
         <z2-m>1.90724</z2-m>
     </axis>
