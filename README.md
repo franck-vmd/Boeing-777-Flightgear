@@ -2,7 +2,7 @@ General discussion on Boeing 777 all series combined
 
 https://github.com/franck-vmd/Boeing-777-Flightgear/discussions
 
-![Image](https://i.ibb.co/kmnZd4S/cdu772.png)
+![Image](https://i.ibb.co/0BNmYpZ/cdu772.png)
 
 Français :
 
