@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">USAF2</name>
+				<texture>Liveries-KC/AFR2KC.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-KC/AFR1KC.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-KC/AFR3KC.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-KC/AFR4KC.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-KC/AFR5KC.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-KC/AFR6KC2.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-KC/AFR7KC.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-KC/AFR8KC.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-KC/AFR9KC.png</texture>
+                        </fuselage7>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>USAF</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+
