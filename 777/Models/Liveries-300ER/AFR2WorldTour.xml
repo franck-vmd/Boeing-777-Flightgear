@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">18 World Tour 300ER</name>
+				<texture>Liveries-300ER/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-300ER/AFR1WT.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-300ER/AFR3WT.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-300ER/AFR4WT.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-300ER/AFR5WT.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-300ER/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-300ER/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-300ER/AFR8WT.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-300ER/AFR9.png</texture>
+                        </fuselage7>
+                        <fuselage8>
+                                <texture>Liveries-300ER/AFR1WTrac.png</texture>
+                        </fuselage8>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>WorldTour</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+
