@@ -571,6 +571,8 @@ Franck.VMD
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
         <object-name>greenflash</object-name>
         <object-name>Strobe01</object-name>
         <object-name>Strobe02</object-name>
@@ -5592,6 +5594,8 @@ Franck.VMD
         <type>select</type>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
         <object-name>greenflash</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
@@ -5796,14 +5800,14 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>whiteflash</object-name>
-        <offset-m>37.73</offset-m>
+        <offset-m>42.67</offset-m>
         <axis>
         <x1-m>0.0</x1-m>
         <y1-m>0.0</y1-m>
         <z1-m>0.0</z1-m>
-        <x2-m>37.727</x2-m>
+        <x2-m>42.647</x2-m>
         <y2-m>0.0</y2-m>
-        <z2-m>0.64848</z2-m>
+        <z2-m>0.60434</z2-m>
     </axis>
     <axis>
 	<x>1</x>
@@ -5811,10 +5815,50 @@ Franck.VMD
 	<z>0</z>
 	</axis>
     </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>whiteflash1</object-name>
+        <offset-m>37.37</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>18.562</x2-m>
+        <y2-m>32.3801</y2-m>
+        <z2-m>1.76704</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>whiteflash2</object-name>
+        <offset-m>37.37</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>18.562</x2-m>
+        <y2-m>-32.3801</y2-m>
+        <z2-m>1.76704</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+    </animation>
 
     <animation>
         <type>billboard</type>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
     </animation>
 
     <animation>
