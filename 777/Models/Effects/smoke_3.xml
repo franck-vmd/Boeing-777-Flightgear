@@ -35,8 +35,10 @@ if you contacted me before making any changes to this software.
 		</offsets>
 		<texture>smoke.png</texture>
 		<condition>
-					<property>controls/APU/off-start-run</property>
-					<value>3</value>
+		<greater-than>
+                        <property>controls/APU/rpm</property>
+                        <value>0.99</value>
+                </greater-than>
 		</condition>
 		<emissive>false</emissive>
 		<lighting>false</lighting>

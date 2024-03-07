@@ -1215,7 +1215,7 @@ Service Ceiling: 43,100ft
     </consumables>
 
     <aircraft-config>
-		<auto-annunciator type="bool">1</auto-annunciator>
+		<auto-annunciator type="bool">0</auto-annunciator>
 		<saved>
 			<fcu>
 				<shift-to-rotate type="bool">0</shift-to-rotate>
