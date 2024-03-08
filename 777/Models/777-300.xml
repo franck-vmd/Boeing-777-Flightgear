@@ -29,6 +29,8 @@ Franck.VMD
         <object-name>Fuselage.005</object-name>
         <object-name>Fuselage.006</object-name>
         <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
+        <object-name>queu pointe</object-name>
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>ApuG.001</object-name>
@@ -359,6 +361,8 @@ Franck.VMD
         <inherits-from>Aircraft/777/Models/Effects/reflect35</inherits-from>
         <object-name>Fuselage</object-name>
         <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
+        <object-name>queu pointe</object-name>
         <object-name>entry8r</object-name>
         <object-name>entry10r</object-name>
         <object-name>ApuG</object-name>
@@ -1310,6 +1314,50 @@ Franck.VMD
             <x>1</x>
             <y>0</y>
             <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>Fuselage.008</object-name>
+        <property>gear/gear[1]/position-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>0.8</ind><dep>52.2</dep></entry>
+            <entry><ind>1</ind><dep>52.2</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>33.9523</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-1.32793</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>queu pointe</object-name>
+        <property>gear/gear[1]/position-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0.52</dep></entry>
+            <entry><ind>0.2</ind><dep>0.52</dep></entry>
+            <entry><ind>0.8</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>0</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>34.4329</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-0.930086</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
         </axis>
     </animation>
 
