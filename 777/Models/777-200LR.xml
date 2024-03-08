@@ -28,6 +28,9 @@ Franck.VMD
         <object-name>Fuselage.004</object-name>
         <object-name>Fuselage.005</object-name>
         <object-name>Fuselage.006</object-name>
+        <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
+        <object-name>queu pointe</object-name>
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>ApuG.001</object-name>
@@ -36,7 +39,6 @@ Franck.VMD
         <object-name>entry9r</object-name>
         <object-name>entry8r.001</object-name>
         <object-name>entry10r</object-name>
-        <object-name>rlightext</object-name>
         <object-name>LFdoor</object-name>
         <object-name>LRdoor</object-name>
         <object-name>RFdoor</object-name>
@@ -335,6 +337,9 @@ Franck.VMD
       <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect2</inherits-from>
         <object-name>Fuselage</object-name>
+        <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
+        <object-name>queu pointe</object-name>
         <object-name>entry8r</object-name>
         <object-name>entry10r</object-name>
         <object-name>ApuG</object-name>
@@ -1533,6 +1538,50 @@ Franck.VMD
             <z>0</z>
         </axis>
     </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>Fuselage.008</object-name>
+        <property>gear/gear[1]/position-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>0.8</ind><dep>52.2</dep></entry>
+            <entry><ind>1</ind><dep>52.2</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>29.0023</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-1.32793</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>queu pointe</object-name>
+        <property>gear/gear[1]/position-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0.52</dep></entry>
+            <entry><ind>0.2</ind><dep>0.52</dep></entry>
+            <entry><ind>0.8</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>0</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>29.4829</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-0.930086</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
 
     <animation>
         <type>rotate</type>
@@ -2569,6 +2618,54 @@ Franck.VMD
 
     
     <!-- Apu -->
+    
+    <animation>
+		<type>rotate</type>
+		<object-name>Fuselage.007</object-name>
+		<property>controls/APU/rpm</property>
+		<interpolation>
+                <entry><ind>0</ind><dep>0</dep></entry>
+                <entry><ind>0.5</ind><dep>0</dep></entry>
+                <entry><ind>1</ind><dep>30</dep></entry>
+                </interpolation>
+        <axis>
+        <x1-m>34.3812</x1-m>
+        <y1-m>0.171979</y1-m>
+        <z1-m>2.21372</z1-m>
+        <x2-m>34.3822</x2-m>
+        <y2-m>0.3267</y2-m>
+        <z2-m>2.11905</z2-m>
+        </axis>
+        <axis>
+        <x>1</x>
+	<y>0</y>
+	<z>0</z>
+        </axis>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>Fuselage.007</object-name>
+		<property>controls/APU/rpm</property>
+		<interpolation>
+                <entry><ind>0</ind><dep>0</dep></entry>
+                <entry><ind>0.5</ind><dep>0</dep></entry>
+                <entry><ind>1</ind><dep>0.04</dep></entry>
+                </interpolation>
+        <axis>
+        <x1-m>34.3826</x1-m>
+        <y1-m>0.248404</y1-m>
+        <z1-m>2.17676</z1-m>
+        <x2-m>34.3915</x2-m>
+        <y2-m>0.28662</y2-m>
+        <z2-m>2.24452</z2-m>
+        </axis>
+        <axis>
+        <x>1</x>
+	<y>0</y>
+	<z>1</z>
+        </axis>
+	</animation>
     
     <animation>
 		<name>c31</name>
