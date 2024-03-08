@@ -41,12 +41,12 @@
         </model>
         <view n="0">
             <config n="0">
-                <z-offset-m type="double">-22.84</z-offset-m>
+                <z-offset-m type="double">-22.70</z-offset-m>
             </config>
         </view>
         <view n="100">
             <config n="0">
-                <z-offset-m type="double">-22.84</z-offset-m>
+                <z-offset-m type="double">-22.70</z-offset-m>
             </config>
         </view>
         <view n="101">
@@ -156,7 +156,7 @@
         </view>
         <view n="124">
             <config n="0">
-            <z-offset-m type="double">-22.84</z-offset-m>
+            <z-offset-m type="double">-22.70</z-offset-m>
             </config>
         </view>
         <view n="125">

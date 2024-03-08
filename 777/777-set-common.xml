@@ -83,7 +83,7 @@
                 <x-offset-m type="double">-0.57</x-offset-m>
                 <y-offset-m type="double">0.8</y-offset-m>
                 <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
-                <pitch-offset-deg>-13.5</pitch-offset-deg>
+                <pitch-offset-deg>-09.5</pitch-offset-deg>
                 <limits>
                     <enabled type="bool">true</enabled>
                     <left>
@@ -133,9 +133,9 @@
                 <right-direction-deg type="double">270</right-direction-deg>
                 <front-right-direction-deg type="double">315</front-right-direction-deg>
                 <dynamic-view type="bool">true</dynamic-view>
-                <x-offset-m type="double">0.60</x-offset-m>
+                <x-offset-m type="double">0.57</x-offset-m>
                 <y-offset-m type="double">0.8</y-offset-m>
-                <pitch-offset-deg>-13.5</pitch-offset-deg>
+                <pitch-offset-deg>-09.5</pitch-offset-deg>
                 <limits>
                     <enabled type="bool">true</enabled>
                     <left>
@@ -565,7 +565,7 @@
                 <dynamic-view type="bool">true</dynamic-view>
                 <x-offset-m type="double">-0.57</x-offset-m>
                 <y-offset-m type="double">1.2</y-offset-m>
-                <pitch-offset-deg>-13.5</pitch-offset-deg>
+                <pitch-offset-deg>-09.5</pitch-offset-deg>
                 <limits>
                     <enabled type="bool">true</enabled>
                     <left>
