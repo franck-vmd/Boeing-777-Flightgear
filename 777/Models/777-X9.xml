@@ -247,8 +247,6 @@ Franck.VMD
         <object-name>Rgear1</object-name>
         <object-name>BaileG</object-name>
         <object-name>BaileD</object-name>
-        <object-name>Wingsred</object-name>
-        <object-name>Wingsgreen</object-name>
         <property-base>sim/model/fuselage4</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X9/AFR6.png</texture>
