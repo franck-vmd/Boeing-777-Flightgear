@@ -336,7 +336,7 @@ Franck.VMD
 
       <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect2</inherits-from>
-        object-name>Fuselage</object-name>
+        <object-name>Fuselage</object-name>
         <object-name>Fuselage.007</object-name>
         <object-name>Fuselage.008</object-name>
         <object-name>queu pointe</object-name>
