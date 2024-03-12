@@ -307,7 +307,6 @@ Franck.VMD
         <object-name>LFdoor.003</object-name>
         <object-name>LRdoor.001</object-name>
         <object-name>Wings.004</object-name>
-        <object-name>taxiL-on.001</object-name>
     </effect>
 
    <effect>
@@ -318,6 +317,11 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect4</inherits-from>
         <object-name>taxiL-on</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect36</inherits-from>
+        <object-name>taxiL-on.001</object-name>
     </effect>
     
     <effect>
@@ -479,7 +483,8 @@ Franck.VMD
         <object-name>rlight</object-name>
         <object-name>Taxi.flare1</object-name>
         <object-name>Taxi.flare2</object-name>
-        <object-name>Fuselagelumiere</object-name>
+        <object-name>Fuselagelumiere-l</object-name>
+        <object-name>Fuselagelumiere-r</object-name>
         <object-name>Wingslumiere</object-name>
         <object-name>Wingslumierel</object-name>
         <object-name>Wingslumiered</object-name>

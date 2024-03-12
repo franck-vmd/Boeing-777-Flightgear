@@ -15,6 +15,7 @@ Franck.VMD
         <object-name>Lettering_SW_L</object-name>
         <object-name>Lettering_SW_R</object-name>
         <object-name>Lettering_FLP_R</object-name>
+        <object-name>light plafond</object-name>
     </effect>
 
     <animation>
@@ -431,6 +432,7 @@ Franck.VMD
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
         <object-name>Shield</object-name>
+        <object-name>feuille</object-name>
         <object-name>Panel.center_L</object-name>
         <object-name>Panel.main</object-name>
         <object-name>Panel.main.001</object-name>
@@ -1868,6 +1870,7 @@ Franck.VMD
        <object-name>Yoke_R_TrimBase</object-name>
        <object-name>Yoke_R_TrimL.Switch</object-name>
        <object-name>Yoke_R_TrimR.Switch</object-name>
+       <object-name>feuille</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
@@ -1882,10 +1885,23 @@ Franck.VMD
             <factor-prop>controls/lighting/dome-intencity</factor-prop>
         </emission>
     </animation>
+    
+    <animation>
+    <type>select</type>
+    <object-name>light plafond</object-name>
+    <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+  </animation>
 
     <animation>
         <type>material</type>
-       <object-name>FloodR.light.001</object-name>
+       <object-name>SpotLight_FO.001</object-name>
+       <object-name>light plafond</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>

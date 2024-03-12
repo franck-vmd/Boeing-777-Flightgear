@@ -15,6 +15,7 @@ Franck.VMD
         <object-name>Lettering_SW_L</object-name>
         <object-name>Lettering_SW_R</object-name>
         <object-name>Lettering_FLP_R</object-name>
+        <object-name>light plafond</object-name>
     </effect>
 
     <animation>
@@ -1866,8 +1867,21 @@ Franck.VMD
     </animation>
 
     <animation>
+    <type>select</type>
+    <object-name>light plafond</object-name>
+    <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+  </animation>
+    
+    <animation>
         <type>material</type>
-       <object-name>FloodR.light.001</object-name>
+       <object-name>SpotLight_FO.001</object-name>
+       <object-name>light plafond</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>

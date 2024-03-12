@@ -409,14 +409,13 @@ Franck.VMD
 
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect1</inherits-from>
-        <object-name>rlightext</object-name>
         <object-name>RFdoor.001</object-name>
         <object-name>RFdoor.003</object-name>
         <object-name>RRdoor.001</object-name>
         <object-name>LFdoor.001</object-name>
         <object-name>LFdoor.003</object-name>
         <object-name>LRdoor.001</object-name>
-        <object-name>taxiL-on.001</object-name>
+        <object-name>Wings.003</object-name>
     </effect>
 
    <effect>
@@ -427,6 +426,11 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect4</inherits-from>
         <object-name>taxiL-on</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect36</inherits-from>
+        <object-name>taxiL-on.001</object-name>
     </effect>
     
     <effect>
@@ -546,6 +550,7 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect15</inherits-from>
         <object-name>Rudder</object-name>
+        <object-name>LRudder</object-name>
         <object-name>Tail</object-name>
     </effect>
     
@@ -630,13 +635,15 @@ Franck.VMD
         <object-name>moteur2</object-name>
         <object-name>moteur3</object-name>
         <object-name>LHEngChrome</object-name>
+        <object-name>redlight</object-name>
     </effect>
 
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
-        <object-name>redlight</object-name>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
         <object-name>greenflash</object-name>
         <object-name>Strobe01</object-name>
         <object-name>Strobe02</object-name>
@@ -652,7 +659,8 @@ Franck.VMD
         <object-name>rlight</object-name>
         <object-name>Taxi.flare1</object-name>
         <object-name>Taxi.flare2</object-name>
-        <object-name>Fuselagelumiere</object-name>
+        <object-name>Fuselagelumiere-l</object-name>
+        <object-name>Fuselagelumiere-r</object-name>
         <object-name>Wingslumiere</object-name>
         <object-name>Wingslumierel</object-name>
         <object-name>Wingslumiered</object-name>
@@ -673,13 +681,20 @@ Franck.VMD
         <object-name>portecloison4</object-name>
         <object-name>portecloison5</object-name>
         <object-name>cloison</object-name>
-        <object-name>mur</object-name>
         <object-name>placar</object-name>
         <object-name>plancher</object-name>
         <object-name>wc</object-name>
         <object-name>sortiewc</object-name>
         <object-name>galleycart</object-name>
         <object-name>cafetiere1</object-name>
+        <object-name>window mix interieur</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect29</inherits-from>
+        <object-name>mur</object-name>
+        <object-name>mur.001</object-name>
+        <object-name>mur.002</object-name>
     </effect>
 
     <effect>
@@ -829,6 +844,7 @@ Franck.VMD
 		<name>c51</name>
 		<type>rotate</type>
 		<object-name>BaileD</object-name>
+		<object-name>whiteflash1</object-name>
 		<property>sim/multiplay/generic/float[70]</property>
 		<factor>85</factor>
         <center>
@@ -847,6 +863,7 @@ Franck.VMD
 		<name>c51</name>
 		<type>rotate</type>
                 <object-name>BaileG</object-name>
+                <object-name>whiteflash2</object-name>
 		<property>sim/multiplay/generic/float[70]</property>
 		<factor>-85</factor>
         <center>
@@ -7786,15 +7803,16 @@ Franck.VMD
             <z>1</z>
         </axis>
     </animation>
+    
+  <!-- FX / Lights -->
 
 
-<!-- FX / Lights -->
-
-    <animation>
+     <animation>
         <type>select</type>
-        <object-name>navlights</object-name>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
         <object-name>greenflash</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
@@ -7824,28 +7842,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>LHLND.flare</object-name>
-        <condition>
-            <greater-than>
-                <property>sim/multiplay/generic/int[4]</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>Fuselagelumiere</object-name>
-        <condition>
-            <greater-than>
-                <property>sim/multiplay/generic/int[4]</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
         <object-name>Wingslumiere</object-name>
         <object-name>Wingslumierel</object-name>
         <object-name>Wingslumiered</object-name>
@@ -7855,6 +7851,19 @@ Franck.VMD
                 <value>5</value>
             </greater-than>
         </condition>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>Wingslumierel</object-name>
+        <object-name>Wingslumiered</object-name>
+        <property>surface-positions/slats</property>
+        <factor>0.4</factor>
+        <axis>
+            <x>-1.0</x>
+            <y>0</y>
+            <z>-0.50</z>
+        </axis>
     </animation>
 
     <animation>
@@ -7882,49 +7891,20 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>LHLND.spot</object-name>
+        <object-name>Fuselagelumiere-l</object-name>
+        <object-name>LHLND.flare</object-name>
         <condition>
-            <and>
-                <not><property>sim/rendering/rembrandt/enabled</property></not>
-                <not><property>sim/rendering/shaders/skydome</property></not>
-                <greater-than>
-                    <property>sim/multiplay/generic/int[4]</property>
-                    <value>5</value>
-                </greater-than>
-                <greater-than>
-                    <property>sim/time/sun-angle-rad</property>
-                    <value>1.55</value>
-                </greater-than>
-            </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>RHLND.flare</object-name>
-        <condition>
-            <greater-than>
-                <property>sim/multiplay/generic/int[4]</property>
-                <value>5</value>
-            </greater-than>
+            <property>controls/lighting/landing-light[1]</property>
         </condition>
     </animation>
 
      <animation>
         <type>select</type>
         <object-name>RHLND.spot</object-name>
+        <object-name>Fuselagelumiere-r</object-name>
+        <object-name>RHLND.flare</object-name>
         <condition>
-            <and>
-                <not><property>sim/rendering/rembrandt/enabled</property></not>
-                <not><property>sim/rendering/shaders/skydome</property></not>
-                <greater-than>
-                    <property>sim/multiplay/generic/int[6]</property>
-                    <value>5</value>
-                </greater-than>
-                <greater-than>
-                    <property>sim/time/sun-angle-rad</property>
-                    <value>1.55</value>
-                </greater-than>
-            </and>
+            <property>controls/lighting/landing-light[2]</property>
         </condition>
     </animation>
 
@@ -7933,16 +7913,7 @@ Franck.VMD
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
         <condition>
-            <and>
-                <greater-than>
-                    <property>sim/multiplay/generic/int[4]</property>
-                    <value>5</value>
-                </greater-than>
-                <equals>
-                    <property>gear/gear[0]/position-norm</property>
-                    <value>1.0</value>
-                </equals>
-            </and>
+            <property>controls/lighting/landing-light[0]</property>
         </condition>
     </animation>
 
@@ -7954,7 +7925,7 @@ Franck.VMD
                 <not><property>sim/rendering/rembrandt/enabled</property></not>
                 <not><property>sim/rendering/shaders/skydome</property></not>
                 <greater-than>
-                    <property>sim/multiplay/generic/int[5]</property>
+                    <property>sim/multiplay/generic/int[4]</property>
                     <value>5</value>
                 </greater-than>
                 <equals>
@@ -7965,20 +7936,6 @@ Franck.VMD
                     <property>sim/time/sun-angle-rad</property>
                     <value>1.55</value>
                 </greater-than>
-            </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>taxiL-on</object-name>
-        <condition>
-            <and>
-                <property>controls/lighting/taxi-lights</property>
-                <equals>
-                    <property>gear/gear[0]/position-norm</property>
-                    <value>1.0</value>
-                </equals>
             </and>
         </condition>
     </animation>
@@ -8003,8 +7960,48 @@ Franck.VMD
     </animation>
 
     <animation>
+        <type>translate</type>
+        <object-name>whiteflash1</object-name>
+        <offset-m>40.94</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>19.5165</x2-m>
+        <y2-m>35.9126</y2-m>
+        <z2-m>2.3751</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>whiteflash2</object-name>
+        <offset-m>40.94</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>19.5165</x2-m>
+        <y2-m>-35.9126</y2-m>
+        <z2-m>2.3751</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+    </animation>
+
+    <animation>
         <type>billboard</type>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
     </animation>
 
     <animation>

@@ -4319,7 +4319,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>R-Lnd.toggle</object-name>
-        <property>controls/lighting/landing-light[0]</property>
+        <property>controls/lighting/landing-light[2]</property>
         <factor>15</factor>
         <center>
             <x-m>0.01088</x-m>
@@ -4336,7 +4336,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>L-Lnd.toggle</object-name>
-        <property>controls/lighting/landing-light[0]</property>
+        <property>controls/lighting/landing-light[1]</property>
         <factor>15</factor>
         <center>
             <x-m>0.01088</x-m>
@@ -5088,8 +5088,28 @@ Franck.VMD
     <animation>
         <type>pick</type>
         <object-name>L-Lnd.toggle</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/lighting/landing-lights</property>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/lighting/landing-light[1]</property>
+                <property>controls/lighting/landing-lights</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(1);</script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
         <object-name>C-Lnd.toggle</object-name>
-        <object-name>R-Lnd.toggle</object-name>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
@@ -5100,6 +5120,28 @@ Franck.VMD
             <binding>
                 <command>property-assign</command>
                 <property>controls/lighting/landing-light[0]</property>
+                <property>controls/lighting/landing-lights</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(1);</script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>R-Lnd.toggle</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/lighting/landing-lights</property>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/lighting/landing-light[2]</property>
                 <property>controls/lighting/landing-lights</property>
             </binding>
             <binding>
