@@ -411,6 +411,7 @@ Franck.VMD
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
         <object-name>Shield</object-name>
+        <object-name>feuille</object-name>
         <object-name>Panel.center_L</object-name>
         <object-name>Panel.main</object-name>
         <object-name>Panel.main.001</object-name>
@@ -422,7 +423,6 @@ Franck.VMD
         <object-name>Plate2</object-name>
         <object-name>Plate4</object-name>
         <object-name>Shield_Bottom_Tray</object-name>
-        <object-name>Shield_Bottom_Plate</object-name>
         <object-name>Panel.Rwall.bottom</object-name>
         <object-name>Panel.Lwall.bottom</object-name>
         <object-name>EFB_R_Shape</object-name>
@@ -1848,6 +1848,7 @@ Franck.VMD
        <object-name>Yoke_R_TrimBase</object-name>
        <object-name>Yoke_R_TrimL.Switch</object-name>
        <object-name>Yoke_R_TrimR.Switch</object-name>
+       <object-name>feuille</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
@@ -1859,6 +1860,24 @@ Franck.VMD
             <red>0.25</red>
             <green>0.25</green>
             <blue>0.25</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>material</type>
+       <object-name>SpotLight_FO.001</object-name>
+       <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
             <factor-prop>controls/lighting/dome-intencity</factor-prop>
         </emission>
     </animation>

@@ -356,13 +356,13 @@ Franck.VMD
         <object-name>LFdoor.001</object-name>
         <object-name>LFdoor.003</object-name>
         <object-name>LRdoor.001</object-name>
-        <object-name>Wings.003</object-name>
+        <object-name>Wings.004</object-name>
         <object-name>taxiL-on.001</object-name>
     </effect>
 
    <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect21</inherits-from>
-        <object-name>Wings.004</object-name>
+        <object-name>Wings.003</object-name>
     </effect>
 
     <effect>
@@ -7152,28 +7152,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>LHLND.flare</object-name>
-        <condition>
-            <greater-than>
-                <property>sim/multiplay/generic/int[4]</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>Fuselagelumiere</object-name>
-        <condition>
-            <greater-than>
-                <property>sim/multiplay/generic/int[4]</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
         <object-name>Wingslumiere</object-name>
         <object-name>Wingslumierel</object-name>
         <object-name>Wingslumiered</object-name>
@@ -7223,49 +7201,20 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>LHLND.spot</object-name>
+        <object-name>Fuselagelumiere-l</object-name>
+        <object-name>LHLND.flare</object-name>
         <condition>
-            <and>
-                <not><property>sim/rendering/rembrandt/enabled</property></not>
-                <not><property>sim/rendering/shaders/skydome</property></not>
-                <greater-than>
-                    <property>sim/multiplay/generic/int[4]</property>
-                    <value>5</value>
-                </greater-than>
-                <greater-than>
-                    <property>sim/time/sun-angle-rad</property>
-                    <value>1.55</value>
-                </greater-than>
-            </and>
+            <property>controls/lighting/landing-light[1]</property>
         </condition>
     </animation>
-
+    
     <animation>
         <type>select</type>
+        <object-name>RHLND.spot</object-name>
+        <object-name>Fuselagelumiere-r</object-name>
         <object-name>RHLND.flare</object-name>
         <condition>
-            <greater-than>
-                <property>sim/multiplay/generic/int[4]</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-     <animation>
-        <type>select</type>
-        <object-name>RHLND.spot</object-name>
-        <condition>
-            <and>
-                <not><property>sim/rendering/rembrandt/enabled</property></not>
-                <not><property>sim/rendering/shaders/skydome</property></not>
-                <greater-than>
-                    <property>sim/multiplay/generic/int[6]</property>
-                    <value>5</value>
-                </greater-than>
-                <greater-than>
-                    <property>sim/time/sun-angle-rad</property>
-                    <value>1.55</value>
-                </greater-than>
-            </and>
+            <property>controls/lighting/landing-light[2]</property>
         </condition>
     </animation>
 
@@ -7274,16 +7223,7 @@ Franck.VMD
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
         <condition>
-            <and>
-                <greater-than>
-                    <property>sim/multiplay/generic/int[4]</property>
-                    <value>5</value>
-                </greater-than>
-                <equals>
-                    <property>gear/gear[0]/position-norm</property>
-                    <value>1.0</value>
-                </equals>
-            </and>
+            <property>controls/lighting/landing-light[0]</property>
         </condition>
     </animation>
 
@@ -7295,7 +7235,7 @@ Franck.VMD
                 <not><property>sim/rendering/rembrandt/enabled</property></not>
                 <not><property>sim/rendering/shaders/skydome</property></not>
                 <greater-than>
-                    <property>sim/multiplay/generic/int[5]</property>
+                    <property>sim/multiplay/generic/int[4]</property>
                     <value>5</value>
                 </greater-than>
                 <equals>
@@ -7306,20 +7246,6 @@ Franck.VMD
                     <property>sim/time/sun-angle-rad</property>
                     <value>1.55</value>
                 </greater-than>
-            </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>taxiL-on</object-name>
-        <condition>
-            <and>
-                <property>controls/lighting/taxi-lights</property>
-                <equals>
-                    <property>gear/gear[0]/position-norm</property>
-                    <value>1.0</value>
-                </equals>
             </and>
         </condition>
     </animation>

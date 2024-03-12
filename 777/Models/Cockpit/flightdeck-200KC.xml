@@ -411,6 +411,7 @@ Franck.VMD
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
         <object-name>Shield</object-name>
+        <object-name>feuille</object-name>
         <object-name>Panel.center_L</object-name>
         <object-name>Panel.main</object-name>
         <object-name>Panel.main.001</object-name>
@@ -1848,6 +1849,7 @@ Franck.VMD
        <object-name>Yoke_R_TrimBase</object-name>
        <object-name>Yoke_R_TrimL.Switch</object-name>
        <object-name>Yoke_R_TrimR.Switch</object-name>
+       <object-name>feuille</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
