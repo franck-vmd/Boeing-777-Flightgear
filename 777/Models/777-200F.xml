@@ -5556,6 +5556,8 @@ Franck.VMD
         <type>select</type>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
         <object-name>greenflash</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
