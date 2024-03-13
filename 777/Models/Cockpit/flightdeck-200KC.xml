@@ -413,6 +413,11 @@ Franck.VMD
         <object-name>Yoke.001</object-name>
         <object-name>Shield</object-name>
         <object-name>feuille</object-name>
+        <object-name>feuille1</object-name>
+        <object-name>feuille2</object-name>
+        <object-name>feuille3</object-name>
+        <object-name>feuille4</object-name>
+        <object-name>feuille5</object-name>
         <object-name>Panel.center_L</object-name>
         <object-name>Panel.main</object-name>
         <object-name>Panel.main.001</object-name>
@@ -713,6 +718,240 @@ Franck.VMD
         <axis>
             <x>-1</x>
             <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <!-- Feuille -->
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>feuille</object-name>
+        <property>fcs/fbw/yoke-elevator</property>
+        <factor>0.1</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>feuille1</object-name>
+        <property>fcs/fbw/yoke-elevator</property>
+        <factor>0.4</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>feuille5</object-name>
+        <property>fcs/fbw/yoke-elevator</property>
+        <factor>0.8</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>feuille2</object-name>
+        <object-name>feuille3</object-name>
+        <object-name>feuille4</object-name>
+        <property>fcs/fbw/yoke-elevator</property>
+        <factor>0.9</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>feuille</object-name>
+        <property>fcs/fbw/yoke-aileron</property>
+        <factor>0.00125</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>feuille1</object-name>
+        <property>fcs/fbw/yoke-aileron</property>
+        <factor>0.00781</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>feuille2</object-name>
+        <property>fcs/fbw/yoke-aileron</property>
+        <factor>0.00031</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>feuille3</object-name>
+        <property>fcs/fbw/yoke-aileron</property>
+        <factor>0.00687</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>feuille4</object-name>
+        <property>fcs/fbw/yoke-aileron</property>
+        <factor>0.00125</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>feuille5</object-name>
+        <property>fcs/fbw/yoke-aileron</property>
+        <factor>0.00522</factor>
+        <condition>
+        <greater-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
+        </greater-than>
+        </condition>
+        <center>
+            <x-m>-1.88784</x-m>
+            <y-m>0</y-m>
+            <z-m>0.53039</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
             <z>0</z>
         </axis>
     </animation>
@@ -1851,6 +2090,11 @@ Franck.VMD
        <object-name>Yoke_R_TrimL.Switch</object-name>
        <object-name>Yoke_R_TrimR.Switch</object-name>
        <object-name>feuille</object-name>
+       <object-name>feuille1</object-name>
+       <object-name>feuille2</object-name>
+       <object-name>feuille3</object-name>
+       <object-name>feuille4</object-name>
+       <object-name>feuille5</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
