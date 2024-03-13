@@ -7149,14 +7149,7 @@ Franck.VMD
         <object-name>FireOVHTTest.btn</object-name>
         <object-name>Circle.083</object-name>
         <object-name>Circle.000</object-name>
-        <object-name>LPCK.btn.013</object-name>
-        <object-name>ADIRU_Status</object-name>
         <object-name>APU_DISCH.fault</object-name>
-        <object-name>Lelec.fault</object-name>
-        <object-name>C1.fault</object-name>
-        <object-name>C2.fault</object-name>
-        <object-name>Relec.fault</object-name>
-        <object-name>LPCK.btn.012</object-name>
         <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
@@ -7222,6 +7215,7 @@ Franck.VMD
                 <object-name>BLD_ISLN_C_Switch</object-name>
                 <object-name>BLD_ISLN_R_Switch</object-name>
                 <object-name>BLD_ENG_R_Switch</object-name>
+                <object-name>LPCK.btn.012</object-name>
                 <object-name>LPCK.btn.013</object-name>
                 <object-name>ADIRU_Status</object-name>
                 <object-name>ADIRU_Switch</object-name>
@@ -7248,16 +7242,16 @@ Franck.VMD
                 <object-name>ASYM_ThComp_Switch</object-name>
                 <object-name>P_OFV_L_Shutter.Top</object-name>
                 <object-name>P_OFV_L_Shutter.Bottom</object-name>
-   <object-name>P_OFV_R_Shutter.Top</object-name>
-   <object-name>P_OFV_R_Shutter.Bottom</object-name>
-   <object-name>LPCK_Shutter.Top</object-name>
-   <object-name>LPCK_Shutter.Bottom</object-name>
-   <object-name>RPCK_Shutter.Top</object-name>
-   <object-name>RPCK_Shutter.Bottom</object-name>
-   <object-name>LTRAIR_Shutter.Top</object-name>
-   <object-name>LTRAIR_Shutter.Bottom</object-name>
-   <object-name>RTRAIR_Shutter.Top</object-name>
-   <object-name>RTRAIR_Shutter.Bottom</object-name>
+                <object-name>P_OFV_R_Shutter.Top</object-name>
+                <object-name>P_OFV_R_Shutter.Bottom</object-name>
+                <object-name>LPCK_Shutter.Top</object-name>
+                <object-name>LPCK_Shutter.Bottom</object-name>
+                <object-name>RPCK_Shutter.Top</object-name>
+                <object-name>RPCK_Shutter.Bottom</object-name>
+                <object-name>LTRAIR_Shutter.Top</object-name>
+                <object-name>LTRAIR_Shutter.Bottom</object-name>
+                <object-name>RTRAIR_Shutter.Top</object-name>
+                <object-name>RTRAIR_Shutter.Bottom</object-name>
    <object-name>BLD_ISLN_L_Shutter.Top</object-name>
    <object-name>BLD_ISLN_L_Shutter.Bottom</object-name>
    <object-name>BLD_ISLN_C_Shutter.Top</object-name>
