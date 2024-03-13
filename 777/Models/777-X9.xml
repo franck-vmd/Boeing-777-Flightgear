@@ -28,6 +28,9 @@ Franck.VMD
         <object-name>Fuselage.004</object-name>
         <object-name>Fuselage.005</object-name>
         <object-name>Fuselage.006</object-name>
+        <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
+        <object-name>queu pointe</object-name>
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>ApuG.001</object-name>
@@ -395,6 +398,9 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect33</inherits-from>
         <object-name>Fuselage</object-name>
+        <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
+        <object-name>queu pointe</object-name>
         <object-name>entry8r</object-name>
         <object-name>entry10r</object-name>
         <object-name>ApuG</object-name>
@@ -651,9 +657,11 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <object-name>Beacon02</object-name>
         <object-name>LHLND.flare</object-name>
+        <object-name>LHLND.flare.001</object-name>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
         <object-name>RHLND.flare</object-name>
+        <object-name>RHLND.flare.001</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <object-name>rlight</object-name>
@@ -1678,6 +1686,50 @@ Franck.VMD
             <x>1</x>
             <y>0</y>
             <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>Fuselage.008</object-name>
+        <property>gear/gear[1]/position-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>0.8</ind><dep>52.2</dep></entry>
+            <entry><ind>1</ind><dep>52.2</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>34.9499</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-1.32793</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>queu pointe</object-name>
+        <property>gear/gear[1]/position-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0.52</dep></entry>
+            <entry><ind>0.2</ind><dep>0.52</dep></entry>
+            <entry><ind>0.8</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>0</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>35.4306</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-0.930086</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
         </axis>
     </animation>
 
@@ -2718,6 +2770,54 @@ Franck.VMD
     <!-- Apu -->
     
     <animation>
+		<type>rotate</type>
+		<object-name>Fuselage.007</object-name>
+		<property>controls/APU/rpm</property>
+		<interpolation>
+                <entry><ind>0</ind><dep>0</dep></entry>
+                <entry><ind>0.5</ind><dep>0</dep></entry>
+                <entry><ind>1</ind><dep>30</dep></entry>
+                </interpolation>
+        <axis>
+        <x1-m>40.3288</x1-m>
+        <y1-m>0.171979</y1-m>
+        <z1-m>2.21372</z1-m>
+        <x2-m>40.3298</x2-m>
+        <y2-m>0.3267</y2-m>
+        <z2-m>2.11905</z2-m>
+        </axis>
+        <axis>
+        <x>1</x>
+	<y>0</y>
+	<z>0</z>
+        </axis>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>Fuselage.007</object-name>
+		<property>controls/APU/rpm</property>
+		<interpolation>
+                <entry><ind>0</ind><dep>0</dep></entry>
+                <entry><ind>0.5</ind><dep>0</dep></entry>
+                <entry><ind>1</ind><dep>0.04</dep></entry>
+                </interpolation>
+        <axis>
+        <x1-m>40.3302</x1-m>
+        <y1-m>0.248404</y1-m>
+        <z1-m>2.17676</z1-m>
+        <x2-m>40.3391</x2-m>
+        <y2-m>0.28662</y2-m>
+        <z2-m>2.24452</z2-m>
+        </axis>
+        <axis>
+        <x>1</x>
+	<y>0</y>
+	<z>1</z>
+        </axis>
+	</animation>
+    
+        <animation>
 		<name>c31</name>
 		<type>rotate</type>
 		<object-name>ApuG</object-name>
@@ -7869,6 +7969,7 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>Run.spotL</object-name>
+        <object-name>LHLND.flare.001</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/L-RwayLight</property>
@@ -7880,6 +7981,7 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>Run.spotR</object-name>
+        <object-name>RHLND.flare.001</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/R-RwayLight</property>
@@ -8260,9 +8362,30 @@ Franck.VMD
         <type>flash</type>
         <object-name>RHLND.flare</object-name>
         <center>
-            <x-m>-3.574</x-m>
-            <y-m>3.778</y-m>
-            <z-m>-1.502</z-m>
+            <x-m>-4.52305</x-m>
+            <y-m>3.90756</y-m>
+            <z-m>-1.4053</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <power>10</power>
+        <factor>2</factor>
+        <offset>0</offset>
+        <two-sides type="bool">false</two-sides>
+        <min>1</min>
+        <max>5</max>
+    </animation>
+    
+    <animation>
+        <type>flash</type>
+        <object-name>RHLND.flare.001</object-name>
+        <center>
+            <x-m>-4.63148</x-m>
+            <y-m>3.67893</y-m>
+            <z-m>-1.44984</z-m>
         </center>
         <axis>
             <x>-1</x>
@@ -8281,9 +8404,30 @@ Franck.VMD
         <type>flash</type>
         <object-name>LHLND.flare</object-name>
         <center>
-            <x-m>-3.574</x-m>
-            <y-m>-3.778</y-m>
-            <z-m>-1.502</z-m>
+            <x-m>-4.52305</x-m>
+            <y-m>-3.90756</y-m>
+            <z-m>-1.4053</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <power>10</power>
+        <factor>2</factor>
+        <offset>0</offset>
+        <two-sides type="bool">false</two-sides>
+        <min>1</min>
+        <max>5</max>
+    </animation>
+    
+    <animation>
+        <type>flash</type>
+        <object-name>LHLND.flare.001</object-name>
+        <center>
+            <x-m>-4.63148</x-m>
+            <y-m>-3.67893</y-m>
+            <z-m>-1.44984</z-m>
         </center>
         <axis>
             <x>-1</x>
@@ -8302,7 +8446,7 @@ Franck.VMD
         <type>flash</type>
         <object-name>CTRLND.flare</object-name>
         <center>
-            <x-m>-19.5552</x-m>
+            <x-m>-26.5869</x-m>
             <y-m>0.3</y-m>
             <z-m>-2.81289</z-m>
         </center>
@@ -8323,7 +8467,7 @@ Franck.VMD
         <type>flash</type>
         <object-name>CTRLND.flare.001</object-name>
         <center>
-            <x-m>-19.5552</x-m>
+            <x-m>-26.5869</x-m>
             <y-m>-0.3</y-m>
             <z-m>-2.81289</z-m>
         </center>
@@ -8344,9 +8488,9 @@ Franck.VMD
     <type>flash</type>
     <object-name>Taxi.flare1</object-name>
     <center>
-        <x-m>-19.57923</x-m>
-        <y-m>0.40417</y-m>
-        <z-m>-3.11739</z-m>
+        <x-m>-26.602</x-m>
+        <y-m>0.30252</y-m>
+        <z-m>-3.12734</z-m>
     </center>
     <axis>
         <x>-1</x>
@@ -8365,9 +8509,9 @@ Franck.VMD
     <type>flash</type>
     <object-name>Taxi.flare2</object-name>
     <center>
-        <x-m>-19.57923</x-m>
-        <y-m>-0.40417</y-m>
-        <z-m>-3.11739</z-m>
+        <x-m>-26.602</x-m>
+        <y-m>-0.30252</y-m>
+        <z-m>-3.12734</z-m>
     </center>
     <axis>
         <x>-1</x>
