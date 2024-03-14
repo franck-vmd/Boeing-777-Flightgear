@@ -16,6 +16,7 @@ Franck.VMD
         <object-name>Lettering_SW_R</object-name>
         <object-name>Lettering_FLP_R</object-name>
         <object-name>light plafond</object-name>
+        <object-name>Lettering_TS_L</object-name>
     </effect>
 
     <animation>
@@ -198,9 +199,9 @@ Franck.VMD
         <name>APpanel</name>
         <path>Aircraft/777/Models/Cockpit/APpanel.xml</path>
         <offsets>
-            <x-m>0.107267</x-m>
+            <x-m>0.0</x-m>
             <y-m>0.0</y-m>
-            <z-m>0.065831</z-m>
+            <z-m>0.0</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
