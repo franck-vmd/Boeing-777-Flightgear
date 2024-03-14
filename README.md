@@ -2,6 +2,12 @@ General discussion on Boeing 777 all series combined
 
 https://github.com/franck-vmd/Boeing-777-Flightgear/discussions
 
+ALS techniques notes
+ALS technical notes
+
+Non Rembrandt 
+No Rembrandt
+
 ![Image](https://i.ibb.co/0BNmYpZ/cdu772.png)
 
 Français :
