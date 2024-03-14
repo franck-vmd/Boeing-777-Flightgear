@@ -85,6 +85,30 @@ Franck.VMD
         <object-name>WING_Placard</object-name>
         <object-name>XFeedAFT_Placard</object-name>
         <object-name>XFeedFWD_Placard</object-name>
+        <object-name>APU.knob.001</object-name>
+        <object-name>C1AIR.knob.001</object-name>
+        <object-name>C2AIR.knob.001</object-name>
+        <object-name>CABIN_Temp.knob.001</object-name>
+        <object-name>CB.knob.001</object-name>
+        <object-name>CB_Maint_Cargo_Aft.knob.001</object-name>
+        <object-name>CB_Maint_Cargo_Bulk.knob.001</object-name>
+        <object-name>Dome.knob.001</object-name>
+        <object-name>EngineL.START.001</object-name>
+        <object-name>EngineR.START.001</object-name>
+        <object-name>FLTDECK_Temp.knob.001</object-name>
+        <object-name>GLRSFlood.knob.001</object-name>
+        <object-name>LELEC.knob.001</object-name>
+        <object-name>LENG_Ice.knob.001</object-name>
+        <object-name>LWiper.knob.001</object-name>
+        <object-name>MSTRBright.knob.001</object-name>
+        <object-name>NoSmoking.knob.001</object-name>
+        <object-name>RELEC.knob.001</object-name>
+        <object-name>RENG_Ice.knob.001</object-name>
+        <object-name>RWiper.knob.001</object-name>
+        <object-name>SeatBelt.knob.001</object-name>
+        <object-name>WING_Ice.knob.001</object-name>
+        <object-name>FTR.knob.001</object-name>
+        <object-name>LDG_ALT.knob.002</object-name>
     </animation>
     <animation>
         <type>material</type>
@@ -1552,6 +1576,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>APU.knob</object-name>
+        <object-name>APU.knob.001</object-name>
         <property>controls/APU/off-start-run</property>
         <interpolation>
             <entry>
@@ -1612,6 +1637,7 @@ Franck.VMD
 <animation>
    <type>rotate</type>
    <object-name>CB.knob</object-name>
+   <object-name>CB.knob.001</object-name>
     <property>/controls/lighting/CB-intencity</property>
         <interpolation>
             <entry>
@@ -1642,6 +1668,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Dome.knob</object-name>
+        <object-name>Dome.knob.001</object-name>
         <property>controls/lighting/dome-intencity</property>
         <interpolation>
             <entry>
@@ -1672,6 +1699,7 @@ Franck.VMD
 <animation>
    <type>rotate</type>
    <object-name>MSTRBright.knob</object-name>
+   <object-name>MSTRBright.knob.001</object-name>
     <property>controls/lighting/master-bright-intencity</property>
         <interpolation>
             <entry>
@@ -1732,6 +1760,7 @@ Franck.VMD
 <animation>
    <type>rotate</type>
    <object-name>GLRSFlood.knob</object-name>
+   <object-name>GLRSFlood.knob.001</object-name>
     <property>controls/lighting/GLRSFlood-intencity</property>
         <interpolation>
             <entry>
@@ -1762,6 +1791,7 @@ Franck.VMD
 <animation>
    <type>rotate</type>
    <object-name>FTR.knob</object-name>
+   <object-name>FTR.knob.001</object-name>
     <property>/controls/fuel/FuelToRemain</property>
    <factor>360</factor>
    <axis>
@@ -1779,6 +1809,7 @@ Franck.VMD
   <animation>
    <type>rotate</type>
    <object-name>FLTDECK_Temp.knob</object-name>
+   <object-name>FLTDECK_Temp.knob.001</object-name>
    <property>controls/air/fltdeck_temp</property>
    <factor>270</factor>
    <axis>
@@ -1796,6 +1827,7 @@ Franck.VMD
 <animation>
    <type>rotate</type>
    <object-name>CABIN_Temp.knob</object-name>
+   <object-name>CABIN_Temp.knob.001</object-name>
    <property>controls/air/cabin_temp</property>
    <factor>270</factor>
    <axis>
@@ -2360,6 +2392,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>LELEC.knob</object-name>
+        <object-name>LELEC.knob.001</object-name>
         <property>controls/hydraulics/system/LACMP-switch</property>
         <interpolation>
             <entry>
@@ -2390,6 +2423,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>C1AIR.knob</object-name>
+        <object-name>C1AIR.knob.001</object-name>
         <property>controls/hydraulics/system[1]/C1ADP-switch</property>
         <interpolation>
             <entry>
@@ -2420,6 +2454,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>C2AIR.knob</object-name>
+        <object-name>C2AIR.knob.001</object-name>
         <property>controls/hydraulics/system[1]/C2ADP-switch</property>
         <interpolation>
             <entry>
@@ -2450,6 +2485,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>RELEC.knob</object-name>
+        <object-name>RELEC.knob.001</object-name>
         <property>controls/hydraulics/system[2]/RACMP-switch</property>
         <interpolation>
             <entry>
@@ -2480,6 +2516,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>NoSmoking.knob</object-name>
+        <object-name>NoSmoking.knob.001</object-name>
         <property>controls/cabin/NoSmoking-knob</property>
         <factor>45</factor>
         <center>
@@ -2497,6 +2534,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>SeatBelt.knob</object-name>
+        <object-name>SeatBelt.knob.001</object-name>
         <property>controls/cabin/SeatBelt-knob</property>
         <factor>45</factor>
         <center>
@@ -2514,6 +2552,7 @@ Franck.VMD
 <animation>
         <type>rotate</type>
         <object-name>WING_Ice.knob</object-name>
+        <object-name>WING_Ice.knob.001</object-name>
         <property>controls/anti-ice/wing-antiice-knob</property>
         <interpolation>
             <entry>
@@ -2544,6 +2583,7 @@ Franck.VMD
 <animation>
         <type>rotate</type>
         <object-name>RENG_Ice.knob</object-name>
+        <object-name>RENG_Ice.knob.001</object-name>
         <property>controls/anti-ice/engin[1]/antiice-knob</property>
         <interpolation>
             <entry>
@@ -2574,6 +2614,7 @@ Franck.VMD
 <animation>
         <type>rotate</type>
         <object-name>LENG_Ice.knob</object-name>
+        <object-name>LENG_Ice.knob.001</object-name>
         <property>controls/anti-ice/engin/antiice-knob</property>
         <interpolation>
             <entry>
@@ -2604,6 +2645,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>EngineL.START</object-name>
+        <object-name>EngineL.START.001</object-name>
         <property>controls/engines/StartIgnition-knob[0]</property>
         <factor>45</factor>
         <center>
@@ -2621,6 +2663,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>EngineR.START</object-name>
+        <object-name>EngineR.START.001</object-name>
         <property>controls/engines/StartIgnition-knob[1]</property>
         <factor>45</factor>
         <center>
@@ -6342,6 +6385,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>LWiper.knob</object-name>
+        <object-name>LWiper.knob.001</object-name>
         <property>controls/wipers/speed</property>
         <interpolation>
                         <entry><ind>0</ind><dep>0</dep></entry>
@@ -6364,6 +6408,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>RWiper.knob</object-name>
+        <object-name>RWiper.knob.001</object-name>
         <property>controls/wipers/speed</property>
         <interpolation>
                         <entry><ind>0</ind><dep>0</dep></entry>
