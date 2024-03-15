@@ -920,6 +920,8 @@ Franck.VMD
             <z>1</z>
         </axis>
     </animation>
+    
+    <!--Goldhofert -->
 
   <animation>
     <type>rotate</type>

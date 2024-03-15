@@ -803,7 +803,9 @@ Franck.VMD
             <z>1</z>
         </axis>
     </animation>
-
+    
+    <!--Goldhofert -->
+    
   <animation>
     <type>rotate</type>
     <name>c35</name>
@@ -830,7 +832,7 @@ Franck.VMD
     </axis>
         <center>
             <x-m>6.99646</x-m>
-            <y-m>5.61966</y-m>
+            <y-m>0.0</y-m>
             <z-m>-5.10007</z-m>
         </center>
   </animation>

@@ -664,7 +664,7 @@ Franck.VMD
     
     <model>
         <name>shadow</name>
-        <path>Aircraft/777/Models/Shadow200/shadow.xml</path>
+        <path>Aircraft/777/Models/Shadow200USAF/shadow.xml</path>
         <offsets>
             <x-m>0</x-m>
             <y-m>0</y-m>
@@ -792,6 +792,8 @@ Franck.VMD
             <z>1</z>
         </axis>
     </animation>
+    
+    <!--Goldhofert -->
 
   <animation>
     <type>rotate</type>
