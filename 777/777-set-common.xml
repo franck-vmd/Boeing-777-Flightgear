@@ -779,11 +779,6 @@
         </config>
     </view>
 
-        <hud>
-    	        <path n="1">Aircraft/777/Models/CockpitX/Hud/HUD2.xml</path>
-    	        <visibility n="1">false</visibility>
-	</hud>
-
     <help n="0">
         <title>777</title>
         <text>=== Tutorials ===
