@@ -1,51 +1,53 @@
 <?xml version="1.0"?>
 <PropertyList>
+
  <path>hud.ac</path>
 
  	<animation>
     	<type>material</type>
-		<object-name>hudholder</object-name>
+		<object-name>hudholderL</object-name>
     	<condition>
-        	<property>controls/lighting/cockpit</property>
-  		</condition>
-    	<emission>
-      		<red>   0.18 </red>
-      		<green> 0.18 </green>
-      		<blue>  0.18 </blue>
-    	</emission>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.18</red>
+            <green>0.18</green>
+            <blue>0.18</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
   	</animation>
 
  <animation>
   <type>pick</type>
-	<object-name>rond</object-name>
+	<object-name>rondL</object-name>
   <action>
    <button>0</button>
     <binding>
      <command>property-toggle</command>
-     <property>controls/switches/hud-flip</property>
-	<value>0</value>
-	<value>1</value>
+     <property>controls/switches/hud-flipL</property>
     </binding>
    </action>
   </animation>
 
  <animation>
   <type>pick</type>
-	<object-name>hudholder</object-name>
+	<object-name>hudholderL</object-name>
   <action>
    <button>0</button>
     <binding>
      <command>property-toggle</command>
-     <property>controls/switches/hud</property>
-	<value>0</value>
-	<value>1</value>
+     <property>controls/switches/hudL</property>
     </binding>
    </action>
   </animation>
 
 <animation>
 	<type>rotate</type>
-   <object-name>hudholder</object-name>
+   <object-name>hudholderL</object-name>
    <object-name>roll</object-name>
    <object-name>roll.ptr</object-name>
    <object-name>line</object-name>
@@ -131,16 +133,19 @@
    <object-name>vstext</object-name>
    <object-name>vs-a</object-name>
    <object-name>vs-b</object-name>
-	<property>controls/switches/hud-flip</property>
-	<factor>-60</factor>
+	<property>controls/switches/hud-flipL</property>
+	<interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>-90</dep></entry>
+        </interpolation>
 	<center>
-		<x-m>-0.037653</x-m>
-		<y-m>0.073341</y-m>
-		<z-m>0.159198</z-m>
+		<x-m>-0.01186</x-m>
+		<y-m>0.07425</y-m>
+		<z-m>0.15947</z-m>
 	</center>
 	<axis>
-		<x>1</x>
-		<y>0</y>
+		<x>0</x>
+		<y>1</y>
 		<z>0</z>
 	</axis>
 </animation>
@@ -233,14 +238,16 @@
    <object-name>vs-a</object-name>
    <object-name>vs-b</object-name>
    <condition>
-     <and>
-      <property>controls/switches/hud</property>
-	<less-than>
-		<property>controls/switches/hud-flip</property>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+                <property>controls/switches/hudL</property>
+                <less-than>
+		<property>controls/switches/hud-flipL</property>
 		<value>0.35</value>
-	</less-than>		
-     </and>
-   </condition>
+	</less-than>
+        </condition>
  </animation>
 
 <animation>

@@ -390,6 +390,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>DOOR_Switch</object-name>
+        <object-name>DOOR_Switch.001</object-name>
         <property>controls/switches/DOOR_Switch</property>
         <factor>0.004</factor>
         <axis>
@@ -1538,6 +1539,8 @@ Franck.VMD
         <object-name>StabTrim_L_Mark</object-name>
         <object-name>StabTrim_L.plane</object-name>
         <object-name>Audio.pnl.007</object-name>
+        <object-name>DOOR_Placard.001</object-name>
+        <object-name>DOOR_Switch.001</object-name>
         <condition>
 		<greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
