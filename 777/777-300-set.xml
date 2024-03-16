@@ -229,6 +229,11 @@
             <z-offset-m type="double">-23.35</z-offset-m>
             </config>
         </view>
+        
+        <hud>
+    	        <path n="1">Aircraft/777/Models/Cockpit/Hud/HUD2.xml</path>
+    	        <visibility n="1">false</visibility>
+	</hud>
 
         <menubar n="0">
             <default n="0">
