@@ -223,7 +223,6 @@
         
         <hud>
     	        <path n="1">Aircraft/777/Models/CockpitX/Hud/HUD2.xml</path>
-    	        <visibility n="1">false</visibility>
 	</hud>
 
         <menubar n="0">
