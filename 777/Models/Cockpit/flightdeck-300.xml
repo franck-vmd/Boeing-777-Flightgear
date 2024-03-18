@@ -111,7 +111,7 @@ Franck.VMD
 	<model>
 		<path>Aircraft/777/Models/Cockpit/Hud/hud.xml</path>
 		<offsets>
-			<x-m>-1.47</x-m>
+			<x-m>-1.45919</x-m>
 			<y-m>-0.57</y-m>
 			<z-m>0.84</z-m>
 		</offsets>
@@ -120,7 +120,7 @@ Franck.VMD
 	<model>
 		<path>Aircraft/777/Models/Cockpit/Hud/hud1.xml</path>
 		<offsets>
-			<x-m>-1.47</x-m>
+			<x-m>-1.45919</x-m>
 			<y-m>0.57</y-m>
 			<z-m>0.84</z-m>
 		</offsets>
