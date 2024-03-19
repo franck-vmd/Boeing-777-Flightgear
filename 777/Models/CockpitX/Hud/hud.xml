@@ -417,18 +417,16 @@
 
 <animation>
    <type>select</type>
-   <object-name>fd.annun</object-name>
+   <object-name>app.annun</object-name>
    <condition>
-     <and>
-      <not>
-      <property>sim/crashed</property>
-      </not>
-      <equals>
-       <property>instrumentation/flightdirector/fd-on</property>
-       <value>1</value>
-      </equals>
-     </and>
-   </condition>
+            <or>
+                <equals>
+                    <property>instrumentation/afds/ap-modes/pitch-mode</property>
+                    <value>G/S</value>
+                </equals>
+                <property>instrumentation/afds/inputs/gs-armed</property>
+            </or>
+        </condition>
  </animation>
 
 <animation>
@@ -436,7 +434,7 @@
    <object-name>ap.annun</object-name>
    <condition>
        <equals>
-         <property>instrumentation/flightdirector/autopilot-on</property>
+         <property>instrumentation/afds/inputs/AP</property>
          <value>1</value>
        </equals>
    </condition>
@@ -447,7 +445,7 @@
    <object-name>vnav.annun</object-name>
    <condition>
        <greater-than>
-         <property>instrumentation/flightdirector/vnav</property>
+         <property>instrumentation/afds/ap-modes/pitch-mode</property>
          <value>0</value>
        </greater-than>
    </condition>
@@ -462,7 +460,7 @@
       <property>sim/crashed</property>
       </not>
        <greater-than>
-         <property>instrumentation/flightdirector/lnav</property>
+         <property>instrumentation/afds/ap-modes/roll-mode</property>
          <value>0</value>
        </greater-than>
    </and>
@@ -1984,8 +1982,20 @@
   <animation>
    <type>textranslate</type>
    <object-name>hdg100</object-name>
-   <object-name>hdg100.001</object-name>
    <property>autopilot/settings/heading-bug-deg</property>
+   <factor>0.001</factor>
+   <step>100</step>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation>
+   <type>textranslate</type>
+   <object-name>hdg100.001</object-name>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.001</factor>
    <step>100</step>
    <axis>
@@ -1998,8 +2008,20 @@
   <animation>
    <type>textranslate</type>
    <object-name>hdg10</object-name>
-   <object-name>hdg10.001</object-name>
    <property>autopilot/settings/heading-bug-deg</property>
+   <factor>0.01</factor>
+   <step>10</step>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation>
+   <type>textranslate</type>
+   <object-name>hdg10.001</object-name>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.01</factor>
    <step>10</step>
    <axis>
@@ -2012,8 +2034,20 @@
   <animation>
    <type>textranslate</type>
    <object-name>hdg1</object-name>
-   <object-name>hdg1.001</object-name>
    <property>autopilot/settings/heading-bug-deg</property>
+   <factor>0.1</factor>
+   <step>1</step>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation>
+   <type>textranslate</type>
+   <object-name>hdg1.001</object-name>
+   <property>orientation/heading-magnetic-deg</property>
    <factor>0.1</factor>
    <step>1</step>
    <axis>

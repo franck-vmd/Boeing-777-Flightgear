@@ -1,16 +1,16 @@
 AC3Db
-MATERIAL "Lights1.001" rgb 0.000 1.000 0.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 1.000 0.000  shi 32 trans 0.000
-MATERIAL "Lights.001" rgb 0.000 1.000 0.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 1.000 0.000  shi 32 trans 0.000
+MATERIAL "Lights1" rgb 0.000 1.000 0.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 1.000 0.000  shi 32 trans 0.000
+MATERIAL "Lights" rgb 0.000 1.000 0.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 1.000 0.000  shi 32 trans 0.000
 MATERIAL "hud" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.261 0.261 0.261  shi 32 trans 0.000
 MATERIAL "fleche" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 MATERIAL "vitre.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.700
 OBJECT world
 name "Blender_exporter_v2.26__hud1.ac"
-kids 81
+kids 69
 OBJECT poly
 name "alt1"
 data 9
-Mesh.1240
+Mesh.1122
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -31,7 +31,7 @@ kids 0
 OBJECT poly
 name "alt10"
 data 9
-Mesh.1239
+Mesh.1165
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -52,7 +52,7 @@ kids 0
 OBJECT poly
 name "alt100"
 data 9
-Mesh.1238
+Mesh.1142
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -73,7 +73,7 @@ kids 0
 OBJECT poly
 name "alt1000"
 data 9
-Mesh.1237
+Mesh.1160
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -94,7 +94,7 @@ kids 0
 OBJECT poly
 name "alt10000"
 data 9
-Mesh.1236
+Mesh.1180
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -115,7 +115,7 @@ kids 0
 OBJECT poly
 name "alttext"
 data 9
-Mesh.1235
+Mesh.1162
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -135,8 +135,8 @@ refs 4
 kids 0
 OBJECT poly
 name "alttext.001"
-data 9
-Mesh.1234
+data 8
+Mesh.009
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -157,7 +157,7 @@ kids 0
 OBJECT poly
 name "alttext.002"
 data 9
-Mesh.1233
+Mesh.1143
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -178,7 +178,7 @@ kids 0
 OBJECT poly
 name "alttext.003"
 data 9
-Mesh.1232
+Mesh.1144
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -199,7 +199,7 @@ kids 0
 OBJECT poly
 name "alttext.004"
 data 9
-Mesh.1231
+Mesh.1148
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -220,28 +220,49 @@ kids 0
 OBJECT poly
 name "ap.annun"
 data 9
-Mesh.1230
+Mesh.1184
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 0.06036 -0.08504
--0.01422 0.05613 -0.08504
--0.01422 0.06036 -0.07208
--0.01422 0.05613 -0.07208
+-0.01422 0.06287 -0.10563
+-0.01422 0.05573 -0.10563
+-0.01422 0.06287 -0.08229
+-0.01422 0.05573 -0.08229
 numsurf 1
 SURF 0X0
 mat 0
 refs 4
-0 0.769531 0.416016
-2 0.673828 0.416016
-3 0.673828 0.384766
-1 0.769531 0.384766
+0 0.769531 0.413863
+2 0.673828 0.413863
+3 0.673828 0.382613
+1 0.769531 0.382613
+kids 0
+OBJECT poly
+name "app.annun"
+data 9
+Mesh.1141
+crease 30.0
+texture "pfd3.png"
+texrep 1 1
+numvert 4
+-0.01422 0.05373 -0.1045
+-0.01422 0.04658 -0.1045
+-0.01422 0.05373 -0.08257
+-0.01422 0.04658 -0.08257
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+0 0.769531 0.603401
+2 0.673828 0.603401
+3 0.673828 0.572151
+1 0.769531 0.572151
 kids 0
 OBJECT poly
 name "AS1"
 data 9
-Mesh.1229
+Mesh.1153
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -262,7 +283,7 @@ kids 0
 OBJECT poly
 name "AS10"
 data 9
-Mesh.1228
+Mesh.1155
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -283,7 +304,7 @@ kids 0
 OBJECT poly
 name "AS100"
 data 9
-Mesh.1227
+Mesh.1150
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -303,8 +324,8 @@ refs 4
 kids 0
 OBJECT poly
 name "AS_ALT"
-data 9
-Mesh.1226
+data 8
+Mesh.019
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -478,156 +499,9 @@ refs 4
 1 0.125164 0.517808
 kids 0
 OBJECT poly
-name "DME.1"
-data 9
-Mesh.1225
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.01295 0.00619
--0.01422 -0.02124 0.00619
--0.01422 -0.01295 0.01028
--0.01422 -0.02124 0.01028
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.859375 0.085938
-2 0.808594 0.085938
-3 0.808594 0.003906
-1 0.859375 0.003906
-kids 0
-OBJECT poly
-name "DME1"
-data 9
-Mesh.1224
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.01295 0.01027
--0.01422 -0.02124 0.01027
--0.01422 -0.01295 0.01436
--0.01422 -0.02124 0.01436
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.859375 0.085938
-2 0.808594 0.085938
-3 0.808594 0.003906
-1 0.859375 0.003906
-kids 0
-OBJECT poly
-name "DME10"
-data 9
-Mesh.1223
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.01295 0.01435
--0.01422 -0.02124 0.01435
--0.01422 -0.01295 0.01844
--0.01422 -0.02124 0.01844
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.859375 0.085938
-2 0.808594 0.085938
-3 0.808594 0.003906
-1 0.859375 0.003906
-kids 0
-OBJECT poly
-name "DME100"
-data 9
-Mesh.1222
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.01295 0.01843
--0.01422 -0.02124 0.01843
--0.01422 -0.01295 0.02252
--0.01422 -0.02124 0.02252
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.859375 0.085938
-2 0.808594 0.085938
-3 0.808594 0.003906
-1 0.859375 0.003906
-kids 0
-OBJECT poly
-name "DMEdecimal"
-data 9
-Mesh.1221
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.02048 0.01115
--0.01422 -0.02133 0.01029
--0.01422 -0.01959 0.01026
--0.01422 -0.02044 0.0094
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.814453 0.044922
-1 0.820312 0.044922
-3 0.820312 0.054688
-2 0.814453 0.054688
-kids 0
-OBJECT poly
-name "dmetxt"
-data 9
-Mesh.1220
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.01281 0.02454
--0.01422 -0.02192 0.02454
--0.01422 -0.01281 0.0392
--0.01422 -0.02192 0.0392
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.732422 0.066406
-2 0.677734 0.066406
-3 0.677734 0.033203
-1 0.732422 0.033203
-kids 0
-OBJECT poly
-name "fd.annun"
-data 9
-Mesh.1219
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 0.06023 -0.07016
--0.01422 0.05626 -0.07016
--0.01422 0.06023 -0.05798
--0.01422 0.05626 -0.05798
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.769531 0.478516
-2 0.673828 0.478516
-3 0.673828 0.447266
-1 0.769531 0.447266
-kids 0
-OBJECT poly
 name "FDbars"
 data 9
-Mesh.1218
+Mesh.1146
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -656,8 +530,8 @@ refs 4
 kids 0
 OBJECT poly
 name "gs"
-data 9
-Mesh.1217
+data 8
+Mesh.016
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -694,15 +568,15 @@ kids 0
 OBJECT poly
 name "hdg1"
 data 9
-Mesh.1216
+Mesh.1149
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04126 0.03893
--0.01422 -0.04714 0.03893
--0.01422 -0.04126 0.04296
--0.01422 -0.04714 0.04296
+-0.01422 -0.0283 -0.08698
+-0.01422 -0.03679 -0.08698
+-0.01422 -0.0283 -0.08116
+-0.01422 -0.03679 -0.08116
 numsurf 1
 SURF 0X0
 mat 0
@@ -714,8 +588,8 @@ refs 4
 kids 0
 OBJECT poly
 name "hdg1.001"
-data 9
-Mesh.1215
+data 8
+Mesh.008
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -728,23 +602,23 @@ numsurf 1
 SURF 0X0
 mat 0
 refs 4
-0 0.984808 0.085938
-2 0.934027 0.085938
-3 0.934027 0.003906
-1 0.984808 0.003906
+0 0.984808 0.188676
+2 0.934027 0.188676
+3 0.934027 0.106644
+1 0.984808 0.106644
 kids 0
 OBJECT poly
 name "hdg10"
 data 9
-Mesh.1214
+Mesh.1147
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04126 0.04296
--0.01422 -0.04714 0.04296
--0.01422 -0.04126 0.047
--0.01422 -0.04714 0.047
+-0.01422 -0.0283 -0.08116
+-0.01422 -0.03679 -0.08116
+-0.01422 -0.0283 -0.07532
+-0.01422 -0.03679 -0.07532
 numsurf 1
 SURF 0X0
 mat 0
@@ -756,8 +630,8 @@ refs 4
 kids 0
 OBJECT poly
 name "hdg10.001"
-data 9
-Mesh.1213
+data 8
+Mesh.004
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -777,16 +651,16 @@ refs 4
 kids 0
 OBJECT poly
 name "hdg100"
-data 8
-Mesh.063
+data 9
+Mesh.1158
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04126 0.047
--0.01422 -0.04714 0.047
--0.01422 -0.04126 0.05103
--0.01422 -0.04714 0.05103
+-0.01422 -0.0283 -0.07532
+-0.01422 -0.03679 -0.07532
+-0.01422 -0.0283 -0.0695
+-0.01422 -0.03679 -0.0695
 numsurf 1
 SURF 0X0
 mat 0
@@ -799,7 +673,7 @@ kids 0
 OBJECT poly
 name "hdg100.001"
 data 8
-Mesh.062
+Mesh.001
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -819,16 +693,16 @@ refs 4
 kids 0
 OBJECT poly
 name "hdgtext"
-data 8
-Mesh.061
+data 9
+Mesh.1134
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04126 0.05102
--0.01422 -0.04714 0.05102
--0.01422 -0.04126 0.06222
--0.01422 -0.04714 0.06222
+-0.01422 -0.0283 -0.06951
+-0.01422 -0.03679 -0.06951
+-0.01422 -0.0283 -0.05333
+-0.01422 -0.03679 -0.05333
 numsurf 1
 SURF 0X0
 mat 0
@@ -1432,8 +1306,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ias1"
-data 8
-Mesh.060
+data 9
+Mesh.1159
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -1453,8 +1327,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ias10"
-data 8
-Mesh.059
+data 9
+Mesh.1161
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -1474,8 +1348,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ias100"
-data 8
-Mesh.058
+data 9
+Mesh.1178
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
@@ -1494,122 +1368,17 @@ refs 4
 1 0.988312 0.001953
 kids 0
 OBJECT poly
-name "inhg"
-data 8
-Mesh.057
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.03906 -0.07634
--0.01422 -0.03906 -0.07059
--0.01422 -0.04309 -0.07634
--0.01422 -0.04309 -0.07059
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.716704 0.287109
-1 0.669829 0.287109
-3 0.669829 0.259766
-2 0.716704 0.259766
-kids 0
-OBJECT poly
-name "inhg01"
-data 8
-Mesh.056
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.03929 -0.06367
--0.01422 -0.03929 -0.0614
--0.01422 -0.04288 -0.06367
--0.01422 -0.04288 -0.0614
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.925781 0.087891
-1 0.871094 0.087891
-3 0.871094 0.005859
-2 0.925781 0.005859
-kids 0
-OBJECT poly
-name "inhg01.001"
-data 8
-Mesh.055
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.03929 -0.06594
--0.01422 -0.03929 -0.06367
--0.01422 -0.04288 -0.06594
--0.01422 -0.04288 -0.06367
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.925781 0.087891
-1 0.871094 0.087891
-3 0.871094 0.005859
-2 0.925781 0.005859
-kids 0
-OBJECT poly
-name "inhg01.002"
-data 8
-Mesh.054
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.03929 -0.0682
--0.01422 -0.03929 -0.06594
--0.01422 -0.04288 -0.0682
--0.01422 -0.04288 -0.06594
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.925781 0.087891
-1 0.871094 0.087891
-3 0.871094 0.005859
-2 0.925781 0.005859
-kids 0
-OBJECT poly
-name "inhg01.003"
-data 8
-Mesh.053
-crease 30.0
-texture "pfd3.png"
-texrep 1 1
-numvert 4
--0.01422 -0.03929 -0.07047
--0.01422 -0.03929 -0.06821
--0.01422 -0.04288 -0.07047
--0.01422 -0.04288 -0.06821
-numsurf 1
-SURF 0X0
-mat 0
-refs 4
-0 0.925781 0.087891
-1 0.871094 0.087891
-3 0.871094 0.005859
-2 0.925781 0.005859
-kids 0
-OBJECT poly
 name "lnav.annun"
-data 8
-Mesh.052
+data 9
+Mesh.1211
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 0.05408 -0.0714
--0.01422 0.05011 -0.0714
--0.01422 0.05408 -0.05923
--0.01422 0.05011 -0.05923
+-0.01422 0.05373 -0.08038
+-0.01422 0.04658 -0.08038
+-0.01422 0.05373 -0.05847
+-0.01422 0.04658 -0.05847
 numsurf 1
 SURF 0X0
 mat 0
@@ -1621,16 +1390,16 @@ refs 4
 kids 0
 OBJECT poly
 name "mach.001"
-data 8
-Mesh.051
+data 9
+Mesh.1170
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.03784 0.07305
--0.01422 -0.03784 0.07726
--0.01422 -0.04449 0.07305
--0.01422 -0.04449 0.07726
+-0.01422 -0.00969 0.07929
+-0.01422 -0.00969 0.08607
+-0.01422 -0.02039 0.07929
+-0.01422 -0.02039 0.08607
 numsurf 1
 SURF 0X0
 mat 0
@@ -1642,16 +1411,16 @@ refs 4
 kids 0
 OBJECT poly
 name "mach.002"
-data 8
-Mesh.050
+data 9
+Mesh.1168
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.03784 0.06876
--0.01422 -0.03784 0.07297
--0.01422 -0.04449 0.06876
--0.01422 -0.04449 0.07297
+-0.01422 -0.00969 0.07238
+-0.01422 -0.00969 0.07916
+-0.01422 -0.02039 0.07238
+-0.01422 -0.02039 0.07916
 numsurf 1
 SURF 0X0
 mat 0
@@ -1663,16 +1432,16 @@ refs 4
 kids 0
 OBJECT poly
 name "mach.003"
-data 8
-Mesh.049
+data 9
+Mesh.1169
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.03784 0.06447
--0.01422 -0.03784 0.06868
--0.01422 -0.04449 0.06447
--0.01422 -0.04449 0.06868
+-0.01422 -0.00969 0.06547
+-0.01422 -0.00969 0.07225
+-0.01422 -0.02039 0.06547
+-0.01422 -0.02039 0.07225
 numsurf 1
 SURF 0X0
 mat 0
@@ -1684,8 +1453,8 @@ refs 4
 kids 0
 OBJECT poly
 name "pfdhdg"
-data 8
-Mesh.048
+data 9
+Mesh.1128
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -1771,8 +1540,8 @@ refs 4
 kids 0
 OBJECT poly
 name "pfdhdg.001"
-data 8
-Mesh.047
+data 9
+Mesh.1189
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -1808,8 +1577,8 @@ refs 4
 kids 0
 OBJECT poly
 name "pointer"
-data 8
-Mesh.046
+data 9
+Mesh.1130
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -1979,8 +1748,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ptc-05"
-data 8
-Mesh.045
+data 9
+Mesh.1199
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2034,7 +1803,7 @@ kids 0
 OBJECT poly
 name "ptc-10"
 data 8
-Mesh.044
+Mesh.029
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2120,8 +1889,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ptc-15"
-data 8
-Mesh.043
+data 9
+Mesh.1197
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2174,8 +1943,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ptc-20"
-data 8
-Mesh.042
+data 9
+Mesh.1193
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2262,7 +2031,7 @@ kids 0
 OBJECT poly
 name "ptc00"
 data 8
-Mesh.041
+Mesh.021
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2338,7 +2107,7 @@ kids 0
 OBJECT poly
 name "ptc05"
 data 8
-Mesh.040
+Mesh.013
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2391,8 +2160,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ptc10"
-data 8
-Mesh.039
+data 9
+Mesh.1194
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2467,8 +2236,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ptc15"
-data 8
-Mesh.038
+data 9
+Mesh.1202
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2521,8 +2290,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ptc20"
-data 8
-Mesh.037
+data 9
+Mesh.1195
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2598,7 +2367,7 @@ kids 0
 OBJECT poly
 name "roll"
 data 8
-Mesh.036
+Mesh.023
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -2701,7 +2470,7 @@ kids 0
 OBJECT poly
 name "roll.ptr"
 data 8
-Mesh.035
+Mesh.022
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -5141,48 +4910,9 @@ refs 4
 3 0.565957 0.886218
 kids 0
 OBJECT poly
-name "vector.001"
-data 8
-Mesh.034
-crease 30.0
-texture "ati2.png"
-texrep 1 1
-numvert 5
--0.01429 0.00106 -0.00127
--0.01429 0.00106 0.00122
--0.01429 0.00354 -0.00003
--0.01429 -0.00139 -0.00003
--0.01569 0.00106 -0.00003
-numsurf 4
-SURF 0X0
-mat 1
-refs 3
-4 0.148283 0.536158
-0 0.158761 0.536158
-2 0.148283 0.557114
-SURF 0X0
-mat 1
-refs 3
-3 0.148283 0.515454
-0 0.158761 0.536158
-4 0.148283 0.536158
-SURF 0X0
-mat 1
-refs 3
-3 0.148283 0.515454
-4 0.148283 0.536158
-1 0.13772 0.536158
-SURF 0X0
-mat 1
-refs 3
-4 0.148283 0.536158
-2 0.148283 0.557114
-1 0.13772 0.536158
-kids 0
-OBJECT poly
 name "vector.002"
-data 8
-Mesh.033
+data 9
+Mesh.1212
 crease 30.0
 texture "ati2.png"
 texrep 1 1
@@ -5620,16 +5350,16 @@ refs 4
 kids 0
 OBJECT poly
 name "vnav.annun"
-data 8
-Mesh.032
+data 9
+Mesh.1210
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 0.05408 -0.08633
--0.01422 0.05011 -0.08633
--0.01422 0.05408 -0.07415
--0.01422 0.05011 -0.07415
+-0.01422 0.06287 -0.08051
+-0.01422 0.05573 -0.08051
+-0.01422 0.06287 -0.05858
+-0.01422 0.05573 -0.05858
 numsurf 1
 SURF 0X0
 mat 0
@@ -5642,15 +5372,15 @@ kids 0
 OBJECT poly
 name "vs-10"
 data 8
-Mesh.026
+Mesh.015
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04104 -0.04709
--0.01422 -0.04618 -0.04709
--0.01422 -0.04104 -0.04455
--0.01422 -0.04618 -0.04455
+-0.01422 -0.01166 -0.07312
+-0.01422 -0.02137 -0.07312
+-0.01422 -0.01166 -0.06832
+-0.01422 -0.02137 -0.06832
 numsurf 1
 SURF 0X0
 mat 0
@@ -5663,15 +5393,15 @@ kids 0
 OBJECT poly
 name "vs-100"
 data 8
-Mesh.025
+Mesh.028
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04103 -0.04456
--0.01422 -0.04617 -0.04456
--0.01422 -0.04103 -0.04203
--0.01422 -0.04617 -0.04203
+-0.01422 -0.01164 -0.06834
+-0.01422 -0.02135 -0.06834
+-0.01422 -0.01164 -0.06356
+-0.01422 -0.02135 -0.06356
 numsurf 1
 SURF 0X0
 mat 0
@@ -5683,16 +5413,16 @@ refs 4
 kids 0
 OBJECT poly
 name "vs-1000"
-data 8
-Mesh.024
+data 9
+Mesh.1203
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04104 -0.04203
--0.01422 -0.04618 -0.04203
--0.01422 -0.04104 -0.0395
--0.01422 -0.04618 -0.0395
+-0.01422 -0.01166 -0.06356
+-0.01422 -0.02137 -0.06356
+-0.01422 -0.01166 -0.05879
+-0.01422 -0.02137 -0.05879
 numsurf 1
 SURF 0X0
 mat 0
@@ -5704,16 +5434,16 @@ refs 4
 kids 0
 OBJECT poly
 name "vs-a"
-data 8
-Mesh.020
+data 9
+Mesh.1188
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04325 -0.04191
--0.01422 -0.04325 -0.03885
--0.01422 -0.04396 -0.03885
--0.01422 -0.04396 -0.04191
+-0.01422 -0.01584 -0.06334
+-0.01422 -0.01584 -0.05756
+-0.01422 -0.01718 -0.05756
+-0.01422 -0.01718 -0.06334
 numsurf 1
 SURF 0X0
 mat 0
@@ -5725,16 +5455,16 @@ refs 4
 kids 0
 OBJECT poly
 name "vs-b"
-data 8
-Mesh.018
+data 9
+Mesh.1187
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04325 -0.03887
--0.01422 -0.04325 -0.03581
--0.01422 -0.04396 -0.03581
--0.01422 -0.04396 -0.03887
+-0.01422 -0.01584 -0.0576
+-0.01422 -0.01584 -0.05182
+-0.01422 -0.01718 -0.05182
+-0.01422 -0.01718 -0.0576
 numsurf 1
 SURF 0X0
 mat 0
@@ -5747,15 +5477,15 @@ kids 0
 OBJECT poly
 name "vs1"
 data 8
-Mesh.017
+Mesh.031
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04104 -0.04962
--0.01422 -0.04618 -0.04962
--0.01422 -0.04104 -0.04708
--0.01422 -0.04618 -0.04708
+-0.01422 -0.01166 -0.0779
+-0.01422 -0.02137 -0.0779
+-0.01422 -0.01166 -0.0731
+-0.01422 -0.02137 -0.0731
 numsurf 1
 SURF 0X0
 mat 0
@@ -5767,16 +5497,16 @@ refs 4
 kids 0
 OBJECT poly
 name "vs10"
-data 8
-Mesh.014
+data 9
+Mesh.1185
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04104 -0.04709
--0.01422 -0.04618 -0.04709
--0.01422 -0.04104 -0.04455
--0.01422 -0.04618 -0.04455
+-0.01422 -0.01166 -0.07312
+-0.01422 -0.02137 -0.07312
+-0.01422 -0.01166 -0.06832
+-0.01422 -0.02137 -0.06832
 numsurf 1
 SURF 0X0
 mat 0
@@ -5789,15 +5519,15 @@ kids 0
 OBJECT poly
 name "vs100"
 data 8
-Mesh.012
+Mesh.030
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04103 -0.04456
--0.01422 -0.04617 -0.04456
--0.01422 -0.04103 -0.04203
--0.01422 -0.04617 -0.04203
+-0.01422 -0.01164 -0.06834
+-0.01422 -0.02135 -0.06834
+-0.01422 -0.01164 -0.06356
+-0.01422 -0.02135 -0.06356
 numsurf 1
 SURF 0X0
 mat 0
@@ -5810,15 +5540,15 @@ kids 0
 OBJECT poly
 name "vs1000"
 data 8
-Mesh.011
+Mesh.027
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04104 -0.04203
--0.01422 -0.04618 -0.04203
--0.01422 -0.04104 -0.0395
--0.01422 -0.04618 -0.0395
+-0.01422 -0.01166 -0.06356
+-0.01422 -0.02137 -0.06356
+-0.01422 -0.01166 -0.05879
+-0.01422 -0.02137 -0.05879
 numsurf 1
 SURF 0X0
 mat 0
@@ -5830,16 +5560,16 @@ refs 4
 kids 0
 OBJECT poly
 name "vstext"
-data 8
-Mesh.010
+data 9
+Mesh.1186
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.04111 -0.05693
--0.01422 -0.04111 -0.04973
--0.01422 -0.0461 -0.04973
--0.01422 -0.0461 -0.05693
+-0.01422 -0.0118 -0.0917
+-0.01422 -0.0118 -0.07811
+-0.01422 -0.02122 -0.07811
+-0.01422 -0.02122 -0.0917
 numsurf 1
 SURF 0X0
 mat 0
@@ -5851,16 +5581,16 @@ refs 4
 kids 0
 OBJECT poly
 name "WP.1"
-data 8
-Mesh.007
+data 9
+Mesh.1208
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.02161 0.00619
--0.01422 -0.02992 0.00619
--0.01422 -0.02161 0.01028
--0.01422 -0.02992 0.01028
+-0.01422 -0.02835 0.04091
+-0.01422 -0.04063 0.04091
+-0.01422 -0.02835 0.04696
+-0.01422 -0.04063 0.04696
 numsurf 1
 SURF 0X0
 mat 0
@@ -5872,16 +5602,16 @@ refs 4
 kids 0
 OBJECT poly
 name "WP1"
-data 8
-Mesh.006
+data 9
+Mesh.1209
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.02161 0.01027
--0.01422 -0.02992 0.01027
--0.01422 -0.02161 0.01436
--0.01422 -0.02992 0.01436
+-0.01422 -0.02835 0.04695
+-0.01422 -0.04063 0.04695
+-0.01422 -0.02835 0.053
+-0.01422 -0.04063 0.053
 numsurf 1
 SURF 0X0
 mat 0
@@ -5893,16 +5623,16 @@ refs 4
 kids 0
 OBJECT poly
 name "WP10"
-data 8
-Mesh.005
+data 9
+Mesh.1207
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.02161 0.01435
--0.01422 -0.02992 0.01435
--0.01422 -0.02161 0.01844
--0.01422 -0.02992 0.01844
+-0.01422 -0.02835 0.05298
+-0.01422 -0.04063 0.05298
+-0.01422 -0.02835 0.05903
+-0.01422 -0.04063 0.05903
 numsurf 1
 SURF 0X0
 mat 0
@@ -5914,16 +5644,16 @@ refs 4
 kids 0
 OBJECT poly
 name "WP100"
-data 8
-Mesh.003
+data 9
+Mesh.1204
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.02161 0.01844
--0.01422 -0.02992 0.01844
--0.01422 -0.02161 0.02252
--0.01422 -0.02992 0.02252
+-0.01422 -0.02835 0.05903
+-0.01422 -0.04063 0.05903
+-0.01422 -0.02835 0.06506
+-0.01422 -0.04063 0.06506
 numsurf 1
 SURF 0X0
 mat 0
@@ -5935,16 +5665,16 @@ refs 4
 kids 0
 OBJECT poly
 name "WPdecimal"
-data 8
-Mesh.002
+data 9
+Mesh.1205
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
 numvert 4
--0.01422 -0.02915 0.01115
--0.01422 -0.03001 0.01029
--0.01422 -0.02826 0.01026
--0.01422 -0.02912 0.0094
+-0.01422 -0.0395 0.04825
+-0.01422 -0.04077 0.04698
+-0.01422 -0.03818 0.04693
+-0.01422 -0.03945 0.04566
 numsurf 1
 SURF 0X0
 mat 0
@@ -5956,40 +5686,22 @@ refs 4
 kids 0
 OBJECT poly
 name "wptxt"
-data 8
-Mesh.000
+data 9
+Mesh.1206
 crease 30.0
 texture "pfd3.png"
 texrep 1 1
-numvert 8
--0.01422 -0.02149 0.02454
--0.01422 -0.0306 0.02454
--0.01422 -0.02149 0.03284
--0.01422 -0.0306 0.03284
--0.01422 -0.02149 0.02869
--0.01422 -0.0306 0.02869
--0.01422 -0.0306 0.03077
--0.01422 -0.02149 0.03077
-numsurf 3
+numvert 4
+-0.01422 -0.02776 0.06775
+-0.01422 -0.04123 0.06775
+-0.01422 -0.02776 0.08648
+-0.01422 -0.04123 0.08648
+numsurf 1
 SURF 0X0
 mat 0
 refs 4
-0 0.713795 0.413175
-4 0.696583 0.413175
-5 0.696583 0.382366
-1 0.713795 0.382366
-SURF 0X0
-mat 0
-refs 4
-4 0.680307 0.789141
-7 0.692454 0.789141
-6 0.692454 0.757937
-5 0.680307 0.757937
-SURF 0X0
-mat 0
-refs 4
-7 0.692454 0.789141
-2 0.680307 0.789141
-3 0.680307 0.757937
-6 0.692454 0.757937
+2 0.677677 0.296209
+3 0.677677 0.26171
+1 0.725657 0.26171
+0 0.725657 0.296209
 kids 0
