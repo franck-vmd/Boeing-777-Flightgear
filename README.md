@@ -77,6 +77,10 @@ USAF :
 
 ![Image](https://i.ibb.co/vvjT2Nc/usaf.png)
 
+HUD :
+
+![Image](https://i.ibb.co/Jvwzzn0/HUD777.png)
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Téléchargement : Bouton "Code" de couleur vert , "Download Zip" en bas 
@@ -153,6 +157,10 @@ Gui :
 USAF :
 
 [![FlightGear Boeing 777-US AIR FORCE](https://i.ibb.co/80pzVxF/Flight-Gear-Boeing-777-US-AIR-FORCE.png)](https://www.youtube.com/watch?v=aHSQxtGoFQQ "FlightGear Boeing 777-US AIR FORCE")
+
+HUD :
+
+![Image](https://i.ibb.co/Jvwzzn0/HUD777.png)
 
 
 
