@@ -6330,32 +6330,6 @@ Franck.VMD
     <min>0.5</min>
     <max>5</max>
     </animation>
-    
-    
-
-      <animation>
-        <type>select</type>
-        <object-name>mur.001</object-name>
-        <object-name>window mix exterieur</object-name>
-        <object-name>window mix interieur</object-name>
-        <condition>
-            <greater-than>
-                <property>controls/switches/windowmix</property>
-                <value>00</value>
-            </greater-than>
-        </condition>
-    </animation>
-    
-    <animation>
-        <type>select</type>
-        <object-name>mur.002</object-name>
-        <condition>
-            <less-than>
-                <property>controls/switches/windowmix</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-    </animation>
 
 <!--   engines   -->
 
