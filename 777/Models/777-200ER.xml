@@ -39,7 +39,6 @@ Franck.VMD
         <object-name>entry9r</object-name>
         <object-name>entry8r.001</object-name>
         <object-name>entry10r</object-name>
-        <object-name>rlightext</object-name>
         <object-name>LFdoor</object-name>
         <object-name>LRdoor</object-name>
         <object-name>RFdoor</object-name>
@@ -200,6 +199,7 @@ Franck.VMD
         <object-name>Rwing.geardoor</object-name>
         <object-name>Lgear1</object-name>
         <object-name>Rgear1</object-name>
+        <object-name>navlights</object-name>
         <property-base>sim/model/fuselage4</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-200ER/AFR6.png</texture>
@@ -350,7 +350,6 @@ Franck.VMD
 
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect1</inherits-from>
-        <object-name>rlightext</object-name>
         <object-name>RFdoor.001</object-name>
         <object-name>RFdoor.003</object-name>
         <object-name>RRdoor.001</object-name>
@@ -555,11 +554,11 @@ Franck.VMD
         <object-name>moteur2</object-name>
         <object-name>moteur3</object-name>
         <object-name>LHEngChrome</object-name>
+        <object-name>redlight</object-name>
     </effect>
 
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
-        <object-name>redlight</object-name>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
         <object-name>greenflash</object-name>
@@ -569,9 +568,11 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <object-name>Beacon02</object-name>
         <object-name>LHLND.flare</object-name>
+        <object-name>LHLND.flare2</object-name>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
         <object-name>RHLND.flare</object-name>
+        <object-name>RHLND.flare2</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <object-name>rlight</object-name>
@@ -7145,6 +7146,7 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>Run.spotL</object-name>
+        <object-name>LHLND.flare2</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/L-RwayLight</property>
@@ -7156,6 +7158,7 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>Run.spotR</object-name>
+        <object-name>RHLND.flare2</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/R-RwayLight</property>
@@ -7219,12 +7222,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>whiteflash</object-name>
-        <offset-m>37.594927276196</offset-m>
+        <offset-m>37.73</offset-m>
         <axis>
-            <x>37.58887</x>
-            <y>0</y>
-            <z>0.67484</z>
-        </axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>37.727</x2-m>
+        <y2-m>0.0</y2-m>
+        <z2-m>0.64848</z2-m>
+    </axis>
+    <axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -7233,14 +7244,22 @@ Franck.VMD
     </animation>
 
     <animation>
-        <type>translate</type>
-        <object-name>redflash</object-name>
-        <offset-m>34.02</offset-m>
-        <axis>
-            <x>0.449</x>
-            <y>-0.892</y>
-            <z>0.046</z>
-        </axis>
+    <type>translate</type>
+    <object-name>redflash</object-name>
+       <offset-m>34.02</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>15.262</x2-m>
+        <y2-m>-30.3628</y2-m>
+        <z2-m>1.54798</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -7249,14 +7268,22 @@ Franck.VMD
     </animation>
 
     <animation>
-        <type>translate</type>
-        <object-name>greenflash</object-name>
-        <offset-m>34.02</offset-m>
-        <axis>
-            <x>0.449</x>
-            <y>0.892</y>
-            <z>0.046</z>
-        </axis>
+    <type>translate</type>
+    <object-name>greenflash</object-name>
+    <offset-m>34.02</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>15.262</x2-m>
+        <y2-m>30.3628</y2-m>
+        <z2-m>1.54798</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -7278,12 +7305,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Strobe01</object-name>
-        <offset-m>34.26</offset-m>
-        <axis>
-            <x>0.455</x>
-            <y>-0.889</y>
-            <z>0.046</z>
-        </axis>
+        <offset-m>34.02</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>15.262</x2-m>
+        <y2-m>30.3628</y2-m>
+        <z2-m>1.54798</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -7314,12 +7349,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Strobe02</object-name>
-        <offset-m>34.26</offset-m>
-        <axis>
-            <x>0.455</x>
-            <y>0.889</y>
-            <z>0.046</z>
-        </axis>
+        <offset-m>34.02</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>15.262</x2-m>
+        <y2-m>-30.3628</y2-m>
+        <z2-m>1.54798</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -7350,12 +7393,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Strobe03</object-name>
-        <offset-m>37.747259197156</offset-m>
+        <offset-m>37.9</offset-m>
         <axis>
-            <x>37.69757</x>
-            <y>0</y>
-            <z>1.93618</z>
-        </axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>37.8568</x2-m>
+        <y2-m>0.0</y2-m>
+        <z2-m>1.90724</z2-m>
+    </axis>
+    <axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -7386,12 +7437,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Beacon01</object-name>
-        <offset-m>6.93</offset-m>
+        <offset-m>6.88</offset-m>
         <axis>
-            <x>-0.886</x>
-            <y>0</y>
-            <z>0.463</z>
-        </axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>-6.116</x2-m>
+        <y2-m>0.0</y2-m>
+        <z2-m>3.15021</z2-m>
+    </axis>
+    <axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -7422,12 +7481,20 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Beacon02</object-name>
-        <offset-m>3.56</offset-m>
+        <offset-m>3.499</offset-m>
         <axis>
-            <x>-0.047</x>
-            <y>0</y>
-            <z>-0.999</z>
-        </axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>-0.11561</x2-m>
+        <y2-m>0.0</y2-m>
+        <z2-m>-3.49722</z2-m>
+    </axis>
+    <axis>
+	<x>1</x>
+	<y>0</y>
+	<z>0</z>
+	</axis>
     </animation>
 
     <animation>
@@ -7464,10 +7531,52 @@ Franck.VMD
         <min>1</min>
         <max>5</max>
     </animation>
+    
+    <animation>
+        <type>flash</type>
+        <object-name>RHLND.flare2</object-name>
+        <center>
+            <x-m>-3.574</x-m>
+            <y-m>3.778</y-m>
+            <z-m>-1.502</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <power>10</power>
+        <factor>2</factor>
+        <offset>0</offset>
+        <two-sides type="bool">false</two-sides>
+        <min>1</min>
+        <max>5</max>
+    </animation>
 
     <animation>
         <type>flash</type>
         <object-name>LHLND.flare</object-name>
+        <center>
+            <x-m>-3.574</x-m>
+            <y-m>-3.778</y-m>
+            <z-m>-1.502</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <power>10</power>
+        <factor>2</factor>
+        <offset>0</offset>
+        <two-sides type="bool">false</two-sides>
+        <min>1</min>
+        <max>5</max>
+    </animation>
+    
+    <animation>
+        <type>flash</type>
+        <object-name>LHLND.flare2</object-name>
         <center>
             <x-m>-3.574</x-m>
             <y-m>-3.778</y-m>

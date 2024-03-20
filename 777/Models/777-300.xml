@@ -39,7 +39,6 @@ Franck.VMD
         <object-name>entry9r</object-name>
         <object-name>entry8r.001</object-name>
         <object-name>entry10r</object-name>
-        <object-name>rlightext</object-name>
         <object-name>LFdoor</object-name>
         <object-name>LRdoor</object-name>
         <object-name>RFdoor</object-name>
@@ -612,9 +611,11 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <object-name>Beacon02</object-name>
         <object-name>LHLND.flare</object-name>
+        <object-name>LHLND.flare2</object-name>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
         <object-name>RHLND.flare</object-name>
+        <object-name>RHLND.flare2</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <object-name>rlight</object-name>
@@ -7500,6 +7501,7 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>Run.spotL</object-name>
+        <object-name>LHLND.flare2</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/L-RwayLight</property>
@@ -7511,6 +7513,7 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>Run.spotR</object-name>
+        <object-name>RHLND.flare2</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/R-RwayLight</property>
@@ -7923,10 +7926,52 @@ Franck.VMD
         <min>1</min>
         <max>5</max>
     </animation>
+    
+    <animation>
+        <type>flash</type>
+        <object-name>RHLND.flare2</object-name>
+        <center>
+            <x-m>-3.574</x-m>
+            <y-m>3.778</y-m>
+            <z-m>-1.502</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <power>10</power>
+        <factor>2</factor>
+        <offset>0</offset>
+        <two-sides type="bool">false</two-sides>
+        <min>1</min>
+        <max>5</max>
+    </animation>
 
     <animation>
         <type>flash</type>
         <object-name>LHLND.flare</object-name>
+        <center>
+            <x-m>-3.574</x-m>
+            <y-m>-3.778</y-m>
+            <z-m>-1.502</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <power>10</power>
+        <factor>2</factor>
+        <offset>0</offset>
+        <two-sides type="bool">false</two-sides>
+        <min>1</min>
+        <max>5</max>
+    </animation>
+    
+    <animation>
+        <type>flash</type>
+        <object-name>LHLND.flare2</object-name>
         <center>
             <x-m>-3.574</x-m>
             <y-m>-3.778</y-m>

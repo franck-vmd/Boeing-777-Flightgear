@@ -383,17 +383,6 @@ Franck.VMD
 		<texture>windowmix.png</texture>
                 <object-name>window mix exterieur</object-name>
        </animation>
-
-    <!-- Lightmap -->
-   <effect>
-    <inherits-from>Aircraft/777/Models/Effects/shaders</inherits-from>
-    <object-name>Wings.Llight</object-name>
-   </effect>
-
-   <effect>
-    <inherits-from>Aircraft/777/Models/Effects/shaders2</inherits-from>
-    <object-name>Wings.Rlight</object-name>
-   </effect>
     
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect33</inherits-from>
