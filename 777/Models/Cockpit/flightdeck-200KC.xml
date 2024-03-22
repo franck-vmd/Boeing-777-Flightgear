@@ -493,7 +493,7 @@ Franck.VMD
         <object-name>PseatG</object-name>
         <object-name>Pseat.armrest</object-name>
         <object-name>Cseat.armrest</object-name>
-        <object-name>cockpit_ORIGINAL.002</object-name>
+        <object-name>cockpit_ORIGINAL.001</object-name>
         <object-name>Seat_OBS2</object-name>
         <object-name>Seat_OBS1_HeadC</object-name>
         <object-name>Seat_OBS2_HeadC</object-name>
@@ -583,6 +583,7 @@ Franck.VMD
         <object-name>Yoke_R_TrimBase</object-name>
         <object-name>Yoke_R_TrimL.Switch</object-name>
         <object-name>Yoke_R_TrimR.Switch</object-name>
+        <object-name>SpotLight_FO.001</object-name>
     </effect>
 
 <!-- Hide interior glass when in exterior view unless raining-->
@@ -1453,9 +1454,9 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[31]</property>
 		<factor>90</factor>
         <center>
-            <x-m>0.41157</x-m>
-            <y-m>-0.39018</y-m>
-            <z-m>0.55079</z-m>
+            <x-m>0.39382</x-m>
+            <y-m>-0.924309</y-m>
+            <z-m>0.509125</z-m>
         </center>
 		<axis>
 			<x>0</x>
