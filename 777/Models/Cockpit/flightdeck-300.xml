@@ -450,7 +450,6 @@ Franck.VMD
         <object-name>Plate2</object-name>
         <object-name>Plate4</object-name>
         <object-name>Shield_Bottom_Tray</object-name>
-        <object-name>Shield_Bottom_Plate</object-name>
         <object-name>Panel.Rwall.bottom</object-name>
         <object-name>Panel.Lwall.bottom</object-name>
         <object-name>EFB_R_Shape</object-name>
@@ -489,11 +488,11 @@ Franck.VMD
         <object-name>cockpit_Windows</object-name>
         <object-name>cockpit_WindowsG</object-name>
         <object-name>cockpit_WindowsD</object-name>
-        <object-name>cockpit_ORIGINAL</object-name>
         <object-name>PseatD</object-name>
         <object-name>PseatG</object-name>
         <object-name>Pseat.armrest</object-name>
         <object-name>Cseat.armrest</object-name>
+        <object-name>cockpit_ORIGINAL</object-name>
         <object-name>cockpit_ORIGINAL.001</object-name>
         <object-name>Seat_OBS2</object-name>
         <object-name>Seat_OBS1_HeadC</object-name>
@@ -530,7 +529,6 @@ Franck.VMD
         <object-name>SpotLight_FO</object-name>
         <object-name>Handle_R</object-name>
         <object-name>cockpit_Windows.002</object-name>
-        <object-name>cockpit_Windows.001</object-name>
         <object-name>MC_Casing</object-name>
         <object-name>MC_Bezel</object-name>
         <object-name>PanelL.WH_Ball</object-name>
@@ -571,6 +569,10 @@ Franck.VMD
         <object-name>Panel.RwallOxMask00</object-name>
         <object-name>verinBasD</object-name>
         <object-name>verinBasG</object-name>
+        <object-name>verinHautD</object-name>
+        <object-name>verinHautG</object-name>
+        <object-name>verinHautD.001</object-name>
+        <object-name>verinHautG.001</object-name>
         <object-name>RHpedal</object-name>
         <object-name>LHpedal</object-name>
         <object-name>Window_L_Slide</object-name>
@@ -2024,10 +2026,10 @@ Franck.VMD
         <object-name>PanelL.wall.Txt1</object-name>
         <object-name>PanelL.wall.Txt2</object-name>
         <object-name>Panel.RwallOxMask00</object-name>
-        <object-name>verinBasD</object-name>
-        <object-name>verinBasG</object-name>
         <object-name>Window_L_Slide</object-name>
         <object-name>PanelL.wall_Top2</object-name>
+        <object-name>cockpit_Windows</object-name>
+        <object-name>cockpit_Windows.002</object-name>
         <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
@@ -2060,17 +2062,8 @@ Franck.VMD
        <object-name>Window_L_Air_Hinge1</object-name>
        <object-name>Window_R_Air_Hinge2</object-name>
        <object-name>Window_R_Air_Hinge1</object-name>
-       <object-name>Window_L_Air_Hinge4</object-name>
-       <object-name>Window_R_Air_Hinge4</object-name>
        <object-name>cockpit.door</object-name>
        <object-name>cockpit_ORIGINAL</object-name> 
-       <object-name>cockpit_Windows</object-name>
-       <object-name>cockpit_Windows.002</object-name>
-       <object-name>cockpit_Windows.001</object-name>
-       <object-name>cockpit_WindowsG</object-name>
-       <object-name>cockpit_WindowsD</object-name>
-       <object-name>Panel.Lwall.WHandleG</object-name>
-       <object-name>Panel.Lwall.WHandleD</object-name>
        <object-name>cockpit_floor</object-name>
        <object-name>Rail_R_2</object-name>
        <object-name>Rail_R_1</object-name>
@@ -2114,11 +2107,11 @@ Franck.VMD
        <object-name>Yoke_R_TrimL.Switch</object-name>
        <object-name>Yoke_R_TrimR.Switch</object-name>
        <object-name>feuille</object-name>
-        <object-name>feuille1</object-name>
-        <object-name>feuille2</object-name>
-        <object-name>feuille3</object-name>
-        <object-name>feuille4</object-name>
-        <object-name>feuille5</object-name>
+       <object-name>feuille1</object-name>
+       <object-name>feuille2</object-name>
+       <object-name>feuille3</object-name>
+       <object-name>feuille4</object-name>
+       <object-name>feuille5</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
