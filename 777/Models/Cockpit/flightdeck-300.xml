@@ -2112,6 +2112,7 @@ Franck.VMD
        <object-name>feuille3</object-name>
        <object-name>feuille4</object-name>
        <object-name>feuille5</object-name>
+       <object-name>FloodR.light</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
@@ -2143,6 +2144,7 @@ Franck.VMD
         <type>material</type>
        <object-name>SpotLight_FO.001</object-name>
        <object-name>light plafond</object-name>
+       <object-name>FloodR.light.001</object-name>
        <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
