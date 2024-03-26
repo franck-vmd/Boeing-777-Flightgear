@@ -8,55 +8,116 @@ Franck.VMD
 
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
-        <object-name>ias.ind</object-name>
-        <object-name>mach.ind</object-name>
-        <object-name>MACH.led1</object-name>
-        <object-name>MACH.led2</object-name>
-        <object-name>MACH.led3</object-name>
-        <object-name>IAS.led1</object-name>
-        <object-name>IAS.led2</object-name>
-        <object-name>IAS.led3</object-name>
-        <object-name>hdg.ind</object-name>
-        <object-name>trk.ind</object-name>
-        <object-name>TRK.led1</object-name>
-        <object-name>TRK.led2</object-name>
-        <object-name>TRK.led3</object-name>
-        <object-name>HDG.led1</object-name>
-        <object-name>HDG.led2</object-name>
-        <object-name>HDG.led3</object-name>
-        <object-name>vs.ind</object-name>
-        <object-name>fpa.ind</object-name>
-        <object-name>VS.ledminus</object-name>
-        <object-name>VS.led1</object-name>
-        <object-name>VS.led2</object-name>
-        <object-name>VS.led3</object-name>
-        <object-name>VS.led4</object-name>
-        <object-name>FPA.ledminus</object-name>
-        <object-name>FPA.led1</object-name>
-        <object-name>FPA.led2</object-name>
-        <object-name>ALT.led1</object-name>
-        <object-name>ALT.led2</object-name>
-        <object-name>ALT.led3</object-name>
-        <object-name>ALT.led4</object-name>
-        <object-name>ALT.led5</object-name>
         <object-name>AP_Lettering</object-name>
-        <object-name>AP_Lettering.001</object-name>
-        <object-name>AP_Lettering.002</object-name>
-        <object-name>HDG.sel</object-name>
-        <object-name>BLimit.knob.001</object-name>
+        <object-name>MACH.toggle</object-name>
+        <object-name>TRK.toggle</object-name>
+        <object-name>FPA.toggle</object-name>
+        <object-name>FD-on</object-name>
     </effect>
 
     <effect>
         <name>777-interior</name>
         <inherits-from>Aircraft/777/Models/Effects/777-interior</inherits-from>
-        <object-name>AP.panel</object-name>
-        <object-name>SPEED.knob.001</object-name>
-        <object-name>FD_toggle</object-name>
-        <object-name>FD-on</object-name>
-        <object-name>THARM.switch</object-name>
-        <object-name>THARM1.switch</object-name>
-        <object-name>Pitch_Wheel.knob</object-name>
+        <object-name>ALT.led1</object-name>
+        <object-name>ALT.led2</object-name>
+        <object-name>ALT.led3</object-name>
+        <object-name>ALT.led4</object-name>
+        <object-name>ALT.led5</object-name>
+        <object-name>ALT_Base</object-name>
+        <object-name>ALT_Switch</object-name>
+        <object-name>ALT_toggle</object-name>
+        <object-name>AP.btn.001</object-name>
+        <object-name>AP.btn.002</object-name>
+        <object-name>AP.btn.003</object-name>
         <object-name>AP.disengage</object-name>
+        <object-name>AP.panel</object-name>
+        <object-name>APP_Base</object-name>
+        <object-name>APP_Switch</object-name>
+        <object-name>APP_toggle</object-name>
+        <object-name>AP_Base</object-name>
+        <object-name>AP_Switch</object-name>
+        <object-name>AP_toggle</object-name>
+        <object-name>AT_Base</object-name>
+        <object-name>AT_Switch</object-name>
+        <object-name>AT_toggle</object-name>
+        <object-name>CLB_Base</object-name>
+        <object-name>CLB_Base.001</object-name>
+        <object-name>CLB_Switch</object-name>
+        <object-name>Circle.104</object-name>
+        <object-name>DSP.air</object-name>
+        <object-name>DSP.cam</object-name>
+        <object-name>DSP.chkl</object-name>
+        <object-name>DSP.comm</object-name>
+        <object-name>DSP.door</object-name>
+        <object-name>DSP.elec</object-name>
+        <object-name>DSP.eng</object-name>
+        <object-name>DSP.fctl</object-name>
+        <object-name>DSP.fuel</object-name>
+        <object-name>DSP.gear</object-name>
+        <object-name>DSP.hyd</object-name>
+        <object-name>DSP.nav</object-name>
+        <object-name>DSP.stat</object-name>
+        <object-name>FD_toggle</object-name>
+        <object-name>FLCH_Base</object-name>
+        <object-name>FLCH_Switch</object-name>
+        <object-name>FLCH_toggle</object-name>
+        <object-name>FPA.led1</object-name>
+        <object-name>FPA.led2</object-name>
+        <object-name>FPA.ledminus</object-name>
+        <object-name>HDG.led1</object-name>
+        <object-name>HDG.led2</object-name>
+        <object-name>HDG.led3</object-name>
+        <object-name>HDG.sel</object-name>
+        <object-name>HDG_Base</object-name>
+        <object-name>HDG_SELBTN.knob</object-name>
+        <object-name>HDG_Switch</object-name>
+        <object-name>HDG_toggle</object-name>
+        <object-name>HdgTrk.btn</object-name>
+        <object-name>IAS.dwn</object-name>
+        <object-name>IAS.led1</object-name>
+        <object-name>IAS.led2</object-name>
+        <object-name>IAS.led3</object-name>
+        <object-name>IAS.up</object-name>
+        <object-name>IasMach.btn</object-name>
+        <object-name>LNAV_Base</object-name>
+        <object-name>LNAV_Switch</object-name>
+        <object-name>LNAV_toggle</object-name>
+        <object-name>LOC_Switch</object-name>
+        <object-name>LOC_toggle</object-name>
+        <object-name>Lgt_LWRCTR.light</object-name>
+        <object-name>Lgt_L_INBD.light</object-name>
+        <object-name>Lgt_R_INBD.light</object-name>
+        <object-name>MACH.led1</object-name>
+        <object-name>MACH.led2</object-name>
+        <object-name>MACH.led3</object-name>
+        <object-name>Panel.004</object-name>
+        <object-name>Pitch_Wheel.knob</object-name>
+        <object-name>Pitchwheel.dec</object-name>
+        <object-name>Pitchwheel.inc</object-name>
+        <object-name>SPD.dec</object-name>
+        <object-name>SPD.inc</object-name>
+        <object-name>TRK.led1</object-name>
+        <object-name>TRK.led2</object-name>
+        <object-name>TRK.led3</object-name>
+        <object-name>VNAV_Base</object-name>
+        <object-name>VNAV_Base.001</object-name>
+        <object-name>VNAV_Switch</object-name>
+        <object-name>VNAV_toggle</object-name>
+        <object-name>VS.led1</object-name>
+        <object-name>VS.led2</object-name>
+        <object-name>VS.led3</object-name>
+        <object-name>VS.led4</object-name>
+        <object-name>VS.ledminus</object-name>
+        <object-name>VS_Base</object-name>
+        <object-name>VS_Switch</object-name>
+        <object-name>VS_toggle</object-name>
+        <object-name>VsFpa.btn</object-name>
+        <object-name>fpa.ind</object-name>
+        <object-name>hdg.ind</object-name>
+        <object-name>trk.ind</object-name>
+        <object-name>ias.ind</object-name>
+        <object-name>mach.ind</object-name>
+        <object-name>vs.ind</object-name>
     </effect>
 
     <animation>
@@ -66,12 +127,12 @@ Franck.VMD
         <property>instrumentation/afds/inputs/bank-limit-switch</property>
         <factor>-30.0</factor>
         <axis>
-        <x1-m>-1.82099</x1-m>
-        <y1-m>-0.062835</y1-m>
-        <z1-m>0.568894</z1-m>
-        <x2-m>-1.78142</x2-m>
+        <x1-m>-1.71406</x1-m>
+        <y1-m>-0.06282</y1-m>
+        <z1-m>0.63312</z1-m>
+        <x2-m>-1.70115</x2-m>
         <y2-m>-0.06282</y2-m>
-        <z2-m>0.575878</z2-m>
+        <z2-m>0.635425</z2-m>
         </axis>
         <axis>
             <x>1</x>
@@ -92,12 +153,12 @@ Franck.VMD
         <property>autopilot/settings/target-speed-kt</property>
         <factor>100</factor>
         <axis>
-        <x1-m>-1.81899</x1-m>
+        <x1-m>-1.71204</x1-m>
         <y1-m>-0.18906</y1-m>
-        <z1-m>0.555784</z1-m>
-        <x2-m>-1.79414</x2-m>
+        <z1-m>0.620015</z1-m>
+        <x2-m>-1.6872</x2-m>
         <y2-m>-0.18906</y2-m>
-        <z2-m>0.560165</z2-m>
+        <z2-m>0.624395</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -116,12 +177,12 @@ Franck.VMD
             <property>autopilot/settings/target-speed-mach</property>
         <factor>10000</factor>
         <axis>
-        <x1-m>-1.81899</x1-m>
+        <x1-m>-1.71204</x1-m>
         <y1-m>-0.18906</y1-m>
-        <z1-m>0.555784</z1-m>
-        <x2-m>-1.79414</x2-m>
+        <z1-m>0.620015</z1-m>
+        <x2-m>-1.6872</x2-m>
         <y2-m>-0.18906</y2-m>
-        <z2-m>0.560165</z2-m>
+        <z2-m>0.624395</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -136,12 +197,12 @@ Franck.VMD
         <property>autopilot/settings/heading-bug-deg</property>
         <factor>100</factor>
         <axis>
-        <x1-m>-1.82099</x1-m>
-        <y1-m>-0.062835</y1-m>
-        <z1-m>0.568894</z1-m>
-        <x2-m>-1.78142</x2-m>
+        <x1-m>-1.70155</x1-m>
+        <y1-m>-0.06282</y1-m>
+        <z1-m>0.635355</z1-m>
+        <x2-m>-1.67812</x2-m>
         <y2-m>-0.06282</y2-m>
-        <z2-m>0.575878</z2-m>
+        <z2-m>0.63949</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -156,12 +217,12 @@ Franck.VMD
         <property>autopilot/settings/counter-set-altitude-ft</property>
         <factor>1</factor>
         <axis>
-        <x1-m>-1.79127</x1-m>
-        <y1-m>0.08189</y1-m>
-        <z1-m>0.574161</z1-m>
-        <x2-m>-1.80855</x2-m>
-        <y2-m>0.08187</y2-m>
-        <z2-m>0.571113</z2-m>
+        <x1-m>-1.70161</x1-m>
+        <y1-m>0.08187</y1-m>
+        <z1-m>0.635345</z1-m>
+        <x2-m>-1.68433</x2-m>
+        <y2-m>0.08189</y2-m>
+        <z2-m>0.63839</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -173,15 +234,16 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>ALTmode.knob</object-name>
+        <object-name>ALTmode.knob.001</object-name>
         <property>instrumentation/afds/inputs/alt-knob</property>
         <factor>40</factor>
         <axis>
-        <x1-m>-1.79127</x1-m>
-        <y1-m>0.08189</y1-m>
-        <z1-m>0.574161</z1-m>
-        <x2-m>-1.80855</x2-m>
-        <y2-m>0.08187</y2-m>
-        <z2-m>0.571113</z2-m>
+        <x1-m>-1.70115</x1-m>
+        <y1-m>0.08191</y1-m>
+        <z1-m>0.635415</z1-m>
+        <x2-m>-1.71406</x2-m>
+        <y2-m>0.08191</y2-m>
+        <z2-m>0.63314</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -196,9 +258,9 @@ Franck.VMD
         <property>instrumentation/afds/inputs/FD</property>
         <factor>-30.0</factor>
         <center>
-            <x-m>-1.81905</x-m>
-            <y-m>-0.263275</y-m>
-            <z-m>0.555015</z-m>
+            <x-m>-1.71218</x-m>
+            <y-m>-0.051295</y-m>
+            <z-m>0.61925</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -213,9 +275,9 @@ Franck.VMD
         <property>instrumentation/afds/inputs/at-armed</property>
         <factor>-30.0</factor>
         <center>
-            <x-m>-1.82753</x-m>
+            <x-m>-1.72058</x-m>
             <y-m>-0.240265</y-m>
-            <z-m>0.598139</z-m>
+            <z-m>0.66237</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -230,9 +292,9 @@ Franck.VMD
         <property>instrumentation/afds/inputs/at-armed[1]</property>
         <factor>-30.0</factor>
         <center>
-            <x-m>-1.82753</x-m>
+            <x-m>-1.72058</x-m>
             <y-m>-0.228285</y-m>
-            <z-m>0.598139</z-m>
+            <z-m>0.66237</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -244,10 +306,9 @@ Franck.VMD
     <animation>
         <type>material</type>
         <object-name>AP_Lettering</object-name>
-        <object-name>AP_Lettering.001</object-name>
-        <object-name>AP_Lettering.002</object-name>
         <object-name>HDG.sel</object-name>
         <object-name>BLimit.knob.001</object-name>
+        <object-name>ALTmode.knob.001</object-name>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
@@ -2020,6 +2081,8 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
+        <object-name>ALTmode.auto</object-name>
+        <object-name>ALTmode.1000</object-name>
         <object-name>ALTmode.knob</object-name>
         <action>
             <button>0</button>
@@ -2038,6 +2101,8 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
+        <object-name>ALTmode.1000</object-name>
+        <object-name>ALTmode.auto</object-name>
         <object-name>ALTmode.knob</object-name>
         <action>
             <button>1</button>
@@ -2056,6 +2121,8 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
+        <object-name>ALTmode.auto</object-name>
+        <object-name>ALTmode.1000</object-name>
         <object-name>ALTmode.knob</object-name>
         <action>
             <button>3</button> <!--  scroll up -->
@@ -2073,6 +2140,8 @@ Franck.VMD
     </animation>
     <animation>
         <type>pick</type>
+        <object-name>ALTmode.auto</object-name>
+        <object-name>ALTmode.1000</object-name>
         <object-name>ALTmode.knob</object-name>
         <action>
             <button>4</button> <!--  scroll down -->
@@ -2121,6 +2190,8 @@ Franck.VMD
     <animation>
         <type>pick</type>
         <object-name>ALT.knob</object-name>
+        <object-name>ALT.inc</object-name>
+        <object-name>ALT.dec</object-name>
         <action>
             <button>4</button> <!--  scroll down -->
             <repeatable>false</repeatable>
@@ -2135,7 +2206,7 @@ Franck.VMD
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/counter-set-altitude-ft</property>
-                <step>-10</step>
+                <step>-100</step>
                 <min>0</min>
                 <max>50000</max>
             </binding>
@@ -2148,7 +2219,7 @@ Franck.VMD
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/counter-set-altitude-ft</property>
-                <step>-100</step>
+                <step>-1000</step>
                 <min>0</min>
                 <max>50000</max>
             </binding>
@@ -2162,6 +2233,8 @@ Franck.VMD
    <animation>
         <type>pick</type>
         <object-name>ALT.knob</object-name>
+        <object-name>ALT.inc</object-name>
+        <object-name>ALT.dec</object-name>
         <action>
             <button>3</button> <!--  scroll up -->
             <repeatable>false</repeatable>
@@ -2176,7 +2249,7 @@ Franck.VMD
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/counter-set-altitude-ft</property>
-                <step>10</step>
+                <step>100</step>
                 <min>0</min>
                 <max>50000</max>
             </binding>
@@ -2189,7 +2262,91 @@ Franck.VMD
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/counter-set-altitude-ft</property>
+                <step>1000</step>
+                <min>0</min>
+                <max>50000</max>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(5);</script>
+            </binding>
+        </action>
+    </animation>
+
+   <animation>
+        <type>pick</type>
+        <object-name>ALT.inc</object-name>
+        <object-name>ALT.dec</object-name>
+        <action>
+            <button>0</button> <!--  left button -->
+            <repeatable>true</repeatable>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <not>
+                            <property>instrumentation/afds/inputs/alt-knob</property>
+                        </not>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/counter-set-altitude-ft</property>
                 <step>100</step>
+                <min>0</min>
+                <max>50000</max>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/afds/inputs/alt-knob</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/counter-set-altitude-ft</property>
+                <step>1000</step>
+                <min>0</min>
+                <max>50000</max>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(5);</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ALT.inc</object-name>
+        <object-name>ALT.dec</object-name>
+        <action>
+            <button>1</button> <!--  center button  -->
+            <repeatable>true</repeatable>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <not>
+                            <property>instrumentation/afds/inputs/alt-knob</property>
+                        </not>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/counter-set-altitude-ft</property>
+                <step>-100</step>
+                <min>0</min>
+                <max>50000</max>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/afds/inputs/alt-knob</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/counter-set-altitude-ft</property>
+                <step>-1000</step>
                 <min>0</min>
                 <max>50000</max>
             </binding>
@@ -2420,11 +2577,16 @@ Franck.VMD
         <object-name>Pitch_Wheel.knob</object-name>
         <object-name>AP.disengage</object-name>
         <object-name>HDG.knob</object-name>
-        <object-name>BLimit.knob</object-name>
+        <object-name>BLimit.knob.001</object-name>
         <object-name>SPEED.knob</object-name>
         <object-name>ALT.knob</object-name>
         <object-name>ALTmode.knob</object-name>
+        <object-name>BLimit.knob</object-name>
         <condition>
+                <greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -2473,6 +2635,13 @@ Franck.VMD
         <object-name>AP_Lettering.002</object-name>
         <object-name>HDG.sel</object-name>
         <object-name>BLimit.knob.001</object-name>
+        <object-name>ALTmode.knob.001</object-name>
+        <condition>
+		<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
+        </condition>
         <emission>
             <red>1.0</red>
             <green>1.0</green>
