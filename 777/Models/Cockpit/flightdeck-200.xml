@@ -2030,6 +2030,10 @@ Franck.VMD
         <object-name>PanelL.wall_Top2</object-name>
         <object-name>cockpit_Windows</object-name>
         <object-name>cockpit_Windows.002</object-name>
+        <object-name>cockpit_ORIGINAL</object-name>
+        <object-name>Panel.Lwall_Cabinet</object-name>
+        <object-name>Panel.Rwall_Cabinet</object-name>
+        <object-name>cockpit.door</object-name>
         <condition>
                 <greater-than>
 			<property>controls/switches/BATTSwitchTimer/position-norm</property>
@@ -2050,10 +2054,8 @@ Franck.VMD
        <object-name>Handle_R</object-name>
        <object-name>MC_Casing</object-name>
        <object-name>Panel.Lwall_Cab_Latch2</object-name>
-       <object-name>Panel.Lwall_Cabinet</object-name>
        <object-name>Panel.Lwall_Cabinet.002</object-name>
        <object-name>Panel.Lwall_Cabinet_Bottom</object-name>
-       <object-name>Panel.Rwall_Cabinet</object-name>
        <object-name>PanelL.wall.Txt1.001</object-name>
        <object-name>PanelL.wall.Txt1.002</object-name>
        <object-name>PanelL.wall.Txt4</object-name>
@@ -2061,9 +2063,7 @@ Franck.VMD
        <object-name>Window_L_Air_Hinge2</object-name>
        <object-name>Window_L_Air_Hinge1</object-name>
        <object-name>Window_R_Air_Hinge2</object-name>
-       <object-name>Window_R_Air_Hinge1</object-name>
-       <object-name>cockpit.door</object-name>
-       <object-name>cockpit_ORIGINAL</object-name> 
+       <object-name>Window_R_Air_Hinge1</object-name> 
        <object-name>cockpit_floor</object-name>
        <object-name>Rail_R_2</object-name>
        <object-name>Rail_R_1</object-name>
