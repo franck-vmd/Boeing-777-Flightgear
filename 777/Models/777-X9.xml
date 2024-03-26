@@ -843,7 +843,10 @@ Franck.VMD
 		<object-name>BaileD</object-name>
 		<object-name>whiteflash1</object-name>
 		<property>sim/multiplay/generic/float[70]</property>
-		<factor>85</factor>
+		<interpolation>
+            <entry><ind>0</ind><dep>85</dep></entry>
+            <entry><ind>1</ind><dep>0</dep></entry>
+               </interpolation>
         <center>
             <x-m>15.4673</x-m>
             <y-m>32.0962</y-m>
@@ -862,7 +865,10 @@ Franck.VMD
                 <object-name>BaileG</object-name>
                 <object-name>whiteflash2</object-name>
 		<property>sim/multiplay/generic/float[70]</property>
-		<factor>-85</factor>
+		<interpolation>
+            <entry><ind>0</ind><dep>-85</dep></entry>
+            <entry><ind>1</ind><dep>0</dep></entry>
+               </interpolation>
         <center>
             <x-m>15.4673</x-m>
             <y-m>-32.0962</y-m>
