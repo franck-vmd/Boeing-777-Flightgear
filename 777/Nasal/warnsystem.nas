@@ -669,7 +669,7 @@ var WEU =
     {
         me.msgs_alert   = [];
         me.msgs_caution = [];
-		me.msgs_advisory = [];
+	me.msgs_advisory = [];
         me.msgs_info    = [];
 
         if (me.enabled)
@@ -684,10 +684,11 @@ var WEU =
             me.approach_config_warnings();
             me.autopilot_disc_warning();
             me.caution_messages();
-			me.update_caution_msgs();
+	    me.update_caution_msgs();
 
             if ((me.parkbrake>0.1)and((me.throttle>=0.667)or(me.radio_alt>30)))
                 append(me.msgs_alert,"CONFIG PARK BRK");
+			    
         }
 
         me.update_sounds();

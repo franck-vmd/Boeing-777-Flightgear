@@ -110,6 +110,7 @@
    <object-name>inhg01.003</object-name>
    <object-name>inhg</object-name>
    <object-name>ap.annun</object-name>
+   <object-name>app.annun</object-name>
    <object-name>vnav.annun</object-name>
    <object-name>lnav.annun</object-name>
    <object-name>FDbars</object-name>
@@ -252,6 +253,7 @@
    <object-name>inhg</object-name>
    <object-name>headingribbon</object-name>
    <object-name>ap.annun</object-name>
+   <object-name>app.annun</object-name>
    <object-name>vnav.annun</object-name>
    <object-name>lnav.annun</object-name>
    <object-name>FDbars</object-name>
@@ -359,6 +361,7 @@
    <object-name>inhg01.003</object-name>
    <object-name>inhg</object-name>
    <object-name>ap.annun</object-name>
+   <object-name>app.annun</object-name>
    <object-name>vnav.annun</object-name>
    <object-name>lnav.annun</object-name>
    <object-name>FDbars</object-name>

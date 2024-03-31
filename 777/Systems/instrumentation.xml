@@ -119,12 +119,6 @@ This file selects the instrumentation modules that should be available.
         <number>0</number>
     </radar>
 
-    <groundradar>
-        <name>groundradar</name>
-        <!--airport-id-source>instrumentation/groundradar/id</airport-id-source-->
-        <range-source>instrumentation/groundradar/range</range-source>
-    </groundradar>
-
     <mk-viii>
         <name>mk-viii</name>
         <number>0</number>

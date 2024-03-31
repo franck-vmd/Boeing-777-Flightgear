@@ -847,6 +847,21 @@ var efb = {
                 setProp("instrumentation/efb/page", "MENU");
                 keypress = "";
             }
+            if (keypress == "ScrollDN") { 
+                setProp("sim/model/efb/page", "Displays/Video_Cabin.jpg");
+                setProp("instrumentation/efb/page", "VIDEO");
+                keypress = "";
+            }
+            if (keypress == "Move_L") { 
+                setProp("sim/model/efb/page", "Displays/Video_ElectronicsBay.jpg");
+                setProp("instrumentation/efb/page", "VIDEO");
+                keypress = "";
+            }
+            if (keypress == "Move_R") { 
+                setProp("sim/model/efb/page", "Displays/Video_1.jpg");
+                setProp("instrumentation/efb/page", "VIDEO");
+                keypress = "";
+            }
         #__________________________________________________________________________________________
         # DOCUMENTS SECTION Parser ----------------------------------------------------------------|
         #__________________________________________________________________________________________|

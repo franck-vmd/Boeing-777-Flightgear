@@ -10,7 +10,7 @@ Non Rembrandt
 
 No Rembrandt
 
-![Image](https://i.ibb.co/0BNmYpZ/cdu772.png)
+![Image](https://i.ibb.co/41Z10xR/cdu772.jpg)
 
 Français :
 
@@ -21,7 +21,7 @@ Principalement écrit dans le langage de programmation C++ , FlightGear est , to
 
 Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , X9 
 
-![Image](https://i.ibb.co/k8q7KqK/debut-video-777.png)
+![Image](https://i.ibb.co/6DBQQ2r/debut-video-777.jpg)
 ----------------------------------------------------------------------------------
 
 Portes 777-séries 200: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture jusqu'à 35 knots
@@ -52,34 +52,34 @@ Alarme Toutes les portes confondus " CAUTION ", visuel sur le MFD et écriture s
 
 Pilots : Pas de condition
 
-![Image](https://i.ibb.co/HTY0FZ8/doors.png)
+![Image](https://i.ibb.co/pxNKQvj/doors.jpg)
 
 
 Éclairage Cockpite : sur OHpanel Bouton BATTERY, Bouton à tourner Master BRIGHT pour les instruments, Bouton STORM et tourner Bouton DOME pour éclairage intérieur Cockpite .
 
 De nuit Bouton a tourné OVHD et CB ainsi que GLARSHIELD et PNL/FLOOD
 
-![Image](https://i.ibb.co/bmHbNDD/bouton.png)
+![Image](https://i.ibb.co/85j4v7y/bouton.jpg)
 
 Ground :
 
-![Image](https://i.ibb.co/MV61zKw/ground.png)
+![Image](https://i.ibb.co/fGKTLsD/ground.jpg)
 
 Pushback :
 
-![Image](https://i.ibb.co/Z8tHpSp/pushback.png)
+![Image](https://i.ibb.co/nr8qXWJ/pushback.jpg)
 
 Gui :
 
-![Image](https://i.ibb.co/FVvymZ6/Gui.png)
+![Image](https://i.ibb.co/GRTd7nV/Gui.jpg)
 
 USAF :
 
-![Image](https://i.ibb.co/vvjT2Nc/usaf.png)
+![Image](https://i.ibb.co/RBP6jpc/usaf.jpg)
 
 HUD :
 
-![Image](https://i.ibb.co/Jvwzzn0/HUD777.png)
+![Image](https://i.ibb.co/pdhgrmV/HUD777.jpg)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -102,7 +102,7 @@ FlightGear Flight Simulator, often abbreviated FlightGear or FGFS is a free, ope
 
 Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , X9 
 
-![Image](https://i.ibb.co/nCtw9ty/X9.png)
+![Image](https://i.ibb.co/D7Z7dXV/X9.jpg)
 -------------------------------------------------------------------------------
 
 777-series 200 doors: L1, L2, L3, L4, R1, R2, R3, R4, opening and closing up to 35 knots
@@ -133,34 +133,34 @@ Alarm All doors combined “CAUTION”, visual on the MFD and on the EICAS
 
 Pilots: No conditions
 
-![Image](https://i.ibb.co/P5Y29H9/doors2.png)
+![Image](https://i.ibb.co/3NcgP69/doors2.jpg)
 
 
 Cockpit lighting: on OH panel BATTERY button, Master BRIGHT knob for instruments, STORM button and DOME knob for Cockpit interior lighting.
 
 At night OVHD knob and CB knob as well as GLARESHIELD and PNL/FLOOD
 
-![Image](https://i.ibb.co/bmHbNDD/bouton.png)
+![Image](https://i.ibb.co/85j4v7y/bouton.jpg)
 
 Ground :
 
-![Image](https://i.ibb.co/vh5vwBm/ground2.png)
+![Image](https://i.ibb.co/5kJWnZw/ground2.jpg)
 
 Pushback :
 
-![Image](https://i.ibb.co/CzfWSY2/pushback2.png)
+![Image](https://i.ibb.co/fvYZYqn/pushback2.jpg)
 
 Gui :
 
-![Image](https://i.ibb.co/QYdpzrm/gui-2.png)
+![Image](https://i.ibb.co/KGRBKkF/gui-2.jpg)
 
 USAF :
 
-[![FlightGear Boeing 777-US AIR FORCE](https://i.ibb.co/80pzVxF/Flight-Gear-Boeing-777-US-AIR-FORCE.png)](https://www.youtube.com/watch?v=aHSQxtGoFQQ "FlightGear Boeing 777-US AIR FORCE")
+[![FlightGear Boeing 777-US AIR FORCE](https://i.ibb.co/Y450fX9/Flight-Gear-Boeing-777-US-AIR-FORCE.jpg)](https://www.youtube.com/watch?v=aHSQxtGoFQQ "FlightGear Boeing 777-US AIR FORCE")
 
 HUD :
 
-![Image](https://i.ibb.co/Jvwzzn0/HUD777.png)
+![Image](https://i.ibb.co/pdhgrmV/HUD777.jpg)
 
 
 
@@ -177,4 +177,4 @@ Make sure you have 4 GB available on your hard drive
 
 ---------------------------------------------------------------------------------------------
 
-[![FlightGear 777-X9 LFQQ / LFPG](https://i.ibb.co/WfSSCzg/777-X9youtube.png)](https://www.youtube.com/watch?v=H_WArHTCnDc "FlightGear 777-X9 LFQQ / LFPG")
+[![FlightGear 777-X9 LFQQ / LFPG](https://i.ibb.co/HxpPs41/777-X9youtube.jpg)](https://www.youtube.com/watch?v=H_WArHTCnDc "FlightGear 777-X9 LFQQ / LFPG")

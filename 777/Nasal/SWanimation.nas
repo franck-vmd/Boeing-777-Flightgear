@@ -31,6 +31,7 @@ var RENGST = aircraft.door.new("controls/switches/RENGSwitchTimer", duration);
 var C1ELECST = aircraft.door.new("controls/switches/C1ELECSwitchTimer", duration);
 var C2ELECST = aircraft.door.new("controls/switches/C2ELECSwitchTimer", duration);
 var JTSNARMST = aircraft.door.new("controls/switches/JTSNARMSwitchTimer", duration);
+var JTSNMANST = aircraft.door.new("controls/switches/JTSNMANSwitchTimer", duration);
 var NOZZLELST = aircraft.door.new("controls/switches/NOZZLELSwitchTimer", duration);
 var NOZZLERST = aircraft.door.new("controls/switches/NOZZLERSwitchTimer", duration);
 var WHLSST = aircraft.door.new("controls/switches/WHLSSwitchTimer", duration);
