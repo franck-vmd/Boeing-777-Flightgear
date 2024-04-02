@@ -883,7 +883,7 @@ var efb = {
                     keypress = "";
                 }
                 elsif (keypress == "r4") { 
-                    setProp("sim/model/efb/page", "Displays/ILS_1.jpg");
+                    setProp("sim/model/efb/page", "Displays/ILS_0.jpg");
                     setProp("instrumentation/efb/page", "ILS");
                     keypress = "";
                 }
@@ -955,51 +955,56 @@ var efb = {
                 keypress = "";
             }
             if (keypress == "l1") { 
-                setProp("sim/model/efb/page", "Displays/ILS_2.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_1.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "l2") { 
-                setProp("sim/model/efb/page", "Displays/ILS_3.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_2.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "l3") { 
-                setProp("sim/model/efb/page", "Displays/ILS_4.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_3.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "l4") { 
-                setProp("sim/model/efb/page", "Displays/ILS_5.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_4.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "l5") { 
-                setProp("sim/model/efb/page", "Displays/ILS_6.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_5.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "l6") { 
-                setProp("sim/model/efb/page", "Displays/ILS_7.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_6.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "l7") { 
-                setProp("sim/model/efb/page", "Displays/ILS_8.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_7.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "l8") { 
-                setProp("sim/model/efb/page", "Displays/ILS_9.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_8.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "r1") { 
-                setProp("sim/model/efb/page", "Displays/ILS_10.jpg");
+                setProp("sim/model/efb/page", "Displays/ILS_9.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
             }
             if (keypress == "r2") { 
+                setProp("sim/model/efb/page", "Displays/ILS_10.jpg");
+                setProp("instrumentation/efb/page", "ILS");
+                keypress = "";
+            }
+            if (keypress == "r3") { 
                 setProp("sim/model/efb/page", "Displays/ILS_11.jpg");
                 setProp("instrumentation/efb/page", "ILS");
                 keypress = "";
