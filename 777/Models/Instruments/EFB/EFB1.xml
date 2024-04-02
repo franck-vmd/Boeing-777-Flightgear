@@ -437,6 +437,10 @@
 				</equals>
 				<equals>
 					<property>/instrumentation/efb/page</property>
+					<value>ILS</value>
+				</equals>
+				<equals>
+					<property>/instrumentation/efb/page</property>
 					<value>PERFORMANCE</value>
 				</equals>
 				<equals>
