@@ -1,4 +1,4 @@
-<!-- 777-200KC
+<!-- 777-200
 Franck.VMD
 -->
 
@@ -129,7 +129,7 @@ Franck.VMD
      <!-- instrument-->
     <model>
         <name>panel1</name>
-        <path>Aircraft/777/Models/Cockpit/panelKC.xml</path>
+        <path>Aircraft/777/Models/Cockpit/panel.xml</path>
     </model>
 
     <model>
@@ -207,7 +207,7 @@ Franck.VMD
 
     <model>
         <name>Pedestal</name>
-        <path>Aircraft/777/Models/Cockpit/pedestal-F.xml</path>
+        <path>Aircraft/777/Models/Cockpit/pedestal.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -2158,9 +2158,7 @@ Franck.VMD
             <blue>1.0</blue>
             <factor-prop>controls/lighting/dome-intencity</factor-prop>
         </emission>
-    </animation>
-
-   
+    </animation> 
 
     <!--animation>
         <type>pick</type>

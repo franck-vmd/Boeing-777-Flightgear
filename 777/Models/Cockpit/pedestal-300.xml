@@ -96,7 +96,7 @@ Franck.VMD
 
    <model>
         <name>MFD</name>
-        <path>Aircraft/777/Models/InstrumentsX/MFD-X9/MFD1.xml</path>
+        <path>Aircraft/777/Models/Instruments/MFD-300/MFD1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
@@ -107,23 +107,13 @@ Franck.VMD
 
     <model>
         <name>CDU1</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.681</x-m>
             <y-m>-0.184</y-m>
             <z-m>0.143</z-m>
             <pitch-deg>-56.59</pitch-deg>
         </offsets>
-        <overlay>
-            <texture>boeing_brown.png</texture>
-            <material>
-                <emission>
-                    <red>0.1</red>
-                    <green>0.1</green>
-                    <blue>0.1</blue>
-                </emission>
-            </material>
-        </overlay>
     </model>
 
     <animation>
@@ -141,44 +131,24 @@ Franck.VMD
 
     <model>
         <name>CDU1</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing1.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
             <z-m>0.0</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
-        <overlay>
-            <texture>boeing_brown.png</texture>
-            <material>
-                <emission>
-                    <red>0.1</red>
-                    <green>0.1</green>
-                    <blue>0.1</blue>
-                </emission>
-            </material>
-        </overlay>
     </model>
 
     <model>
         <name>CDU2</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.681</x-m>
             <y-m>0.185</y-m>
             <z-m>0.143</z-m>
             <pitch-deg>-56.59</pitch-deg>
         </offsets>
-        <overlay>
-            <texture>boeing_brown.png</texture>
-            <material>
-                <emission>
-                    <red>0.1</red>
-                    <green>0.1</green>
-                    <blue>0.1</blue>
-                </emission>
-            </material>
-        </overlay>
     </model>
 
     <animation>
@@ -196,44 +166,24 @@ Franck.VMD
 
     <model>
         <name>CDU2</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing2.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing2.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
             <z-m>0.0</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
-        <overlay>
-            <texture>boeing_brown.png</texture>
-            <material>
-                <emission>
-                    <red>0.1</red>
-                    <green>0.1</green>
-                    <blue>0.1</blue>
-                </emission>
-            </material>
-        </overlay>
     </model>
 
     <model>
         <name>CDU3</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing.xml</path>
         <offsets>
             <x-m>-1.077</x-m>
             <y-m>-0.000299</y-m>
             <z-m>0.016</z-m>
             <pitch-deg>-88.4</pitch-deg>
         </offsets>
-        <overlay>
-            <texture>boeing_brown.png</texture>
-            <material>
-                <emission>
-                    <red>0.1</red>
-                    <green>0.1</green>
-                    <blue>0.1</blue>
-                </emission>
-            </material>
-        </overlay>
     </model>
 
     <animation>
@@ -251,38 +201,18 @@ Franck.VMD
 
    <model>
         <name>CDU3</name>
-        <path>Aircraft/777/Models/InstrumentsX/CDU/boeing3.xml</path>
+        <path>Aircraft/777/Models/Instruments/CDU/boeing3.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
             <z-m>0.0</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
-        <overlay>
-            <texture>boeing_brown.png</texture>
-            <material>
-                <emission>
-                    <red>0.1</red>
-                    <green>0.1</green>
-                    <blue>0.1</blue>
-                </emission>
-            </material>
-        </overlay>
-    </model>
-
-    <model>
-        <name>RadioL1</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioL1.xml</path>
-        <offsets>
-            <x-m>0.0</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.0</z-m>
-        </offsets>
     </model>
 
    <model>
         <name>RadioL</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioL.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioL.xml</path>
         <offsets>
             <x-m>-1.25914</x-m>
             <y-m>-0.13209</y-m>
@@ -291,18 +221,8 @@ Franck.VMD
     </model>
 
     <model>
-        <name>RadioR1</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioR1.xml</path>
-        <offsets>
-            <x-m>0.0</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.0</z-m>
-        </offsets>
-    </model>
-
-    <model>
         <name>RadioR</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioR.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioR.xml</path>
         <offsets>
             <x-m>-1.25914</x-m>
             <y-m>0.14420</y-m>
@@ -311,18 +231,8 @@ Franck.VMD
     </model>
 
     <model>
-        <name>RadioC1</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioC1.xml</path>
-        <offsets>
-            <x-m>0.0</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.0</z-m>
-        </offsets>
-    </model>
-
-    <model>
         <name>RadioC</name>
-        <path>Aircraft/777/Models/InstrumentsX/radioC.xml</path>
+        <path>Aircraft/777/Models/Instruments/radioC.xml</path>
         <offsets>
             <x-m>-1.04656</x-m>
             <y-m>-0.13209</y-m>
@@ -331,24 +241,12 @@ Franck.VMD
     </model>
 
     <model>
-        <name>tcas-ctl1</name>
-        <path>Aircraft/777/Models/InstrumentsX/tcas-ctl1.xml</path>
-        <pitch-deg>1.70</pitch-deg>
+        <name>tcas-ctl</name>
+        <path>Aircraft/777/Models/Instruments/tcas-ctl.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
             <z-m>0.0</z-m>
-        </offsets>
-    </model>
-
-    <model>
-        <name>tcas-ctl</name>
-        <path>Aircraft/777/Models/InstrumentsX/tcas-ctl.xml</path>
-        <pitch-deg>1.70</pitch-deg>
-        <offsets>
-            <x-m>-1.11579</x-m>
-            <y-m>0.13795</y-m>
-            <z-m>0.0172</z-m>
         </offsets>
     </model>
 
