@@ -398,10 +398,10 @@ var WEU =
 			    append(me.msgs_caution,">GEAR DOOR");
 			    
 		 if (getprop("/aaa/door-positions/c51/position-norm")==0)
-			    append(me.msgs_caution,">WING L-R");	    
+			    append(me.msgs_caution,">WINGTIPS-FOLD");	    
 			    
 	         if (getprop("/aaa/door-positions/c51/position-norm")==1)
-			    append(me.msgs_info,">WING L-R");
+			    append(me.msgs_info,">WINGTIPS-EXTEND");
 
                  if (getprop("/aaa/door-positions/c12/position-norm")==1 or getprop("/aaa/door-positions/c13/position-norm")==1)
 			    append(me.msgs_caution,">RADAR DOOR");

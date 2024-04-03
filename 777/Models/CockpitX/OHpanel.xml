@@ -101,7 +101,7 @@ Franck.VMD
         <object-name>LENG_Ice.knob.001</object-name>
         <object-name>LWiper.knob.001</object-name>
         <object-name>MSTRBright.knob.001</object-name>
-        <object-name>NoSmoking.knob.001</object-name>
+        <object-name>WingTips.knob.001</object-name>
         <object-name>RELEC.knob.001</object-name>
         <object-name>RENG_Ice.knob.001</object-name>
         <object-name>RWiper.knob.001</object-name>
@@ -2515,17 +2515,17 @@ Franck.VMD
 
     <animation>
         <type>rotate</type>
-        <object-name>NoSmoking.knob</object-name>
-        <object-name>NoSmoking.knob.001</object-name>
-        <property>controls/cabin/NoSmoking-knob</property>
-        <factor>45</factor>
+        <object-name>WingTips.knob</object-name>
+        <object-name>WingTips.knob.001</object-name>
+        <property>sim/multiplay/generic/float[70]</property>
+        <factor>-90</factor>
         <center>
             <x-m>0.02052</x-m>
-            <y-m>-0.14684</y-m>
+            <y-m>-0.07306</y-m>
             <z-m>-0.39589</z-m>
         </center>
         <axis>
-            <x>-1</x>
+            <x>1</x>
             <y>0</y>
             <z>0</z>
         </axis>
@@ -2539,7 +2539,7 @@ Franck.VMD
         <factor>45</factor>
         <center>
             <x-m>0.02052</x-m>
-            <y-m>-0.08842</y-m>
+            <y-m>-0.12061</y-m>
             <z-m>-0.39589</z-m>
         </center>
         <axis>
@@ -6124,47 +6124,19 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
-        <object-name>NoSmoking.knob</object-name>
+        <object-name>WingTips.knob</object-name>
         <action>
             <button>0</button>
-            <button>3</button>
             <repeatable>false</repeatable>
             <binding>
-                <command>property-adjust</command>
-                <property>controls/cabin/NoSmoking-knob</property>
-                <step>1</step>
-                <min>-1</min>
-                <max>1</max>
-                <wrap>0</wrap>
-            </binding>
+	       <command>nasal</command>
+	       <script>
+	       b777.doors.toggle("c51");
+	       </script>
+	    </binding>
             <binding>
                 <command>nasal</command>
-                <script>
-                controls.click(2);
-            </script>
-            </binding>
-        </action>
-    </animation>
-    <animation>
-        <type>pick</type>
-        <object-name>NoSmoking.knob</object-name>
-        <action>
-            <button>1</button>
-            <button>4</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/cabin/NoSmoking-knob</property>
-                <step>-1</step>
-                <min>-1</min>
-                <max>1</max>
-                <wrap>0</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                controls.click(2);
-            </script>
+                <script>controls.click(1);</script>
             </binding>
         </action>
     </animation>
@@ -7161,7 +7133,7 @@ Franck.VMD
         <object-name>WING_Ice.knob</object-name>
         <object-name>Black_Mic</object-name>
         <object-name>SeatBelt.knob</object-name>
-        <object-name>NoSmoking.knob</object-name>
+        <object-name>WingTips.knob</object-name>
         <object-name>LWiper.knob</object-name>
         <object-name>L-Lnd.toggle</object-name>
         <object-name>C-Lnd.toggle</object-name>

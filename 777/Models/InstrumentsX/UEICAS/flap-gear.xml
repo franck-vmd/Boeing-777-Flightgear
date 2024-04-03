@@ -39,6 +39,18 @@ Syd Adams
             </equals>
         </condition>
     </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>WingTips-FOLD</object-name>
+                <property>sim/multiplay/generic/float[70]</property>
+                <factor>0.05</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
     <animation>
         <type>textranslate</type>
