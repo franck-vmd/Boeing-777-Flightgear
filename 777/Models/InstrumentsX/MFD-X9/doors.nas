@@ -87,7 +87,7 @@ var Pipe = {
             me.engr2();
             me.engr3();
             me.engr4();
-            me.winglr(0);
+            me.winglr();
         },
             radar : func() {
             var pipe = Pipe.new(me.group.getElementById("rad"));
