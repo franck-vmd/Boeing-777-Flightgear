@@ -1,9 +1,9 @@
 AC3Db
-MATERIAL "greenglow.006" rgb 0.800 0.800 0.800  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Material.007" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 64 trans 0.000
-MATERIAL "Material.008" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 64 trans 0.000
-MATERIAL "Flatglow.knob.005" rgb 1.000 0.765 0.670  amb 0.700 0.700 0.700  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Flatglow.knob.006" rgb 1.000 0.765 0.670  amb 0.700 0.700 0.700  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "greenglow.006" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.522 0.522 0.522  shi 32 trans 0.000
+MATERIAL "Material.007" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.523 0.523 0.523  shi 32 trans 0.000
+MATERIAL "Material.008" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.523 0.523 0.523  shi 32 trans 0.000
+MATERIAL "Flatglow.knob.005" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.522 0.522 0.522  shi 32 trans 0.000
+MATERIAL "Flatglow.knob.006" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.522 0.522 0.522  shi 32 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__radioC.ac"
 kids 8
