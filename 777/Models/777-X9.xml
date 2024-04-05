@@ -5027,9 +5027,9 @@ Franck.VMD
 			<entry><ind>0</ind><dep>0</dep></entry>
                         <entry><ind>0.5</ind><dep>0</dep></entry>
                         <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-15</dep></entry>
-                        <entry><ind>0.50</ind><dep>-15</dep></entry>
-			<entry><ind>1</ind><dep>-15</dep></entry>
+			<entry><ind>0.25</ind><dep>15</dep></entry>
+                        <entry><ind>0.50</ind><dep>15</dep></entry>
+			<entry><ind>1</ind><dep>15</dep></entry>
 		</interpolation>
             <axis>
         <x1-m>11.3983</x1-m>
