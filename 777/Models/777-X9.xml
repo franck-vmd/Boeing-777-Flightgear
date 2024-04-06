@@ -757,6 +757,28 @@ Franck.VMD
       <z-m>0</z-m>
     </offsets>
   </model>
+  
+  <model>
+    <name>Passenger Seating3</name>
+    <path>Aircraft/777/Models/Seating/siege strapontin 777X9.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+  
+  <!-- WC -->
+  
+  <model>
+    <name>Passenger Seating3</name>
+    <path>Aircraft/777/Models/Seating/wc777X9.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
 
     <!-- Pilote -->
   <model>
