@@ -13,6 +13,7 @@
 		<object-name>tablette1G</object-name>
 		<object-name>tablette2G</object-name>
 		<object-name>tablette3G</object-name>
+		<object-name>siegespremiere1lumiere</object-name>
 		<texture>chambreensemble.png</texture>
 	</animation>
 
@@ -37,6 +38,27 @@
        <inherits-from>Effects/model-transparent</inherits-from>
        <object-name>siegespremiere2</object-name>
       </effect>
+      
+      <animation>
+        <type>material</type>
+        <object-name>siegespremiere1lumiere</object-name>
+        <condition>
+            <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+            </greater-than>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.0</blue>
+            <factor-prop>controls/lighting/overhead-intencity</factor-prop>
+        </emission>
+    </animation>
       
       <animation>
 		<name>c22 Door z-translate</name>

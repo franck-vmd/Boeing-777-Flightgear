@@ -9,10 +9,31 @@
 		<texture>texture_sieges2.png</texture>
 	</animation>
 
-        <effect>
+               <effect>
          <inherits-from>Aircraft/777/Models/Effects/reflect20</inherits-from>
                          <object-name>Sieges777200</object-name>
                </effect>
+               
+               <animation>
+        <type>material</type>
+        <object-name>Sieges777X9lumiere</object-name>
+        <condition>
+            <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+            </greater-than>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.0</red>
+            <green>0.8</green>
+            <blue>0.0</blue>
+            <factor-prop>controls/lighting/overhead-intencity</factor-prop>
+        </emission>
+    </animation>
 
   
  
