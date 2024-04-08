@@ -121,7 +121,6 @@
     <!-- cuvette -->
 
     <animation>
-        <name>c44</name>
         <type>rotate</type>
         <object-name>cuvette</object-name>
         <property>sim/multiplay/generic/float[68]</property>
@@ -139,7 +138,6 @@
     </animation>
     
     <animation>
-        <name>c44</name>
         <type>rotate</type>
         <object-name>cuvette1</object-name>
         <property>sim/multiplay/generic/float[68]</property>
@@ -157,7 +155,6 @@
     </animation>
     
     <animation>
-        <name>c44</name>
         <type>rotate</type>
         <object-name>cuvette2</object-name>
         <property>sim/multiplay/generic/float[68]</property>
@@ -177,7 +174,6 @@
     <!-- robinet -->
     
     <animation>
-        <name>c43</name>
         <type>rotate</type>
         <object-name>robinet</object-name>
         <property>sim/multiplay/generic/float[67]</property>
@@ -195,7 +191,6 @@
     </animation>
     
     <animation>
-        <name>c43</name>
         <type>rotate</type>
         <object-name>robinet1</object-name>
         <property>sim/multiplay/generic/float[67]</property>
@@ -213,7 +208,6 @@
     </animation>
     
     <animation>
-        <name>c43</name>
         <type>rotate</type>
         <object-name>robinet2</object-name>
         <property>sim/multiplay/generic/float[67]</property>
@@ -225,7 +219,7 @@
         </center>
         <axis>
             <x>0.0</x>
-            <y>-1.0</y>
+            <y>1.0</y>
             <z>0.0</z>
         </axis>
     </animation>
