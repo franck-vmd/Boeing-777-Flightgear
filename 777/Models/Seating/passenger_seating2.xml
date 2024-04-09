@@ -7,6 +7,7 @@
         <animation>
 		<type>material</type>
 		<object-name>siegespremiere1</object-name>
+		<object-name>siegespremiere1.001</object-name>
 		<object-name>tablette1D</object-name>
 		<object-name>tablette2D</object-name>
 		<object-name>tablette3D</object-name>
@@ -26,6 +27,7 @@
        <effect>
          <inherits-from>Aircraft/777/Models/Effects/reflect20</inherits-from>
                          <object-name>siegespremiere1</object-name>
+                         <object-name>siegespremiere1.001</object-name>
                          <object-name>tablette1D</object-name>
 		         <object-name>tablette2D</object-name>
 		         <object-name>tablette3D</object-name>

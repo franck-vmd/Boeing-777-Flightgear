@@ -499,6 +499,34 @@
                 <property type="string">/sim/multiplay/generic/float[75]</property>
             </signal>
             <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[76]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[77]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[78]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[79]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[80]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[81]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[82]</property>
+            </signal>
+            <signal>
                <type>bool</type>
 					<property>sim/sound/welcome</property>
 				</signal>

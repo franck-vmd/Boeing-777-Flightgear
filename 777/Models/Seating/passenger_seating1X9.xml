@@ -11,7 +11,7 @@
 
                <effect>
          <inherits-from>Aircraft/777/Models/Effects/reflect20</inherits-from>
-                         <object-name>Sieges777200</object-name>
+                         <object-name>Sieges777X9</object-name>
                </effect>
                
                <animation>

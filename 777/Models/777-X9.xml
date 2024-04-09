@@ -565,13 +565,6 @@ Franck.VMD
         <object-name>entry2lP</object-name>
         <object-name>entry2lPE</object-name>
         <object-name>entry2lC2</object-name>
-        <object-name>entry3l</object-name>
-        <object-name>entry3l2</object-name>
-        <object-name>entry3lA</object-name>
-        <object-name>entry3lC</object-name>
-        <object-name>entry3lP</object-name>
-        <object-name>entry3lPE</object-name>
-        <object-name>entry3lC2</object-name>
         <object-name>entry4l</object-name>
         <object-name>entry4l2</object-name>
         <object-name>entry4lA</object-name>
@@ -600,13 +593,6 @@ Franck.VMD
         <object-name>entry2rP</object-name>
         <object-name>entry2rPE</object-name>
         <object-name>entry2rC2</object-name>
-        <object-name>entry3r</object-name>
-        <object-name>entry3r2</object-name>
-        <object-name>entry3rA</object-name>
-        <object-name>entry3rC</object-name>
-        <object-name>entry3rP</object-name>
-        <object-name>entry3rPE</object-name>
-        <object-name>entry3rC2</object-name>
         <object-name>entry4r</object-name>
         <object-name>entry4r2</object-name>
         <object-name>entry4rA</object-name>
@@ -621,6 +607,24 @@ Franck.VMD
         <object-name>entry5rP</object-name>
         <object-name>entry5rPE</object-name>
         <object-name>entry5rC2</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect37</inherits-from>
+        <object-name>entry3l</object-name>
+        <object-name>entry3l2</object-name>
+        <object-name>entry3lA</object-name>
+        <object-name>entry3lC</object-name>
+        <object-name>entry3lP</object-name>
+        <object-name>entry3lPE</object-name>
+        <object-name>entry3lC2</object-name>
+        <object-name>entry3r</object-name>
+        <object-name>entry3r2</object-name>
+        <object-name>entry3rA</object-name>
+        <object-name>entry3rC</object-name>
+        <object-name>entry3rP</object-name>
+        <object-name>entry3rPE</object-name>
+        <object-name>entry3rC2</object-name>
     </effect>
     
     <effect>
@@ -687,6 +691,11 @@ Franck.VMD
         <object-name>galleycart</object-name>
         <object-name>cafetiere1</object-name>
         <object-name>window mix interieur</object-name>
+        <object-name>bar</object-name>
+        <object-name>coca</object-name>
+        <object-name>fanta</object-name>
+        <object-name>sprite</object-name>
+        <object-name>bouteilleN</object-name>
     </effect>
     
     <effect>
