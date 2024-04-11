@@ -81,10 +81,6 @@ HUD :
 
 ![Image](https://i.ibb.co/pdhgrmV/HUD777.jpg)
 
-Intérieur :
-
-![Image](https://i.ibb.co/mSbTmQt/interieur.jpg)
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Téléchargement : Bouton "Code" de couleur vert , "Download Zip" en bas 
@@ -165,10 +161,6 @@ USAF :
 HUD :
 
 ![Image](https://i.ibb.co/pdhgrmV/HUD777.jpg)
-
-Interior :
-
-![Image](https://i.ibb.co/F6jrQnW/interior.jpg)
 
 
 
