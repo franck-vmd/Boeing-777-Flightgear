@@ -395,6 +395,7 @@ Franck.VMD
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>Fuselage.004</object-name>
+        <object-name>window mix exterieur</object-name>
       </effect>
       
       <effect>
@@ -3695,7 +3696,18 @@ Franck.VMD
         </condition>
 	</animation>
 
-   <!-- Portes Animations -->	
+   <!-- Portes Animations -->
+   
+   <animation>
+    <type>select</type>
+    <object-name>lumiere auto porte eteint</object-name>
+    <condition>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
+        </condition>
+  </animation>	
 
 <!-- Door1l Animations -->
 
