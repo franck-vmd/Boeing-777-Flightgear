@@ -93,6 +93,10 @@ Interieur-777-F :
 
 ![Image](https://i.ibb.co/gMwP5Zr/interieur-777-F.jpg)
 
+WingTips :
+
+![Image](https://i.ibb.co/pwKL1tT/WingTips.jpg)
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Téléchargement : Bouton "Code" de couleur vert , "Download Zip" en bas 
@@ -185,6 +189,10 @@ oxygen mask :
 Interior-777-F :
 
 ![Image](https://i.ibb.co/XJFQ9tx/interior-777-F.jpg)
+
+WingTips :
+
+![Image](https://i.ibb.co/pwKL1tT/WingTips.jpg)
 
 
 
