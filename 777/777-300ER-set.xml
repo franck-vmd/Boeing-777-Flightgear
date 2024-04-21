@@ -20,15 +20,15 @@
 			</livery>
 			<livery-dir type="string">Aircraft/777/Models/Liveries-300ER</livery-dir>
             <door>
-                <position-x-m type="float">-23.85</position-x-m>
-                <position-y-m type="float"> -2.95</position-y-m>
-                <position-z-m type="float"> -0.55</position-z-m>
+                <position-x-m type="float">-23.7852</position-x-m>
+                <position-y-m type="float">-2.95</position-y-m>
+                <position-z-m type="float">-0.42</position-z-m>
                 <jetway-hood-deg type="float">3</jetway-hood-deg>
             </door>
             <door>
                 <position-x-m type="float">-13.49</position-x-m>
-                <position-y-m type="float"> -2.95</position-y-m>
-                <position-z-m type="float"> -0.55</position-z-m>
+                <position-y-m type="float">-2.95</position-y-m>
+                <position-z-m type="float">-0.42</position-z-m>
                 <jetway-hood-deg type="float">3</jetway-hood-deg>
             </door>
             <ramp>

@@ -589,6 +589,11 @@ Franck.VMD
         <object-name>Yoke_R_TrimR.Switch</object-name>
         <object-name>SpotLight_FO.001</object-name>
     </effect>
+    
+    <effect>
+         <inherits-from>Aircraft/777/Models/Effects/reflect20</inherits-from>
+        <object-name>cockpit.door.001</object-name>
+    </effect>
 
 <!-- Hide interior glass when in exterior view unless raining-->
     <animation>
@@ -1455,6 +1460,7 @@ Franck.VMD
 		<name>c14</name>
 		<type>rotate</type>
 		<object-name>cockpit.door</object-name>
+		<object-name>cockpit.door.001</object-name>
 		<property>sim/multiplay/generic/float[31]</property>
 		<factor>90</factor>
         <center>
@@ -1472,6 +1478,7 @@ Franck.VMD
     <animation>
 		<type>pick</type>
 		<object-name>cockpit.door</object-name>
+		<object-name>cockpit.door.001</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
