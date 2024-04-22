@@ -694,7 +694,7 @@ Franck.VMD
   
   <model>
     <name>Passenger Seating3</name>
-    <path>Aircraft/777/Models/Seating/wc777_20059.xml</path>
+    <path>Aircraft/777/Models/Seating/wc777-200.xml</path>
     <offsets>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -2975,7 +2975,7 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[36]</property>
 		<factor>90</factor>
         <center>
-            <x-m>-6.94271</x-m>
+            <x-m>-6.31618</x-m>
             <y-m>-0.384104</y-m>
             <z-m>0.44339</z-m>
         </center>
