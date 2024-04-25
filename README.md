@@ -28,6 +28,8 @@ Portes 777-séries 200: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture j
 
 Portes 777-séries 300: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fermeture jusqu'à 35 knots
 
+Portes X8: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture jusqu'à 35 knots
+
 Portes X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fermeture jusqu'à 35 knots
 
 Portes F et KFC: L1, L2, R1, R2, ouverture et fermeture jusqu'à 35 knots
@@ -93,7 +95,7 @@ Interieur-777-F :
 
 ![Image](https://i.ibb.co/gMwP5Zr/interieur-777-F.jpg)
 
-WingTips :
+WingTips X8 ,X9:
 
 ![Image](https://i.ibb.co/pwKL1tT/WingTips.jpg)
 
@@ -124,6 +126,8 @@ Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-
 777-series 200 doors: L1, L2, L3, L4, R1, R2, R3, R4, opening and closing up to 35 knots
 
 777-series 300 doors: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, opening and closing up to 35 knots
+
+Doors X8: L1, L2, L3, L4, R1, R2, R3, R4,  opening and closing up to 35 knots
 
 Doors X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, opening and closing up to 35 knots
 
@@ -190,7 +194,7 @@ Interior-777-F :
 
 ![Image](https://i.ibb.co/XJFQ9tx/interior-777-F.jpg)
 
-WingTips :
+WingTips X8 ,X9:
 
 ![Image](https://i.ibb.co/pwKL1tT/WingTips.jpg)
 
