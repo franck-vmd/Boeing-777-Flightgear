@@ -11,12 +11,12 @@
 
                <effect>
          <inherits-from>Aircraft/777/Models/Effects/reflect20</inherits-from>
-                         <object-name>Sieges777X9</object-name>
+                         <object-name>Sieges777X8</object-name>
                </effect>
                
                <animation>
         <type>material</type>
-        <object-name>Sieges777X9lumiere</object-name>
+        <object-name>Sieges777X8lumiere</object-name>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>

@@ -587,6 +587,10 @@ Franck.VMD
         <object-name>Wingslumiered</object-name>
         <object-name>Run.spotR</object-name>
         <object-name>Run.spotL</object-name>
+        <object-name>sortiewclumiere</object-name>
+        <object-name>LHLND.spot</object-name>
+        <object-name>RHLND.spot</object-name>
+        <object-name>CTRLND.spot</object-name>
     </effect>
     
     <effect>
