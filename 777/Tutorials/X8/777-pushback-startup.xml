@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
+
+<PropertyList>
+
+	<name>Checklist: Pushback/Startup</name>
+	<description>
+You've prepared your cockpit. Now it's time to start the engines and leave the parking position.
+
+Are you ready to take controls?
+	</description>
+
+	<audio-dir>Aircraft/777/Tutorials</audio-dir>
+
+	<init>
+		<set>
+			<property>controls/electric/battery-switch</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/flight/flaps</property>
+			<value>0.0</value>
+		</set>
+		<set>
+			<property>controls/APU/off-start-run</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/APU/apu_status</property>
+			<value>3</value>
+		</set>
+		<set>
+			<property>controls/electric/APU-generator</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/electric/engine[0]/bus-tie</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/electric/engine[1]/bus-tie</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/engines/engine[0]/cutoff</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/engines/engine[1]/cutoff</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>controls/electric/engine/generator</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>controls/electric/engine[1]/generator</property>
+			<value>0</value>
+		</set>
+		<set>
+			<property>sim/model/armrest</property>
+			<value>1</value>
+		</set>
+	</init>
+
+	<step>
+		<message>Ok, I'll read the engine start-up checklist...</message>
+	</step>
+
+	<step>
+		<message>Check: left side, aircraft and engine CLEAR</message>
+		<view>
+			<heading-offset-deg>134.1</heading-offset-deg>
+			<pitch-offset-deg>-19.4</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-1.4</x-offset-m>
+			<y-offset-m>0.9</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: right side, aircraft and engine CLEAR. That's my side: CLEAR, check.</message>
+		<view>
+			<heading-offset-deg>360.0</heading-offset-deg>
+			<pitch-offset-deg>0</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: parking-brake SET</message>
+		<marker>
+			<x-m>-1.3258</x-m>
+			<y-m>-0.1842</y-m>
+			<z-m>0.0683</z-m>
+			<scale>3.0000</scale>
+		</marker>
+		<exit>
+			<condition>
+				<property>controls/gear/brake-parking</property>
+			</condition>
+		</exit>
+		<view>
+			<heading-offset-deg>3.8</heading-offset-deg>
+			<pitch-offset-deg>-57.8</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.3</x-offset-m>
+			<y-offset-m>0.7</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: both throttle-levers IDLE</message>
+		<marker>
+			<x-m>-1.3258</x-m>
+			<y-m>0.0400</y-m>
+			<z-m>0.1942</z-m>
+			<scale>9.0000</scale>
+		</marker>
+		<exit>
+			<condition>
+				<and>
+					<less-than>
+						<property>controls/engines/engine[0]/throttle-lever</property>
+						<value>0.1</value>
+					</less-than>
+					<less-than>
+						<property>controls/engines/engine[1]/throttle-lever</property>
+						<value>0.1</value>
+					</less-than>
+				</and>
+			</condition>
+		</exit>
+		<view>
+			<heading-offset-deg>312.0</heading-offset-deg>
+			<pitch-offset-deg>-29.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+		</view>
+	</step>
+	
+	<step>
+		<message>Check: left/right/center fuel pumps ON (6 switches)</message>
+		<exit>
+			<condition>
+				<and>
+					<property>controls/fuel/tank/boost-pump</property>
+					<property>controls/fuel/tank/boost-pump[1]</property>
+					<!--property>controls/fuel/tank[1]/boost-pump</property>
+					<property>controls/fuel/tank[1]/boost-pump[1]</property-->
+					<property>controls/fuel/tank[2]/boost-pump</property>
+					<property>controls/fuel/tank[2]/boost-pump[1]</property>
+				</and>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.2792</x-m>
+			<y-m>0.0908</y-m>
+			<z-m>1.1758</z-m>
+			<scale>7.4000</scale>
+		</marker>
+		<view>
+			<heading-offset-deg>314.2</heading-offset-deg>
+			<pitch-offset-deg>63.1</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.1</x-offset-m>
+			<y-offset-m>0.6</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Set #1(left)Engine start knob to START</message>
+		<exit>
+			<condition>
+				<equals>
+					<property>controls/engines/StartIgnition-knob[0]</property>
+					<value>-1</value>
+				</equals>
+			</condition>
+		</exit>
+		<view>
+			<heading-offset-deg>355.3</heading-offset-deg>
+			<pitch-offset-deg>83.4</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.0</x-offset-m>
+			<y-offset-m>0.7</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+			<field-of-view>65.5</field-of-view>
+		</view>
+		<marker>
+			<x-m>-1.0817</x-m>
+			<y-m>0.0383</y-m>
+			<z-m>1.2945</z-m>
+			<scale>2.6500</scale>
+		</marker>
+	</step>
+
+	<step>
+		<message>Check: #1(left) engine CUTOFF switches RUN</message>
+		<marker>
+			<x-m>-1.2892</x-m>
+			<y-m>0.0417</y-m>
+			<z-m>0.0933</z-m>
+			<scale>5.0000</scale>
+		</marker>
+		<exit>
+			<condition>
+				<not>
+					<property>controls/engines/engine[0]/cutoff</property>
+				</not>
+			</condition>
+		</exit>
+		<view>
+			<heading-offset-deg>312.0</heading-offset-deg>
+			<pitch-offset-deg>-29.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Set #2(right)Engine start knob to START</message>
+		<exit>
+			<condition>
+				<equals>
+					<property>controls/engines/StartIgnition-knob[1]</property>
+					<value>-1</value>
+				</equals>
+			</condition>
+		</exit>
+		<view>
+			<heading-offset-deg>355.3</heading-offset-deg>
+			<pitch-offset-deg>83.4</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.0</x-offset-m>
+			<y-offset-m>0.7</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+			<field-of-view>65.5</field-of-view>
+		</view>
+		<marker>
+			<x-m>-1.0817</x-m>
+			<y-m>0.1353</y-m>
+			<z-m>1.2945</z-m>
+			<scale>2.6500</scale>
+		</marker>
+	</step>
+
+	<step>
+		<message>Check: #2(right) engine CUTOFF switches RUN</message>
+		<marker>
+			<x-m>-1.2892</x-m>
+			<y-m>0.0417</y-m>
+			<z-m>0.0933</z-m>
+			<scale>5.0000</scale>
+		</marker>
+		<exit>
+			<condition>
+				<not>
+					<property>controls/engines/engine[1]/cutoff</property>
+				</not>
+			</condition>
+		</exit>
+		<view>
+			<heading-offset-deg>312.0</heading-offset-deg>
+			<pitch-offset-deg>-29.6</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Phew! Nice work so far!</message>
+		<view>
+			<heading-offset-deg>321.6</heading-offset-deg>
+			<pitch-offset-deg>-15.2</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.7</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+			<field-of-view>32.7</field-of-view>
+		</view>
+		<marker>
+			<x-m>-1.8192</x-m>
+			<y-m>-0.0458</y-m>
+			<z-m>0.4291</z-m>
+			<scale>5.6667</scale>
+		</marker>
+	</step>
+
+	<step>
+		<message>Wait for power generator cross-feeds ON</message>
+		<exit>
+			<condition>
+				<and>
+					<property>controls/electric/engine/generator</property>
+					<property>controls/electric/engine[1]/generator</property>
+				</and>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.3217</x-m>
+			<y-m>-0.2950</y-m>
+			<z-m>1.2075</z-m>
+			<scale>7.0000</scale>
+		</marker>
+		<view>
+			<heading-offset-deg>301.3</heading-offset-deg>
+			<pitch-offset-deg>50.7</pitch-offset-deg>
+			<roll-offset-deg>0.0</roll-offset-deg>
+			<x-offset-m>-0.6</x-offset-m>
+			<y-offset-m>0.8</y-offset-m>
+			<z-offset-m>-28.0381</z-offset-m>
+		</view>
+	</step>
+
+	<step>
+		<message>Check: auxiliary power unit (APU) OFF (main engines providing power now)</message>
+		<exit>
+			<condition>
+				<not>
+					<property>controls/electric/APU-generator</property>
+				</not>
+			</condition>
+		</exit>
+		<marker>
+			<x-m>-1.1353</x-m>
+			<y-m>-0.2467</y-m>
+			<z-m>1.2275</z-m>
+			<scale>3.0000</scale>
+		</marker>
+	</step>
+
+	<end>
+		<message>Use "pushback" dialog to reverse your aircraft from the parking positon. Taxi to the runway. Select "Takeoff" tutorial.</message>
+	</end>
+
+</PropertyList>

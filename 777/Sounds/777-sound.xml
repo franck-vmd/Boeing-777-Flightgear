@@ -884,7 +884,7 @@
     
     <engine>
         <name>grind ext</name>
-        <path>/Aircraft/777/Sounds/SASA/External/grind.wav</path>
+        <path>/Aircraft/777/Sounds/SASA/External/whine-dist.wav</path>
         <mode>looped</mode>
         <condition>
             <not><property>/sim/current-view/internal</property></not>
@@ -913,7 +913,7 @@
     
     <engine>
         <name>grind ext 2</name>
-        <path>/Aircraft/777/Sounds/SASA/External/grind.wav</path>
+        <path>/Aircraft/777/Sounds/SASA/External/whine-dist.wav</path>
         <mode>looped</mode>
         <condition>
             <not><property>/sim/current-view/internal</property></not>

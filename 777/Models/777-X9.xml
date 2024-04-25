@@ -670,6 +670,9 @@ Franck.VMD
         <object-name>Run.spotL</object-name>
         <object-name>verre</object-name>
         <object-name>sortiewclumiere</object-name>
+        <object-name>LHLND.spot</object-name>
+        <object-name>RHLND.spot</object-name>
+        <object-name>CTRLND.spot</object-name>
     </effect>
     
     <effect>

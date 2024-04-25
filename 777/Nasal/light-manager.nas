@@ -199,6 +199,62 @@ var light_manager = {
         me.start();
     },
     
+    init_X8: func {
+        # define your lights here
+
+        # lights ########
+        # offsets to aircraft center
+ 
+        me.light1_xpos =  73.0;
+        me.light1_ypos =  0.0;
+        me.light1_zpos =  0.5;
+        
+        me.light2_xpos =  75.0;
+        me.light2_ypos =  0.0;
+        me.light2_zpos =  -3.0;
+        
+        me.light3_xpos =  -13.9018;
+        me.light3_ypos =  34.1173;
+        me.light3_zpos =  0.5;
+        
+        me.light4_xpos =  -13.9018;
+        me.light4_ypos =  -34.1173;
+        me.light4_zpos =  0.5;
+        
+        me.light5_xpos =  1.0;
+        me.light5_ypos =  0.0;
+        me.light5_zpos =  -3.0;
+        
+ 
+        # color values
+        me.light1_r = 0.8;
+        me.light1_g = 0.8;
+        me.light1_b = 0.8;
+        me.light2_r = 0.8;
+        me.light2_g = 0.8;
+        me.light2_b = 0.8;
+        me.light3_r = 0.8;
+        me.light3_g = 0.8;
+        me.light3_b = 0.8;
+        me.light4_r = 0.8;
+        me.light4_g = 0.8;
+        me.light4_b = 0.8;
+        me.light5_r = 0.8;
+        me.light5_g = 0.0;
+        me.light5_b = 0.0;
+
+        # spot size
+        me.light1_size = 19;
+        me.light1_stretch = 2.5;
+        me.light2_size = 10;
+        me.light2_stretch = 4;
+        me.light3_size = 12;
+        me.light4_size = 12;
+        me.light5_size = 12;
+        
+        me.start();
+    },
+    
     init_X9: func {
         # define your lights here
 

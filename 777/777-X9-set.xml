@@ -8,7 +8,7 @@
         <max-takeoff-weight type="double">775000</max-takeoff-weight>
         <startup>
             <splash-texture>Aircraft/777/gui/Previews/splash-X9.png</splash-texture>
-        </startup>
+        </startup>        
 
         <model n="0">
             <path>Aircraft/777/Models/777-X9.xml</path>
@@ -238,10 +238,10 @@
                 </item>
                     <item n="3">
                         <label>Weight and payload</label>
-                        <name>payloadX9</name>
+                        <name>payload</name>
                         <binding>
                             <command>dialog-show</command>
-                            <dialog-name>payloadX9</dialog-name>
+                            <dialog-name>payload</dialog-name>
                         </binding>
                     </item>
                  <item n="9">

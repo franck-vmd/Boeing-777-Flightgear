@@ -236,7 +236,7 @@
                     </binding>
                 </item>
 		  <item n="3">
-					    <label>Weight and payload</label>
+	                <label>Weight and payload</label>
                         <name>payload_200F</name>
 						<binding>
                             <command>dialog-show</command>
