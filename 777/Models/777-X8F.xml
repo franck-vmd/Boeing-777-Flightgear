@@ -2886,11 +2886,15 @@ Franck.VMD
           <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
@@ -2911,11 +2915,15 @@ Franck.VMD
         <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>	
@@ -2936,11 +2944,15 @@ Franck.VMD
          <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
@@ -2961,11 +2973,15 @@ Franck.VMD
          <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
@@ -2986,11 +3002,15 @@ Franck.VMD
          <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
@@ -3011,11 +3031,15 @@ Franck.VMD
           <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
@@ -3036,11 +3060,15 @@ Franck.VMD
           <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
@@ -3061,11 +3089,15 @@ Franck.VMD
          <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>	
@@ -3084,14 +3116,10 @@ Franck.VMD
 			</binding>
 		</action>
         <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>	
 	
@@ -3109,214 +3137,10 @@ Franck.VMD
 			</binding>
 		</action>
          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry2l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("l2");
-				</script>
-			</binding>
-		</action>
-          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry2r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("r2");
-				</script>
-			</binding>
-		</action>
-         <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry3l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("l3");
-				</script>
-			</binding>
-		</action>
-         <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry3r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("r3");
-				</script>
-			</binding>
-		</action>
-          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry4l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("l4");
-				</script>
-			</binding>
-		</action>
-          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry4r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("r4");
-				</script>
-			</binding>
-		</action>
-         <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>entry5l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c54");
-				</script>
-			</binding>
-		</action>
-          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry5r.001</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c55");
-				</script>
-			</binding>
-		</action>
-         <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>01</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>01</value>
-            </less-than>
+        <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
+        </less-than>
         </condition>
 	</animation>
 
@@ -3336,11 +3160,15 @@ Franck.VMD
           <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
@@ -3361,11 +3189,15 @@ Franck.VMD
          <condition>
             <less-than>
                 <property>engines/engine[0]/rpm</property>
-                <value>01</value>
+                <value>30</value>
             </less-than>
             <less-than>
                 <property>engines/engine[1]/rpm</property>
-                <value>01</value>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
@@ -3394,7 +3226,7 @@ Franck.VMD
             </less-than>
             <less-than>
             <property>velocities/groundspeed-kt</property>
-            <value>30</value>
+            <value>10</value>
             </less-than>
         </condition>
 	</animation>
