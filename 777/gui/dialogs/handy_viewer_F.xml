@@ -243,7 +243,7 @@
 	  	<binding>
 	    		<command>nasal</command>
 	    		<script>
-	      		setprop("/sim/current-view/view-number", "46");
+	      		setprop("/sim/current-view/view-number", "201");
 	      		view.resetView();
 	    		</script>
 	  	</binding>
@@ -258,7 +258,7 @@
 	  	<binding>
 	    		<command>nasal</command>
 	    		<script>
-	      		setprop("/sim/current-view/view-number", "47");
+	      		setprop("/sim/current-view/view-number", "202");
 	      		view.resetView();
 	    		</script>
 	  	</binding>

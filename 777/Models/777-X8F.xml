@@ -614,18 +614,6 @@ Franck.VMD
         <usage>interior</usage>
         <path>Aircraft/777/Models/CockpitX/flightdeck-X8.xml</path>
     </model>
-  
-  <!-- WC -->
-  
-  <model>
-    <name>Passenger Seating3</name>
-    <path>Aircraft/777/Models/Seating/wc777X8.xml</path>
-    <offsets>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </offsets>
-  </model>
 
     <!-- Pilote -->
   <model>
@@ -6431,6 +6419,120 @@ Franck.VMD
             <z>0</z>
         </axis>
     </animation>
+    
+    <!-- wc -->
+
+   <animation>
+        <type>pick</type>
+		<object-name>robinet</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[67]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.robinet;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+		<object-name>cuvette</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[68]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.cuvette;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+		<object-name>bouton poussoir</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[69]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.bouton poussoir;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+   <animation>
+        <name>c43</name>
+        <type>rotate</type>
+        <object-name>robinet</object-name>
+        <property>sim/multiplay/generic/float[67]</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-21.2786</x-m>
+            <y-m>-0.03093</y-m>
+            <z-m>0.41603</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+   <animation>
+        <type>select</type>
+        <object-name>eau</object-name>
+        <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[67]</property>
+			<value>0</value>
+		</greater-than>
+    </condition>
+    </animation>
+
+   <animation>
+        <type>select</type>
+        <object-name>eau wc</object-name>
+        <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[69]</property>
+			<value>0</value>
+		</greater-than>
+    </condition>
+    </animation>
+
+    <animation>
+        <name>c44</name>
+        <type>rotate</type>
+        <object-name>cuvette</object-name>
+        <property>sim/multiplay/generic/float[68]</property>
+        <factor>95</factor>
+        <center>
+            <x-m>-20.8754</x-m>
+            <y-m>1.10669</y-m>
+            <z-m>-0.06999</z-m>
+        </center>
+        <axis>
+            <x>-1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
   
     <!-- smoke -->
 	<model>
@@ -6725,6 +6827,44 @@ Franck.VMD
 </model>
 
 <model>
+    <name>Cargo</name>
+    <path>Aircraft/777/Models/Ground/Services/cargo/cargo.xml</path>
+    <condition>
+      <and>
+        <property>services/payload/cargo_service</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>15</value>
+        </less-than>
+      </and>
+    </condition>
+    <offsets>
+      <x-m>1.90674</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+
+<model>
+    <name>Filet Protection</name>
+    <path>Aircraft/777/Models/Ground/Services/FiletProtection/FiletProtection.xml</path>
+    <condition>
+      <and>
+        <property>services/payload/FiletProtection</property>
+        <less-than>
+          <property>velocities/airspeed-kt</property>
+          <value>15</value>
+        </less-than>
+      </and>
+    </condition>
+    <offsets>
+      <x-m>1.90674</x-m>
+      <y-m>0.00</y-m>
+      <z-m>0.00</z-m>
+    </offsets>
+  </model>
+
+<model>
     <name>Bagage2</name>
     <path>Aircraft/777/Models/Ground/Services/Baggage 2/bagage2.xml</path>
     <condition>
@@ -6754,33 +6894,6 @@ Franck.VMD
      </offsets>
 </model>
 
-<model>
-    <path>Aircraft/777/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_2R.xml</path>
-    <offsets>
-  	<x-m>2.1</x-m>
-  	<y-m>0</y-m>
-  	<z-m>0.1</z-m>
-     </offsets>
-</model>
-
-<model>
-    <path>Aircraft/777/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_8R.xml</path>
-    <offsets>
-  	<x-m>6.2</x-m>
-  	<y-m>0</y-m>
-  	<z-m>0</z-m>
-     </offsets>
-</model>
-
-<model>
-    <path>Aircraft/777/Models/Ground/Services/Catering/Catering_Loader_Truck_VolvoFM_4R_200.xml</path>
-    <offsets>
-  	<x-m>7.56</x-m>
-  	<y-m>0</y-m>
-  	<z-m>0.1</z-m>
-     </offsets>
-</model>
-
 <!--Jetways-->
 
 <model>
@@ -6805,22 +6918,10 @@ Franck.VMD
     </condition>
 </model>
 
-<!--Bus-->
-
-<model>
-    <path>Aircraft/777/Models/Ground/Operations/Bus/bus.xml</path>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>1</value>
-        </less-than>
-    </condition>
-</model>
-
 <!-- Services by PR-GEO -->
 
   <model>
-   <path>Aircraft/777/Models/Ground/Services/ServicesX8.xml</path>
+   <path>Aircraft/777/Models/Ground/Services/ServicesX8F.xml</path>
      <offsets>
   	<x-m>0</x-m>
   	<y-m>0</y-m>
@@ -7049,96 +7150,10 @@ Franck.VMD
     </condition>
 </animation>
 
-<!--personel - flight attendants -->
-
-<model>
- <name>flight_attendants_door1l</name>
- <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door1l.xml</path>
- <offsets>
-  <x-m>-2.95</x-m>
-  <y-m>0</y-m>
-  <z-m>0</z-m>
- </offsets>
-</model>
-
-<animation>
-    <type>select</type>
-    <object-name>flight_attendants_door1l</object-name>
-    <condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[10]</property>
-			<value>0</value>
-		</greater-than>
-    </condition>
-</animation>
-
-<model>
- <name>flight_attendants_door2l</name>
- <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door2l.xml</path>
- <offsets>
-  <x-m>-2.95</x-m>
-  <y-m>0</y-m>
-  <z-m>0</z-m>
- </offsets>
-</model>
-
-<animation>
-    <type>select</type>
-    <object-name>flight_attendants_door2l</object-name>
-    <condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[20]</property>
-			<value>0</value>
-		</greater-than>
-    </condition>
-</animation>
-
-<model>
- <name>flight_attendants_door3l</name>
- <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door3l.xml</path>
- <offsets>
-  <x-m>-0.345241</x-m>
-  <y-m>0</y-m>
-  <z-m>0</z-m>
- </offsets>
-</model>
-
-<animation>
-    <type>select</type>
-    <object-name>flight_attendants_door3l</object-name>
-    <condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[22]</property>
-			<value>0</value>
-		</greater-than>
-    </condition>
-</animation>
-
-<model>
- <name>flight_attendants_door5l</name>
- <path>Aircraft/777/Models/Personel/Flight_attendants/flight_attendants_door5l.xml</path>
- <offsets>
-  <x-m>-4.04</x-m>
-  <y-m>0</y-m>
-  <z-m>0</z-m>
- </offsets>
-</model>
-
-<animation>
-    <type>select</type>
-    <object-name>flight_attendants_door5l</object-name>
-    <condition>
-		<greater-than>
-			<property>sim/multiplay/generic/float[73]</property>
-			<value>0</value>
-		</greater-than>
-    </condition>
-</animation>
-
 <!--    evacuations traps    -->	
 	<model>
  <name>evacuation</name>
- <path>Aircraft/777/Models/Ground/Services/Evacuation/evacuationX8.xml</path>
+ <path>Aircraft/777/Models/Ground/Services/Evacuation/evacuationX8F.xml</path>
  <offsets>
   <x-m>0</x-m>
   <y-m>0</y-m>
@@ -7152,29 +7167,6 @@ Franck.VMD
     <condition>
             <property>/aaa/switches/EVACPnl.toggle</property>
     </condition>
-</animation>
-
-<!--    oxygen masks    -->	
-
-<model>
- <name>oxygenmasks</name>
- <path>Aircraft/777/Models/Ground/Services/Oxygen_masks/oxygen_mask_X8.xml</path>
- <offsets>
-  <x-m>0</x-m>
-  <y-m>0</y-m>
-  <z-m>0</z-m>
- </offsets>
-</model>
-
-<animation>
-    <type>select</type>
-    <object-name>oxygenmasks</object-name>
-    <condition>
-			<equals>
-            <property>/aaa/switches/oxygenswitch</property>
-				<value>1</value>
-			</equals>
-		</condition>
 </animation>
 
 </PropertyList>

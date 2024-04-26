@@ -1,8 +1,8 @@
 <PropertyList include="777-set-common.xml">
 
     <sim n="0">
-        <description>Boeing 777-X8F</description>
-        <aero>777-X9</aero>
+        <description>Boeing 777-X8 Freighter</description>
+        <aero>777-200F</aero>
         <max-payload type="double">408060</max-payload>
         <max-landing-weight type="double">554000</max-landing-weight>
         <max-takeoff-weight type="double">775000</max-takeoff-weight>
@@ -229,49 +229,50 @@
             <default n="0">
                 <menu n="100">
                     <label>777-X8F</label>
-                    <item n="2">
+                    <enabled type="bool">true</enabled>
+                  <item n="2">
                     <label>Ground Services Control</label>
                     <binding>
                         <command>dialog-show</command>
-                        <dialog-name>ground_services</dialog-name>
+                        <dialog-name>ground_servicesF</dialog-name>
                     </binding>
                 </item>
-                    <item n="3">
-                        <label>Weight and payload</label>
-                        <name>payload</name>
-                        <binding>
+		  <item n="3">
+	                <label>Weight and payload</label>
+                        <name>payload_200F</name>
+						<binding>
                             <command>dialog-show</command>
-                            <dialog-name>payload</dialog-name>
+			    <dialog-name>payload_200F</dialog-name>
                         </binding>
                     </item>
-                 <item n="9">
-                    <label>Handy Viewer X9</label>
-                    <name>handyviewerx9</name>
+                    <item n="9">
+                    <label>Handy Viewer F</label>
+                    <name>handyviewerf</name>
                     <binding>
                         <command>dialog-show</command>
-                        <dialog-name>handyviewerx9</dialog-name>
+                        <dialog-name>handyviewerf</dialog-name>
                     </binding>
                 </item>
-                  <item n="13">
+                    <item n="13">
                         <label>Ground Ops</label>
              <binding>
                <command>nasal</command>
                  <script>
-                var mal = gui.Dialog.new("/sim/gui/dialogs/ground-ops-config/dialog", "Aircraft/777/gui/dialogs/ground-ops-dialogX8.xml");
+                var mal = gui.Dialog.new("/sim/gui/dialogs/ground-ops-config/dialog", "Aircraft/777/gui/dialogs/ground-ops-dialogF.xml");
                  mal.open();
                  </script>
              </binding>
                   </item>
                   <item n="14">
-                    <label>Doors</label>
-                    <name>doors</name>
+                    <label>DoorsF</label>
+                    <name>doorsF</name>
                     <binding>
                         <command>dialog-show</command>
-                        <dialog-name>doors</dialog-name>
+                        <dialog-name>doorsF</dialog-name>
                     </binding>
                 </item>
-                </menu>
-            </default>
+				</menu>
+			</default>
         </menubar>
 
         <tutorials>
@@ -285,31 +286,9 @@
         </tutorials>
 
         <weight n="1">
-            <!--  365 pax max-->
-            <name>Pax/Baggage</name>
-            <weight-lb type="double">70420</weight-lb>
-            <max-lb type="double">154000</max-lb>
-            <min-lb type="double">0</min-lb>
-        </weight>
-        <weight n="2">
-            <!--  Front Catering Galley -->
-            <name>Front Catering Galley</name>
-            <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">2325</max-lb>
-            <min-lb type="double">0</min-lb>
-        </weight>
-        <weight n="3">
-            <!--  Center Catering Galley -->
-            <name>Center Catering Galley</name>
-            <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">1850</max-lb>
-            <min-lb type="double">0</min-lb>
-        </weight>
-        <weight n="4">
-            <!--  Rear Catering Galley -->
-            <name>Rear Catering Galley</name>
-            <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">2675</max-lb>
+            <name>Cargo</name>
+            <weight-lb type="double">90000</weight-lb>
+            <max-lb type="double">230000</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <aircraft-operator>AFR</aircraft-operator>
@@ -326,7 +305,7 @@
     <instrumentation n="0">
         <cdu n="0">
             <ident>
-                <model>777-X8</model>
+                <model>777-X8F</model>
                 <engines>GE9X-105B1A</engines>
             </ident>
         </cdu>
@@ -439,13 +418,13 @@
      </jetway2-pos>
     </aircraft>
     
-    <services>
-        <payload>
-            <first-max-nr>22</first-max-nr>
-            <business-max-nr>70</business-max-nr>
-            <economy-max-nr>273</economy-max-nr>
-            <catering-max-lbs>6850</catering-max-lbs>
-        </payload>
-    </services>
+    <limits>
+        <mass-and-balance>
+            <maximum-ramp-mass-lbs>768800</maximum-ramp-mass-lbs>
+            <maximum-takeoff-mass-lbs>766800</maximum-takeoff-mass-lbs>
+            <maximum-landing-mass-lbs>575000</maximum-landing-mass-lbs>
+            <maximum-zero-fuel-mass-lbs>547000</maximum-zero-fuel-mass-lbs>
+        </mass-and-balance>
+    </limits>
 
 </PropertyList>

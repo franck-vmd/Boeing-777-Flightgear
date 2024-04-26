@@ -5,7 +5,7 @@
         <aero>777-200F</aero>
         <max-payload type="double">448500</max-payload>
         <max-landing-weight type="double">575000</max-landing-weight>
-		<max-takeoff-weight type="double">766800</max-takeoff-weight>
+	<max-takeoff-weight type="double">766800</max-takeoff-weight>
         <startup>
             <splash-texture>Aircraft/777/gui/Previews/splash-cargo.png</splash-texture>
         </startup>
@@ -261,7 +261,7 @@
                  </script>
              </binding>
                   </item>
-                  <item n="15">
+                  <item n="14">
                     <label>DoorsF</label>
                     <name>doorsF</name>
                     <binding>
