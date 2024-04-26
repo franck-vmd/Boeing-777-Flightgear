@@ -30,7 +30,7 @@ Portes 777-séries 300: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fer
 
 Portes 777-X8: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture jusqu'à 35 knots
 
-Portes 777-X8F: L1, R1, opening and closing up to 35 knots
+Portes 777-X8F: L1, R1, ouverture et fermeture jusqu'à 35 knots
 
 Portes 777-X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fermeture jusqu'à 35 knots
 
