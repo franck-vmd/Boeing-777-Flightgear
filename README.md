@@ -19,7 +19,7 @@ Bienvenue
 FlightGear Flight Simulator , souvent abrégé FlightGear ou FGFS est un jeu vidéo libre de simulation de vol , gratuit, open-source et multiplate-forme développé par le projet FlightGear .
 Principalement écrit dans le langage de programmation C++ , FlightGear est , tout comme Fly ! Legacy , un simulateur de vol dont les sources sont libres .
 
-Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-X8 , 777-X9 
+Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-X8 ,777-X8F , 777-X9 
 
 ![Image](https://i.ibb.co/6DBQQ2r/debut-video-777.jpg)
 ----------------------------------------------------------------------------------
@@ -28,11 +28,13 @@ Portes 777-séries 200: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture j
 
 Portes 777-séries 300: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fermeture jusqu'à 35 knots
 
-Portes X8: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture jusqu'à 35 knots
+Portes 777-X8: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture jusqu'à 35 knots
 
-Portes X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fermeture jusqu'à 35 knots
+Portes 777-X8F: L1, R1, opening and closing up to 35 knots
 
-Portes F et KFC: L1, R1, ouverture et fermeture jusqu'à 35 knots
+Portes 777-X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fermeture jusqu'à 35 knots
+
+Portes 777-F et 777-KFC: L1, R1, ouverture et fermeture jusqu'à 35 knots
 
 Indication visuelle intérieure cabine pour les portes : éclairage à gauche et à droite de chaque bas de portes ainsi que la manette Automatique> Manuel en haut de chaque porte 
 
@@ -95,7 +97,7 @@ Interieur-777-F :
 
 ![Image](https://i.ibb.co/gMwP5Zr/interieur-777-F.jpg)
 
-WingTips X8 ,X9:
+WingTips X8 ,X8F ,X9:
 
 ![Image](https://i.ibb.co/pwKL1tT/WingTips.jpg)
 
@@ -118,7 +120,7 @@ Welcome
 
 FlightGear Flight Simulator, often abbreviated FlightGear or FGFS is a free, open-source, cross-platform flight simulator developed by volunteers.
 
-Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-X8 , 777-X9 
+Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-X8 ,777-X8F , 777-X9 
 
 ![Image](https://i.ibb.co/D7Z7dXV/X9.jpg)
 -------------------------------------------------------------------------------
@@ -127,11 +129,13 @@ Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-
 
 777-series 300 doors: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, opening and closing up to 35 knots
 
-Doors X8: L1, L2, L3, L4, R1, R2, R3, R4,  opening and closing up to 35 knots
+777-X8 doors: L1, L2, L3, L4, R1, R2, R3, R4,  opening and closing up to 35 knots
 
-Doors X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, opening and closing up to 35 knots
+777-X8F doors: L1, R1, opening and closing up to 35 knots
 
-F and KFC doors: L1, R1, opening and closing up to 35 knots
+777-X9 doors: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, opening and closing up to 35 knots
+
+777-F and 777-KFC doors: L1, R1, opening and closing up to 35 knots
 
 Cabin interior visual indication for the doors: lighting on the left and right of each door bottom as well as the Automatic > Manual lever at the top of each door
 
@@ -194,7 +198,7 @@ Interior-777-F :
 
 ![Image](https://i.ibb.co/XJFQ9tx/interior-777-F.jpg)
 
-WingTips X8 ,X9:
+WingTips X8 ,X8F ,X9:
 
 ![Image](https://i.ibb.co/pwKL1tT/WingTips.jpg)
 
