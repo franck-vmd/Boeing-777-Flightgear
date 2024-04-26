@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">1 AIR FRANCE 777x8F</name>
+				<texture>Liveries-X8F/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-X8F/AFR1.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-X8F/AFR3.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-X8F/AFR4.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-X8F/AFR5.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-X8F/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-X8F/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-X8F/AFR8.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-X8F/AFR9.png</texture>
+                        </fuselage7>
+                        <fuselage8>
+                                <texture>Liveries-X8F/AFR1rac.png</texture>
+                        </fuselage8>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>AFR</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+

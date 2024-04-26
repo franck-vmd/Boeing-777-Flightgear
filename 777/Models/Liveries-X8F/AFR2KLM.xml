@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">3 KLM 777x8F</name>
+				<texture>Liveries-X8F/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-X8F/AFR1KLM.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-X8F/AFR3KLM.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-X8F/AFR4KLM.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-X8F/AFR5KLM.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-X8F/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-X8F/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-X8F/AFR8KLM.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-X8F/AFR9.png</texture>
+                        </fuselage7>
+                        <fuselage8>
+                                <texture>Liveries-X8F/AFR1KLMrac.png</texture>
+                        </fuselage8>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>KLM</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+
