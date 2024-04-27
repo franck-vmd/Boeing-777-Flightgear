@@ -3797,7 +3797,7 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>porte wc</object-name>
 		<property>sim/multiplay/generic/float[64]</property>
-		<factor>90</factor>
+		<factor>85</factor>
         <center>
             <x-m>-20.3382</x-m>
             <y-m>0.58915</y-m>

@@ -552,6 +552,15 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect19</inherits-from>
         <object-name>plafond</object-name>
+        <object-name>portesouteD</object-name>
+        <object-name>portesouteG</object-name>
+        <object-name>porte wc</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect22</inherits-from>
+        <object-name>spote</object-name>
+        <object-name>spote.001</object-name>
     </effect>
     
     <effect>
@@ -562,18 +571,28 @@ Franck.VMD
         <object-name>portecloison4</object-name>
         <object-name>portecloison5</object-name>
         <object-name>cloison</object-name>
+        <object-name>mur</object-name>
+        <object-name>Fuselage.003</object-name>
+        <object-name>mur.001</object-name>
+        <object-name>panneau mur</object-name>
+        <object-name>entry11l.002</object-name>
         <object-name>placar</object-name>
         <object-name>plancher</object-name>
-        <object-name>wc</object-name>
+        <object-name>Plane</object-name>
+        <object-name>verin</object-name>
+        <object-name>verin1</object-name>
+        <object-name>Cylinder.001</object-name>
+        <object-name>Sieges777200</object-name>
+        <object-name>charniere2</object-name>
+        <object-name>charniere1</object-name>
+        <object-name>cuvette</object-name>
+        <object-name>robinet</object-name>
+        <object-name>eau</object-name>
+        <object-name>eau wc</object-name>
+        <object-name>bouton poussoir</object-name>
         <object-name>sortiewc</object-name>
         <object-name>galleycart</object-name>
         <object-name>cafetiere1</object-name>
-        <object-name>window mix interieur</object-name>
-        <object-name>bar</object-name>
-        <object-name>coca</object-name>
-        <object-name>fanta</object-name>
-        <object-name>sprite</object-name>
-        <object-name>bouteilleN</object-name>
     </effect>
     
     <effect>
@@ -589,14 +608,7 @@ Franck.VMD
         <object-name>glassehublot</object-name>
         <object-name>entry1lG</object-name>
         <object-name>entry1rG</object-name>
-        <object-name>entry2lG</object-name>
-        <object-name>entry2rG</object-name>
-        <object-name>entry3lG</object-name>
-        <object-name>entry3rG</object-name>
-        <object-name>entry4lG</object-name>
-        <object-name>entry4rG</object-name>
-        <object-name>entry5lG</object-name>
-        <object-name>entry5rG</object-name>
+        <object-name>hublot</object-name>
    </effect>
     
     <model>
@@ -3823,6 +3835,107 @@ Franck.VMD
         </greater-than>
         </condition>
   </animation>
+  
+  <!-- Doors Animations soute -->
+
+      <animation>
+		<name>c40</name>
+		<type>rotate</type>
+		<object-name>porte wc</object-name>
+		<property>sim/multiplay/generic/float[64]</property>
+		<factor>85</factor>
+        <center>
+            <x-m>-23.3049</x-m>
+            <y-m>0.58915</y-m>
+            <z-m>0.39044</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<type>pick</type>
+		<object-name>porte wc</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c40");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+      <animation>
+		<name>c38</name>
+		<type>translate</type>
+		<object-name>portesouteD</object-name>
+		<property>sim/multiplay/generic/float[62]</property>
+		<factor>0.85</factor>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<type>pick</type>
+		<object-name>portesouteD</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c38");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+      <animation>
+		<name>c39</name>
+		<type>translate</type>
+		<object-name>portesouteG</object-name>
+		<property>sim/multiplay/generic/float[63]</property>
+		<factor>0.85</factor>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+      <animation>
+		<type>pick</type>
+		<object-name>portesouteG</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c39");
+				</script>
+			</binding>
+		</action>
+	</animation>
 
     <!-- Door moteur Animations -->	
 	
@@ -6483,7 +6596,7 @@ Franck.VMD
         <property>sim/multiplay/generic/float[67]</property>
         <factor>15</factor>
         <center>
-            <x-m>-21.2786</x-m>
+            <x-m>-24.2291</x-m>
             <y-m>-0.03093</y-m>
             <z-m>0.41603</z-m>
         </center>
