@@ -93,7 +93,7 @@ Oxigene masque :
 
 ![Image](https://i.ibb.co/zs0mDmF/Oxigene-masque.jpg)
 
-Interieur-777-F :
+Interieur-777-F , 777-X8F:
 
 ![Image](https://i.ibb.co/gMwP5Zr/interieur-777-F.jpg)
 
@@ -194,7 +194,7 @@ oxygen mask :
 
 ![Image](https://i.ibb.co/h2BkwH8/oxygen-mask.jpg)
 
-Interior-777-F :
+Interior-777-F , 777-X8F:
 
 ![Image](https://i.ibb.co/XJFQ9tx/interior-777-F.jpg)
 
