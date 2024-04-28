@@ -77,7 +77,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Range.knob</object-name>
-        <property>instrumentation/efis/inputs/range-nm</property>
+        <property>instrumentation/efis[1]/inputs/range-nm</property>
         <interpolation>
             <entry><ind>10</ind><dep>0</dep></entry>
             <entry><ind>20</ind><dep>30</dep></entry>
@@ -100,6 +100,44 @@ Franck.VMD
             <y>0</y>
             <z>0</z>
         </axis>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>MINS.knob</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/efis/inputs/minimums-mode</property>
+                <value>1</value>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(4);</script>
+            </binding>
+        </action>
+    </animation>
+
+     <animation>
+        <type>pick</type>
+        <object-name>MINS.knob</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/efis/inputs/minimums-mode</property>
+                <value>0</value>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(4);</script>
+            </binding>
+        </action>
     </animation>
 
     <animation>
@@ -125,7 +163,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>MODE.knob</object-name>
-        <property>instrumentation/efis/mfd/mode-num</property>
+        <property>instrumentation/efis[1]/mfd/mode-num</property>
         <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
             <entry><ind>1</ind><dep>30</dep></entry>
@@ -150,7 +188,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>LVOR.toggle</object-name>
-        <property>instrumentation/efis/inputs/lh-vor-adf</property>
+        <property>instrumentation/efis[1]/inputs/lh-vor-adf</property>
         <factor>0.003</factor>
         <center>
             <x-m>-1.82167</x-m>
@@ -167,7 +205,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>RVOR.toggle</object-name>
-        <property>instrumentation/efis/inputs/rh-vor-adf</property>
+        <property>instrumentation/efis[1]/inputs/rh-vor-adf</property>
         <factor>0.003</factor>
         <center>
             <x-m>-1.82167</x-m>
@@ -192,7 +230,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("center",0);</script>
+                <script>b777.Efis2.ctl_func("center",0);</script>
             </binding>
         </action>
     </animation>
@@ -205,7 +243,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/alt-meters</property>
+                <property>instrumentation/efis[1]/inputs/alt-meters</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -222,7 +260,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/fpv-view</property>
+                <property>instrumentation/efis[1]/inputs/fpv-view</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -273,7 +311,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/terr</property>
+                <property>instrumentation/efis[1]/inputs/terr</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -290,7 +328,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/arpt</property>
+                <property>instrumentation/efis[1]/inputs/arpt</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -307,7 +345,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/wpt</property>
+                <property>instrumentation/efis[1]/inputs/wpt</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -324,7 +362,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/sta</property>
+                <property>instrumentation/efis[1]/inputs/sta</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -341,7 +379,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/wxr</property>
+                <property>instrumentation/efis[1]/inputs/wxr</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -358,7 +396,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("rhvor",1);</script>
+                <script>b777.Efis2.ctl_func("rhvor",1);</script>
             </binding>
         </action>
     </animation>
@@ -371,7 +409,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("rhvor",-1);</script>
+                <script>b777.Efis2.ctl_func("rhvor",-1);</script>
             </binding>
         </action>
     </animation>
@@ -384,7 +422,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("lhvor",1);</script>
+                <script>b777.Efis2.ctl_func("lhvor",1);</script>
             </binding>
         </action>
     </animation>
@@ -397,7 +435,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("lhvor",-1);</script>
+                <script>b777.Efis2.ctl_func("lhvor",-1);</script>
             </binding>
         </action>
     </animation>
@@ -414,7 +452,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("range",1);</script>
+                <script>b777.Efis2.ctl_func("range",1);</script>
             </binding>
         </action>
     </animation>
@@ -431,7 +469,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("range",-1);</script>
+                <script>b777.Efis2.ctl_func("range",-1);</script>
             </binding>
         </action>
     </animation>
@@ -449,7 +487,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("range",1);</script>
+                <script>b777.Efis2.ctl_func("range",1);</script>
             </binding>
         </action>
     </animation>
@@ -467,7 +505,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("range",-1);</script>
+                <script>b777.Efis2.ctl_func("range",-1);</script>
             </binding>
         </action>
     </animation>
@@ -480,7 +518,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/tfc</property>
+                <property>instrumentation/efis[1]/inputs/tfc</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -536,7 +574,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <condition>
-                    <not><property>instrumentation/efis/inputs/setting-std</property></not>
+                    <not><property>instrumentation/efis[2]/inputs/setting-std</property></not>
                 </condition>
                 <command>property-adjust</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
@@ -561,7 +599,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <condition>
-                    <not><property>instrumentation/efis/inputs/setting-std</property></not>
+                    <not><property>instrumentation/efis[2]/inputs/setting-std</property></not>
                 </condition>
                 <command>property-adjust</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
@@ -587,7 +625,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <condition>
-                    <not><property>instrumentation/efis/inputs/setting-std</property></not>
+                    <not><property>instrumentation/efis[2]/inputs/setting-std</property></not>
                 </condition>
                 <command>property-adjust</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
@@ -613,7 +651,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <condition>
-                    <not><property>instrumentation/efis/inputs/setting-std</property></not>
+                    <not><property>instrumentation/efis[2]/inputs/setting-std</property></not>
                 </condition>
                 <command>property-adjust</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
@@ -638,19 +676,19 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>instrumentation/efis/inputs/setting-std</property>
+                <property>instrumentation/efis[2]/inputs/setting-std</property>
             </binding>
             <binding>
                 <condition>
-                    <property>instrumentation/efis/inputs/setting-std</property>
+                    <property>instrumentation/efis[2]/inputs/setting-std</property>
                 </condition>
                 <command>property-assign</command>
-                <property>instrumentation/efis/inhg-previous</property>
+                <property>instrumentation/efis[1]/inhg-previous</property>
                 <property>instrumentation/altimeter/setting-inhg</property>
             </binding>
             <binding>
                 <condition>
-                    <property>instrumentation/efis/inputs/setting-std</property>
+                    <property>instrumentation/efis[2]/inputs/setting-std</property>
                 </condition>
                 <command>property-assign</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
@@ -658,11 +696,11 @@ Franck.VMD
             </binding>
             <binding>
                 <condition>
-                    <not><property>instrumentation/efis/inputs/setting-std</property></not>
+                    <not><property>instrumentation/efis[2]/inputs/setting-std</property></not>
                 </condition>
                 <command>property-assign</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
-                <property>instrumentation/efis/inhg-previous</property>
+                <property>instrumentation/efis[1]/inhg-previous</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -681,7 +719,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("mins",1);</script>
+                <script>b777.Efis2.ctl_func("mins",1);</script>
             </binding>
         </action>
     </animation>
@@ -696,7 +734,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("mins",0);</script>
+                <script>b777.Efis2.ctl_func("mins",0);</script>
             </binding>
         </action>
     </animation>
@@ -710,7 +748,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("dh",10);</script>
+                <script>b777.Efis2.ctl_func("dh",10);</script>
             </binding>
         </action>
     </animation>
@@ -724,7 +762,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("dh",-10);</script>
+                <script>b777.Efis2.ctl_func("dh",-10);</script>
             </binding>
         </action>
     </animation>
@@ -739,7 +777,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("dh",10);</script>
+                <script>b777.Efis2.ctl_func("dh",10);</script>
             </binding>
         </action>
     </animation>
@@ -754,7 +792,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("dh",-10);</script>
+                <script>b777.Efis2.ctl_func("dh",-10);</script>
             </binding>
         </action>
     </animation>
@@ -768,7 +806,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("dh",0);</script>
+                <script>b777.Efis2.ctl_func("dh",0);</script>
             </binding>
         </action>
     </animation>
@@ -784,7 +822,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("display",1);</script>
+                <script>b777.Efis2.ctl_func("display",1);</script>
             </binding>
         </action>
     </animation>
@@ -800,7 +838,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("display",-1);</script>
+                <script>b777.Efis2.ctl_func("display",-1);</script>
             </binding>
         </action>
     </animation>
@@ -817,7 +855,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("display",1);</script>
+                <script>b777.Efis2.ctl_func("display",1);</script>
             </binding>
         </action>
     </animation>
@@ -833,7 +871,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis.ctl_func("display",-1);</script>
+                <script>b777.Efis2.ctl_func("display",-1);</script>
             </binding>
         </action>
     </animation>
