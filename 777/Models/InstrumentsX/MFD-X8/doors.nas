@@ -55,7 +55,7 @@ var Pipe = {
     var canvas_doors = {
 	new: func(canvas_group)
 	{
-		var m = { parents: [canvas_doors, MfDPanel.new("doors",canvas_group,"Aircraft/777/Models/Instruments/MFD/doors.svg",canvas_doors.update)] };
+		var m = { parents: [canvas_doors, MfDPanel.new("doors",canvas_group,"Aircraft/777/Models/InstrumentsX/MFD-X8/doors.svg",canvas_doors.update)] };
                 m.context = m;
                 m.initSvgIds(m.group);
                 return m;
@@ -85,6 +85,7 @@ var Pipe = {
             me.engr2();
             me.engr3();
             me.engr4();
+            me.winglr();
         },
             radar : func() {
             var pipe = Pipe.new(me.group.getElementById("rad"));
@@ -266,6 +267,14 @@ var Pipe = {
             var pipe = Pipe.new(me.group.getElementById("engr4opened"));
             var apuValve = "sim/multiplay/generic/float[18]";
             var apuPump = "sim/multiplay/generic/float[18]";
+            pipe.openedBy(apuValve);
+            pipe.feededBy(apuPump);
+            me.registry.add(apuValve,pipe);
+        },
+            winglr : func() {
+            var pipe = Pipe.new(me.group.getElementById("winglropened"));
+            var apuValve = "sim/multiplay/generic/float[70]";
+            var apuPump = "sim/multiplay/generic/float[70]";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);

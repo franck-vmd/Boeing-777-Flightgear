@@ -55,7 +55,7 @@ var Pipe = {
     var canvas_doors = {
 	new: func(canvas_group)
 	{
-		var m = { parents: [canvas_doors, MfDPanel.new("doors",canvas_group,"Aircraft/777/Models/Instruments/MFD/doors.svg",canvas_doors.update)] };
+		var m = { parents: [canvas_doors, MfDPanel.new("doors",canvas_group,"Aircraft/777/Models/InstrumentsX/MFD-X8F/doors.svg",canvas_doors.update)] };
                 m.context = m;
                 m.initSvgIds(m.group);
                 return m;
@@ -64,13 +64,7 @@ var Pipe = {
         {
             me.radar();
             me.d1l();
-            me.d2l();
-            me.d3l();
-            me.d4l();
             me.d1r();
-            me.d2r();
-            me.d3r();
-            me.d4r();
             me.fwd();
             me.aft();
             me.bulk();
@@ -85,6 +79,9 @@ var Pipe = {
             me.engr2();
             me.engr3();
             me.engr4();
+            me.cargo();
+            me.cargoch();
+            me.winglr();
         },
             radar : func() {
             var pipe = Pipe.new(me.group.getElementById("rad"));
@@ -102,58 +99,10 @@ var Pipe = {
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
         },
-            d2l : func() {
-            var pipe = Pipe.new(me.group.getElementById("d2lopened"));
-            var apuValve = "sim/multiplay/generic/float[20]";
-            var apuPump = "sim/multiplay/generic/float[20]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
-        },
-            d3l : func() {
-            var pipe = Pipe.new(me.group.getElementById("d3lopened"));
-            var apuValve = "sim/multiplay/generic/float[22]";
-            var apuPump = "sim/multiplay/generic/float[22]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
-        },
-            d4l : func() {
-            var pipe = Pipe.new(me.group.getElementById("d4lopened"));
-            var apuValve = "sim/multiplay/generic/float[24]";
-            var apuPump = "sim/multiplay/generic/float[24]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
-        },
             d1r : func() {
             var pipe = Pipe.new(me.group.getElementById("d1ropened"));
             var apuValve = "sim/multiplay/generic/float[11]";
             var apuPump = "sim/multiplay/generic/float[11]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
-        },
-            d2r : func() {
-            var pipe = Pipe.new(me.group.getElementById("d2ropened"));
-            var apuValve = "sim/multiplay/generic/float[21]";
-            var apuPump = "sim/multiplay/generic/float[21]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
-        },
-            d3r : func() {
-            var pipe = Pipe.new(me.group.getElementById("d3ropened"));
-            var apuValve = "sim/multiplay/generic/float[23]";
-            var apuPump = "sim/multiplay/generic/float[23]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
-        },
-            d4r : func() {
-            var pipe = Pipe.new(me.group.getElementById("d4ropened"));
-            var apuValve = "sim/multiplay/generic/float[25]";
-            var apuPump = "sim/multiplay/generic/float[25]";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
@@ -266,6 +215,30 @@ var Pipe = {
             var pipe = Pipe.new(me.group.getElementById("engr4opened"));
             var apuValve = "sim/multiplay/generic/float[18]";
             var apuPump = "sim/multiplay/generic/float[18]";
+            pipe.openedBy(apuValve);
+            pipe.feededBy(apuPump);
+            me.registry.add(apuValve,pipe);
+        },
+            cargo : func() {
+            var pipe = Pipe.new(me.group.getElementById("cargoopened"));
+            var apuValve = "sim/multiplay/generic/float[52]";
+            var apuPump = "sim/multiplay/generic/float[52]";
+            pipe.openedBy(apuValve);
+            pipe.feededBy(apuPump);
+            me.registry.add(apuValve,pipe);
+        },
+            cargoch : func() {
+            var pipe = Pipe.new(me.group.getElementById("cargochopened"));
+            var apuValve = "sim/multiplay/generic/float[52]";
+            var apuPump = "sim/multiplay/generic/float[52]";
+            pipe.openedBy(apuValve);
+            pipe.feededBy(apuPump);
+            me.registry.add(apuValve,pipe);
+        },
+            winglr : func() {
+            var pipe = Pipe.new(me.group.getElementById("winglropened"));
+            var apuValve = "sim/multiplay/generic/float[70]";
+            var apuPump = "sim/multiplay/generic/float[70]";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);

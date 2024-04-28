@@ -366,17 +366,17 @@
             <file>Nasal/brakesystem.nas</file>
             <file>Nasal/ground_steering.nas</file>
             <file>Models/InstrumentsX/ND/ND.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/mfd.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/fctl.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/eng.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/fuel.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/doors.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/cam.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/elec.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/gear.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/stat.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/air.nas</file>
-            <file>Models/InstrumentsX/MFD-X9/hyd.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/mfd.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/fctl.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/eng.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/fuel.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/doors.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/cam.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/elec.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/gear.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/stat.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/air.nas</file>
+            <file>Models/InstrumentsX/MFD-X8/hyd.nas</file>
             <file>Nasal/SWanimation.nas</file>
             <file>Nasal/runway.nas</file>
             <file>Aircraft/Generic/limits.nas</file>

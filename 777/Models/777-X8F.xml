@@ -617,7 +617,7 @@ Franck.VMD
     <model>
         <name>flightdeck-200</name>
         <usage>interior</usage>
-        <path>Aircraft/777/Models/CockpitX/flightdeck-X8.xml</path>
+        <path>Aircraft/777/Models/CockpitX/flightdeck-X8F.xml</path>
     </model>
 
     <!-- Pilote -->
