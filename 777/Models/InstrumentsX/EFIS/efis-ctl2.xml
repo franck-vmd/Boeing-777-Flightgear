@@ -101,44 +101,6 @@ Franck.VMD
             <z>0</z>
         </axis>
     </animation>
-    
-    <animation>
-        <type>pick</type>
-        <object-name>MINS.knob</object-name>
-        <action>
-            <button>0</button>
-            <button>3</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-assign</command>
-                <property>instrumentation/efis/inputs/minimums-mode</property>
-                <value>1</value>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(4);</script>
-            </binding>
-        </action>
-    </animation>
-
-     <animation>
-        <type>pick</type>
-        <object-name>MINS.knob</object-name>
-        <action>
-            <button>1</button>
-            <button>4</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-assign</command>
-                <property>instrumentation/efis/inputs/minimums-mode</property>
-                <value>0</value>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(4);</script>
-            </binding>
-        </action>
-    </animation>
 
     <animation>
         <type>rotate</type>
@@ -719,7 +681,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis2.ctl_func("mins",1);</script>
+                <script>b777.Efis.ctl_func("mins",1);</script>
             </binding>
         </action>
     </animation>
@@ -734,7 +696,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis2.ctl_func("mins",0);</script>
+                <script>b777.Efis.ctl_func("mins",0);</script>
             </binding>
         </action>
     </animation>
@@ -748,7 +710,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis2.ctl_func("dh",10);</script>
+                <script>b777.Efis.ctl_func("dh",10);</script>
             </binding>
         </action>
     </animation>
@@ -762,7 +724,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis2.ctl_func("dh",-10);</script>
+                <script>b777.Efis.ctl_func("dh",-10);</script>
             </binding>
         </action>
     </animation>
@@ -777,7 +739,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis2.ctl_func("dh",10);</script>
+                <script>b777.Efis.ctl_func("dh",10);</script>
             </binding>
         </action>
     </animation>
@@ -792,7 +754,7 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis2.ctl_func("dh",-10);</script>
+                <script>b777.Efis.ctl_func("dh",-10);</script>
             </binding>
         </action>
     </animation>
@@ -806,7 +768,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>b777.Efis2.ctl_func("dh",0);</script>
+                <script>b777.Efis.ctl_func("dh",0);</script>
             </binding>
         </action>
     </animation>
