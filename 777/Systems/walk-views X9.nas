@@ -13,7 +13,7 @@ var plantConstraint =
     walkview.makeUnionConstraint(
         [
          walkview.SlopingYAlignedPlane.new([-29.05, -2.0, -0.5], 
-                                           [ 31.3,  2.0, -0.5]),
+                                           [ 31.30,  2.0, -0.5]),
         ]);
 # Create the walker for the named view and the given movement restrictions.
 

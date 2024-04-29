@@ -820,8 +820,8 @@ Service Ceiling: 43,100ft
 
     <help n="0">
         <key>
-            <name>s</name>
-            <desc></desc>
+            <name>q</name>
+            <desc>walk-views interior and jetways</desc>
         </key>
         <key>
             <name>Delete</name>

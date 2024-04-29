@@ -394,10 +394,10 @@
    <file>Aircraft/777/Models/WalkView/walkview.nas</file>
   </walkview>
   <WalkViews>
-   <file>Aircraft/777/Systems/walk-views X9.nas</file>
+   <file>Aircraft/777/Systems/walk-views X8.nas</file>
   </WalkViews>
   <WalkViews1>
-   <file>Aircraft/777/Systems/walk-views1 X9.nas</file>
+   <file>Aircraft/777/Systems/walk-views1 X8.nas</file>
   </WalkViews1>
     </nasal>
     
