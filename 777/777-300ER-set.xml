@@ -11,8 +11,7 @@
         </startup>
 
         <variant-of>777-300</variant-of>
-        
-        
+                
         <model n="0">
             <path>Aircraft/777/Models/777-300ER.xml</path>
             <livery>

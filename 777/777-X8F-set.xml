@@ -9,6 +9,8 @@
         <startup>
             <splash-texture>Aircraft/777/gui/Previews/splash-X8F.png</splash-texture>
         </startup>
+        
+        <variant-of>777-X8</variant-of>
 
         <model n="0">
             <path>Aircraft/777/Models/777-X8F.xml</path>

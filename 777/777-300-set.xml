@@ -10,14 +10,6 @@
             <splash-texture>Aircraft/777/gui/Previews/splash-300.png</splash-texture>
         </startup>
         
-        <previews>
-             <preview>
-                <type>splash</type>
-                <splash type="bool">true</splash>
-                <path>splash-300.png</path>
-            </preview>
-        </previews>
-        
         <primary-set type="bool">true</primary-set>
         
         <model n="0">

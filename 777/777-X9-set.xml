@@ -8,7 +8,9 @@
         <max-takeoff-weight type="double">775000</max-takeoff-weight>
         <startup>
             <splash-texture>Aircraft/777/gui/Previews/splash-X9.png</splash-texture>
-        </startup>        
+        </startup>  
+        
+        <variant-of>777-X8</variant-of>      
 
         <model n="0">
             <path>Aircraft/777/Models/777-X9.xml</path>

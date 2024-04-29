@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">20 EMIRATES vert 777-300F</name>
+				<texture>Liveries-300F/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-300F/AFR1emirexpvert.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-300F/AFR3emirexpvert.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-300F/AFR4emirexpbleu.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-300F/AFR5emirates.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-300F/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-300F/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-300F/AFR8emirexpvert.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-300F/AFR9.png</texture>
+                        </fuselage7>
+                        <fuselage8>
+                                <texture>Liveries-300F/AFR1emirexpvertrac.png</texture>
+                        </fuselage8>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>EMIRV</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+

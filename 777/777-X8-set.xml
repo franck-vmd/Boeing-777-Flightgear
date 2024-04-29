@@ -9,6 +9,8 @@
         <startup>
             <splash-texture>Aircraft/777/gui/Previews/splash-X8.png</splash-texture>
         </startup>
+        
+        <primary-set type="bool">true</primary-set>
 
         <model n="0">
             <path>Aircraft/777/Models/777-X8.xml</path>
