@@ -19,7 +19,7 @@ Bienvenue
 FlightGear Flight Simulator , souvent abrégé FlightGear ou FGFS est un jeu vidéo libre de simulation de vol , gratuit, open-source et multiplate-forme développé par le projet FlightGear .
 Principalement écrit dans le langage de programmation C++ , FlightGear est , tout comme Fly ! Legacy , un simulateur de vol dont les sources sont libres .
 
-Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-X8 , 777-X8F , 777-X9 
+Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , 777-300ERSF , USAF (Tanker) , 777-X8 , 777-X8F , 777-X9 
 
 ![Image](https://i.ibb.co/6DBQQ2r/debut-video-777.jpg)
 ----------------------------------------------------------------------------------
@@ -27,6 +27,8 @@ Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-
 Portes 777-séries 200: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture jusqu'à 35 knots
 
 Portes 777-séries 300: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fermeture jusqu'à 35 knots
+
+Portes 777-300ERSF: L1, R1, ouverture et fermeture jusqu'à 35 knots
 
 Portes 777-X8: L1, L2, L3, L4, R1, R2, R3, R4, ouverture et fermeture jusqu'à 35 knots
 
@@ -93,7 +95,7 @@ Oxigene masque :
 
 ![Image](https://i.ibb.co/zs0mDmF/Oxigene-masque.jpg)
 
-Interieur-777-F , 777-X8F:
+Interieur-777-200F , 777-KFC , 777-300ERSF , 777-X8F:
 
 ![Image](https://i.ibb.co/gMwP5Zr/interieur-777-F.jpg)
 
@@ -120,7 +122,7 @@ Welcome
 
 FlightGear Flight Simulator, often abbreviated FlightGear or FGFS is a free, open-source, cross-platform flight simulator developed by volunteers.
 
-Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-X8 , 777-X8F , 777-X9 
+Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , 777-300ERSF , USAF (Tanker) , 777-X8 , 777-X8F , 777-X9 
 
 ![Image](https://i.ibb.co/D7Z7dXV/X9.jpg)
 -------------------------------------------------------------------------------
@@ -128,6 +130,8 @@ Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , USAF (Tanker) , 777-
 777-series 200 doors: L1, L2, L3, L4, R1, R2, R3, R4, opening and closing up to 35 knots
 
 777-series 300 doors: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, opening and closing up to 35 knots
+
+777-300ERSF doors: L1, R1, opening and closing up to 35 knots
 
 777-X8 doors: L1, L2, L3, L4, R1, R2, R3, R4,  opening and closing up to 35 knots
 
@@ -194,7 +198,7 @@ oxygen mask :
 
 ![Image](https://i.ibb.co/h2BkwH8/oxygen-mask.jpg)
 
-Interior-777-F , 777-X8F:
+Interior-777-200F , 777-KFC , 777-300ERSF , 777-X8F:
 
 ![Image](https://i.ibb.co/XJFQ9tx/interior-777-F.jpg)
 
