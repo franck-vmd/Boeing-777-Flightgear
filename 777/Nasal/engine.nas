@@ -50,8 +50,8 @@ var Engine = {
         m.apu_gen_switch.setBoolValue(0);
         m.apu_run = m.apu.getNode("run", 1);
         m.apu_run.setBoolValue(0);
-                m.apu_running = m.apu.getNode("running",1);
-                m.apu_running.setBoolValue(0);
+        m.apu_running = m.apu.getNode("running",1);
+        m.apu_running.setBoolValue(0);
         m.oilTemperatureDegc=m.eng.getNode("oil-temperature-degc",1);
         var envirT = getprop("environment/temperature-degc") or 0.00;
         m.oilTemperatureDegc.setDoubleValue(envirT);
