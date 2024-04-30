@@ -36,7 +36,7 @@ Portes 777-X8F: L1, R1, ouverture et fermeture jusqu'à 35 knots
 
 Portes 777-X9: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, ouverture et fermeture jusqu'à 35 knots
 
-Portes 777-F et 777-KFC: L1, R1, ouverture et fermeture jusqu'à 35 knots
+Portes 777-200F et 777-KFC: L1, R1, ouverture et fermeture jusqu'à 35 knots
 
 Indication visuelle intérieure cabine pour les portes : éclairage à gauche et à droite de chaque bas de portes ainsi que la manette Automatique> Manuel en haut de chaque porte 
 
@@ -139,7 +139,7 @@ Boeing 777 Series 200 , ER , LR , F , 777-300 , 777-300ER , 777-300ERSF , USAF (
 
 777-X9 doors: L1, L2, L3, L4, L5, R1, R2, R3, R4, R5, opening and closing up to 35 knots
 
-777-F and 777-KFC doors: L1, R1, opening and closing up to 35 knots
+777-200F and 777-KFC doors: L1, R1, opening and closing up to 35 knots
 
 Cabin interior visual indication for the doors: lighting on the left and right of each door bottom as well as the Automatic > Manual lever at the top of each door
 
