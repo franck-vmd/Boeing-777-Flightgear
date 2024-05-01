@@ -115,7 +115,7 @@ Franck.VMD
                 <object-name>gspointer</object-name>
                 <object-name>RALT</object-name>
 		<condition>
-			<property>controls/switches/ADIRUSwitchTimer/position-norm</property>
+			<property>controls/switches/ADIRUSwitchTimer/position-norm</property>	
 		</condition>
 	</animation>
 
