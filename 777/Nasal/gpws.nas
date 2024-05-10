@@ -72,7 +72,7 @@ var GPWS =
     release_selftest_button : func
     {
         me.self_test.setBoolValue(0);
-    },
+    },    
 
 #### flap-override button ####
     clicked_flap_override : func

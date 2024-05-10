@@ -13,7 +13,7 @@ MATERIAL "greenglow" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.
 MATERIAL "greenglow.007" rgb 0.600 0.600 0.600  amb 0.800 0.800 0.800  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__OHpanel.ac"
-kids 380
+kids 382
 OBJECT poly
 name "ADIRU_Placard"
 data 17
@@ -112030,6 +112030,27 @@ refs 4
 21 0.451722 0.40995
 kids 0
 OBJECT poly
+name "FIRE-ARM_AFT_Switch.001"
+data 15
+STRM_Switch.058
+crease 179.0
+texture "Buttons_03.png"
+texrep 1 1
+numvert 4
+0.01813 0.21551 -0.16982
+0.01813 0.22332 -0.18714
+0.01813 0.21551 -0.18714
+0.01813 0.22332 -0.16982
+numsurf 1
+SURF 0X20
+mat 1
+refs 4
+2 0.510701 0.348669
+1 0.510701 0.374118
+3 0.454262 0.374118
+0 0.454262 0.348669
+kids 0
+OBJECT poly
 name "FIRE-ARM_FWD_Placard"
 data 24
 FIRE-ARM_FWD_Placard.001
@@ -112954,6 +112975,27 @@ refs 4
 37 0.379174 0.410081
 19 0.379174 0.410081
 21 0.378358 0.40995
+kids 0
+OBJECT poly
+name "FIRE-ARM_FWD_Switch.001"
+data 15
+STRM_Switch.057
+crease 179.0
+texture "Buttons_03.png"
+texrep 1 1
+numvert 4
+0.01813 0.21551 -0.13716
+0.01813 0.22332 -0.15448
+0.01813 0.21551 -0.15448
+0.01813 0.22332 -0.13716
+numsurf 1
+SURF 0X20
+mat 1
+refs 4
+2 0.437337 0.348669
+1 0.437337 0.374118
+3 0.380898 0.374118
+0 0.380898 0.348669
 kids 0
 OBJECT poly
 name "FireOVHTTest.btn"

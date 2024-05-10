@@ -18,6 +18,12 @@ Franck.VMD
         <object-name>light plafond</object-name>
         <object-name>Lettering_TS_L</object-name>
     </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect39</inherits-from>
+        <object-name>MST_WRN_L</object-name>
+        <object-name>MST_WRN_R</object-name>
+    </effect>
 
     <animation>
         <type>material</type>
@@ -1751,6 +1757,7 @@ Franck.VMD
                 <property>instrumentation/mk-viii/outputs/discretes/gpws-warning</property>
                 <property>instrumentation/mk-viii/outputs/discretes/gpws-alert</property>
                 <property>instrumentation/weu/light/master-warning</property>
+                <property>controls/fire/inputs/self-test</property>
             </or>
         </condition>
     </animation>

@@ -38,6 +38,16 @@ Franck.VMD
         <object-name>Lettering_CS.ST</object-name>
         <object-name>Lettering_CS.TCAS</object-name>
         <object-name>Lettering_CS.TPH</object-name>
+        <object-name>Lcutoff.Knob.002</object-name>
+        <object-name>Lettering_CS.APU.002</object-name>
+        <object-name>Rcutoff.Knob.002</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect38</inherits-from>
+        <object-name>Lcutoff.Knob.001</object-name>
+        <object-name>Lettering_CS.APU.001</object-name>
+        <object-name>Rcutoff.Knob.001</object-name>
     </effect>
 
 <!-- New LightMap according to new Graphic addition -->
@@ -75,6 +85,9 @@ Franck.VMD
         <object-name>Lettering_CS.ST</object-name>
         <object-name>Lettering_CS.TCAS</object-name>
         <object-name>Lettering_CS.TPH</object-name>
+        <object-name>Lcutoff.Knob.002</object-name>
+        <object-name>Lettering_CS.APU.002</object-name>
+        <object-name>Rcutoff.Knob.002</object-name>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
@@ -420,9 +433,22 @@ Franck.VMD
     </animation>
 
     <animation>
+        <type>select</type>
+        <object-name>Lcutoff.Knob.001</object-name>
+        <object-name>Rcutoff.Knob.001</object-name>
+        <object-name>Lettering_CS.APU.001</object-name>
+             <condition>
+             <property>controls/fire/inputs/self-test</property>
+             <value>1</value>
+             </condition>
+    </animation>
+    
+    <animation>
         <type>rotate</type>
         <object-name>Lcutoff.Lever</object-name>
         <object-name>Lcutoff.Knob</object-name>
+        <object-name>Lcutoff.Knob.001</object-name>
+        <object-name>Lcutoff.Knob.002</object-name>
         <property>controls/engines/engine/cutoff</property>
         <factor>40</factor>
         <center>
@@ -441,6 +467,8 @@ Franck.VMD
         <type>rotate</type>
         <object-name>Rcutoff.Lever</object-name>
         <object-name>Rcutoff.Knob</object-name>
+        <object-name>Rcutoff.Knob.001</object-name>
+        <object-name>Rcutoff.Knob.002</object-name>
         <property>controls/engines/engine[1]/cutoff</property>
         <factor>40</factor>
         <center>

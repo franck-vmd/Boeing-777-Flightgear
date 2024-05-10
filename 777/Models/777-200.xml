@@ -5934,6 +5934,10 @@ Franck.VMD
 		  <condition>
 		    <or>
 					<and>
+					<greater-than>
+			<property>controls/switches/BATTSwitchTimer/position-norm</property>
+			<value>0</value>
+		</greater-than>
 				   <property>controls/wipers/degrees</property>
 					 	<greater-than>
 					 		<property>controls/wipers/degrees</property>

@@ -142,6 +142,20 @@
         <offset>1.0</offset>
       </pitch>
     </wiperho>
+    
+<!-- Fire  -->
+
+        <fire>
+		<name>fires</name>
+		<mode>once</mode>
+		<path>Aircraft/777/Sounds/777 fire test.wav</path>
+            <condition>
+            <property>controls/fire/inputs/self-test</property>
+                </condition>
+		<volume>
+			<factor>1</factor>
+		</volume>
+	</fire>
 
 <!-- brake-parking  -->
 

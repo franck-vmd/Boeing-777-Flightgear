@@ -11,6 +11,13 @@ Franck.VMD
         <object-name>Lettering_CB</object-name>
         <object-name>Lettering_Maint</object-name>
     </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect40</inherits-from>
+        <object-name>APU_FIRE_DISCH_Switch</object-name>
+        <object-name>FIRE-ARM_FWD_Switch.001</object-name>
+        <object-name>FIRE-ARM_AFT_Switch.001</object-name>
+    </effect>
 
     <effect>
        <inherits-from>Aircraft/777/Models/Effects/glass</inherits-from>
@@ -874,6 +881,97 @@ Franck.VMD
      <z>0</z>
    </axis>
  </animation>
+ 
+<!-- FIRE -->
+       
+       <animation>
+        <type>pick</type>
+        <object-name>FireOVHTTest.btn</object-name>
+        <action>
+        <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <condition>
+            <or>
+            <and>
+                <command>property-toggle</command>
+                <property>systems/electrical/PRI-EPC</property>
+            </and>
+            <and>
+                <command>property-toggle</command>
+                <property>systems/electrical/SEC-EPC</property>
+            </and>
+            <and>
+                <command>property-toggle</command>
+                <property>controls/APU/off-start-run</property>
+            </and>
+            </or>
+            </condition>
+                <command>nasal</command>
+                <script>
+                  controls.click(3);
+                  b777.Fire.press_selftest_button();
+                </script>
+            </binding>
+            <mod-up>
+              <binding>
+                <command>nasal</command>
+                <script>
+                  b777.Fire.release_selftest_button();
+                </script>
+              </binding>
+            </mod-up>
+        </action>
+    </animation>
+
+       <animation>
+        <type>pick</type>
+        <object-name>FireOVHTTest.btn</object-name>
+        <action>
+        <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <condition>
+            <or>
+            <and>
+                <command>property-toggle</command>
+                <property>systems/electrical/PRI-EPC</property>
+            </and>
+            <and>
+                <command>property-toggle</command>
+                <property>systems/electrical/SEC-EPC</property>
+            </and>
+            <and>
+                <command>property-toggle</command>
+                <property>controls/APU/off-start-run</property>
+            </and>
+            </or>
+            </condition>
+                <command>nasal</command>
+                <script>
+                  controls.click(4);
+                  b777.Fire.clicked_selftest();
+                </script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+   <type>translate</type>
+   <object-name>FireOVHTTest.btn</object-name>
+    <property>controls/fire/inputs/self-test</property>
+   <factor>0.004</factor>
+   <center>
+      <x-m>0.01549</x-m>
+      <y-m>0.10912</y-m>
+      <z-m>0.17081</z-m>
+    </center>
+   <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+   </axis>
+ </animation>
 
  <animation>
    <type>textranslate</type>
@@ -886,12 +984,21 @@ Franck.VMD
      <z>0</z>
    </axis>
  </animation>
-
+ 
+ <animation>
+   <type>select</type>
+        <object-name>FIRE-ARM_FWD_Switch.001</object-name>
+        <object-name>FIRE-ARM_AFT_Switch.001</object-name>
+        <condition>
+                <property>controls/fire/inputs/self-test</property>
+        </condition>   
+ </animation>
+ 
  <animation>
    <type>textranslate</type>
    <object-name>FIRE-ARM_FWD_Switch</object-name>
-    <property>controls/switches/fire/cargo-fwd</property>
-   <factor>0.0781</factor>
+                <property>controls/switches/fire/cargo-fwd</property>   
+       <factor>0.0781</factor>
    <axis>
      <x>0</x>
      <y>1</y>
@@ -903,6 +1010,7 @@ Franck.VMD
    <type>translate</type>
    <object-name>FIRE-ARM_FWD_AcryFace</object-name>
    <object-name>FIRE-ARM_FWD_Switch</object-name>
+   <object-name>FIRE-ARM_FWD_Switch.001</object-name>
    <object-name>FIRE-ARM_FWD_Shutter.Top</object-name>
    <object-name>FIRE-ARM_FWD_Shutter.Bottom</object-name>
    <property>controls/switches/FIREARMCARGOFWDSwitchTimer/position-norm</property>
@@ -947,12 +1055,26 @@ Franck.VMD
             <z>0</z>
         </axis>
  </animation>
-
+ 
  <animation>
    <type>textranslate</type>
    <object-name>FIRE-ARM_AFT_Switch</object-name>
-    <property>controls/switches/fire/cargo-aft</property>
-   <factor>0.0781</factor>
+       <property>controls/fire/inputs/self-test</property>
+       <factor>0.0781</factor>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <!-- FIRE fin-->
+ 
+ <animation>
+   <type>textranslate</type>
+   <object-name>FIRE-ARM_AFT_Switch</object-name>
+      <property>controls/switches/fire/cargo-aft</property>
+      <factor>0.0781</factor>
    <axis>
      <x>0</x>
      <y>1</y>
@@ -964,6 +1086,7 @@ Franck.VMD
    <type>translate</type>
    <object-name>FIRE-ARM_AFT_AcryFace</object-name>
    <object-name>FIRE-ARM_AFT_Switch</object-name>
+   <object-name>FIRE-ARM_AFT_Switch.001</object-name>
    <object-name>FIRE-ARM_AFT_Shutter.Top</object-name>
    <object-name>FIRE-ARM_AFT_Shutter.Bottom</object-name>
    <property>controls/switches/FIREARMCARGOAFTSwitchTimer/position-norm</property>

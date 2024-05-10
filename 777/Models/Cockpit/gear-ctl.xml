@@ -394,6 +394,18 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
+    <animation>
+   <type>translate</type>
+   <object-name>GS_INH_Switch</object-name>
+    <property>instrumentation/mk-viii/outputs/discretes/gpws-warning</property>
+   <factor>0.004</factor>
+   <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+   </axis>
+ </animation>
 
     <!-- FLAP OVERRIDE button -->
     <animation>

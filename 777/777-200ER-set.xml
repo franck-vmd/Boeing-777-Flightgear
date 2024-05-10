@@ -378,6 +378,7 @@
             <file>Nasal/wipers.nas</file>
             <file>Nasal/libraries.nas</file>
             <file>Nasal/autoannunciator.nas</file>
+            <file>Nasal/fire.nas</file>
         </b777>
         <dialogs>
             <file>Nasal/dialogs.nas</file>

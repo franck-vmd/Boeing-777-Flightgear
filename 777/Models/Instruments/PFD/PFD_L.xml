@@ -114,8 +114,9 @@ Franck.VMD
                 <object-name>coarseGSPointer</object-name>
                 <object-name>gspointer</object-name>
                 <object-name>RALT</object-name>
-		<condition>
-			<property>controls/switches/ADIRUSwitchTimer/position-norm</property>	
+                <condition>
+			<property>controls/switches/ADIRUSwitchTimer/position-norm</property>
+			<time>0.10</time>
 		</condition>
 	</animation>
 

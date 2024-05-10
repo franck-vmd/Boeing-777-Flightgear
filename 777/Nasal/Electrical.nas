@@ -318,6 +318,9 @@ var init_switches = func{
     append(lights_input,props.globals.initNode("controls/lighting/strobe-state/state",0,"BOOL"));
     append(lights_output,props.globals.initNode("systems/electrical/outputs/strobe",0,"DOUBLE"));
     append(lights_load,1);
+    append(lights_input,props.globals.initNode("controls/fire/inputs/self-test",0,"BOOL"));
+    append(lights_output,props.globals.initNode("systems/electrical/outputs/fire",0,"DOUBLE"));
+    append(lights_load,1);
 
     append(rbus_input,props.globals.initNode("controls/electric/wiper-switch",0,"BOOL"));
     append(rbus_output,props.globals.initNode("systems/electrical/outputs/wiper",0,"DOUBLE"));
