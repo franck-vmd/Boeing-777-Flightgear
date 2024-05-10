@@ -1431,7 +1431,11 @@ Franck.VMD
    <type>textranslate</type>
    <object-name>ADIRU_Switch</object-name>
     <property>sim/multiplay/generic/float[75]</property>
-   <factor>0.0781</factor>
+   <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.1</ind><dep>0.0781</dep></entry>
+            <entry><ind>1</ind><dep>0.0781</dep></entry>
+   </interpolation>
    <axis>
      <x>0</x>
      <y>1</y>
@@ -1464,6 +1468,7 @@ Franck.VMD
    <property>sim/multiplay/generic/float[75]</property>
    <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.1</ind><dep>-92</dep></entry>
             <entry><ind>1</ind><dep>-92</dep></entry>
                </interpolation>
         <center>
@@ -1484,6 +1489,7 @@ Franck.VMD
    <property>sim/multiplay/generic/float[75]</property>
    <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.1</ind><dep>92</dep></entry>
             <entry><ind>1</ind><dep>92</dep></entry>
                </interpolation>
         <center>
