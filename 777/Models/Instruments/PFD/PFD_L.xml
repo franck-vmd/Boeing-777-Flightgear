@@ -115,8 +115,10 @@ Franck.VMD
                 <object-name>gspointer</object-name>
                 <object-name>RALT</object-name>
                 <condition>
-			<property>controls/switches/ADIRUSwitchTimer/position-norm</property>
-			<time>0.10</time>
+                        <greater-than>
+			<property>sim/multiplay/generic/float[75]</property>
+			<value>0.9</value>
+			</greater-than>
 		</condition>
 	</animation>
 

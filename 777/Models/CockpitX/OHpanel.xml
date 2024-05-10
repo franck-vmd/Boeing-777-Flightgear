@@ -1430,7 +1430,7 @@ Franck.VMD
  <animation>
    <type>textranslate</type>
    <object-name>ADIRU_Switch</object-name>
-    <property>controls/flight/adiru</property>
+    <property>sim/multiplay/generic/float[75]</property>
    <factor>0.0781</factor>
    <axis>
      <x>0</x>
@@ -1445,8 +1445,12 @@ Franck.VMD
    <object-name>ADIRU_Switch</object-name>
    <object-name>ADIRU_Shutter.Top</object-name>
    <object-name>ADIRU_Shutter.Bottom</object-name>
-   <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
-   <factor>0.004</factor>
+   <property>sim/multiplay/generic/float[75]</property>
+   <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.1</ind><dep>0.004</dep></entry>
+            <entry><ind>1</ind><dep>0.004</dep></entry>
+               </interpolation>
    <axis>
      <x>-1</x>
      <y>0</y>
@@ -1457,8 +1461,11 @@ Franck.VMD
  <animation>
    <type>rotate</type>
    <object-name>ADIRU_Shutter.Top</object-name>
-   <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
-        <factor>-92</factor>
+   <property>sim/multiplay/generic/float[75]</property>
+   <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>-92</dep></entry>
+               </interpolation>
         <center>
             <x-m>0.0134</x-m>
             <y-m>0</y-m>
@@ -1474,8 +1481,11 @@ Franck.VMD
  <animation>
    <type>rotate</type>
    <object-name>ADIRU_Shutter.Bottom</object-name>
-   <property>controls/switches/ADIRUSwitchTimer/position-norm</property>
-        <factor>92</factor>
+   <property>sim/multiplay/generic/float[75]</property>
+   <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>92</dep></entry>
+               </interpolation>
         <center>
             <x-m>0.0134</x-m>
             <y-m>0</y-m>
@@ -5236,9 +5246,11 @@ Franck.VMD
             <button>0</button>
             <repeatable>false</repeatable>
             <binding>
-                <command>property-toggle</command>
-                <property>controls/flight/adiru-switch</property>
-            </binding>
+	       <command>nasal</command>
+	       <script>
+	       b777.doors.toggle("ad1");
+	       </script>
+	    </binding>
             <binding>
                 <command>nasal</command>
                 <script>controls.click(4);</script>

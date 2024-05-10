@@ -92,7 +92,7 @@ doors.new("c52", 10);
 doors.new("c53", 10);
 doors.new("c54", 10);
 doors.new("c55", 10);
-doors.new("c56", 10);
+doors.new("ad1", 59);
 
 doors.new("rat", 10);
 
