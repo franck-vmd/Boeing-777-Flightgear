@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 777-300
+<!-- 777-300F
 Franck.VMD
 -->
 <PropertyList>
@@ -31,6 +31,7 @@ Franck.VMD
         <object-name>Fuselage.007</object-name>
         <object-name>Fuselage.008</object-name>
         <object-name>queu pointe</object-name>
+        <object-name>Fuselage.010</object-name>
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>ApuG.001</object-name>
@@ -39,6 +40,8 @@ Franck.VMD
         <object-name>entry9r</object-name>
         <object-name>entry8r.001</object-name>
         <object-name>entry10r</object-name>
+        <object-name>entry11l</object-name>
+        <object-name>rlightext</object-name>
         <object-name>LFdoor</object-name>
         <object-name>LRdoor</object-name>
         <object-name>RFdoor</object-name>
@@ -296,10 +299,10 @@ Franck.VMD
         <object-name>queu pointe</object-name>
         <object-name>entry8r</object-name>
         <object-name>entry10r</object-name>
+        <object-name>entry11l</object-name>
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>Fuselage.004</object-name>
-        <object-name>window mix exterieur</object-name>
       </effect>
       
       <effect>
@@ -513,6 +516,15 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777/Models/Effects/reflect19</inherits-from>
         <object-name>plafond</object-name>
+        <object-name>portesouteD</object-name>
+        <object-name>portesouteG</object-name>
+        <object-name>porte wc</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Aircraft/777/Models/Effects/reflect22</inherits-from>
+        <object-name>spote</object-name>
+        <object-name>spote.001</object-name>
     </effect>
     
     <effect>
@@ -523,35 +535,37 @@ Franck.VMD
         <object-name>portecloison4</object-name>
         <object-name>portecloison5</object-name>
         <object-name>cloison</object-name>
+        <object-name>mur</object-name>
+        <object-name>Fuselage.003</object-name>
+        <object-name>mur.001</object-name>
+        <object-name>panneau mur</object-name>
+        <object-name>entry11l.002</object-name>
         <object-name>placar</object-name>
         <object-name>plancher</object-name>
-        <object-name>wc</object-name>
+        <object-name>Plane</object-name>
+        <object-name>verin</object-name>
+        <object-name>verin1</object-name>
+        <object-name>Cylinder.001</object-name>
+        <object-name>Sieges777200</object-name>
+        <object-name>charniere2</object-name>
+        <object-name>charniere1</object-name>
+        <object-name>cuvette</object-name>
+        <object-name>robinet</object-name>
+        <object-name>eau</object-name>
+        <object-name>eau wc</object-name>
+        <object-name>bouton poussoir</object-name>
         <object-name>sortiewc</object-name>
         <object-name>galleycart</object-name>
         <object-name>cafetiere1</object-name>
     </effect>
     
     <effect>
-        <inherits-from>Aircraft/777/Models/Effects/reflect29</inherits-from>
-        <object-name>mur</object-name>
-        <object-name>mur.001</object-name>
-        <object-name>mur.002</object-name>
-    </effect>
-
-    <effect>
        <name>exterior-glass</name>
        <inherits-from>Aircraft/777/Models/Effects/exterior-glass</inherits-from>
         <object-name>glassehublot</object-name>
         <object-name>entry1lG</object-name>
         <object-name>entry1rG</object-name>
-        <object-name>entry2lG</object-name>
-        <object-name>entry2rG</object-name>
-        <object-name>entry3lG</object-name>
-        <object-name>entry3rG</object-name>
-        <object-name>entry4lG</object-name>
-        <object-name>entry4rG</object-name>
-        <object-name>entry5lG</object-name>
-        <object-name>entry5rG</object-name>
+        <object-name>hublot</object-name>
    </effect>
     
     <model>
@@ -2836,174 +2850,6 @@ Franck.VMD
         </condition>
 	</animation>
 
-	<animation>
-		<type>pick</type>
-		<object-name>entry2l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("l2");
-				</script>
-			</binding>
-		</action>
-          <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry2r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("r2");
-				</script>
-			</binding>
-		</action>
-         <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry3l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("l3");
-				</script>
-			</binding>
-		</action>
-         <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry3r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("r3");
-				</script>
-			</binding>
-		</action>
-          <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry4l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("l4");
-				</script>
-			</binding>
-		</action>
-          <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry4r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("r4");
-				</script>
-			</binding>
-		</action>
-         <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>entry5l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c54");
-				</script>
-			</binding>
-		</action>
-          <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry5r.001</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c55");
-				</script>
-			</binding>
-		</action>
-         <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
         <animation>
 		<type>pick</type>
 		<object-name>entry5r</object-name>
@@ -3116,6 +2962,35 @@ Franck.VMD
             <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>10</value>
+            </less-than>
+        </condition>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>entry11l</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c30");
+				</script>
+			</binding>
+		</action>
+          <condition>
+            <less-than>
+                <property>engines/engine[0]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+                <property>engines/engine[1]/rpm</property>
+                <value>30</value>
+            </less-than>
+            <less-than>
+            <property>velocities/groundspeed-kt</property>
+            <value>30</value>
             </less-than>
         </condition>
 	</animation>
@@ -3666,82 +3541,85 @@ Franck.VMD
         </greater-than>
         </condition>
   </animation>
+  
+  <!-- Doors Animations soute -->
 
-   <!-- Door2l Animations -->
-	
-       <animation>
-		<name>L2PE Door y-translate</name>
-		<type>translate</type>
-		<object-name>entry2lPE</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
-			<entry><ind>0.25</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-        <axis>
-        <x1-m>-13.22716</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>-13.22769</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-       <animation>
-		<name>L2P Door y-rotate</name>
+      <animation>
+		<name>c40</name>
 		<type>rotate</type>
-		<object-name>entry2lPE</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-180</dep></entry>
-                        <entry><ind>0.50</ind><dep>-180</dep></entry>
-			<entry><ind>1</ind><dep>-180</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>-13.22716</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>-13.22769</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
+		<object-name>porte wc</object-name>
+		<property>sim/multiplay/generic/float[64]</property>
+		<factor>85</factor>
+        <center>
+            <x-m>-25.6882</x-m>
+            <y-m>0.58915</y-m>
+            <z-m>0.39044</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
 	</animation>
 
         <animation>
-		<name>L2P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry2lP</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>180</dep></entry>
-                        <entry><ind>0.50</ind><dep>180</dep></entry>
-			<entry><ind>1</ind><dep>180</dep></entry>
-		</interpolation>
+		<type>pick</type>
+		<object-name>porte wc</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c40");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+      <animation>
+		<name>c38</name>
+		<type>translate</type>
+		<object-name>portesouteD</object-name>
+		<property>sim/multiplay/generic/float[62]</property>
+		<factor>0.85</factor>
         <center>
-        <x-m>-13.1426</x-m>
-        <y-m>-2.6596</y-m>
-        <z-m>0.360335</z-m>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<type>pick</type>
+		<object-name>portesouteD</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c38");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+      <animation>
+		<name>c39</name>
+		<type>translate</type>
+		<object-name>portesouteG</object-name>
+		<property>sim/multiplay/generic/float[63]</property>
+		<factor>0.85</factor>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
         </center>
 		<axis>
 			<x>0</x>
@@ -3750,2011 +3628,22 @@ Franck.VMD
 		</axis>
 	</animation>
 
-        <animation>
-		<name>L2A Door x-rotate</name>
-		<type>rotate</type>
-		<object-name>entry2lA</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-15</dep></entry>
-                        <entry><ind>0.50</ind><dep>-15</dep></entry>
-			<entry><ind>1</ind><dep>-15</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>-13.34692</x1-m>
-        <y1-m>-2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>-12.95549</x2-m>
-        <y2-m>-2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
-        </axis>
-          <axis>
-	<x>1</x>
-	<y>0</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>L2 Door z-translate</name>
-		<type>translate</type>
-		<object-name>entry2l</object-name>
-                <object-name>entry2l2</object-name>
-                <object-name>entry2lG</object-name>
-                <object-name>entry2lC2</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0.05</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
-			<entry><ind>1</ind><dep>0.05</dep></entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L2 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry2l</object-name>
-                <object-name>entry2l2</object-name>
-                <object-name>entry2lG</object-name>
-                <object-name>entry2lC2</object-name>
-                <object-name>entry2lC</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-143</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>-13.65778</x-m>
-            <y-m>-2.91403</y-m>
-            <z-m>0.77978</z-m>
-           </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L2 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry2l</object-name>
-                <object-name>entry2l2</object-name>
-                <object-name>entry2lG</object-name>
-                <object-name>entry2lC2</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>143</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>-12.87907</x-m>
-            <y-m>-2.90772</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-
-        <animation>
-		<name>l2 Door X-translate</name>
-		<type>translate</type>
-		<object-name>entry2l</object-name>
-                <object-name>entry2l2</object-name>
-                <object-name>entry2lG</object-name>
-                <object-name>entry2lC2</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>0.2</dep></entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L2 Door z-rotation</name>
-		<type>rotate</type>
-                <object-name>entry2lC2</object-name>
-		<property>sim/multiplay/generic/float[20]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>-12.87907</x-m>
-            <y-m>-2.90772</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-	
-   <animation>
-    <type>select</type>
-    <object-name>porte automatique L2b</object-name>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>porte automatique L2</object-name>
-    <condition>
-        <greater-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </greater-than>
-        </condition>
-  </animation>
-
-   <!-- Door2r Animations -->
-
-       <animation>
-		<name>R2PE Door y-translate</name>
-		<type>translate</type>
-		<object-name>entry2rPE</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
-			<entry><ind>0.25</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-        <axis>
-        <x1-m>-13.22716</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>-13.22769</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-       <animation>
-		<name>R2P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry2rPE</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-180</dep></entry>
-                        <entry><ind>0.50</ind><dep>-180</dep></entry>
-			<entry><ind>1</ind><dep>-180</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>-13.22716</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>-13.22769</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>R2P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry2rP</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>180</dep></entry>
-                        <entry><ind>0.50</ind><dep>180</dep></entry>
-			<entry><ind>1</ind><dep>180</dep></entry>
-		</interpolation>
-        <center>
-        <x-m>-13.1426</x-m>
-        <y-m>2.6596</y-m>
-        <z-m>0.360335</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R2A Door x-rotate</name>
-		<type>rotate</type>
-		<object-name>entry2rA</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>15</dep></entry>
-                        <entry><ind>0.50</ind><dep>15</dep></entry>
-			<entry><ind>1</ind><dep>15</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>-13.34692</x1-m>
-        <y1-m>2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>-12.95549</x2-m>
-        <y2-m>2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
-        </axis>
-          <axis>
-	<x>1</x>
-	<y>0</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>R2 Door z-translate</name>
-		<type>translate</type>
-		<object-name>entry2r</object-name>
-                <object-name>entry2r2</object-name>
-                <object-name>entry2rG</object-name>
-                <object-name>entry2rC2</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0.05</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
-			<entry><ind>1</ind><dep>0.05</dep></entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R2 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry2r</object-name>
-                <object-name>entry2r2</object-name>
-                <object-name>entry2rG</object-name>
-                <object-name>entry2rC2</object-name>
-                <object-name>entry2rC</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>143</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>-13.65778</x-m>
-            <y-m>2.91403</y-m>
-            <z-m>0.77978</z-m>
-           </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R2 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry2r</object-name>
-                <object-name>entry2r2</object-name>
-                <object-name>entry2rG</object-name>
-                <object-name>entry2rC2</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-143</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>-12.87907</x-m>
-            <y-m>2.90772</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-
-        <animation>
-		<name>R2 Door X-translate</name>
-		<type>translate</type>
-		<object-name>entry2r</object-name>
-                <object-name>entry2r2</object-name>
-                <object-name>entry2rG</object-name>
-                <object-name>entry2rC2</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>0.2</dep></entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R2 Door z-rotation</name>
-		<type>rotate</type>
-                <object-name>entry2rC2</object-name>
-		<property>sim/multiplay/generic/float[21]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>-12.87907</x-m>
-            <y-m>2.90772</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-	
-   <animation>
-    <type>select</type>
-    <object-name>porte automatique R2b</object-name>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>porte automatique R2</object-name>
-    <condition>
-        <greater-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </greater-than>
-        </condition>
-  </animation>
-
-   <!-- Door3l Animations -->
-
-       <animation>
-		<name>L3PE Door y-translate</name>
-		<type>translate</type>
-		<object-name>entry3lPE</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
-			<entry><ind>0.25</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-        <axis>
-        <x1-m>2.318</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>2.318</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-       <animation>
-		<name>L3P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry3lPE</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-180</dep></entry>
-                        <entry><ind>0.50</ind><dep>-180</dep></entry>
-			<entry><ind>1</ind><dep>-180</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>2.318</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>2.318</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>L3P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry3lP</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>180</dep></entry>
-                        <entry><ind>0.50</ind><dep>180</dep></entry>
-			<entry><ind>1</ind><dep>180</dep></entry>
-		</interpolation>
-        <center>
-        <x-m>2.4027</x-m>
-        <y-m>-2.6596</y-m>
-        <z-m>0.36034</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L3A Door x-rotate</name>
-		<type>rotate</type>
-		<object-name>entry3lA</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-15</dep></entry>
-                        <entry><ind>0.50</ind><dep>-15</dep></entry>
-			<entry><ind>1</ind><dep>-15</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>2.1984</x1-m>
-        <y1-m>-2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>2.5898</x2-m>
-        <y2-m>-2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
-        </axis>
-          <axis>
-	<x>1</x>
-	<y>0</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>L3 Door z-translate</name>
-		<type>translate</type>
-		<object-name>entry3l</object-name>
-                <object-name>entry3l2</object-name>
-                <object-name>entry3lG</object-name>
-                <object-name>entry3lC2</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0.05</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
-			<entry><ind>1</ind><dep>0.05</dep></entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L3 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry3l</object-name>
-                <object-name>entry3l2</object-name>
-                <object-name>entry3lG</object-name>
-                <object-name>entry3lC2</object-name>
-                <object-name>entry3lC</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-143</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>1.8875</x-m>
-            <y-m>-2.91402</y-m>
-            <z-m>0.77978</z-m>
-           </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L3 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry3l</object-name>
-                <object-name>entry3l2</object-name>
-                <object-name>entry3lG</object-name>
-                <object-name>entry3lC2</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>143</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>2.6662</x-m>
-            <y-m>-2.90771</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-
-        <animation>
-		<name>l3 Door X-translate</name>
-		<type>translate</type>
-		<object-name>entry3l</object-name>
-                <object-name>entry3l2</object-name>
-                <object-name>entry3lG</object-name>
-                <object-name>entry3lC2</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>0.2</dep></entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L3 Door z-rotation</name>
-		<type>rotate</type>
-                <object-name>entry3lC2</object-name>
-		<property>sim/multiplay/generic/float[22]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>2.6662</x-m>
-            <y-m>-2.90771</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-	
-   <animation>
-    <type>select</type>
-    <object-name>porte automatique L3b</object-name>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>porte automatique L3</object-name>
-    <condition>
-        <greater-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </greater-than>
-        </condition>
-  </animation>
-
-    <!-- Door3r Animations -->
-
-       <animation>
-		<name>R3PE Door y-translate</name>
-		<type>translate</type>
-		<object-name>entry3rPE</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
-			<entry><ind>0.25</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-        <axis>
-        <x1-m>2.318</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>2.318</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-       <animation>
-		<name>R3P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry3rPE</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-180</dep></entry>
-                        <entry><ind>0.50</ind><dep>-180</dep></entry>
-			<entry><ind>1</ind><dep>-180</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>2.318</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>2.318</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>R3P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry3rP</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>180</dep></entry>
-                        <entry><ind>0.50</ind><dep>180</dep></entry>
-			<entry><ind>1</ind><dep>180</dep></entry>
-		</interpolation>
-        <center>
-        <x-m>2.4027</x-m>
-        <y-m>2.6596</y-m>
-        <z-m>0.36034</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R3A Door x-rotate</name>
-		<type>rotate</type>
-		<object-name>entry3rA</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>15</dep></entry>
-                        <entry><ind>0.50</ind><dep>15</dep></entry>
-			<entry><ind>1</ind><dep>15</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>2.1984</x1-m>
-        <y1-m>2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>2.5898</x2-m>
-        <y2-m>2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
-        </axis>
-          <axis>
-	<x>1</x>
-	<y>0</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>R3 Door z-translate</name>
-		<type>translate</type>
-		<object-name>entry3r</object-name>
-                <object-name>entry3r2</object-name>
-                <object-name>entry3rG</object-name>
-                <object-name>entry3rC2</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0.05</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
-			<entry><ind>1</ind><dep>0.05</dep></entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R3 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry3r</object-name>
-                <object-name>entry3r2</object-name>
-                <object-name>entry3rG</object-name>
-                <object-name>entry3rC2</object-name>
-                <object-name>entry3rC</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>143</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>1.8875</x-m>
-            <y-m>2.91402</y-m>
-            <z-m>0.77978</z-m>
-           </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R3 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry3r</object-name>
-                <object-name>entry3r2</object-name>
-                <object-name>entry3rG</object-name>
-                <object-name>entry3rC2</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-143</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>2.6662</x-m>
-            <y-m>2.90771</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-
-        <animation>
-		<name>R3 Door X-translate</name>
-		<type>translate</type>
-		<object-name>entry3r</object-name>
-                <object-name>entry3r2</object-name>
-                <object-name>entry3rG</object-name>
-                <object-name>entry3rC2</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>0.2</dep></entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R3 Door z-rotation</name>
-		<type>rotate</type>
-                <object-name>entry3rC2</object-name>
-		<property>sim/multiplay/generic/float[23]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>2.6662</x-m>
-            <y-m>2.90771</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-	
-   <animation>
-    <type>select</type>
-    <object-name>porte automatique R3b</object-name>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>porte automatique R3</object-name>
-    <condition>
-        <greater-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </greater-than>
-        </condition>
-  </animation>
-
-    <!-- Door4l Animations -->
-
-       <animation>
-		<name>L4PE Door y-translate</name>
-		<type>translate</type>
-		<object-name>entry4lPE</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
-			<entry><ind>0.25</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-        <axis>
-        <x1-m>16.468</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>16.468</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-       <animation>
-		<name>L4P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry4lPE</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-180</dep></entry>
-                        <entry><ind>0.50</ind><dep>-180</dep></entry>
-			<entry><ind>1</ind><dep>-180</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>16.468</x1-m>
-        <y1-m>-2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>16.468</x2-m>
-        <y2-m>-3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>L4P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry4lP</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>180</dep></entry>
-                        <entry><ind>0.50</ind><dep>180</dep></entry>
-			<entry><ind>1</ind><dep>180</dep></entry>
-		</interpolation>
-        <center>
-        <x-m>16.5527</x-m>
-        <y-m>-2.6596</y-m>
-        <z-m>0.36034</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L4A Door x-rotate</name>
-		<type>rotate</type>
-		<object-name>entry4lA</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-15</dep></entry>
-                        <entry><ind>0.50</ind><dep>-15</dep></entry>
-			<entry><ind>1</ind><dep>-15</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>16.3484</x1-m>
-        <y1-m>-2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>16.7398</x2-m>
-        <y2-m>-2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
-        </axis>
-          <axis>
-	<x>1</x>
-	<y>0</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>L4 Door z-translate</name>
-		<type>translate</type>
-		<object-name>entry4l</object-name>
-                <object-name>entry4l2</object-name>
-                <object-name>entry4lG</object-name>
-                <object-name>entry4lC2</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0.05</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
-			<entry><ind>1</ind><dep>0.05</dep></entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L4 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry4l</object-name>
-                <object-name>entry4l2</object-name>
-                <object-name>entry4lG</object-name>
-                <object-name>entry4lC2</object-name>
-                <object-name>entry4lC</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>16.0375</x-m>
-            <y-m>-2.91402</y-m>
-            <z-m>0.77978</z-m>
-           </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L4 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry4l</object-name>
-                <object-name>entry4l2</object-name>
-                <object-name>entry4lG</object-name>
-                <object-name>entry4lC2</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>16.8162</x-m>
-            <y-m>-2.90771</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-
-        <animation>
-		<name>l4 Door X-translate</name>
-		<type>translate</type>
-		<object-name>entry4l</object-name>
-                <object-name>entry4l2</object-name>
-                <object-name>entry4lG</object-name>
-                <object-name>entry4lC2</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>0.2</dep></entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L4 Door z-rotation</name>
-		<type>rotate</type>
-                <object-name>entry4lC2</object-name>
-		<property>sim/multiplay/generic/float[24]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>16.8162</x-m>
-            <y-m>-2.90771</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-	
-   <animation>
-    <type>select</type>
-    <object-name>porte automatique L4b</object-name>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>porte automatique L4</object-name>
-    <condition>
-        <greater-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </greater-than>
-        </condition>
-  </animation>
-
-    <!-- Door4r Animations -->
-
-       <animation>
-		<name>R4PE Door y-translate</name>
-		<type>translate</type>
-		<object-name>entry4rPE</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
-			<entry><ind>0.25</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-        <axis>
-        <x1-m>16.468</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>16.468</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-       <animation>
-		<name>R4P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry4rPE</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-180</dep></entry>
-                        <entry><ind>0.50</ind><dep>-180</dep></entry>
-			<entry><ind>1</ind><dep>-180</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>16.468</x1-m>
-        <y1-m>2.79395</y1-m>
-        <z1-m>0.423505</z1-m>
-        <x2-m>16.468</x2-m>
-        <y2-m>3.32829</y2-m>
-        <z2-m>0.503488</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>R4P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry4rP</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>180</dep></entry>
-                        <entry><ind>0.50</ind><dep>180</dep></entry>
-			<entry><ind>1</ind><dep>180</dep></entry>
-		</interpolation>
-        <center>
-        <x-m>16.5527</x-m>
-        <y-m>2.6596</y-m>
-        <z-m>0.36034</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R4A Door x-rotate</name>
-		<type>rotate</type>
-		<object-name>entry4rA</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>15</dep></entry>
-                        <entry><ind>0.50</ind><dep>15</dep></entry>
-			<entry><ind>1</ind><dep>15</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>16.3484</x1-m>
-        <y1-m>2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>16.7398</x2-m>
-        <y2-m>2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
-        </axis>
-          <axis>
-	<x>1</x>
-	<y>0</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>R4 Door z-translate</name>
-		<type>translate</type>
-		<object-name>entry4r</object-name>
-                <object-name>entry4r2</object-name>
-                <object-name>entry4rG</object-name>
-                <object-name>entry4rC2</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0.05</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
-			<entry><ind>1</ind><dep>0.05</dep></entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R4 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry4r</object-name>
-                <object-name>entry4r2</object-name>
-                <object-name>entry4rG</object-name>
-                <object-name>entry4rC2</object-name>
-                <object-name>entry4rC</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>16.0375</x-m>
-            <y-m>2.91402</y-m>
-            <z-m>0.77978</z-m>
-           </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R4 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry4r</object-name>
-                <object-name>entry4r2</object-name>
-                <object-name>entry4rG</object-name>
-                <object-name>entry4rC2</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>16.8162</x-m>
-            <y-m>2.90771</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-
-        <animation>
-		<name>R4 Door X-translate</name>
-		<type>translate</type>
-		<object-name>entry4r</object-name>
-                <object-name>entry4r2</object-name>
-                <object-name>entry4rG</object-name>
-                <object-name>entry4rC2</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>0.2</dep></entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R4 Door z-rotation</name>
-		<type>rotate</type>
-                <object-name>entry4rC2</object-name>
-		<property>sim/multiplay/generic/float[25]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>16.8162</x-m>
-            <y-m>2.90771</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-	
-   <animation>
-    <type>select</type>
-    <object-name>porte automatique R4b</object-name>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>porte automatique R4</object-name>
-    <condition>
-        <greater-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </greater-than>
-        </condition>
-  </animation>
-  
-    <!-- Door5l Animations -->
-
-       <animation>
-		<name>L5PE Door y-translate</name>
-		<type>translate</type>
-		<object-name>entry5lPE</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
-			<entry><ind>0.25</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-        <axis>
-        <x1-m>29.5683</x1-m>
-        <y1-m>-2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>29.5683</x2-m>
-        <y2-m>-2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-       <animation>
-		<name>L5P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry5lPE</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-180</dep></entry>
-                        <entry><ind>0.50</ind><dep>-180</dep></entry>
-			<entry><ind>1</ind><dep>-180</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>29.5683</x1-m>
-        <y1-m>-2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>29.5683</x2-m>
-        <y2-m>-2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>L5P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry5lP</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>180</dep></entry>
-                        <entry><ind>0.50</ind><dep>180</dep></entry>
-			<entry><ind>1</ind><dep>180</dep></entry>
-		</interpolation>
-        <center>
-        <x-m>29.6487</x-m>
-        <y-m>-2.17098</y-m>
-        <z-m>0.36034</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L5A Door x-rotate</name>
-		<type>rotate</type>
-		<object-name>entry5lA</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-15</dep></entry>
-                        <entry><ind>0.50</ind><dep>-15</dep></entry>
-			<entry><ind>1</ind><dep>-15</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>30.4417</x1-m>
-        <y1-m>-2.4752</y1-m>
-        <z1-m>1.18639</z1-m>
-        <x2-m>30.8331</x2-m>
-        <y2-m>-2.4398</y2-m>
-        <z2-m>1.18639</z2-m>
-        </axis>
-          <axis>
-	<x>1</x>
-	<y>0</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>L5 Door z-translate</name>
-		<type>translate</type>
-		<object-name>entry5l</object-name>
-                <object-name>entry5l2</object-name>
-                <object-name>entry5lG</object-name>
-                <object-name>entry5lC2</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0.05</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
-			<entry><ind>1</ind><dep>0.05</dep></entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L5 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry5l</object-name>
-                <object-name>entry5l2</object-name>
-                <object-name>entry5lG</object-name>
-                <object-name>entry5lC2</object-name>
-                <object-name>entry5lC</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>29.1335</x-m>
-            <y-m>-2.42541</y-m>
-            <z-m>0.77978</z-m>
-           </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L5 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry5l</object-name>
-                <object-name>entry5l2</object-name>
-                <object-name>entry5lG</object-name>
-                <object-name>entry5lC2</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>29.9122</x-m>
-            <y-m>-2.4191</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-
-        <animation>
-		<name>l5 Door X-translate</name>
-		<type>translate</type>
-		<object-name>entry5l</object-name>
-                <object-name>entry5l2</object-name>
-                <object-name>entry5lG</object-name>
-                <object-name>entry5lC2</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>0.2</dep></entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>L5 Door z-rotation</name>
-		<type>rotate</type>
-                <object-name>entry5lC2</object-name>
-		<property>sim/multiplay/generic/float[73]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>29.9122</x-m>
-            <y-m>-2.4191</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-	
-	<animation>
-    <type>select</type>
-    <object-name>porte automatique L5b</object-name>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>porte automatique L5</object-name>
-    <condition>
-        <greater-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </greater-than>
-        </condition>
-  </animation>
-
-    <!-- Door5r Animations -->
-
-       <animation>
-		<name>R5PE Door y-translate</name>
-		<type>translate</type>
-		<object-name>entry5rPE</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.05</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.10</ind><dep>0.03</dep></entry>
-			<entry><ind>0.25</ind><dep>0.03</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-        <axis>
-        <x1-m>29.5683</x1-m>
-        <y1-m>2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>29.5683</x2-m>
-        <y2-m>2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-       <animation>
-		<name>R5P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry5rPE</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>-180</dep></entry>
-                        <entry><ind>0.50</ind><dep>-180</dep></entry>
-			<entry><ind>1</ind><dep>-180</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>29.5683</x1-m>
-        <y1-m>2.43939</y1-m>
-        <z1-m>0.464811</z1-m>
-        <x2-m>29.5683</x2-m>
-        <y2-m>2.6891</y2-m>
-        <z2-m>0.464811</z2-m>
-        </axis>
-          <axis>
-	<x>0</x>
-	<y>1</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>R5P Door y-rotate</name>
-		<type>rotate</type>
-		<object-name>entry5rP</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>180</dep></entry>
-                        <entry><ind>0.50</ind><dep>180</dep></entry>
-			<entry><ind>1</ind><dep>180</dep></entry>
-		</interpolation>
-        <center>
-        <x-m>29.6487</x-m>
-        <y-m>2.17098</y-m>
-        <z-m>0.36034</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R5A Door x-rotate</name>
-		<type>rotate</type>
-		<object-name>entry5rA</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>15</dep></entry>
-                        <entry><ind>0.50</ind><dep>15</dep></entry>
-			<entry><ind>1</ind><dep>15</dep></entry>
-		</interpolation>
-            <axis>
-        <x1-m>-7.99692</x1-m>
-        <y1-m>2.86648</y1-m>
-        <z1-m>1.19061</z1-m>
-        <x2-m>-7.60549</x2-m>
-        <y2-m>2.86648</y2-m>
-        <z2-m>1.19061</z2-m>
-        </axis>
-          <axis>
-	<x>1</x>
-	<y>0</y>
-	<z>0</z>
-	</axis>
-	</animation>
-
-        <animation>
-		<name>R5 Door z-translate</name>
-		<type>translate</type>
-		<object-name>entry5r.001</object-name>
-                <object-name>entry5r2</object-name>
-                <object-name>entry5rG</object-name>
-                <object-name>entry5rC2</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0.05</dep></entry>
-                        <entry><ind>0.50</ind><dep>0.05</dep></entry>
-			<entry><ind>1</ind><dep>0.05</dep></entry>
-		</interpolation>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R5 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry5r.001</object-name>
-                <object-name>entry5r2</object-name>
-                <object-name>entry5rG</object-name>
-                <object-name>entry5rC2</object-name>
-                <object-name>entry5rC</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>29.1335</x-m>
-            <y-m>2.42541</y-m>
-            <z-m>0.77978</z-m>
-           </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R5 Door z-rotation</name>
-		<type>rotate</type>
-		<object-name>entry5r.001</object-name>
-                <object-name>entry5r2</object-name>
-                <object-name>entry5rG</object-name>
-                <object-name>entry5rC2</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>29.9122</x-m>
-            <y-m>2.4191</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-
-        <animation>
-		<name>R5 Door X-translate</name>
-		<type>translate</type>
-		<object-name>entry5r.001</object-name>
-                <object-name>entry5r2</object-name>
-                <object-name>entry5rG</object-name>
-                <object-name>entry5rC2</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>0.2</dep></entry>
-		</interpolation>
-		<axis>
-			<x>1</x>
-			<y>0</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-        <animation>
-		<name>R5 Door z-rotation</name>
-		<type>rotate</type>
-                <object-name>entry5rC2</object-name>
-		<property>sim/multiplay/generic/float[74]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-                        <entry><ind>0.5</ind><dep>0</dep></entry>
-                        <entry><ind>0.10</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-                        <entry><ind>0.50</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>130</dep></entry>
-		</interpolation>
-            <center>
-            <x-m>29.9122</x-m>
-            <y-m>2.4191</y-m>
-            <z-m>0.7927</z-m>
-            </center>
-            <axis>
-	    <x>0</x>
-	    <y>0</y>
-	    <z>1</z>
-	   </axis>
-	</animation>
-	
-	<animation>
-    <type>select</type>
-    <object-name>porte automatique R5b</object-name>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-  </animation>
-  
-  <animation>
-    <type>select</type>
-    <object-name>porte automatique R5</object-name>
-    <condition>
-        <greater-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </greater-than>
-        </condition>
-  </animation>
-
+      <animation>
+		<type>pick</type>
+		<object-name>portesouteG</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c39");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+   
     <!-- Door moteur Animations -->	
 	
 	<animation>
@@ -6023,6 +3912,156 @@ Franck.VMD
 			<x>0</x>
 			<y>0</y>
 			<z>1</z>
+		</axis>
+	</animation>
+	
+<!-- Porte frete -->
+
+        <animation>
+		<name>C30</name>
+		<type>rotate</type>
+		<object-name>entry11l</object-name>
+		<property>sim/multiplay/generic/float[52]</property>
+		<factor>70</factor>
+        <center>
+            <x-m>16.4585</x-m>
+            <y-m>-1.4318</y-m>
+            <z-m>2.75241</z-m>
+        </center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>C30</name>
+		<type>rotate</type>
+		<object-name>entry11l.002</object-name>
+                <object-name>spote.001</object-name>
+		<property>sim/multiplay/generic/float[52]</property>
+		<factor>70</factor>
+        <center>
+            <x-m>16.4585</x-m>
+            <y-m>-1.4318</y-m>
+            <z-m>2.75241</z-m>
+        </center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+      <animation>
+		<name>C30</name>
+		<type>rotate</type>
+		<object-name>verin1</object-name>
+		<property>sim/multiplay/generic/float[52]</property>
+		<factor>90</factor>
+        <center>
+            <x-m>17.4266</x-m>
+            <y-m>-1.23332</y-m>
+            <z-m>2.78233</z-m>
+        </center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+        <animation>
+		<name>C30</name>
+		<type>rotate</type>
+		<object-name>verin</object-name>
+		<property>sim/multiplay/generic/float[52]</property>
+		<factor>45</factor>
+        <center>
+            <x-m>15.9443</x-m>
+            <y-m>-1.01478</y-m>
+            <z-m>2.76466</z-m>
+        </center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+<!-- Plancher -->
+
+    <animation>
+		<name>C30</name>
+		<type>rotate</type>
+		<object-name>charniere1</object-name>
+		<property>sim/multiplay/generic/float[52]</property>
+		<factor>90</factor>
+        <center>
+            <x-m>15.94095</x-m>
+            <y-m>-2.91729</y-m>
+            <z-m>-0.472545</z-m>
+        </center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+       <animation>
+		<name>C30</name>
+		<type>translate</type>
+		<object-name>charniere1</object-name>
+		<property>sim/multiplay/generic/float[52]</property>
+		<factor>0.02</factor>
+        <center>
+            <x-m>15.94095</x-m>
+            <y-m>-2.91729</y-m>
+            <z-m>-0.472545</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+       <animation>
+		<name>C30</name>
+		<type>rotate</type>
+		<object-name>charniere2</object-name>
+		<property>sim/multiplay/generic/float[52]</property>
+		<factor>90</factor>
+        <center>
+            <x-m>15.94095</x-m>
+            <y-m>-2.91729</y-m>
+            <z-m>-0.416879</z-m>
+        </center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+       <animation>
+		<name>C30</name>
+		<type>translate</type>
+		<object-name>charniere2</object-name>
+		<property>sim/multiplay/generic/float[52]</property>
+		<factor>0.02</factor>
+        <center>
+            <x-m>15.94095</x-m>
+            <y-m>-2.91729</y-m>
+            <z-m>-0.472545</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
 		</axis>
 	</animation>
 
@@ -7913,32 +5952,6 @@ Franck.VMD
     <max>5</max>
     </animation>
     
-    
-
-      <animation>
-        <type>select</type>
-        <object-name>mur.001</object-name>
-        <object-name>window mix exterieur</object-name>
-        <object-name>window mix interieur</object-name>
-        <condition>
-            <greater-than>
-                <property>controls/switches/windowmix</property>
-                <value>00</value>
-            </greater-than>
-        </condition>
-    </animation>
-    
-    <animation>
-        <type>select</type>
-        <object-name>mur.002</object-name>
-        <condition>
-            <less-than>
-                <property>controls/switches/windowmix</property>
-                <value>01</value>
-            </less-than>
-        </condition>
-    </animation>
-    
 <!--   engines   -->
 
     <animation>
@@ -8094,6 +6107,120 @@ Franck.VMD
             <x>-1.0</x>
             <y>0</y>
             <z>0</z>
+        </axis>
+    </animation>
+    
+    <!-- wc -->
+
+   <animation>
+        <type>pick</type>
+		<object-name>robinet</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[67]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.robinet;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+		<object-name>cuvette</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[68]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.cuvette;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+		<object-name>bouton poussoir</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[69]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.bouton poussoir;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+   <animation>
+        <name>c43</name>
+        <type>rotate</type>
+        <object-name>robinet</object-name>
+        <property>sim/multiplay/generic/float[67]</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-26.6286</x-m>
+            <y-m>-0.03093</y-m>
+            <z-m>0.41603</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+   <animation>
+        <type>select</type>
+        <object-name>eau</object-name>
+        <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[67]</property>
+			<value>0</value>
+		</greater-than>
+    </condition>
+    </animation>
+
+   <animation>
+        <type>select</type>
+        <object-name>eau wc</object-name>
+        <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[69]</property>
+			<value>0</value>
+		</greater-than>
+    </condition>
+    </animation>
+
+    <animation>
+        <name>c44</name>
+        <type>rotate</type>
+        <object-name>cuvette</object-name>
+        <property>sim/multiplay/generic/float[68]</property>
+        <factor>95</factor>
+        <center>
+            <x-m>-20.8754</x-m>
+            <y-m>1.10669</y-m>
+            <z-m>-0.06999</z-m>
+        </center>
+        <axis>
+            <x>-1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
         </axis>
     </animation>
   
@@ -8402,7 +6529,7 @@ Franck.VMD
       </and>
     </condition>
     <offsets>
-      <x-m>0</x-m>
+      <x-m>4.82102</x-m>
       <y-m>0</y-m>
       <z-m>0</z-m>
     </offsets>
@@ -8421,7 +6548,7 @@ Franck.VMD
       </and>
     </condition>
     <offsets>
-      <x-m>0.00</x-m>
+      <x-m>4.82102</x-m>
       <y-m>0.00</y-m>
       <z-m>0.00</z-m>
     </offsets>
