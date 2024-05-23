@@ -163,8 +163,10 @@ var Engine = {
                     if(getprop("controls/electric/APU-generator")
                             or getprop("engines/engine[0]/run")
                             or getprop("engines/engine[1]/run")
-                            or getprop("controls/electric/external-power")
-                            or getprop("controls/electric/external-power[1]")
+                            or getprop("systems/electrical/PRI-EPC") 
+                            or getprop("systems/electrical/SEC-EPC") 
+                            or getprop("systems/electrical/outputs/starter")
+                            or getprop("systems/electrical/outputs/starter[1]")
                     )
                     {
                         me.spool_up();
@@ -200,9 +202,11 @@ var Engine = {
             {
                 if(getprop("controls/electric/APU-generator")
                         or getprop("engines/engine[0]/run")
-                        or getprop("engines/engine[1]/run")
-                        or getprop("controls/electric/external-power")
-                        or getprop("controls/electric/external-power[1]")
+                            or getprop("engines/engine[1]/run")
+                            or getprop("systems/electrical/PRI-EPC") 
+                            or getprop("systems/electrical/SEC-EPC") 
+                            or getprop("systems/electrical/outputs/starter")
+                            or getprop("systems/electrical/outputs/starter[1]")
                 )
                 {
                     me.starter.setValue(1);
@@ -306,7 +310,7 @@ var Engine = {
             {
                                 me.apu_running.setValue(1);
                 me.apu_status.setValue(2);        # START
-                settimer(func { me.apu_status.setValue(3);}, 15);
+                settimer(func { me.apu_status.setValue(3);}, 180);
             }
             settimer(func { me.apu_knob.setValue(1);}, 0.3);
         }
@@ -380,7 +384,7 @@ var Engine = {
         }
         tmprpm += getprop("sim/time/delta-realtime-sec") * rpminc;
         me.rpm.setValue(tmprpm);
-        me.n2rpm.setValue(1.2*math.sqrt(tmprpm) * 12.65);
+        me.n2rpm.setValue(1.3*math.sqrt(tmprpm) * 12.65);
         me.fuel_pph.setValue(v_pph);
     },
 # This function could be removed if FG fuel flow program is fixed to consume fuel when engine idle.

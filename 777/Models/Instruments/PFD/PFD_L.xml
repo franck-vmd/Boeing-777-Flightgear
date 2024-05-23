@@ -130,7 +130,7 @@ Franck.VMD
         <condition>
              <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
-                <value>1.0</value>
+                <value>24.0</value>
              </greater-than>
         </condition>
         <emission> <!--red-->
@@ -148,7 +148,7 @@ Franck.VMD
         <condition>
              <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
-                <value>1.0</value>
+                <value>24.0</value>
              </greater-than>
         </condition>
         <emission>
@@ -166,7 +166,7 @@ Franck.VMD
         <condition>
              <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
-                <value>1.0</value>
+                <value>24.0</value>
              </greater-than>
         </condition>
         <emission>
@@ -187,7 +187,7 @@ Franck.VMD
         <condition>
              <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
-                <value>1.0</value>
+                <value>24.0</value>
              </greater-than>
         </condition>
         <emission>
@@ -218,7 +218,7 @@ Franck.VMD
         <condition>
              <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
-                <value>1.0</value>
+                <value>24.0</value>
              </greater-than>
         </condition>
         <emission>
@@ -252,7 +252,7 @@ Franck.VMD
         <condition>
              <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
-                <value>1.0</value>
+                <value>24.0</value>
              </greater-than>
         </condition>
         <emission>

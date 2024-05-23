@@ -2594,7 +2594,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>C2AIR.knob</object-name>
         <object-name>C2AIR.knob.001</object-name>
-        <property>controls/hydraulics/system[1]/C2ADP-switch</property>
+        <property>controls/hydraulics/system[2]/C2ADP-switch</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -5252,6 +5252,26 @@ Franck.VMD
             <button>0</button>
             <repeatable>false</repeatable>
             <binding>
+            <condition>
+            <or>
+            <and>
+                <command>property-toggle</command>
+                <property>systems/electrical/PRI-EPC</property>
+            </and>
+            <and>
+                <command>property-toggle</command>
+                <property>systems/electrical/SEC-EPC</property>
+            </and>
+            <and>
+                <command>property-toggle</command>
+                <property>controls/APU/off-start-run</property>
+            </and>
+            <and>
+                <command>property-toggle</command>
+                <property>systems/electrical/outputs/starter</property>
+            </and>
+            </or>
+            </condition>
 	       <command>nasal</command>
 	       <script>
 	       b777.doors.toggle("ad1");
@@ -5759,7 +5779,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/hydraulics/system[1]/C2ELEC-switch</property>
+                <property>controls/hydraulics/system[2]/C2ELEC-switch</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -6244,7 +6264,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
-                <property>controls/hydraulics/system[1]/C2ADP-switch</property>
+                <property>controls/hydraulics/system[2]/C2ADP-switch</property>
                 <step>1</step>
                 <min>0</min>
                 <max>2</max>
@@ -6267,7 +6287,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
-                <property>controls/hydraulics/system[1]/C2ADP-switch</property>
+                <property>controls/hydraulics/system[2]/C2ADP-switch</property>
                 <step>-1</step>
                 <min>0</min>
                 <max>2</max>
@@ -7374,9 +7394,9 @@ Franck.VMD
         <object-name>APU_DISCH.fault</object-name>
         <condition>
                 <greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
-		</greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -7574,9 +7594,9 @@ Franck.VMD
    <object-name>XFeedAFT_Shutter.Bottom</object-name>
         <condition>
 		<greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
-		</greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
         </condition>
         <emission>
             <red>1.0</red>

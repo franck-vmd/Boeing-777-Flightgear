@@ -1036,6 +1036,7 @@ Service Ceiling: 43,100ft
                 <float n="73" alias="/aaa/door-positions/c54/position-norm"></float>
                 <float n="74" alias="/aaa/door-positions/c55/position-norm"></float>
                 <float n="75" alias="/aaa/door-positions/ad1/position-norm"></float>
+                <float n="76" alias="/surface-positions/reverser-norm[1]"></float>
                 <string alias="/sim/multiplay/callsign"></string>
             </generic>
         </multiplay>

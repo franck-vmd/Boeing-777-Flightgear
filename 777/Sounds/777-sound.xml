@@ -148,6 +148,7 @@
         <fire>
 		<name>fires</name>
 		<mode>once</mode>
+		<type>avionics</type>
 		<path>Aircraft/777/Sounds/777 fire test.wav</path>
             <condition>
             <property>controls/fire/inputs/self-test</property>
@@ -968,6 +969,8 @@
                 <or>
                     <property>engines/engine[1]/run</property>
                     <property>controls/electric/APU-generator</property>
+                    <property>systems/electrical/PRI-EPC</property>
+                    <property>systems/electrical/SEC-EPC</property>
                 </or>
                 <less-than>
                     <property>engines/engine[0]/n2rpm</property>
@@ -1005,6 +1008,8 @@
                 <or>
                     <property>engines/engine[0]/run</property>
                     <property>controls/electric/APU-generator</property>
+                    <property>systems/electrical/PRI-EPC</property>
+                    <property>systems/electrical/SEC-EPC</property>
                 </or>
                 <less-than>
                     <property>engines/engine[1]/n2rpm</property>
@@ -1043,6 +1048,8 @@
                 <or>
                     <property>engines/engine[1]/run</property>
                     <property>controls/electric/APU-generator</property>
+                    <property>systems/electrical/PRI-EPC</property>
+                    <property>systems/electrical/SEC-EPC</property>
                 </or>
                 <greater-than-equals>
                     <property>engines/engine[0]/n2rpm</property>
@@ -1080,6 +1087,8 @@
                 <or>
                     <property>engines/engine[0]/run</property>
                     <property>controls/electric/APU-generator</property>
+                    <property>systems/electrical/PRI-EPC</property>
+                    <property>systems/electrical/SEC-EPC</property>
                 </or>
                 <greater-than-equals>
                     <property>engines/engine[1]/n2rpm</property>
@@ -1175,6 +1184,8 @@
                 <or>
                     <property>engines/engine[1]/run</property>
                     <property>controls/electric/APU-generator</property>
+                    <property>systems/electrical/PRI-EPC</property>
+                    <property>systems/electrical/SEC-EPC</property>
                 </or>
                 <less-than>
                     <property>engines/engine[0]/n2rpm</property>
@@ -1214,6 +1225,8 @@
                 <or>
                     <property>engines/engine[0]/run</property>
                     <property>controls/electric/APU-generator</property>
+                    <property>systems/electrical/PRI-EPC</property>
+                    <property>systems/electrical/SEC-EPC</property>
                 </or>
                 <less-than>
                     <property>engines/engine[1]/n2rpm</property>
@@ -1253,6 +1266,8 @@
                 <or>
                     <property>engines/engine[1]/run</property>
                     <property>controls/electric/APU-generator</property>
+                    <property>systems/electrical/PRI-EPC</property>
+                    <property>systems/electrical/SEC-EPC</property>
                 </or>
                 <greater-than-equals>
                     <property>engines/engine[0]/n2rpm</property>
@@ -1292,6 +1307,8 @@
                 <or>
                     <property>engines/engine[0]/run</property>
                     <property>controls/electric/APU-generator</property>
+                    <property>systems/electrical/PRI-EPC</property>
+                    <property>systems/electrical/SEC-EPC</property>
                 </or>
                 <greater-than-equals>
                     <property>engines/engine[1]/n2rpm</property>
@@ -2474,5 +2491,22 @@
                 <factor>0.125</factor>
             </volume>
         </avhum>
+        
+        <vent>
+        <name>vent</name>
+        <mode>once</mode>
+        <type>avionics</type>
+        <path>Aircraft/777/Sounds/ventilation.wav</path>
+        <condition>
+                <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <volume>
+            <factor>1</factor>
+            <property>sim/current-view/internal</property>
+        </volume>
+    </vent>
 </fx>
 </PropertyList>

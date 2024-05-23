@@ -43,9 +43,9 @@ Franck.VMD
         <object-name>OHpanel</object-name>
         <condition>
                 <greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
-		</greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -61,9 +61,9 @@ Franck.VMD
                 <object-name>OHpanel.Lettering_Day</object-name>
         <condition>
 		<greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
-		</greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
         </condition>
         <emission>
             <red>1.0</red>

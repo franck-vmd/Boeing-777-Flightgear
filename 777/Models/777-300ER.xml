@@ -6865,7 +6865,7 @@ Franck.VMD
         <type>translate</type>
         <object-name>Reversers3</object-name>
         <object-name>Reversers3.002</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <factor>0.7</factor>
         <axis>
             <x>1.0</x>
@@ -6878,7 +6878,7 @@ Franck.VMD
         <type>translate</type>
         <object-name>Reversers4</object-name>
         <object-name>Reversers4.002</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <factor>0.7</factor>
         <axis>
             <x>1.0</x>
@@ -7128,7 +7128,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGG1</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>-22.5</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7145,7 +7145,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGG2</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>-45</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7162,7 +7162,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGG3</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>-67.5</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7179,7 +7179,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGG4</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>-90</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7196,7 +7196,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGG5</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>-112.5</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7213,7 +7213,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGG6</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>-135</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7230,7 +7230,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGG7</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>-157.5</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7247,7 +7247,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGD1</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>22.5</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7264,7 +7264,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGD2</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>45</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7281,7 +7281,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGD3</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>67.5</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7298,7 +7298,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGD4</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>90</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7315,7 +7315,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGD5</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>112.5</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7332,7 +7332,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGD6</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>135</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7349,7 +7349,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>clapetGD7</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <offset-deg>157.5</offset-deg>
         <center>
             <x-m>-4.10913</x-m>
@@ -7409,7 +7409,7 @@ Franck.VMD
         <object-name>clapetGD5</object-name>
         <object-name>clapetGD6</object-name>
         <object-name>clapetGD7</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <factor>90</factor>
         <center>
             <x-m>-2.14878</x-m>

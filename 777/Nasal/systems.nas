@@ -293,10 +293,10 @@ setlistener("sim/signals/fdm-initialized", func {
     setprop("controls/hydraulics/system/LENG_switch", 0);
     setprop("controls/hydraulics/system[2]/RENG_switch", 0);
     setprop("controls/hydraulics/system[1]/C1ELEC-switch", 0);
-    setprop("controls/hydraulics/system[1]/C2ELEC-switch", 0);
+    setprop("controls/hydraulics/system[2]/C2ELEC-switch", 0);
     setprop("controls/hydraulics/system/LACMP-switch", 0);
     setprop("controls/hydraulics/system[1]/C1ADP-switch", 0);
-    setprop("controls/hydraulics/system[1]/C2ADP-switch", 0);
+    setprop("controls/hydraulics/system[2]/C2ADP-switch", 0);
     setprop("controls/hydraulics/system[2]/RACMP-switch", 0);
     setprop("controls/fuel/tank[0]/boost-pump-switch[0]",0);
     setprop("controls/fuel/tank[0]/boost-pump-switch[1]",0);
@@ -307,7 +307,7 @@ setlistener("sim/signals/fdm-initialized", func {
     setprop("autopilot/route-manager/cruise/speed-kts",320);
     setprop("autopilot/route-manager/cruise/speed-mach",0.840);
     setprop("controls/engines/autostart",1);
-    setprop("controls/engines/engine/eec-switch",1);
+    setprop("controls/engines/engine[0]/eec-switch",1);
     setprop("controls/engines/engine[1]/eec-switch",1);
 #Fuel Jittson Arm
     setprop("controls/fuel/b-jtsnarm", 1);
@@ -490,9 +490,9 @@ setlistener("controls/flight/air-sensing-sw", func(air_switch) {
     }
 },0,0);
 
-setlistener("controls/engines/engine/cutoff-switch", func
+setlistener("controls/engines/engine[0]/cutoff-switch", func
 {
-    if((getprop("controls/engines/engine/cutoff-switch") == 1)
+    if((getprop("controls/engines/engine[0]/cutoff-switch") == 1)
         and (getprop("controls/engines/engine[1]/cutoff-switch") == 1))
     {
         elapsetime.reset();
@@ -501,7 +501,7 @@ setlistener("controls/engines/engine/cutoff-switch", func
 
 setlistener("controls/engines/engine[1]/cutoff-switch", func
 {
-    if((getprop("controls/engines/engine/cutoff-switch") == 1)
+    if((getprop("controls/engines/engine[0]/cutoff-switch") == 1)
         and (getprop("controls/engines/engine[1]/cutoff-switch") == 1))
     {
         elapsetime.reset();
@@ -619,10 +619,10 @@ var Startup = func{
     setprop("controls/hydraulics/system/LENG_switch", 1);
     setprop("controls/hydraulics/system[2]/RENG_switch", 1);
     setprop("controls/hydraulics/system[1]/C1ELEC-switch", 1);
-    setprop("controls/hydraulics/system[1]/C2ELEC-switch", 1);
+    setprop("controls/hydraulics/system[2]/C2ELEC-switch", 1);
     setprop("controls/hydraulics/system/LACMP-switch", 1);
     setprop("controls/hydraulics/system[1]/C1ADP-switch", 1);
-    setprop("controls/hydraulics/system[1]/C2ADP-switch", 1);
+    setprop("controls/hydraulics/system[2]/C2ADP-switch", 1);
     setprop("controls/hydraulics/system[2]/RACMP-switch", 1);
     setprop("controls/anti-ice/window-heat-ls-switch", 1);
     setprop("controls/anti-ice/window-heat-lf-switch", 1);
@@ -682,10 +682,10 @@ var Shutdown = func{
     setprop("controls/hydraulics/system/LENG_switch", 0);
     setprop("controls/hydraulics/system[2]/RENG_switch", 0);
     setprop("controls/hydraulics/system[1]/C1ELEC-switch", 0);
-    setprop("controls/hydraulics/system[1]/C2ELEC-switch", 0);
+    setprop("controls/hydraulics/system[2]/C2ELEC-switch", 0);
     setprop("controls/hydraulics/system/LACMP-switch", 0);
     setprop("controls/hydraulics/system[1]/C1ADP-switch", 0);
-    setprop("controls/hydraulics/system[1]/C2ADP-switch", 0);
+    setprop("controls/hydraulics/system[2]/C2ADP-switch", 0);
     setprop("controls/hydraulics/system[2]/RACMP-switch", 0);
     setprop("controls/anti-ice/window-heat-ls-switch", 0);
     setprop("controls/anti-ice/window-heat-lf-switch", 0);
@@ -772,7 +772,7 @@ switch_ind = func() {
     {
         setprop("controls/electric/b-lidg", 1);
     }
-    elsif(getprop("controls/electric/engine/gen-switch") == 0)
+    elsif(getprop("controls/electric/engine[0]/gen-switch") == 0)
     {
         setprop("controls/electric/b-lidg", 0);
     }
@@ -812,7 +812,7 @@ switch_ind = func() {
     {
         setprop("controls/electric/b-lbugen", 1);
     }
-    elsif(getprop("controls/electric/engine/gen-bu-switch") == 0)
+    elsif(getprop("controls/electric/engine[0]/gen-bu-switch") == 0)
     {
         setprop("controls/electric/b-lbugen", 0);
     }
@@ -840,7 +840,7 @@ switch_ind = func() {
     }
     else
     {
-        if(getprop("controls/electric/engine/bus-tie") == 0)
+        if(getprop("controls/electric/engine[0]/bus-tie") == 0)
         {
             setprop("controls/electric/b-lbus-tie", 0);
         }
@@ -1077,14 +1077,14 @@ switch_ind = func() {
         setprop("controls/engines/b-autostart", 1);
     }
 #EEC Left
-    if((getprop("controls/engines/engine/eec-switch") == 0)
+    if((getprop("controls/engines/engine[0]/eec-switch") == 0)
             and (cpt_flt_inst.getValue() > 24))
     {
-        setprop("controls/engines/engine/b-eec-switch", 0);
+        setprop("controls/engines/engine[0]/b-eec-switch", 0);
     }
     else
     {
-        setprop("controls/engines/engine/b-eec-switch", 1);
+        setprop("controls/engines/engine[0]/b-eec-switch", 1);
     }
 #EEC Right
     if((getprop("controls/engines/engine[1]/eec-switch") == 0)

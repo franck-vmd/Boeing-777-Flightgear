@@ -79,24 +79,24 @@ setlistener("controls/APU/apu-gen-switch", func {
         if(getprop("controls/APU/apu-gen-switch")) APUGST.open();
         else APUGST.close();
 });
-setlistener("controls/electric/engine/bus-tie", func {
-        if(getprop("controls/electric/engine/bus-tie")) LBUSST.open();
+setlistener("controls/electric/engine[0]/bus-tie", func {
+        if(getprop("controls/electric/engine[0]/bus-tie")) LBUSST.open();
         else LBUSST.close();
 });
 setlistener("controls/electric/engine[1]/bus-tie", func {
         if(getprop("controls/electric/engine[1]/bus-tie")) RBUSST.open();
         else RBUSST.close();
 });
-setlistener("controls/electric/engine/gen-switch", func {
-        if(getprop("controls/electric/engine/gen-switch")) LGENST.open();
+setlistener("controls/electric/engine[0]/gen-switch", func {
+        if(getprop("controls/electric/engine[0]/gen-switch")) LGENST.open();
         else LGENST.close();
 });
 setlistener("controls/electric/engine[1]/gen-switch", func {
         if(getprop("controls/electric/engine[1]/gen-switch")) RGENST.open();
         else RGENST.close();
 });
-setlistener("controls/electric/engine/gen-bu-switch", func {
-        if(getprop("controls/electric/engine/gen-bu-switch")) LGENBUST.open();
+setlistener("controls/electric/engine[0]/gen-bu-switch", func {
+        if(getprop("controls/electric/engine[0]/gen-bu-switch")) LGENBUST.open();
         else LGENBUST.close();
 });
 setlistener("controls/electric/engine[1]/gen-bu-switch", func {
@@ -151,8 +151,8 @@ setlistener("controls/engines/autostart", func {
         if(getprop("controls/engines/autostart")) AUTOSTARTST.open();
         else AUTOSTARTST.close();
 });
-setlistener("controls/engines/engine/eec-switch", func {
-        if(getprop("controls/engines/engine/eec-switch")) LENG_EECST.open();
+setlistener("controls/engines/engine[0]/eec-switch", func {
+        if(getprop("controls/engines/engine[0]/eec-switch")) LENG_EECST.open();
         else LENG_EECST.close();
 });
 setlistener("controls/engines/engine[1]/eec-switch", func {
@@ -191,8 +191,8 @@ setlistener("controls/hydraulics/system[1]/C1ELEC-switch", func {
         if(getprop("controls/hydraulics/system[1]/C1ELEC-switch")) C1ELECST.open();
         else C1ELECST.close();
 });
-setlistener("controls/hydraulics/system[1]/C2ELEC-switch", func {
-        if(getprop("controls/hydraulics/system[1]/C2ELEC-switch")) C2ELECST.open();
+setlistener("controls/hydraulics/system[2]/C2ELEC-switch", func {
+        if(getprop("controls/hydraulics/system[2]/C2ELEC-switch")) C2ELECST.open();
         else C2ELECST.close();
 });
 setlistener("controls/anti-ice/window-heat-ls-switch", func {

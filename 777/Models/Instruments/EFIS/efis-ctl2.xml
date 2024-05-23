@@ -867,8 +867,8 @@ Franck.VMD
         <object-name>DH.reset</object-name>
         <condition>
                 <greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
 		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
@@ -886,8 +886,8 @@ Franck.VMD
                 <object-name>EFIS_Lettering_Btns</object-name>
                 <condition>
 		<greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
 		</greater-than>
         </condition>
         <emission>

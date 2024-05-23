@@ -29,11 +29,11 @@ var HYDR = {
         m.reng_running = props.globals.getNode("engines/engine[1]/run", 1);
         m.reng_primary_switch = props.globals.initNode("controls/hydraulics/system[2]/RENG_switch", 0, "BOOL");
         m.c1elec_switch = props.globals.initNode("controls/hydraulics/system[1]/C1ELEC-switch", 0, "BOOL");
-        m.c2elec_switch = props.globals.initNode("controls/hydraulics/system[1]/C2ELEC-switch", 0, "BOOL");
+        m.c2elec_switch = props.globals.initNode("controls/hydraulics/system[2]/C2ELEC-switch", 0, "BOOL");
         m.lacmp_switch = props.globals.initNode("controls/hydraulics/system/LACMP-switch", 0, "INT");
         m.racmp_switch = props.globals.initNode("controls/hydraulics/system[2]/RACMP-switch", 0, "INT");
         m.c1adp_switch = props.globals.initNode("controls/hydraulics/system[1]/C1ADP-switch", 0, "INT");
-        m.c2adp_switch = props.globals.initNode("controls/hydraulics/system[1]/C2ADP-switch", 0, "INT");
+        m.c2adp_switch = props.globals.initNode("controls/hydraulics/system[2]/C2ADP-switch", 0, "INT");
         m.APUrun = props.globals.initNode("controls/APU/run", 0, "BOOL");
         m.APUgen = props.globals.initNode("controls/APU/apu-gen-switch", 0, "BOOL");
         m.GP1 = props.globals.getNode("systems/electrical/PRI-EPC");
@@ -252,8 +252,8 @@ var HYDR = {
         var flappos = props.globals.initNode("surface-positions/flap-pos-norm");
         var nosewheelpos =  props.globals.initNode("controls/gear/nosegear-steering-cmd-norm");
         var mainwheelpos =  props.globals.initNode("controls/gear/maingear-steering-cmd-norm");
-        if(me.C1ACMP.getValue() or me.C2ACMP.getValue()
-            or me.C1ADP.getValue() or me.C2ADP.getValue())
+        if(me.C1ACMP.getValue() and me.C2ACMP.getValue()
+            or me.C1ADP.getValue() and me.C2ADP.getValue())
         {
             me.center.setValue(1);
             flappos.setAttribute("writable",1);

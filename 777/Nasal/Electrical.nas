@@ -30,7 +30,7 @@ var Lbus = props.globals.initNode("systems/electrical/left-bus",0,"DOUBLE");
 var Rbus = props.globals.initNode("systems/electrical/right-bus",0,"DOUBLE");
 var AVswitch=props.globals.initNode("systems/electrical/outputs/avionics",0,"BOOL");
 var APUgen=props.globals.initNode("controls/electric/APU-generator",0,"BOOL");
-var l_gen=props.globals.initNode("controls/electric/engine/generator",0,"BOOL");
+var l_gen=props.globals.initNode("controls/electric/engine[0]/generator",0,"BOOL");
 var r_gen=props.globals.initNode("controls/electric/engine[1]/generator",0,"BOOL");
 var CDUswitch=props.globals.initNode("instrumentation/cdu/serviceable",0,"BOOL");
 var DomeLtControl=props.globals.initNode("controls/lighting/dome-intencity",0,"DOUBLE");
@@ -266,12 +266,12 @@ var init_switches = func{
     setprop("controls/lighting/efis-norm",0.8);
     setprop("controls/lighting/panel-norm",0.8);
     setprop("controls/electric/battery-switch",0);
-    setprop("controls/electric/engine/gen-switch",1);
+    setprop("controls/electric/engine[0]/gen-switch",1);
     setprop("controls/electric/engine[1]/gen-switch",1);
-    setprop("controls/electric/engine/bus-tie",1);
+    setprop("controls/electric/engine[0]/bus-tie",1);
     setprop("controls/electric/engine[1]/bus-tie",1);
     setprop("controls/APU/apu-gen-switch",1);
-    setprop("controls/electric/engine/gen-bu-switch",1);
+    setprop("controls/electric/engine[0]/gen-bu-switch",1);
     setprop("controls/electric/engine[1]/gen-bu-switch",1);
     setprop("controls/lighting/nav-lights",0);
     setprop("controls/lighting/beacon",0);
@@ -548,7 +548,7 @@ update_virtual_bus = func( dt ) {
     if(vbus_count==0)
     {
         hot_bat.setValue(battery.get_output_volts());
-        main_bat_rly.setValue(getprop("controls/electric/battery-switch"));
+        main_bat_rly.setValue(getprop("controls/electric/APU-generator"));
         bat.setValue(hot_bat.getValue() * main_bat_rly.getValue());
         if(l_xfr.getValue() > 80)
         {
