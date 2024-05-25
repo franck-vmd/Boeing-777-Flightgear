@@ -192,7 +192,10 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <condition>
+                    <and>
+                    <property>controls/electric/battery-switch</property>
                     <property>controls/electric/external-power</property>
+                </and>
                 </condition>
                 <command>property-toggle</command>
                 <property>systems/electrical/PRI-EPC</property>
@@ -212,7 +215,10 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <condition>
+                    <and>
+                    <property>controls/electric/battery-switch</property>
                     <property>controls/electric/external-power[1]</property>
+                </and>
                 </condition>
                 <command>property-toggle</command>
                 <property>systems/electrical/SEC-EPC</property>
@@ -1213,7 +1219,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>LENG_EEC_TranspCover</object-name>
-        <property>controls/engines/engine/eec-cover</property>
+        <property>controls/engines/engine[0]/eec-cover</property>
         <factor>-90</factor>
         <center>
             <x-m>0.015</x-m>
@@ -1230,7 +1236,7 @@ Franck.VMD
  <animation>
    <type>textranslate</type>
    <object-name>LENG_EEC_Switch</object-name>
-    <property>controls/engines/engine/b-eec-switch</property>
+    <property>controls/engines/engine[0]/b-eec-switch</property>
    <factor>0.0781</factor>
    <axis>
      <x>0</x>
@@ -2262,7 +2268,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>LENGDRV_TranspCover</object-name>
-        <property>controls/electric/engine/drv-cover</property>
+        <property>controls/electric/engine[0]/drv-cover</property>
         <factor>-90</factor>
         <center>
             <x-m>0.01726</x-m>
@@ -2723,7 +2729,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>RENG_Ice.knob</object-name>
         <object-name>RENG_Ice.knob.001</object-name>
-        <property>controls/anti-ice/engin[1]/antiice-knob</property>
+        <property>controls/anti-ice/engine[1]/antiice-knob</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -2754,7 +2760,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>LENG_Ice.knob</object-name>
         <object-name>LENG_Ice.knob.001</object-name>
-        <property>controls/anti-ice/engin/antiice-knob</property>
+        <property>controls/anti-ice/engine[0]/antiice-knob</property>
         <interpolation>
             <entry>
                 <ind>0</ind>
@@ -5164,7 +5170,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-            <property>controls/engines/engine/eec-cover</property>
+            <property>controls/engines/engine[0]/eec-cover</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -5202,7 +5208,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/engines/engine/eec-switch</property>
+                <property>controls/engines/engine[0]/eec-switch</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -5446,7 +5452,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/electric/engine/gen-switch</property>
+                <property>controls/electric/engine[0]/gen-switch</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -5497,7 +5503,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/electric/engine/bus-tie</property>
+                <property>controls/electric/engine[0]/bus-tie</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -5531,7 +5537,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/electric/engine/gen-bu-switch</property>
+                <property>controls/electric/engine[0]/gen-bu-switch</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -6000,7 +6006,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-toggle</command>
-            <property>controls/electric/engine/drv-cover</property>
+            <property>controls/electric/engine[0]/drv-cover</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -6469,7 +6475,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
-                <property>controls/anti-ice/engin/antiice-knob</property>
+                <property>controls/anti-ice/engine[0]/antiice-knob</property>
                 <step>1</step>
                 <min>0</min>
                 <max>2</max>
@@ -6492,7 +6498,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
-                <property>controls/anti-ice/engin/antiice-knob</property>
+                <property>controls/anti-ice/engine[0]/antiice-knob</property>
                 <step>-1</step>
                 <min>0</min>
                 <max>2</max>
@@ -6515,7 +6521,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
-                <property>controls/anti-ice/engin[1]/antiice-knob</property>
+                <property>controls/anti-ice/engine[1]/antiice-knob</property>
                 <step>1</step>
                 <min>0</min>
                 <max>2</max>
@@ -6538,7 +6544,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
-                <property>controls/anti-ice/engin[1]/antiice-knob</property>
+                <property>controls/anti-ice/engine[1]/antiice-knob</property>
                 <step>-1</step>
                 <min>0</min>
                 <max>2</max>

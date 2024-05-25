@@ -2632,7 +2632,7 @@ Franck.VMD
     <animation>
 		<type>rotate</type>
 		<object-name>Fuselage.007</object-name>
-		<property>controls/APU/rpm</property>
+		<property>controls/APU/off-start-run</property>
 		<interpolation>
                 <entry><ind>0</ind><dep>0</dep></entry>
                 <entry><ind>0.5</ind><dep>0</dep></entry>
@@ -2656,7 +2656,7 @@ Franck.VMD
 	<animation>
 		<type>translate</type>
 		<object-name>Fuselage.007</object-name>
-		<property>controls/APU/rpm</property>
+		<property>controls/APU/off-start-run</property>
 		<interpolation>
                 <entry><ind>0</ind><dep>0</dep></entry>
                 <entry><ind>0.5</ind><dep>0</dep></entry>
@@ -4359,8 +4359,8 @@ Franck.VMD
         <property>controls/wipers/degrees</property>
         <condition>
 		<greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
 		</greater-than>
         </condition>
 		<center>
@@ -4401,8 +4401,8 @@ Franck.VMD
         <property>controls/wipers/degrees</property>
         <condition>
 		<greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
 		</greater-than>
         </condition>
 		<center>
