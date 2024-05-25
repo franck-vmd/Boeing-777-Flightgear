@@ -142,8 +142,8 @@ var WEU =
 
 	# Anti-Ice
 	setlistener("controls/anti-ice/wing-antiice-knob", func { Weu.update_listener_inputs() } );
-	setlistener("controls/anti-ice/engin/antiice-knob", func { Weu.update_listener_inputs() } );
-	setlistener("controls/anti-ice/engin[1]/antiice-knob", func { Weu.update_listener_inputs() } );
+	setlistener("controls/anti-ice/engine[0]/antiice-knob", func { Weu.update_listener_inputs() } );
+	setlistener("controls/anti-ice/engine[1]/antiice-knob", func { Weu.update_listener_inputs() } );
 
 	# Electrical
         setlistener("controls/electric/APU-generator",  func { Weu.update_listener_inputs() } );
@@ -586,8 +586,8 @@ var WEU =
 	me.fuel_r_qty	 = getprop("consumables/fuel/tank[2]/level-lbs");
 	me.temp_c	 = getprop("environment/temperature-degc");
 	me.wing_aiknob	 = getprop("controls/anti-ice/wing-antiice-knob");
-	me.eng1_aiknob	 = getprop("controls/anti-ice/engin/antiice-knob");
-	me.eng2_aiknob	 = getprop("controls/anti-ice/engin[1]/antiice-knob");
+	me.eng1_aiknob	 = getprop("controls/anti-ice/engine[0]/antiice-knob");
+	me.eng2_aiknob	 = getprop("controls/anti-ice/engine[1]/antiice-knob");
 	me.wheat_ls	 = getprop("controls/anti-ice/window-heat-ls-switch");
 	me.wheat_lf	 = getprop("controls/anti-ice/window-heat-lf-switch");
 	me.wheat_rf	 = getprop("controls/anti-ice/window-heat-rf-switch");

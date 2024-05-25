@@ -93,8 +93,8 @@
       <path>Aircraft/777/Sounds/hu.wav</path>
       <condition>
         <greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
 		</greater-than>
         <less-than>
       		<property>controls/wipers/degrees</property>
@@ -121,8 +121,8 @@
       <path>Aircraft/777/Sounds/ho.wav</path>
       <condition>
        <greater-than>
-			<property>controls/switches/BATTSwitchTimer/position-norm</property>
-			<value>0</value>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
 		</greater-than>
         <greater-than>
       		<property>controls/wipers/degrees</property>
@@ -2498,10 +2498,11 @@
         <type>avionics</type>
         <path>Aircraft/777/Sounds/ventilation.wav</path>
         <condition>
-                <greater-than>
-                <property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-             </greater-than>
+           <or>
+                <property>controls/electric/APU-generator</property>
+                <property>systems/electrical/SEC-EPC</property>
+                <property>systems/electrical/PRI-EPC</property>
+           </or>
         </condition>
         <volume>
             <factor>1</factor>

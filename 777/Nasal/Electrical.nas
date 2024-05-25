@@ -472,7 +472,7 @@ update_virtual_bus = func( dt ) {
         if(apu.valid)
         {
             sec_epc.setValue(0);
-            l_btb.setValue(1);
+            pri_epc.setValue(0);
             if(external_primary.valid)
             {
                 r_btb.setValue(0);

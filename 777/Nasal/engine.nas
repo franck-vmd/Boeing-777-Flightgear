@@ -201,7 +201,7 @@ var Engine = {
             if(me.starterSwitch.getValue() == -1)
             {
                 if(getprop("controls/electric/APU-generator")
-                        or getprop("engines/engine[0]/run")
+                            or getprop("engines/engine[0]/run")
                             or getprop("engines/engine[1]/run")
                             or getprop("systems/electrical/PRI-EPC") 
                             or getprop("systems/electrical/SEC-EPC") 
@@ -306,8 +306,9 @@ var Engine = {
         }
         else
         {
-            if(me.apu_status.getValue() == 1)    # ARM
-            {
+            if(me.apu_status.getValue() == 1
+            and getprop("controls/electric/battery-switch") == 1)     # ARM
+                    {
                                 me.apu_running.setValue(1);
                 me.apu_status.setValue(2);        # START
                 settimer(func { me.apu_status.setValue(3);}, 180);

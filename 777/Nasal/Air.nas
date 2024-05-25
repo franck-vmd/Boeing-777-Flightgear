@@ -19,7 +19,7 @@ var AIR = {
 			setprop("controls/air/equip-cool", 0);
 		}
 		if((cpt_flt_inst.getValue() < 24)
-				or (getprop("engines/engine/run") and getprop("controls/air/lpack-switch")))
+				or (getprop("engines/engine[0]/run") and getprop("controls/air/lpack-switch")))
 		{
 			setprop("controls/air/lpack", 1);
 		}
@@ -109,7 +109,7 @@ var AIR = {
 			setprop("controls/air/bleedapu", 0);
 		}
 		if((cpt_flt_inst.getValue() < 24)
-				or (getprop("engines/engine/run") and getprop("controls/air/bleedengl-switch")))
+				or (getprop("engines/engine[0]/run") and getprop("controls/air/bleedengl-switch")))
 		{
 			setprop("controls/air/bleedengl", 1);
 		}
@@ -157,8 +157,8 @@ var update_air = func {
 	setprop("controls/air/bleedengl-switch", 1);
 	setprop("controls/air/bleedengr-switch", 1);
 	setprop("controls/anti-ice/wing-antiice-knob", 1);
-	setprop("controls/anti-ice/engin/antiice-knob", 1);
-	setprop("controls/anti-ice/engin[1]/antiice-knob", 1);
+	setprop("controls/anti-ice/engine[0]/antiice-knob", 1);
+	setprop("controls/anti-ice/engine[1]/antiice-knob", 1);
     settimer(update_air,5);
 });
 
