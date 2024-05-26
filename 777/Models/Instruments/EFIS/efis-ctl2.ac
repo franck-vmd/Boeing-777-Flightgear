@@ -11,7 +11,7 @@ MATERIAL "flatblack.007" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.00
 MATERIAL "Gloss.emit.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__efis-ctl2.ac"
-kids 44
+kids 46
 OBJECT poly
 name "baro.dec"
 data 8
@@ -13639,6 +13639,27 @@ refs 3
 3 0.913361 0.024594
 kids 0
 OBJECT poly
+name "Ladf.toggle"
+data 15
+Lvor.toggle.001
+crease 45.0
+texture "EFISctl.png"
+texrep 1 1
+numvert 4
+-1.81478 0.56669 -0.31123
+-1.81478 0.56669 -0.31625
+-1.81601 0.57335 -0.31123
+-1.81601 0.57335 -0.31625
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+2 0.286091 0.45487
+0 0.286091 0.384889
+1 0.337881 0.384889
+3 0.337881 0.45487
+kids 0
+OBJECT poly
 name "LVOR.toggle"
 data 15
 LVOR.toggle.003
@@ -13841,10 +13862,10 @@ crease 45.0
 texture "EFISctl.png"
 texrep 1 1
 numvert 4
--1.81686 0.5746 -0.31123
--1.81686 0.5746 -0.31625
--1.81686 0.58138 -0.31123
--1.81686 0.58138 -0.31625
+-1.81625 0.57466 -0.31123
+-1.81625 0.57466 -0.31625
+-1.81747 0.58132 -0.31123
+-1.81747 0.58132 -0.31625
 numsurf 1
 SURF 0X0
 mat 0
@@ -33477,6 +33498,27 @@ refs 3
 3 0.915361 0.350746
 kids 0
 OBJECT poly
+name "Radf.toggle"
+data 15
+Rvor.toggle.001
+crease 45.0
+texture "EFISctl.png"
+texrep 1 1
+numvert 4
+-1.81433 0.56629 -0.4163
+-1.81433 0.56629 -0.42132
+-1.81577 0.57292 -0.4163
+-1.81577 0.57292 -0.42132
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+2 0.286091 0.45487
+0 0.286091 0.384889
+1 0.337881 0.384889
+3 0.337881 0.45487
+kids 0
+OBJECT poly
 name "Range.knob"
 data 14
 Range.knob.003
@@ -41351,10 +41393,10 @@ crease 45.0
 texture "EFISctl.png"
 texrep 1 1
 numvert 4
--1.81686 0.5746 -0.4163
--1.81686 0.5746 -0.42132
--1.81686 0.58138 -0.4163
--1.81686 0.58138 -0.42132
+-1.81614 0.57468 -0.4163
+-1.81614 0.57468 -0.42132
+-1.81758 0.5813 -0.4163
+-1.81758 0.5813 -0.42132
 numsurf 1
 SURF 0X0
 mat 0

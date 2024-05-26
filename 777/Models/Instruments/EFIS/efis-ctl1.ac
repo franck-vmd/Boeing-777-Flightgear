@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "interior.001" rgb 0.900 0.900 0.900  amb 0.900 0.900 0.900  emis 0.053 0.053 0.053  spec 0.000 0.000 0.000  shi 0 trans 1.000
+MATERIAL "interior.001" rgb 0.900 0.900 0.900  amb 1.000 1.000 1.000  emis 0.053 0.053 0.053  spec 0.000 0.000 0.000  shi 0 trans 1.000
 MATERIAL "Flatglow.knob" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 MATERIAL "Flatglow.knob.009" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 MATERIAL "greenglow.020" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
@@ -11,7 +11,7 @@ MATERIAL "flatblack.006" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.00
 MATERIAL "Gloss.emit.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__efis-ctl1.ac"
-kids 44
+kids 46
 OBJECT poly
 name "baro.dec"
 data 8
@@ -13639,6 +13639,27 @@ refs 3
 3 0.913361 0.024594
 kids 0
 OBJECT poly
+name "Ladf.toggle"
+data 15
+Lvor.toggle.001
+crease 45.0
+texture "EFISctl.png"
+texrep 1 1
+numvert 4
+-1.81539 0.56683 0.41542
+-1.81539 0.56683 0.4104
+-1.81663 0.57349 0.41542
+-1.81663 0.57349 0.4104
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+2 0.286091 0.45487
+0 0.286091 0.384889
+1 0.337881 0.384889
+3 0.337881 0.45487
+kids 0
+OBJECT poly
 name "LVOR.toggle"
 data 11
 LVOR.toggle
@@ -13841,10 +13862,10 @@ crease 45.0
 texture "EFISctl.png"
 texrep 1 1
 numvert 4
--1.81737 0.57409 0.41542
--1.81737 0.57409 0.4104
--1.81737 0.58087 0.41542
--1.81737 0.58087 0.4104
+-1.81675 0.57415 0.41542
+-1.81675 0.57415 0.4104
+-1.81799 0.58081 0.41542
+-1.81799 0.58081 0.4104
 numsurf 1
 SURF 0X0
 mat 0
@@ -33477,6 +33498,27 @@ refs 3
 3 0.915361 0.350746
 kids 0
 OBJECT poly
+name "Radf.toggle"
+data 15
+Rvor.toggle.001
+crease 45.0
+texture "EFISctl.png"
+texrep 1 1
+numvert 4
+-1.81472 0.56656 0.31027
+-1.81472 0.56656 0.30525
+-1.81632 0.57314 0.31027
+-1.81632 0.57314 0.30525
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+2 0.286091 0.45487
+0 0.286091 0.384889
+1 0.337881 0.384889
+3 0.337881 0.45487
+kids 0
+OBJECT poly
 name "Range.knob"
 data 10
 Range.knob
@@ -41351,10 +41393,10 @@ crease 45.0
 texture "EFISctl.png"
 texrep 1 1
 numvert 4
--1.81737 0.57409 0.31035
--1.81737 0.57409 0.30533
--1.81737 0.58087 0.31035
--1.81737 0.58087 0.30533
+-1.81657 0.57419 0.31035
+-1.81657 0.57419 0.30533
+-1.81817 0.58077 0.31035
+-1.81817 0.58077 0.30533
 numsurf 1
 SURF 0X0
 mat 0
