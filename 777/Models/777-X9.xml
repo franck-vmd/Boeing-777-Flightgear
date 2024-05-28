@@ -673,6 +673,7 @@ Franck.VMD
         <object-name>LHLND.spot</object-name>
         <object-name>RHLND.spot</object-name>
         <object-name>CTRLND.spot</object-name>
+        <object-name>spot ext</object-name>
     </effect>
     
     <effect>
@@ -924,20 +925,15 @@ Franck.VMD
         <type>material</type>
         <object-name>plancher eclairage</object-name>
         <condition>
-            <greater-than>
-                <property>/sim/time/sun-angle-rad</property>
-                <value>1.70</value>
-            </greater-than>
-             <greater-than>
-                <property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-             </greater-than>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
         </condition>
         <emission>
             <red>0.8</red>
             <green>0.8</green>
             <blue>0.0</blue>
-            <factor-prop>controls/lighting/overhead-intencity</factor-prop>
         </emission>
     </animation>
     
@@ -945,20 +941,31 @@ Franck.VMD
         <type>material</type>
         <object-name>sortiewclumiere</object-name>
         <condition>
-            <greater-than>
-                <property>/sim/time/sun-angle-rad</property>
-                <value>1.70</value>
-            </greater-than>
-             <greater-than>
-                <property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-             </greater-than>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
         </condition>
         <emission>
             <red>0.8</red>
             <green>0.8</green>
             <blue>0.8</blue>
-            <factor-prop>controls/lighting/overhead-intencity</factor-prop>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>spot ext</object-name>
+        <condition>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
         </emission>
     </animation>
 	

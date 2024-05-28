@@ -495,6 +495,7 @@ Franck.VMD
         <object-name>LHLND.spot</object-name>
         <object-name>RHLND.spot</object-name>
         <object-name>CTRLND.spot</object-name>
+        <object-name>spot ext</object-name>
     </effect>
     
     <effect>
@@ -618,6 +619,56 @@ Franck.VMD
 		</greater-than>
     </condition>
   </animation>
+  
+  <!--       plancher éclairage EXIT      -->
+	
+	<animation>
+        <type>material</type>
+        <object-name>plancher eclairage</object-name>
+        <condition>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.0</blue>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>material</type>
+        <object-name>sortiewclumiere</object-name>
+        <condition>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>spot ext</object-name>
+        <condition>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
 
 <!--   ################  Gear ###############       -->
 

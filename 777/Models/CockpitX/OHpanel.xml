@@ -2004,23 +2004,6 @@ Franck.VMD
         </axis>
     </animation>
 
-    <animation>
-        <type>rotate</type>
-        <object-name>BlockPB2_Cover</object-name>
-        <property>aaa/oh/PB2/BlockPB2_Cover</property>
-        <factor>90</factor>
-        <center>
-            <x-m>0.01562</x-m>
-            <y-m>-0.13447</y-m>
-            <z-m>0.07422</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>1</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
  <animation>
    <type>textranslate</type>
    <object-name>WH_LS_Switch</object-name>
@@ -5438,6 +5421,14 @@ Franck.VMD
             <binding>
                 <command>nasal</command>
                 <script>
+				if (getprop("/aaa/oh/PB2/BlockPB2_Cover")==0)
+				setprop("/aaa/oh/PB2/IND1.toggle", 0);
+				setprop("/aaa/oh/PB59/IND1.toggle", 1);
+				</script>
+         </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
                 controls.click(4);
             </script>
             </binding>
@@ -5911,9 +5902,60 @@ Franck.VMD
     </animation>
 
     <animation>
-        <type>pick</type>
+        <type>rotate</type>
+        <object-name>IND1.toggle</object-name>
+        <property>aaa/oh/PB2/IND1.toggle</property>
+        <interpolation> 
+            <entry>
+                <ind>0</ind>
+                <dep>45</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.0</dep>
+            </entry>		
+        </interpolation>
+        <center>
+            <x-m>0.01073</x-m>
+            <y-m>-0.13195</y-m>
+            <z-m>0.090345</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
         <object-name>BlockPB2_Cover</object-name>
         <property>aaa/oh/PB2/BlockPB2_Cover</property>
+        <interpolation> 
+            <entry>
+                <ind>0</ind>
+                <dep>90.0</dep>
+            </entry>
+            <entry>
+                <ind>1</ind>
+                <dep>0.0</dep>
+            </entry>		
+        </interpolation>
+        <center>
+            <x-m>0.01562</x-m>
+            <y-m>-0.13447</y-m>
+            <z-m>0.07422</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>BlockPB2_Cover</object-name>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
@@ -5921,6 +5963,36 @@ Franck.VMD
                 <command>property-toggle</command>
                 <property>aaa/oh/PB2/BlockPB2_Cover</property>
             </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+				if (getprop("/aaa/oh/PB2/BlockPB2_Cover")==1)
+				setprop("/aaa/oh/PB2/IND1.toggle", 1);
+				setprop("/aaa/oh/PB59/IND1.toggle", 0);
+				</script>
+         </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(7);
+            </script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>IND1.toggle</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>
+				setprop("/aaa/oh/PB2/IND1.toggle", 0);
+				setprop("/aaa/oh/PB59/IND1.toggle", 1);
+				</script>
+         </binding>
             <binding>
                 <command>nasal</command>
                 <script>
