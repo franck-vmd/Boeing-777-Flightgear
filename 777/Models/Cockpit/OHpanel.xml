@@ -1986,6 +1986,23 @@ Franck.VMD
    <z-m>0.07473</z-m>
   </center>
  </animation>
+ 
+ <animation>
+        <type>rotate</type>
+        <object-name>BlockPA2_Cover</object-name>
+        <property>aaa/oh/PA2/BlockPA2_Cover</property>
+        <factor>-90</factor>
+        <center>
+            <x-m>0.01562</x-m>
+            <y-m>-0.27816</y-m>
+            <z-m>0.04075</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
  <animation>
    <type>textranslate</type>

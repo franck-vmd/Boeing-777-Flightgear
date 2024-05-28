@@ -1292,7 +1292,7 @@ Franck.VMD
     <animation>
    <type>rotate</type>
    <object-name>EVAC_Cover</object-name>
-	<property>/aaa/switches/EVAC_Cover</property>63
+	<property>/aaa/switches/EVAC_Cover</property>
     <interpolation> 
             <entry>
                 <ind>0</ind>
