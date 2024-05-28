@@ -267,7 +267,7 @@
                  </script>
              </binding>
                   </item>
-                  <item n="15">
+                  <item n="14">
                     <label>DoorsKFC</label>
                     <name>doorsKFC</name>
                     <binding>
@@ -275,6 +275,13 @@
                         <dialog-name>doorsKFC</dialog-name>
                     </binding>
                 </item>
+                <item n="15">
+                <label>Flashlight</label>
+                <binding>
+                    <command>nasal</command>
+                    <script>b777.toggle_flashlight()</script>
+                </binding>
+            </item>
 				</menu>
 			</default>
         </menubar>
@@ -377,6 +384,7 @@
             <file>Nasal/libraries.nas</file>
             <file>Nasal/autoannunciator.nas</file>
             <file>Nasal/fire.nas</file>
+            <file>Nasal/interior-lighting.nas</file>
         </b777>
         <dialogs>
             <file>Nasal/dialogs.nas</file>
