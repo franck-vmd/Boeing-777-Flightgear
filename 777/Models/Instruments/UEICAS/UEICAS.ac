@@ -4,7 +4,28 @@ MATERIAL "lights" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 2.000 2.000
 MATERIAL "VtxPaint" rgb 0.800 0.800 0.800  amb 0.500 0.500 0.500  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 31 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__UEICAS.ac"
-kids 6
+kids 7
+OBJECT poly
+name "apu"
+data 21
+Mesh81 EICASscree.001
+crease 30.0
+texture "ueicas.png"
+texrep 1 1
+numvert 4
+0.00254 -0.04472 0.09311
+0.00254 -0.04472 0.00675
+0.00254 -0.03121 0.09311
+0.00254 -0.03121 0.00675
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+1 0.673783 0.359706
+3 0.673783 0.40291
+2 0.266997 0.40291
+0 0.266997 0.359706
+kids 0
 OBJECT poly
 name "background"
 data 17

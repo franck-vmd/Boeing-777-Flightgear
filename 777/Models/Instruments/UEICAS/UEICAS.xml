@@ -16,6 +16,22 @@ Franck.VMD
             </less-than>
         </condition>
     </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>apu</object-name>
+        <condition>
+                <and>
+                    <not>
+                        <property>controls/APU/running</property>
+                    </not>
+                  <greater-than>
+                        <property>controls/APU/rpm</property>
+                            <value>0</value>
+                  </greater-than>
+                </and>
+        </condition>
+    </animation>
 
     <model>
         <name>N1</name>
