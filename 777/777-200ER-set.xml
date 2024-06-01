@@ -327,7 +327,7 @@
         <cdu n="0">
             <ident>
                 <model>777-200ER</model>
-                <engines>RR Trent 895</engines>
+                <engines>GE90-94B</engines>
             </ident>
         </cdu>
     </instrumentation>

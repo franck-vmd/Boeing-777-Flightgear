@@ -306,9 +306,8 @@ var Engine = {
         }
         else
         {
-            if(me.apu_status.getValue() == 1
-            and getprop("controls/electric/battery-switch") == 1)     # ARM
-                    {
+            if(me.apu_status.getValue() == 1)    # ARM
+            {
                                 me.apu_running.setValue(1);
                 me.apu_status.setValue(2);        # START
                 settimer(func { me.apu_status.setValue(3);}, 180);

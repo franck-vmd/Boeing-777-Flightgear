@@ -6714,15 +6714,20 @@ Franck.VMD
         <object-name>APU.knob</object-name>
         <action>
             <button>0</button>
-            <button>3</button>
            <repeatable>false</repeatable>
-            <binding>
+          <binding>
                 <command>property-adjust</command>
                 <property>controls/APU/off-start-run</property>
                 <step>1</step>
                 <min>0</min>
                 <max>2</max>
             </binding>
+            <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("trap");
+     </script>
+     </binding>
         </action>
     </animation>
 
@@ -6731,15 +6736,20 @@ Franck.VMD
         <object-name>APU.knob</object-name>
         <action>
             <button>1</button>
-            <button>4</button>
             <repeatable>false</repeatable>
-            <binding>
+          <binding>
                 <command>property-adjust</command>
                 <property>controls/APU/off-start-run</property>
                 <step>-1</step>
                 <min>0</min>
                 <max>2</max>
             </binding>
+            <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.close("trap");
+     </script>
+     </binding>
         </action>
     </animation>
 

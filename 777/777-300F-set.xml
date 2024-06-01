@@ -327,7 +327,7 @@
         <cdu n="0">
             <ident>
                 <model>777-300F</model>
-                <engines>90GE</engines>
+                <engines>GE90-115B</engines>
             </ident>
         </cdu>
     </instrumentation>

@@ -327,7 +327,7 @@
       <serviceable type="bool">1</serviceable>
       <ident>
         <model>777-200</model>
-        <engines>90GE</engines>
+        <engines>GE90</engines>
       </ident>
     </cdu>
     </instrumentation>
@@ -387,6 +387,7 @@
             <file>Nasal/autoannunciator.nas</file>
             <file>Nasal/fire.nas</file>
             <file>Nasal/interior-lighting.nas</file>
+            <file>Nasal/trap.nas</file>
         </b777>
         <dialogs>
             <file>Nasal/dialogs.nas</file>

@@ -2683,10 +2683,10 @@ Franck.VMD
     <animation>
 		<type>rotate</type>
 		<object-name>Fuselage.007</object-name>
-		<property>controls/APU/off-start-run</property>
+		<property>sim/multiplay/generic/float[77]</property>
 		<interpolation>
                 <entry><ind>0</ind><dep>0</dep></entry>
-                <entry><ind>0.5</ind><dep>0</dep></entry>
+                <entry><ind>0.01</ind><dep>30</dep></entry>
                 <entry><ind>1</ind><dep>30</dep></entry>
                 </interpolation>
         <axis>
@@ -2707,10 +2707,10 @@ Franck.VMD
 	<animation>
 		<type>translate</type>
 		<object-name>Fuselage.007</object-name>
-		<property>controls/APU/off-start-run</property>
+		<property>sim/multiplay/generic/float[77]</property>
 		<interpolation>
                 <entry><ind>0</ind><dep>0</dep></entry>
-                <entry><ind>0.5</ind><dep>0</dep></entry>
+                <entry><ind>0.01</ind><dep>0.04</dep></entry>
                 <entry><ind>1</ind><dep>0.04</dep></entry>
                 </interpolation>
         <axis>

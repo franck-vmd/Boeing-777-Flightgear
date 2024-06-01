@@ -348,6 +348,8 @@ var WEU =
             append(me.msgs_info,"SPEEDBRAKE ARMED");
         if (me.apu_running)
             append(me.msgs_info,"APU RUNNING");
+        if (me.apu_running == 0)  
+            append(me.msgs_info,"APU COULDOWN");
 	if (me.autobrake>=0)
 	{
 	    # 777 manual: EICAS memo messages display the selected autobrake settings:

@@ -6678,7 +6678,6 @@ Franck.VMD
         <object-name>APU.knob</object-name>
         <action>
             <button>0</button>
-            <button>3</button>
            <repeatable>false</repeatable>
           <binding>
                 <command>property-adjust</command>
@@ -6687,6 +6686,12 @@ Franck.VMD
                 <min>0</min>
                 <max>2</max>
             </binding>
+            <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("trap");
+     </script>
+     </binding>
         </action>
     </animation>
 
@@ -6695,7 +6700,6 @@ Franck.VMD
         <object-name>APU.knob</object-name>
         <action>
             <button>1</button>
-            <button>4</button>
             <repeatable>false</repeatable>
           <binding>
                 <command>property-adjust</command>
@@ -6704,6 +6708,12 @@ Franck.VMD
                 <min>0</min>
                 <max>2</max>
             </binding>
+            <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.close("trap");
+     </script>
+     </binding>
         </action>
     </animation>      
 
@@ -7000,9 +7010,9 @@ Franck.VMD
         <property>fcs/pfc-enable</property>
         <factor>45</factor>
         <center>
-            <x-m>0.0121</x-m>
-            <y-m>-0.27841</y-m>
-            <z-m>0.02342</z-m>
+            <x-m>0.011642</x-m>
+            <y-m>-0.27838</y-m>
+            <z-m>0.02289</z-m>
         </center>
         <axis>
             <x>0</x>
