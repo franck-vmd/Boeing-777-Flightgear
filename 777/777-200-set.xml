@@ -376,6 +376,7 @@
             <file>Models/Instruments/MFD/gear.nas</file>
             <file>Models/Instruments/MFD/stat.nas</file>
             <file>Models/Instruments/MFD/air.nas</file>
+            <file>Models/Instruments/MFD/chkl.nas</file>
             <file>Models/Instruments/MFD/hyd.nas</file>
             <file>Nasal/SWanimation.nas</file>
             <file>Nasal/runway.nas</file>

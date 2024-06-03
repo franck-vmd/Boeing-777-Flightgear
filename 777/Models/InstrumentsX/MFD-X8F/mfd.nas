@@ -91,6 +91,7 @@ var mfdListener = nil;
             m.gearDisplay = canvas_gear.new(m.group);
             m.statDisplay = canvas_stat.new(m.group);
             m.airDisplay = canvas_air.new(m.group);
+            m.chklDisplay = canvas_chkl.new(m.group);
             m.hydDisplay = canvas_hyd.new(m.group);
             m.fuelDisplay = FuelPanel.new(m.group);
             m.displayPanel(m.defaultPanel);
@@ -118,6 +119,8 @@ var mfdListener = nil;
                     me.display = me.statDisplay;
                 elsif (panel == "air")
                     me.display = me.airDisplay;
+                elsif (panel == "chkl")
+                    me.display = me.chklDisplay;
                 elsif (panel == "hyd")
                     me.display = me.hydDisplay;
                 elsif (panel == "fuel")
