@@ -263,19 +263,19 @@
           <value>On</value>
           <condition>
            <equals>
-           <property>controls/flight/adiru</property>
+           <property>sim/multiplay/generic/float[75]</property>
            <value>1</value>
            </equals>
           </condition>
           <marker>
              <x-m>-1.1140</x-m>
-             <y-m>-0.2198</y-m>
-             <z-m>1.2694</z-m>
+             <y-m>-0.251</y-m>
+             <z-m>1.25</z-m>
              <scale>1.9917</scale>
           </marker>
           <binding>
              <command>property-assign</command>
-             <property>controls/flight/adiru-switch</property>
+             <property>sim/multiplay/generic/float[75]</property>
              <value>1</value>
           </binding>
         </item>
@@ -379,9 +379,9 @@
                 </greater-than>
             </condition>
             <marker>
-             <x-m>-1.8149</x-m>
+             <x-m>-1.5149</x-m>
              <y-m>-0.3207</y-m>
-             <z-m>0.6058</z-m>
+             <z-m>0.435</z-m>
              <scale>1.2479</scale>
             </marker>
             <binding>

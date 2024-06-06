@@ -787,33 +787,43 @@ See main menu: "Help" - "Tutorials".
 
 === Takeoff Procedure ===
 Pre-departure:
-1. - Allocate your fuel, passengers and weight under "777-xxx/Weight and Payload" and "777-xxx/Fuel truck controls"
+01. - Allocate your fuel, passengers and weight under "777-xxx/Weight and Payload" and "777-xxx/Fuel truck controls"
    - Ensure a complete systems checklist is carried out (Help > checklists)
    - Use Pushback truck to taxi away from the terminal
 
 Departure:
-2. Select 777-xxx/Autostart (or press 's') to get the engines running
-3. Set your flaps suitably for the conditions and runway length
-4. Release parking brakes
-5. Apply throttle gently, until at 75% throttle
-6. Rotate at around 130kt
-7. Raise landing gear at positive climb
-8. Maintain positive climb
+02. Select 777-xxx/BATTERY "ON"
+03. EMER LIGHTS "OFF"
+04. L PUMPS FWD "ON"
+05. APU START ====> "wait 3 minutes"
+06. Hydraulic C-1 ELEC C2 "ON" , L eng and R eng "ON"
+07. L elec R elec , C-1 AIR C-2 "AUTO"
+08. LPUMPS AFT , RPUMPS FWD and AFT "ON"
+09. START/ignition R START , Fuel  control R "RUN"
+10. L START , Fuel control L "RUN"
+11. ADIRU "ON"
+12. Window heat L and R "ON"
+13. Set your flaps suitably for the conditions and runway length
+14. Release parking brakes
+15. Apply throttle gently, until at 75% throttle
+16. Rotate at around 130kt
+17. Raise landing gear at positive climb
+18. Maintain positive climb
 
 === Cruising ===
 Cruising Speed: Mach 0.84 (905 km/h, 490 knots, 560 mph) at 35,000 ft
 Service Ceiling: 43,100ft
 
 === Landing ===
-1. Make sure gross weight is less than maximum landing weight.
-2. Arm auto speedbrakes and suitable autobrake level (or decide to operate manually)
-3. Switch off cabin lights. Switch on landing lights if necessary
-4. Decend through 200kt, reaching stall speed(orange bar on IAS tape)+5kt at 1000ft
-5. Set flaps accordingly
-6. Land at stall speed(orange bar on IAS tape)+5kt, touch down carefully and smoothly
-7. Apply speedbrakes (when operating manually)
-8. Apply thrust reversal and apply throttle
-9. Lower throttle and deactivate thrust reversers at 60kt
+01. Make sure gross weight is less than maximum landing weight.
+02. Arm auto speedbrakes and suitable autobrake level (or decide to operate manually)
+03. Switch off cabin lights. Switch on landing lights if necessary
+04. Decend through 200kt, reaching stall speed(orange bar on IAS tape)+5kt at 1000ft
+05. Set flaps accordingly
+06. Land at stall speed(orange bar on IAS tape)+5kt, touch down carefully and smoothly
+07. Apply speedbrakes (when operating manually)
+08. Apply thrust reversal and apply throttle
+09. Lower throttle and deactivate thrust reversers at 60kt
 10. If necessary, emergency brakes should be used (avoid overheating the brakes)
         </text>
     </help>
