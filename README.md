@@ -109,7 +109,7 @@ Téléchargement : Bouton "Code" de couleur vert , "Download Zip" en bas
 
 Dézipper le dossier Zip "Boeing-777-Flightgear-main.zip"
 
-Prendre le dossier "777" dans le dossier "Boeing-777-Flightgear-main" pour installer dans flightgear
+Prendre le dossier "777-VMD" dans le dossier "Boeing-777-Flightgear-main" pour installer dans flightgear
 
 Prévoir 4 go disponible sur disque dur
 
@@ -215,7 +215,7 @@ Download: Green “Code” button, “Download Zip” at the bottom
 
 Unzip the Zip folder "Boeing-777-Flightgear-main.zip"
 
-Take the "777" folder in the "Boeing-777-Flightgear-main" folder to install in flightgear
+Take the "777-VMD" folder in the "Boeing-777-Flightgear-main" folder to install in flightgear
 
 Make sure you have 4 GB available on your hard drive
 
