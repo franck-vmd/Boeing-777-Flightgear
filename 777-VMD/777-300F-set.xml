@@ -7,17 +7,17 @@
         <max-landing-weight type="double">524000</max-landing-weight>
         <max-takeoff-weight type="double">660000</max-takeoff-weight>
         <startup>
-            <splash-texture>Aircraft/777/gui/Previews/splash-300F.png</splash-texture>
+            <splash-texture>Aircraft/777-VMD/gui/Previews/splash-300F.png</splash-texture>
         </startup>
         
         <variant-of>777-300</variant-of>
         
         <model n="0">
-            <path>Aircraft/777/Models/777-300F.xml</path>
+            <path>Aircraft/777-VMD/Models/777-300F.xml</path>
             <livery>
 				<file>AFR2</file>
 			</livery>
-			<livery-dir type="string">Aircraft/777/Models/Liveries-300F</livery-dir>
+			<livery-dir type="string">Aircraft/777-VMD/Models/Liveries-300F</livery-dir>
             <door>
                 <position-x-m type="float">-23.85</position-x-m>
                 <position-y-m type="float"> -2.95</position-y-m>
@@ -223,7 +223,7 @@
         </view>
         
         <hud>
-    	        <path n="1">Aircraft/777/Models/Cockpit/Hud/HUD2.xml</path>
+    	        <path n="1">Aircraft/777-VMD/Models/Cockpit/Hud/HUD2.xml</path>
 	</hud>
 
         <menubar n="0">
@@ -258,7 +258,7 @@
              <binding>
                <command>nasal</command>
                  <script>
-                var mal = gui.Dialog.new("/sim/gui/dialogs/ground-ops-config/dialog", "Aircraft/777/gui/dialogs/ground-ops-dialogF.xml");
+                var mal = gui.Dialog.new("/sim/gui/dialogs/ground-ops-config/dialog", "Aircraft/777-VMD/gui/dialogs/ground-ops-dialogF.xml");
                  mal.open();
                  </script>
              </binding>
@@ -354,8 +354,8 @@
             <file>Nasal/efb.nas</file>
             <file>Nasal/Hydraulics.nas</file>
             <file>Nasal/systems.nas</file>
-            <file>Aircraft/777/Nasal/doors.nas</file>
-            <file>Aircraft/777/Nasal/rain.nas</file>
+            <file>Aircraft/777-VMD/Nasal/doors.nas</file>
+            <file>Aircraft/777-VMD/Nasal/rain.nas</file>
             <file>Nasal/AFDS.nas</file>
             <file>Nasal/tyresmoke.nas</file>
             <file>Nasal/gpws.nas</file>
@@ -415,13 +415,13 @@
         </autopush_route>
         <!-- Walk View -->
   <walkview>
-   <file>Aircraft/777/Models/WalkView/walkview.nas</file>
+   <file>Aircraft/777-VMD/Models/WalkView/walkview.nas</file>
   </walkview>
   <WalkViews>
-   <file>Aircraft/777/Systems/walk-views 300.nas</file>
+   <file>Aircraft/777-VMD/Systems/walk-views 300.nas</file>
   </WalkViews>
   <WalkViews1>
-   <file>Aircraft/777/Systems/walk-views1 300.nas</file>
+   <file>Aircraft/777-VMD/Systems/walk-views1 300.nas</file>
   </WalkViews1>
     </nasal>
     
