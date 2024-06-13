@@ -1,0 +1,104 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+ <path>stby-alt1.ac</path>
+
+   <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>Screw01</object-name>
+        <object-name>StbyAlt</object-name>
+        <object-name>StbyAlt.knob</object-name>
+        <object-name>StbyAlt.knob.001</object-name>
+        <object-name>StbyAltbtn</object-name>
+    </effect>
+
+<!--  Hotspots -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>StbyAlt.knob</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+             <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/altimeter/setting-inhg</property>
+                <step>0.01</step>
+                <min>26.0</min>
+                <max>33.0</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+        <action>
+            <button>3</button> <!--  scroll up -->
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+             <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/altimeter/setting-inhg</property>
+                <step>0.01</step>
+                <min>26.0</min>
+                <max>33.0</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>StbyAlt.knob</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+             <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/altimeter/setting-inhg</property>
+                <step>-0.01</step>
+                <min>26.0</min>
+                <max>33.0</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+        <action>
+            <button>4</button> <!--  scroll down -->
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+             <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/altimeter/setting-inhg</property>
+                <step>-0.01</step>
+                <min>26.0</min>
+                <max>33.0</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Screw01</object-name>
+        <object-name>StbyAlt</object-name>
+        <object-name>StbyAlt.knob</object-name>
+        <object-name>StbyAlt.knob.001</object-name>
+        <object-name>StbyAltbtn</object-name>
+        <condition>
+                <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+</PropertyList>

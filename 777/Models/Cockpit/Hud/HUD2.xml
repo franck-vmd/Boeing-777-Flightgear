@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-
-<PropertyList>
-	<import>
-		<path>Aircraft/777/Models/Cockpit/Hud/HUD-controls.xml</path>
-	</import>
-</PropertyList>

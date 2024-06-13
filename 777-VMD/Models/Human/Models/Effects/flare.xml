@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+
+  <submodel>
+    <name>flare</name>
+    <model>Aircraft/777-VMD/Models/Human/Models/Effects/flare-particle.xml</model>
+
+    <trigger>sim/model/flare</trigger>
+
+    <speed>250.0</speed>
+    <repeat>true</repeat>
+    <delay>30.0</delay>
+    <count>-1</count>
+    <x-offset>0</x-offset>
+    <y-offset>0</y-offset>
+    <z-offset>0</z-offset>
+    <yaw-offset>0.0</yaw-offset>
+    <pitch-offset>85</pitch-offset>
+    <life>5.0</life>
+    <wind>false</wind>
+    <weight>0.1069</weight>
+    <cd>0.4</cd>
+    <eda>0.00136354</eda> 
+		<expiry>true</expiry>
+		<submodel-path>Aircraft/777-VMD/Models/Human/Models/Effects/flare2.xml</submodel-path>
+  </submodel>
+
+</PropertyList>

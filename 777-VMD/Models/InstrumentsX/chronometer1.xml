@@ -1,0 +1,178 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+
+    <path>clock1.ac</path>
+
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Lettering_CK</object-name>
+    </effect>
+
+    <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>Screw01.000</object-name>
+        <object-name>Chrono.bezel</object-name>
+    </effect>
+
+<animation>
+        <type>material</type>
+        <object-name>Lettering_CK</object-name>
+        <condition>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+             <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.8</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Chrono.needle</object-name>
+        <property>instrumentation/clock/ET-sec</property>
+        <factor>6</factor>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ET.switch</object-name>
+        <property>instrumentation/clock/et-knob</property>
+        <interpolation>
+            <entry><ind>-1</ind><dep>-144</dep></entry>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>35</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>-1.83012</x-m>
+            <y-m>-0.746008</y-m>
+            <z-m>0.381957</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>SET.switch</object-name>
+        <property>instrumentation/clock/set-knob</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>30</dep></entry>
+            <entry><ind>2</ind><dep>60</dep></entry>
+            <entry><ind>3</ind><dep>90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>-1.82999</x-m>
+            <y-m>-0.685225</y-m>
+            <z-m>0.381687</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>UTC.switch</object-name>
+        <property>instrumentation/clock/time-knob</property>
+        <interpolation>
+            <entry><ind>-1</ind><dep>-135</dep></entry>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1</ind><dep>35</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>-1.84049</x-m>
+            <y-m>-0.679173</y-m>
+            <z-m>0.441263</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!--  Hotspots -->
+
+
+    <animation>
+        <type>pick</type>
+        <object-name>ET.switch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+             <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/clock/et-knob</property>
+            </binding>
+        </action>
+        <action>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/clock/et-knob</property>
+                <value>-1</value>
+            </binding>
+            <mod-up>
+                <binding>
+                    <command>property-assign</command>
+                    <property>instrumentation/clock/et-knob</property>
+                    <value>0</value>
+                </binding>
+            </mod-up>
+        </action>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Screw01.000</object-name>
+        <object-name>Chrono.knob</object-name>
+        <object-name>UTC.switch</object-name>
+        <object-name>SET.switch</object-name>
+        <object-name>ET.switch</object-name>
+        <object-name>Chrono.bezel</object-name>
+        <condition>
+                <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+</PropertyList>

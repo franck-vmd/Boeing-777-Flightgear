@@ -1,0 +1,635 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+ <path>tcas-ctl.ac</path>
+ 
+     <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>TCAS.pnl</object-name>
+    </effect>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>TCAS_digit0</object-name>
+        <property>instrumentation/transponder/id-code-digit0</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>TCAS_digit1</object-name>
+        <property>instrumentation/transponder/id-code-digit1</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>TCAS_digit2</object-name>
+        <property>instrumentation/transponder/id-code-digit2</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>TCAS_digit3</object-name>
+        <property>instrumentation/transponder/id-code-digit3</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>XPNDR_Operating</object-name>
+        <property>instrumentation/transponder/tx-switch</property>
+        <factor>0.23</factor>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>XPNDR_LR.knob</object-name>
+        <property>instrumentation/transponder/tx-switch</property>
+        <factor>-30</factor>
+        <axis>
+        <x1-m>-1.12483</x1-m>
+        <y1-m>0.09078</y1-m>
+        <z1-m>0.017725</z1-m>
+        <x2-m>-1.12462</x2-m>
+        <y2-m>0.09078</y2-m>
+        <z2-m>0.024759</z2-m>
+        </axis>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_LR.knob</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <condition>
+                    <equals>
+                        <property>instrumentation/transponder/tx-switch</property>
+                        <value>0</value>
+                    </equals>
+                </condition>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/id-code[1]</property>
+                <property>instrumentation/transponder/id-code</property>
+            </binding>
+            <binding>
+                <condition>
+                    <equals>
+                        <property>instrumentation/transponder/tx-switch</property>
+                        <value>0</value>
+                    </equals>
+                </condition>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/id-code</property>
+                <property>instrumentation/transponder/id-code[2]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    var v_id = getprop("instrumentation/transponder/id-code");
+                    setprop("instrumentation/transponder/id-code-digit0", int(v_id / 1000));
+                    setprop("instrumentation/transponder/id-code-digit1", (v_id - (int(v_id / 1000) * 1000)) /100);
+                    setprop("instrumentation/transponder/id-code-digit2", (v_id - (int(v_id / 100) * 100)) /10);
+                    setprop("instrumentation/transponder/id-code-digit3", v_id - (int(v_id / 10) * 10));
+                </script>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/tx-switch</property>
+                <value>1</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_LR.knob</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <condition>
+                    <equals>
+                        <property>instrumentation/transponder/tx-switch</property>
+                        <value>1</value>
+                    </equals>
+                </condition>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/id-code[2]</property>
+                <property>instrumentation/transponder/id-code</property>
+            </binding>
+            <binding>
+                <condition>
+                    <equals>
+                        <property>instrumentation/transponder/tx-switch</property>
+                        <value>1</value>
+                    </equals>
+                </condition>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/id-code</property>
+                <property>instrumentation/transponder/id-code[1]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    var v_id = getprop("instrumentation/transponder/id-code");
+                    setprop("instrumentation/transponder/id-code-digit0", int(v_id / 1000));
+                    setprop("instrumentation/transponder/id-code-digit1", (v_id - (int(v_id / 1000) * 1000)) /100);
+                    setprop("instrumentation/transponder/id-code-digit2", (v_id - (int(v_id / 100) * 100)) /10);
+                    setprop("instrumentation/transponder/id-code-digit3", v_id - (int(v_id / 10) * 10));
+                </script>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/tx-switch</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>ATC_alt_src.knob</object-name>
+        <property>instrumentation/transponder/src-switch</property>
+        <factor>-30</factor>
+        <axis>
+        <x1-m>-1.0996</x1-m>
+        <y1-m>0.09078</y1-m>
+        <z1-m>0.016975</z1-m>
+        <x2-m>-1.0994</x2-m>
+        <y2-m>0.09078</y2-m>
+        <z2-m>0.023784</z2-m>
+        </axis>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ATC_alt_src.knob</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/src-switch</property>
+                <value>1</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>ATC_alt_src.knob</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/src-switch</property>
+                <value>0</value>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>IDENT.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/transponder/ident</property>
+                <value>true</value>
+            </binding>
+            <mod-up>
+                <binding>
+                    <command>property-assign</command>
+                    <property>instrumentation/transponder/ident</property>
+                    <value>false</value>
+                </binding>
+            </mod-up>
+        </action>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>XPNDR_Mode.knob</object-name>
+        <property>instrumentation/transponder/mode-switch</property>
+        <factor>-30</factor>
+        <axis>
+        <x1-m>-1.11732</x1-m>
+        <y1-m>0.18084</y1-m>
+        <z1-m>0.01785</z1-m>
+        <x2-m>-1.11706</x2-m>
+        <y2-m>0.18084</y2-m>
+        <z2-m>0.02651</z2-m>
+        </axis>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>TCAS_digit0</object-name>
+        <object-name>TCAS_digit1</object-name>
+        <object-name>TCAS_digit2</object-name>
+        <object-name>TCAS_digit3</object-name>
+        <object-name>XPNDR_Operating</object-name>
+        <condition>
+            <property>systems/electrical/outputs/avionics</property>
+        </condition>
+    </animation>
+
+      <animation>
+        <type>pick</type>
+        <object-name>XPNDR_Mode.knob</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/mode-switch</property>
+                <step>1</step>
+                <min>0</min>
+                <max>4</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_Mode.knob</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/mode-switch</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>4</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>XPNDR_RSEL_1000.knob</object-name>
+        <property>instrumentation/transponder/id-code-digit3</property>
+        <factor>-30</factor>
+        <axis>
+        <x1-m>-1.09855</x1-m>
+        <y1-m>0.156645</y1-m>
+        <z1-m>0.016541</z1-m>
+        <x2-m>-1.09828</x2-m>
+        <y2-m>0.156645</y2-m>
+        <z2-m>0.025405</z2-m>
+        </axis>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>XPNDR_RSEL_100.knob</object-name>
+        <property>instrumentation/transponder/id-code-digit2</property>
+        <factor>-30</factor>
+        <axis>
+        <x1-m>-1.09855</x1-m>
+        <y1-m>0.156645</y1-m>
+        <z1-m>0.016541</z1-m>
+        <x2-m>-1.09828</x2-m>
+        <y2-m>0.156645</y2-m>
+        <z2-m>0.025405</z2-m>
+        </axis>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>XPNDR_LSEL_1000.knob</object-name>
+        <property>instrumentation/transponder/id-code-digit1</property>
+        <factor>-30</factor>
+        <axis>
+        <x1-m>-1.09855</x1-m>
+        <y1-m>0.116625</y1-m>
+        <z1-m>0.016544</z1-m>
+        <x2-m>-1.09828</x2-m>
+        <y2-m>0.116625</y2-m>
+        <z2-m>0.025405</z2-m>
+        </axis>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>XPNDR_LSEL_100.knob</object-name>
+        <property>instrumentation/transponder/id-code-digit0</property>
+        <factor>-30</factor>
+        <axis>
+        <x1-m>-1.09855</x1-m>
+        <y1-m>0.116625</y1-m>
+        <z1-m>0.016544</z1-m>
+        <x2-m>-1.09828</x2-m>
+        <y2-m>0.116625</y2-m>
+        <z2-m>0.025405</z2-m>
+        </axis>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_LSEL_100.knob</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/id-code-digit0</property>
+                <step>1</step>
+                <min>0</min>
+                <max>8</max>
+                <wrap>true</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("instrumentation/transponder/id-code",
+                        getprop("instrumentation/transponder/id-code-digit0") * 1000
+                        + getprop("instrumentation/transponder/id-code-digit1") * 100
+                        + getprop("instrumentation/transponder/id-code-digit2") * 10
+                        + getprop("instrumentation/transponder/id-code-digit3"));
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_LSEL_100.knob</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/id-code-digit0</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>8</max>
+                <wrap>true</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("instrumentation/transponder/id-code",
+                        getprop("instrumentation/transponder/id-code-digit0") * 1000
+                        + getprop("instrumentation/transponder/id-code-digit1") * 100
+                        + getprop("instrumentation/transponder/id-code-digit2") * 10
+                        + getprop("instrumentation/transponder/id-code-digit3"));
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_LSEL_1000.knob</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/id-code-digit1</property>
+                <step>1</step>
+                <min>0</min>
+                <max>8</max>
+                <wrap>true</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("instrumentation/transponder/id-code",
+                        getprop("instrumentation/transponder/id-code-digit0") * 1000
+                        + getprop("instrumentation/transponder/id-code-digit1") * 100
+                        + getprop("instrumentation/transponder/id-code-digit2") * 10
+                        + getprop("instrumentation/transponder/id-code-digit3"));
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_LSEL_1000.knob</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/id-code-digit1</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>8</max>
+                <wrap>true</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("instrumentation/transponder/id-code",
+                        getprop("instrumentation/transponder/id-code-digit0") * 1000
+                        + getprop("instrumentation/transponder/id-code-digit1") * 100
+                        + getprop("instrumentation/transponder/id-code-digit2") * 10
+                        + getprop("instrumentation/transponder/id-code-digit3"));
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_RSEL_100.knob</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/id-code-digit2</property>
+                <step>1</step>
+                <min>0</min>
+                <max>8</max>
+                <wrap>true</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("instrumentation/transponder/id-code",
+                        getprop("instrumentation/transponder/id-code-digit0") * 1000
+                        + getprop("instrumentation/transponder/id-code-digit1") * 100
+                        + getprop("instrumentation/transponder/id-code-digit2") * 10
+                        + getprop("instrumentation/transponder/id-code-digit3"));
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_RSEL_100.knob</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/id-code-digit2</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>8</max>
+                <wrap>true</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("instrumentation/transponder/id-code",
+                        getprop("instrumentation/transponder/id-code-digit0") * 1000
+                        + getprop("instrumentation/transponder/id-code-digit1") * 100
+                        + getprop("instrumentation/transponder/id-code-digit2") * 10
+                        + getprop("instrumentation/transponder/id-code-digit3"));
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_RSEL_1000.knob</object-name>
+        <action>
+            <button>0</button>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/id-code-digit3</property>
+                <step>1</step>
+                <min>0</min>
+                <max>8</max>
+                <wrap>true</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("instrumentation/transponder/id-code",
+                        getprop("instrumentation/transponder/id-code-digit0") * 1000
+                        + getprop("instrumentation/transponder/id-code-digit1") * 100
+                        + getprop("instrumentation/transponder/id-code-digit2") * 10
+                        + getprop("instrumentation/transponder/id-code-digit3"));
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>XPNDR_RSEL_1000.knob</object-name>
+        <action>
+            <button>1</button>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/transponder/id-code-digit3</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>8</max>
+                <wrap>true</wrap>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("instrumentation/transponder/id-code",
+                        getprop("instrumentation/transponder/id-code-digit0") * 1000
+                        + getprop("instrumentation/transponder/id-code-digit1") * 100
+                        + getprop("instrumentation/transponder/id-code-digit2") * 10
+                        + getprop("instrumentation/transponder/id-code-digit3"));
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+</PropertyList>

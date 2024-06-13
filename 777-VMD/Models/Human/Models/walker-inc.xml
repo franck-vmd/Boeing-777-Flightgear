@@ -1,0 +1,1116 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<offsets>
+		<z-m>0.96</z-m>
+	</offsets>
+	<animation>
+		<enable-hot type="bool">false</enable-hot>
+	</animation>
+
+	<appearence-props>
+			<character>sim/walker/character</character>
+			<outfit>sim/walker/outfit</outfit>
+			<headgear>sim/walker/headgear</headgear>
+			<eyewear>sim/walker/eyewear</eyewear>
+			<mask>sim/walker/mask</mask>
+			<no-head-view-name>Walk View</no-head-view-name>
+			<hair>sim/walker/hair</hair>
+			<toolr>sim/walker/toolr</toolr>
+	</appearence-props>
+
+	<models>
+		<char0-path>Aircraft/777-VMD/Models/Human/Models/waldo.xml</char0-path>
+		<char1-path>Aircraft/777-VMD/Models/Human/Models/caleb.xml</char1-path>
+		<char2-path>Aircraft/777-VMD/Models/Human/Models/marty.xml</char2-path>
+		<outfit0>Aircraft/777-VMD/Models/Human/Models/outfit/default-m.xml</outfit0>
+		<outfit1>Aircraft/777-VMD/Models/Human/Models/outfit/flightsuit-m.xml</outfit1>
+		<outfit2>Aircraft/777-VMD/Models/Human/Models/outfit/airliner-m.xml</outfit2>
+		<outfit3>Aircraft/777-VMD/Models/Human/Models/outfit/dirtysuit.xml</outfit3>
+		<outfit4>Aircraft/777-VMD/Models/Human/Models/outfit/coat-m.xml</outfit4>
+	</models>
+
+<!-- limbs center coordinates, in order of appearence -->
+	<limbs>
+		<chest-x>0.002584</chest-x>
+		<chest-y>0.0</chest-y>
+		<chest-z>0.1333</chest-z>
+		<head-x>0.019</head-x>
+		<head-y>0.0</head-y>
+		<head-z>0.586</head-z>
+		<shoulder-x>0.07</shoulder-x>
+		<shoulder-y-l>-0.16</shoulder-y-l>
+		<shoulder-y-r>0.16</shoulder-y-r>
+		<shoulder-z>0.47</shoulder-z>
+		<elbow-x>0.07046</elbow-x>
+		<elbow-y-l>-0.4310</elbow-y-l>
+		<elbow-y-r>0.4310</elbow-y-r>
+		<elbow-z>0.08939</elbow-z>
+		<hand-x>0.05601</hand-x>
+		<hand-y-l>-0.6904</hand-y-l>
+		<hand-y-r>0.6904</hand-y-r>
+		<hand-z>0.4981</hand-z>
+		<leg-x>-0.01813</leg-x>
+		<leg-y-l>-0.05154</leg-y-l>
+		<leg-y-r>0.05154</leg-y-r>
+		<leg-z>-0.04</leg-z>
+		<knee-x>0.02617</knee-x>
+		<knee-y-r>0.1008</knee-y-r>
+		<knee-y-l>-0.1008</knee-y-l>
+		<knee-z>-0.3636</knee-z>
+		<foot-x>0.09349</foot-x>
+		<foot-y-r>-0.1218</foot-y-r>
+		<foot-y-r>0.1218</foot-y-r>
+		<foot-z>-0.8861</foot-z>
+	</limbs>
+
+	<pivot-props>
+		<hip-rotate>sim/model/walker[1]/limb[0]/y-deg</hip-rotate>
+		<hip-translate>sim/model/walker[1]/limb[0]/z-m</hip-translate>
+		<chest-y>sim/model/walker[1]/limb[1]/y-deg</chest-y>
+		<chest-z>sim/model/walker[1]/limb[1]/z-deg</chest-z>
+		<head-y>sim/model/walker[1]/limb[2]/y-deg</head-y>
+		<head-z>sim/model/walker[1]/limb[2]/z-deg</head-z>
+		<arm1R-x>sim/model/walker[1]/limb[3]/x-deg</arm1R-x>
+		<arm1R-y>sim/model/walker[1]/limb[3]/y-deg</arm1R-y>
+		<arm1R-z>sim/model/walker[1]/limb[3]/z-deg</arm1R-z>
+		<arm2R-y>sim/model/walker[1]/limb[4]/y-deg</arm2R-y>
+		<arm2R-z>sim/model/walker[1]/limb[4]/z-deg</arm2R-z>
+		<handR-x>sim/model/walker[1]/limb[5]/x-deg</handR-x>
+		<handR-y>sim/model/walker[1]/limb[5]/y-deg</handR-y>
+		<handR-num>sim/model/walker[1]/limb[5]/hand-pose</handR-num>
+		<arm1L-x>sim/model/walker[1]/limb[6]/x-deg</arm1L-x>
+		<arm1L-y>sim/model/walker[1]/limb[6]/y-deg</arm1L-y>
+		<arm1L-z>sim/model/walker[1]/limb[6]/z-deg</arm1L-z>
+		<arm2L-y>sim/model/walker[1]/limb[7]/y-deg</arm2L-y>
+		<arm2L-z>sim/model/walker[1]/limb[7]/z-deg</arm2L-z>
+		<handL-x>sim/model/walker[1]/limb[8]/x-deg</handL-x>
+		<handL-y>sim/model/walker[1]/limb[8]/y-deg</handL-y>
+		<handL-num>sim/model/walker[1]/limb[8]/hand-pose</handL-num>
+		<leg1R-x>sim/model/walker[1]/limb[9]/x-deg</leg1R-x>
+		<leg1R-y>sim/model/walker[1]/limb[9]/y-deg</leg1R-y>
+		<leg1R-z>sim/model/walker[1]/limb[9]/z-deg</leg1R-z>
+		<leg2R-y>sim/model/walker[1]/limb[10]/y-deg</leg2R-y>
+		<footR-y>sim/model/walker[1]/limb[11]/y-deg</footR-y>
+		<leg1L-x>sim/model/walker[1]/limb[12]/x-deg</leg1L-x>
+		<leg1L-y>sim/model/walker[1]/limb[12]/y-deg</leg1L-y>
+		<leg1L-z>sim/model/walker[1]/limb[12]/z-deg</leg1L-z>
+		<leg2L-y>sim/model/walker[1]/limb[13]/y-deg</leg2L-y>
+		<footL-y>sim/model/walker[1]/limb[14]/y-deg</footL-y>
+	</pivot-props>
+
+<!-- Equipment -->
+
+<!-- Headwear -->
+ <animation>
+	<name>headgear</name>
+  <object-name>headgear1</object-name>
+  <object-name>headgear2</object-name>
+  <object-name>headgear3</object-name>
+ </animation>	
+
+	<model> 
+		<path>Aircraft/777-VMD/Models/Human/Models/equipment/headset-m.xml</path>
+		<name>headgear1</name>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>headgear1</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/headgear"/>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+	<model> 
+		<path>Aircraft/777-VMD/Models/Human/Models/equipment/headset-m.xml</path>
+		<name>headgear2</name>
+		<overlay>
+			<path>caleb-hat.ac</path>
+			<offsets>
+					<z-m>0.0</z-m>
+			</offsets>
+		</overlay>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>headgear2</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/headgear"/>
+    <value>2</value>
+   </equals>
+  </condition>
+ </animation>
+
+	<model> 
+		<path>Aircraft/777-VMD/Models/Human/Models/equipment/headset-m.xml</path>
+		<name>headgear3</name>
+		<overlay>
+			<path>50helmet.ac</path>
+			<offsets>
+					<z-m>0.0</z-m>
+			</offsets>
+		</overlay>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>headgear3</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/headgear"/>
+    <value>3</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Eyewear -->
+ <animation>
+	<name>eyewear</name>
+  <object-name>eyewear1</object-name>
+ </animation>	
+
+	<model> 
+		<path>Aircraft/777-VMD/Models/Human/Models/equipment/shades.xml</path>
+		<name>eyewear1</name>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>eyewear1</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/eyewear"/>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Mask -->
+
+ <animation>
+	<name>mask</name>
+  <object-name>mask1</object-name>
+ </animation>	
+
+	<model> 
+		<path>Aircraft/777-VMD/Models/Human/Models/equipment/50oxymask.xml</path>
+		<name>mask1</name>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>mask1</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/mask"/>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- Tool right Hand 
+
+ <animation>
+	<name>toolright</name>
+  <object-name>tool1r</object-name>
+ </animation>	
+
+	<model> 
+		<path>Aircraft/Generic/Human/Models/equipment/m1911.xml</path>
+		<name>tool1r</name>
+	<offsets>
+		<x-m>0.02795</x-m>
+		<y-m>0.81761</y-m>
+		<z-m>0.46898</z-m>
+		<pitch-deg>-90</pitch-deg>
+		<heading-deg></heading-deg>
+		<roll-deg>90.0</roll-deg>
+	</offsets>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>tool1r</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/toolr"/>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+-->
+
+<!-- Character -->
+ <model>
+	<name>char0</name>
+  <path alias="../../models/char0-path"/>
+ </model>
+ <animation>
+  <type>select</type>
+  <object-name>char0</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/character"/>
+    <value>0</value>
+   </equals>
+  </condition>
+ </animation>
+ <model>
+	<name>char1</name>
+  <path alias="../../models/char1-path"/>
+ </model>
+ <animation>
+  <type>select</type>
+  <object-name>char1</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/character"/>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+ <model>
+	<name>char2</name>
+  <path alias="../../models/char2-path"/>
+ </model>
+ <animation>
+  <type>select</type>
+  <object-name>char2</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/character"/>
+    <value>2</value>
+   </equals>
+  </condition>
+ </animation>
+
+
+<!-- Outfits -->
+
+	<model> 
+  <path alias="../../models/outfit0"/>
+		<name>outfit0</name>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>outfit0</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/outfit"/>
+    <value>0</value>
+   </equals>
+  </condition>
+ </animation>
+
+	<model> 
+  <path alias="../../models/outfit1"/>
+		<name>outfit1</name>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>outfit1</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/outfit"/>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+
+	<model> 
+  <path alias="../../models/outfit2"/>
+		<name>outfit2</name>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>outfit2</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/outfit"/>
+    <value>2</value>
+   </equals>
+  </condition>
+ </animation>
+
+	<model> 
+  <path alias="../../models/outfit3"/>
+		<name>outfit3</name>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>outfit3</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/outfit"/>
+    <value>3</value>
+   </equals>
+  </condition>
+ </animation>
+	<model> 
+  <path alias="../../models/outfit4"/>
+		<name>outfit4</name>
+	</model>
+ <animation>
+  <type>select</type>
+  <object-name>outfit4</object-name>
+  <condition>
+   <equals>
+		<property alias="../../../../appearence-props/outfit"/>
+    <value>4</value>
+   </equals>
+  </condition>
+ </animation>
+
+
+
+ <animation>
+  <type>select</type>
+	<object-name>head</object-name>
+
+	<object-name>hair</object-name>
+	<object-name>hathair</object-name>
+
+	<object-name>eyes</object-name>
+	<object-name>headgear</object-name>
+	<object-name>eyewear</object-name>
+  <object-name>mask</object-name>
+  <condition>
+ <not-equals>
+    <property>sim/current-view/name</property>
+		<value alias="../../../../appearence-props/no-head-view-name"/>
+   </not-equals>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>select</type>
+	<object-name>hair</object-name>
+  <condition>
+ <equals>
+    <property alias="../../../../appearence-props/hair"/>
+		<value>1</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>hathair</object-name>
+  <condition>
+ <equals>
+    <property alias="../../../../appearence-props/hair"/>
+		<value>2</value>
+   </equals>
+  </condition>
+ </animation>
+
+<!-- hip -->
+	<animation>
+		<type>rotate</type>
+		<property alias="../../pivot-props/hip-rotate"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>0.01</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.1</z-m>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>translate</type>
+		<property alias="../../pivot-props/hip-translate"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>0.01</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.1</z-m>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
+	</animation>
+
+<!-- chest -->
+	<animation>
+		<type>rotate</type>
+		<object-name>chest</object-name>
+	<object-name>head</object-name>
+	<object-name>headgear</object-name>
+	<object-name>eyewear</object-name>
+  <object-name>mask</object-name>
+  <object-name>toolright</object-name>
+		<offset-deg>0</offset-deg>
+		<property alias="../../pivot-props/chest-y"/>
+		<center>
+			<x-m alias="../../../limbs/chest-x"/>
+			<y-m alias="../../../limbs/chest-y"/>
+			<z-m alias="../../../limbs/chest-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>chest</object-name>
+	<object-name>head</object-name>
+	<object-name>headgear</object-name>
+	<object-name>eyewear</object-name>
+  <object-name>mask</object-name>
+  <object-name>toolright</object-name>
+		<offset-deg>0</offset-deg>
+		<property alias="../../pivot-props/chest-z"/>
+		<center>
+			<x-m alias="../../../limbs/chest-x"/>
+			<y-m alias="../../../limbs/chest-y"/>
+			<z-m alias="../../../limbs/chest-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>-1.0</z>
+		</axis>
+	</animation>
+
+<!-- head -->
+	<animation>
+		<type>rotate</type>
+		<object-name>head</object-name>
+		<object-name>headgear</object-name>
+		<object-name>eyewear</object-name>
+  	<object-name>mask</object-name>
+		<offset-deg>0</offset-deg>
+		<property alias="../../pivot-props/head-y"/>
+		<center>
+			<x-m alias="../../../limbs/head-x"/>
+			<y-m alias="../../../limbs/head-y"/>
+			<z-m alias="../../../limbs/head-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>head</object-name>
+		<object-name>headgear</object-name>
+		<object-name>eyewear</object-name>
+  	<object-name>mask</object-name>
+		<offset-deg>0</offset-deg>
+		<property alias="../../pivot-props/head-z"/>
+		<center>
+			<x-m alias="../../../limbs/head-x"/>
+			<y-m alias="../../../limbs/head-y"/>
+			<z-m alias="../../../limbs/head-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>-1.0</z>
+		</axis>
+	</animation>
+
+<!-- right arm -->
+	<animation>
+		<type>rotate</type>
+		<object-name>arm1.R</object-name>
+  <object-name>toolright</object-name>
+		<property alias="../../pivot-props/arm1R-x"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/shoulder-x"/>
+			<y-m alias="../../../limbs/shoulder-y-r"/>
+			<z-m alias="../../../limbs/shoulder-z"/>
+		</center>
+		<axis>
+			<x>1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>arm1.R</object-name>
+  <object-name>toolright</object-name>
+		<property alias="../../pivot-props/arm1R-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/shoulder-x"/>
+			<y-m alias="../../../limbs/shoulder-y-r"/>
+			<z-m alias="../../../limbs/shoulder-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>arm1.R</object-name>
+  <object-name>toolright</object-name>
+		<property alias="../../pivot-props/arm1R-z"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/shoulder-x"/>
+			<y-m alias="../../../limbs/shoulder-y-r"/>
+			<z-m alias="../../../limbs/shoulder-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>-1.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>arm2.R</object-name>
+  <object-name>toolright</object-name>
+		<property alias="../../pivot-props/arm2R-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/elbow-x"/>
+			<y-m alias="../../../limbs/elbow-y-r"/>
+			<z-m alias="../../../limbs/elbow-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>arm2.R</object-name>
+  <object-name>toolright</object-name>
+		<property alias="../../pivot-props/arm2R-z"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/elbow-x"/>
+			<y-m alias="../../../limbs/elbow-y-r"/>
+			<z-m alias="../../../limbs/elbow-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>hand.R</object-name>
+		<object-name>grip.R</object-name>
+		<object-name>fist.R</object-name>
+		<object-name>point.R</object-name>
+		<object-name>handedge.R</object-name>
+		<object-name>victory.R</object-name>
+		<object-name>thumbsup.R</object-name>
+  <object-name>toolright</object-name>
+		<property alias="../../pivot-props/handR-x"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/hand-x"/>
+			<y-m alias="../../../limbs/hand-y-r"/>
+			<z-m alias="../../../limbs/hand-z"/>
+		</center>
+		<axis>
+			<x>1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>hand.R</object-name>
+		<object-name>grip.R</object-name>
+		<object-name>fist.R</object-name>
+		<object-name>point.R</object-name>
+		<object-name>handedge.R</object-name>
+		<object-name>victory.R</object-name>
+		<object-name>thumbsup.R</object-name>
+  <object-name>toolright</object-name>
+		<property alias="../../pivot-props/handR-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/hand-x"/>
+			<y-m alias="../../../limbs/hand-y-r"/>
+			<z-m alias="../../../limbs/hand-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+<!-- Hand Poses -->
+ <animation>
+  <type>select</type>
+	<object-name>hand.R</object-name>
+  <condition>
+ 	<equals>
+		<property alias="../../../../pivot-props/handR-num"/>
+    <value>0</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>grip.R</object-name>
+  <condition>
+ 	<equals>
+		<property alias="../../../../pivot-props/handR-num"/>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>fist.R</object-name>
+  <condition>
+ 	<equals>
+		<property alias="../../../../pivot-props/handR-num"/>
+    <value>2</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>point.R</object-name>
+  <condition>
+ <equals>
+		<property alias="../../../../pivot-props/handR-num"/>
+    <value>3</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>handedge.R</object-name>
+  <condition>
+ <equals>
+		<property alias="../../../../pivot-props/handR-num"/>
+    <value>4</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>victory.R</object-name>
+  <condition>
+ <equals>
+		<property alias="../../../../pivot-props/handR-num"/>
+    <value>5</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>thumbsup.R</object-name>
+  <condition>
+ <equals>
+		<property alias="../../../../pivot-props/handR-num"/>
+    <value>6</value>
+   </equals>
+  </condition>
+ </animation>
+
+
+<!-- left arm -->
+	<animation>
+		<type>rotate</type>
+		<object-name>arm1.L</object-name>
+		<property alias="../../pivot-props/arm1L-x"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/shoulder-x"/>
+			<y-m alias="../../../limbs/shoulder-y-l"/>
+			<z-m alias="../../../limbs/shoulder-z"/>
+		</center>
+		<axis>
+			<x>-1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>arm1.L</object-name>
+		<property alias="../../pivot-props/arm1L-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/shoulder-x"/>
+			<y-m alias="../../../limbs/shoulder-y-l"/>
+			<z-m alias="../../../limbs/shoulder-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>-1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>arm1.L</object-name>
+		<property alias="../../pivot-props/arm1L-z"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/shoulder-x"/>
+			<y-m alias="../../../limbs/shoulder-y-l"/>
+			<z-m alias="../../../limbs/shoulder-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>1.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>arm2.L</object-name>
+		<property alias="../../pivot-props/arm2L-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/elbow-x"/>
+			<y-m alias="../../../limbs/elbow-y-l"/>
+			<z-m alias="../../../limbs/elbow-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>-1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>arm2.L</object-name>
+		<property alias="../../pivot-props/arm2L-z"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/elbow-x"/>
+			<y-m alias="../../../limbs/elbow-y-l"/>
+			<z-m alias="../../../limbs/elbow-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>-1.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>hand.L</object-name>
+		<object-name>grip.L</object-name>
+		<object-name>fist.L</object-name>
+		<object-name>point.L</object-name>
+		<object-name>handedge.L</object-name>
+		<object-name>victory.L</object-name>
+		<object-name>thumbsup.L</object-name>
+		<property alias="../../pivot-props/handL-x"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/hand-x"/>
+			<y-m alias="../../../limbs/hand-y-l"/>
+			<z-m alias="../../../limbs/hand-z"/>
+		</center>
+		<axis>
+			<x>-1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>hand.L</object-name>
+		<object-name>grip.L</object-name>
+		<object-name>fist.L</object-name>
+		<object-name>point.L</object-name>
+		<object-name>handedge.L</object-name>
+		<object-name>victory.L</object-name>
+		<object-name>thumbsup.L</object-name>
+		<property alias="../../pivot-props/handL-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/hand-x"/>
+			<y-m alias="../../../limbs/hand-y-l"/>
+			<z-m alias="../../../limbs/hand-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>-1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+<!-- Hand Poses -->
+ <animation>
+  <type>select</type>
+	<object-name>hand.L</object-name>
+  <condition>
+ 	<equals>
+		<property alias="../../../../pivot-props/handL-num"/>
+    <value>0</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>grip.L</object-name>
+  <condition>
+ 	<equals>
+		<property alias="../../../../pivot-props/handL-num"/>
+    <value>1</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>fist.L</object-name>
+  <condition>
+ 	<equals>
+		<property alias="../../../../pivot-props/handL-num"/>
+    <value>2</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>point.L</object-name>
+  <condition>
+ <equals>
+		<property alias="../../../../pivot-props/handL-num"/>
+    <value>3</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>handedge.L</object-name>
+  <condition>
+ <equals>
+		<property alias="../../../../pivot-props/handL-num"/>
+    <value>4</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>victory.L</object-name>
+  <condition>
+ <equals>
+		<property alias="../../../../pivot-props/handL-num"/>
+    <value>5</value>
+   </equals>
+  </condition>
+ </animation>
+ <animation>
+  <type>select</type>
+	<object-name>thumbsup.L</object-name>
+  <condition>
+ <equals>
+		<property alias="../../../../pivot-props/handL-num"/>
+    <value>6</value>
+   </equals>
+  </condition>
+ </animation>
+
+
+<!--right leg -->
+	<animation>
+		<type>rotate</type>
+		<object-name>leg1.R</object-name>
+		<property alias="../../pivot-props/leg1R-x"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/leg-x"/>
+			<y-m alias="../../../limbs/leg-y-r"/>
+			<z-m alias="../../../limbs/leg-z"/>
+		</center>
+		<axis>
+			<x>-1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>leg1.R</object-name>
+		<property alias="../../pivot-props/leg1R-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/leg-x"/>
+			<y-m alias="../../../limbs/leg-y-r"/>
+			<z-m alias="../../../limbs/leg-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>-1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>leg1.R</object-name>
+		<property alias="../../pivot-props/leg1R-z"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/leg-x"/>
+			<y-m alias="../../../limbs/leg-y-r"/>
+			<z-m alias="../../../limbs/leg-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>-1.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>leg2.R</object-name>
+		<property alias="../../pivot-props/leg2R-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/knee-x"/>
+			<y-m alias="../../../limbs/knee-y-r"/>
+			<z-m alias="../../../limbs/knee-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>-1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>foot.R</object-name>
+		<property alias="../../pivot-props/footR-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/foot-x"/>
+			<y-m alias="../../../limbs/foot-y-r"/>
+			<z-m alias="../../../limbs/foot-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+<!-- left leg -->
+	<animation>
+		<type>rotate</type>
+		<object-name>leg1.L</object-name>
+		<property alias="../../pivot-props/leg1L-x"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/leg-x"/>
+			<y-m alias="../../../limbs/leg-y-l"/>
+			<z-m alias="../../../limbs/leg-z"/>
+		</center>
+		<axis>
+			<x>1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>leg1.L</object-name>
+		<property alias="../../pivot-props/leg1L-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/leg-x"/>
+			<y-m alias="../../../limbs/leg-y-l"/>
+			<z-m alias="../../../limbs/leg-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>-1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>leg1.L</object-name>
+		<property alias="../../pivot-props/leg2L-z"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/leg-x"/>
+			<y-m alias="../../../limbs/leg-y-l"/>
+			<z-m alias="../../../limbs/leg-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>0.0</y>
+			<z>-1.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>leg2.L</object-name>
+		<property alias="../../pivot-props/leg2L-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/knee-x"/>
+			<y-m alias="../../../limbs/knee-y-l"/>
+			<z-m alias="../../../limbs/knee-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>-1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>foot.L</object-name>
+		<property alias="../../pivot-props/footR-y"/>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m alias="../../../limbs/foot-x"/>
+			<y-m alias="../../../limbs/foot-y-l"/>
+			<z-m alias="../../../limbs/foot-z"/>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+
+</PropertyList>

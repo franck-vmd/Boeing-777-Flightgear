@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>tv777.ac</path>
+  
+  <animation>
+		<type>material</type>
+		<texture>chambreensemble.png</texture>
+	</animation>
+
+        <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+                         <object-name>TV777</object-name>
+               </effect>
+
+  
+ 
+</PropertyList>

@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+<path>ASU.ac</path>
+
+<animation>
+		<type>material</type>
+		<texture>texture.png</texture>
+                <object-name>Cylinder.008</object-name>
+                <object-name>block</object-name>
+                <object-name>box</object-name>
+                <object-name>box.001</object-name>
+                <object-name>box.003</object-name>
+                <object-name>cylinder</object-name>
+                <object-name>cylinder.001</object-name>
+</animation>
+
+<effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect13</inherits-from>
+                <object-name>Cylinder.008</object-name>
+                <object-name>block</object-name>
+                <object-name>box</object-name>
+                <object-name>box.001</object-name>
+                <object-name>box.003</object-name>
+                <object-name>cylinder</object-name>
+                <object-name>cylinder.001</object-name>
+                <object-name>ASU</object-name>
+                <object-name>Hose1</object-name>
+                <object-name>Hose2</object-name>
+</effect>
+
+<animation>
+	<type>select</type>
+	<object-name>ASU</object-name>
+	<object-name>Plane</object-name>
+	<condition>
+        <equals>
+            <property>services/ASU/enable</property>
+            <value>1</value>
+        </equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Hose1</object-name>
+	<condition>
+	    <and>
+			<equals>
+				<property>services/ASU/enable</property>
+				<value>1</value>
+			</equals>
+			<equals>
+				<property>services/ASU/hose1-enable</property>
+				<value>1</value>
+			</equals>
+		</and>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>Hose2</object-name>
+	<condition>
+	    <and>
+			<equals>
+				<property>services/ASU/enable</property>
+				<value>1</value>
+			</equals>
+			<equals>
+				<property>services/ASU/hose2-enable</property>
+				<value>1</value>
+			</equals>
+		</and>
+	</condition>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object-name>ASU</object-name>
+	<object-name>Hose1</object-name>
+	<object-name>Hose2</object-name>
+	<object-name>Plane</object-name>
+	<property>gear/gear[2]/compression-norm</property>
+	<interpolation>
+		<entry><ind>0.15</ind><dep>0.0</dep></entry>
+		<entry><ind>0.40</ind><dep>0.25</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>ASU</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/ASU/enable</property>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Hose1</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/ASU/hose1-enable</property>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Hose2</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/ASU/hose2-enable</property>
+		</binding>
+	</action>
+</animation>
+
+</PropertyList>

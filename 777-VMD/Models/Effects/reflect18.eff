@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertyList>
+    <name>skin_reflect</name>
+    <inherits-from>Effects/model-combined-deferred</inherits-from>
+    <parameters>
+        <normalmap-enabled type="int">0</normalmap-enabled>
+        <reflection-enabled type="int">0</reflection-enabled>
+        <reflection-dynamic type="int">0</reflection-dynamic>
+        <reflect_map-enabled type="int">0</reflect_map-enabled>
+        <reflection-correction type="float">0.1</reflection-correction>
+        <lightmap-enabled type="int">1</lightmap-enabled>
+        <lightmap-multi type="int">1</lightmap-multi>
+        <lightmap-factor type="float" n="0"><use>systems/electrical/outputs/cabin-lights</use></lightmap-factor>
+        <lightmap-color type="vec3d" n="0">0.03 0.03 0.03</lightmap-color>
+        <lightmap-factor type="float" n="1"><use>systems/electrical/outputs/landing-light</use></lightmap-factor>
+        <lightmap-color type="vec3d" n="1">0.03 0.03 0.03</lightmap-color>
+        <lightmap-factor type="float" n="2"><use>systems/electrical/outputs/beacon</use></lightmap-factor>
+        <lightmap-color type="vec3d" n="2">0.03 0.00 0.00</lightmap-color>
+        <lightmap-factor type="float" n="3">0.0</lightmap-factor>
+        <lightmap-color type="vec3d" n="3">1.0 1.0 1.0</lightmap-color>
+        <texture n="3">
+            <image>Aircraft/777-VMD/Models/Effects/lightmap-F5.png</image>
+            <filter>linear-mipmap-linear</filter>
+            <wrap-s>clamp</wrap-s>
+            <wrap-t>clamp</wrap-t>
+            <internal-format>normalized</internal-format>
+        </texture>
+        <texture n="5">
+            <type>cubemap</type>
+            <images>
+                <positive-x>Aircraft/777-VMD/Models/Effects/777-sky2/1.png</positive-x>
+                <negative-x>Aircraft/777-VMD/Models/Effects/777-sky2/4.png</negative-x>
+                <positive-y>Aircraft/777-VMD/Models/Effects/777-sky2/2.png</positive-y>
+                <negative-y>Aircraft/777-VMD/Models/Effects/777-sky2/3.png</negative-y>
+                <positive-z>Aircraft/777-VMD/Models/Effects/777-sky2/6.png</positive-z>
+                <negative-z>Aircraft/777-VMD/Models/Effects/777-sky2/5.png</negative-z>
+            </images>
+        </texture>
+                <reflection-rainbow type="float">0.05</reflection-rainbow>
+                <reflection-fresnel type="float">0.1</reflection-fresnel>
+        <ambient_correction>0.1</ambient_correction>
+    </parameters>
+</PropertyList>

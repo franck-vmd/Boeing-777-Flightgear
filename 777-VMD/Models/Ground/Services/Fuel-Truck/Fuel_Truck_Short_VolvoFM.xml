@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>Fuel_Truck_Short_VolvoFM.ac</path>
+
+<animation>
+		<type>material</type>
+		<texture>Fuel_Truck_Short_VolvoFM.png</texture>
+                <object-name>Cube</object-name>
+                <object-name>Cube.003</object-name>
+                <object-name>Cube.004</object-name>
+                <object-name>Cube.006</object-name>
+                <object-name>Cube.007</object-name>
+                <object-name>Cube.008</object-name>
+                <object-name>Cube.010</object-name>
+                <object-name>Cube.011</object-name>
+                <object-name>Cube.012</object-name>
+                <object-name>Cube.013</object-name>
+                <object-name>Cube.015</object-name>
+                <object-name>Cube.016</object-name>
+                <object-name>Cube.065</object-name>
+                <object-name>Cylinder.001</object-name>
+                <object-name>Cylinder.003</object-name>
+                <object-name>Cylinder.004</object-name>
+                <object-name>Cylinder.005</object-name>
+                <object-name>Cylinder.006</object-name>
+                <object-name>Cylinder.007</object-name>
+                <object-name>Cylinder.008</object-name>
+                <object-name>Cylinder.009</object-name>
+                <object-name>Cylinder.014</object-name>
+                <object-name>Cylinder.017</object-name>
+</animation>
+
+<animation>
+		<type>material</type>
+		<texture>Fuel_Truck_Short_VolvoFM_cargo.png</texture>
+                <object-name>Cube.021</object-name>
+                <object-name>Cube.029</object-name>
+                <object-name>Cube.030</object-name>
+                <object-name>Cube.031</object-name>
+                <object-name>Cube.058</object-name>
+                <object-name>Cube.060</object-name>
+                <object-name>Cube.061</object-name>
+                <object-name>Cube.062</object-name>
+                <object-name>Cube.063</object-name>
+                <object-name>Cube.064</object-name>
+                <object-name>Cylinder</object-name>
+                <object-name>Cylinder.011</object-name>
+</animation>
+
+        <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect8</inherits-from>
+                <object-name>Cube</object-name>
+                <object-name>Cube.003</object-name>
+                <object-name>Cube.004</object-name>
+                <object-name>Cube.006</object-name>
+                <object-name>Cube.007</object-name>
+                <object-name>Cube.008</object-name>
+                <object-name>Cube.010</object-name>
+                <object-name>Cube.011</object-name>
+                <object-name>Cube.012</object-name>
+                <object-name>Cube.013</object-name>
+                <object-name>Cube.015</object-name>
+                <object-name>Cube.016</object-name>
+                <object-name>Cube.065</object-name>
+                <object-name>Cylinder.001</object-name>
+                <object-name>Cylinder.003</object-name>
+                <object-name>Cylinder.004</object-name>
+                <object-name>Cylinder.005</object-name>
+                <object-name>Cylinder.006</object-name>
+                <object-name>Cylinder.007</object-name>
+                <object-name>Cylinder.008</object-name>
+                <object-name>Cylinder.009</object-name>
+                <object-name>Cylinder.014</object-name>
+                <object-name>Cylinder.017</object-name>
+               </effect>
+
+<effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect13</inherits-from>
+                <object-name>Cube.021</object-name>
+                <object-name>Cube.029</object-name>
+                <object-name>Cube.030</object-name>
+                <object-name>Cube.031</object-name>
+                <object-name>Cube.058</object-name>
+                <object-name>Cube.060</object-name>
+                <object-name>Cube.061</object-name>
+                <object-name>Cube.062</object-name>
+                <object-name>Cube.063</object-name>
+                <object-name>Cube.064</object-name>
+                <object-name>Cylinder</object-name>
+                <object-name>Cylinder.011</object-name>
+                <object-name>fuel_pipe</object-name>
+                <object-name>fuel_pipe_disconnected</object-name>
+                <object-name>handle</object-name>
+</effect>
+
+<animation>
+	<type>select</type>
+	<object-name>fuel_pipe</object-name>
+	<condition>
+		<equals>
+			<property>services/fuel-truck/connect</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>fuel_pipe_disconnected</object-name>
+	<condition>
+		<equals>
+			<property>services/fuel-truck/connect</property>
+			<value>0</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object>fuel_pipe_disconnected</object>
+	<object>fuel_truck</object>
+	<object>handle</object>
+	<property>gear/gear[1]/compression-norm</property>
+	<interpolation>
+		<entry><ind>0.15</ind><dep>0.0</dep></entry>
+		<entry><ind>0.40</ind><dep>0.25</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>fuel_truck</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/fuel-truck/enable</property>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>fuel_pipe</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/fuel-truck/connect</property>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>fuel_pipe_disconnected</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/fuel-truck/connect</property>
+		</binding>
+	</action>
+</animation>
+
+</PropertyList>

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+	<path>pilot2.ac</path>
+
+	<params>
+		<texture type="string">airliner2.png</texture>
+		<head>
+			<roll-animation>
+				<property type="string">fcs/fbw/yoke-aileron</property>
+				<factor type="float">-10</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-10</min>
+				<max type="float">10</max>
+			</roll-animation>
+			<pitch-animation>
+				<property type="string">fcs/fbw/yoke-elevator</property>
+				<factor type="float">15</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-15</min>
+				<max type="float">15</max>
+			</pitch-animation>
+			<yaw-animation>
+				<property type="string">controls/flight/rudder</property>
+				<factor type="float">-60</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-60</min>
+				<max type="float">60</max>
+			</yaw-animation>
+		</head>
+		<arms>
+			<upper-animation>
+				<property type="string">fcs/fbw/yoke-aileron</property>
+				<factor type="float">-20</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-20</min>
+				<max type="float">20</max>
+			</upper-animation>
+			<lower-animation>
+				<property type="string">fcs/fbw/yoke-elevator</property>
+				<factor type="float">30</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-30</min>
+				<max type="float">30</max>
+			</lower-animation>
+                        <lower1-animation>
+				<property type="string">fcs/fbw/yoke-elevator</property>
+				<factor type="float">-18</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-18</min>
+				<max type="float">18</max>
+			</lower1-animation>
+		</arms>
+		<legs>
+			<upper-animation>
+				<property type="string">controls/flight/rudder</property>
+				<factor type="float">15</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-15</min>
+				<max type="float">15</max>
+			</upper-animation>
+			<lower-animation>
+				<property type="string">controls/flight/rudder</property>
+				<factor type="float">15</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-15</min>
+				<max type="float">15</max>
+			</lower-animation>
+		</legs>
+                <body>
+                        <body-animation>
+				<property type="string">fcs/fbw/yoke-elevator</property>
+				<factor type="float">15</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-15</min>
+				<max type="float">15</max>
+			</body-animation>
+		</body>
+                <body1>
+                        <body1-animation>
+				<property type="string">fcs/fbw/yoke-aileron</property>
+				<factor type="float">8</factor>
+				<offset-deg type="float">0</offset-deg>
+				<min type="float">-8</min>
+				<max type="float">8</max>
+			</body1-animation>
+		</body1>
+	</params>
+
+	<animation>
+		<type>range</type>
+		<min-m>1</min-m>
+		<max-m>500</max-m>
+	</animation>
+	<animation>
+		<type>material</type>
+		<texture alias="../../params/texture" />
+	</animation>
+
+        <effect>
+         <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+                         <object-name>Head2</object-name>
+                         <object-name>LeftUpperArm2</object-name>
+		         <object-name>LeftLowerArm2</object-name>
+		         <object-name>LeftHand2</object-name>
+		         <object-name>RightUpperArm2</object-name>
+		         <object-name>RightLowerArm2</object-name>
+		         <object-name>RightHand2</object-name>
+                         <object-name>RightFoot2</object-name>
+                         <object-name>LeftFoot2</object-name>
+                         <object-name>LeftLowerLeg2</object-name>
+		         <object-name>LeftUpperLeg2</object-name>
+                         <object-name>RightLowerLeg2</object-name>
+                         <object-name>RightUpperLeg2</object-name>
+                         <object-name>Body2</object-name>
+               </effect>
+
+         <animation>
+        <type>material</type>
+                         <object-name>Head2</object-name>
+                         <object-name>LeftUpperArm2</object-name>
+		         <object-name>LeftLowerArm2</object-name>
+		         <object-name>LeftHand2</object-name>
+		         <object-name>RightUpperArm2</object-name>
+		         <object-name>RightLowerArm2</object-name>
+		         <object-name>RightHand2</object-name>
+                         <object-name>RightFoot2</object-name>
+                         <object-name>LeftFoot2</object-name>
+                         <object-name>LeftLowerLeg2</object-name>
+		         <object-name>LeftUpperLeg2</object-name>
+                         <object-name>RightLowerLeg2</object-name>
+                         <object-name>RightUpperLeg2</object-name>
+                         <object-name>Body2</object-name>
+        <condition>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.25</red>
+            <green>0.25</green>
+            <blue>0.25</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+         <!-- Siege -->
+
+             <animation>
+		<type>translate</type>
+    <object-name>Body2</object-name>
+    <object-name>LeftFoot2</object-name>
+    <object-name>LeftLowerLeg2</object-name>
+    <object-name>LeftUpperLeg2</object-name>
+    <object-name>RightFoot2</object-name>
+    <object-name>RightLowerLeg2</object-name>
+    <object-name>RightUpperLeg2</object-name>
+		<property>sim/multiplay/generic/float[59]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.75</ind><dep>0</dep></entry>
+			<entry><ind>0.80</ind><dep>0.01</dep></entry>
+			<entry><ind>0.85</ind><dep>0.02</dep></entry>
+			<entry><ind>1</ind><dep>0.20</dep></entry>
+		</interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+	</animation>
+
+        <animation>
+		<type>translate</type>
+    <object-name>Body2</object-name>
+    <object-name>LeftFoot2</object-name>
+    <object-name>LeftLowerLeg2</object-name>
+    <object-name>LeftUpperLeg2</object-name>
+    <object-name>RightFoot2</object-name>
+    <object-name>RightLowerLeg2</object-name>
+    <object-name>RightUpperLeg2</object-name>
+		<property>sim/multiplay/generic/float[59]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.75</ind><dep>0.20</dep></entry>
+			<entry><ind>0.80</ind><dep>0.22</dep></entry>
+			<entry><ind>0.85</ind><dep>0.23</dep></entry>
+			<entry><ind>1</ind><dep>0.24</dep></entry>
+		</interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+	</animation>
+
+       <animation>
+		<type>rotate</type>
+    <object-name>LeftFoot2</object-name>
+    <object-name>LeftLowerLeg2</object-name>
+    <object-name>RightFoot2</object-name>
+    <object-name>RightLowerLeg2</object-name>
+		<property>sim/multiplay/generic/float[59]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.75</ind><dep>0</dep></entry>
+			<entry><ind>0.80</ind><dep>0</dep></entry>
+			<entry><ind>0.85</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>50</dep></entry>
+		</interpolation>
+                 <center>
+			<x-m>-1.54143</x-m>
+			<y-m>-0.546694</y-m>
+			<z-m>0.110697</z-m>
+		 </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+	</animation>
+
+	<!-- Head -->
+	<animation>
+		<type>rotate</type>
+		<object-name>Head2</object-name>
+		<property alias="../../params/head/roll-animation/property" />
+		<factor alias="../../params/head/roll-animation/factor" />
+		<offset-deg alias="../../params/head/roll-animation/offset-deg" />
+		<min alias="../../params/head/roll-animation/min" />
+		<max alias="../../params/head/roll-animation/max" />
+		<center>
+			<x-m>-1.09514</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.526847</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation> 
+	<animation>
+		<type>rotate</type>
+		<object-name>Head2</object-name>
+		<property alias="../../params/head/pitch-animation/property" />
+		<factor alias="../../params/head/pitch-animation/factor" />
+		<offset-deg alias="../../params/head/pitch-animation/offset-deg" />
+		<min alias="../../params/head/pitch-animation/min" />
+		<max alias="../../params/head/pitch-animation/max" />
+		<center>
+			<x-m>-1.09514</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.526847</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>Head2</object-name>
+		<property alias="../../params/head/yaw-animation/property" />
+		<factor alias="../../params/head/yaw-animation/factor" />
+		<offset-deg alias="../../params/head/yaw-animation/offset-deg" />
+		<min alias="../../params/head/yaw-animation/min" />
+		<max alias="../../params/head/yaw-animation/max" />
+		<center>
+			<x-m>-1.09514</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.526847</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<!-- Arms -->
+	<animation>
+		<type>rotate</type>
+		<object-name>LeftUpperArm2</object-name>
+		<object-name>LeftLowerArm2</object-name>
+		<object-name>LeftHand2</object-name>
+		<object-name>RightUpperArm2</object-name>
+		<object-name>RightLowerArm2</object-name>
+		<object-name>RightHand2</object-name>
+		<property alias="../../params/arms/upper-animation/property" />
+		<factor alias="../../params/arms/upper-animation/factor" />
+		<offset-deg alias="../../params/arms/upper-animation/offset-deg" />
+		<min alias="../../params/arms/upper-animation/min" />
+		<max alias="../../params/arms/upper-animation/max" />
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-1.05138</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.47689</z-m>
+		</center>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>LeftUpperArm2</object-name>
+		<object-name>LeftLowerArm2</object-name>
+		<object-name>LeftHand2</object-name>
+		<object-name>RightUpperArm2</object-name>
+		<object-name>RightLowerArm2</object-name>
+		<object-name>RightHand2</object-name>
+		<property alias="../../params/arms/lower-animation/property" />
+		<factor alias="../../params/arms/lower-animation/factor" />
+		<offset-deg alias="../../params/arms/lower-animation/offset-deg" />
+		<min alias="../../params/arms/lower-animation/min" />
+		<max alias="../../params/arms/lower-animation/max" />
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-1.05138</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.47689</z-m>
+		</center>
+	</animation>
+        <animation>
+		<type>rotate</type>
+		<object-name>LeftLowerArm2</object-name>
+		<object-name>LeftHand2</object-name>
+		<object-name>RightLowerArm2</object-name>
+		<object-name>RightHand2</object-name>
+		<property alias="../../params/arms/lower-animation/property" />
+		<factor alias="../../params/arms/lower-animation/factor" />
+		<offset-deg alias="../../params/arms/lower-animation/offset-deg" />
+		<min alias="../../params/arms/lower-animation/min" />
+		<max alias="../../params/arms/lower-animation/max" />
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-1.20062</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.226289</z-m>
+		</center>
+	</animation>
+        <animation>
+		<type>rotate</type>
+		<object-name>LeftLowerArm2</object-name>
+		<object-name>LeftHand2</object-name>
+		<object-name>RightLowerArm2</object-name>
+		<object-name>RightHand2</object-name>
+		<property alias="../../params/arms/lower1-animation/property" />
+		<factor alias="../../params/arms/lower1-animation/factor" />
+		<offset-deg alias="../../params/arms/lower1-animation/offset-deg" />
+		<min alias="../../params/arms/lower1-animation/min" />
+		<max alias="../../params/arms/lower1-animation/max" />
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-1.20062</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.226289</z-m>
+		</center>
+	</animation>
+
+	<!-- Legs -->
+	<animation>
+		<type>rotate</type>
+		<object-name>RightFoot2</object-name>
+		<property alias="../../params/legs/upper-animation/property" />
+		<factor alias="../../params/legs/upper-animation/factor" />
+		<offset-deg alias="../../params/legs/upper-animation/offset-deg" />
+		<min alias="../../params/legs/upper-animation/min" />
+		<max alias="../../params/legs/upper-animation/max" />
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-1.88228</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>-0.244226</z-m>
+		</center>
+	</animation>
+        <animation>
+		<type>rotate</type>
+		<object-name>LeftFoot2</object-name>
+		<property alias="../../params/legs/upper-animation/property" />
+		<factor alias="../../params/legs/upper-animation/factor" />
+		<offset-deg alias="../../params/legs/upper-animation/offset-deg" />
+		<min alias="../../params/legs/upper-animation/min" />
+		<max alias="../../params/legs/upper-animation/max" />
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-1.88228</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>-0.244226</z-m>
+		</center>
+	</animation>
+    
+       <!-- Body -->
+
+        <animation>
+		<type>rotate</type>
+		<object-name>Body2</object-name>
+		<property alias="../../params/body/body-animation/property" />
+		<factor alias="../../params/body/body-animation/factor" />
+		<offset-deg alias="../../params/body/body-animation/offset-deg" />
+		<min alias="../../params/body/body-animation/min" />
+		<max alias="../../params/body/body-animation/max" />
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.9908</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.12126</z-m>
+		</center>
+	</animation>
+        <animation>
+		<type>rotate</type>
+		<object-name>Body2</object-name>
+		<property alias="../../params/body1/body1-animation/property" />
+		<factor alias="../../params/body1/body1-animation/factor" />
+		<offset-deg alias="../../params/body1/body1-animation/offset-deg" />
+		<min alias="../../params/body1/body1-animation/min" />
+		<max alias="../../params/body1/body1-animation/max" />
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>-0.9908</x-m>
+			<y-m>0.540241</y-m>
+			<z-m>0.12126</z-m>
+		</center>
+	</animation>
+
+       <!-- Mask -->
+
+ <animation>
+	<name>mask</name>
+  <object-name>maskstraps</object-name>
+  <object-name>oxyhose</object-name>
+  <object-name>oxymask</object-name>
+ </animation>	
+
+	
+ <animation>
+    <type>select</type>
+    <object-name>mask</object-name>
+    <condition>
+			<equals>
+            <property>/aaa/switches/oxygenswitch</property>
+				<value>1</value>
+			</equals>
+		</condition>
+</animation>
+
+</PropertyList>

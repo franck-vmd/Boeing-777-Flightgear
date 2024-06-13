@@ -1,0 +1,166 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+
+    <path>Panel3.ac</path>
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Lettering_FLP_L</object-name>
+    </effect>
+
+    <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>HDGREF_Switch</object-name>
+        <object-name>HDGREF_Flange</object-name>
+        <object-name>Plate3</object-name>
+        <object-name>HDGREF_Base</object-name>
+    </effect>
+
+    <animation>
+        <type>material</type>
+        <object-name>Lettering_FLP_L</object-name>
+        <condition>
+            <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+            </greater-than>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.8</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>HDGREF_TranspCover</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>systems/navigation/hdgref/cover</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(2);</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>HDGREF_TranspCover</object-name>
+        <property>systems/navigation/hdgref/cover</property>
+        <factor>-90</factor>
+        <center>
+            <x-m>-1.78923</x-m>
+            <y-m>-0.310925</y-m>
+            <z-m>0.259901</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>HDGREF_Switch</object-name>
+        <object-name>HDGREF_AcryFace</object-name>
+        <condition>
+                <property>systems/navigation/hdgref/cover</property>
+        </condition>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>systems/navigation/hdgref/button</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    controls.click(2);
+                    b777.afds.input(4,0);
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>HDGREF_Switch</object-name>
+        <object-name>HDGREF_AcryFace</object-name>
+        <property>systems/navigation/hdgref/reference</property>
+        <factor>0.293</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>HDGREF_Switch</object-name>
+        <object-name>HDGREF_AcryFace</object-name>
+        <property>systems/navigation/hdgref/button</property>
+        <factor>0.0088</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>InBoardDspl_L.knob</object-name>
+        <object-name>HDGREF_Switch</object-name>
+        <object-name>HDGREF_Flange</object-name>
+        <object-name>Plate3</object-name>
+        <object-name>HDGREF_Base</object-name>
+        <condition>
+                <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.15</red>
+            <green>0.15</green>
+            <blue>0.15</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+                <object-name>Lettering_FLP_L</object-name>
+                <condition>
+		<greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+    </animation>
+
+</PropertyList>

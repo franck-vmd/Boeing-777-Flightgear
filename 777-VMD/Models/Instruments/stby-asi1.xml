@@ -1,0 +1,40 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+ <path>stby-asi1.ac</path>
+
+   <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>Screw01</object-name>
+        <object-name>StbyAsi</object-name>
+        <object-name>StbyAsi.knob</object-name>
+        <object-name>StbyAsi.knob.001</object-name>
+        <object-name>StbyAsibtn</object-name>
+    </effect>
+
+    <animation>
+        <type>material</type>
+        <object-name>Screw01</object-name>
+        <object-name>StbyAsi</object-name>
+        <object-name>StbyAsi.knob</object-name>
+        <object-name>StbyAsi.knob.001</object-name>
+        <object-name>StbyAsibtn</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+</PropertyList>

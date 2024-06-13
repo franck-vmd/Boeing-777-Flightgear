@@ -1,0 +1,268 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+ 
+    <path>R_MidSidePanel_Base.ac</path>
+
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Lettering_R_MSP</object-name>
+    </effect>
+
+    <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>R_Plate_Base</object-name>
+        <object-name>R_SidePlate</object-name>
+    </effect>
+
+    <animation>
+        <type>material</type>
+        <object-name>Lettering_R_MSP</object-name>
+        <condition>
+            <greater-than>   
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+            </greater-than>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.8</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
+        </emission>
+    </animation>
+
+ <animation>
+   <type>translate</type>
+   <object-name>R_NAV_AcryFace</object-name>
+   <object-name>R_NAV_Switch</object-name>
+   <object-name>R_NAV_Shutter.Top</object-name>
+   <object-name>R_NAV_Shutter.Bottom</object-name>
+    <property>controls/switches/r_nav_switch</property>
+   <factor>0.004</factor>
+   <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>R_NAV_Shutter.Top</object-name>
+   <property>controls/switches/RNAVSwitchTimer/position-norm</property>
+        <factor>-92</factor>
+        <center>
+            <x-m>0.0123</x-m>
+            <y-m>0</y-m>
+            <z-m>0.011</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>R_NAV_Shutter.Bottom</object-name>
+   <property>controls/switches/RNAVSwitchTimer/position-norm</property>
+        <factor>92</factor>
+        <center>
+            <x-m>0.0123</x-m>
+            <y-m>0</y-m>
+            <z-m>0.011</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+ 
+ <animation>
+   <type>translate</type>
+   <object-name>R_DISPL_AcryFace</object-name>
+   <object-name>R_DISPL_Switch</object-name>
+   <object-name>R_DISPL_Shutter.Top</object-name>
+   <object-name>R_DISPL_Shutter.Bottom</object-name>
+    <property>controls/switches/r_dspl_switch</property>
+   <factor>0.004</factor>
+   <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>R_DISPL_Shutter.Top</object-name>
+   <property>controls/switches/RDSPLSwitchTimer/position-norm</property>
+        <factor>-92</factor>
+        <center>
+            <x-m>0.0123</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.019</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>R_DISPL_Shutter.Bottom</object-name>
+   <property>controls/switches/RDSPLSwitchTimer/position-norm</property>
+        <factor>92</factor>
+        <center>
+            <x-m>0.0123</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.019</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+ 
+ <animation>
+   <type>translate</type>
+   <object-name>R_AIRDATA_AcryFace</object-name>
+   <object-name>R_AIRDATA_Switch</object-name>
+   <object-name>R_AIRDATA_Shutter.Top</object-name>
+   <object-name>R_AIRDATA_Shutter.Bottom</object-name>
+    <property>controls/switches/r_airdata_switch</property>
+   <factor>0.004</factor>
+   <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>R_AIRDATA_Shutter.Top</object-name>
+   <property>controls/switches/RAIRDATASwitchTimer/position-norm</property>
+        <factor>-92</factor>
+        <center>
+            <x-m>0.0123</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.050</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>R_AIRDATA_Shutter.Bottom</object-name>
+   <property>controls/switches/RAIRDATASwitchTimer/position-norm</property>
+        <factor>92</factor>
+        <center>
+            <x-m>0.0123</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.050</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+ </animation>
+ 
+    <!-- LEFT NAV source switch -->
+    <animation>
+        <type>pick</type>
+        <object-name>R_NAV_Switch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/switches/r_nav_switch</property>
+            </binding>
+        </action>
+    </animation>
+
+    <!-- LEFT DSPL source switch -->
+    <animation>
+        <type>pick</type>
+        <object-name>R_DISPL_Switch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/switches/r_dspl_switch</property>
+            </binding>
+        </action>
+    </animation>
+
+    <!-- LEFT AIRDATA source switch -->
+    <animation>
+        <type>pick</type>
+        <object-name>R_AIRDATA_Switch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/switches/r_airdata_switch</property>
+            </binding>
+        </action>
+    </animation>
+
+   <animation>
+        <type>material</type>
+        <object-name>R_Plate_Base</object-name>
+        <object-name>R_SidePlate</object-name>
+        <condition>
+                <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+   <animation>
+        <type>material</type>
+                <object-name>Lettering_R_MSP</object-name>
+                <condition>
+		<greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    
+</PropertyList>
