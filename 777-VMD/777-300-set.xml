@@ -7,7 +7,7 @@
         <max-landing-weight type="double">524000</max-landing-weight>
         <max-takeoff-weight type="double">660000</max-takeoff-weight>
         <startup>
-            <splash-texture>Aircraft/777/gui/Previews/splash-300.png</splash-texture>
+            <splash-texture>Aircraft/777-VMD/gui/Previews/splash-300.png</splash-texture>
         </startup>
         
         <primary-set type="bool">true</primary-set>
