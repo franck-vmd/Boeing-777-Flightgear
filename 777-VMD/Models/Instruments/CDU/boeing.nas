@@ -637,7 +637,7 @@ var cduHold = {
   fix : "",
   hdg : 0,
   minutes : 4,
-  speedKts : 250.0,
+  speedKts : 240.0,
   distance : 4.0,
   radius   : 1.0,
   turnLeft : 1,
@@ -905,6 +905,9 @@ var key = func(v) {
           }
         }
         if (v == "LSK2R"){
+          if (cduDisplay == "PERF_INIT"){
+             setprop("autopilot/route-manager/cruise/speed-kts",cduInput);
+          }
           if (cduDisplay == "DEP_ARR_INDEX"){
             cduDisplay = "RTE1_ARR";
           }
@@ -1185,6 +1188,8 @@ var cdu = func{
         output.leftTitle[0] = "GR WT";
         output.rightTitle[0] = "CRZ ALT";
         output.right[0] = getprop("autopilot/route-manager/cruise/altitude-ft");
+        output.rightTitle[1] = "CRZ SPD";
+        output.right[1] = getprop("autopilot/route-manager/cruise/speed-kts");
         output.leftTitle[1] = "FUEL";
         output.leftTitle[2] = "ZFW";
         output.leftTitle[3] = "RESERVES";
