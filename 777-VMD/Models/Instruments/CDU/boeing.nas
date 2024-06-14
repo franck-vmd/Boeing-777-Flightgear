@@ -935,6 +935,9 @@ var key = func(v) {
           }
         }
         if (v == "LSK3R"){
+          if (cduDisplay == "PERF_INIT"){
+             setprop("autopilot/settings/counter-set-altitude-ft",cduInput);
+          }
           if (cduDisplay == "NAV_RAD") {
           setprop("instrumentation/adf[1]/frequencies/selected-khz",cduInput);
             cduInput = "";
@@ -943,6 +946,11 @@ var key = func(v) {
         if (v == "LSK4L"){
           if (cduDisplay == "INIT_REF"){
             cduDisplay = "THR_LIM";
+          }
+        }
+        if (v == "LSK4R"){
+          if (cduDisplay == "PERF_INIT"){
+             setprop("autopilot/settings/target-speed-kt",cduInput);
           }
         }
         if (v == "LSK5L"){
@@ -1190,10 +1198,13 @@ var cdu = func{
         output.right[0] = getprop("autopilot/route-manager/cruise/altitude-ft");
         output.rightTitle[1] = "CRZ SPD";
         output.right[1] = getprop("autopilot/route-manager/cruise/speed-kts");
+        output.rightTitle[2] = "TRANS ALT";
+        output.right[2] = getprop("autopilot/settings/counter-set-altitude-ft");
         output.leftTitle[1] = "FUEL";
         output.leftTitle[2] = "ZFW";
         output.leftTitle[3] = "RESERVES";
-        output.rightTitle[3] = "CRZ CG";
+        output.rightTitle[3] = "TRANS SPD";
+        output.right[3] = getprop("autopilot/settings/target-speed-kt");
         output.leftTitle[4] = "COST INDEX";
         output.rightTitle[4] = "STEP SIZE";
         output.left[5] = "<INDEX";
