@@ -103,6 +103,10 @@ WingTips X8 , X8F , X9:
 
 ![Image](https://i.ibb.co/pwKL1tT/WingTips.jpg)
 
+CDU :
+
+![Image](https://i.ibb.co/YRW0vxJ/CDU-777-VMD.jpg)
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Téléchargement : Bouton "Code" de couleur vert , "Download Zip" en bas 
@@ -205,6 +209,10 @@ Interior-777-200F , 777-KFC , 777-300ERSF , 777-X8F:
 WingTips X8 , X8F , X9:
 
 ![Image](https://i.ibb.co/pwKL1tT/WingTips.jpg)
+
+CDU :
+
+![Image](https://i.ibb.co/YRW0vxJ/CDU-777-VMD.jpg)
 
 
 
