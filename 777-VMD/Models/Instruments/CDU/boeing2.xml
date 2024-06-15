@@ -384,6 +384,19 @@ Franck.VMD
 </animation>
 
 <animation>
+	<type>pick</type>
+	<object-name>Btn.prog</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable> 
+		<binding>
+				<command>dialog-show</command>
+				<dialog-name>load-save-cdu</dialog-name>
+			</binding>
+	</action>
+</animation>
+
+<animation>
     <type>pick</type>
     <object-name>Btn.menu</object-name>
     <action>
