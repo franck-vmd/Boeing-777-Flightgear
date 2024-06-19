@@ -347,7 +347,7 @@ var WEU =
         if (me.spdbrk_armed)
             append(me.msgs_info,"SPEEDBRAKE ARMED");
         if (me.apu_running)
-            append(me.msgs_info,"APU RUNNING");
+            append(me.msgs_info,"APU RUNNING");        
 	if (me.autobrake>=0)
 	{
 	    # 777 manual: EICAS memo messages display the selected autobrake settings:
@@ -395,7 +395,7 @@ var WEU =
 			    append(me.msgs_caution,">APU DOOR");
 
                  if (getprop("/aaa/door-positions/c33/position-norm")==1)
-			    append(me.msgs_caution,">GEAR DOOR");
+			    append(me.msgs_caution,">GEAR DOOR");	    
 
                  if (getprop("/aaa/door-positions/c12/position-norm")==1 or getprop("/aaa/door-positions/c13/position-norm")==1)
 			    append(me.msgs_caution,">RADAR DOOR");

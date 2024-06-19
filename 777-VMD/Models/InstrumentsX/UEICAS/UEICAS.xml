@@ -26,7 +26,7 @@ Franck.VMD
                         <property>controls/APU/running</property>
                     </not>
                   <greater-than>
-                        <property>controls/APU/rpm</property>
+                        <property>sim/multiplay/generic/float[77]</property>
                             <value>0</value>
                   </greater-than>
                 </and>
