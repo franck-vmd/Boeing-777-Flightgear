@@ -1,5 +1,22 @@
+var cduInitialize = func(){
+	props.getNode("/",1).setValue("/instrumentation/fmc/VNAV/TransALT",18000);
+}
+cduInitialize();
+
 var input = func(v) {
 	setprop("instrumentation/cdu/input",getprop("instrumentation/cdu/input")~v);
+}
+
+var isFLinit = func(){
+	if (getprop("/instrumentation/fmc/VNAV/cruise/altitude-FL") != nil)
+		return getprop("/instrumentation/fmc/VNAV/cruise/altitude-FL");
+	else
+		return "";
+}
+
+var VNAVChanges = func(){
+	setprop("/instrumentation/fmc/VNAV/isChanged",0);
+	setprop("/autopilot/route-manager/isArmed",1);
 }
 
 var execPushed = func(){
@@ -631,7 +648,7 @@ var cduLegs = {
       }
     }
     
-    output.left[5] = "<RTE 2 LEGS";
+    output.left[5] = "<RTE2 LEGS";
 		output.right[5] = (getprop("autopilot/route-manager/active") == 1)
         ? "RTE DATA>"
         : "ACTIVATE>";
@@ -1106,7 +1123,7 @@ var cdu = func{
         output.title = "ALTN NAV RADIO";
       }
       if (display == "VNAV") {
-	output.title = "VNAV";
+	output.title = "ACT ECON CLB";
 	output.rightTitle[2] = "TRANS ALT";
 	output.right[2]  = sprintf("%2.0f",getprop("/instrumentation/fmc/VNAV/TransALT"));
       }
