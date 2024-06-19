@@ -1253,7 +1253,7 @@ Franck.VMD
         </action>
     </animation>
 
-    <!--animation>
+    <animation>
         <type>pick</type>
         <object-name>CLB_Switch</object-name>
         <action>
@@ -1264,7 +1264,7 @@ Franck.VMD
                 <script>controls.click(3);b777.afds.input(2,3);</script>
             </binding>
         </action>
-    </animation-->
+    </animation>
 
     <animation>
         <type>pick</type>
