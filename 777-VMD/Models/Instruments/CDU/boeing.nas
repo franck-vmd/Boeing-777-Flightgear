@@ -1351,11 +1351,11 @@ var cdu = func{
         output.right[1] = "CLB>";
         output.leftTitle[2] = "TO 1";
         output.left[2] = "<-10%";
-        output.center[2] = "<SEL> <ARM>";
-        output.right[2] = "CLB 1>";
+        output.center[2] = "<SEL><ARM>";
+        output.right[2] = "CLB1>";
         output.leftTitle[3] = "TO 2";
         output.left[3] = "<-20%";
-        output.right[3] = "CLB 2>";
+        output.right[3] = "CLB2>";
         output.left[5] = "<INDEX";
         output.right[5] = "TAKEOFF>";
       }
