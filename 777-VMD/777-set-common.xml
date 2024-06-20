@@ -778,6 +778,11 @@
             <y-offset-m type="double">0.85</y-offset-m>
         </config>
     </view>
+    
+    <hud n="0">
+        <enable3d n="0">false</enable3d>
+        <enable3d n="1">false</enable3d>
+    </hud>
 
     <help n="0">
         <title>777</title>

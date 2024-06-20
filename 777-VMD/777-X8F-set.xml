@@ -224,7 +224,7 @@
         </view>
         
         <hud>
-    	        <path n="1">Aircraft/777-VMD/Models/CockpitX/Hud/HUD2.xml</path>
+    	        <path n="2">Aircraft/777-VMD/Models/CockpitX/Hud/HUD2.xml</path>
 	</hud>
 
         <menubar n="0">
