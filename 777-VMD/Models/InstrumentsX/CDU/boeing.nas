@@ -1,38 +1,10 @@
 var cduInitialize = func(){
-	props.getNode("/",1).setValue("/instrumentation/fmc/VNAV/TransALT",18000);
+	props.getNode("/",1).setValue("autopilot/settings/transition-altitude",18000);
 }
 cduInitialize();
 
 var input = func(v) {
 	setprop("instrumentation/cdu/input",getprop("instrumentation/cdu/input")~v);
-}
-
-var isFLinit = func(){
-	if (getprop("/instrumentation/fmc/VNAV/cruise/altitude-FL") != nil)
-		return getprop("/instrumentation/fmc/VNAV/cruise/altitude-FL");
-	else
-		return "";
-}
-
-var VNAVChanges = func(){
-	setprop("/instrumentation/fmc/VNAV/isChanged",0);
-	setprop("/autopilot/route-manager/isArmed",1);
-}
-
-var execPushed = func(){
-	if (getprop("autopilot/route-manager/isArmed") == 1){
-		if(getprop("autopilot/route-manager/destination/airport") != nil){
-			setprop("autopilot/route-manager/destination/approach", getprop("autopilot/route-manager/destination/airport"));
-		}
-		setprop("autopilot/route-manager/isChanged",0);
-		setprop("autopilot/route-manager/input","@ACTIVATE");
-		setprop("autopilot/route-manager/isArmed", -1);
-	}
-	if (getprop("/instrumentation/fmc/VNAV/isChanged") == 0){
-		setprop("autopilot/route-manager/cruise/altitude-ft", getprop("instrumentation/fmc/VNAV/cruise/altitude-ft"));
-		setprop("autopilot/settings/transition-altitude", getprop("instrumentation/fmc/VNAV/TransALT"));
-		setprop("instrumentation/fmc/VNAV/isChanged", 1);
-	}
 }
 
 var _cduPageParent = {
@@ -632,7 +604,7 @@ var cduLegs = {
         
         
         output.left[line] = ident;
-        output.center[line] = (currentWpIndex == activeWp) ? "<-- ACTIVE" : "";
+        output.center[line] = (currentWpIndex == activeWp) ? "<-ACTIVE" : "";
         output.right[line] = ((speedNode==nil) ? "---" : sprintf("%3.0f", speedNode.getValue())) 
             ~ "/"
             ~ ((alt==nil or alt < 0) ? "-----" : int(alt));
@@ -908,6 +880,7 @@ var key = func(v) {
           }
           if (cduDisplay == "PERF_INIT"){
              setprop("autopilot/route-manager/cruise/altitude-ft",cduInput);
+             cduInput = "";
           }
           if (cduDisplay == "RTE1_1"){
             setprop("autopilot/route-manager/destination/airport",cduInput);
@@ -940,6 +913,7 @@ var key = func(v) {
         if (v == "LSK2R"){
           if (cduDisplay == "PERF_INIT"){
              setprop("autopilot/route-manager/cruise/speed-kts",cduInput);
+             cduInput = "";
           }
           if (cduDisplay == "DEP_ARR_INDEX"){
             cduDisplay = "RTE1_ARR";
@@ -972,13 +946,13 @@ var key = func(v) {
 	  {
 	          if (num(cduInput) != nil)
 	          {
-	       setprop("/instrumentation/fmc/VNAV/TransALT",cduInput);
-	       VNAVChanges();
+	       setprop("autopilot/settings/transition-altitude",cduInput);
 	       cduInput = "";
 		}
 	  }
           if (cduDisplay == "PERF_INIT"){
              setprop("autopilot/settings/counter-set-altitude-ft",cduInput);
+             cduInput = "";
           }
           if (cduDisplay == "NAV_RAD") {
           setprop("instrumentation/adf[1]/frequencies/selected-khz",cduInput);
@@ -993,6 +967,7 @@ var key = func(v) {
         if (v == "LSK4R"){
           if (cduDisplay == "PERF_INIT"){
              setprop("autopilot/settings/target-speed-kt",cduInput);
+             cduInput = "";
           }
         }
         if (v == "LSK5L"){
@@ -1125,7 +1100,7 @@ var cdu = func{
       if (display == "VNAV") {
 	output.title = "ACT ECON CLB";
 	output.rightTitle[2] = "TRANS ALT";
-	output.right[2]  = sprintf("%2.0f",getprop("/instrumentation/fmc/VNAV/TransALT"));
+	output.right[2]  = sprintf("%2.0f",getprop("autopilot/settings/transition-altitude"));
       }
       if (display == "APP_REF") {
         output.title = "APPROACH REF";
@@ -1242,16 +1217,16 @@ var cdu = func{
         output.title = "PERF INIT";
         output.leftTitle[0] = "GR WT";
         output.rightTitle[0] = "CRZ ALT";
-        output.right[0] = getprop("autopilot/route-manager/cruise/altitude-ft");
+        output.right[0] = sprintf("%2.0f", getprop("autopilot/route-manager/cruise/altitude-ft"));
         output.rightTitle[1] = "CRZ SPD";
-        output.right[1] = getprop("autopilot/route-manager/cruise/speed-kts");
+        output.right[1] = sprintf("%2.0f", getprop("autopilot/route-manager/cruise/speed-kts"));
         output.rightTitle[2] = "ALT";
-        output.right[2] = getprop("autopilot/settings/counter-set-altitude-ft");
+        output.right[2] = sprintf("%2.0f", getprop("autopilot/settings/counter-set-altitude-ft"));
         output.leftTitle[1] = "FUEL";
         output.leftTitle[2] = "ZFW";
         output.leftTitle[3] = "RESERVES";
         output.rightTitle[3] = "SPD";
-        output.right[3] = getprop("autopilot/settings/target-speed-kt");
+        output.right[3] = sprintf("%2.0f", getprop("autopilot/settings/target-speed-kt"));
         output.leftTitle[4] = "COST INDEX";
         output.rightTitle[4] = "STEP SIZE";
         output.left[5] = "<INDEX";
