@@ -604,7 +604,7 @@ var cduLegs = {
         
         
         output.left[line] = ident;
-        output.center[line] = (currentWpIndex == activeWp) ? "<-ACTIVE" : "";
+        output.center[line] = (currentWpIndex == activeWp) ? "<---ACTIVE" : "";
         output.right[line] = ((speedNode==nil) ? "---" : sprintf("%3.0f", speedNode.getValue())) 
             ~ "/"
             ~ ((alt==nil or alt < 0) ? "-----" : int(alt));
@@ -620,7 +620,7 @@ var cduLegs = {
       }
     }
     
-    output.left[5] = "<RTE2 LEGS";
+    output.left[5] = "<RTE 2 LEGS";
 		output.right[5] = (getprop("autopilot/route-manager/active") == 1)
         ? "RTE DATA>"
         : "ACTIVATE>";
