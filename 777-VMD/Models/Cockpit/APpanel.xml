@@ -1913,8 +1913,8 @@ Franck.VMD
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
-                <step type="int">25</step>
-                <min type="int">25</min>
+                <step type="int">30</step>
+                <min type="int">1</min>
                 <max type="int">361</max>
                 <wrap type="bool">true</wrap>
             </binding>
@@ -1957,8 +1957,8 @@ Franck.VMD
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
-                <step type="int">-25</step>
-                <min type="int">25</min>
+                <step type="int">-30</step>
+                <min type="int">1</min>
                 <max type="int">361</max>
                 <wrap type="bool">true</wrap>
             </binding>
@@ -2003,8 +2003,8 @@ Franck.VMD
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
-                <step type="int">25</step>
-                <min type="int">25</min>
+                <step type="int">30</step>
+                <min type="int">1</min>
                 <max type="int">361</max>
                 <wrap type="bool">true</wrap>
             </binding>
@@ -2049,8 +2049,8 @@ Franck.VMD
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
-                <step type="int">-25</step>
-                <min type="int">25</min>
+                <step type="int">-30</step>
+                <min type="int">1</min>
                 <max type="int">361</max>
                 <wrap type="bool">true</wrap>
             </binding>
