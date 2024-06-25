@@ -125,7 +125,7 @@ Franck.VMD
         <object-name>BLimit.knob</object-name>
         <object-name>BLimit.knob.001</object-name>
         <property>instrumentation/afds/inputs/bank-limit-switch</property>
-        <factor>-30.0</factor>
+        <factor>-180.0</factor>
         <axis>
         <x1-m>-1.71406</x1-m>
         <y1-m>-0.06282</y1-m>
@@ -1890,12 +1890,31 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <condition>
+                    <and>
                     <property>systems/electrical/outputs/avionics</property>
+                        <not>
+                            <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                        </not>
+                    </and>
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
                 <step type="int">1</step>
                 <min type="int">1</min>
+                <max type="int">361</max>
+                <wrap type="bool">true</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/heading-bug-deg</property>
+                <step type="int">25</step>
+                <min type="int">25</min>
                 <max type="int">361</max>
                 <wrap type="bool">true</wrap>
             </binding>
@@ -1915,7 +1934,12 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <condition>
+                    <and>
                     <property>systems/electrical/outputs/avionics</property>
+                        <not>
+                            <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                        </not>
+                    </and>
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
@@ -1925,12 +1949,26 @@ Franck.VMD
                 <wrap type="bool">true</wrap>
             </binding>
             <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/heading-bug-deg</property>
+                <step type="int">-25</step>
+                <min type="int">25</min>
+                <max type="int">361</max>
+                <wrap type="bool">true</wrap>
+            </binding>
+            <binding>
                 <command>nasal</command>
                 <script>controls.click(5);</script>
             </binding>
         </action>
     </animation>
-
+    
     <animation>
         <type>pick</type>
         <object-name>HDG.inc</object-name>
@@ -1942,7 +1980,12 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <condition>
+                    <and>
                     <property>systems/electrical/outputs/avionics</property>
+                        <not>
+                            <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                        </not>
+                    </and>
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
@@ -1952,6 +1995,20 @@ Franck.VMD
                 <wrap type="bool">true</wrap>
             </binding>
             <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/heading-bug-deg</property>
+                <step type="int">25</step>
+                <min type="int">25</min>
+                <max type="int">361</max>
+                <wrap type="bool">true</wrap>
+            </binding>
+            <binding>
                 <command>nasal</command>
                 <script>controls.click(5);</script>
             </binding>
@@ -1969,12 +2026,31 @@ Franck.VMD
             <repeatable>true</repeatable>
             <binding>
                 <condition>
+                    <and>
                     <property>systems/electrical/outputs/avionics</property>
+                        <not>
+                            <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                        </not>
+                    </and>
                 </condition>
                 <command>property-adjust</command>
                 <property>autopilot/settings/heading-bug-deg</property>
                 <step type="int">-1</step>
                 <min type="int">1</min>
+                <max type="int">361</max>
+                <wrap type="bool">true</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>autopilot/settings/heading-bug-deg</property>
+                <step type="int">-25</step>
+                <min type="int">25</min>
                 <max type="int">361</max>
                 <wrap type="bool">true</wrap>
             </binding>
@@ -1987,68 +2063,15 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
-        <object-name>Bank.inc</object-name>
-        <object-name>Bank.dec</object-name>
+        <object-name>BLimit.knob</object-name>
+        <object-name>BLimit.knob.001</object-name>
         <action>
             <button>0</button>
-            <repeatable>true</repeatable>
-            <binding>
-                <condition>
-                    <property>systems/electrical/outputs/avionics</property>
-                </condition>
-                <command>property-adjust</command>
-                <property>instrumentation/afds/inputs/bank-limit-switch</property>
-                <step>1</step>
-                <min>0</min>
-                <max>5</max>
-                <wrap>false</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(2);</script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>Bank.inc</object-name>
-        <object-name>Bank.dec</object-name>
-        <action>
-            <button>1</button>
-            <repeatable>true</repeatable>
-            <binding>
-                <condition>
-                    <property>systems/electrical/outputs/avionics</property>
-                </condition>
-                <command>property-adjust</command>
-                <property>instrumentation/afds/inputs/bank-limit-switch</property>
-                <step>-1</step>
-                <min>0</min>
-                <max>5</max>
-                <wrap>false</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(2);</script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>Bank.inc</object-name>
-        <object-name>Bank.dec</object-name>
-        <action>
-            <button>4</button> <!--  scroll down -->
             <repeatable>false</repeatable>
             <binding>
-                <command>property-adjust</command>
+                <command>property-assign</command>
                 <property>instrumentation/afds/inputs/bank-limit-switch</property>
-                <step>-1</step>
-                <min>0</min>
-                <max>5</max>
-                <wrap>false</wrap>
+                <value>1</value>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -2059,18 +2082,53 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
-        <object-name>Bank.inc</object-name>
-        <object-name>Bank.dec</object-name>
+        <object-name>BLimit.knob</object-name>
+        <object-name>BLimit.knob.001</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                <value>0</value>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(2);</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>BLimit.knob</object-name>
+        <object-name>BLimit.knob.001</object-name>
         <action>
             <button>3</button> <!--  scroll up -->
             <repeatable>false</repeatable>
             <binding>
-                <command>property-adjust</command>
+                <command>property-assign</command>
                 <property>instrumentation/afds/inputs/bank-limit-switch</property>
-                <step>1</step>
-                <min>0</min>
-                <max>5</max>
-                <wrap>false</wrap>
+                <value>1</value>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>controls.click(2);</script>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>BLimit.knob</object-name>
+        <object-name>BLimit.knob.001</object-name>
+        <action>
+            <button>4</button> <!--  scroll down -->
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/afds/inputs/bank-limit-switch</property>
+                <value>0</value>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -2081,8 +2139,6 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
-        <object-name>ALTmode.auto</object-name>
-        <object-name>ALTmode.1000</object-name>
         <object-name>ALTmode.knob</object-name>
         <action>
             <button>0</button>
@@ -2101,8 +2157,6 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
-        <object-name>ALTmode.1000</object-name>
-        <object-name>ALTmode.auto</object-name>
         <object-name>ALTmode.knob</object-name>
         <action>
             <button>1</button>
@@ -2121,8 +2175,6 @@ Franck.VMD
 
     <animation>
         <type>pick</type>
-        <object-name>ALTmode.auto</object-name>
-        <object-name>ALTmode.1000</object-name>
         <object-name>ALTmode.knob</object-name>
         <action>
             <button>3</button> <!--  scroll up -->
@@ -2138,10 +2190,9 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
     <animation>
         <type>pick</type>
-        <object-name>ALTmode.auto</object-name>
-        <object-name>ALTmode.1000</object-name>
         <object-name>ALTmode.knob</object-name>
         <action>
             <button>4</button> <!--  scroll down -->
@@ -2356,6 +2407,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
     <animation>
         <type>pick</type>
         <object-name>DSP.eng</object-name>
@@ -2368,6 +2420,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
     <animation>
         <type>pick</type>
         <object-name>DSP.fuel</object-name>
@@ -2380,6 +2433,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
     <animation>
         <type>pick</type>
         <object-name>DSP.fctl</object-name>
@@ -2392,6 +2446,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
     <animation>
         <type>pick</type>
         <object-name>DSP.cam</object-name>
@@ -2404,6 +2459,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
     <animation>
         <type>pick</type>
         <object-name>DSP.door</object-name>
@@ -2416,6 +2472,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
    <animation>
         <type>pick</type>
         <object-name>DSP.elec</object-name>
@@ -2428,6 +2485,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
    <animation>
         <type>pick</type>
         <object-name>DSP.gear</object-name>
@@ -2440,6 +2498,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
    <animation>
         <type>pick</type>
         <object-name>DSP.hyd</object-name>
@@ -2452,6 +2511,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
    <animation>
         <type>pick</type>
         <object-name>DSP.air</object-name>
@@ -2464,6 +2524,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
    <animation>
         <type>pick</type>
         <object-name>DSP.stat</object-name>
@@ -2476,6 +2537,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
    <animation>
         <type>pick</type>
         <object-name>DSP.nav</object-name>
@@ -2488,6 +2550,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
    <animation>
         <type>pick</type>
         <object-name>DSP.comm</object-name>
@@ -2500,6 +2563,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
    <animation>
         <type>pick</type>
         <object-name>DSP.chkl</object-name>
@@ -2512,6 +2576,7 @@ Franck.VMD
             </binding>
         </action>
     </animation>
+    
     <animation>
         <type>pick</type>
         <object-name>AP.btn.001</object-name>
@@ -2584,9 +2649,9 @@ Franck.VMD
         <object-name>BLimit.knob</object-name>
         <condition>
                 <greater-than>
-                <property>systems/electrical/CPT-FLT-INST</property>
+			<property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
@@ -2638,9 +2703,9 @@ Franck.VMD
         <object-name>ALTmode.knob.001</object-name>
         <condition>
 		<greater-than>
-                <property>systems/electrical/CPT-FLT-INST</property>
+			<property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+		</greater-than>
         </condition>
         <emission>
             <red>1.0</red>
