@@ -255,7 +255,8 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>FD_toggle</object-name>
-        <property>instrumentation/afds/inputs/FD</property>
+                <property>instrumentation/afds/inputs/FD</property>
+                <property>/autopilot/route-manager/active</property>
         <factor>-30.0</factor>
         <center>
             <x-m>-1.71218</x-m>
@@ -267,6 +268,31 @@ Franck.VMD
             <y>1</y>
             <z>0</z>
         </axis>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>FD-on</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/afds/inputs/FD</property>
+            </binding>
+            <binding>
+                <command>property-toggle</command>
+                <property>/autopilot/route-manager/active</property>
+                <value>0</value>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    controls.click(1);
+                    b777.afds.input(3,2);
+                </script>
+            </binding>
+        </action>
     </animation>
 
     <animation>
@@ -1151,26 +1177,6 @@ Franck.VMD
             <binding>
                 <command>property-toggle</command>
                 <property>instrumentation/afds/inputs/AP</property>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>FD-on</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-toggle</command>
-                <property>instrumentation/afds/inputs/FD</property>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                    controls.click(1);
-                    b777.afds.input(3,2);
-                </script>
             </binding>
         </action>
     </animation>
