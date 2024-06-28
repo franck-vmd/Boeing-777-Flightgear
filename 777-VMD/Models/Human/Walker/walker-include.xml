@@ -265,10 +265,10 @@
 		</key-triggers>
 	</walker>
 
-		<view n="201">
+		<view n="138">
 			<name>Walk View</name>
 			<type>lookfrom</type>
-			<enabled type="bool">false</enabled>
+			<enabled type="bool">true</enabled>
 			<config>
 				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
 				<eye-alt-ft-path>sim/walker/altitude-ft</eye-alt-ft-path>
@@ -286,10 +286,10 @@
 				</limits>
 			</config>
 		</view>
-		<view n="202">
+		<view n="139">
 			<name>Walker Orbit View</name>
 			<type>lookat</type>
-			<enabled type="bool">false</enabled>
+			<enabled type="bool">true</enabled>
 			<config>
 				<from-model type="bool">false</from-model>
 				<from-model-idx type="int">0</from-model-idx>
