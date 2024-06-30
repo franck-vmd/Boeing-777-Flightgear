@@ -1,7 +1,7 @@
 AC3Db
 MATERIAL "Material.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 32 trans 0.000
 OBJECT world
-name "Blender_exporter_v2.26__oxygen_mask_X9.ac"
+name "Blender_exporter_v2.26__oxygen_mask_X8.ac"
 kids 2
 OBJECT poly
 name "Oxy_mask_1"
