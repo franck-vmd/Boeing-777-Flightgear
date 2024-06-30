@@ -781,6 +781,17 @@ Franck.VMD
     
     <animation>
         <type>select</type>
+        <object-name>sortiewclumiere</object-name>
+        <condition>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
         <object-name>spot ext</object-name>
         <condition>
         <and>
