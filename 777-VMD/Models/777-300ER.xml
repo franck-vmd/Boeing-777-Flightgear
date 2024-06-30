@@ -712,7 +712,7 @@ Franck.VMD
     <name>Passenger Seating2</name>
     <path>Aircraft/777-VMD/Models/Seating/passenger_seating2.xml</path>
     <offsets>
-      <x-m>-5.35</x-m>
+      <x-m>-5.35223</x-m>
       <y-m>0</y-m>
       <z-m>0</z-m>
     </offsets>
@@ -721,6 +721,16 @@ Franck.VMD
   <model>
     <name>TV777</name>
     <path>Aircraft/777-VMD/Models/Seating/TV777-300.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Passenger Seating3</name>
+    <path>Aircraft/777-VMD/Models/Seating/siege strapontin 777-300.xml</path>
     <offsets>
       <x-m>0</x-m>
       <y-m>0</y-m>
@@ -9042,7 +9052,7 @@ Franck.VMD
 
 <model>
  <name>oxygenmasks</name>
- <path>Aircraft/777-VMD/Models/Ground/Services/Oxygen_masks/oxygen_mask.xml</path>
+ <path>Aircraft/777-VMD/Models/Ground/Services/Oxygen_masks/oxygen_mask300.xml</path>
  <offsets>
   <x-m>0</x-m>
   <y-m>0</y-m>

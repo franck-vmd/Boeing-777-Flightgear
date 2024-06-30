@@ -66,7 +66,7 @@
 
   <model>
     <name>Engine Protection</name>
-    <path>Aircraft/777-VMD/Models/Ground/Services/EngineProtection300/EngineProtection.xml</path>
+    <path>Aircraft/777-VMD/Models/Ground/Services/EngineProtection300/EngineProtection300.xml</path>
     <condition>
       <equals>
         <property>controls/switches/protection</property>
@@ -107,15 +107,9 @@
 
   <model>
  <name>passagers</name>
- <path>Aircraft/777-VMD/Models/Ground/Services/passagers/passagers.xml</path>
+ <path>Aircraft/777-VMD/Models/Ground/Services/passagers300/passagers.xml</path>
  <condition>
-      <and>
         <property>controls/switches/passagers</property>
-        <less-than>
-          <property>velocities/airspeed-kt</property>
-          <value>400</value>
-        </less-than>
-      </and>
     </condition>
  <offsets>
   <x-m>0</x-m>

@@ -5,7 +5,7 @@
   <group>
     <layout>hbox</layout>
     <text>
-      <label>Ground Operations</label>
+      <label>Ground Operations X9</label>
     </text>
 		<button>
                         <pref-width>16</pref-width>

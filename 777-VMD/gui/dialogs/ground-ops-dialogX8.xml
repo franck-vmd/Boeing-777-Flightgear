@@ -5,7 +5,7 @@
   <group>
     <layout>hbox</layout>
     <text>
-      <label>Ground Operations</label>
+      <label>Ground Operations X8</label>
     </text>
 		<button>
                         <pref-width>16</pref-width>
@@ -67,7 +67,7 @@
 
    <checkbox>
       <halign>left</halign>
-      <label>Engine Protection X8</label>
+      <label>Engine Protection</label>
       <property>controls/switches/protection</property>
       <binding>
         <command>property-toggle</command>

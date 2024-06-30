@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>tv777.ac</path>
+  <path>tv777300.ac</path>
   
   <animation>
 		<type>material</type>
@@ -11,7 +11,7 @@
 
         <effect>
          <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
-                         <object-name>TV777</object-name>
+                         <object-name>TV777300</object-name>
                </effect>
 
   

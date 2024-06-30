@@ -258,7 +258,7 @@
              <binding>
                <command>nasal</command>
                  <script>
-                var mal = gui.Dialog.new("/sim/gui/dialogs/ground-ops-config/dialog", "Aircraft/777-VMD/gui/dialogs/ground-ops-dialog.xml");
+                var mal = gui.Dialog.new("/sim/gui/dialogs/ground-ops-config/dialog", "Aircraft/777-VMD/gui/dialogs/ground-ops-dialog300.xml");
                  mal.open();
                  </script>
              </binding>
