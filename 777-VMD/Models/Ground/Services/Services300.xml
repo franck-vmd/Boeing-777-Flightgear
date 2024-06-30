@@ -88,7 +88,7 @@
 
   <model>
  <name>flight_attendants</name>
- <path>Aircraft/777-VMD/Models/Ground/Services/Flight/flight_attendants_door5l.xml</path>
+ <path>Aircraft/777-VMD/Models/Ground/Services/Flight300/flight_attendants_300.xml</path>
  <condition>
       <and>
         <property>controls/switches/Flight</property>

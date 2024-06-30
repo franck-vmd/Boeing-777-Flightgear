@@ -8959,7 +8959,7 @@ Franck.VMD
  <name>flight_attendants_door2l</name>
  <path>Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door2l.xml</path>
  <offsets>
-  <x-m>-5.35</x-m>
+  <x-m>-5.38</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
@@ -8979,7 +8979,7 @@ Franck.VMD
  <name>flight_attendants_door3l</name>
  <path>Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door3l.xml</path>
  <offsets>
-  <x-m>4.95</x-m>
+  <x-m>-9.33</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
@@ -8999,8 +8999,8 @@ Franck.VMD
  <name>flight_attendants_door4l</name>
  <path>Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door4l.xml</path>
  <offsets>
-  <x-m>4.95</x-m>
-  <y-m>0</y-m>
+  <x-m>-7.86</x-m>
+  <y-m>-0.73</y-m>
   <z-m>0</z-m>
  </offsets>
 </model>
@@ -9019,7 +9019,7 @@ Franck.VMD
  <name>flight_attendants_door5l</name>
  <path>Aircraft/777-VMD/Models/Personel/Flight_attendants/flight_attendants_door5l.xml</path>
  <offsets>
-  <x-m>0</x-m>
+  <x-m>-0.96</x-m>
   <y-m>0</y-m>
   <z-m>0</z-m>
  </offsets>
