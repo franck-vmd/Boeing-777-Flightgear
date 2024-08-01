@@ -33,10 +33,10 @@ AUTOPUSH
 
 
 <PropertyList>
-  <path>Aircraft/777/Models/Autopush/Pushback/Goldhofert.ac</path>
+  <path>Aircraft/777-VMD/Models/Autopush/Pushback/Goldhofert.ac</path>
 
   <model>
-    <path>Aircraft/777/Models/Autopush/Pushback/Goldhofert-warning-light.xml</path>
+    <path>Aircraft/777-VMD/Models/Autopush/Pushback/Goldhofert-warning-light.xml</path>
     <offsets>
       <x-m>-5.40633</x-m>
       <y-m>0.262391</y-m>
@@ -46,7 +46,7 @@ AUTOPUSH
   </model>
 
   <model>
-    <path>Aircraft/777/Models/Autopush/Pushback/Goldhofert-warning-light.xml</path>
+    <path>Aircraft/777-VMD/Models/Autopush/Pushback/Goldhofert-warning-light.xml</path>
     <offsets>
       <x-m>-4.28093</x-m>
       <y-m>0.262391</y-m>
