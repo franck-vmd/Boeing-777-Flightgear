@@ -7811,8 +7811,6 @@ Franck.VMD
     <max>5</max>
     </animation>
     
-    
-
       <animation>
         <type>select</type>
         <object-name>mur.001</object-name>

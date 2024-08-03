@@ -561,6 +561,8 @@ Franck.VMD
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
         <object-name>greenflash</object-name>
         <object-name>Strobe01</object-name>
         <object-name>Strobe02</object-name>
@@ -5952,10 +5954,6 @@ Franck.VMD
 		  <condition>
 		    <or>
 					<and>
-			<greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
 				   <property>controls/wipers/degrees</property>
 					 	<greater-than>
 					 		<property>controls/wipers/degrees</property>
@@ -7182,6 +7180,8 @@ Franck.VMD
         <type>select</type>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
         <object-name>greenflash</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
@@ -7331,8 +7331,48 @@ Franck.VMD
     </animation>
 
     <animation>
+        <type>translate</type>
+        <object-name>whiteflash1</object-name>
+        <offset-m>34.65</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>16.8026</x2-m>
+        <y2-m>30.266</y2-m>
+        <z2-m>1.52646</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>whiteflash2</object-name>
+        <offset-m>34.65</offset-m>
+    <axis>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>16.8026</x2-m>
+        <y2-m>-30.266</y2-m>
+        <z2-m>1.52646</z2-m>
+    </axis>
+    <axis>
+	<x>0</x>
+	<y>1</y>
+	<z>0</z>
+	</axis>
+    </animation>
+
+    <animation>
         <type>billboard</type>
         <object-name>whiteflash</object-name>
+        <object-name>whiteflash1</object-name>
+        <object-name>whiteflash2</object-name>
     </animation>
 
     <animation>
