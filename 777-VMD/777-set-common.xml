@@ -1146,6 +1146,11 @@ Service Ceiling: 43,100ft
             <autopilot>
                 <path>Systems/777-sound.xml</path>
             </autopilot>
+            <wingflexer include="Systems/wingflexer-params.xml"/>
+            <autopilot>
+                <name>wing flexer property rule</name>
+                <path>Aircraft/Generic/wingflexer.xml</path>
+            </autopilot>
 
             <!--  slow running property-rules (running at frame rate) -->
             <property-rule n="100">
