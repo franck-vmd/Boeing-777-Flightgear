@@ -3,6 +3,7 @@
 
     <sim n="0">
         <author>Franck VMD</author>
+        <minimum-fg-version>2020.3.13</minimum-fg-version>
         <status>production</status>
         <rating>
             <FDM type="int">5</FDM>
@@ -39,7 +40,7 @@
             </preview>          
         </previews>
         
-        <aircraft-version>2024-01-15</aircraft-version>
+        <aircraft-version>2024-08-01</aircraft-version>
         <flight-model>yasim</flight-model>
         <fuel-fraction userarchive="y" type="double">0.0</fuel-fraction>
         <model n="0">
