@@ -672,7 +672,6 @@ Franck.VMD
         <object-name>WingslumiereLb</object-name>
         <object-name>WingslumiereLc</object-name>
         <object-name>WingslumiereLd</object-name>
-        <object-name>WingslumiereLe</object-name>
         <object-name>WingslumiereLf</object-name>
         <object-name>WingslumiereLg</object-name>
         <object-name>WingslumiereLh</object-name>
@@ -680,7 +679,6 @@ Franck.VMD
         <object-name>WingslumiereRb</object-name>
         <object-name>WingslumiereRc</object-name>
         <object-name>WingslumiereRd</object-name>
-        <object-name>WingslumiereRe</object-name>
         <object-name>WingslumiereRf</object-name>
         <object-name>WingslumiereRg</object-name>
         <object-name>WingslumiereRh</object-name>
@@ -916,7 +914,6 @@ Franck.VMD
             <object-name>WingslumiereRb</object-name>
             <object-name>WingslumiereRc</object-name>
             <object-name>WingslumiereRd</object-name>
-            <object-name>WingslumiereRe</object-name>
             <object-name>WingslumiereRf</object-name>
             <object-name>WingslumiereRg</object-name>
             <object-name>WingslumiereRh</object-name>
@@ -983,7 +980,6 @@ Franck.VMD
             <object-name>WingslumiereLb</object-name>
             <object-name>WingslumiereLc</object-name>
             <object-name>WingslumiereLd</object-name>
-            <object-name>WingslumiereLe</object-name>
             <object-name>WingslumiereLf</object-name>
             <object-name>WingslumiereLg</object-name>
             <object-name>WingslumiereLh</object-name>
@@ -1044,7 +1040,6 @@ Franck.VMD
             <object-name>WingslumiereRb</object-name>
             <object-name>WingslumiereRc</object-name>
             <object-name>WingslumiereRd</object-name>
-            <object-name>WingslumiereRe</object-name>
             <object-name>WingslumiereRf</object-name>
             <object-name>WingslumiereRg</object-name>
             <object-name>WingslumiereRh</object-name>
@@ -1104,7 +1099,6 @@ Franck.VMD
             <object-name>WingslumiereLb</object-name>
             <object-name>WingslumiereLc</object-name>
             <object-name>WingslumiereLd</object-name>
-            <object-name>WingslumiereLe</object-name>
             <object-name>WingslumiereLf</object-name>
             <object-name>WingslumiereLg</object-name>
             <object-name>WingslumiereLh</object-name>
@@ -1158,7 +1152,6 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>WingslumiereRc</object-name>
             <object-name>WingslumiereRd</object-name>
-            <object-name>WingslumiereRe</object-name>
             <object-name>WingslumiereRf</object-name>
             <object-name>WingslumiereRg</object-name>
             <object-name>WingslumiereRh</object-name>
@@ -1211,7 +1204,6 @@ Franck.VMD
             <object-name>whiteflash2</object-name>
             <object-name>WingslumiereLc</object-name>
             <object-name>WingslumiereLd</object-name>
-            <object-name>WingslumiereLe</object-name>
             <object-name>WingslumiereLf</object-name>
             <object-name>WingslumiereLg</object-name>
             <object-name>WingslumiereLh</object-name>
@@ -1258,7 +1250,6 @@ Franck.VMD
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
             <object-name>WingslumiereRd</object-name>
-            <object-name>WingslumiereRe</object-name>
             <object-name>WingslumiereRf</object-name>
             <object-name>WingslumiereRg</object-name>
             <object-name>WingslumiereRh</object-name>
@@ -1304,7 +1295,6 @@ Franck.VMD
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
             <object-name>WingslumiereLd</object-name>
-            <object-name>WingslumiereLe</object-name>
             <object-name>WingslumiereLf</object-name>
             <object-name>WingslumiereLg</object-name>
             <object-name>WingslumiereLh</object-name>
@@ -1344,7 +1334,6 @@ Franck.VMD
             <object-name>greenflash</object-name>
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
-            <object-name>WingslumiereRe</object-name>
             <object-name>WingslumiereRf</object-name>
             <object-name>WingslumiereRg</object-name>
             <object-name>WingslumiereRh</object-name>
@@ -1383,7 +1372,6 @@ Franck.VMD
             <object-name>redflash</object-name>
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
-            <object-name>WingslumiereLe</object-name>
             <object-name>WingslumiereLf</object-name>
             <object-name>WingslumiereLg</object-name>
             <object-name>WingslumiereLh</object-name>
@@ -8008,6 +7996,22 @@ Franck.VMD
         <object-name>Lslatf</object-name>
         <object-name>Lslatg</object-name>
         <object-name>Lslath</object-name>
+        <object-name>Wingslumierel</object-name>
+        <object-name>Wingslumierela</object-name>
+        <object-name>Wingslumierelb</object-name>
+        <object-name>Wingslumierelc</object-name>
+        <object-name>Wingslumiereld</object-name>
+        <object-name>Wingslumierele</object-name>
+        <object-name>Wingslumierelf</object-name>
+        <object-name>Wingslumierelg</object-name>
+        <object-name>Wingslumiered</object-name>
+        <object-name>Wingslumiereda</object-name>
+        <object-name>Wingslumieredb</object-name>
+        <object-name>Wingslumieredc</object-name>
+        <object-name>Wingslumieredd</object-name>
+        <object-name>Wingslumierede</object-name>
+        <object-name>Wingslumieredf</object-name>
+        <object-name>Wingslumieredg</object-name>
         <property>surface-positions/slats</property>
         <factor>0.4</factor>
         <axis>
@@ -8072,39 +8076,26 @@ Franck.VMD
         <object-name>Wingslumierede</object-name>
         <object-name>Wingslumieredf</object-name>
         <object-name>Wingslumieredg</object-name>
+        <object-name>WingslumiereLa</object-name>
+        <object-name>WingslumiereLb</object-name>
+        <object-name>WingslumiereLc</object-name>
+        <object-name>WingslumiereLd</object-name>
+        <object-name>WingslumiereLf</object-name>
+        <object-name>WingslumiereLg</object-name>
+        <object-name>WingslumiereLh</object-name>
+        <object-name>WingslumiereRa</object-name>
+        <object-name>WingslumiereRb</object-name>
+        <object-name>WingslumiereRc</object-name>
+        <object-name>WingslumiereRd</object-name>
+        <object-name>WingslumiereRf</object-name>
+        <object-name>WingslumiereRg</object-name>
+        <object-name>WingslumiereRh</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/wing-lights</property>
                 <value>5</value>
             </greater-than>
         </condition>
-    </animation>
-    
-    <animation>
-        <type>translate</type>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
-        <property>surface-positions/slats</property>
-        <factor>0.4</factor>
-        <axis>
-            <x>-1.0</x>
-            <y>0</y>
-            <z>-0.50</z>
-        </axis>
     </animation>
 
     <animation>
