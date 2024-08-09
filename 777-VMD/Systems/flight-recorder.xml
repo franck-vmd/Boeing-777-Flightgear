@@ -212,6 +212,21 @@
             </signal>
             <signal>
                 <type>float</type>
+                <property>/sim/systems/wingflexer/</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/z-m</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
                 <property>fcs/stabilizer/final-deg</property>
             </signal>
             <signal>

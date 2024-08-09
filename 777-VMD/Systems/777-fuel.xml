@@ -12,5 +12,21 @@
         </input>
         <output>sim/fuel-fraction</output>
     </filter>
+    
+    <filter>
+        <name>Wingflexer z-force calculation</name>
+        <type>gain</type>
+        <update-interval-secs type="double">0.05</update-interval-secs>
+        <gain>1.0</gain>
+        <input>
+            <expression>
+                <product>
+                    <property>fdm/yasim/forces/f-z-lift</property>
+                    <value>-0.224809</value><!-- invert and convert from Newton to LBF -->
+                </product>
+            </expression>
+        </input>
+        <output>fdm/yasim/forces/f-z-lift-lbf</output>
+    </filter>
 
 </PropertyList>

@@ -925,7 +925,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>3.66202</x-m>
@@ -933,7 +933,7 @@ Franck.VMD
                 <z-m>-0.990819</z-m>
             </center>
             <axis>
-                <x>-1</x>
+                <x>1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -991,7 +991,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>3.66202</x-m>
@@ -999,7 +999,7 @@ Franck.VMD
                 <z-m>-0.990819</z-m>
             </center>
             <axis>
-                <x>1</x>
+                <x>-1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1050,7 +1050,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>4.82896</x-m>
@@ -1058,7 +1058,7 @@ Franck.VMD
                 <z-m>-0.507376</z-m>
             </center>
             <axis>
-                <x>-1</x>
+                <x>1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1109,7 +1109,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>4.82896</x-m>
@@ -1117,7 +1117,7 @@ Franck.VMD
                 <z-m>-0.507376</z-m>
             </center>
             <axis>
-                <x>1</x>
+                <x>-1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1161,7 +1161,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>5.84616</x-m>
@@ -1169,7 +1169,7 @@ Franck.VMD
                 <z-m>-0.231671</z-m>
             </center>
             <axis>
-                <x>-1</x>
+                <x>1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1213,7 +1213,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>5.84616</x-m>
@@ -1221,7 +1221,7 @@ Franck.VMD
                 <z-m>-0.231671</z-m>
             </center>
             <axis>
-                <x>1</x>
+                <x>-1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1258,7 +1258,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>7.82897</x-m>
@@ -1266,7 +1266,7 @@ Franck.VMD
                 <z-m>0.131513</z-m>
             </center>
             <axis>
-                <x>-1</x>
+                <x>1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1303,7 +1303,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>7.82897</x-m>
@@ -1311,7 +1311,7 @@ Franck.VMD
                 <z-m>0.131513</z-m>
             </center>
             <axis>
-                <x>1</x>
+                <x>-1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1341,7 +1341,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>10.6909</x-m>
@@ -1349,7 +1349,7 @@ Franck.VMD
                 <z-m>0.565903</z-m>
             </center>
             <axis>
-                <x>-1</x>
+                <x>1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1379,7 +1379,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>10.6909</x-m>
@@ -1387,7 +1387,7 @@ Franck.VMD
                 <z-m>0.565903</z-m>
             </center>
             <axis>
-                <x>1</x>
+                <x>-1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1413,7 +1413,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>12.2709</x-m>
@@ -1421,7 +1421,7 @@ Franck.VMD
                 <z-m>0.876948</z-m>
             </center>
             <axis>
-                <x>-1</x>
+                <x>1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1447,7 +1447,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>12.2709</x-m>
@@ -1455,7 +1455,7 @@ Franck.VMD
                 <z-m>0.876948</z-m>
             </center>
             <axis>
-                <x>1</x>
+                <x>-1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1476,7 +1476,7 @@ Franck.VMD
             <object-name>WingslumiereRh</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>14.028</x-m>
@@ -1484,7 +1484,7 @@ Franck.VMD
                 <z-m>1.22285</z-m>
             </center>
             <axis>
-                <x>-1</x>
+                <x>1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1505,7 +1505,7 @@ Franck.VMD
             <object-name>WingslumiereLh</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>14.028</x-m>
@@ -1513,7 +1513,7 @@ Franck.VMD
                 <z-m>1.22285</z-m>
             </center>
             <axis>
-                <x>1</x>
+                <x>-1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1529,7 +1529,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>WingslumiereRh</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>16.0345</x-m>
@@ -1537,7 +1537,7 @@ Franck.VMD
                 <z-m>1.57149</z-m>
             </center>
             <axis>
-                <x>-1</x>
+                <x>1</x>
                 <y>0</y>
                 <z>0</z>
             </axis>
@@ -1553,7 +1553,7 @@ Franck.VMD
             <object-name>whiteflash2</object-name>
             <object-name>WingslumiereLh</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>10</factor>
+            <factor>3</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>16.0345</x-m>
@@ -1561,8 +1561,8 @@ Franck.VMD
                 <z-m>1.57149</z-m>
             </center>
             <axis>
-                <x>1</x>
-                <y>0</y>
+                <x>-1</x>
+                <y>-0</y>
                 <z>0</z>
             </axis>
         </animation>
