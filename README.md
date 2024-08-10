@@ -10,7 +10,7 @@ Non Rembrandt
 
 No Rembrandt
 
-Wing flex (777-200LR)
+Wing flex (777-200LR , 777-200F ,(777-200KFC -?) )
 
 ![Image](https://i.ibb.co/jvPtL2F/fuel.jpg)
 

@@ -176,11 +176,31 @@ Franck.VMD
     <animation>
         <type>material</type>
         <object-name>Wings</object-name>
+        <object-name>Wingsal</object-name>
+        <object-name>Wingsbl</object-name>
+        <object-name>Wingscl</object-name>
+        <object-name>Wingsdl</object-name>
+        <object-name>Wingsel</object-name>
+        <object-name>Wingsfl</object-name>
+        <object-name>Wingsgl</object-name>
+        <object-name>Wingshl</object-name>
+        <object-name>Wingsar</object-name>
+        <object-name>Wingsbr</object-name>
+        <object-name>Wingscr</object-name>
+        <object-name>Wingsdr</object-name>
+        <object-name>Wingser</object-name>
+        <object-name>Wingsfr</object-name>
+        <object-name>Wingsgr</object-name>
+        <object-name>Wingshr</object-name>
         <object-name>Wings.001</object-name>
         <object-name>Wings.002</object-name>
         <object-name>hinge1</object-name>
         <object-name>Laileron</object-name>
+        <object-name>Lailerona</object-name>
+        <object-name>Laileronb</object-name>
         <object-name>Raileron</object-name>
+        <object-name>Railerona</object-name>
+        <object-name>Raileronb</object-name>
         <object-name>Rflap1</object-name>
         <object-name>Rflap2</object-name>
         <object-name>Rflap4</object-name>
@@ -192,10 +212,28 @@ Franck.VMD
         <object-name>Lflap5</object-name>
         <object-name>Lflap6</object-name>
         <object-name>Lslat</object-name>
+        <object-name>Lslata</object-name>
+        <object-name>Lslatb</object-name>
+        <object-name>Lslatc</object-name>
+        <object-name>Lslatd</object-name>
+        <object-name>Lslate</object-name>
+        <object-name>Lslatf</object-name>
+        <object-name>Lslatg</object-name>
+        <object-name>Lslath</object-name>
         <object-name>Rslat</object-name>
+        <object-name>Rslata</object-name>
+        <object-name>Rslatb</object-name>
+        <object-name>Rslatc</object-name>
+        <object-name>Rslatd</object-name>
+        <object-name>Rslate</object-name>
+        <object-name>Rslatf</object-name>
+        <object-name>Rslatg</object-name>
+        <object-name>Rslath</object-name>
         <object-name>Lbrake</object-name>
+        <object-name>Lbrakea</object-name>
         <object-name>Lbrake1</object-name>
         <object-name>Rbrake</object-name>
+        <object-name>Rbrakea</object-name>
         <object-name>Rbrake1</object-name>
         <object-name>Rflaperon</object-name>
         <object-name>Lflaperon</object-name>
@@ -205,6 +243,8 @@ Franck.VMD
         <object-name>Rwing.geardoor</object-name>
         <object-name>Lgear1</object-name>
         <object-name>Rgear1</object-name>
+        <object-name>Rnavlights</object-name>
+        <object-name>Lnavlights</object-name>
         <property-base>sim/model/fuselage4</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-KC/AFR6KC.png</texture>
@@ -413,38 +453,6 @@ Franck.VMD
         <object-name>Reversers2.001</object-name>
         <object-name>Reversers3.001</object-name>
         <object-name>Reversers4.001</object-name>
-        <object-name>cage1</object-name>
-        <object-name>cage2</object-name>
-        <object-name>cage3</object-name>
-        <object-name>cage4</object-name>
-        <object-name>clapetDD1</object-name>
-        <object-name>clapetDD2</object-name>
-        <object-name>clapetDD3</object-name>
-        <object-name>clapetDD4</object-name>
-        <object-name>clapetDD5</object-name>
-        <object-name>clapetDD6</object-name>
-        <object-name>clapetDD7</object-name>
-        <object-name>clapetDG1</object-name>
-        <object-name>clapetDG2</object-name>
-        <object-name>clapetDG3</object-name>
-        <object-name>clapetDG4</object-name>
-        <object-name>clapetDG5</object-name>
-        <object-name>clapetDG6</object-name>
-        <object-name>clapetDG7</object-name>
-        <object-name>clapetGG1</object-name>
-        <object-name>clapetGG2</object-name>
-        <object-name>clapetGG3</object-name>
-        <object-name>clapetGG4</object-name>
-        <object-name>clapetGG5</object-name>
-        <object-name>clapetGG6</object-name>
-        <object-name>clapetGG7</object-name>
-        <object-name>clapetGD1</object-name>
-        <object-name>clapetGD2</object-name>
-        <object-name>clapetGD3</object-name>
-        <object-name>clapetGD4</object-name>
-        <object-name>clapetGD5</object-name>
-        <object-name>clapetGD6</object-name>
-        <object-name>clapetGD7</object-name>
         <object-name>moteur1</object-name>
         <object-name>moteur4</object-name>
         <object-name>FrtGear.lines</object-name>
@@ -457,15 +465,22 @@ Franck.VMD
         <object-name>LUdamper</object-name>
         <object-name>LUsupport</object-name>
         <object-name>Laileron</object-name>
+        <object-name>Lailerona</object-name>
+        <object-name>Laileronb</object-name>
         <object-name>Laxle</object-name>
         <object-name>Laxle.001</object-name>
         <object-name>Laxle.002</object-name>
         <object-name>Laxle.003</object-name>
         <object-name>Lbrake</object-name>
         <object-name>Lbrake1</object-name>
+        <object-name>Lbrake1a</object-name>
+        <object-name>Lbrake1b</object-name>
+        <object-name>Lbrakea</object-name>
         <object-name>Lflap1</object-name>
         <object-name>Lflap2</object-name>
         <object-name>Lflap4</object-name>
+        <object-name>Lflap4a</object-name>
+        <object-name>Lflap4b</object-name>
         <object-name>Lflap5</object-name>
         <object-name>Lflap6</object-name>
         <object-name>Lflaperon</object-name>
@@ -479,6 +494,14 @@ Franck.VMD
         <object-name>Llockbrace1.001</object-name>
         <object-name>Lramdoor</object-name>
         <object-name>Lslat</object-name>
+        <object-name>Lslata</object-name>
+        <object-name>Lslatb</object-name>
+        <object-name>Lslatc</object-name>
+        <object-name>Lslatd</object-name>
+        <object-name>Lslate</object-name>
+        <object-name>Lslatf</object-name>
+        <object-name>Lslatg</object-name>
+        <object-name>Lslath</object-name>
         <object-name>Lstrut</object-name>
         <object-name>Lwing.geardoor</object-name>
         <object-name>RBdamper</object-name>
@@ -489,15 +512,22 @@ Franck.VMD
         <object-name>RUdamper</object-name>
         <object-name>RUsupport</object-name>
         <object-name>Raileron</object-name>
+        <object-name>Railerona</object-name>
+        <object-name>Raileronb</object-name>
         <object-name>Raxle</object-name>
         <object-name>Raxle.001</object-name>
         <object-name>Raxle.002</object-name>
         <object-name>Raxle.003</object-name>
         <object-name>Rbrake</object-name>
+        <object-name>Rbrakea</object-name>
         <object-name>Rbrake1</object-name>
+        <object-name>Rbrake1a</object-name>
+        <object-name>Rbrake1b</object-name>
         <object-name>Rflap1</object-name>
         <object-name>Rflap2</object-name>
         <object-name>Rflap4</object-name>
+        <object-name>Rflap4a</object-name>
+        <object-name>Rflap4b</object-name>
         <object-name>Rflap5</object-name>
         <object-name>Rflap6</object-name>
         <object-name>Rflaperon</object-name>
@@ -511,23 +541,47 @@ Franck.VMD
         <object-name>Rlockbrace1.001</object-name>
         <object-name>Rramdoor</object-name>
         <object-name>Rslat</object-name>
+        <object-name>Rslata</object-name>
+        <object-name>Rslatb</object-name>
+        <object-name>Rslatc</object-name>
+        <object-name>Rslatd</object-name>
+        <object-name>Rslate</object-name>
+        <object-name>Rslatf</object-name>
+        <object-name>Rslatg</object-name>
+        <object-name>Rslath</object-name>
         <object-name>Rstrut</object-name>
         <object-name>Rwing.geardoor</object-name>
         <object-name>wiper.l</object-name>
         <object-name>wiper.r</object-name>
         <object-name>Wheelwell</object-name>
         <object-name>Wings</object-name>
+        <object-name>Wingsal</object-name>
+        <object-name>Wingsbl</object-name>
+        <object-name>Wingscl</object-name>
+        <object-name>Wingsdl</object-name>
+        <object-name>Wingsel</object-name>
+        <object-name>Wingsfl</object-name>
+        <object-name>Wingsgl</object-name>
+        <object-name>Wingshl</object-name>
+        <object-name>Wingsar</object-name>
+        <object-name>Wingsbr</object-name>
+        <object-name>Wingscr</object-name>
+        <object-name>Wingsdr</object-name>
+        <object-name>Wingser</object-name>
+        <object-name>Wingsfr</object-name>
+        <object-name>Wingsgr</object-name>
+        <object-name>Wingshr</object-name>
         <object-name>Wings.002</object-name>
         <object-name>Wings.001</object-name>
         <object-name>hinge1</object-name>
         <object-name>LFdoor</object-name>
         <object-name>LFdoor.002</object-name>
         <object-name>LRdoor</object-name>
-        <object-name>Lmain.geardoor.001</object-name>
+        <object-name>Lmain.geardoor</object-name>
         <object-name>RFdoor</object-name>
         <object-name>RFdoor.002</object-name>
         <object-name>RRdoor</object-name>
-        <object-name>Rmain.geardoor.001</object-name>
+        <object-name>Rmain.geardoor</object-name>
         <object-name>taxiL-on.002</object-name>
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
@@ -591,9 +645,11 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <object-name>Beacon02</object-name>
         <object-name>LHLND.flare</object-name>
+        <object-name>LHLND.flare2</object-name>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
         <object-name>RHLND.flare</object-name>
+        <object-name>RHLND.flare2</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <object-name>rlight</object-name>
@@ -602,10 +658,39 @@ Franck.VMD
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>Wingslumiere</object-name>
+        <object-name>WingslumiereLa</object-name>
+        <object-name>WingslumiereLb</object-name>
+        <object-name>WingslumiereLc</object-name>
+        <object-name>WingslumiereLd</object-name>
+        <object-name>WingslumiereLe</object-name>
+        <object-name>WingslumiereLf</object-name>
+        <object-name>WingslumiereLg</object-name>
+        <object-name>WingslumiereRa</object-name>
+        <object-name>WingslumiereRb</object-name>
+        <object-name>WingslumiereRc</object-name>
+        <object-name>WingslumiereRd</object-name>
+        <object-name>WingslumiereRe</object-name>
+        <object-name>WingslumiereRf</object-name>
+        <object-name>WingslumiereRg</object-name>
         <object-name>Wingslumierel</object-name>
+        <object-name>Wingslumierela</object-name>
+        <object-name>Wingslumierelb</object-name>
+        <object-name>Wingslumierelc</object-name>
+        <object-name>Wingslumiereld</object-name>
+        <object-name>Wingslumierele</object-name>
+        <object-name>Wingslumierelf</object-name>
+        <object-name>Wingslumierelg</object-name>
         <object-name>Wingslumiered</object-name>
+        <object-name>Wingslumiereda</object-name>
+        <object-name>Wingslumieredb</object-name>
+        <object-name>Wingslumieredc</object-name>
+        <object-name>Wingslumieredd</object-name>
+        <object-name>Wingslumierede</object-name>
+        <object-name>Wingslumieredf</object-name>
+        <object-name>Wingslumieredg</object-name>
         <object-name>Run.spotR</object-name>
         <object-name>Run.spotL</object-name>
+        <object-name>sortiewclumiere</object-name>
         <object-name>LHLND.spot</object-name>
         <object-name>RHLND.spot</object-name>
         <object-name>CTRLND.spot</object-name>
@@ -762,6 +847,934 @@ Franck.VMD
             <heading-deg>180.0</heading-deg>
         </offsets>
     </model>
+    
+        <!--WingFlex-->
+    
+    <animation>
+            <type>rotate</type>
+            <object-name>Raileron</object-name>
+            <object-name>Railerona</object-name>
+            <object-name>Raileronb</object-name>
+            <object-name>Rbrake1</object-name>
+            <object-name>Rbrake1a</object-name>
+            <object-name>Rbrake1b</object-name>
+            <object-name>Rbrakea</object-name>
+            <object-name>Rflap4</object-name>
+            <object-name>Rflap4a</object-name>
+            <object-name>Rflap4b</object-name>
+            <object-name>Rflap5</object-name>
+            <object-name>Rflap6</object-name>
+            <object-name>Rflaperon</object-name>
+            <object-name>Rnavlights</object-name>
+            <object-name>Rslata</object-name>
+            <object-name>Rslatb</object-name>
+            <object-name>Rslatc</object-name>
+            <object-name>Rslatd</object-name>
+            <object-name>Rslate</object-name>
+            <object-name>Rslatf</object-name>
+            <object-name>Rslatg</object-name>
+            <object-name>Rslath</object-name>
+            <object-name>Strobe01</object-name>
+            <object-name>Wings.002</object-name>
+            <object-name>Wingsar</object-name>
+            <object-name>Wingsbr</object-name>
+            <object-name>Wingscr</object-name>
+            <object-name>Wingsdr</object-name>
+            <object-name>Wingser</object-name>
+            <object-name>Wingsfr</object-name>
+            <object-name>Wingsgr</object-name>
+            <object-name>Wingshr</object-name>
+            <object-name>greenflash</object-name>
+            <object-name>greennav</object-name>
+            <object-name>whiteflash1</object-name>
+            <object-name>WingslumiereRa</object-name>
+            <object-name>WingslumiereRb</object-name>
+            <object-name>WingslumiereRc</object-name>
+            <object-name>WingslumiereRd</object-name>
+            <object-name>WingslumiereRe</object-name>
+            <object-name>WingslumiereRf</object-name>
+            <object-name>WingslumiereRg</object-name>
+            <object-name>Wingslumiereda</object-name>
+            <object-name>Wingslumieredb</object-name>
+            <object-name>Wingslumieredc</object-name>
+            <object-name>Wingslumieredd</object-name>
+            <object-name>Wingslumierede</object-name>
+            <object-name>Wingslumieredf</object-name>
+            <object-name>Wingslumieredg</object-name>
+            <object-name>droite.001</object-name>
+            <object-name>droite.002</object-name>
+            <object-name>droite.003</object-name>
+            <object-name>droite.004</object-name>
+            <object-name>droite.005</object-name>
+            <object-name>droite.006</object-name>
+            <object-name>droite.007</object-name>
+            <object-name>droite.008</object-name>
+            <object-name>droite.009</object-name>
+            <object-name>droite.010</object-name>
+            <object-name>droite.011</object-name>
+            <object-name>droite.012</object-name>
+            <object-name>droite.013</object-name>
+            <object-name>droite.014</object-name>
+            <object-name>droite.015</object-name>
+            <object-name>droite.016</object-name>
+            <object-name>droite.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>3.66202</x-m>
+                <y-m>7.8914</y-m>
+                <z-m>-0.990819</z-m>
+            </center>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+        <animation>
+            <type>rotate</type>
+            <object-name>Laileron</object-name>
+            <object-name>Lailerona</object-name>
+            <object-name>Laileronb</object-name>
+            <object-name>Lbrake1</object-name>
+            <object-name>Lbrake1a</object-name>
+            <object-name>Lbrake1b</object-name>
+            <object-name>Lbrakea</object-name>
+            <object-name>Lflap4</object-name>
+            <object-name>Lflap4a</object-name>
+            <object-name>Lflap4b</object-name>
+            <object-name>Lflap5</object-name>
+            <object-name>Lflap6</object-name>
+            <object-name>Lflaperon</object-name>
+            <object-name>Lnavlights</object-name>
+            <object-name>Lslata</object-name>
+            <object-name>Lslatb</object-name>
+            <object-name>Lslatc</object-name>
+            <object-name>Lslatd</object-name>
+            <object-name>Lslate</object-name>
+            <object-name>Lslatf</object-name>
+            <object-name>Lslatg</object-name>
+            <object-name>Lslath</object-name>
+            <object-name>Strobe02</object-name>
+            <object-name>Wings.001</object-name>
+            <object-name>Wingsal</object-name>
+            <object-name>Wingsbl</object-name>
+            <object-name>Wingscl</object-name>
+            <object-name>Wingsdl</object-name>
+            <object-name>Wingsel</object-name>
+            <object-name>Wingsfl</object-name>
+            <object-name>Wingsgl</object-name>
+            <object-name>Wingshl</object-name>
+            <object-name>redflash</object-name>
+            <object-name>rednav</object-name>
+            <object-name>whiteflash2</object-name>
+            <object-name>WingslumiereLa</object-name>
+            <object-name>WingslumiereLb</object-name>
+            <object-name>WingslumiereLc</object-name>
+            <object-name>WingslumiereLd</object-name>
+            <object-name>WingslumiereLe</object-name>
+            <object-name>WingslumiereLf</object-name>
+            <object-name>WingslumiereLg</object-name>
+            <object-name>Wingslumierela</object-name>
+            <object-name>Wingslumierelb</object-name>
+            <object-name>Wingslumierelc</object-name>
+            <object-name>Wingslumiereld</object-name>
+            <object-name>Wingslumierele</object-name>
+            <object-name>Wingslumierelf</object-name>
+            <object-name>Wingslumierelg</object-name>
+            <object-name>gauche.001</object-name>
+            <object-name>gauche.002</object-name>
+            <object-name>gauche.003</object-name>
+            <object-name>gauche.004</object-name>
+            <object-name>gauche.005</object-name>
+            <object-name>gauche.006</object-name>
+            <object-name>gauche.007</object-name>
+            <object-name>gauche.008</object-name>
+            <object-name>gauche.009</object-name>
+            <object-name>gauche.010</object-name>
+            <object-name>gauche.011</object-name>
+            <object-name>gauche.012</object-name>
+            <object-name>gauche.013</object-name>
+            <object-name>gauche.014</object-name>
+            <object-name>gauche.015</object-name>
+            <object-name>gauche.016</object-name>
+            <object-name>gauche.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>3.66202</x-m>
+                <y-m>-7.8914</y-m>
+                <z-m>-0.990819</z-m>
+            </center>
+            <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+        <animation>
+            <type>rotate</type>
+            <object-name>Raileron</object-name>
+            <object-name>Railerona</object-name>
+            <object-name>Raileronb</object-name>
+            <object-name>Rbrake1</object-name>
+            <object-name>Rbrake1a</object-name>
+            <object-name>Rbrake1b</object-name>
+            <object-name>Rflap4</object-name>
+            <object-name>Rflap4a</object-name>
+            <object-name>Rflap4b</object-name>
+            <object-name>Rflap5</object-name>
+            <object-name>Rflap6</object-name>
+            <object-name>Rnavlights</object-name>
+            <object-name>Rslatc</object-name>
+            <object-name>Rslatd</object-name>
+            <object-name>Rslate</object-name>
+            <object-name>Rslatf</object-name>
+            <object-name>Rslatg</object-name>
+            <object-name>Rslath</object-name>
+            <object-name>Strobe01</object-name>
+            <object-name>Wings.002</object-name>
+            <object-name>Wingsbr</object-name>
+            <object-name>Wingscr</object-name>
+            <object-name>Wingsdr</object-name>
+            <object-name>Wingser</object-name>
+            <object-name>Wingsfr</object-name>
+            <object-name>Wingsgr</object-name>
+            <object-name>Wingshr</object-name>
+            <object-name>greenflash</object-name>
+            <object-name>greennav</object-name>
+            <object-name>whiteflash1</object-name>
+            <object-name>WingslumiereRb</object-name>
+            <object-name>WingslumiereRc</object-name>
+            <object-name>WingslumiereRd</object-name>
+            <object-name>WingslumiereRe</object-name>
+            <object-name>WingslumiereRf</object-name>
+            <object-name>WingslumiereRg</object-name>
+            <object-name>Wingslumieredb</object-name>
+            <object-name>Wingslumieredc</object-name>
+            <object-name>Wingslumieredd</object-name>
+            <object-name>Wingslumierede</object-name>
+            <object-name>Wingslumieredf</object-name>
+            <object-name>Wingslumieredg</object-name>
+            <object-name>droite.001</object-name>
+            <object-name>droite.002</object-name>
+            <object-name>droite.003</object-name>
+            <object-name>droite.004</object-name>
+            <object-name>droite.005</object-name>
+            <object-name>droite.006</object-name>
+            <object-name>droite.007</object-name>
+            <object-name>droite.008</object-name>
+            <object-name>droite.009</object-name>
+            <object-name>droite.010</object-name>
+            <object-name>droite.011</object-name>
+            <object-name>droite.012</object-name>
+            <object-name>droite.013</object-name>
+            <object-name>droite.014</object-name>
+            <object-name>droite.015</object-name>
+            <object-name>droite.016</object-name>
+            <object-name>droite.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>4.82896</x-m>
+                <y-m>11.0906</y-m>
+                <z-m>-0.507376</z-m>
+            </center>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Laileron</object-name>
+            <object-name>Lailerona</object-name>
+            <object-name>Laileronb</object-name>
+            <object-name>Lbrake1</object-name>
+            <object-name>Lbrake1a</object-name>
+            <object-name>Lbrake1b</object-name>
+            <object-name>Lflap4</object-name>
+            <object-name>Lflap4a</object-name>
+            <object-name>Lflap4b</object-name>
+            <object-name>Lflap5</object-name>
+            <object-name>Lflap6</object-name>
+            <object-name>Lnavlights</object-name>
+            <object-name>Lslatc</object-name>
+            <object-name>Lslatd</object-name>
+            <object-name>Lslate</object-name>
+            <object-name>Lslatf</object-name>
+            <object-name>Lslatg</object-name>
+            <object-name>Lslath</object-name>
+            <object-name>Strobe02</object-name>
+            <object-name>Wings.001</object-name>
+            <object-name>Wingsbl</object-name>
+            <object-name>Wingscl</object-name>
+            <object-name>Wingsdl</object-name>
+            <object-name>Wingsel</object-name>
+            <object-name>Wingsfl</object-name>
+            <object-name>Wingsgl</object-name>
+            <object-name>Wingshl</object-name>
+            <object-name>redflash</object-name>
+            <object-name>rednav</object-name>
+            <object-name>whiteflash2</object-name>
+            <object-name>WingslumiereLb</object-name>
+            <object-name>WingslumiereLc</object-name>
+            <object-name>WingslumiereLd</object-name>
+            <object-name>WingslumiereLe</object-name>
+            <object-name>WingslumiereLf</object-name>
+            <object-name>WingslumiereLg</object-name>
+            <object-name>Wingslumierelb</object-name>
+            <object-name>Wingslumierelc</object-name>
+            <object-name>Wingslumiereld</object-name>
+            <object-name>Wingslumierele</object-name>
+            <object-name>Wingslumierelf</object-name>
+            <object-name>Wingslumierelg</object-name>
+            <object-name>gauche.001</object-name>
+            <object-name>gauche.002</object-name>
+            <object-name>gauche.003</object-name>
+            <object-name>gauche.004</object-name>
+            <object-name>gauche.005</object-name>
+            <object-name>gauche.006</object-name>
+            <object-name>gauche.007</object-name>
+            <object-name>gauche.008</object-name>
+            <object-name>gauche.009</object-name>
+            <object-name>gauche.010</object-name>
+            <object-name>gauche.011</object-name>
+            <object-name>gauche.012</object-name>
+            <object-name>gauche.013</object-name>
+            <object-name>gauche.014</object-name>
+            <object-name>gauche.015</object-name>
+            <object-name>gauche.016</object-name>
+            <object-name>gauche.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>4.82896</x-m>
+                <y-m>-11.0906</y-m>
+                <z-m>-0.507376</z-m>
+            </center>
+            <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Raileron</object-name>
+            <object-name>Railerona</object-name>
+            <object-name>Raileronb</object-name>
+            <object-name>Rbrake1a</object-name>
+            <object-name>Rbrake1b</object-name>
+            <object-name>Rflap4a</object-name>
+            <object-name>Rflap4b</object-name>
+            <object-name>Rflap5</object-name>
+            <object-name>Rflap6</object-name>
+            <object-name>Rnavlights</object-name>
+            <object-name>Rslatd</object-name>
+            <object-name>Rslate</object-name>
+            <object-name>Rslatf</object-name>
+            <object-name>Rslatg</object-name>
+            <object-name>Rslath</object-name>
+            <object-name>Strobe01</object-name>
+            <object-name>Wingscr</object-name>
+            <object-name>Wingsdr</object-name>
+            <object-name>Wingser</object-name>
+            <object-name>Wingsfr</object-name>
+            <object-name>Wingsgr</object-name>
+            <object-name>Wingshr</object-name>
+            <object-name>greenflash</object-name>
+            <object-name>greennav</object-name>
+            <object-name>whiteflash1</object-name>
+            <object-name>WingslumiereRc</object-name>
+            <object-name>WingslumiereRd</object-name>
+            <object-name>WingslumiereRe</object-name>
+            <object-name>WingslumiereRf</object-name>
+            <object-name>WingslumiereRg</object-name>
+            <object-name>Wingslumieredc</object-name>
+            <object-name>Wingslumieredd</object-name>
+            <object-name>Wingslumierede</object-name>
+            <object-name>Wingslumieredf</object-name>
+            <object-name>Wingslumieredg</object-name>
+            <object-name>droite.001</object-name>
+            <object-name>droite.002</object-name>
+            <object-name>droite.003</object-name>
+            <object-name>droite.004</object-name>
+            <object-name>droite.005</object-name>
+            <object-name>droite.006</object-name>
+            <object-name>droite.007</object-name>
+            <object-name>droite.008</object-name>
+            <object-name>droite.009</object-name>
+            <object-name>droite.010</object-name>
+            <object-name>droite.011</object-name>
+            <object-name>droite.012</object-name>
+            <object-name>droite.013</object-name>
+            <object-name>droite.014</object-name>
+            <object-name>droite.015</object-name>
+            <object-name>droite.016</object-name>
+            <object-name>droite.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>5.84616</x-m>
+                <y-m>13.6437</y-m>
+                <z-m>-0.231671</z-m>
+            </center>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Laileron</object-name>
+            <object-name>Lailerona</object-name>
+            <object-name>Laileronb</object-name>
+            <object-name>Lbrake1a</object-name>
+            <object-name>Lbrake1b</object-name>
+            <object-name>Lflap4a</object-name>
+            <object-name>Lflap4b</object-name>
+            <object-name>Lflap5</object-name>
+            <object-name>Lflap6</object-name>
+            <object-name>Lnavlights</object-name>
+            <object-name>Lslatd</object-name>
+            <object-name>Lslate</object-name>
+            <object-name>Lslatf</object-name>
+            <object-name>Lslatg</object-name>
+            <object-name>Lslath</object-name>
+            <object-name>Strobe02</object-name>
+            <object-name>Wingscl</object-name>
+            <object-name>Wingsdl</object-name>
+            <object-name>Wingsel</object-name>
+            <object-name>Wingsfl</object-name>
+            <object-name>Wingsgl</object-name>
+            <object-name>Wingshl</object-name>
+            <object-name>redflash</object-name>
+            <object-name>rednav</object-name>
+            <object-name>whiteflash2</object-name>
+            <object-name>WingslumiereLc</object-name>
+            <object-name>WingslumiereLd</object-name>
+            <object-name>WingslumiereLe</object-name>
+            <object-name>WingslumiereLf</object-name>
+            <object-name>WingslumiereLg</object-name>
+            <object-name>Wingslumierelc</object-name>
+            <object-name>Wingslumiereld</object-name>
+            <object-name>Wingslumierele</object-name>
+            <object-name>Wingslumierelf</object-name>
+            <object-name>Wingslumierelg</object-name>
+            <object-name>gauche.001</object-name>
+            <object-name>gauche.002</object-name>
+            <object-name>gauche.003</object-name>
+            <object-name>gauche.004</object-name>
+            <object-name>gauche.005</object-name>
+            <object-name>gauche.006</object-name>
+            <object-name>gauche.007</object-name>
+            <object-name>gauche.008</object-name>
+            <object-name>gauche.009</object-name>
+            <object-name>gauche.010</object-name>
+            <object-name>gauche.011</object-name>
+            <object-name>gauche.012</object-name>
+            <object-name>gauche.013</object-name>
+            <object-name>gauche.014</object-name>
+            <object-name>gauche.015</object-name>
+            <object-name>gauche.016</object-name>
+            <object-name>gauche.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>5.84616</x-m>
+                <y-m>-13.6437</y-m>
+                <z-m>-0.231671</z-m>
+            </center>
+            <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+        
+        <animation>
+            <type>rotate</type>
+            <object-name>Raileron</object-name>
+            <object-name>Railerona</object-name>
+            <object-name>Raileronb</object-name>
+            <object-name>Rbrake1b</object-name>
+            <object-name>Rflap4b</object-name>
+            <object-name>Rflap5</object-name>
+            <object-name>Rnavlights</object-name>
+            <object-name>Rslate</object-name>
+            <object-name>Rslatf</object-name>
+            <object-name>Rslatg</object-name>
+            <object-name>Rslath</object-name>
+            <object-name>Strobe01</object-name>
+            <object-name>Wingsdr</object-name>
+            <object-name>Wingser</object-name>
+            <object-name>Wingsfr</object-name>
+            <object-name>Wingsgr</object-name>
+            <object-name>Wingshr</object-name>
+            <object-name>greenflash</object-name>
+            <object-name>greennav</object-name>
+            <object-name>whiteflash1</object-name>
+            <object-name>WingslumiereRd</object-name>
+            <object-name>WingslumiereRe</object-name>
+            <object-name>WingslumiereRf</object-name>
+            <object-name>WingslumiereRg</object-name>
+            <object-name>Wingslumieredd</object-name>
+            <object-name>Wingslumierede</object-name>
+            <object-name>Wingslumieredf</object-name>
+            <object-name>Wingslumieredg</object-name>
+            <object-name>droite.001</object-name>
+            <object-name>droite.002</object-name>
+            <object-name>droite.003</object-name>
+            <object-name>droite.004</object-name>
+            <object-name>droite.005</object-name>
+            <object-name>droite.006</object-name>
+            <object-name>droite.007</object-name>
+            <object-name>droite.008</object-name>
+            <object-name>droite.009</object-name>
+            <object-name>droite.010</object-name>
+            <object-name>droite.011</object-name>
+            <object-name>droite.012</object-name>
+            <object-name>droite.013</object-name>
+            <object-name>droite.014</object-name>
+            <object-name>droite.015</object-name>
+            <object-name>droite.016</object-name>
+            <object-name>droite.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>7.82897</x-m>
+                <y-m>17.0156</y-m>
+                <z-m>0.131513</z-m>
+            </center>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Laileron</object-name>
+            <object-name>Lailerona</object-name>
+            <object-name>Laileronb</object-name>
+            <object-name>Lbrake1b</object-name>
+            <object-name>Lflap4b</object-name>
+            <object-name>Lflap5</object-name>
+            <object-name>Lnavlights</object-name>
+            <object-name>Lslate</object-name>
+            <object-name>Lslatf</object-name>
+            <object-name>Lslatg</object-name>
+            <object-name>Lslath</object-name>
+            <object-name>Strobe02</object-name>
+            <object-name>Wingsdl</object-name>
+            <object-name>Wingsel</object-name>
+            <object-name>Wingsfl</object-name>
+            <object-name>Wingsgl</object-name>
+            <object-name>Wingshl</object-name>
+            <object-name>redflash</object-name>
+            <object-name>rednav</object-name>
+            <object-name>whiteflash2</object-name>
+            <object-name>WingslumiereLd</object-name>
+            <object-name>WingslumiereLe</object-name>
+            <object-name>WingslumiereLf</object-name>
+            <object-name>WingslumiereLg</object-name>
+            <object-name>Wingslumiereld</object-name>
+            <object-name>Wingslumierele</object-name>
+            <object-name>Wingslumierelf</object-name>
+            <object-name>Wingslumierelg</object-name>
+            <object-name>gauche.001</object-name>
+            <object-name>gauche.002</object-name>
+            <object-name>gauche.003</object-name>
+            <object-name>gauche.004</object-name>
+            <object-name>gauche.005</object-name>
+            <object-name>gauche.006</object-name>
+            <object-name>gauche.007</object-name>
+            <object-name>gauche.008</object-name>
+            <object-name>gauche.009</object-name>
+            <object-name>gauche.010</object-name>
+            <object-name>gauche.011</object-name>
+            <object-name>gauche.012</object-name>
+            <object-name>gauche.013</object-name>
+            <object-name>gauche.014</object-name>
+            <object-name>gauche.015</object-name>
+            <object-name>gauche.016</object-name>
+            <object-name>gauche.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>7.82897</x-m>
+                <y-m>-17.0156</y-m>
+                <z-m>0.131513</z-m>
+            </center>
+            <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+        
+        <animation>
+            <type>rotate</type>
+            <object-name>Raileron</object-name>
+            <object-name>Railerona</object-name>
+            <object-name>Raileronb</object-name>
+            <object-name>Rnavlights</object-name>
+            <object-name>Rslatf</object-name>
+            <object-name>Rslatg</object-name>
+            <object-name>Rslath</object-name>
+            <object-name>Strobe01</object-name>
+            <object-name>Wingser</object-name>
+            <object-name>Wingsfr</object-name>
+            <object-name>Wingsgr</object-name>
+            <object-name>Wingshr</object-name>
+            <object-name>greenflash</object-name>
+            <object-name>greennav</object-name>
+            <object-name>whiteflash1</object-name>
+            <object-name>WingslumiereRe</object-name>
+            <object-name>WingslumiereRf</object-name>
+            <object-name>WingslumiereRg</object-name>
+            <object-name>Wingslumierede</object-name>
+            <object-name>Wingslumieredf</object-name>
+            <object-name>Wingslumieredg</object-name>
+            <object-name>droite.001</object-name>
+            <object-name>droite.002</object-name>
+            <object-name>droite.003</object-name>
+            <object-name>droite.004</object-name>
+            <object-name>droite.005</object-name>
+            <object-name>droite.006</object-name>
+            <object-name>droite.007</object-name>
+            <object-name>droite.008</object-name>
+            <object-name>droite.009</object-name>
+            <object-name>droite.010</object-name>
+            <object-name>droite.011</object-name>
+            <object-name>droite.012</object-name>
+            <object-name>droite.013</object-name>
+            <object-name>droite.014</object-name>
+            <object-name>droite.015</object-name>
+            <object-name>droite.016</object-name>
+            <object-name>droite.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>10.6909</x-m>
+                <y-m>21.049</y-m>
+                <z-m>0.565903</z-m>
+            </center>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Laileron</object-name>
+            <object-name>Lailerona</object-name>
+            <object-name>Laileronb</object-name>
+            <object-name>Lnavlights</object-name>
+            <object-name>Lslatf</object-name>
+            <object-name>Lslatg</object-name>
+            <object-name>Lslath</object-name>
+            <object-name>Strobe02</object-name>
+            <object-name>Wingsel</object-name>
+            <object-name>Wingsfl</object-name>
+            <object-name>Wingsgl</object-name>
+            <object-name>Wingshl</object-name>
+            <object-name>redflash</object-name>
+            <object-name>rednav</object-name>
+            <object-name>whiteflash2</object-name>
+            <object-name>WingslumiereLe</object-name>
+            <object-name>WingslumiereLf</object-name>
+            <object-name>WingslumiereLg</object-name>
+            <object-name>Wingslumierele</object-name>
+            <object-name>Wingslumierelf</object-name>
+            <object-name>Wingslumierelg</object-name>
+            <object-name>gauche.001</object-name>
+            <object-name>gauche.002</object-name>
+            <object-name>gauche.003</object-name>
+            <object-name>gauche.004</object-name>
+            <object-name>gauche.005</object-name>
+            <object-name>gauche.006</object-name>
+            <object-name>gauche.007</object-name>
+            <object-name>gauche.008</object-name>
+            <object-name>gauche.009</object-name>
+            <object-name>gauche.010</object-name>
+            <object-name>gauche.011</object-name>
+            <object-name>gauche.012</object-name>
+            <object-name>gauche.013</object-name>
+            <object-name>gauche.014</object-name>
+            <object-name>gauche.015</object-name>
+            <object-name>gauche.016</object-name>
+            <object-name>gauche.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>10.6909</x-m>
+                <y-m>-21.049</y-m>
+                <z-m>0.565903</z-m>
+            </center>
+            <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+        
+        <animation>
+            <type>rotate</type>
+            <object-name>Railerona</object-name>
+            <object-name>Raileronb</object-name>
+            <object-name>Rnavlights</object-name>
+            <object-name>Rslatg</object-name>
+            <object-name>Rslath</object-name>
+            <object-name>Strobe01</object-name>
+            <object-name>Wingsfr</object-name>
+            <object-name>Wingsgr</object-name>
+            <object-name>Wingshr</object-name>
+            <object-name>greenflash</object-name>
+            <object-name>greennav</object-name>
+            <object-name>whiteflash1</object-name>
+            <object-name>WingslumiereRf</object-name>
+            <object-name>WingslumiereRg</object-name>
+            <object-name>Wingslumieredf</object-name>
+            <object-name>Wingslumieredg</object-name>
+            <object-name>droite.001</object-name>
+            <object-name>droite.002</object-name>
+            <object-name>droite.003</object-name>
+            <object-name>droite.004</object-name>
+            <object-name>droite.005</object-name>
+            <object-name>droite.006</object-name>
+            <object-name>droite.007</object-name>
+            <object-name>droite.008</object-name>
+            <object-name>droite.009</object-name>
+            <object-name>droite.010</object-name>
+            <object-name>droite.011</object-name>
+            <object-name>droite.012</object-name>
+            <object-name>droite.013</object-name>
+            <object-name>droite.014</object-name>
+            <object-name>droite.015</object-name>
+            <object-name>droite.016</object-name>
+            <object-name>droite.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>12.2709</x-m>
+                <y-m>23.9363</y-m>
+                <z-m>0.876948</z-m>
+            </center>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Lailerona</object-name>
+            <object-name>Laileronb</object-name>
+            <object-name>Lnavlights</object-name>
+            <object-name>Lslatg</object-name>
+            <object-name>Lslath</object-name>
+            <object-name>Strobe02</object-name>
+            <object-name>Wingsfl</object-name>
+            <object-name>Wingsgl</object-name>
+            <object-name>Wingshl</object-name>
+            <object-name>redflash</object-name>
+            <object-name>rednav</object-name>
+            <object-name>whiteflash2</object-name>
+            <object-name>WingslumiereLf</object-name>
+            <object-name>WingslumiereLg</object-name>
+            <object-name>Wingslumierelf</object-name>
+            <object-name>Wingslumierelg</object-name>
+            <object-name>gauche.001</object-name>
+            <object-name>gauche.002</object-name>
+            <object-name>gauche.003</object-name>
+            <object-name>gauche.004</object-name>
+            <object-name>gauche.005</object-name>
+            <object-name>gauche.006</object-name>
+            <object-name>gauche.007</object-name>
+            <object-name>gauche.008</object-name>
+            <object-name>gauche.009</object-name>
+            <object-name>gauche.010</object-name>
+            <object-name>gauche.011</object-name>
+            <object-name>gauche.012</object-name>
+            <object-name>gauche.013</object-name>
+            <object-name>gauche.014</object-name>
+            <object-name>gauche.015</object-name>
+            <object-name>gauche.016</object-name>
+            <object-name>gauche.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>12.2709</x-m>
+                <y-m>-23.9363</y-m>
+                <z-m>0.876948</z-m>
+            </center>
+            <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+        
+        <animation>
+            <type>rotate</type>
+            <object-name>Raileronb</object-name>
+            <object-name>Rnavlights</object-name>
+            <object-name>Rslath</object-name>
+            <object-name>Strobe01</object-name>
+            <object-name>Wingsgr</object-name>
+            <object-name>Wingshr</object-name>
+            <object-name>greenflash</object-name>
+            <object-name>greennav</object-name>
+            <object-name>whiteflash1</object-name>
+            <object-name>WingslumiereRg</object-name>
+            <object-name>Wingslumieredg</object-name>
+            <object-name>droite.001</object-name>
+            <object-name>droite.002</object-name>
+            <object-name>droite.003</object-name>
+            <object-name>droite.004</object-name>
+            <object-name>droite.005</object-name>
+            <object-name>droite.006</object-name>
+            <object-name>droite.007</object-name>
+            <object-name>droite.008</object-name>
+            <object-name>droite.009</object-name>
+            <object-name>droite.010</object-name>
+            <object-name>droite.011</object-name>
+            <object-name>droite.012</object-name>
+            <object-name>droite.013</object-name>
+            <object-name>droite.014</object-name>
+            <object-name>droite.015</object-name>
+            <object-name>droite.016</object-name>
+            <object-name>droite.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>14.028</x-m>
+                <y-m>27.1478</y-m>
+                <z-m>1.22285</z-m>
+            </center>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Laileronb</object-name>
+            <object-name>Lnavlights</object-name>
+            <object-name>Lslath</object-name>
+            <object-name>Strobe02</object-name>
+            <object-name>Wingsgl</object-name>
+            <object-name>Wingshl</object-name>
+            <object-name>redflash</object-name>
+            <object-name>rednav</object-name>
+            <object-name>whiteflash2</object-name>
+            <object-name>WingslumiereLg</object-name>
+            <object-name>Wingslumierelg</object-name>
+            <object-name>gauche.001</object-name>
+            <object-name>gauche.002</object-name>
+            <object-name>gauche.003</object-name>
+            <object-name>gauche.004</object-name>
+            <object-name>gauche.005</object-name>
+            <object-name>gauche.006</object-name>
+            <object-name>gauche.007</object-name>
+            <object-name>gauche.008</object-name>
+            <object-name>gauche.009</object-name>
+            <object-name>gauche.010</object-name>
+            <object-name>gauche.011</object-name>
+            <object-name>gauche.012</object-name>
+            <object-name>gauche.013</object-name>
+            <object-name>gauche.014</object-name>
+            <object-name>gauche.015</object-name>
+            <object-name>gauche.016</object-name>
+            <object-name>gauche.017</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>14.028</x-m>
+                <y-m>-27.1478</y-m>
+                <z-m>1.22285</z-m>
+            </center>
+            <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+        
+        <animation>
+            <type>rotate</type>
+            <object-name>Rnavlights</object-name>
+            <object-name>Strobe01</object-name>
+            <object-name>Wingshr</object-name>
+            <object-name>greenflash</object-name>
+            <object-name>greennav</object-name>
+            <object-name>whiteflash1</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>16.0345</x-m>
+                <y-m>30.3574</y-m>
+                <z-m>1.57149</z-m>
+            </center>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Lnavlights</object-name>
+            <object-name>Strobe02</object-name>
+            <object-name>Wingshl</object-name>
+            <object-name>redflash</object-name>
+            <object-name>rednav</object-name>
+            <object-name>whiteflash2</object-name>
+            <property>sim/systems/wingflexer/z-m</property>
+            <factor>3</factor>
+            <offset-deg>0</offset-deg>
+            <center>
+                <x-m>16.0345</x-m>
+                <y-m>-30.3574</y-m>
+                <z-m>1.57149</z-m>
+            </center>
+            <axis>
+                <x>-1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        </animation>
     
     <!--       plancher éclairage EXIT      -->
 	
@@ -4689,6 +5702,8 @@ Franck.VMD
     <animation>
     <type>rotate</type>
     <object-name>Raileron</object-name>
+    <object-name>Railerona</object-name>
+    <object-name>Raileronb</object-name>
     <property>fcs/right-out-aileron/final-deg</property>
     <factor>-1</factor>
     <center>
@@ -4764,6 +5779,8 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rflap4</object-name>
+        <object-name>Rflap4a</object-name>
+        <object-name>Rflap4b</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <factor>-30</factor>
         <center>
@@ -4781,6 +5798,8 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Rflap4</object-name>
+        <object-name>Rflap4a</object-name>
+        <object-name>Rflap4b</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -4882,6 +5901,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rbrake</object-name>
+        <object-name>Rbrakea</object-name>
         <property>sim/multiplay/generic/float[60]</property>
         <factor>-1</factor>
         <axis>
@@ -4897,6 +5917,8 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rbrake1</object-name>
+        <object-name>Rbrake1a</object-name>
+        <object-name>Rbrake1b</object-name>
         <property>sim/multiplay/generic/float[61]</property>
         <factor>-1</factor>
         <axis>
@@ -4955,6 +5977,8 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lflap4</object-name>
+        <object-name>Lflap4a</object-name>
+        <object-name>Lflap4b</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <factor>30</factor>
         <center>
@@ -4972,6 +5996,8 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Lflap4</object-name>
+        <object-name>Lflap4a</object-name>
+        <object-name>Lflap4b</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -5073,6 +6099,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lbrake</object-name>
+        <object-name>Lbrakea</object-name>
         <property>sim/multiplay/generic/float[50]</property>
         <factor>-1</factor>
         <axis>
@@ -5088,6 +6115,8 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lbrake1</object-name>
+        <object-name>Lbrake1a</object-name>
+        <object-name>Lbrake1b</object-name>
         <property>sim/multiplay/generic/float[51]</property>
         <factor>-1</factor>
         <axis>
@@ -5103,6 +6132,8 @@ Franck.VMD
     <animation>
     <type>rotate</type>
     <object-name>Laileron</object-name>
+    <object-name>Lailerona</object-name>
+    <object-name>Laileronb</object-name>
     <property>fcs/left-out-aileron/final-deg</property>
     <factor>1</factor>
     <center>
@@ -5748,7 +6779,39 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Rslat</object-name>
+        <object-name>Rslata</object-name>
+        <object-name>Rslatb</object-name>
+        <object-name>Rslatc</object-name>
+        <object-name>Rslatd</object-name>
+        <object-name>Rslate</object-name>
+        <object-name>Rslatf</object-name>
+        <object-name>Rslatg</object-name>
+        <object-name>Rslath</object-name>
         <object-name>Lslat</object-name>
+        <object-name>Lslata</object-name>
+        <object-name>Lslatb</object-name>
+        <object-name>Lslatc</object-name>
+        <object-name>Lslatd</object-name>
+        <object-name>Lslate</object-name>
+        <object-name>Lslatf</object-name>
+        <object-name>Lslatg</object-name>
+        <object-name>Lslath</object-name>
+        <object-name>Wingslumierel</object-name>
+        <object-name>Wingslumierela</object-name>
+        <object-name>Wingslumierelb</object-name>
+        <object-name>Wingslumierelc</object-name>
+        <object-name>Wingslumiereld</object-name>
+        <object-name>Wingslumierele</object-name>
+        <object-name>Wingslumierelf</object-name>
+        <object-name>Wingslumierelg</object-name>
+        <object-name>Wingslumiered</object-name>
+        <object-name>Wingslumiereda</object-name>
+        <object-name>Wingslumieredb</object-name>
+        <object-name>Wingslumieredc</object-name>
+        <object-name>Wingslumieredd</object-name>
+        <object-name>Wingslumierede</object-name>
+        <object-name>Wingslumieredf</object-name>
+        <object-name>Wingslumieredg</object-name>
         <property>surface-positions/slats</property>
         <factor>0.4</factor>
         <axis>
@@ -5798,26 +6861,41 @@ Franck.VMD
         <type>select</type>
         <object-name>Wingslumiere</object-name>
         <object-name>Wingslumierel</object-name>
+        <object-name>Wingslumierela</object-name>
+        <object-name>Wingslumierelb</object-name>
+        <object-name>Wingslumierelc</object-name>
+        <object-name>Wingslumiereld</object-name>
+        <object-name>Wingslumierele</object-name>
+        <object-name>Wingslumierelf</object-name>
+        <object-name>Wingslumierelg</object-name>
         <object-name>Wingslumiered</object-name>
+        <object-name>Wingslumiereda</object-name>
+        <object-name>Wingslumieredb</object-name>
+        <object-name>Wingslumieredc</object-name>
+        <object-name>Wingslumieredd</object-name>
+        <object-name>Wingslumierede</object-name>
+        <object-name>Wingslumieredf</object-name>
+        <object-name>Wingslumieredg</object-name>
+        <object-name>WingslumiereLa</object-name>
+        <object-name>WingslumiereLb</object-name>
+        <object-name>WingslumiereLc</object-name>
+        <object-name>WingslumiereLd</object-name>
+        <object-name>WingslumiereLe</object-name>
+        <object-name>WingslumiereLf</object-name>
+        <object-name>WingslumiereLg</object-name>
+        <object-name>WingslumiereRa</object-name>
+        <object-name>WingslumiereRb</object-name>
+        <object-name>WingslumiereRc</object-name>
+        <object-name>WingslumiereRd</object-name>
+        <object-name>WingslumiereRe</object-name>
+        <object-name>WingslumiereRf</object-name>
+        <object-name>WingslumiereRg</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/wing-lights</property>
                 <value>5</value>
             </greater-than>
         </condition>
-    </animation>
-    
-    <animation>
-        <type>translate</type>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumiered</object-name>
-        <property>surface-positions/slats</property>
-        <factor>0.4</factor>
-        <axis>
-            <x>-1.0</x>
-            <y>0</y>
-            <z>-0.50</z>
-        </axis>
     </animation>
 
     <animation>
