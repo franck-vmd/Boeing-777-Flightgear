@@ -59,6 +59,7 @@ Franck.VMD
         <object-name>lance2</object-name>
         <object-name>lanceaileron</object-name>
         <object-name>lanceaileron.001</object-name>
+        <object-name>droite</object-name>
         <object-name>droite.001</object-name>
         <object-name>droite.002</object-name>
         <object-name>droite.003</object-name>
@@ -76,6 +77,7 @@ Franck.VMD
         <object-name>droite.015</object-name>
         <object-name>droite.016</object-name>
         <object-name>droite.017</object-name>
+        <object-name>gauche</object-name>
         <object-name>gauche.001</object-name>
         <object-name>gauche.002</object-name>
         <object-name>gauche.003</object-name>
@@ -382,6 +384,7 @@ Franck.VMD
         <object-name>lance2</object-name>
         <object-name>lanceaileron</object-name>
         <object-name>lanceaileron.001</object-name>
+        <object-name>droite</object-name>
         <object-name>droite.001</object-name>
         <object-name>droite.002</object-name>
         <object-name>droite.003</object-name>
@@ -399,6 +402,7 @@ Franck.VMD
         <object-name>droite.015</object-name>
         <object-name>droite.016</object-name>
         <object-name>droite.017</object-name>
+        <object-name>gauche</object-name>
         <object-name>gauche.001</object-name>
         <object-name>gauche.002</object-name>
         <object-name>gauche.003</object-name>
@@ -901,23 +905,7 @@ Franck.VMD
             <object-name>Wingslumierede</object-name>
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
-            <object-name>droite.001</object-name>
-            <object-name>droite.002</object-name>
-            <object-name>droite.003</object-name>
-            <object-name>droite.004</object-name>
-            <object-name>droite.005</object-name>
-            <object-name>droite.006</object-name>
-            <object-name>droite.007</object-name>
-            <object-name>droite.008</object-name>
-            <object-name>droite.009</object-name>
-            <object-name>droite.010</object-name>
-            <object-name>droite.011</object-name>
-            <object-name>droite.012</object-name>
-            <object-name>droite.013</object-name>
-            <object-name>droite.014</object-name>
-            <object-name>droite.015</object-name>
-            <object-name>droite.016</object-name>
-            <object-name>droite.017</object-name>
+            <object-name>droite</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -984,23 +972,7 @@ Franck.VMD
             <object-name>Wingslumierele</object-name>
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
-            <object-name>gauche.001</object-name>
-            <object-name>gauche.002</object-name>
-            <object-name>gauche.003</object-name>
-            <object-name>gauche.004</object-name>
-            <object-name>gauche.005</object-name>
-            <object-name>gauche.006</object-name>
-            <object-name>gauche.007</object-name>
-            <object-name>gauche.008</object-name>
-            <object-name>gauche.009</object-name>
-            <object-name>gauche.010</object-name>
-            <object-name>gauche.011</object-name>
-            <object-name>gauche.012</object-name>
-            <object-name>gauche.013</object-name>
-            <object-name>gauche.014</object-name>
-            <object-name>gauche.015</object-name>
-            <object-name>gauche.016</object-name>
-            <object-name>gauche.017</object-name>
+            <object-name>gauche</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1060,23 +1032,7 @@ Franck.VMD
             <object-name>Wingslumierede</object-name>
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
-            <object-name>droite.001</object-name>
-            <object-name>droite.002</object-name>
-            <object-name>droite.003</object-name>
-            <object-name>droite.004</object-name>
-            <object-name>droite.005</object-name>
-            <object-name>droite.006</object-name>
-            <object-name>droite.007</object-name>
-            <object-name>droite.008</object-name>
-            <object-name>droite.009</object-name>
-            <object-name>droite.010</object-name>
-            <object-name>droite.011</object-name>
-            <object-name>droite.012</object-name>
-            <object-name>droite.013</object-name>
-            <object-name>droite.014</object-name>
-            <object-name>droite.015</object-name>
-            <object-name>droite.016</object-name>
-            <object-name>droite.017</object-name>
+            <object-name>droite</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1136,23 +1092,7 @@ Franck.VMD
             <object-name>Wingslumierele</object-name>
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
-            <object-name>gauche.001</object-name>
-            <object-name>gauche.002</object-name>
-            <object-name>gauche.003</object-name>
-            <object-name>gauche.004</object-name>
-            <object-name>gauche.005</object-name>
-            <object-name>gauche.006</object-name>
-            <object-name>gauche.007</object-name>
-            <object-name>gauche.008</object-name>
-            <object-name>gauche.009</object-name>
-            <object-name>gauche.010</object-name>
-            <object-name>gauche.011</object-name>
-            <object-name>gauche.012</object-name>
-            <object-name>gauche.013</object-name>
-            <object-name>gauche.014</object-name>
-            <object-name>gauche.015</object-name>
-            <object-name>gauche.016</object-name>
-            <object-name>gauche.017</object-name>
+            <object-name>gauche</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1205,23 +1145,7 @@ Franck.VMD
             <object-name>Wingslumierede</object-name>
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
-            <object-name>droite.001</object-name>
-            <object-name>droite.002</object-name>
-            <object-name>droite.003</object-name>
-            <object-name>droite.004</object-name>
-            <object-name>droite.005</object-name>
-            <object-name>droite.006</object-name>
-            <object-name>droite.007</object-name>
-            <object-name>droite.008</object-name>
-            <object-name>droite.009</object-name>
-            <object-name>droite.010</object-name>
-            <object-name>droite.011</object-name>
-            <object-name>droite.012</object-name>
-            <object-name>droite.013</object-name>
-            <object-name>droite.014</object-name>
-            <object-name>droite.015</object-name>
-            <object-name>droite.016</object-name>
-            <object-name>droite.017</object-name>
+            <object-name>droite</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1274,23 +1198,7 @@ Franck.VMD
             <object-name>Wingslumierele</object-name>
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
-            <object-name>gauche.001</object-name>
-            <object-name>gauche.002</object-name>
-            <object-name>gauche.003</object-name>
-            <object-name>gauche.004</object-name>
-            <object-name>gauche.005</object-name>
-            <object-name>gauche.006</object-name>
-            <object-name>gauche.007</object-name>
-            <object-name>gauche.008</object-name>
-            <object-name>gauche.009</object-name>
-            <object-name>gauche.010</object-name>
-            <object-name>gauche.011</object-name>
-            <object-name>gauche.012</object-name>
-            <object-name>gauche.013</object-name>
-            <object-name>gauche.014</object-name>
-            <object-name>gauche.015</object-name>
-            <object-name>gauche.016</object-name>
-            <object-name>gauche.017</object-name>
+            <object-name>gauche</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1336,23 +1244,7 @@ Franck.VMD
             <object-name>Wingslumierede</object-name>
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
-            <object-name>droite.001</object-name>
-            <object-name>droite.002</object-name>
-            <object-name>droite.003</object-name>
-            <object-name>droite.004</object-name>
-            <object-name>droite.005</object-name>
-            <object-name>droite.006</object-name>
-            <object-name>droite.007</object-name>
-            <object-name>droite.008</object-name>
-            <object-name>droite.009</object-name>
-            <object-name>droite.010</object-name>
-            <object-name>droite.011</object-name>
-            <object-name>droite.012</object-name>
-            <object-name>droite.013</object-name>
-            <object-name>droite.014</object-name>
-            <object-name>droite.015</object-name>
-            <object-name>droite.016</object-name>
-            <object-name>droite.017</object-name>
+            <object-name>droite</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1398,23 +1290,7 @@ Franck.VMD
             <object-name>Wingslumierele</object-name>
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
-            <object-name>gauche.001</object-name>
-            <object-name>gauche.002</object-name>
-            <object-name>gauche.003</object-name>
-            <object-name>gauche.004</object-name>
-            <object-name>gauche.005</object-name>
-            <object-name>gauche.006</object-name>
-            <object-name>gauche.007</object-name>
-            <object-name>gauche.008</object-name>
-            <object-name>gauche.009</object-name>
-            <object-name>gauche.010</object-name>
-            <object-name>gauche.011</object-name>
-            <object-name>gauche.012</object-name>
-            <object-name>gauche.013</object-name>
-            <object-name>gauche.014</object-name>
-            <object-name>gauche.015</object-name>
-            <object-name>gauche.016</object-name>
-            <object-name>gauche.017</object-name>
+            <object-name>gauche</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1453,23 +1329,7 @@ Franck.VMD
             <object-name>Wingslumierede</object-name>
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
-            <object-name>droite.001</object-name>
-            <object-name>droite.002</object-name>
-            <object-name>droite.003</object-name>
-            <object-name>droite.004</object-name>
-            <object-name>droite.005</object-name>
-            <object-name>droite.006</object-name>
-            <object-name>droite.007</object-name>
-            <object-name>droite.008</object-name>
-            <object-name>droite.009</object-name>
-            <object-name>droite.010</object-name>
-            <object-name>droite.011</object-name>
-            <object-name>droite.012</object-name>
-            <object-name>droite.013</object-name>
-            <object-name>droite.014</object-name>
-            <object-name>droite.015</object-name>
-            <object-name>droite.016</object-name>
-            <object-name>droite.017</object-name>
+            <object-name>droite</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1508,23 +1368,7 @@ Franck.VMD
             <object-name>Wingslumierele</object-name>
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
-            <object-name>gauche.001</object-name>
-            <object-name>gauche.002</object-name>
-            <object-name>gauche.003</object-name>
-            <object-name>gauche.004</object-name>
-            <object-name>gauche.005</object-name>
-            <object-name>gauche.006</object-name>
-            <object-name>gauche.007</object-name>
-            <object-name>gauche.008</object-name>
-            <object-name>gauche.009</object-name>
-            <object-name>gauche.010</object-name>
-            <object-name>gauche.011</object-name>
-            <object-name>gauche.012</object-name>
-            <object-name>gauche.013</object-name>
-            <object-name>gauche.014</object-name>
-            <object-name>gauche.015</object-name>
-            <object-name>gauche.016</object-name>
-            <object-name>gauche.017</object-name>
+            <object-name>gauche</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1558,23 +1402,7 @@ Franck.VMD
             <object-name>WingslumiereRg</object-name>
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
-            <object-name>droite.001</object-name>
-            <object-name>droite.002</object-name>
-            <object-name>droite.003</object-name>
-            <object-name>droite.004</object-name>
-            <object-name>droite.005</object-name>
-            <object-name>droite.006</object-name>
-            <object-name>droite.007</object-name>
-            <object-name>droite.008</object-name>
-            <object-name>droite.009</object-name>
-            <object-name>droite.010</object-name>
-            <object-name>droite.011</object-name>
-            <object-name>droite.012</object-name>
-            <object-name>droite.013</object-name>
-            <object-name>droite.014</object-name>
-            <object-name>droite.015</object-name>
-            <object-name>droite.016</object-name>
-            <object-name>droite.017</object-name>
+            <object-name>droite</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1608,23 +1436,7 @@ Franck.VMD
             <object-name>WingslumiereLg</object-name>
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
-            <object-name>gauche.001</object-name>
-            <object-name>gauche.002</object-name>
-            <object-name>gauche.003</object-name>
-            <object-name>gauche.004</object-name>
-            <object-name>gauche.005</object-name>
-            <object-name>gauche.006</object-name>
-            <object-name>gauche.007</object-name>
-            <object-name>gauche.008</object-name>
-            <object-name>gauche.009</object-name>
-            <object-name>gauche.010</object-name>
-            <object-name>gauche.011</object-name>
-            <object-name>gauche.012</object-name>
-            <object-name>gauche.013</object-name>
-            <object-name>gauche.014</object-name>
-            <object-name>gauche.015</object-name>
-            <object-name>gauche.016</object-name>
-            <object-name>gauche.017</object-name>
+            <object-name>gauche</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1653,23 +1465,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>WingslumiereRg</object-name>
             <object-name>Wingslumieredg</object-name>
-            <object-name>droite.001</object-name>
-            <object-name>droite.002</object-name>
-            <object-name>droite.003</object-name>
-            <object-name>droite.004</object-name>
-            <object-name>droite.005</object-name>
-            <object-name>droite.006</object-name>
-            <object-name>droite.007</object-name>
-            <object-name>droite.008</object-name>
-            <object-name>droite.009</object-name>
-            <object-name>droite.010</object-name>
-            <object-name>droite.011</object-name>
-            <object-name>droite.012</object-name>
-            <object-name>droite.013</object-name>
-            <object-name>droite.014</object-name>
-            <object-name>droite.015</object-name>
-            <object-name>droite.016</object-name>
-            <object-name>droite.017</object-name>
+            <object-name>droite</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
@@ -1698,23 +1494,7 @@ Franck.VMD
             <object-name>whiteflash2</object-name>
             <object-name>WingslumiereLg</object-name>
             <object-name>Wingslumierelg</object-name>
-            <object-name>gauche.001</object-name>
-            <object-name>gauche.002</object-name>
-            <object-name>gauche.003</object-name>
-            <object-name>gauche.004</object-name>
-            <object-name>gauche.005</object-name>
-            <object-name>gauche.006</object-name>
-            <object-name>gauche.007</object-name>
-            <object-name>gauche.008</object-name>
-            <object-name>gauche.009</object-name>
-            <object-name>gauche.010</object-name>
-            <object-name>gauche.011</object-name>
-            <object-name>gauche.012</object-name>
-            <object-name>gauche.013</object-name>
-            <object-name>gauche.014</object-name>
-            <object-name>gauche.015</object-name>
-            <object-name>gauche.016</object-name>
-            <object-name>gauche.017</object-name>
+            <object-name>gauche</object-name>
             <property>sim/systems/wingflexer/z-m</property>
             <factor>3</factor>
             <offset-deg>0</offset-deg>
