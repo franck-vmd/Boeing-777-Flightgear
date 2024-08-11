@@ -7472,18 +7472,18 @@ Franck.VMD
 	 <model>
   <path>Aircraft/777-VMD/Models/Effects/vapour1.xml</path>
   <offsets>
-   <x-m>17.63</x-m>
-   <y-m>-32.27</y-m>
-   <z-m>1.75</z-m>
+   <x-m>18.85</x-m>
+   <y-m>-32.38</y-m>
+   <z-m>1.89</z-m>
   </offsets>
  </model>
  
  <model>
   <path>Aircraft/777-VMD/Models/Effects/vapour1.xml</path>
   <offsets>
-   <x-m>17.63</x-m>
-   <y-m>32.27</y-m>
-   <z-m>1.75</z-m>
+   <x-m>18.85</x-m>
+   <y-m>32.38</y-m>
+   <z-m>1.89</z-m>
   </offsets>
  </model>
 
