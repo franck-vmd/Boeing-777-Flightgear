@@ -10,7 +10,7 @@ Non Rembrandt
 
 No Rembrandt
 
-Wing flex ( 777-200 , 777-200ER , 777-200LR , 777-200F , 777-300 , 777-300ER , 777-300ERSF , 777-200KFC )
+Wing flex ( 777-200 , 777-200ER , 777-200LR , 777-200F , 777-300 , 777-300ER , 777-300ERSF , 777-200KFC , 777-X8 )
 
 ![Image](https://i.ibb.co/jvPtL2F/fuel.jpg)
 
