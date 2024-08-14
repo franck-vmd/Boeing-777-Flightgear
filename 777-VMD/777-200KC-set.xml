@@ -282,8 +282,8 @@
                     <script>b777.toggle_flashlight()</script>
                 </binding>
             </item>
-				</menu>
-			</default>
+		</menu>
+		</default>
         </menubar>
 
         <tutorials>

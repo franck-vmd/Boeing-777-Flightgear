@@ -6605,6 +6605,45 @@ Franck.VMD
 <!-- FX / Lights -->
 
     <animation>
+        <type>material</type>
+        <object-name>rouge</object-name>
+        <condition>
+        <property>sim/multiplay/generic/int[7]</property>
+        </condition>
+        <emission>
+        <red> 1 </red>
+        <green> 0 </green>
+        <blue> 0 </blue>
+        </emission>
+   </animation>
+
+   <animation>
+       <type>material</type>
+       <object-name>vert</object-name>
+       <condition>
+       <property>sim/multiplay/generic/int[7]</property>
+       </condition>
+       <emission>
+       <red> 0 </red>
+       <green> 1 </green>
+       <blue> 0 </blue>
+       </emission>
+   </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>blanc</object-name>
+        <condition>
+        <property>sim/multiplay/generic/int[7]</property>
+        </condition>
+        <emission>
+        <red> 1 </red>
+        <green> 1 </green>
+        <blue> 1 </blue>
+        </emission>
+    </animation>
+
+    <animation>
         <type>select</type>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
