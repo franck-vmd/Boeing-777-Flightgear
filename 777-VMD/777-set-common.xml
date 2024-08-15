@@ -40,7 +40,7 @@
             </preview>          
         </previews>
         
-        <aircraft-version>2024-08-01</aircraft-version>
+        <aircraft-version>2024-08-15</aircraft-version>
         <flight-model>yasim</flight-model>
         <fuel-fraction userarchive="y" type="double">0.0</fuel-fraction>
         <model n="0">
