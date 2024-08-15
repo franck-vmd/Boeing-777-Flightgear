@@ -2,6 +2,10 @@ General discussion on Boeing 777 all series combined
 
 https://github.com/franck-vmd/Boeing-777-Flightgear/discussions
 
+Boeing 777 (2048X2048 texture)
+
+https://github.com/franck-vmd/Boeing-777-Flightgear-2048
+
 ALS techniques notes
 
 ALS technical notes
