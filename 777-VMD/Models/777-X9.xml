@@ -1598,38 +1598,26 @@ Franck.VMD
 
    <!--       ail pliable      -->
 
-         <animation>
-		<type>pick</type>
-		<object-name>BaileD</object-name>
-                <object-name>BaileG</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c51");
-				</script>
-			</binding>
-		</action>
-          <condition>
-            <less-than>
-                <property>engines/engine[0]/rpm</property>
-                <value>40</value>
-            </less-than>
-            <less-than>
-                <property>engines/engine[1]/rpm</property>
-                <value>40</value>
-            </less-than>
-        </condition>
-	</animation>
-
         <animation>
 		<name>c51</name>
 		<type>rotate</type>
 		<object-name>BaileD</object-name>
 		<object-name>whiteflash1</object-name>
 		<property>sim/multiplay/generic/float[70]</property>
+	    <condition>
+            <greater-than>
+			<property>engines/engine[0]/rpm</property>
+                <value>18</value>
+		</greater-than>
+            <greater-than>
+			<property>engines/engine[1]/rpm</property>
+                <value>18</value>
+		</greater-than>
+		<less-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>100</value>
+          </less-than>
+        </condition>
 		<interpolation>
             <entry><ind>0</ind><dep>85</dep></entry>
             <entry><ind>1</ind><dep>0</dep></entry>
@@ -1652,6 +1640,20 @@ Franck.VMD
                 <object-name>BaileG</object-name>
                 <object-name>whiteflash2</object-name>
 		<property>sim/multiplay/generic/float[70]</property>
+		<condition>
+            <greater-than>
+			<property>engines/engine[0]/rpm</property>
+                <value>18</value>
+		</greater-than>
+            <greater-than>
+			<property>engines/engine[1]/rpm</property>
+                <value>18</value>
+		</greater-than>
+		<less-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>100</value>
+          </less-than>
+        </condition>
 		<interpolation>
             <entry><ind>0</ind><dep>-85</dep></entry>
             <entry><ind>1</ind><dep>0</dep></entry>

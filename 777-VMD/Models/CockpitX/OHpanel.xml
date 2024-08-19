@@ -2652,9 +2652,22 @@ Franck.VMD
         <object-name>WingTips.knob</object-name>
         <object-name>WingTips.knob.001</object-name>
         <property>sim/multiplay/generic/float[70]</property>
+        <condition>
+            <greater-than>
+			<property>engines/engine[0]/rpm</property>
+                <value>18</value>
+		</greater-than>
+            <greater-than>
+			<property>engines/engine[1]/rpm</property>
+                <value>18</value>
+		</greater-than>
+		<less-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>100</value>
+          </less-than>
+        </condition>
         <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>0.01</ind><dep>-90</dep></entry>
             <entry><ind>1</ind><dep>-90</dep></entry>
    </interpolation>
         <center>
@@ -3316,22 +3329,6 @@ Franck.VMD
             <button>3</button>
             <repeatable>false</repeatable>
             <binding>
-            <condition>
-            <or>
-            <and>
-                <command>property-toggle</command>
-                <property>systems/electrical/PRI-EPC</property>
-            </and>
-            <and>
-                <command>property-toggle</command>
-                <property>systems/electrical/SEC-EPC</property>
-            </and>
-            <and>
-                <command>property-toggle</command>
-                <property>controls/APU/off-start-run</property>
-            </and>
-            </or>
-            </condition>
                 <command>property-adjust</command>
                 <property>controls/engines/StartIgnition-knob[0]</property>
                 <step>1</step>
@@ -3356,22 +3353,6 @@ Franck.VMD
             <button>4</button>
             <repeatable>false</repeatable>
             <binding>
-            <condition>
-            <or>
-            <and>
-                <command>property-toggle</command>
-                <property>systems/electrical/PRI-EPC</property>
-            </and>
-            <and>
-                <command>property-toggle</command>
-                <property>systems/electrical/SEC-EPC</property>
-            </and>
-            <and>
-                <command>property-toggle</command>
-                <property>controls/APU/off-start-run</property>
-            </and>
-            </or>
-            </condition>
                 <command>property-adjust</command>
                 <property>controls/engines/StartIgnition-knob[0]</property>
                 <step>-1</step>
@@ -3396,22 +3377,6 @@ Franck.VMD
             <button>3</button>
             <repeatable>false</repeatable>
             <binding>
-            <condition>
-            <or>
-            <and>
-                <command>property-toggle</command>
-                <property>systems/electrical/PRI-EPC</property>
-            </and>
-            <and>
-                <command>property-toggle</command>
-                <property>systems/electrical/SEC-EPC</property>
-            </and>
-            <and>
-                <command>property-toggle</command>
-                <property>controls/APU/off-start-run</property>
-            </and>
-            </or>
-            </condition>
                 <command>property-adjust</command>
                 <property>controls/engines/StartIgnition-knob[1]</property>
                 <step>1</step>
@@ -3436,22 +3401,6 @@ Franck.VMD
             <button>4</button>
             <repeatable>false</repeatable>
             <binding>
-            <condition>
-            <or>
-            <and>
-                <command>property-toggle</command>
-                <property>systems/electrical/PRI-EPC</property>
-            </and>
-            <and>
-                <command>property-toggle</command>
-                <property>systems/electrical/SEC-EPC</property>
-            </and>
-            <and>
-                <command>property-toggle</command>
-                <property>controls/APU/off-start-run</property>
-            </and>
-            </or>
-            </condition>
                 <command>property-adjust</command>
                 <property>controls/engines/StartIgnition-knob[1]</property>
                 <step>-1</step>
@@ -6438,6 +6387,20 @@ Franck.VMD
     <animation>
         <type>pick</type>
         <object-name>WingTips.knob</object-name>
+        <condition>
+            <greater-than>
+			<property>engines/engine[0]/rpm</property>
+                <value>18</value>
+		</greater-than>
+            <greater-than>
+			<property>engines/engine[1]/rpm</property>
+                <value>18</value>
+		</greater-than>
+		<less-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>100</value>
+          </less-than>
+        </condition>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>

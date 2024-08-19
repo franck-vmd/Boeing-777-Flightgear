@@ -44,6 +44,20 @@ Syd Adams
         <type>translate</type>
         <object-name>WingTips-FOLD</object-name>
                 <property>sim/multiplay/generic/float[70]</property>
+                <condition>
+            <greater-than>
+			<property>engines/engine[0]/rpm</property>
+                <value>18</value>
+		</greater-than>
+            <greater-than>
+			<property>engines/engine[1]/rpm</property>
+                <value>18</value>
+		</greater-than>
+		<less-than>
+            <property>sim/multiplay/generic/float[7]</property>
+            <value>100</value>
+          </less-than>
+        </condition>
                 <factor>0.05</factor>
         <axis>
             <x>-1</x>
