@@ -6,7 +6,6 @@ MATERIAL "Lights" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000
 MATERIAL "white.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "black" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "white.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "magenta" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.500 0.500 0.500  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "magenta_rembrandt" rgb 0.700 0.300 0.500  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "white.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 OBJECT world
@@ -2424,6 +2423,8 @@ name "FDpitch"
 data 9
 Plane.015
 crease 30.0
+texture "pfd3d.png"
+texrep 1 1
 numvert 4
 0.00301 0.00864 -0.01569
 0.00301 0.00864 0.0375
@@ -2431,18 +2432,20 @@ numvert 4
 0.00301 0.00971 -0.01569
 numsurf 1
 SURF 0X0
-mat 7
+mat 0
 refs 4
-0 0 0
-3 0 0
-2 0 0
-1 0 0
+0 0.744094 0.241831
+3 0.744094 0.241831
+2 0.744094 0.241831
+1 0.744094 0.241831
 kids 0
 OBJECT poly
 name "FDpitch_rembrandt"
 data 9
 Plane.020
 crease 30.0
+texture "pfd3d.png"
+texrep 1 1
 numvert 4
 0.00301 0.00971 -0.01569
 0.00301 0.00971 0.0375
@@ -2450,18 +2453,20 @@ numvert 4
 0.00301 0.00864 -0.01569
 numsurf 1
 SURF 0X0
-mat 8
+mat 0
 refs 4
-3 0 0
-0 0 0
-1 0 0
-2 0 0
+3 0.743156 0.248539
+0 0.743156 0.248539
+1 0.743156 0.248539
+2 0.743156 0.248539
 kids 0
 OBJECT poly
 name "FDroll"
 data 9
 Plane.016
 crease 30.0
+texture "pfd3d.png"
+texrep 1 1
 numvert 4
 0.00301 0.03577 0.01037
 0.00301 -0.01742 0.01037
@@ -2469,18 +2474,20 @@ numvert 4
 0.00301 0.03577 0.01144
 numsurf 1
 SURF 0X0
-mat 7
+mat 0
 refs 4
-0 0 0
-3 0 0
-2 0 0
-1 0 0
+0 0.745617 0.248539
+3 0.745617 0.248539
+2 0.745617 0.248539
+1 0.745617 0.248539
 kids 0
 OBJECT poly
 name "FDroll_rembrandt"
 data 9
 Plane.019
 crease 30.0
+texture "pfd3d.png"
+texrep 1 1
 numvert 4
 0.00301 0.03577 0.01144
 0.00301 -0.01742 0.01144
@@ -2488,12 +2495,12 @@ numvert 4
 0.00301 0.03577 0.01037
 numsurf 1
 SURF 0X0
-mat 8
+mat 0
 refs 4
-3 0 0
-0 0 0
-1 0 0
-2 0 0
+3 0.740696 0.243618
+0 0.740696 0.243618
+1 0.740696 0.243618
+2 0.740696 0.243618
 kids 0
 OBJECT poly
 name "gspointer"
@@ -2552,14 +2559,14 @@ numvert 7
 0.00306 -0.05697 0.00963
 numsurf 2
 SURF 0X0
-mat 8
+mat 7
 refs 4
 0 0 0
 1 0 0
 2 0 0
 5 0 0
 SURF 0X0
-mat 8
+mat 7
 refs 4
 3 0 0
 6 0 0
@@ -3494,7 +3501,7 @@ numvert 4
 0.0025 0.07047 -0.04562
 numsurf 1
 SURF 0X30
-mat 9
+mat 8
 refs 4
 3 0.014578 0.384804
 2 0.002859 0.384804
@@ -3707,7 +3714,7 @@ numvert 4
 0.0033 -0.08742 0.01013
 numsurf 1
 SURF 0X30
-mat 9
+mat 8
 refs 4
 0 0.082031 0.384766
 1 0.054688 0.384766
