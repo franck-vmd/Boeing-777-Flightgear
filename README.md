@@ -6,6 +6,10 @@ Boeing 777 (2048X2048 texture)
 
 https://github.com/franck-vmd/Boeing-777-Flightgear-2048
 
+Boeing 777-200 HDR Project Begins  /  Début du projet Boeing 777-200 HDR
+
+https://github.com/franck-vmd/Boeing-777-Flightgear-2048HDR
+
 ALS techniques notes
 
 ALS technical notes
