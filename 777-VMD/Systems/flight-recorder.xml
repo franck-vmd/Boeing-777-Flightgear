@@ -139,7 +139,6 @@
             <signal>
                 <type>int16</type><property>autopilot/settings/heading-bug-deg</property>
             </signal>
-
             <signal>
                 <type>float</type><property>gear/brake-thermal-energy</property>
             </signal>
@@ -163,14 +162,12 @@
                 <type>float</type>
                 <property>gear/gear[4]/compression-m</property> <!-- "virtual gear", contact point for right axle -->
             </signal>
-
             <signal>
                 <type>float</type><property>controls/gear/nosegear-steering-cmd</property>
             </signal>
             <signal>
                 <type>float</type><property>controls/gear/maingear-steering-cmd</property>
             </signal>
-
             <signal>
                 <type>float</type>
                 <property>velocities/groundspeed-kt</property>
@@ -217,12 +214,112 @@
             </signal>
             <signal>
                 <type>float</type>
-                <property>/sim/systems/wingflexer/params/</property>
+                <property>systems/wingflexer/params/</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/delta-sec</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/a-fuselage-mps2</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/k</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/K</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/m-wing-dry-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/d</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/D</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/f-lift-N</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/lift-node-lbs</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/z-ofs-m</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/m-wing-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-frac</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-node-1-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-node-2-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-node-3-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-node-4-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/z-raw-m</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/d</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/sink-rate-fps</property>
                 <interpolation>linear</interpolation>
             </signal>
             <signal>
                 <type>float</type>
                 <property>/sim/systems/wingflexer/z-m</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/z-max-m</property>
                 <interpolation>linear</interpolation>
             </signal>
             <signal>
