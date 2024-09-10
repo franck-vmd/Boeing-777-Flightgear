@@ -14,10 +14,7 @@
                 
         <model n="0">
             <path>Aircraft/777-VMD/Models/777-300ER.xml</path>
-            <livery>
-				<file>AFR2</file>
-			</livery>
-			<livery-dir type="string">Aircraft/777-VMD/Models/Liveries-300ER</livery-dir>
+
             <door>
                 <position-x-m type="float">-23.7852</position-x-m>
                 <position-y-m type="float">-2.95</position-y-m>
@@ -384,7 +381,6 @@
             <file>Nasal/light-manager.nas</file>
             <file>Nasal/777.nas</file>
             <file>Nasal/wipers.nas</file>
-            <file>Nasal/libraries.nas</file>
             <file>Nasal/autoannunciator.nas</file>
             <file>Nasal/fire.nas</file>
             <file>Nasal/interior-lighting.nas</file>

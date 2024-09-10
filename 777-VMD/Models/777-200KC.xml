@@ -4,7 +4,7 @@ Franck.VMD
 -->
 <PropertyList>
 
-    <path>Aircraft/777-VMD/Models/Liveries-KC/777-200KC.ac</path>
+    <path>Aircraft/777-VMD/Models/Liveries-200KC/777-200KC.ac</path>
 
     <multiplay>
   <refuel>
@@ -15,7 +15,7 @@ Franck.VMD
 
     <nasal>
         <load>
-            var livery_update = aircraft.livery_update.new("Aircraft/777-VMD/Models/Liveries-KC");
+            var livery_update = aircraft.livery_update.new("Aircraft/777-VMD/Models/Liveries-200KC", 10);
         </load>
 
         <unload>
@@ -97,7 +97,7 @@ Franck.VMD
         <object-name>gauche.017</object-name>
         <property-base>sim/model/fuselage</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR1KC.png</texture>
+        <texture>Liveries-200KC/AFR1KC.png</texture>
     </animation>
 
     <animation>
@@ -110,7 +110,7 @@ Franck.VMD
         <object-name>Sphere.003</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR2KC.png</texture>
+        <texture>Liveries-200KC/AFR2KC.png</texture>
     </animation>
     
     <animation>
@@ -125,7 +125,7 @@ Franck.VMD
         <object-name>Rmain.geardoor.001</object-name>
         <property-base>sim/model/fuselage1</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR3KC.png</texture>
+        <texture>Liveries-200KC/AFR3KC.png</texture>
     </animation>
     
     <animation>
@@ -146,7 +146,7 @@ Franck.VMD
         <object-name>entry1rC2</object-name>
         <property-base>sim/model/fuselage2</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR4KC.png</texture>
+        <texture>Liveries-200KC/AFR4KC.png</texture>
     </animation>
     
     <animation>
@@ -172,7 +172,7 @@ Franck.VMD
         <object-name>Wings.004</object-name>
         <property-base>sim/model/fuselage3</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR5KC.png</texture>
+        <texture>Liveries-200KC/AFR5KC.png</texture>
     </animation>
 
     <animation>
@@ -249,7 +249,7 @@ Franck.VMD
         <object-name>Lnavlights</object-name>
         <property-base>sim/model/fuselage4</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR6KC.png</texture>
+        <texture>Liveries-200KC/AFR6KC.png</texture>
     </animation>
 
     <animation>
@@ -289,7 +289,7 @@ Franck.VMD
         <object-name>clapetGD7</object-name>
         <property-base>sim/model/fuselage5</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR7KC.png</texture>
+        <texture>Liveries-200KC/AFR7KC.png</texture>
     </animation>
 
     <animation>
@@ -309,7 +309,7 @@ Franck.VMD
         <object-name>moteur4</object-name>
         <property-base>sim/model/fuselage6</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR8KC.png</texture>
+        <texture>Liveries-200KC/AFR8KC.png</texture>
     </animation>
     
     <animation>
@@ -362,7 +362,7 @@ Franck.VMD
         <object-name>Rgear</object-name>
         <property-base>sim/model/fuselage7</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-KC/AFR9KC.png</texture>
+        <texture>Liveries-200KC/AFR9KC.png</texture>
     </animation>
 
       <effect>

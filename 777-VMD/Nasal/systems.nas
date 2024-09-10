@@ -10,9 +10,45 @@ if(vmodel == "-200F")
 {
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-F");
 }
-else
+else if(vmodel == "-300")
 {
-    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries"~substr(vmodel,0,4));
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-300");
+}
+else if(vmodel == "-300ER")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-300ER");
+}
+else if(vmodel == "-300F")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-300F");
+}
+else if(vmodel == "-X8")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-X8");
+}
+else if(vmodel == "-X9")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-X9");
+}
+else if(vmodel == "-X8F")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-X8F");
+}
+else if(vmodel == "-200")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200");
+}
+else if(vmodel == "-200ER")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200ER");
+}
+else if(vmodel == "-200LR")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200LR");
+}
+else if(vmodel == "-200KC")
+{
+    aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200KC");
 }
 
 #EFIS specific class

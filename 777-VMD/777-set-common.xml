@@ -905,7 +905,7 @@ Service Ceiling: 43,100ft
                     <label>Select Livery</label>
                     <binding>
                         <command>nasal</command>
-                        <script>aircraft.livery.dialog.open()</script>
+                        <script>aircraft.livery.dialog.toggle()</script>
                     </binding>
                 </item>
                 <item n="7">

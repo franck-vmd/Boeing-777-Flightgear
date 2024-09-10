@@ -2,7 +2,7 @@
 
     <sim n="0">
         <description>Boeing 777 USAF</description>
-        <aero>777-200F</aero>
+        <aero>777-200KC</aero>
         <max-payload type="double">448500</max-payload>
         <max-landing-weight type="double">575000</max-landing-weight>
 		<max-takeoff-weight type="double">766800</max-takeoff-weight>
@@ -12,10 +12,7 @@
         <variant-of>777-200</variant-of>
         <model n="0">
             <path>Aircraft/777-VMD/Models/777-200KC.xml</path>
-            <livery>
-				<file>USAF</file>
-	    </livery>
-	<livery-dir type="string">Aircraft/777-VMD/Models/Liveries-KC</livery-dir>
+
         <door>
                 <position-x-m type="float">-18.30</position-x-m>
                 <position-y-m type="float"> -2.95</position-y-m>
@@ -382,7 +379,6 @@
             <file>Nasal/light-manager.nas</file>
             <file>Nasal/777.nas</file>
             <file>Nasal/wipers.nas</file>
-            <file>Nasal/libraries.nas</file>
             <file>Nasal/autoannunciator.nas</file>
             <file>Nasal/fire.nas</file>
             <file>Nasal/interior-lighting.nas</file>

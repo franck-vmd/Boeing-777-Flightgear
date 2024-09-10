@@ -8,7 +8,7 @@ Franck.VMD
 
     <nasal>
         <load>
-            var livery_update = aircraft.livery_update.new("Aircraft/777-VMD/Models/Liveries-200");
+            var livery_update = aircraft.livery_update.new("Aircraft/777-VMD/Models/Liveries-200", 10);
         </load>
 
         <unload>
