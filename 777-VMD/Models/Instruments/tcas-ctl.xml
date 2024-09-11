@@ -10,6 +10,57 @@ Franck.VMD
         <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
         <object-name>TCAS.pnl</object-name>
     </effect>
+    
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Lettering_CS.TCAS</object-name>
+    </effect>
+    
+    <animation>
+        <type>material</type>
+        <object-name>Lettering_CS.TCAS</object-name>
+        <condition>
+            <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+            </greater-than>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.8</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/GLRSFlood-intencity</factor-prop>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>material</type>
+        <object-name>TCAS.pnl</object-name>
+        <object-name>XPNDR_Mode.knob</object-name>
+        <object-name>XPNDR_LR.knob</object-name>
+        <object-name>ATC_alt_src.knob</object-name>
+        <object-name>XPNDR_RSEL_100.knob</object-name>
+        <object-name>XPNDR_RSEL_1000.knob</object-name>
+        <object-name>XPNDR_LSEL_100.knob</object-name>
+        <object-name>XPNDR_LSEL_1000.knob</object-name>
+        <condition>
+                <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.25</red>
+            <green>0.25</green>
+            <blue>0.25</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
 
     <animation>
         <type>textranslate</type>

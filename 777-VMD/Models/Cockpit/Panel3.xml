@@ -8,6 +8,7 @@ Franck.VMD
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>Lettering_FLP_L</object-name>
+        <object-name>HDGREF_TranspCover</object-name>
     </effect>
 
     <effect>
@@ -22,6 +23,7 @@ Franck.VMD
     <animation>
         <type>material</type>
         <object-name>Lettering_FLP_L</object-name>
+        <object-name>InBoardDspl_L.knob.001</object-name>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
@@ -77,7 +79,6 @@ Franck.VMD
     <animation>
         <type>pick</type>
         <object-name>HDGREF_Switch</object-name>
-        <object-name>HDGREF_AcryFace</object-name>
         <condition>
                 <property>systems/navigation/hdgref/cover</property>
         </condition>
@@ -101,7 +102,6 @@ Franck.VMD
     <animation>
         <type>textranslate</type>
         <object-name>HDGREF_Switch</object-name>
-        <object-name>HDGREF_AcryFace</object-name>
         <property>systems/navigation/hdgref/reference</property>
         <factor>0.293</factor>
         <axis>
@@ -114,13 +114,12 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>HDGREF_Switch</object-name>
-        <object-name>HDGREF_AcryFace</object-name>
         <property>systems/navigation/hdgref/button</property>
         <factor>0.0088</factor>
         <axis>
             <x>-1</x>
             <y>0</y>
-            <z>0</z>
+            <z>-1</z>
         </axis>
     </animation>
 
@@ -149,6 +148,7 @@ Franck.VMD
     <animation>
         <type>material</type>
                 <object-name>Lettering_FLP_L</object-name>
+                <object-name>InBoardDspl_L.knob.001</object-name>
                 <condition>
 		<greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>

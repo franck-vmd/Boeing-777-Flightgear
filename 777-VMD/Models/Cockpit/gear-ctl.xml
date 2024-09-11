@@ -10,6 +10,10 @@ Franck.VMD
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>Lettering_Gear</object-name>
+        <object-name>GearLever.001</object-name>
+        <object-name>TERRAIN_OVRD_TranspCover</object-name>
+        <object-name>FLAP_OVRD_TranspCover</object-name>
+        <object-name>GEAR_OVRD_TranspCover</object-name>
     </effect>
 
     <effect>

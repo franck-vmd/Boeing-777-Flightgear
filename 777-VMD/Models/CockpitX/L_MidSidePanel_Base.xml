@@ -14,13 +14,16 @@ Franck.VMD
    <effect>
         <name>777-interior</name>
         <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>Plate_Base</object-name>
-        <object-name>SidePlate</object-name>
+        <object-name>Plate_BaseL</object-name>
+        <object-name>SidePlateL</object-name>
     </effect>
 
     <animation>
         <type>material</type>
         <object-name>Lettering_L_MSP</object-name>
+        <object-name>L_AIRDATA_Placard</object-name>
+        <object-name>L_DISPL_Placard</object-name>
+        <object-name>L_NAV_Placard</object-name>
         <condition>
             <greater-than>   
                 <property>/sim/time/sun-angle-rad</property>
@@ -230,8 +233,8 @@ Franck.VMD
 
    <animation>
         <type>material</type>
-        <object-name>Plate_Base</object-name>
-        <object-name>SidePlate</object-name>
+        <object-name>Plate_BaseL</object-name>
+        <object-name>SidePlateL</object-name>
         <condition>
                 <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
@@ -250,6 +253,9 @@ Franck.VMD
     <animation>
         <type>material</type>
                 <object-name>Lettering_L_MSP</object-name>
+                <object-name>L_AIRDATA_Placard</object-name>
+                <object-name>L_DISPL_Placard</object-name>
+                <object-name>L_NAV_Placard</object-name>
                 <condition>
 		<greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>

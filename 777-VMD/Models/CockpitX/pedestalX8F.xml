@@ -41,6 +41,7 @@ Franck.VMD
         <object-name>Lcutoff.Knob.002</object-name>
         <object-name>Lettering_CS.APU.002</object-name>
         <object-name>Rcutoff.Knob.002</object-name>
+        <object-name>AFA_TranspCover</object-name>
     </effect>
     
     <effect>
@@ -284,32 +285,12 @@ Franck.VMD
     </model>
 
     <model>
-        <name>RadioL1</name>
-        <path>Aircraft/777-VMD/Models/InstrumentsX/radioL1.xml</path>
-        <offsets>
-            <x-m>0.0</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.0</z-m>
-        </offsets>
-    </model>
-
-   <model>
         <name>RadioL</name>
         <path>Aircraft/777-VMD/Models/InstrumentsX/radioL.xml</path>
         <offsets>
             <x-m>-1.25914</x-m>
             <y-m>-0.13209</y-m>
             <z-m>0.01970</z-m>
-        </offsets>
-    </model>
-
-    <model>
-        <name>RadioR1</name>
-        <path>Aircraft/777-VMD/Models/InstrumentsX/radioR1.xml</path>
-        <offsets>
-            <x-m>0.0</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.0</z-m>
         </offsets>
     </model>
 
@@ -324,16 +305,6 @@ Franck.VMD
     </model>
 
     <model>
-        <name>RadioC1</name>
-        <path>Aircraft/777-VMD/Models/InstrumentsX/radioC1.xml</path>
-        <offsets>
-            <x-m>0.0</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.0</z-m>
-        </offsets>
-    </model>
-
-    <model>
         <name>RadioC</name>
         <path>Aircraft/777-VMD/Models/InstrumentsX/radioC.xml</path>
         <offsets>
@@ -344,24 +315,12 @@ Franck.VMD
     </model>
 
     <model>
-        <name>tcas-ctl1</name>
-        <path>Aircraft/777-VMD/Models/InstrumentsX/tcas-ctl1.xml</path>
-        <pitch-deg>1.70</pitch-deg>
+        <name>tcas-ctl</name>
+        <path>Aircraft/777-VMD/Models/InstrumentsX/tcas-ctl.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
             <z-m>0.0</z-m>
-        </offsets>
-    </model>
-
-    <model>
-        <name>tcas-ctl</name>
-        <path>Aircraft/777-VMD/Models/InstrumentsX/tcas-ctl.xml</path>
-        <pitch-deg>1.70</pitch-deg>
-        <offsets>
-            <x-m>-1.11579</x-m>
-            <y-m>0.13795</y-m>
-            <z-m>0.0172</z-m>
         </offsets>
     </model>
 

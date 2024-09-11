@@ -4,6 +4,63 @@ Franck.VMD
 
 <PropertyList>
  <path>tcas-ctl.ac</path>
+ 
+     <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>TCAS.pnl</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Lettering_CS.TCAS</object-name>
+    </effect>
+    
+    <animation>
+        <type>material</type>
+        <object-name>Lettering_CS.TCAS</object-name>
+        <condition>
+            <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+            </greater-than>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.8</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/GLRSFlood-intencity</factor-prop>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>material</type>
+        <object-name>TCAS.pnl</object-name>
+        <object-name>XPNDR_Mode.knob</object-name>
+        <object-name>XPNDR_LR.knob</object-name>
+        <object-name>ATC_alt_src.knob</object-name>
+        <object-name>XPNDR_RSEL_100.knob</object-name>
+        <object-name>XPNDR_RSEL_1000.knob</object-name>
+        <object-name>XPNDR_LSEL_100.knob</object-name>
+        <object-name>XPNDR_LSEL_1000.knob</object-name>
+        <condition>
+                <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.25</red>
+            <green>0.25</green>
+            <blue>0.25</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
 
     <animation>
         <type>textranslate</type>
@@ -74,11 +131,14 @@ Franck.VMD
         <object-name>XPNDR_LR.knob</object-name>
         <property>instrumentation/transponder/tx-switch</property>
         <factor>-30</factor>
-        <center>
-            <x-m>-0.00902</x-m>
-            <y-m>-0.04725</y-m>
-            <z-m>0.00374</z-m>
-        </center>
+        <axis>
+        <x1-m>-1.12483</x1-m>
+        <y1-m>0.09078</y1-m>
+        <z1-m>0.017725</z1-m>
+        <x2-m>-1.12462</x2-m>
+        <y2-m>0.09078</y2-m>
+        <z2-m>0.024759</z2-m>
+        </axis>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -185,11 +245,14 @@ Franck.VMD
         <object-name>ATC_alt_src.knob</object-name>
         <property>instrumentation/transponder/src-switch</property>
         <factor>-30</factor>
-        <center>
-            <x-m>0.01621</x-m>
-            <y-m>-0.04725</y-m>
-            <z-m>0.00374</z-m>
-        </center>
+        <axis>
+        <x1-m>-1.0996</x1-m>
+        <y1-m>0.09078</y1-m>
+        <z1-m>0.016975</z1-m>
+        <x2-m>-1.0994</x2-m>
+        <y2-m>0.09078</y2-m>
+        <z2-m>0.023784</z2-m>
+        </axis>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -253,11 +316,14 @@ Franck.VMD
         <object-name>XPNDR_Mode.knob</object-name>
         <property>instrumentation/transponder/mode-switch</property>
         <factor>-30</factor>
-        <center>
-            <x-m>-0.00145</x-m>
-            <y-m>0.04221</y-m>
-            <z-m>0.00417</z-m>
-        </center>
+        <axis>
+        <x1-m>-1.11732</x1-m>
+        <y1-m>0.18084</y1-m>
+        <z1-m>0.01785</z1-m>
+        <x2-m>-1.11706</x2-m>
+        <y2-m>0.18084</y2-m>
+        <z2-m>0.02651</z2-m>
+        </axis>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -318,11 +384,14 @@ Franck.VMD
         <object-name>XPNDR_RSEL_1000.knob</object-name>
         <property>instrumentation/transponder/id-code-digit3</property>
         <factor>-30</factor>
-        <center>
-            <x-m>0.01726</x-m>
-            <y-m>0.01852</y-m>
-            <z-m>0.00333</z-m>
-        </center>
+        <axis>
+        <x1-m>-1.09855</x1-m>
+        <y1-m>0.156645</y1-m>
+        <z1-m>0.016541</z1-m>
+        <x2-m>-1.09828</x2-m>
+        <y2-m>0.156645</y2-m>
+        <z2-m>0.025405</z2-m>
+        </axis>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -335,11 +404,14 @@ Franck.VMD
         <object-name>XPNDR_RSEL_100.knob</object-name>
         <property>instrumentation/transponder/id-code-digit2</property>
         <factor>-30</factor>
-        <center>
-            <x-m>0.01726</x-m>
-            <y-m>0.01852</y-m>
-            <z-m>0.00333</z-m>
-        </center>
+        <axis>
+        <x1-m>-1.09855</x1-m>
+        <y1-m>0.156645</y1-m>
+        <z1-m>0.016541</z1-m>
+        <x2-m>-1.09828</x2-m>
+        <y2-m>0.156645</y2-m>
+        <z2-m>0.025405</z2-m>
+        </axis>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -352,11 +424,14 @@ Franck.VMD
         <object-name>XPNDR_LSEL_1000.knob</object-name>
         <property>instrumentation/transponder/id-code-digit1</property>
         <factor>-30</factor>
-        <center>
-            <x-m>0.01726</x-m>
-            <y-m>-0.02152</y-m>
-            <z-m>0.00437</z-m>
-        </center>
+        <axis>
+        <x1-m>-1.09855</x1-m>
+        <y1-m>0.116625</y1-m>
+        <z1-m>0.016544</z1-m>
+        <x2-m>-1.09828</x2-m>
+        <y2-m>0.116625</y2-m>
+        <z2-m>0.025405</z2-m>
+        </axis>
         <axis>
             <x>0</x>
             <y>0</y>
@@ -369,11 +444,14 @@ Franck.VMD
         <object-name>XPNDR_LSEL_100.knob</object-name>
         <property>instrumentation/transponder/id-code-digit0</property>
         <factor>-30</factor>
-        <center>
-            <x-m>0.01726</x-m>
-            <y-m>-0.02152</y-m>
-            <z-m>0.00437</z-m>
-        </center>
+        <axis>
+        <x1-m>-1.09855</x1-m>
+        <y1-m>0.116625</y1-m>
+        <z1-m>0.016544</z1-m>
+        <x2-m>-1.09828</x2-m>
+        <y2-m>0.116625</y2-m>
+        <z2-m>0.025405</z2-m>
+        </axis>
         <axis>
             <x>0</x>
             <y>0</y>

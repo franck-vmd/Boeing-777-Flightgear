@@ -13,6 +13,15 @@ Franck.VMD
         <object-name>TRK.toggle</object-name>
         <object-name>FPA.toggle</object-name>
         <object-name>FD-on</object-name>
+        <object-name>HDG.inc</object-name>
+        <object-name>Bank.inc</object-name>
+        <object-name>Bank.dec</object-name>
+        <object-name>HDG.dec</object-name>
+        <object-name>SPD.inc</object-name>
+        <object-name>IAS.up</object-name>
+        <object-name>IAS.dwn</object-name>
+        <object-name>SPD.dec</object-name>
+        <object-name>Circle.104</object-name>
     </effect>
 
     <effect>

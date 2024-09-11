@@ -14,8 +14,73 @@ Franck.VMD
 
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>ADIRU_Placard</object-name>
+        <object-name>AIR-EQCOOL_Placard</object-name>
+        <object-name>AIR-GASPER_Placard</object-name>
+        <object-name>AIR-RCRC_LW_Placard</object-name>
+        <object-name>AIR-RCRC_UP_Placard</object-name>
+        <object-name>APU_Placard</object-name>
+        <object-name>ASYM_ThComp_Placard</object-name>
+        <object-name>AUTOSTART_Placard</object-name>
+        <object-name>BATT_Placard</object-name>
+        <object-name>BCN_Placard</object-name>
+        <object-name>BLD_APU_Placard</object-name>
+        <object-name>BLD_ENG_L_Placard</object-name>
+        <object-name>BLD_ENG_R_Placard</object-name>
+        <object-name>BLD_ISLN_C_Placard</object-name>
+        <object-name>BLD_ISLN_L_Placard</object-name>
+        <object-name>BLD_ISLN_R_Placard</object-name>
+        <object-name>CARGO_DISCH_TranspCover</object-name>
+        <object-name>CTRboost1_Placard</object-name>
+        <object-name>CTRboost2_Placard</object-name>
+        <object-name>ELEC_C1_Placard</object-name>
+        <object-name>ELEC_C2_Placard</object-name>
+        <object-name>FIRE-ARM_AFT_Placard</object-name>
+        <object-name>FIRE-ARM_FWD_Placard</object-name>
+        <object-name>FJ_ARM_Placard</object-name>
+        <object-name>Hydr_LENG_Placard</object-name>
+        <object-name>Hydr_RENG_Placard</object-name>
+        <object-name>LBUS_Placard</object-name>
+        <object-name>LENGDRV_TranspCover</object-name>
+        <object-name>LENG_EEC_Placard</object-name>
+        <object-name>LENG_EEC_TranspCover</object-name>
+        <object-name>LGEN_BCKUP_Placard</object-name>
+        <object-name>LGEN_Placard</object-name>
+        <object-name>LHboost1_Placard</object-name>
+        <object-name>LHboost2_Placard</object-name>
+        <object-name>LOGO_Placard</object-name>
+        <object-name>LPCK_Placard</object-name>
+        <object-name>LTRAIR_Placard</object-name>
         <object-name>Lettering_CB</object-name>
         <object-name>Lettering_Maint</object-name>
+        <object-name>NAV_Placard</object-name>
+        <object-name>NOZZLE_L_Placard</object-name>
+        <object-name>NOZZLE_L_TranspCover</object-name>
+        <object-name>NOZZLE_R_Placard</object-name>
+        <object-name>NOZZLE_R_TranspCover</object-name>
+        <object-name>PASS_OXY_Placard</object-name>
+        <object-name>PASS_OXY_TranspCover</object-name>
+        <object-name>P_OFV_L_Placard</object-name>
+        <object-name>P_OFV_R_Placard</object-name>
+        <object-name>RAM_TranspCover</object-name>
+        <object-name>RBUS_Placard</object-name>
+        <object-name>RENGDRV_TranspCover</object-name>
+        <object-name>RENG_EEC_Placard</object-name>
+        <object-name>RENG_EEC_TranspCover</object-name>
+        <object-name>RGEN_BCKUP_Placard</object-name>
+        <object-name>RGEN_Placard</object-name>
+        <object-name>RHboost1_Placard</object-name>
+        <object-name>RHboost2_Placard</object-name>
+        <object-name>RPCK_Placard</object-name>
+        <object-name>RTRAIR_Placard</object-name>
+        <object-name>STRM_Placard</object-name>
+        <object-name>WH_LF_Placard</object-name>
+        <object-name>WH_LS_Placard</object-name>
+        <object-name>WH_RF_Placard</object-name>
+        <object-name>WH_RS_Placard</object-name>
+        <object-name>WING_Placard</object-name>
+        <object-name>XFeedAFT_Placard</object-name>
+        <object-name>XFeedFWD_Placard</object-name>
     </effect>
     
     <effect>
@@ -24,20 +89,6 @@ Franck.VMD
         <object-name>FIRE-ARM_FWD_Switch.001</object-name>
         <object-name>FIRE-ARM_AFT_Switch.001</object-name>
     </effect>
-
-    <effect>
-       <inherits-from>Aircraft/777-VMD/Models/Effects/glass</inherits-from>
-       <object-name>LENGDRV_TranspCover</object-name>
-       <object-name>RENGDRV_TranspCover</object-name>
-       <object-name>CARGO_DISCH_TranspCover</object-name>
-       <object-name>RENG_EEC_TranspCover</object-name>
-       <object-name>LENG_EEC_TranspCover</object-name>
-       <object-name>PASS_OXY_TranspCover</object-name>
-       <object-name>RAM_TranspCover</object-name>
-       <object-name>NOZZLE_L_TranspCover</object-name>
-       <object-name>NOZZLE_R_TranspCover</object-name>
-       <object-name>RAM_AcryFace</object-name>
-   </effect>
 
     <animation>
         <name>Placard</name>

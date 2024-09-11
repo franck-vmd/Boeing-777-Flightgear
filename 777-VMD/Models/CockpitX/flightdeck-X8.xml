@@ -9,6 +9,7 @@ Franck.VMD
     <offsets>
         <x-m>-24.7</x-m>
     </offsets>
+    
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>Lettering_GB</object-name>
@@ -17,6 +18,19 @@ Franck.VMD
         <object-name>Lettering_FLP_R</object-name>
         <object-name>light plafond</object-name>
         <object-name>Lettering_TS_L</object-name>
+        <object-name>OxMask_4_Base_Lettering</object-name>
+        <object-name>OxMask_3_Base_Lettering</object-name>
+        <object-name>OxMask_2_Base_Lettering</object-name>
+        <object-name>OxMask_1_Base_Lettering</object-name>
+        <object-name>Lettering_Tray_Top</object-name>
+        <object-name>Lettering_OxMask_3</object-name>
+        <object-name>Lettering_OxMask_4</object-name>
+        <object-name>OxMask_4_Panel_Lettering</object-name>
+        <object-name>OxMask_3_Panel_Lettering</object-name>
+        <object-name>OxMask_2_Panel_Lettering</object-name>
+        <object-name>OxMask_1_Panel_Lettering</object-name>
+        <object-name>Lettering_MTerm_1</object-name>
+        <object-name>Lettering_MTerm_2</object-name>
     </effect>
     
     <effect>

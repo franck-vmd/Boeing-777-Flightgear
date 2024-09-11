@@ -48,9 +48,9 @@ Franck.VMD
         <object-name>hf-r.toggle</object-name>
         <condition>
             <greater-than>
-                <property>systems/electrical/CPT-FLT-INST</property>
+			<property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+		</greater-than>
             <property>systems/electrical/outputs/avionics</property>
         </condition>
     </animation>
@@ -64,6 +64,47 @@ Franck.VMD
                 <property>instrumentation/rmu/unit[1]/offside_tuned</property>
             </and>
         </condition>
+    </animation>
+    
+    <animation>
+        <type>material</type>
+        <object-name>Tun2.knob.001</object-name>
+        <object-name>Tun1.knob.001</object-name>
+        <condition>
+            <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+            </greater-than>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.8</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/GLRSFlood-intencity</factor-prop>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>material</type>
+        <object-name>Tun2.knob</object-name>
+        <object-name>Tun1.knob</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.2</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
     </animation>
 
 <!-- Active freq nav mode -->
@@ -621,14 +662,18 @@ Franck.VMD
     <animation>
         <type>knob</type>
         <object-name>Tun1.knob</object-name>
+        <object-name>Tun1.knob.001</object-name>
         <property>instrumentation/rmu/unit[1]/standby-mhz</property>
         <center>
-            <x-m>0.007</x-m><y-m>0.032</y-m><z-m>-0.020</z-m>
+            <x-m>0.007</x-m>
+            <y-m>0.032</y-m>
+            <z-m>-0.020</z-m>
         </center>
         <axis>
-            <x>0</x><y>0</y><z>-1</z>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
         </axis>
-        
         <action>
             <binding>
                 <condition>
@@ -702,14 +747,18 @@ Franck.VMD
     <animation>
         <type>knob</type>
         <object-name>Tun2.knob</object-name>
+        <object-name>Tun2.knob.001</object-name>
         <property>instrumentation/rmu/unit[1]/standby-mhz</property>
         <center>
-            <x-m>0.007</x-m><y-m>0.032</y-m><z-m>-0.020</z-m>
+            <x-m>0.007</x-m>
+            <y-m>0.032</y-m>
+            <z-m>-0.020</z-m>
         </center>
         <axis>
-            <x>0</x><y>0</y><z>-1</z>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
         </axis>
-        
         <action>
             <binding>
                 <condition>
@@ -857,5 +906,4 @@ Franck.VMD
             </binding>
         </hovered>
     </animation>
-    
 </PropertyList>
