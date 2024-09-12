@@ -16,6 +16,20 @@ Franck.VMD
             </less-than>
         </condition>
     </animation>
+    
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Track</object-name>
+        <object-name>runway_bar</object-name>
+        <object-name>speedtrend.down</object-name>
+        <object-name>StallSpeedInd</object-name>
+        <object-name>OverSpeedInd</object-name>
+        <object-name>speedtrend.up</object-name>
+        <object-name>minimum_tail_a</object-name> 
+        <object-name>minimum_tail</object-name>
+        <object-name>runway</object-name>
+        <object-name>minimum_head_a</object-name>
+    </effect>
 
     <animation>
 		<type>select</type>

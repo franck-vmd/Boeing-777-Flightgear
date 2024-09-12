@@ -189,10 +189,10 @@ Franck.VMD
         <name>STDBY AI</name>
         <path>Aircraft/777-VMD/Models/Instruments/stby-ai.xml</path>
         <offsets>
-            <x-m>-1.85329</x-m>
-            <y-m>-0.16053</y-m>
-            <z-m>0.46543</z-m>
-            <pitch-deg>-10</pitch-deg>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+            <pitch-deg>0</pitch-deg>
         </offsets>
     </model>
 
@@ -379,18 +379,6 @@ Franck.VMD
     <model>
         <name>CPclock</name>
         <path>Aircraft/777-VMD/Models/Instruments/chronometer2.xml</path>
-        <offsets>
-            <x-m>0.0</x-m>
-            <y-m>0.0</y-m>
-            <z-m>0.0</z-m>
-            <pitch-deg>0.0</pitch-deg>
-        </offsets>
-    </model>
-
-
-    <model>
-        <name>STDBY AI</name>
-        <path>Aircraft/777-VMD/Models/Instruments/stby-ai1.xml</path>
         <offsets>
             <x-m>0.0</x-m>
             <y-m>0.0</y-m>
