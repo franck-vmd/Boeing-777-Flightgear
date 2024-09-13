@@ -11,7 +11,85 @@ Franck.VMD
         <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
         <object-name>Bezel</object-name>
         <object-name>Logo_Placard</object-name>
+        <object-name>EFIS.screenoff</object-name>
+        <object-name>EFIS.screen</object-name>
+        <object-name>Display_1</object-name>
+        <object-name>Display_1.001</object-name>
+        <object-name>Display_1.002</object-name>
+        <object-name>Display_1.003</object-name>
+        <object-name>Display_1.004</object-name>
+        <object-name>ND.screenL</object-name>
+        <object-name>ND.screenR</object-name>
+        <object-name>Power.off</object-name>
+        <object-name>Power.off.001</object-name>
+        <object-name>Power.offL</object-name>
+        <object-name>Power.offR</object-name>
     </effect>
+    
+    <animation>
+        <type>select</type>
+        <object-name>EFIS.screenoff</object-name>
+        <object-name>Power.offL</object-name>
+        <object-name>Power.offR</object-name>
+        <object-name>Power.off</object-name>
+        <object-name>Power.off.001</object-name>
+        <condition>
+            <less-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </less-than>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>ND.screenL</object-name>
+        <object-name>ND.screenR</object-name>
+        <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </greater-than>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>Display_1.002</object-name>
+        <object-name>Display_1.003</object-name>
+        <condition>
+                        <less-than>
+			<property>sim/multiplay/generic/float[75]</property>
+			<value>0.9</value>
+			</less-than>
+		</condition>
+    </animation>
+    
+    <animation>
+	<type>pick</type>
+	<object-name>ND.screenL</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>b777.showNd();</script>
+		</binding>
+	</action>
+    </animation>
+
+   <animation>
+	<type>pick</type>
+	<object-name>ND.screenR</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>b777.showNd("fo");</script>
+		</binding>
+	</action>
+    </animation>
 
     <animation>
         <type>material</type>

@@ -22,6 +22,7 @@
         <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
         <object-name>EFB</object-name>
         <object-name>Display</object-name>
+        <object-name>Display.001</object-name>
         <object-name>Chart_1</object-name>		
         <object-name>Chart_1_Rot</object-name>		
         <object-name>Chart_2</object-name>

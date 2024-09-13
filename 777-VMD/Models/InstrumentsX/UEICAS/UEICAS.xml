@@ -5,17 +5,6 @@ Franck.VMD
 <PropertyList>
 
  <path>UEICAS.ac</path>
-
-    <animation>
-        <type>select</type>
-        <object-name>EFIS.screenoff</object-name>
-        <condition>
-            <less-than>
-                <property>systems/electrical/outputs/efis</property>
-                <value>15</value>
-            </less-than>
-        </condition>
-    </animation>
     
     <animation>
         <type>select</type>
@@ -35,7 +24,7 @@ Franck.VMD
 
     <model>
         <name>N1</name>
-        <path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/N1.xml</path>
+        <path>Aircraft/777-VMD/Models/Instruments/UEICAS/N1.xml</path>
         <offsets>
             <x-m>0.002</x-m>
             <y-m>-0.048</y-m>
@@ -45,7 +34,7 @@ Franck.VMD
 
     <model>
         <name>EGT</name>
-        <path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/EGT.xml</path>
+        <path>Aircraft/777-VMD/Models/Instruments/UEICAS/EGT.xml</path>
         <offsets>
             <x-m>0.002</x-m>
             <y-m>-0.048</y-m>
@@ -55,7 +44,7 @@ Franck.VMD
 
     <model>
         <name>FlapGear</name>
-        <path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/flap-gear.xml</path>
+        <path>Aircraft/777-VMD/Models/Instruments/UEICAS/flap-gear.xml</path>
         <offsets>
             <x-m>0.003</x-m>
             <y-m>0.050</y-m>
@@ -65,7 +54,7 @@ Franck.VMD
     
 <!--  Cabin Alt  -->
 <model>
-	<path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/display-number.xml</path>
+	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
 		<y-m>-0.037</y-m>
@@ -87,7 +76,7 @@ Franck.VMD
 
 <!--  Landing Alt  -->
 <model>
-	<path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/display-number.xml</path>
+	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
 		<y-m>-0.042</y-m>
@@ -108,7 +97,7 @@ Franck.VMD
 </model>
 <model>
 	<name>LandingAltAuto</name>
-	<path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/display-number.xml</path>
+	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
 		<y-m>-0.028</y-m>
@@ -128,7 +117,7 @@ Franck.VMD
 </model>
 <model>
 	<name>LandingAltMan</name>
-	<path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/display-number.xml</path>
+	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
 		<y-m>-0.028</y-m>
@@ -165,7 +154,7 @@ Franck.VMD
 
 <!--  Cabin Rate  -->
 <model>
-	<path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/display-number.xml</path>
+	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
 		<y-m>-0.002</y-m>
@@ -187,7 +176,7 @@ Franck.VMD
 
 <!--  Delta P  -->
 <model>
-	<path>Aircraft/777-VMD/Models/InstrumentsX/UEICAS/display-number.xml</path>
+	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
 		<y-m>-0.002</y-m>

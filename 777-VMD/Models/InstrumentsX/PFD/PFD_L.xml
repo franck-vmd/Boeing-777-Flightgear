@@ -33,7 +33,6 @@ Franck.VMD
 
     <animation>
 		<type>select</type>
-		<object-name>EFIS.screen</object-name>
                 <object-name>Hsi</object-name>
                 <object-name>Track</object-name>
                 <object-name>coarseLocPointer</object-name>
