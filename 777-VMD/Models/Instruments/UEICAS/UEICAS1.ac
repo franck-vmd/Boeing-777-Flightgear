@@ -1,17 +1,19 @@
 AC3Db
 MATERIAL "interior" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "Material" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.523 0.523 0.523  shi 32 trans 0.000
-MATERIAL "Material.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.523 0.523 0.523  shi 32 trans 0.000
+MATERIAL "Material" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 128 trans 0.000
+MATERIAL "Material.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 128 trans 0.000
 MATERIAL "Material.007" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.523 0.523 0.523  shi 32 trans 0.000
-MATERIAL "Material.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.523 0.523 0.523  shi 32 trans 0.000
+MATERIAL "Material.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 128 trans 0.000
 MATERIAL "interior.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 MATERIAL "Material.005" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 2.000 2.000 2.000  spec 0.000 0.000 0.000  shi 32 trans 0.000
 MATERIAL "Material.006" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 2.000 2.000 2.000  spec 0.000 0.000 0.000  shi 32 trans 0.000
-MATERIAL "Material.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.523 0.523 0.523  shi 32 trans 0.000
-MATERIAL "Material.004" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.523 0.523 0.523  shi 32 trans 0.000
+MATERIAL "Material.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 128 trans 0.000
+MATERIAL "Material.008" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 128 trans 0.500
+MATERIAL "Material.004" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 128 trans 0.000
+MATERIAL "Material.009" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 128 trans 0.500
 OBJECT world
 name "Blender_exporter_v2.26__UEICAS1.ac"
-kids 15
+kids 17
 OBJECT poly
 name "Bezel"
 data 9
@@ -6465,6 +6467,27 @@ refs 4
 2 1 0.000054
 kids 0
 OBJECT poly
+name "Power.offL.001"
+data 13
+Power.off.001
+crease 30.0
+texture "centre gauche 1.png"
+texrep 1 1
+numvert 4
+-1.85052 0.47798 0.4185
+-1.81832 0.29538 0.41849
+-1.81832 0.29539 0.22422
+-1.85052 0.47798 0.22422
+numsurf 1
+SURF 0X20
+mat 9
+refs 4
+3 1 1
+0 0 1
+1 0.000051 0
+2 1 0.000054
+kids 0
+OBJECT poly
 name "Power.offR"
 data 13
 Power.off.002
@@ -6478,7 +6501,28 @@ numvert 4
 -1.85052 0.47798 -0.42146
 numsurf 1
 SURF 0X20
-mat 9
+mat 10
+refs 4
+3 0.993295 1
+0 0 1
+1 0.001007 0
+2 1 0.000055
+kids 0
+OBJECT poly
+name "Power.offR.001"
+data 13
+Power.off.003
+crease 30.0
+texture "centre droite 1.png"
+texrep 1 1
+numvert 4
+-1.85052 0.47798 -0.22718
+-1.81832 0.29538 -0.22719
+-1.81832 0.29539 -0.42146
+-1.85052 0.47798 -0.42146
+numsurf 1
+SURF 0X20
+mat 11
 refs 4
 3 0.993295 1
 0 0 1

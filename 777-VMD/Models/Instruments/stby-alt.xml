@@ -184,16 +184,4 @@ Franck.VMD
 
 <!--  Hotspots -->
 
-
-    <animation>
-        <type>select</type>
-        <object-name>StbyAlt.screenoff</object-name>
-        <condition>
-            <less-than>
-                <property>systems/electrical/outputs/efis</property>
-                <value>15</value>
-            </less-than>
-        </condition>
-    </animation>
-
 </PropertyList>

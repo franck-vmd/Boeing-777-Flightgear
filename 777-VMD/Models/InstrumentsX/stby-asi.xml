@@ -87,15 +87,4 @@ Franck.VMD
    </axis>
  </animation>
 
-    <animation>
-        <type>select</type>
-        <object-name>StbyAsi.screenoff</object-name>
-        <condition>
-            <less-than>
-                <property>systems/electrical/outputs/efis</property>
-                <value>15</value>
-            </less-than>
-        </condition>
-    </animation>
-
 </PropertyList>

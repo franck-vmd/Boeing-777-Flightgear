@@ -13,7 +13,19 @@ Franck.VMD
         <object-name>StbyAsi.knob</object-name>
         <object-name>StbyAsi.knob.001</object-name>
         <object-name>StbyAsibtn</object-name>
+        <object-name>StbyAsi.screenoff</object-name>
     </effect>
+    
+    <animation>
+        <type>select</type>
+        <object-name>StbyAsi.screenoff</object-name>
+        <condition>
+            <less-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </less-than>
+        </condition>
+    </animation>
 
     <animation>
         <type>material</type>

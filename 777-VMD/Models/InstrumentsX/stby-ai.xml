@@ -100,12 +100,12 @@ Franck.VMD
     <animation>
         <type>select</type>
         <object-name>StbyAI.screenoff</object-name>
-        <condition>
-            <less-than>
-                <property>systems/electrical/outputs/efis</property>
-                <value>15</value>
-            </less-than>
-        </condition>
+                <condition>
+                        <less-than>
+			<property>sim/multiplay/generic/float[75]</property>
+			<value>0.9</value>
+			</less-than>
+		</condition>
     </animation>
     
     <animation>

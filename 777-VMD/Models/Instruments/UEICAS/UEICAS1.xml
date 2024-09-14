@@ -24,7 +24,15 @@ Franck.VMD
         <object-name>Power.off.001</object-name>
         <object-name>Power.offL</object-name>
         <object-name>Power.offR</object-name>
+        <object-name>Power.offL.001</object-name>
+        <object-name>Power.offR.001</object-name>
     </effect>
+    
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Power.offL.001</object-name>
+        <object-name>Power.offR.001</object-name>
+   </effect>
     
     <animation>
         <type>select</type>
@@ -45,6 +53,8 @@ Franck.VMD
         <type>select</type>
         <object-name>ND.screenL</object-name>
         <object-name>ND.screenR</object-name>
+        <object-name>Power.offL.001</object-name>
+        <object-name>Power.offR.001</object-name>
         <condition>
             <greater-than>
                 <property>systems/electrical/outputs/efis</property>

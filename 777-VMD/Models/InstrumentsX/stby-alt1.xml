@@ -13,7 +13,19 @@ Franck.VMD
         <object-name>StbyAlt.knob</object-name>
         <object-name>StbyAlt.knob.001</object-name>
         <object-name>StbyAltbtn</object-name>
+        <object-name>StbyAlt.screenoff</object-name>
     </effect>
+    
+    <animation>
+        <type>select</type>
+        <object-name>StbyAlt.screenoff</object-name>
+        <condition>
+            <less-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </less-than>
+        </condition>
+    </animation>
 
 <!--  Hotspots -->
 
@@ -88,9 +100,9 @@ Franck.VMD
         <object-name>StbyAltbtn</object-name>
         <condition>
                 <greater-than>
-                <property>systems/electrical/CPT-FLT-INST</property>
+			<property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
-             </greater-than>
+		</greater-than>
                 <property>controls/lighting/cockpit</property>
         </condition>
         <emission>
