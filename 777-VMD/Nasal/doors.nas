@@ -94,6 +94,12 @@ doors.new("c54", 10);
 doors.new("c55", 10);
 doors.new("ad1", 59);
 doors.new("trap", 120);
+doors.new("c56", 01);
+doors.new("c57", 01);
+doors.new("c58", 01);
+doors.new("c59", 01);
+doors.new("c60", 01);
+doors.new("c61", 01);
 
 doors.new("rat", 10);
 

@@ -157,6 +157,80 @@
 			<factor>1</factor>
 		</volume>
 	</fire>
+	
+<!-- stylo  -->	
+
+       <stylo>
+      <name>BoutonG1</name>
+      <mode>once</mode>
+      <path>/Aircraft/777-VMD/Sounds/click2.wav</path>
+      <condition>
+         <property>sim/multiplay/generic/float[78]</property>
+      </condition>
+      <volume>
+	<factor>1</factor>
+      </volume>
+    </stylo>
+    
+    <stylo>
+      <name>BoutonG2</name>
+      <mode>once</mode>
+      <path>/Aircraft/777-VMD/Sounds/click2.wav</path>
+      <condition>
+         <property>sim/multiplay/generic/float[79]</property>
+      </condition>
+      <volume>
+	<factor>1</factor>
+      </volume>
+    </stylo>
+    
+    <stylo>
+      <name>BoutonG3</name>
+      <mode>once</mode>
+      <path>/Aircraft/777-VMD/Sounds/click2.wav</path>
+      <condition>
+         <property>sim/multiplay/generic/float[80]</property>
+      </condition>
+      <volume>
+	<factor>1</factor>
+      </volume>
+    </stylo>
+    
+    <stylo>
+      <name>BoutonD1</name>
+      <mode>once</mode>
+      <path>/Aircraft/777-VMD/Sounds/click2.wav</path>
+      <condition>
+         <property>sim/multiplay/generic/float[81]</property>
+      </condition>
+      <volume>
+	<factor>1</factor>
+      </volume>
+    </stylo>
+    
+    <stylo>
+      <name>BoutonD2</name>
+      <mode>once</mode>
+      <path>/Aircraft/777-VMD/Sounds/click2.wav</path>
+      <condition>
+         <property>sim/multiplay/generic/float[82]</property>
+      </condition>
+      <volume>
+	<factor>1</factor>
+      </volume>
+    </stylo>
+    
+    <stylo>
+      <name>BoutonD3</name>
+      <mode>once</mode>
+      <path>/Aircraft/777-VMD/Sounds/click2.wav</path>
+      <condition>
+         <property>sim/multiplay/generic/float[83]</property>
+      </condition>
+      <volume>
+	<factor>1</factor>
+      </volume>
+    </stylo>
 
 <!-- brake-parking  -->
 

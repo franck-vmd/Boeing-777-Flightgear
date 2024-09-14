@@ -596,6 +596,12 @@ Franck.VMD
         <object-name>Yoke_R_TrimL.Switch</object-name>
         <object-name>Yoke_R_TrimR.Switch</object-name>
         <object-name>SpotLight_FO.001</object-name>
+        <object-name>BoutonG1</object-name>
+        <object-name>BoutonG2</object-name>
+        <object-name>BoutonG3</object-name>
+        <object-name>BoutonD1</object-name>
+        <object-name>BoutonD2</object-name>
+        <object-name>BoutonD3</object-name>
     </effect>
     
     <effect>
@@ -997,6 +1003,238 @@ Franck.VMD
     
     <!-- Window animations -->
 	<!-- Pilot window -->
+	
+	<!-- Stylo window -->
+	
+	<animation>
+		<type>pick</type>
+		<object-name>BoutonG1</object-name>
+		<action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[78]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(2);
+                </script>
+            </binding>
+        </action>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>BoutonG1</object-name>
+		<property>sim/multiplay/generic/float[78]</property>
+		<factor>0.004</factor>
+		<axis>   
+          <x1-m>-1.50383</x1-m>
+          <y1-m>-0.944922</y1-m>
+          <z1-m>0.714987</z1-m>
+          <x2-m>-1.50928</x2-m>
+          <y2-m>-0.947831</y2-m>
+          <z2-m>0.709095</z2-m>
+               </axis>
+                <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>-1</z>
+             </axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>BoutonG2</object-name>
+		<action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[79]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(2);
+                </script>
+            </binding>
+        </action>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>BoutonG2</object-name>
+		<property>sim/multiplay/generic/float[79]</property>
+		<factor>0.004</factor>
+		<axis>   
+          <x1-m>-1.5134</x1-m>
+          <y1-m>-0.928551</y1-m>
+          <z1-m>0.715431</z1-m>
+          <x2-m>-1.51878</x2-m>
+          <y2-m>-0.931466</y2-m>
+          <z2-m>0.709705</z2-m>
+               </axis>
+                <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>-1</z>
+             </axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>BoutonG3</object-name>
+		<action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[80]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(2);
+                </script>
+            </binding>
+        </action>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>BoutonG3</object-name>
+		<property>sim/multiplay/generic/float[80]</property>
+		<factor>0.004</factor>
+		<axis>   
+          <x1-m>-1.52288</x1-m>
+          <y1-m>-0.912161</y1-m>
+          <z1-m>0.715587</z1-m>
+          <x2-m>-1.52808</x2-m>
+          <y2-m>-0.914976</y2-m>
+          <z2-m>0.71005</z2-m>
+               </axis>
+                <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>-1</z>
+             </axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>BoutonD1</object-name>
+		<action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[81]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(2);
+                </script>
+            </binding>
+        </action>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>BoutonD1</object-name>
+		<property>sim/multiplay/generic/float[81]</property>
+		<factor>0.004</factor>
+		<axis>   
+          <x1-m>-1.50383</x1-m>
+          <y1-m>0.944922</y1-m>
+          <z1-m>0.714987</z1-m>
+          <x2-m>-1.50928</x2-m>
+          <y2-m>0.947831</y2-m>
+          <z2-m>0.709095</z2-m>
+               </axis>
+                <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>-1</z>
+             </axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>BoutonD2</object-name>
+		<action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[82]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(2);
+                </script>
+            </binding>
+        </action>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>BoutonD2</object-name>
+		<property>sim/multiplay/generic/float[82]</property>
+		<factor>0.004</factor>
+		<axis>   
+          <x1-m>-1.5134</x1-m>
+          <y1-m>0.928551</y1-m>
+          <z1-m>0.715431</z1-m>
+          <x2-m>-1.51878</x2-m>
+          <y2-m>0.931466</y2-m>
+          <z2-m>0.709705</z2-m>
+               </axis>
+                <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>-1</z>
+             </axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>BoutonD3</object-name>
+		<action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[83]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(2);
+                </script>
+            </binding>
+        </action>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>BoutonD3</object-name>
+		<property>sim/multiplay/generic/float[83]</property>
+		<factor>0.004</factor>
+		<axis>   
+          <x1-m>-1.52288</x1-m>
+          <y1-m>0.912161</y1-m>
+          <z1-m>0.715587</z1-m>
+          <x2-m>-1.52808</x2-m>
+          <y2-m>0.914976</y2-m>
+          <z2-m>0.71005</z2-m>
+               </axis>
+                <axis>
+              <x>0</x>
+              <y>0</y>
+              <z>-1</z>
+             </axis>
+	</animation>
+	
+	<!-- Stylo window fin -->
 	
 	<animation>
 		<type>translate</type>
