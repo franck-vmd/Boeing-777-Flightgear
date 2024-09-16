@@ -1261,6 +1261,25 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.05</ind><dep>0.03</dep></entry>
+			<entry><ind>1</ind><dep>0.03</dep></entry>
+		</interpolation>
+		<axis>   
+      <x1-m>-1.58914</x1-m>
+      <y1-m>-1.11522</y1-m>
+      <z1-m>0.536855</z1-m>
+      <x2-m>-1.55215</x2-m>
+      <y2-m>-1.12508</y2-m>
+      <z2-m>0.517665</z2-m>
+    </axis>
+	</animation>
+	
+	<animation>
+		<type>translate</type>
+		<object-name>Panel.Lwall.WHandleG</object-name>
+		<property>sim/multiplay/generic/float[37]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.05</ind><dep>0</dep></entry>
 			<entry><ind>0.20</ind><dep>0.12</dep></entry>
 			<entry><ind>1</ind><dep>0.12</dep></entry>
@@ -1277,112 +1296,94 @@ Franck.VMD
 	
 	<animation>
 		<type>translate</type>
-		<object-name>cockpit_WindowsG</object-name>
-		<object-name>Window_L_Air_Hinge4</object-name>
-		<property>sim/multiplay/generic/float[37]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>-0.1</dep></entry>
-			<entry><ind>0.25</ind><dep>-0.1</dep></entry>
-			<entry><ind>0.30</ind><dep>-0.1</dep></entry>
-			<entry><ind>1</ind><dep>0</dep></entry>
-		</interpolation>
-		<axis>   
-      <x1-m>-1.01401</x1-m>
-      <y1-m>-1.31739</y1-m>
-      <z1-m>0.21318</z1-m>
-      <x2-m>-1.07147</x2-m>
-      <y2-m>-1.47762</y2-m>
-      <z2-m>0.364046</z2-m>
-    </axis>
-	</animation>
-	
-	<animation>
-		<type>translate</type>
-		<object-name>cockpit_WindowsG</object-name>
-		<object-name>Window_L_Air_Hinge4</object-name>
-		<property>sim/multiplay/generic/float[37]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>-0.013</dep></entry>
-			<entry><ind>0.30</ind><dep>-0.013</dep></entry>
-			<entry><ind>1</ind><dep>0</dep></entry>
-		</interpolation>
-		<axis>   
-      <x1-m>-0.96959</x1-m>
-      <y1-m>-1.38977</y1-m>
-      <z1-m>0.23855</z1-m>
-      <x2-m>0.037815</x2-m>
-      <y2-m>-1.68088</y2-m>
-      <z2-m>0.24134</z2-m>
-    </axis>
-	</animation>
-	
-	<animation>
-		<type>translate</type>
 		<object-name>verinHautG.001</object-name>
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.04</dep></entry>
-			<entry><ind>0.25</ind><dep>0.04</dep></entry>
+			<entry><ind>0.20</ind><dep>0.00</dep></entry>
 			<entry><ind>0.30</ind><dep>0.04</dep></entry>
+			<entry><ind>0.40</ind><dep>0.04</dep></entry>
 			<entry><ind>1</ind><dep>0.0</dep></entry>
 		</interpolation>
 		<axis>   
-      <x1-m>-1.01401</x1-m>
-      <y1-m>-1.31739</y1-m>
-      <z1-m>0.21318</z1-m>
-      <x2-m>-1.07147</x2-m>
-      <y2-m>-1.47762</y2-m>
-      <z2-m>0.364046</z2-m>
+      <x1-m>-1.06649</x1-m>
+      <y1-m>-1.46369</y1-m>
+      <z1-m>0.350935</z1-m>
+      <x2-m>-1.03728</x2-m>
+      <y2-m>-1.38229</y2-m>
+      <z2-m>0.274285</z2-m>
     </axis>
 	</animation>
 	
 	<animation>
-		<type>translate</type>
-		<object-name>verinBasG</object-name>
+		<type>rotate</type>
+		<object-name>verinHautG</object-name>
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.1</dep></entry>
-			<entry><ind>0.25</ind><dep>0.1</dep></entry>
-			<entry><ind>0.30</ind><dep>0.1</dep></entry>
-			<entry><ind>1</ind><dep>0.0</dep></entry>
+			<entry><ind>0.20</ind><dep>0</dep></entry>
+			<entry><ind>0.30</ind><dep>0</dep></entry>
+			<entry><ind>0.40</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-15</dep></entry>
 		</interpolation>
 		<axis>   
-      <x1-m>-1.01401</x1-m>
-      <y1-m>-1.31739</y1-m>
-      <z1-m>0.21318</z1-m>
-      <x2-m>-1.07147</x2-m>
-      <y2-m>-1.47762</y2-m>
-      <z2-m>0.364046</z2-m>
+      <x1-m>-1.06649</x1-m>
+      <y1-m>-1.46369</y1-m>
+      <z1-m>0.350935</z1-m>
+      <x2-m>-1.03728</x2-m>
+      <y2-m>-1.38229</y2-m>
+      <z2-m>0.274285</z2-m>
     </axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
 		<object-name>cockpit_WindowsG</object-name>
-		<object-name>Window_L_Air_Hinge4</object-name>
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>-8</dep></entry>
-			<entry><ind>1</ind><dep>-8</dep></entry>
+			<entry><ind>0.20</ind><dep>0</dep></entry>
+			<entry><ind>0.30</ind><dep>2.0</dep></entry>
+			<entry><ind>0.40</ind><dep>2.0</dep></entry>
+			<entry><ind>1</ind><dep>3</dep></entry>
 		</interpolation>
-		<axis>   
-      <x1-m>-1.01404</x1-m>
-      <y1-m>-1.31705</y1-m>
-      <z1-m>0.220779</z1-m>
-      <x2-m>-1.01642</x2-m>
-      <y2-m>-1.3245</y2-m>
-      <z2-m>0.211949</z2-m>
-    </axis>
+		<center>
+            <x-m>-1.07167</x-m>
+            <y-m>-1.47792</y-m>
+            <z-m>0.36433</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>cockpit_WindowsG</object-name>
+		<property>sim/multiplay/generic/float[37]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>0</dep></entry>
+			<entry><ind>0.20</ind><dep>0</dep></entry>
+			<entry><ind>0.30</ind><dep>2.0</dep></entry>
+			<entry><ind>0.40</ind><dep>2.0</dep></entry>
+			<entry><ind>1</ind><dep>3</dep></entry>
+		</interpolation>
+		<center>
+            <x-m>-1.07167</x-m>
+            <y-m>-1.47792</y-m>
+            <z-m>0.36433</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
 	</animation>
 	
 	<animation>
@@ -1404,29 +1405,6 @@ Franck.VMD
       <x2-m>0.037815</x2-m>
       <y2-m>-1.68088</y2-m>
       <z2-m>0.24134</z2-m>
-    </axis>
-	</animation>
-	
-	<animation>
-		<type>rotate</type>
-		<object-name>cockpit_WindowsG</object-name>
-		<object-name>Window_L_Air_Hinge4</object-name>
-		<property>sim/multiplay/generic/float[37]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-			<entry><ind>0.30</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>15</dep></entry>
-		</interpolation>
-		<axis>   
-      <x1-m>-1.01401</x1-m>
-      <y1-m>-1.31739</y1-m>
-      <z1-m>0.21318</z1-m>
-      <x2-m>-1.07147</x2-m>
-      <y2-m>-1.47762</y2-m>
-      <z2-m>0.364046</z2-m>
     </axis>
 	</animation>
 
@@ -1466,6 +1444,7 @@ Franck.VMD
 			</binding>
 		</action>
 	</animation>
+	
 	
 	<!-- Copilot window -->
 	
@@ -1507,52 +1486,7 @@ Franck.VMD
       <z2-m>0.510157</z2-m>
     </axis>
 	</animation>
-	
-	<animation>
-		<type>translate</type>
-		<object-name>cockpit_WindowsD</object-name>
-		<object-name>Window_R_Air_Hinge4</object-name>
-		<property>sim/multiplay/generic/float[38]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>-0.1</dep></entry>
-			<entry><ind>0.25</ind><dep>-0.1</dep></entry>
-			<entry><ind>0.30</ind><dep>-0.1</dep></entry>
-			<entry><ind>1</ind><dep>0</dep></entry>
-		</interpolation>
-		<axis>   
-      <x1-m>-1.01401</x1-m>
-      <y1-m>1.31739</y1-m>
-      <z1-m>0.21318</z1-m>
-      <x2-m>-1.07147</x2-m>
-      <y2-m>1.47762</y2-m>
-      <z2-m>0.364046</z2-m>
-    </axis>
-	</animation>
-	
-	<animation>
-		<type>translate</type>
-		<object-name>cockpit_WindowsD</object-name>
-		<object-name>Window_R_Air_Hinge4</object-name>
-		<property>sim/multiplay/generic/float[38]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>-0.013</dep></entry>
-			<entry><ind>0.30</ind><dep>-0.013</dep></entry>
-			<entry><ind>1</ind><dep>0</dep></entry>
-		</interpolation>
-		<axis>   
-      <x1-m>-0.96959</x1-m>
-      <y1-m>1.38977</y1-m>
-      <z1-m>0.23855</z1-m>
-      <x2-m>0.037815</x2-m>
-      <y2-m>1.68088</y2-m>
-      <z2-m>0.24134</z2-m>
-    </axis>
-	</animation>
-	
+		
 	<animation>
 		<type>translate</type>
 		<object-name>verinHautD.001</object-name>
@@ -1560,62 +1494,89 @@ Franck.VMD
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.04</dep></entry>
-			<entry><ind>0.25</ind><dep>0.04</dep></entry>
+			<entry><ind>0.20</ind><dep>0.00</dep></entry>
 			<entry><ind>0.30</ind><dep>0.04</dep></entry>
+			<entry><ind>0.40</ind><dep>0.04</dep></entry>
 			<entry><ind>1</ind><dep>0.0</dep></entry>
 		</interpolation>
 		<axis>   
-      <x1-m>-1.01401</x1-m>
-      <y1-m>1.31739</y1-m>
-      <z1-m>0.21318</z1-m>
-      <x2-m>-1.07147</x2-m>
-      <y2-m>1.47762</y2-m>
-      <z2-m>0.364046</z2-m>
+      <x1-m>-1.06649</x1-m>
+      <y1-m>1.46369</y1-m>
+      <z1-m>0.350935</z1-m>
+      <x2-m>-1.03728</x2-m>
+      <y2-m>1.38229</y2-m>
+      <z2-m>0.274285</z2-m>
     </axis>
 	</animation>
 	
 	<animation>
-		<type>translate</type>
-		<object-name>verinBasD</object-name>
+		<type>rotate</type>
+		<object-name>verinHautD</object-name>
 		<property>sim/multiplay/generic/float[38]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.1</dep></entry>
-			<entry><ind>0.25</ind><dep>0.1</dep></entry>
-			<entry><ind>0.30</ind><dep>0.1</dep></entry>
-			<entry><ind>1</ind><dep>0.0</dep></entry>
+			<entry><ind>0.20</ind><dep>0</dep></entry>
+			<entry><ind>0.30</ind><dep>0</dep></entry>
+			<entry><ind>0.40</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>15</dep></entry>
 		</interpolation>
 		<axis>   
-      <x1-m>-1.01401</x1-m>
-      <y1-m>1.31739</y1-m>
-      <z1-m>0.21318</z1-m>
-      <x2-m>-1.07147</x2-m>
-      <y2-m>1.47762</y2-m>
-      <z2-m>0.364046</z2-m>
+      <x1-m>-1.06649</x1-m>
+      <y1-m>1.46369</y1-m>
+      <z1-m>0.350935</z1-m>
+      <x2-m>-1.03728</x2-m>
+      <y2-m>1.38229</y2-m>
+      <z2-m>0.274285</z2-m>
     </axis>
 	</animation>
 	
 	<animation>
 		<type>rotate</type>
 		<object-name>cockpit_WindowsD</object-name>
-		<object-name>Window_R_Air_Hinge4</object-name>
 		<property>sim/multiplay/generic/float[38]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>8</dep></entry>
-			<entry><ind>1</ind><dep>8</dep></entry>
+			<entry><ind>0.20</ind><dep>0</dep></entry>
+			<entry><ind>0.30</ind><dep>-2.0</dep></entry>
+			<entry><ind>0.40</ind><dep>-2.0</dep></entry>
+			<entry><ind>1</ind><dep>-3</dep></entry>
 		</interpolation>
-		<axis>   
-      <x1-m>-1.01404</x1-m>
-      <y1-m>1.31705</y1-m>
-      <z1-m>0.220779</z1-m>
-      <x2-m>-1.01642</x2-m>
-      <y2-m>1.3245</y2-m>
-      <z2-m>0.211949</z2-m>
-    </axis>
+		<center>
+            <x-m>-1.07167</x-m>
+            <y-m>1.47792</y-m>
+            <z-m>0.36433</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>cockpit_WindowsD</object-name>
+		<property>sim/multiplay/generic/float[38]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>0</dep></entry>
+			<entry><ind>0.20</ind><dep>0</dep></entry>
+			<entry><ind>0.30</ind><dep>-2.0</dep></entry>
+			<entry><ind>0.40</ind><dep>-2.0</dep></entry>
+			<entry><ind>1</ind><dep>-3</dep></entry>
+		</interpolation>
+		<center>
+            <x-m>-1.07167</x-m>
+            <y-m>1.47792</y-m>
+            <z-m>0.36433</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
 	</animation>
 	
 	<animation>
@@ -1637,29 +1598,6 @@ Franck.VMD
       <x2-m>0.037815</x2-m>
       <y2-m>1.68088</y2-m>
       <z2-m>0.24134</z2-m>
-    </axis>
-	</animation>
-	
-	<animation>
-		<type>rotate</type>
-		<object-name>cockpit_WindowsD</object-name>
-		<object-name>Window_R_Air_Hinge4</object-name>
-		<property>sim/multiplay/generic/float[38]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0</dep></entry>
-			<entry><ind>0.25</ind><dep>0</dep></entry>
-			<entry><ind>0.30</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-15</dep></entry>
-		</interpolation>
-		<axis>   
-      <x1-m>-1.01401</x1-m>
-      <y1-m>1.31739</y1-m>
-      <z1-m>0.21318</z1-m>
-      <x2-m>-1.07147</x2-m>
-      <y2-m>1.47762</y2-m>
-      <z2-m>0.364046</z2-m>
     </axis>
 	</animation>
 
