@@ -1242,26 +1242,10 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.05</ind><dep>0.03</dep></entry>
-			<entry><ind>1</ind><dep>0.03</dep></entry>
-		</interpolation>
-		<axis>   
-      <x1-m>-1.58914</x1-m>
-      <y1-m>-1.11522</y1-m>
-      <z1-m>0.536855</z1-m>
-      <x2-m>-1.55215</x2-m>
-      <y2-m>-1.12508</y2-m>
-      <z2-m>0.517665</z2-m>
-    </axis>
-	</animation>
-	
-	<animation>
-		<type>translate</type>
-		<object-name>Panel.Lwall.WHandleG</object-name>
-		<property>sim/multiplay/generic/float[37]</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.05</ind><dep>0.03</dep></entry>
+			<entry><ind>0.05</ind><dep>0.033</dep></entry>
+			<entry><ind>0.07</ind><dep>0.04</dep></entry>
+			<entry><ind>0.10</ind><dep>0.05</dep></entry>
+			<entry><ind>0.15</ind><dep>0.03</dep></entry>
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
 		<axis>   
@@ -1281,7 +1265,7 @@ Franck.VMD
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.05</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.12</dep></entry>
+			<entry><ind>0.15</ind><dep>0.12</dep></entry>
 			<entry><ind>1</ind><dep>0.12</dep></entry>
 		</interpolation>
 		<axis>   
@@ -1300,8 +1284,8 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.00</dep></entry>
+			<entry><ind>0.05</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>0.04</dep></entry>
 			<entry><ind>0.30</ind><dep>0.04</dep></entry>
 			<entry><ind>0.40</ind><dep>0.04</dep></entry>
 			<entry><ind>1</ind><dep>0.0</dep></entry>
@@ -1326,7 +1310,8 @@ Franck.VMD
 			<entry><ind>0.20</ind><dep>0</dep></entry>
 			<entry><ind>0.30</ind><dep>0</dep></entry>
 			<entry><ind>0.40</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-15</dep></entry>
+			<entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-13</dep></entry>
 		</interpolation>
 		<axis>   
       <x1-m>-1.06649</x1-m>
@@ -1344,10 +1329,10 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0</dep></entry>
-			<entry><ind>0.30</ind><dep>2.0</dep></entry>
-			<entry><ind>0.40</ind><dep>2.0</dep></entry>
+			<entry><ind>0.05</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>2.3</dep></entry>
+			<entry><ind>0.30</ind><dep>2.3</dep></entry>
+			<entry><ind>0.40</ind><dep>3.0</dep></entry>
 			<entry><ind>1</ind><dep>3</dep></entry>
 		</interpolation>
 		<center>
@@ -1368,11 +1353,11 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0</dep></entry>
+			<entry><ind>0.05</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>2.0</dep></entry>
 			<entry><ind>0.30</ind><dep>2.0</dep></entry>
-			<entry><ind>0.40</ind><dep>2.0</dep></entry>
-			<entry><ind>1</ind><dep>3</dep></entry>
+			<entry><ind>0.40</ind><dep>3.0</dep></entry>
+			<entry><ind>1</ind><dep>3.0</dep></entry>
 		</interpolation>
 		<center>
             <x-m>-1.07167</x-m>
@@ -1392,10 +1377,10 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[37]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.00</dep></entry>
-			<entry><ind>0.25</ind><dep>0.00</dep></entry>
-			<entry><ind>0.30</ind><dep>0.00</dep></entry>
+			<entry><ind>0.05</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>0.02</dep></entry>
+			<entry><ind>0.25</ind><dep>0.02</dep></entry>
+			<entry><ind>0.30</ind><dep>0.02</dep></entry>
 			<entry><ind>1</ind><dep>0.63</dep></entry>
 		</interpolation>
 		<axis>   
@@ -1421,12 +1406,12 @@ Franck.VMD
 			<entry><ind>1</ind><dep>-1440</dep></entry>
 		</interpolation>
 		<axis>   
-      <x1-m>-0.938212</x1-m>
-      <y1-m>-1.24954</y1-m>
-      <z1-m>0.209823</z1-m>
-      <x2-m>-0.938212</x2-m>
-      <y2-m>-1.26831</y2-m>
-      <z2-m>0.18025</z2-m>
+      <x1-m>-0.938215</x1-m>
+      <y1-m>-1.26832</y1-m>
+      <z1-m>0.18025</z1-m>
+      <x2-m>-0.938215</x2-m>
+      <y2-m>-1.24954</y2-m>
+      <z2-m>0.209825</z2-m>
     </axis>
 	</animation>
 
@@ -1454,7 +1439,10 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[38]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.05</ind><dep>0.03</dep></entry>
+			<entry><ind>0.05</ind><dep>0.033</dep></entry>
+			<entry><ind>0.07</ind><dep>0.04</dep></entry>
+			<entry><ind>0.10</ind><dep>0.05</dep></entry>
+			<entry><ind>0.15</ind><dep>0.03</dep></entry>
 			<entry><ind>1</ind><dep>0.03</dep></entry>
 		</interpolation>
 		<axis>   
@@ -1474,7 +1462,7 @@ Franck.VMD
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
 			<entry><ind>0.05</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.12</dep></entry>
+			<entry><ind>0.15</ind><dep>0.12</dep></entry>
 			<entry><ind>1</ind><dep>0.12</dep></entry>
 		</interpolation>
 		<axis>   
@@ -1486,15 +1474,15 @@ Franck.VMD
       <z2-m>0.510157</z2-m>
     </axis>
 	</animation>
-		
+	
 	<animation>
 		<type>translate</type>
 		<object-name>verinHautD.001</object-name>
 		<property>sim/multiplay/generic/float[38]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.00</dep></entry>
+			<entry><ind>0.05</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>0.04</dep></entry>
 			<entry><ind>0.30</ind><dep>0.04</dep></entry>
 			<entry><ind>0.40</ind><dep>0.04</dep></entry>
 			<entry><ind>1</ind><dep>0.0</dep></entry>
@@ -1519,7 +1507,8 @@ Franck.VMD
 			<entry><ind>0.20</ind><dep>0</dep></entry>
 			<entry><ind>0.30</ind><dep>0</dep></entry>
 			<entry><ind>0.40</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>15</dep></entry>
+			<entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>13</dep></entry>
 		</interpolation>
 		<axis>   
       <x1-m>-1.06649</x1-m>
@@ -1537,10 +1526,10 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[38]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0</dep></entry>
-			<entry><ind>0.30</ind><dep>-2.0</dep></entry>
-			<entry><ind>0.40</ind><dep>-2.0</dep></entry>
+			<entry><ind>0.05</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>-2.3</dep></entry>
+			<entry><ind>0.30</ind><dep>-2.3</dep></entry>
+			<entry><ind>0.40</ind><dep>-3.0</dep></entry>
 			<entry><ind>1</ind><dep>-3</dep></entry>
 		</interpolation>
 		<center>
@@ -1561,11 +1550,11 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[38]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0</dep></entry>
+			<entry><ind>0.05</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>-2.0</dep></entry>
 			<entry><ind>0.30</ind><dep>-2.0</dep></entry>
-			<entry><ind>0.40</ind><dep>-2.0</dep></entry>
-			<entry><ind>1</ind><dep>-3</dep></entry>
+			<entry><ind>0.40</ind><dep>-3.0</dep></entry>
+			<entry><ind>1</ind><dep>-3.0</dep></entry>
 		</interpolation>
 		<center>
             <x-m>-1.07167</x-m>
@@ -1585,10 +1574,10 @@ Franck.VMD
 		<property>sim/multiplay/generic/float[38]</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>0.15</ind><dep>0</dep></entry>
-			<entry><ind>0.20</ind><dep>0.00</dep></entry>
-			<entry><ind>0.25</ind><dep>0.00</dep></entry>
-			<entry><ind>0.30</ind><dep>0.00</dep></entry>
+			<entry><ind>0.05</ind><dep>0</dep></entry>
+			<entry><ind>0.15</ind><dep>0.02</dep></entry>
+			<entry><ind>0.25</ind><dep>0.02</dep></entry>
+			<entry><ind>0.30</ind><dep>0.02</dep></entry>
 			<entry><ind>1</ind><dep>0.63</dep></entry>
 		</interpolation>
 		<axis>   
@@ -1611,15 +1600,15 @@ Franck.VMD
 			<entry><ind>0.20</ind><dep>0</dep></entry>
 			<entry><ind>0.25</ind><dep>0</dep></entry>
 			<entry><ind>0.30</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>1440</dep></entry>
+			<entry><ind>1</ind><dep>-1440</dep></entry>
 		</interpolation>
 		<axis>   
-      <x1-m>-0.938212</x1-m>
-      <y1-m>1.2455</y1-m>
-      <z1-m>0.209763</z1-m>
-      <x2-m>-0.938212</x2-m>
-      <y2-m>1.26427</y2-m>
-      <z2-m>0.18019</z2-m>
+      <x1-m>-0.938215</x1-m>
+      <y1-m>1.26428</y1-m>
+      <z1-m>0.18019</z1-m>
+      <x2-m>-0.938215</x2-m>
+      <y2-m>1.2455</y2-m>
+      <z2-m>0.209765</z2-m>
     </axis>
 	</animation>
 
