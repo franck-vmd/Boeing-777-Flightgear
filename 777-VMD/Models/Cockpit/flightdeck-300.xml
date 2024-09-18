@@ -1622,6 +1622,98 @@ Franck.VMD
 		</action>
 	</animation>
 	
+	<animation>
+		<type>pick</type>
+		<object-name>cockpit_WindowsG.002</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c62");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>cockpit_WindowsG.001</object-name>
+        <condition>
+            <property>sim/multiplay/generic/float[84]</property>
+        </condition>
+    </animation>
+    
+    <animation>
+		<type>pick</type>
+		<object-name>cockpit_WindowsG.004</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c63");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>cockpit_WindowsG.003</object-name>
+        <condition>
+            <property>sim/multiplay/generic/float[85]</property>
+        </condition>
+    </animation>
+    
+    <animation>
+		<type>pick</type>
+		<object-name>cockpit_WindowsD.002</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c64");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>cockpit_WindowsD.001</object-name>
+        <condition>
+            <property>sim/multiplay/generic/float[86]</property>
+        </condition>
+    </animation>
+    
+    <animation>
+		<type>pick</type>
+		<object-name>cockpit_WindowsD.004</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c65");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+        <type>select</type>
+        <object-name>cockpit_WindowsD.003</object-name>
+        <condition>
+            <property>sim/multiplay/generic/float[87]</property>
+        </condition>
+    </animation>
+	
 	
     
     <animation>
