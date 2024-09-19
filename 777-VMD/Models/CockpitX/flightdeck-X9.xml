@@ -1712,9 +1712,7 @@ Franck.VMD
         <condition>
             <property>sim/multiplay/generic/float[87]</property>
         </condition>
-    </animation>
-	
-	
+    </animation>	
     
     <animation>
 		<name>c14</name>

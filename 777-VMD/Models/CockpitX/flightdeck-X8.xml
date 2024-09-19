@@ -1713,8 +1713,29 @@ Franck.VMD
             <property>sim/multiplay/generic/float[87]</property>
         </condition>
     </animation>
+    
+    <animation>
+		<type>pick</type>
+		<object-name>cockpit_WindowsD.005</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c66");
+				</script>
+			</binding>
+		</action>
+	</animation>
 	
-	
+	<animation>
+        <type>select</type>
+        <object-name>cockpit_WindowsD.006</object-name>
+        <condition>
+            <property>sim/multiplay/generic/float[88]</property>
+        </condition>
+    </animation>	
     
     <animation>
 		<name>c14</name>
