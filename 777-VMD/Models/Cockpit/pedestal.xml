@@ -190,7 +190,7 @@ Franck.VMD
         <name>CDU3</name>
         <path>Aircraft/777-VMD/Models/Instruments/CDU/boeing.xml</path>
         <offsets>
-            <x-m>-1.077</x-m>
+            <x-m>-1.0847</x-m>
             <y-m>-0.000299</y-m>
             <z-m>0.016</z-m>
             <pitch-deg>-88.4</pitch-deg>
