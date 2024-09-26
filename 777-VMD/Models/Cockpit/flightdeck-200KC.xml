@@ -440,6 +440,8 @@ Franck.VMD
         <object-name>Yokeshaft</object-name>
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
+        <object-name>Continental</object-name>
+        <object-name>Continental.001</object-name>
         <object-name>Shield</object-name>
         <object-name>feuille</object-name>
         <object-name>feuille1</object-name>
@@ -679,6 +681,8 @@ Franck.VMD
         <object-name>Yokeshaft</object-name>
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
+        <object-name>Continental</object-name>
+        <object-name>Continental.001</object-name>
         <object-name>Yoke_L_BTN.Btn</object-name>
         <object-name>Yoke_L_BTN_Base</object-name>
         <object-name>Yoke_L_TrimBase</object-name>
@@ -699,6 +703,8 @@ Franck.VMD
         <object-name>Yokeshaft</object-name>
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
+        <object-name>Continental</object-name>
+        <object-name>Continental.001</object-name>
         <object-name>Yoke_L_BTN.Btn</object-name>
         <object-name>Yoke_L_BTN_Base</object-name>
         <object-name>Yoke_L_TrimBase</object-name>
@@ -726,6 +732,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Yoke</object-name>
+        <object-name>Continental</object-name>
         <object-name>Yoke_R_BTN.Btn</object-name>
         <object-name>Yoke_R_BTN_Base</object-name>
         <object-name>Yoke_R_TrimBase</object-name>
@@ -748,6 +755,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Yoke.001</object-name>
+        <object-name>Continental.001</object-name>
         <object-name>Yoke_L_BTN.Btn</object-name>
         <object-name>Yoke_L_BTN_Base</object-name>
         <object-name>Yoke_L_TrimBase</object-name>

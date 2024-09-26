@@ -435,6 +435,8 @@ Franck.VMD
         <object-name>Yokeshaft</object-name>
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
+        <object-name>Continental</object-name>
+        <object-name>Continental.001</object-name>
         <object-name>Shield</object-name>
         <object-name>feuille</object-name>
         <object-name>feuille1</object-name>
@@ -674,6 +676,8 @@ Franck.VMD
         <object-name>Yokeshaft</object-name>
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
+        <object-name>Continental</object-name>
+        <object-name>Continental.001</object-name>
         <object-name>Yoke_L_BTN.Btn</object-name>
         <object-name>Yoke_L_BTN_Base</object-name>
         <object-name>Yoke_L_TrimBase</object-name>
@@ -694,6 +698,8 @@ Franck.VMD
         <object-name>Yokeshaft</object-name>
         <object-name>Yoke</object-name>
         <object-name>Yoke.001</object-name>
+        <object-name>Continental</object-name>
+        <object-name>Continental.001</object-name>
         <object-name>Yoke_L_BTN.Btn</object-name>
         <object-name>Yoke_L_BTN_Base</object-name>
         <object-name>Yoke_L_TrimBase</object-name>
@@ -721,6 +727,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Yoke</object-name>
+        <object-name>Continental</object-name>
         <object-name>Yoke_R_BTN.Btn</object-name>
         <object-name>Yoke_R_BTN_Base</object-name>
         <object-name>Yoke_R_TrimBase</object-name>
@@ -743,6 +750,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Yoke.001</object-name>
+        <object-name>Continental.001</object-name>
         <object-name>Yoke_L_BTN.Btn</object-name>
         <object-name>Yoke_L_BTN_Base</object-name>
         <object-name>Yoke_L_TrimBase</object-name>
@@ -2383,6 +2391,8 @@ Franck.VMD
        <object-name>Yokeshaft</object-name>
        <object-name>Yoke</object-name>
        <object-name>Yoke.001</object-name>
+       <object-name>Continental</object-name>
+       <object-name>Continental.001</object-name>
        <object-name>Pseat.armrest</object-name>
        <object-name>Cseat.armrest</object-name>
        <object-name>Yoke_L_BTN.Btn</object-name>
@@ -2448,72 +2458,5 @@ Franck.VMD
             <factor-prop>controls/lighting/dome-intencity</factor-prop>
         </emission>
     </animation> 
-
-    <!--animation>
-        <type>pick</type>
-        <object-name>Knob.002</object-name>
-        <action>
-            <button>0</button>
-            <binding>
-                <command>nasal</command>
-                <script>
-                setprop("instrumentation/radar/switch", "off");
-                if (getprop("instrumentation/efis/mfd/display-mode")!="HYDRAULIC" and getprop("instrumentation/efis/mfd/display-mode")!="FUEL" and getprop("instrumentation/efis/mfd/display-mode")!="GEAR" and getprop("instrumentation/efis/mfd/display-mode")!="ELECTRIC" and getprop("instrumentation/efis/mfd/display-mode")!="PRESURE" and getprop("instrumentation/efis/mfd/display-mode")!="INFORMATION" and getprop("instrumentation/efis/mfd/display-mode")!="DOORS" and getprop("instrumentation/efis/mfd/display-mode")!="GMCS")
-                setprop("instrumentation/efis/mfd/display-mode", "FUEL");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="FUEL")
-                setprop("instrumentation/efis/mfd/display-mode", "GEAR");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="GEAR")
-                setprop("instrumentation/efis/mfd/display-mode", "ELECTRIC");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="ELECTRIC")
-                setprop("instrumentation/efis/mfd/display-mode", "PRESURE");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="PRESURE")
-                setprop("instrumentation/efis/mfd/display-mode", "INFORMATION");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="INFORMATION")
-                setprop("instrumentation/efis/mfd/display-mode", "GMCS");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="GMCS")
-                setprop("instrumentation/efis/mfd/display-mode", "DOORS");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="DOORS")
-                setprop("instrumentation/efis/mfd/display-mode", "HYDRAULIC");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="HYDRAULIC")
-                setprop("instrumentation/efis/mfd/display-mode", "FUEL");
-                controls.click(2);
-                </script>
-            </binding>
-        </action>
-    </animation-->
-
-
-<!--animation>
-        <type>pick</type>
-        <object-name>Knob.002</object-name>
-        <action>
-            <button>1</button>
-            <binding>
-                <command>nasal</command>
-                <script>
-                setprop("instrumentation/radar/switch", "off");
-                if (getprop("instrumentation/efis/mfd/display-mode")!="HYDRAULIC" and getprop("instrumentation/efis/mfd/display-mode")!="FUEL" and getprop("instrumentation/efis/mfd/display-mode")!="GEAR" and getprop("instrumentation/efis/mfd/display-mode")!="ELECTRIC" and getprop("instrumentation/efis/mfd/display-mode")!="PRESURE" and getprop("instrumentation/efis/mfd/display-mode")!="INFORMATION" and getprop("instrumentation/efis/mfd/display-mode")!="DOORS" and getprop("instrumentation/efis/mfd/display-mode")!="GMCS")
-                setprop("instrumentation/efis/mfd/display-mode", "HYDRAULIC");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="HYDRAULIC")
-                setprop("instrumentation/efis/mfd/display-mode", "DOORS");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="DOORS")
-                setprop("instrumentation/efis/mfd/display-mode", "GMCS");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="GMCS")
-                setprop("instrumentation/efis/mfd/display-mode", "INFORMATION");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="INFORMATION")
-                setprop("instrumentation/efis/mfd/display-mode", "PRESURE");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="PRESURE")
-                setprop("instrumentation/efis/mfd/display-mode", "ELECTRIC");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="ELECTRIC")
-                setprop("instrumentation/efis/mfd/display-mode", "GEAR");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="GEAR")
-                setprop("instrumentation/efis/mfd/display-mode", "FUEL");
-                else if (getprop("instrumentation/efis/mfd/display-mode")=="FUEL")
-                setprop("instrumentation/efis/mfd/display-mode", "HYDRAULIC");
-                controls.click(2);
-                </script>
-            </binding>
-        </action>
-    </animation-->
 
 </PropertyList>
