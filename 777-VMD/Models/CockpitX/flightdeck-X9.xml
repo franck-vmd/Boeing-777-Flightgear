@@ -309,9 +309,9 @@ Franck.VMD
         <name>CTL1</name>
         <path>Aircraft/777-VMD/Models/InstrumentsX/EFIS/efis-ctl1.xml</path>
         <offsets>
-            <x-m>0.107267</x-m>
-            <y-m>0.00546</y-m>
-            <z-m>0.065831</z-m>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>
@@ -320,9 +320,9 @@ Franck.VMD
         <name>CTL2</name>
         <path>Aircraft/777-VMD/Models/InstrumentsX/EFIS/efis-ctl2.xml</path>
         <offsets>
-            <x-m>0.107267</x-m>
-            <y-m>-0.00546</y-m>
-            <z-m>0.065831</z-m>
+            <x-m>0.0</x-m>
+            <y-m>-0.0</y-m>
+            <z-m>0.0</z-m>
             <pitch-deg>0.0</pitch-deg>
         </offsets>
     </model>

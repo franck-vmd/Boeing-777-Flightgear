@@ -136,12 +136,12 @@ Franck.VMD
         <property>instrumentation/afds/inputs/bank-limit-switch</property>
         <factor>-180.0</factor>
         <axis>
-        <x1-m>-1.71406</x1-m>
-        <y1-m>-0.06282</y1-m>
-        <z1-m>0.63312</z1-m>
-        <x2-m>-1.70115</x2-m>
-        <y2-m>-0.06282</y2-m>
-        <z2-m>0.635425</z2-m>
+        <x1-m>-1.67427</x1-m>
+        <y1-m>-0.064295</y1-m>
+        <z1-m>0.64009</z1-m>
+        <x2-m>-1.69397</x2-m>
+        <y2-m>-0.064295</y2-m>
+        <z2-m>0.636628</z2-m>
         </axis>
         <axis>
             <x>1</x>
@@ -162,12 +162,12 @@ Franck.VMD
         <property>autopilot/settings/target-speed-kt</property>
         <factor>100</factor>
         <axis>
-        <x1-m>-1.71204</x1-m>
-        <y1-m>-0.18906</y1-m>
-        <z1-m>0.620015</z1-m>
-        <x2-m>-1.6872</x2-m>
-        <y2-m>-0.18906</y2-m>
-        <z2-m>0.624395</z2-m>
+        <x1-m>-1.6872</x1-m>
+        <y1-m>-0.19051</y1-m>
+        <z1-m>0.624395</z1-m>
+        <x2-m>-1.7069</x2-m>
+        <y2-m>-0.19051</y2-m>
+        <z2-m>0.620925</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -186,12 +186,12 @@ Franck.VMD
             <property>autopilot/settings/target-speed-mach</property>
         <factor>10000</factor>
         <axis>
-        <x1-m>-1.71204</x1-m>
-        <y1-m>-0.18906</y1-m>
-        <z1-m>0.620015</z1-m>
-        <x2-m>-1.6872</x2-m>
-        <y2-m>-0.18906</y2-m>
-        <z2-m>0.624395</z2-m>
+        <x1-m>-1.6872</x1-m>
+        <y1-m>-0.19051</y1-m>
+        <z1-m>0.624395</z1-m>
+        <x2-m>-1.7069</x2-m>
+        <y2-m>-0.19051</y2-m>
+        <z2-m>0.620925</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -206,12 +206,12 @@ Franck.VMD
         <property>autopilot/settings/heading-bug-deg</property>
         <factor>100</factor>
         <axis>
-        <x1-m>-1.70155</x1-m>
-        <y1-m>-0.06282</y1-m>
-        <z1-m>0.635355</z1-m>
-        <x2-m>-1.67812</x2-m>
-        <y2-m>-0.06282</y2-m>
-        <z2-m>0.63949</z2-m>
+        <x1-m>-1.67427</x1-m>
+        <y1-m>-0.064295</y1-m>
+        <z1-m>0.64009</z1-m>
+        <x2-m>-1.69397</x2-m>
+        <y2-m>-0.064295</y2-m>
+        <z2-m>0.636628</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -226,12 +226,12 @@ Franck.VMD
         <property>autopilot/settings/counter-set-altitude-ft</property>
         <factor>1</factor>
         <axis>
-        <x1-m>-1.70161</x1-m>
-        <y1-m>0.08187</y1-m>
-        <z1-m>0.635345</z1-m>
-        <x2-m>-1.68433</x2-m>
-        <y2-m>0.08189</y2-m>
-        <z2-m>0.63839</z2-m>
+        <x1-m>-1.68432</x1-m>
+        <y1-m>0.08044</y1-m>
+        <z1-m>0.63839</z1-m>
+        <x2-m>-1.70402</x2-m>
+        <y2-m>0.08044</y2-m>
+        <z2-m>0.634921</z2-m>
         </axis>
         <axis>
             <x>-1</x>
@@ -247,12 +247,12 @@ Franck.VMD
         <property>instrumentation/afds/inputs/alt-knob</property>
         <factor>40</factor>
         <axis>
-        <x1-m>-1.70115</x1-m>
-        <y1-m>0.08191</y1-m>
-        <z1-m>0.635415</z1-m>
-        <x2-m>-1.71406</x2-m>
-        <y2-m>0.08191</y2-m>
-        <z2-m>0.63314</z2-m>
+        <x1-m>-1.68432</x1-m>
+        <y1-m>0.08044</y1-m>
+        <z1-m>0.63839</z1-m>
+        <x2-m>-1.70402</x2-m>
+        <y2-m>0.08044</y2-m>
+        <z2-m>0.634921</z2-m>
         </axis>
         <axis>
             <x>-1</x>

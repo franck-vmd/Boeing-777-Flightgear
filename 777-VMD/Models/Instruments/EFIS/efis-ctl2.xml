@@ -60,12 +60,12 @@ Franck.VMD
         <property>instrumentation/efis/inputs/kpa-mode</property>
         <factor>80</factor>
         <axis>
-        <x1-m>-1.79645</x1-m>
-        <y1-m>0.409771</y1-m>
-        <z1-m>0.608102</z1-m>
-        <x2-m>-1.82648</x2-m>
-        <y2-m>0.409771</y2-m>
-        <z2-m>0.602806</z2-m>
+        <x1-m>-1.6895</x1-m>
+        <y1-m>0.39995</y1-m>
+        <z1-m>0.672335</z1-m>
+        <x2-m>-1.7092</x2-m>
+        <y2-m>0.39995</y2-m>
+        <z2-m>0.668869</z2-m>
         </axis>
         <axis>
             <x>1</x>
@@ -88,12 +88,12 @@ Franck.VMD
             <entry><ind>640</ind><dep>180</dep></entry>
         </interpolation>
         <axis>
-        <x1-m>-1.79133</x1-m>
-        <y1-m>0.389658</y1-m>
-        <z1-m>0.578244</z1-m>
-        <x2-m>-1.82135</x2-m>
-        <y2-m>0.389658</y2-m>
-        <z2-m>0.572948</z2-m>
+        <x1-m>-1.70385</x1-m>
+        <y1-m>0.37984</y1-m>
+        <z1-m>0.63904</z1-m>
+        <x2-m>-1.72354</x2-m>
+        <y2-m>0.37984</y2-m>
+        <z2-m>0.635567</z2-m>
         </axis>
         <axis>
             <x>1</x>
@@ -108,12 +108,12 @@ Franck.VMD
         <property>instrumentation/efis/inputs/minimums-mode</property>
         <factor>80</factor>
         <axis>
-        <x1-m>-1.79645</x1-m>
-        <y1-m>0.323034</y1-m>
-        <z1-m>0.608102</z1-m>
-        <x2-m>-1.82648</x2-m>
-        <y2-m>0.323033</y2-m>
-        <z2-m>0.602806</z2-m>
+        <x1-m>-1.68948</x1-m>
+        <y1-m>0.31321</y1-m>
+        <z1-m>0.672335</z1-m>
+        <x2-m>-1.70918</x2-m>
+        <y2-m>0.31321</y2-m>
+        <z2-m>0.668869</z2-m>
         </axis>
         <axis>
             <x>1</x>
@@ -133,12 +133,12 @@ Franck.VMD
             <entry><ind>3</ind><dep>90</dep></entry>
         </interpolation>
         <axis>
-        <x1-m>-1.79148</x1-m>
-        <y1-m>0.344165</y1-m>
-        <z1-m>0.578435</z1-m>
-        <x2-m>-1.82151</x2-m>
-        <y2-m>0.344165</y2-m>
-        <z2-m>0.573139</z2-m>
+        <x1-m>-1.704</x1-m>
+        <y1-m>0.334351</y1-m>
+        <z1-m>0.639235</z1-m>
+        <x2-m>-1.7237</x2-m>
+        <y2-m>0.334351</y2-m>
+        <z2-m>0.635769</z2-m>
         </axis>
         <axis>
             <x>1</x>
