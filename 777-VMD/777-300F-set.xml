@@ -368,7 +368,6 @@
             <file>Models/Instruments/MFD-F/eng.nas</file>
             <file>Models/Instruments/MFD-F/fuel.nas</file>
             <file>Models/Instruments/MFD-F/doors.nas</file>
-            <file>Models/Instruments/MFD-F/cam.nas</file>
             <file>Models/Instruments/MFD-F/elec.nas</file>
             <file>Models/Instruments/MFD-F/gear.nas</file>
             <file>Models/Instruments/MFD-F/stat.nas</file>
