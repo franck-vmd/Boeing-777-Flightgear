@@ -86,6 +86,7 @@ var mfdListener = nil;
             m.engDisplay = canvas_eng.new(m.group);
             m.fctlDisplay = canvas_fctl.new(m.group);
             m.doorsDisplay = canvas_doors.new(m.group);
+            m.camDisplay = canvas_cam.new(m.group);
             m.elecDisplay = canvas_elec.new(m.group);
             m.gearDisplay = canvas_gear.new(m.group);
             m.statDisplay = canvas_stat.new(m.group);
@@ -108,6 +109,8 @@ var mfdListener = nil;
                     me.display = me.fctlDisplay;
                 elsif (panel == "doors")
                     me.display = me.doorsDisplay;
+                elsif (panel == "cam")
+                    me.display = me.camDisplay;
                 elsif (panel == "elec")
                     me.display = me.elecDisplay;
                 elsif (panel == "gear")
