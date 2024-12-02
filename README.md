@@ -20,7 +20,7 @@ No Rembrandt
 
 install Boeing 777-VMD
 
-[![FlightGear install Boeing 777-VMD](https://i.ibb.co/MCzvmVz/instal-777.jpg)](https://www.youtube.com/watch?v=ThoBLNahjSc "FlightGear install Boeing 777-VMD")
+[![FlightGear install Boeing 777-VMD](https://i.ibb.co/MCzvmVz/instal-777.jpg)](https://youtu.be/kO-Pfdvyp-4?si=vk6Erg2pLLACV3U4 "FlightGear install Boeing 777-VMD")
 
 Wing flex 
 
