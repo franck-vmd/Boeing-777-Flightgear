@@ -92,6 +92,9 @@
         <object-name>shadow</object-name>
         <condition>
          <and>
+         <not>
+            <property>/sim/rendering/shadows/enabled</property>
+          </not>
           <less-than>
             <property>sim/multiplay/generic/float[7]</property>
             <value>100</value>
@@ -162,6 +165,9 @@
         <object-name>shadow1</object-name>
         <condition>
          <and>
+         <not>
+            <property>/sim/rendering/shadows/enabled</property>
+          </not>
           <less-than>
             <property>sim/multiplay/generic/float[7]</property>
             <value>6500</value>
