@@ -377,7 +377,7 @@
             <file>Models/InstrumentsX/MFD-X9/eng.nas</file>
             <file>Models/InstrumentsX/MFD-X9/fuel.nas</file>
             <file>Models/InstrumentsX/MFD-X9/doors.nas</file>
-            <file>Models/Instruments/MFD-X9/cam.nas</file>
+            <file>Models/InstrumentsX/MFD-X9/cam.nas</file>
             <file>Models/InstrumentsX/MFD-X9/elec.nas</file>
             <file>Models/InstrumentsX/MFD-X9/gear.nas</file>
             <file>Models/InstrumentsX/MFD-X9/stat.nas</file>
