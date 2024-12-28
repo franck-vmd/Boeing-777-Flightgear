@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>oxygen_mask_X9.ac</path>
+
+ <animation>
+		<type>material</type>
+		<object-name>Oxy_mask_1</object-name>
+		<condition>
+		<greater-than-equals>
+				<property>/systems/electrical/outputs/efis</property>
+				<value>15</value>
+		</greater-than-equals>
+		</condition>
+	</animation>
+	
+	<effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+         <object-name>Oxy_mask_1.001</object-name>
+        </effect>
+  
+</PropertyList>

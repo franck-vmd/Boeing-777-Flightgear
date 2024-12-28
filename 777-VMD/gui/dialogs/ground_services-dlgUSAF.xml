@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <name>ground_servicesUSAF</name>
+    <layout>vbox</layout>
+    
+  <group>
+    <layout>hbox</layout>
+    <text>
+        <label>Ground Services Controls USAF</label>
+    </text>
+      <empty><stretch>true</stretch></empty>
+
+  <button>
+      <legend>x</legend>
+      <key>Esc</key>
+      <pref-width>16</pref-width>
+      <pref-height>16</pref-height>
+      <border>2</border>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+ </group>
+
+    <hrule />
+    
+    <text>
+        <label>External Power</label>
+    </text>
+     
+    <group>
+    <layout>table</layout>
+        <checkbox>
+            <row>0</row>
+            <col>0</col>
+            <label>External Power Cart</label>
+            <halign>left</halign>
+            <property>services/ext-pwr/enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+    
+        <checkbox>
+            <row>1</row>
+            <col>0</col>
+            <label>Primary Ext. Power</label>
+            <halign>left</halign>
+            <property>services/ext-pwr/primary</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        
+        <checkbox>
+            <row>2</row>
+            <col>0</col>
+            <label>Secondary Ext. Power</label>
+            <halign>left</halign>
+            <property>services/ext-pwr/secondary</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        
+        <checkbox>
+            <row>0</row>
+            <col>1</col>
+            <label>Air Start Unit</label>
+            <halign>left</halign>
+            <property>services/ASU/enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+    
+        <checkbox>
+            <row>1</row>
+            <col>1</col>
+            <label>Hose 1</label>
+            <halign>left</halign>
+            <property>services/ASU/hose1-enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        
+        <checkbox>
+            <row>2</row>
+            <col>1</col>
+            <label>Hose 2</label>
+            <halign>left</halign>
+            <property>services/ASU/hose2-enable</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+
+    </group>
+    
+    <hrule />
+    
+    <text>
+        <label>Landing Gear Chocks</label>
+    </text>
+    
+    <group>
+    <layout>table</layout>
+    
+    <text>
+        <row>0</row>
+        <col>0</col>
+        <label>Left Gear</label>
+    </text>
+    
+    <text>
+        <row>0</row>
+        <col>1</col>
+        <label>Nose Gear</label>
+    </text>
+    
+    <text>
+        <row>0</row>
+        <col>2</col>
+        <label>Right Gear</label>
+    </text>
+    
+    <checkbox>
+        <row>1</row>
+        <col>0</col>
+        <property>services/chocks/left</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>1</row>
+        <col>1</col>
+        <property>services/chocks/nose</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>1</row>
+        <col>2</col>
+        <property>services/chocks/right</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </checkbox>
+    
+    </group>
+
+    <hrule />
+    
+    <text>
+        <label>Safety Cones</label>
+    </text>
+    
+    <group>
+        <layout>hbox</layout>
+        <checkbox>
+        <label>Safety Cones Left</label>
+        <property>services/cones/cone1-enable</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+        </checkbox>
+        
+        <checkbox>
+        <label>Safety Cones Right</label>
+        <property>services/cones/cone2-enable</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+        </checkbox>
+    </group>
+    
+    <hrule />
+    
+    <text>
+		<label>De-icing Truck</label>
+	</text>
+
+	<checkbox>
+		<label>Enable De-icing Truck</label>
+		<property>services/deicing_truck/enable</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<live>true</live>
+	</checkbox>
+
+	<button>
+		<legend>De-ice Aircraft</legend>
+		<padding>5</padding>
+		<binding>
+			<command>nasal</command>
+			<script>
+				if (getprop("services/deicing_truck/enable") == 1) {
+					setprop("services/deicing_truck/de-ice", 1);
+					screen.log.write("Starting De-icing Process...", 1, 1, 1);
+				} else
+					screen.log.write("Please Enable the De-icing truck first", 1, 0, 0);
+			</script>
+		</binding>
+	</button>
+		
+	<hrule />
+
+</PropertyList>

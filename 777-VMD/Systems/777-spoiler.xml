@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+
+<!-- Boeing 777 Flight Control System -->
+<!-- Copyright (c) 2019 Joshua Davidson (Octal450) -->
+<!-- Right now the 3D has them all together, so for now I am just putting them all together, not even hydraulics are simulated seperately for now -->
+
+<PropertyList>
+	
+	<!-- Logic -->
+	
+	<filter>
+		<name>Spoiler Input</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>/controls/flight/speedbrake</input>
+		<output>/fcs/spoilers/input</output>
+		<min>0.0</min>
+		<max>
+			<condition>
+				<equals>
+					<property>/fcs/position/wow</property>
+					<value>0</value>
+				</equals>
+			</condition>
+			<value>0.66666666666666666666666666666667</value>
+		</max>
+		<max>1.0</max>
+	</filter>
+	
+	<!-- Spoilers -->
+	
+	<filter>
+		<name>Left Outer Spoilers</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/spoilers/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<condition>
+				<greater-than>
+					<property>/fcs/spoilers/input</property>
+					<value>0.01</value>
+				</greater-than>
+			</condition>
+			<expression>
+				<sum>
+					<product> <!-- Extend -->
+						<difference>
+							<value>1.0</value>
+							<property>/fcs/spoilers/input</property>
+						</difference>
+						<table>
+							<property>/fcs/fbw/roll/spoiler-cmd</property>
+							<entry><ind>-1.0</ind><dep>60</dep></entry>
+							<entry><ind>-0.1</ind><dep> 0</dep></entry>
+						</table>
+					</product>
+					<product> <!-- Retract -->
+						<property>/fcs/spoilers/input</property>
+						<table>
+							<property>/fcs/fbw/roll/spoiler-cmd</property>
+							<entry><ind>0.1</ind><dep>  0</dep></entry>
+							<entry><ind>1.0</ind><dep>-60</dep></entry>
+						</table>
+					</product>
+					<product>
+						<property>/fcs/spoilers/input</property>
+						<value>60</value>
+					</product>
+				</sum>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/roll/spoiler-cmd</property>
+					<entry><ind>-1.0</ind><dep>30</dep></entry>
+					<entry><ind>-0.1</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/spoilers/left-out-final-deg</output>
+		<min>0</min>
+		<max>60</max>
+		<max-rate-of-change>60</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Left Inner Spoilers</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/spoilers/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<condition>
+				<and>
+					<greater-than>
+						<property>/fcs/spoilers/input</property>
+						<value>0.01</value>
+					</greater-than>
+					<equals>
+						<property>/fcs/position/wow</property>
+						<value>1</value>
+					</equals>
+				</and>
+			</condition>
+			<expression>
+				<sum>
+					<product> <!-- Extend -->
+						<difference>
+							<value>1.0</value>
+							<property>/fcs/spoilers/input</property>
+						</difference>
+						<table>
+							<property>/fcs/fbw/roll/spoiler-cmd</property>
+							<entry><ind>-1.0</ind><dep>60</dep></entry>
+							<entry><ind>-0.1</ind><dep> 0</dep></entry>
+						</table>
+					</product>
+					<product> <!-- Retract -->
+						<property>/fcs/spoilers/input</property>
+						<table>
+							<property>/fcs/fbw/roll/spoiler-cmd</property>
+							<entry><ind>0.1</ind><dep>  0</dep></entry>
+							<entry><ind>1.0</ind><dep>-60</dep></entry>
+						</table>
+					</product>
+					<product>
+						<property>/fcs/spoilers/input</property>
+						<value>60</value>
+					</product>
+				</sum>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/roll/spoiler-cmd</property>
+					<entry><ind>-1.0</ind><dep>30</dep></entry>
+					<entry><ind>-0.1</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/spoilers/left-in-final-deg</output>
+		<min>0</min>
+		<max>60</max>
+		<max-rate-of-change>60</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Right Inner Spoilers</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/spoilers/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<condition>
+				<and>
+					<greater-than>
+						<property>/fcs/spoilers/input</property>
+						<value>0.01</value>
+					</greater-than>
+					<equals>
+						<property>/fcs/position/wow</property>
+						<value>1</value>
+					</equals>
+				</and>
+			</condition>
+			<expression>
+				<sum>
+					<product> <!-- Extend -->
+						<difference>
+							<value>1.0</value>
+							<property>/fcs/spoilers/input</property>
+						</difference>
+						<table>
+							<property>/fcs/fbw/roll/spoiler-cmd</property>
+							<entry><ind>0.1</ind><dep> 0</dep></entry>
+							<entry><ind>1.0</ind><dep>60</dep></entry>
+						</table>
+					</product>
+					<product> <!-- Retract -->
+						<property>/fcs/spoilers/input</property>
+						<table>
+							<property>/fcs/fbw/roll/spoiler-cmd</property>
+							<entry><ind>-1.0</ind><dep>-60</dep></entry>
+							<entry><ind>-0.1</ind><dep>  0</dep></entry>
+						</table>
+					</product>
+					<product>
+						<property>/fcs/spoilers/input</property>
+						<value>60</value>
+					</product>
+				</sum>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/roll/spoiler-cmd</property>
+					<entry><ind>0.1</ind><dep> 0</dep></entry>
+					<entry><ind>1.0</ind><dep>30</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/spoilers/right-in-final-deg</output>
+		<min>0</min>
+		<max>60</max>
+		<max-rate-of-change>60</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Right Outer Spoilers</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/spoilers/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<condition>
+				<greater-than>
+					<property>/fcs/spoilers/input</property>
+					<value>0.01</value>
+				</greater-than>
+			</condition>
+			<expression>
+				<sum>
+					<product> <!-- Extend -->
+						<difference>
+							<value>1.0</value>
+							<property>/fcs/spoilers/input</property>
+						</difference>
+						<table>
+							<property>/fcs/fbw/roll/spoiler-cmd</property>
+							<entry><ind>0.1</ind><dep> 0</dep></entry>
+							<entry><ind>1.0</ind><dep>60</dep></entry>
+						</table>
+					</product>
+					<product> <!-- Retract -->
+						<property>/fcs/spoilers/input</property>
+						<table>
+							<property>/fcs/fbw/roll/spoiler-cmd</property>
+							<entry><ind>-1.0</ind><dep>-60</dep></entry>
+							<entry><ind>-0.1</ind><dep>  0</dep></entry>
+						</table>
+					</product>
+					<product>
+						<property>/fcs/spoilers/input</property>
+						<value>60</value>
+					</product>
+				</sum>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/roll/spoiler-cmd</property>
+					<entry><ind>0.1</ind><dep> 0</dep></entry>
+					<entry><ind>1.0</ind><dep>30</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/spoilers/right-out-final-deg</output>
+		<min>0</min>
+		<max>60</max>
+		<max-rate-of-change>60</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Spoiler Roll Total</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<product>
+					<sum> <!-- Total of 0 to 60 degrees -->
+						<product>
+							<property>/fcs/spoilers/left-out-final-deg</property>
+							<value>-0.6</value>
+						</product>
+						<product>
+							<property>/fcs/spoilers/left-in-final-deg</property>
+							<value>-0.4</value>
+						</product>
+						<product>
+							<property>/fcs/spoilers/right-in-final-deg</property>
+							<value>0.4</value>
+						</product>
+						<product>
+							<property>/fcs/spoilers/right-out-final-deg</property>
+							<value>0.6</value>
+						</product>
+					</sum>
+					<value>0.01666666666666666666666666666667</value> <!-- Normalize it to -1 to 1 for YASim --> <!-- 1/60 -->
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/output/roll-spoiler</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<filter>
+		<name>Spoiler Drag Total</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression> <!-- Hack because YASim is weird -->
+				<product>
+					<div>
+						<sum>
+							<product>
+								<min>
+									<sum>
+										<product>
+											<property>/fcs/spoilers/left-out-final-deg</property>
+											<value>0.6</value>
+										</product>
+										<product>
+											<property>/fcs/spoilers/left-in-final-deg</property>
+											<value>0.4</value>
+										</product>
+									</sum>
+									<sum>
+										<product>
+											<property>/fcs/spoilers/right-in-final-deg</property>
+											<value>0.4</value>
+										</product>
+										<product>
+											<property>/fcs/spoilers/right-out-final-deg</property>
+											<value>0.6</value>
+										</product>
+									</sum>
+								</min>
+								<value>2</value>
+							</product>
+							<max>
+								<sum>
+									<product>
+										<property>/fcs/spoilers/left-out-final-deg</property>
+										<value>0.6</value>
+									</product>
+									<product>
+										<property>/fcs/spoilers/left-in-final-deg</property>
+										<value>0.4</value>
+									</product>
+								</sum>
+								<sum>
+									<product>
+										<property>/fcs/spoilers/right-in-final-deg</property>
+										<value>0.4</value>
+									</product>
+									<product>
+										<property>/fcs/spoilers/right-out-final-deg</property>
+										<value>0.6</value>
+									</product>
+								</sum>
+							</max>
+						</sum>
+						<value>3</value>
+					</div>
+					<value>0.01666666666666666666666666666667</value> <!-- Normalize and average it to -1 to 1 for YASim --> <!-- 1/60 -->
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/output/drag-spoiler</output>
+		<min>0.0</min>
+		<max>1.0</max>
+	</filter>
+
+</PropertyList>

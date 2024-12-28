@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>wc777-200.ac</path>
+  
+         <animation>
+		<type>material</type>
+		<texture>9.png</texture>
+	 </animation>
+
+         <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+                         <object-name>bouton poussoir</object-name>
+                         <object-name>bouton poussoir1</object-name>
+                         <object-name>bouton poussoir2</object-name>
+                         <object-name>bouton poussoir3</object-name>
+                         <object-name>bouton poussoir4</object-name>
+                         <object-name>cuvette</object-name>
+                         <object-name>cuvette1</object-name>
+                         <object-name>cuvette2</object-name>
+                         <object-name>cuvette3</object-name>
+                         <object-name>cuvette4</object-name>
+                         <object-name>eau</object-name>
+                         <object-name>eau wc</object-name>
+                         <object-name>eau wc1</object-name>
+                         <object-name>eau wc2</object-name>
+                         <object-name>eau1</object-name>
+                         <object-name>eau2</object-name>
+                         <object-name>eau3</object-name>
+                         <object-name>eau4</object-name>
+                         <object-name>robinet</object-name>
+                         <object-name>robinet1</object-name>
+                         <object-name>robinet2</object-name>
+                         <object-name>robinet3</object-name>
+                         <object-name>robinet4</object-name>
+                         <object-name>spote</object-name>
+                         <object-name>wc</object-name>
+          </effect>
+          
+   <!-- wc -->
+
+   <animation>
+        <type>pick</type>
+		<object-name>robinet</object-name>
+		<object-name>robinet1</object-name>
+		<object-name>robinet2</object-name>
+		<object-name>robinet3</object-name>
+		<object-name>robinet4</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[67]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.robinet;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+		<object-name>cuvette</object-name>
+		<object-name>cuvette1</object-name>
+		<object-name>cuvette2</object-name>
+		<object-name>cuvette3</object-name>
+		<object-name>cuvette4</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[68]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.cuvette;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+		<object-name>bouton poussoir</object-name>
+		<object-name>bouton poussoir1</object-name>
+		<object-name>bouton poussoir2</object-name>
+		<object-name>bouton poussoir3</object-name>
+		<object-name>bouton poussoir4</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[69]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.bouton poussoir;
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+   <animation>
+        <type>select</type>
+        <object-name>eau</object-name>
+        <object-name>eau1</object-name>
+        <object-name>eau2</object-name>
+        <object-name>eau3</object-name>
+        <object-name>eau4</object-name>
+        <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[67]</property>
+			<value>0</value>
+		</greater-than>
+    </condition>
+    </animation>
+
+   <animation>
+        <type>select</type>
+        <object-name>eau wc</object-name>
+        <object-name>eau wc1</object-name>
+        <object-name>eau wc2</object-name>
+        <object-name>eau wc3</object-name>
+        <object-name>eau wc4</object-name>
+        <condition>
+		<greater-than>
+			<property>sim/multiplay/generic/float[69]</property>
+			<value>0</value>
+		</greater-than>
+    </condition>
+    </animation>
+    
+    <!-- cuvette -->
+
+    <animation>
+        <type>rotate</type>
+        <object-name>cuvette</object-name>
+        <property>sim/multiplay/generic/float[68]</property>
+        <factor>95</factor>
+        <center>
+            <x-m>-8.44325</x-m>
+            <y-m>0.970961</y-m>
+            <z-m>-0.06999</z-m>
+        </center>
+        <axis>
+            <x>-1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>cuvette1</object-name>
+        <property>sim/multiplay/generic/float[68]</property>
+        <factor>95</factor>
+        <center>
+            <x-m>-5.85173</x-m>
+            <y-m>-0.82418</y-m>
+            <z-m>-0.06999</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>cuvette2</object-name>
+        <property>sim/multiplay/generic/float[68]</property>
+        <factor>95</factor>
+        <center>
+            <x-m>9.45912</x-m>
+            <y-m>0.884439</y-m>
+            <z-m>-0.06999</z-m>
+        </center>
+        <axis>
+            <x>-1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>cuvette3</object-name>
+        <property>sim/multiplay/generic/float[68]</property>
+        <factor>95</factor>
+        <center>
+            <x-m>12.0207</x-m>
+            <y-m>-0.781692</y-m>
+            <z-m>-0.06999</z-m>
+        </center>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>cuvette4</object-name>
+        <property>sim/multiplay/generic/float[68]</property>
+        <factor>95</factor>
+        <center>
+            <x-m>22.8741</x-m>
+            <y-m>0.787399</y-m>
+            <z-m>-0.06999</z-m>
+        </center>
+        <axis>
+            <x>-1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <!-- robinet -->
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>robinet</object-name>
+        <property>sim/multiplay/generic/float[67]</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-8.84639</x-m>
+            <y-m>-0.46352</y-m>
+            <z-m>0.41603</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>robinet1</object-name>
+        <property>sim/multiplay/generic/float[67]</property>
+        <factor>15</factor>
+        <center>
+            <x-m>-5.45056</x-m>
+            <y-m>0.08975</y-m>
+            <z-m>0.41603</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>robinet2</object-name>
+        <property>sim/multiplay/generic/float[67]</property>
+        <factor>15</factor>
+        <center>
+            <x-m>9.05598</x-m>
+            <y-m>-0.271179</y-m>
+            <z-m>0.41603</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>robinet3</object-name>
+        <property>sim/multiplay/generic/float[67]</property>
+        <factor>15</factor>
+        <center>
+            <x-m>12.4219</x-m>
+            <y-m>0.08975</y-m>
+            <z-m>0.41603</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+        <type>rotate</type>
+        <object-name>robinet4</object-name>
+        <property>sim/multiplay/generic/float[67]</property>
+        <factor>15</factor>
+        <center>
+            <x-m>22.5285</x-m>
+            <y-m>-0.289879</y-m>
+            <z-m>0.41603</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+  
+ 
+</PropertyList>

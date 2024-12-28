@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>chock_right.ac</path>
+	
+<animation>
+	<type>translate</type>
+	<object>Chock_front</object>
+	<object>Chock_back</object>
+    <property>gear/gear[2]/compression-norm</property>
+	<interpolation>
+		<entry><ind>0.15</ind><dep>0.0</dep></entry>
+		<entry><ind>0.40</ind><dep>0.25</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+	<animation>
+        <type>pick</type>
+		<object-name>Chock_front</object-name>
+                <object-name>Chock_back</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/chocks/right</property>
+            </binding>
+        </action>
+    </animation>
+
+</PropertyList>

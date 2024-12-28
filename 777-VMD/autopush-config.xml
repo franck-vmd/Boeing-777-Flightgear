@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    <steer-cmd-norm	alias="/controls/gear/tiller-cmd-norm"/>
+    <yaw alias="/controls/gear/nosegear-steering-angle-rad"/>
+    <yaw-mult type="float">1.0</yaw-mult>
+    <pitch-deg type="float">0.0</pitch-deg>
+    <min-turn-radius-m type="float">17.35</min-turn-radius-m>
+    <stopping-distance-m type="float">5.0</stopping-distance-m>
+    <!--chocks alias="/controls/gear/wheel-chocks"/--> <!--uses 3 properties in the 777. Modified in autopush.nas-->
+    <available type="int">1</available>
+    <connected type="bool">false</connected>
+    <target-speed-km_h type="float">0.0</target-speed-km_h>
+    <K_p type="float">0.5</K_p> <!--1.0-->
+    <F_p type="float">0.15</F_p> <!--0.1-->
+    <K_i type="float">0.25</K_i> <!--0.01-->
+    <F_i type="float">0.1</F_i> <!--2.0-->
+    <K_d type="float">0.0</K_d>
+    <F_d type="float">0.0</F_d>
+    <driver>
+        <F_V type="float">8.0</F_V>
+        <K_psi type="float">0.03</K_psi>
+        <F_psi type="float">1.0</F_psi>
+        <K_psidot type="float">0.03</K_psidot>
+        <F_psidot type="float">1.0</F_psidot>
+    </driver>
+    <route>
+        <show type="bool"/>
+    </route>
+    <debug type="int">0</debug>
+</PropertyList>

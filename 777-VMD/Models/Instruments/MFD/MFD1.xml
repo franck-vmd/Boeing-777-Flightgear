@@ -1,0 +1,193 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+
+<path>mfd1.ac</path>
+
+
+        <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>DSPL_CTRL_AcryFace</object-name>
+        <object-name>DSPL_CTRL_Placard</object-name>
+        <object-name>DSPL_CTRL_Shutter.Bottom</object-name>
+        <object-name>DSPL_CTRL_Shutter.Top</object-name>
+        <object-name>DSPL_CTRL_Switch</object-name>
+        <object-name>EFIS_bezel</object-name>
+        <object-name>NDB2_Panel.001</object-name>
+        <object-name>Screw.000</object-name>
+        <object-name>Screw.002</object-name>
+        <object-name>Screw.003</object-name>
+        <object-name>Screw_Fixing.001</object-name>
+        <object-name>Screw_Fixing.002</object-name>
+        <object-name>Screw_Fixing.003</object-name>
+        <object-name>Screw_Fixing.004</object-name>
+        <object-name>Screw_Fixing.005</object-name>
+        <object-name>MFD.screen</object-name>
+        <object-name>MFD.screenoff</object-name>
+        <object-name>MFD.effect</object-name>
+    </effect>
+    
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>MFD.effect</object-name>
+    </effect>
+    
+    <animation>
+   <type>textranslate</type> 
+   <object-name>MFD.effect</object-name> 		
+   <property>/sim/time/sun-angle-rad</property>
+   <step>1.70</step>
+   <factor>0.286</factor>
+   <center>
+     <x-m>0</x-m>
+     <y-m>0</y-m>
+     <z-m>0</z-m>
+   </center>
+   <axis> 
+     <x>1</x> 
+     <y>0</y> 
+     <z>0</z> 
+   </axis>
+</animation>
+
+<animation> 
+ <type>material</type> 
+ <object-name>MFD.effect</object-name>
+ <condition>		
+  <greater-than>		
+   <property>/sim/time/sun-angle-rad</property>
+   <value>1.70</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.3</red>	
+  <green>0.3</green>	
+  <blue>0.3</blue>
+ </emission>
+</animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Bright_LwrDisp1.knob</object-name>
+        <object-name>Bright_LwrDisp2.knob</object-name>
+        <object-name>Bright_UprDisp.knob</object-name>
+        <object-name>DSPL_CTRL_AcryFace</object-name>
+        <object-name>DSPL_CTRL_Placard</object-name>
+        <object-name>DSPL_CTRL_Shutter.Bottom</object-name>
+        <object-name>DSPL_CTRL_Shutter.Top</object-name>
+        <object-name>DSPL_CTRL_Switch</object-name>
+        <object-name>EFIS_bezel</object-name>
+        <object-name>Eicas_EventRCD.btn</object-name>
+        <object-name>NDB2_Panel.001</object-name>
+        <object-name>Screw.000</object-name>
+        <object-name>Screw.002</object-name>
+        <object-name>Screw.003</object-name>
+        <object-name>Screw_Fixing.001</object-name>
+        <object-name>Screw_Fixing.002</object-name>
+        <object-name>Screw_Fixing.003</object-name>
+        <object-name>Screw_Fixing.004</object-name>
+        <object-name>Screw_Fixing.005</object-name>
+        <object-name>TO_Check.btn</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Lettering_S_Dsp</object-name>
+        <condition>
+            <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+            </greater-than>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.8</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
+        </emission>
+    </animation>  
+
+    <animation>
+        <type>material</type>
+                <object-name>MFD.screen</object-name>
+        <emission>
+            <red>2.0</red>
+            <green>2.0</green>
+            <blue>2.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+    </animation> 
+    
+    <animation>
+        <type>material</type>
+                <object-name>Lettering_S_Dsp</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>MFD.screenoff</object-name>
+        <condition>
+            <less-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>MFD.screen</object-name>
+        <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>MFD.screen</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>b777.mfdTogglePopup();</script>
+		</binding>
+	</action>
+</animation>
+
+</PropertyList>

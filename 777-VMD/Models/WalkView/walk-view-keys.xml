@@ -1,0 +1,32 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<!--
+  Walk view module for FlightGear.
+
+  Copyright (C) 2010 - 2013  Anders Gidenstam  (anders(at)gidenstam.org)
+  This file is licensed under the GPL license v2 or later.
+-->
+<PropertyList>
+
+ <!-- Keyboard commands -->
+
+ <key n="119">
+  <name>w</name>
+  <desc>Walk view: Walk forward.</desc>
+  <binding>
+   <command>nasal</command>
+   <script>
+     if (!walkview.forward(1.0)) {
+     }
+   </script>
+  </binding>
+  <mod-up>
+   <binding>
+    <command>nasal</command>
+    <script>
+      walkview.forward(0);
+    </script>
+   </binding>
+  </mod-up>
+ </key>
+
+</PropertyList>

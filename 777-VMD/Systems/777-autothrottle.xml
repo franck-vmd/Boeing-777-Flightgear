@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+
+<!--
+ auto-thrust modes:
+ mode     /instrumentation/afds/inputs/autothrottle-index
+ OFF      0
+ THR      1
+ THR REF  2
+ HOLD     3
+ IDLE     4
+ SPD      5
+ -->
+
+<PropertyList>
+
+	<filter>
+		<name>IAS speed limit</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<greater-than>
+					<property>controls/flight/flaps</property>
+					<value>0.0</value>
+				</greater-than>
+			</condition>
+
+			<expression>
+				<table>
+					<property>controls/flight/flaps</property>
+					<entry><ind>0.033</ind><dep>255</dep></entry>
+					<entry><ind>0.166</ind><dep>235</dep></entry>
+					<entry><ind>0.5</ind><dep>215</dep></entry>
+					<entry><ind>0.666</ind><dep>200</dep></entry>
+					<entry><ind>0.833</ind><dep>190</dep></entry>
+					<entry><ind>1.0</ind><dep>180</dep></entry>
+				</table>
+			</expression>
+		</input>
+
+		<input>
+			<condition>
+				<greater-than>
+					<property>gear/gear/position-norm</property>
+					<value>0.0</value>
+				</greater-than>
+			</condition>
+			<value>270</value>
+		</input>
+
+		<input>
+			<!-- basic IAS limit based upon diagram 7771003, Sec1.Page4 in the
+			  continental manual -->
+			<expression>
+				<table>
+					<property>instrumentation/altimeter/indicated-altitude-ft</property>
+					<entry><ind>0</ind><dep>330</dep></entry> <!-- clean Vmo -->
+					<entry><ind>30000</ind><dep>330</dep></entry>
+					<entry><ind>43000</ind><dep>248</dep></entry>
+				</table>
+			</expression>
+		</input>
+
+		<output>instrumentation/afds/max-airspeed-kts</output>
+	</filter>
+
+	<filter>
+		<type>gain</type>
+		<gain>1.0</gain>
+
+		<input>
+			<expression>
+				<min>
+					<property>autopilot/settings/target-speed-kt</property>
+					<property>instrumentation/afds/max-airspeed-kts</property>
+				</min>
+			</expression>
+		</input>
+
+		<output>instrumentation/afds/ias-target-kt</output>
+	</filter>
+
+	<!-- thrust mode: IDLE or HOLD -->
+	<filter>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<enable>
+			<condition>
+				<property>instrumentation/afds/inputs/at-armed[0]</property>
+				<not><property>autopilot/locks/takeoff-mode</property></not>
+				<or>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>4</value>
+					</equals>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>3</value>
+					</equals>
+				</or>
+			</condition>
+		</enable>
+
+		<input>
+			<condition>
+				<and>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>4</value>
+					</equals>
+					<less-than>
+						<property>position/gear-agl-ft</property>
+						<value>25</value>
+					</less-than>
+				</and>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<property>autopilot/settings/flight-idle</property>
+		</input>
+		<output>
+			<property>/controls/engines/engine[0]/throttle</property>
+		</output>
+	</filter>
+
+	<filter>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<enable>
+			<condition>
+				<property>instrumentation/afds/inputs/at-armed[1]</property>
+				<not><property>autopilot/locks/takeoff-mode</property></not>
+				<or>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>4</value>
+					</equals>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>3</value>
+					</equals>
+				</or>
+			</condition>
+		</enable>
+
+		<input>
+			<condition>
+				<and>
+					<equals>
+						<property>instrumentation/afds/inputs/autothrottle-index</property>
+						<value>4</value>
+					</equals>
+					<less-than>
+						<property>position/gear-agl-ft</property>
+						<value>25</value>
+					</less-than>
+				</and>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<property>autopilot/settings/flight-idle</property>
+		</input>
+		<output>
+			<property>/controls/engines/engine[1]/throttle</property>
+		</output>
+	</filter>
+
+	<!-- thrust mode: SPD/ias -->
+	<pid-controller>
+		<name>Auto Throttle1</name>
+		<debug>false</debug>
+		<enable>
+			<condition>
+				<property>instrumentation/afds/inputs/at-armed[0]</property>
+				<equals>
+					<property>instrumentation/afds/inputs/autothrottle-index</property>
+					<value>5</value>
+				</equals>
+				<not-equals>
+					<property>instrumentation/afds/ap-modes/pitch-mode</property>
+					<value>VNAV PATH</value>
+				</not-equals>
+			</condition>
+		</enable>
+		<input>
+			<condition>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
+			</condition>
+			<property>/instrumentation/airspeed-indicator/indicated-mach</property>
+			<scale>1000.0</scale>
+		</input>
+		<reference>
+			<condition>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
+			</condition>
+			<property>/autopilot/settings/target-speed-mach</property>
+			<scale>1000.0</scale>
+		</reference>
+		<input>
+			<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		</input>
+		<reference>
+			<property>instrumentation/afds/ias-target-kt</property>
+		</reference>
+		<output>
+			<property>/controls/engines/engine[0]/throttle</property>
+		</output>
+		<config>
+			<Kp>0.06</Kp>
+			<Td>0.00001</Td>
+			<Ti>9</Ti>
+			<u_min>
+				<condition>
+					<equals>
+						<property>instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>G/S</value>
+					</equals>
+				</condition>
+				<value>0.03</value>
+			</u_min>
+			<u_min>0.06</u_min>
+			<u_max>
+				<condition>
+					<equals>
+						<property>instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>FLARE</value>
+					</equals>
+				</condition>
+				<property>/controls/engines/engine[0]/throttle</property>
+			</u_max>
+			<u_max>
+				<property>autopilot/settings/thrust-lmt</property>
+			</u_max>
+		</config>
+	</pid-controller>
+
+	<pid-controller>
+		<name>Auto Throttle2</name>
+		<debug>false</debug>
+		<enable>
+			<condition>
+				<property>instrumentation/afds/inputs/at-armed[1]</property>
+				<equals>
+					<property>instrumentation/afds/inputs/autothrottle-index</property>
+					<value>5</value>
+				</equals>
+				<not-equals>
+					<property>instrumentation/afds/ap-modes/pitch-mode</property>
+					<value>VNAV PATH</value>
+				</not-equals>
+			</condition>
+		</enable>
+		<input>
+			<condition>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
+			</condition>
+			<property>/instrumentation/airspeed-indicator/indicated-mach</property>
+			<scale>1000.0</scale>
+		</input>
+		<reference>
+			<condition>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
+			</condition>
+			<property>/autopilot/settings/target-speed-mach</property>
+			<scale>1000.0</scale>
+		</reference>
+		<input>
+			<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		</input>
+		<reference>
+			<property>instrumentation/afds/ias-target-kt</property>
+		</reference>
+		<output>
+			<property>/controls/engines/engine[1]/throttle</property>
+		</output>
+		<config>
+			<Kp>0.06</Kp>
+			<Td>0.00001</Td>
+			<Ti>9</Ti>
+			<u_min>
+				<condition>
+					<equals>
+						<property>instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>G/S</value>
+					</equals>
+				</condition>
+				<value>0.03</value>
+			</u_min>
+			<u_min>0.06</u_min>
+			<u_max>
+				<condition>
+					<equals>
+						<property>instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>FLARE</value>
+					</equals>
+				</condition>
+				<property>/controls/engines/engine[1]/throttle</property>
+			</u_max>
+			<u_max>
+				<property>autopilot/settings/thrust-lmt</property>
+			</u_max>
+		</config>
+	</pid-controller>
+	
+	<!-- thrust mode: SPD/ias -->
+	<pid-controller>
+		<name>Auto Throttle1 vnav</name>
+		<debug>false</debug>
+		<enable>
+			<condition>
+				<property>instrumentation/afds/inputs/at-armed[0]</property>
+				<equals>
+					<property>instrumentation/afds/inputs/autothrottle-index</property>
+					<value>5</value>
+				</equals>
+				<equals>
+					<property>instrumentation/afds/ap-modes/pitch-mode</property>
+					<value>VNAV PATH</value>
+				</equals>
+			</condition>
+		</enable>
+		<input>
+			<condition>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
+			</condition>
+			<property>/instrumentation/airspeed-indicator/indicated-mach</property>
+			<scale>1000.0</scale>
+		</input>
+		<reference>
+			<condition>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
+			</condition>
+			<property>autopilot/fmc/target_mach</property>
+			<scale>1000.0</scale>
+		</reference>
+		<input>
+			<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		</input>
+		<reference>
+			<property>autopilot/fmc/target_speed</property>
+		</reference>
+		<output>
+			<property>/controls/engines/engine[0]/throttle</property>
+		</output>
+		<config>
+			<Kp>0.06</Kp>
+			<Td>0.00001</Td>
+			<Ti>9</Ti>
+			<u_min>
+				<condition>
+					<equals>
+						<property>instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>G/S</value>
+					</equals>
+				</condition>
+				<value>0.03</value>
+			</u_min>
+			<u_min>0.06</u_min>
+			<u_max>
+				<property>autopilot/settings/thrust-lmt</property>
+			</u_max>
+		</config>
+	</pid-controller>
+
+	<pid-controller>
+		<name>Auto Throttle2 vnav</name>
+		<debug>false</debug>
+		<enable>
+			<condition>
+				<property>instrumentation/afds/inputs/at-armed[1]</property>
+				<equals>
+					<property>instrumentation/afds/inputs/autothrottle-index</property>
+					<value>5</value>
+				</equals>
+				<equals>
+					<property>instrumentation/afds/ap-modes/pitch-mode</property>
+					<value>VNAV PATH</value>
+				</equals>
+			</condition>
+		</enable>
+		<input>
+			<condition>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
+			</condition>
+			<property>/instrumentation/airspeed-indicator/indicated-mach</property>
+			<scale>1000.0</scale>
+		</input>
+		<reference>
+			<condition>
+				<property>instrumentation/afds/inputs/ias-mach-selected</property>
+			</condition>
+			<property>autopilot/fmc/target_mach</property>
+			<scale>1000.0</scale>
+		</reference>
+		<input>
+			<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		</input>
+		<reference>
+			<property>autopilot/fmc/target_speed</property>
+		</reference>
+		<output>
+			<property>/controls/engines/engine[1]/throttle</property>
+		</output>
+		<config>
+			<Kp>0.06</Kp>
+			<Td>0.00001</Td>
+			<Ti>9</Ti>
+			<u_min>
+				<condition>
+					<equals>
+						<property>instrumentation/afds/ap-modes/pitch-mode</property>
+						<value>G/S</value>
+					</equals>
+				</condition>
+				<value>0.03</value>
+			</u_min>
+			<u_min>0.06</u_min>
+			<u_max>
+				<property>autopilot/settings/thrust-lmt</property>
+			</u_max>
+		</config>
+	</pid-controller>
+
+	<filter>
+		<name>SERVO-DRIVER:throttle lever1</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<input>/controls/engines/engine[0]/throttle</input>
+		<output>
+			<property>controls/engines/engine[0]/throttle-lever</property>
+		</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>
+			<condition>
+				<property>controls/engines/engine[0]/reverser-act</property>
+			</condition>
+			<value>2.0</value>
+		</max-rate-of-change>
+		<max-rate-of-change>0.5</max-rate-of-change>
+	</filter>
+	<filter>
+		<name>SERVO-DRIVER:throttle lever2</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<input>/controls/engines/engine[1]/throttle</input>
+		<output>
+			<property>controls/engines/engine[1]/throttle-lever</property>
+		</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>
+			<condition>
+				<property>controls/engines/engine[1]/reverser-act</property>
+			</condition>
+			<value>2.0</value>
+		</max-rate-of-change>
+		<max-rate-of-change>0.5</max-rate-of-change>
+	</filter>
+
+	<filter>
+		<name>Engin response:throttle1</name>
+		<debug>false</debug>
+		<enable>
+			<property>engines/engine[0]/run</property>
+		</enable>
+		<feedback-if-disabled>false</feedback-if-disabled>
+		<input>/controls/engines/engine[0]/throttle-lever</input>
+		<output>
+			<property>/controls/engines/engine[0]/throttle-act</property>
+		</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>0.5</max-rate-of-change>
+	</filter>
+	<filter>
+		<name>Engin response:throttle2</name>
+		<debug>false</debug>
+		<enable>
+			<property>engines/engine[1]/run</property>
+		</enable>
+		<feedback-if-disabled>false</feedback-if-disabled>
+		<input>/controls/engines/engine[1]/throttle-lever</input>
+		<output>
+			<property>/controls/engines/engine[1]/throttle-act</property>
+		</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>0.5</max-rate-of-change>
+	</filter>
+
+</PropertyList>

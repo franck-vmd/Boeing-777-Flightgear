@@ -1,0 +1,651 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Sieges777.ac</path>
+  
+        <animation>
+		<type>material</type>
+		<object-name>siegespremiere1</object-name>
+		<object-name>siegespremiere1.001</object-name>
+		<object-name>tablette1D</object-name>
+		<object-name>tablette2D</object-name>
+		<object-name>tablette3D</object-name>
+		<object-name>tablette1G</object-name>
+		<object-name>tablette2G</object-name>
+		<object-name>tablette3G</object-name>
+		<object-name>siegespremiere1lumiere</object-name>
+		<texture>chambreensemble.png</texture>
+	</animation>
+
+         <animation>
+		<type>material</type>
+		<object-name>siegespremiere2</object-name>
+		<texture>vitres.png</texture>
+	</animation>
+	
+       <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+                         <object-name>siegespremiere1</object-name>
+                         <object-name>siegespremiere1.001</object-name>
+                         <object-name>tablette1D</object-name>
+		         <object-name>tablette2D</object-name>
+		         <object-name>tablette3D</object-name>
+		         <object-name>tablette1G</object-name>
+		         <object-name>tablette2G</object-name>
+		         <object-name>tablette3G</object-name>
+       </effect>
+               
+       <effect>
+       <inherits-from>Effects/model-transparent</inherits-from>
+       <object-name>siegespremiere2</object-name>
+      </effect>
+      
+      <animation>
+        <type>material</type>
+        <object-name>siegespremiere1lumiere</object-name>
+        <condition>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.0</blue>
+        </emission>
+    </animation>
+      
+      <animation>
+		<name>c22 Door z-translate</name>
+		<type>translate</type>
+		<object-name>coulisantD</object-name>
+		<property>sim/multiplay/generic/float[39]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>coulisantD</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c22");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<name>c23 Door z-translate</name>
+		<type>translate</type>
+		<object-name>coulisantG</object-name>
+		<property>sim/multiplay/generic/float[40]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.5</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>coulisantG</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c23");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<name>c24 Door x-translate</name>
+		<type>translate</type>
+		<object-name>porte1D</object-name>
+		<property>sim/multiplay/generic/float[41]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.28</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c24 Door x-translate</name>
+		<type>translate</type>
+		<object-name>porte2D</object-name>
+		<property>sim/multiplay/generic/float[41]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-0.28</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>porte1D</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c24");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<name>c25 Door x-translate</name>
+		<type>translate</type>
+		<object-name>porte1G</object-name>
+		<property>sim/multiplay/generic/float[42]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.28</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c25 Door x-translate</name>
+		<type>translate</type>
+		<object-name>porte2G</object-name>
+		<property>sim/multiplay/generic/float[42]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-0.28</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>porte1G</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c25");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<name>c26 Door y-translate</name>
+		<type>translate</type>
+		<object-name>tablette1D</object-name>
+		<property>sim/multiplay/generic/float[43]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.65</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c26 Door y-translate</name>
+		<type>translate</type>
+		<object-name>tablette2D</object-name>
+		<property>sim/multiplay/generic/float[43]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.45</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c26 Door y-translate</name>
+		<type>translate</type>
+		<object-name>tablette3D</object-name>
+		<property>sim/multiplay/generic/float[43]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>0.20</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>tablette1D</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c26");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<name>c27 Door y-translate</name>
+		<type>translate</type>
+		<object-name>tablette1G</object-name>
+		<property>sim/multiplay/generic/float[44]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-0.65</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c27 Door y-translate</name>
+		<type>translate</type>
+		<object-name>tablette2G</object-name>
+		<property>sim/multiplay/generic/float[44]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-0.45</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c27 Door y-translate</name>
+		<type>translate</type>
+		<object-name>tablette3G</object-name>
+		<property>sim/multiplay/generic/float[44]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>-0.20</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>	
+	
+	
+	<animation>
+		<type>pick</type>
+		<object-name>tablette1G</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c27");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<name>c28 Door x-translate</name>
+		<type>translate</type>
+		<object-name>dossier1D</object-name>
+		<property>sim/multiplay/generic/float[45]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.60</dep></entry>
+			<entry><ind>1</ind><dep>0.60</dep></entry>
+		</interpolation>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c28 Door z-translate</name>
+		<type>translate</type>
+		<object-name>dossier1D</object-name>
+		<property>sim/multiplay/generic/float[45]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.10</dep></entry>
+			<entry><ind>1</ind><dep>0.10</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c28 Door x-translate</name>
+		<type>translate</type>
+		<object-name>dossier2D</object-name>
+		<property>sim/multiplay/generic/float[45]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.57</dep></entry>
+			<entry><ind>1</ind><dep>0.57</dep></entry>
+		</interpolation>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c28 Door z-translate</name>
+		<type>translate</type>
+		<object-name>dossier3D</object-name>
+		<property>sim/multiplay/generic/float[45]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.165</dep></entry>
+			<entry><ind>1</ind><dep>0.165</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c28 Door x-translate</name>
+		<type>translate</type>
+		<object-name>dossier3D</object-name>
+		<property>sim/multiplay/generic/float[45]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.57</dep></entry>
+			<entry><ind>1</ind><dep>0.57</dep></entry>
+		</interpolation>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c28 Door y-rotate</name>
+		<type>rotate</type>
+		<object-name>dossier3D</object-name>
+		<property>sim/multiplay/generic/float[45]</property>
+		<factor>90</factor>
+        <center>
+            <x-m>-12.197</x-m>
+            <y-m>-0.374375</y-m>
+            <z-m>-0.06378</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c28 Door z-translate</name>
+		<type>translate</type>
+		<object-name>dossier2D</object-name>
+		<property>sim/multiplay/generic/float[45]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.10</dep></entry>
+			<entry><ind>1</ind><dep>0.10</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c28 Door y-rotate</name>
+		<type>rotate</type>
+		<object-name>dossier1D</object-name>
+		<property>sim/multiplay/generic/float[45]</property>
+		<factor>75</factor>
+        <center>
+            <x-m>-11.7843</x-m>
+            <y-m>-0.374375</y-m>
+            <z-m>-0.06378</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>	
+	
+	<animation>
+		<type>pick</type>
+		<object-name>dossier1D</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c28");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	
+	<animation>
+		<name>c29 Door x-translate</name>
+		<type>translate</type>
+		<object-name>dossier1G</object-name>
+		<property>sim/multiplay/generic/float[46]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.60</dep></entry>
+			<entry><ind>1</ind><dep>0.60</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c29 Door z-translate</name>
+		<type>translate</type>
+		<object-name>dossier1G</object-name>
+		<property>sim/multiplay/generic/float[46]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.10</dep></entry>
+			<entry><ind>1</ind><dep>0.10</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c29 Door x-translate</name>
+		<type>translate</type>
+		<object-name>dossier2G</object-name>
+		<property>sim/multiplay/generic/float[46]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.57</dep></entry>
+			<entry><ind>1</ind><dep>0.57</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c29 Door z-translate</name>
+		<type>translate</type>
+		<object-name>dossier3G</object-name>
+		<property>sim/multiplay/generic/float[46]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.165</dep></entry>
+			<entry><ind>1</ind><dep>0.165</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c29 Door x-translate</name>
+		<type>translate</type>
+		<object-name>dossier3G</object-name>
+		<property>sim/multiplay/generic/float[46]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.57</dep></entry>
+			<entry><ind>1</ind><dep>0.57</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c29 Door y-rotate</name>
+		<type>rotate</type>
+		<object-name>dossier3G</object-name>
+		<property>sim/multiplay/generic/float[46]</property>
+		<factor>90</factor>
+        <center>
+            <x-m>-13.1136</x-m>
+            <y-m>0.367735</y-m>
+            <z-m>-0.06378</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c29 Door z-translate</name>
+		<type>translate</type>
+		<object-name>dossier2G</object-name>
+		<property>sim/multiplay/generic/float[46]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>0.5</ind><dep>0.10</dep></entry>
+			<entry><ind>1</ind><dep>0.10</dep></entry>
+		</interpolation>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<name>c29 Door y-rotate</name>
+		<type>rotate</type>
+		<object-name>dossier1G</object-name>
+		<property>sim/multiplay/generic/float[46]</property>
+		<factor>75</factor>
+        <center>
+            <x-m>-13.5262</x-m>
+            <y-m>0.367735</y-m>
+            <z-m>-0.06378</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>	
+	
+	<animation>
+		<type>pick</type>
+		<object-name>dossier1G</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c29");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+  
+ 
+</PropertyList>

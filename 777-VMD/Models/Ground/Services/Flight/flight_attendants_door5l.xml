@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>flight_attendants_door5l.ac</path>
+
+  <animation>
+		<type>material</type>
+		<object-name>Flight_attend.5l</object-name>
+		<texture>ensemble.png</texture>
+	</animation>
+	
+	<animation>
+		<type>material</type>
+		<object-name>galleycart</object-name>
+		<texture>galley-cart.png</texture>
+	</animation>
+
+        <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+                         <object-name>Flight_attend.5l</object-name>
+        </effect>
+
+        <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+                         <object-name>galleycart</object-name>
+        </effect>
+ 
+</PropertyList>

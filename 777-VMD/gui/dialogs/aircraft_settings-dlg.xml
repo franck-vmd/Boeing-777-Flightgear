@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <name>aircraft_settings</name>
+    <layout>vbox</layout>
+
+    <group>
+    <layout>hbox</layout>
+        <text>
+            <label>Aircraft settings</label>
+        </text>
+        
+        <empty>
+            <stretch>true</stretch>
+        </empty>
+        
+        <button>
+            <halign>right</halign>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <legend>x</legend>
+            <key>Esc</key>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+        
+    </group>
+
+    <hrule />
+    
+    <checkbox>
+        <label>Show tooltips</label>
+        <halign>left</halign>
+        <property>aircraft/settings/tooltips</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </checkbox>
+
+    <checkbox>
+        <label>Store fuel level between sessions</label>
+        <halign>left</halign>
+        <property>aircraft/settings/fuel_persistent</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <label>Store pax and cargo between sessions</label>
+        <halign>left</halign>
+        <property>aircraft/settings/weight_persistent</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <label>Store Ground Services between sessions</label>
+        <halign>left</halign>
+        <property>aircraft/settings/ground_services_persistent</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <label>Store radio frequencies between sessions</label>
+        <halign>left</halign>
+        <property>aircraft/settings/radio_persistent</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </checkbox>
+    
+    <hrule />
+
+</PropertyList>

@@ -1,0 +1,1130 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+
+<path>boeing1.ac</path>
+
+
+<animation>
+    <type>material</type>
+    <texture alias="../../texture"/>
+</animation>
+
+     <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Lettering_Cdu</object-name>
+        <object-name>Lettering_Alpha</object-name>
+        <object-name>Lettering_Numbers</object-name>
+        <object-name>Lettering_Commands</object-name>
+        <object-name>Lettering_Btns</object-name>
+    </effect>
+
+     <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>CDU</object-name>
+        <object-name>CDuscreen</object-name>
+        <object-name>Plane_Commands</object-name>
+     </effect>
+     
+     <animation>
+   <type>textranslate</type> 
+   <object-name>CDuscreen</object-name> 		
+   <property>/sim/time/sun-angle-rad</property>
+   <step>1.70</step>
+   <factor>0.286</factor>
+   <center>
+     <x-m>0</x-m>
+     <y-m>0</y-m>
+     <z-m>0</z-m>
+   </center>
+   <axis> 
+     <x>1</x> 
+     <y>0</y> 
+     <z>0</z> 
+   </axis>
+</animation>
+
+<animation> 
+ <type>material</type> 
+ <object-name>CDuscreen</object-name>
+ <condition>		
+  <greater-than>		
+   <property>/sim/time/sun-angle-rad</property>
+   <value>1.70</value>
+  </greater-than>
+ </condition>
+ <emission>	
+  <red>0.3</red>	
+  <green>0.3</green>	
+  <blue>0.3</blue>
+ </emission>
+</animation>
+
+     <animation>
+        <type>material</type>
+        <object-name>CDU</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Lettering_Cdu</object-name>
+        <object-name>Lettering_Alpha</object-name>
+        <object-name>Lettering_Numbers</object-name>
+        <object-name>Lettering_Commands</object-name>
+        <object-name>Lettering_Btns</object-name>
+        <condition>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+             <greater-than>
+                <property>/sim/time/sun-angle-rad</property>
+                <value>1.70</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.2</red>
+            <green>0.8</green>
+            <blue>0.2</blue>
+            <factor-prop>controls/lighting/GLRSFlood-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+                <object-name>Lettering_Cdu</object-name>
+                <object-name>Lettering_Alpha</object-name>
+                <object-name>Lettering_Numbers</object-name>
+                <object-name>Lettering_Commands</object-name>
+                <object-name>Lettering_Btns</object-name>
+          <condition>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+    </animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.l.1</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK1L');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.r.1</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK1R');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.l.2</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK2L');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.r.2</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK2R');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.l.3</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK3L');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.r.3</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK3R');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.l.4</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK4L');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.r.4</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK4R');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.l.5</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK5L');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.r.5</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK5R');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.l.6</object-name>
+    <action>
+        <button>0</button>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK6L');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.side.r.6</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+                <binding>
+            <command>nasal</command>
+            <script>cdu.key('LSK6R');</script>
+        </binding>
+
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.init-ref</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <condition>
+                <equals>
+                    <property>instrumentation/fmc/isInputedPos</property>
+                    <value>1</value>
+                </equals>
+            </condition>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value>PERF_INIT</value>
+        </binding>
+    </action>
+	   <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <condition>
+                <equals>
+                    <property>instrumentation/fmc/isInputedPos</property>
+                    <value>0</value>
+                </equals>
+            </condition>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value>POS_INIT</value>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.rte</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value type="string">RTE1_1</value>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.altn</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value type="string">ALTN</value>
+        </binding>
+    </action>
+</animation>
+
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.vnav</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value type="string">VNAV</value>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.nav-rad</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value type="string">NAV_RAD</value>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.dep-arr</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value type="string">DEP_ARR_INDEX</value>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.legs</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value type="string">RTE1_LEGS</value>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.hold</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>property-assign</command>
+			<property>instrumentation/cdu/display</property>
+			<value type="string">HOLD</value>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.prog</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable> 
+		<binding>
+				<command>dialog-show</command>
+				<dialog-name>load-save-cdu</dialog-name>
+			</binding>
+	</action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.menu</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value type="string">MENU</value>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.fmc-comm</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>property-assign</command>
+            <property>instrumentation/cdu/display</property>
+            <value type="string">FMC_COMM</value>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.exec</object-name>
+    <condition>
+     <equals>
+      <property>autopilot/route-manager/isArmed</property>
+      <value>1</value>
+     </equals>
+    </condition>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.execPushed();</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>translate</type>
+    <object-name>Power.ledact</object-name>
+    <property>/autopilot/route-manager/active</property>
+	<offset>0.002</offset>
+	<factor>0.002</factor>
+	<axis>
+	   <x>1</x>
+	   <y>0</y>
+	   <z>0</z>
+	  </axis>
+</animation>
+
+<animation>
+    <type>translate</type>
+    <object-name>Power.ledof</object-name>
+                <property>systems/electrical/CPT-FLT-INST</property>
+	<offset>0.002</offset>
+	<factor>-0.002</factor>
+	<axis>
+	   <x>1</x>
+	   <y>0</y>
+	   <z>0</z>
+	  </axis>
+</animation>
+
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.prev-page</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<condition>
+				<equals>
+					<property>instrumentation/cdu/display</property>
+					<value>RTE1_2</value>
+				</equals>
+			</condition>
+			<command>property-assign</command>
+			<property>instrumentation/cdu/display</property>
+			<value>RTE1_1</value>
+		</binding>
+    <binding>
+			<command>nasal</command>
+			<script>cdu.key('PREV_PAGE');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>Btn.next-page</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<condition>
+				<equals>
+					<property>instrumentation/cdu/display</property>
+					<value>RTE1_1</value>
+				</equals>
+			</condition>
+			<command>property-assign</command>
+			<property>instrumentation/cdu/display</property>
+			<value>RTE1_2</value>
+		</binding>
+    <binding>
+			<command>nasal</command>
+			<script>cdu.key('NEXT_PAGE');</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.zero</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('0');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num1</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('1');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num2</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('2');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num3</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('3');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num4</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('4');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num5</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('5');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num6</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('6');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num7</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('7');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num8</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('8');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.num9</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('9');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.A</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('A');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.B</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('B');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.C</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('C');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.D</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('D');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.E</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('E');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.F</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('F');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.G</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('G');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.H</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('H');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.I</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('I');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.J</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('J');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.K</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('K');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.L</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('L');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.M</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('M');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.N</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('N');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.O</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('O');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.P</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('P');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.Q</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('Q');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.R</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('R');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.S</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('S');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.T</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('T');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.U</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('U');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.V</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('V');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.W</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('W');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.X</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('X');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.Y</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('Y');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.Z</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('Z');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.period</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('.');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.plusminus</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.plusminus();</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.sp</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input(' ');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.slash</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.input('@');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.del</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.delete();</script>
+        </binding>
+        <binding>
+            <condition>
+                <equals>
+                    <property>instrumentation/cdu/display</property>
+                    <value>RTE1_LEGS</value>
+                </equals>
+            </condition>
+            <command>nasal</command>
+            <script>cdu.input('DELETE');</script>
+        </binding>
+    </action>
+</animation>
+
+<animation>
+    <type>pick</type>
+    <object-name>Btn.clr</object-name>
+    <action>
+        <button>0</button>
+        <repeatable>false</repeatable>
+        <binding>
+            <command>nasal</command>
+            <script>cdu.del();</script>
+        </binding>
+	</action>
+</animation>
+
+<animation>
+        <type>material</type>
+        <object-name>Bright_UprDisp.knob</object-name>
+        <object-name>Plane_Commands</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+</PropertyList>

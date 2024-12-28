@@ -1,0 +1,279 @@
+<!-- 
+Syd Adams
+-->
+
+<PropertyList>
+
+    <path>analog1.ac</path>
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>LH_ind1.001</object-name>
+        <property>engines/engine[0]/egt</property>
+        <factor>0.2142</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>LH_ind2.001</object-name>
+        <property>engines/engine[0]/egt</property>
+        <factor>0.1428</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>LH_ind3.001</object-name>
+        <property>engines/engine[0]/egt</property>
+        <factor>0.07</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>RH_ind1.001</object-name>
+        <property>engines/engine[1]/egt</property>
+        <factor>0.2142</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>RH_ind2.001</object-name>
+        <property>engines/engine[1]/egt</property>
+        <factor>0.1428</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>RH_ind3.001</object-name>
+        <property>engines/engine[1]/egt</property>
+        <factor>0.07</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <text>
+        <name>EGT</name>
+        <offsets>
+            <x-m>0.001</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-0.014</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>EGT</text>
+        <font>helvetica_medium.txf</font>
+        <character-size>0.005</character-size>
+        <character-aspect-ratio>1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+
+    <text>
+        <name>eng1-egt</name>
+        <offsets>
+            <x-m>0.001</x-m>
+            <y-m>-0.004</y-m>
+            <z-m>0.006</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>number-value</type>
+        <property>engines/engine[0]/egt</property>
+        <format>%3.0f</format>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.009</character-size>
+        <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>eng2-egt</name>
+        <offsets>
+            <x-m>0.001</x-m>
+            <y-m>0.040</y-m>
+            <z-m>0.006</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>number-value</type>
+        <property>engines/engine[1]/egt</property>
+        <format>%3.0f</format>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.009</character-size>
+        <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+
+    <animation>
+        <name>WHITE</name>
+        <type>material</type>
+		<object-name>eng1-egt</object-name>
+		<object-name>eng2-egt</object-name>
+         	<emission>
+			<red>0.9</red>
+			<green>0.9</green>
+			<blue>0.9</blue>
+		</emission>
+		<ambient>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</ambient>
+		<diffuse>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<specular>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</specular>
+    </animation>
+
+    <animation>
+        <name>CYAN</name>
+        <type>material</type>
+		<object-name>EGT</object-name>
+		<emission>
+			<red>0.0</red>
+			<green>0.9</green>
+			<blue>0.9</blue>
+		</emission>
+		<ambient>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</ambient>
+		<diffuse>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<specular>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</specular>
+    </animation>
+
+    <!--animation>
+        <name>MAGENTA</name>
+        <type>material</type>
+		<emission>
+			<red>0.9</red>
+			<green>0.0</green>
+			<blue>0.9</blue>
+		</emission>
+		<ambient>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</ambient>
+		<diffuse>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<specular>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</specular>
+    </animation>
+
+    <animation>
+        <name>GREEN</name>
+        <type>material</type>
+        <emission>
+			<red>0.0</red>
+			<green>0.9</green>
+			<blue>0.0</blue>
+		</emission>
+		<ambient>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</ambient>
+		<diffuse>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</diffuse>
+		<specular>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</specular>
+    </animation-->
+
+</PropertyList>

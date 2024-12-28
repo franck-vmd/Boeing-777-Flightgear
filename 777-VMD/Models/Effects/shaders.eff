@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PropertyList>
+    <name>shaders</name>
+    <inherits-from>Effects/model-combined-deferred</inherits-from>
+    <parameters>
+    <lightmap-enabled type="int">1</lightmap-enabled>
+    <lightmap-factor type="float" n="0"><use>systems/electrical/outputs/L-RwayLight</use></lightmap-factor>
+        <lightmap-color type="vec3d" n="0">0.03 0.03 0.03</lightmap-color>
+    <lightmap-factor type="float" n="3">0.0</lightmap-factor>
+        <lightmap-color type="vec3d" n="3">1.0 1.0 1.0</lightmap-color>
+    <texture n="3">
+      <image>Aircraft/777-VMD/Models/Effects/lightmap-F21.png</image>
+    </texture>
+  </parameters>
+</PropertyList>

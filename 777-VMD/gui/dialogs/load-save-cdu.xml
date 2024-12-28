@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+
+<!--
+command interface /autopilot/route-manager/input:
+
+  @clear             ... clear route
+  @pop               ... remove first entry
+  @delete3           ... delete 4th entry
+  @insert2:ksfo@900  ... insert "ksfo@900" as 3rd entry
+  ksfo@900           ... append "ksfo@900"
+
+-->
+
+<PropertyList>
+    <name>load-save-cdu</name>
+    <layout>vbox</layout>
+
+    <nasal>
+        <open><![CDATA[
+            var ft = getprop("/sim/startup/units") == "feet";
+            var dlg = props.globals.getNode("/sim/gui/dialogs/route-manager", 1);
+            var selection = dlg.getNode("selection", 1);
+            var input = dlg.getNode("input", 1);
+            var routem = props.globals.getNode("/autopilot/route-manager", 1);
+
+            selection.setIntValue(-1);
+            input.setValue("");
+
+            var list = cmdarg().getNode("list");
+            var cmd = routem.getNode("input", 1);
+            var route = routem.getNode("route", 1);
+            var dep = routem.getNode("departure", 1);
+            var dest = routem.getNode("destination", 1);
+
+            var sel_index = func {
+                return int(selection.getValue());
+            }
+
+            var clear = func {
+                flightplan().cleanPlan();
+                selection.setIntValue(-1);
+            }
+
+            var insert = func {
+                var insertIndex = sel_index();
+                var appending = (insertIndex < 0);
+
+                # Input is a list of space-separated waypoint specifications
+                var argv = split(" ", input.getValue());
+                foreach (var arg; argv) {
+                    # When argument is not empty (caused by multiple space
+                    # separators) insert *after* waypoint
+                    if (size(arg) > 0) {
+                        if (appending) {
+                            cmd.setValue(arg);
+                        } else {
+                            insertIndex += 1;
+                            cmd.setValue("@insert" ~ insertIndex ~ ":" ~ arg);
+                        }
+                    }
+                }
+
+                input.setValue("");
+                selection.setValue(insertIndex);
+                gui.dialog_update("route-manager");
+            }
+
+            var remove = func {
+                flightplan().deleteWP(sel_index());
+            }
+
+            var route = func {
+                var fp = flightplan();
+                var from = fp.getWP(sel_index() - 1);
+                var to = fp.getWP(sel_index());
+
+                if ((from  == nil ) or (to == nil)) {
+                    logprint(LOG_INFO, 'unable to route, invalid start ad end points');
+                    return;
+                }
+
+                var route = airwaysRoute(from, to);
+                fp.insertWaypoints(route, sel_index());
+            }
+
+            var jump_to = func {
+                flightplan().current = sel_index();
+            }
+
+            var load_route = func(path) {
+                routem.getNode("file-path", 1).setValue(path.getValue());
+                cmd.setValue("@load");
+                gui.dialog_update("route-manager");
+            }
+
+            var save_route = func(path) {
+                routem.getNode("file-path", 1).setValue(path.getValue());
+                cmd.setValue("@save");
+                gui.dialog_update("route-manager");
+            }
+
+            var defaultDirInFileSelector = getprop("/sim/fg-home") ~ "/Export";
+
+            var file_selector = gui.FileSelector.new(
+              callback: load_route, title: "Load flight-plan", button: "Load",
+              dir: defaultDirInFileSelector, dotfiles: 1);
+            var save_selector = gui.FileSelector.new(
+              callback: save_route, title: "Save flight-plan", button: "Save",
+              dir: defaultDirInFileSelector, dotfiles: 1);
+
+            var activate_fp = func {
+                fgcommand("activate-flightplan", props.Node.new({"activate": 1}));
+            }
+
+            var departureRunways = dlg.getNode("departure-runways", 1);
+            var destRunways = dlg.getNode("destination-runways", 1);
+            var sids = dlg.getNode("sids", 1);
+            var stars = dlg.getNode("stars", 1);
+            var approaches = dlg.getNode("approaches", 1);
+
+            var updateRunways = func {
+                departureRunways.removeChildren("value");
+                destRunways.removeChildren("value");
+
+                var apt = flightplan().departure;
+                if (apt != nil) {
+                    var i=0;
+                    foreach (var rwy; keys(apt.runways)) {
+                        departureRunways.getNode("value[" ~ i ~ "]", 1).setValue(rwy);
+                        i += 1;
+                    }
+                }
+
+                apt = flightplan().destination;
+                if (apt != nil) {
+                    var i=0;
+                    foreach (var rwy; keys(apt.runways)) {
+                        destRunways.getNode("value[" ~ i ~ "]", 1).setValue(rwy);
+                        i += 1;
+                    }
+                }
+
+                gui.dialog_update("route-manager");
+            }
+
+            var updateSIDs = func {
+                sids.removeChildren("value");
+
+                var apt = flightplan().departure;
+                var rwy = flightplan().departure_runway;
+                if (apt == nil) {
+                    return;
+                }
+
+                if (size(apt.sids(rwy)) == 0) {
+                    sids.getNode("value[0]", 1).setValue("DEFAULT");
+                    sids.getNode("value[1]", 1).setValue("(none)");
+                    gui.dialog_update("route-manager", "sid");
+                    return;
+                }
+
+                var i=1;
+                sids.getNode("value[0]", 1).setValue("(none)");
+                foreach (var s; apt.sids(rwy)) {
+                    var sid = apt.getSid(s);
+                    var transVec = sid.transitions;
+
+                    if (size(transVec) > 0) {
+                        # list each transition of the SID
+                        foreach (var trans; transVec) {
+                            sids.getNode("value[" ~ i ~ "]", 1).setValue(s ~ "-" ~ trans);
+                            i += 1;
+                        }
+                    } else {
+                        # no transitions defined, simple case
+                        sids.getNode("value[" ~ i ~ "]", 1).setValue(s);
+                        i += 1;
+                    }
+                }
+
+                gui.dialog_update("route-manager", "sid");
+            }
+
+            var updateSTARs = func {
+                stars.removeChildren("value");
+                var apt = flightplan().destination;
+                var rwy = flightplan().destination_runway;
+                if (apt == nil or apt.stars(rwy) == nil) {
+                    return;
+                }
+
+                var i=1;
+                stars.getNode("value[0]", 1).setValue("(none)");
+                foreach (var s; apt.stars(rwy)) {
+                    var star = apt.getStar(s);
+                    var transVec = star.transitions;
+
+                    if (size(transVec) > 0) {
+                        # list each transition of the STAR
+                        foreach (var trans; transVec) {
+                            stars.getNode("value[" ~ i ~ "]", 1).setValue(s ~ "-" ~ trans);
+                            i += 1;
+                        }
+                    } else {
+                        # no transitions defined, simple case
+                        stars.getNode("value[" ~ i ~ "]", 1).setValue(s);
+                        i += 1;
+                    }
+                }
+
+                gui.dialog_update("route-manager", "star");
+            }
+
+            var updateApproaches = func {
+                approaches.removeChildren("value");
+                var apt = flightplan().destination;
+                var rwy = flightplan().destination_runway;
+
+                if (apt == nil) {
+                    return;
+                }
+
+                if (size(apt.getApproachList(rwy)) == 0) {
+                    approaches.getNode("value[0]", 1).setValue("DEFAULT");
+                    approaches.getNode("value[1]", 1).setValue("(none)");
+                    gui.dialog_update("route-manager", "approach");
+                    return;
+                }
+
+                var i=1;
+                approaches.getNode("value[0]", 1).setValue("(none)");
+                foreach (var s; apt.getApproachList(rwy)) {
+                    approaches.getNode("value[" ~ i ~ "]", 1).setValue(s);
+                    i += 1;
+                }
+
+                gui.dialog_update("route-manager", "approach");
+            }
+
+            var initPosition = func {
+              var routeActive = routem.getNode("active").getValue();
+              if (routeActive) return;
+
+              # FIXME have user waypoints check
+              var fp = flightplan();
+
+              var airborne = getprop('/gear/gear[0]/wow') == 0;
+              if (airborne) {
+                logprint(LOG_INFO, 'route-manager dialog, init in-air, clearing departure settings');
+                fp.departure = nil;
+                return;
+              }
+
+
+
+              # we're on the ground, find the nearest airport to start from
+              if (fp.departure == nil) {
+                var apts = findAirportsWithinRange(25.0);
+                if (size(apts) == 0) return; # no airports nearby
+                fp.departure = apts[0]; # use the closest one
+              }
+
+              if (fp.departure_runway == nil) {
+                var rwy = fp.departure.findBestRunwayForPos( geo.aircraft_position() );
+                fp.departure_runway = rwy;
+              }
+            }
+
+        # initialise departure values based on current position
+            initPosition();
+
+            updateRunways();
+            updateSIDs();
+            updateSTARs();
+            updateApproaches();
+        ]]></open>
+
+        <close>
+            file_selector.del();
+            save_selector.del();
+        </close>
+    </nasal>
+
+    <group>
+        <layout>hbox</layout>
+        <empty><stretch>1</stretch></empty>
+
+        <text>
+            <label>Load Save CDU</label>
+        </text>
+
+        <empty><stretch>1</stretch></empty>
+
+        <button>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <legend></legend>
+            <default>1</default>
+            <keynum>27</keynum>
+            <border>2</border>
+
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
+    <hrule/>
+    <!-- departure / arrival airport information -->
+
+    <!-- button field -->
+    <group>
+        <layout>hbox</layout>
+        <halign>fill</halign>
+        <default-padding>8</default-padding>
+
+        <button>
+            <legend>Load ...</legend>
+            <equal>true</equal>
+            <enable>
+            <not><property>/autopilot/route-manager/active</property></not>
+            </enable>
+            <binding>
+                <command>nasal</command>
+                <script>file_selector.open()</script>
+            </binding>
+        </button>
+        <button>
+            <legend>Save ...</legend>
+            <equal>true</equal>
+            <binding>
+                <command>nasal</command>
+                <script>save_selector.open();</script>
+            </binding>
+        </button>
+        <button>
+            <legend>Close</legend>
+            <equal>true</equal>
+            <key>Esc</key>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
+</PropertyList>

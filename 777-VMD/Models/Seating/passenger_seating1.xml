@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Sieges777_200.ac</path>
+  
+  <animation>
+		<type>material</type>
+		<texture>texture_sieges2.png</texture>
+	</animation>
+
+        <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+                         <object-name>Sieges777200</object-name>
+               </effect>
+               
+               <animation>
+        <type>material</type>
+        <object-name>Sieges777200lumiere</object-name>
+        <condition>
+        <and>
+             <property>controls/electric/battery-switch</property>
+             <property>aaa/oh/PB59/IND1.toggle</property>
+        </and>
+        </condition>
+        <emission>
+            <red>0.0</red>
+            <green>0.8</green>
+            <blue>0.0</blue>
+        </emission>
+    </animation>
+ 
+</PropertyList>

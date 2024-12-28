@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">2 BOEING rouge 777x8</name>
+				<texture>Liveries-X8/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-X8/AFR1BOER.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-X8/AFR3BOER.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-X8/AFR4BOER.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-X8/AFR5BOER.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-X8/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-X8/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-X8/AFR8BOER.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-X8/AFR9.png</texture>
+                        </fuselage7>
+                        <fuselage8>
+                                <texture>Liveries-X8/AFR1BOERrac.png</texture>
+                        </fuselage8>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>BOER</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+

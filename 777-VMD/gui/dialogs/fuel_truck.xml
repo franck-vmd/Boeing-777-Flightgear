@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <name>fuel_truck</name>
+    <layout>vbox</layout>
+    
+    <group>
+
+        <layout>hbox</layout>
+
+        <text>
+            <label>Fuel Truck Controls</label>
+        </text>
+
+        <empty>
+            <stretch>true</stretch>
+        </empty>
+
+        <button>
+            <halign>right</halign>
+            <pref-width>16</pref-width>
+            <pref-height>16</pref-height>
+            <legend>x</legend>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+
+    </group>
+    
+    <hrule/>
+
+    <group>
+    <layout>vbox</layout>
+    
+        <group>
+        <layout>table</layout>
+        
+        <text>
+            <label>Total Fuel Quantity (Lbs):</label>
+            <halign>right</halign>
+            <padding>2</padding>
+            <row>0</row>
+            <col>0</col>
+        </text>
+        
+        <text>
+            <label>Request Fuel Extra (Lbs):</label>
+            <halign>right</halign>
+            <padding>1</padding>
+            <row>1</row>
+            <col>0</col>
+        </text>
+        
+        <text>
+            <label>Request Fuel Total (Lbs):</label>
+            <halign>right</halign>
+            <padding>1</padding>
+            <row>2</row>
+            <col>0</col>
+        </text>
+        
+        <text>
+            <row>0</row>
+            <col>1</col>
+            <halign>left</halign>
+            <padding>2</padding>
+            <property>consumables/fuel/total-fuel-lbs</property>
+            <live>true</live>
+            <format>%.1f</format>
+        </text>
+    
+        <input>
+            <row>1</row>
+            <col>1</col>
+            <halign>left</halign>
+            <padding>1</padding>
+            <property>services/fuel-truck/extra-lbs</property>
+            <live>true</live>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    setprop("services/fuel-truck/request-lbs", getprop("services/fuel-truck/extra-lbs") + getprop("consumables/fuel/total-fuel-lbs"));
+                </script>
+            </binding>
+        </input>
+        
+        <input>
+            <row>2</row>
+            <col>1</col>
+            <halign>left</halign>
+            <padding>1</padding>
+            <property>services/fuel-truck/request-lbs</property>
+            <live>true</live>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </input>
+        
+        </group>
+        
+        <hrule/>
+        
+        <group>
+        <layout>vbox</layout>
+        
+            <checkbox>
+                <label>Enable Fuel Truck</label>
+                <halign>left</halign>
+                <property>services/fuel-truck/enable</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </checkbox>
+            
+            <checkbox>
+                <label>Connect pipe to Aircraft</label>
+                <halign>left</halign>
+                <property>services/fuel-truck/connect</property>
+                <binding>
+                    <command>dialog-apply</command>
+                </binding>
+                <live>true</live>
+            </checkbox>
+        </group>
+        
+        <group>
+        <layout>hbox</layout>
+        
+            <button>
+                <legend>Re-fuel</legend>
+                <padding>2</padding>
+                <pref-width>80</pref-width>
+                <pref-height>24</pref-height>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        if ((getprop("services/fuel-truck/enable") == 1) and (getprop("services/fuel-truck/connect") == 1)) {
+                            setprop("services/fuel-truck/transfer", 1);
+                            setprop("services/fuel-truck/extra-lbs", 0);
+                            screen.log.write("Refueling process started. Estimated refueling time: " ~ math.round((getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/total-fuel-lbs"))/6660) ~ " minutes.", 0, 0.584, 1);
+                        } else
+                            screen.log.write("Please Enable and Connect the Fuel Truck First!", 1, 0, 0);
+                    </script>
+                </binding>
+            </button>
+            
+            <button>
+                <legend>Drain Tanks</legend>
+                <padding>2</padding>
+                <pref-width>80</pref-width>
+                <pref-height>24</pref-height>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        if ((getprop("services/fuel-truck/enable") == 1) and (getprop("services/fuel-truck/connect") == 1)) {
+                        
+                            if (getprop("services/fuel-truck/transfer") == 1)
+                                screen.log.write("You can't clean the tanks while loading fuel!'", 1, 0, 0);
+                            else {
+                                setprop("services/fuel-truck/clean", 1);
+                                screen.log.write("Cleaning Fuel Tanks...", 0, 0.584, 1);
+                            }
+                        } else
+                            screen.log.write("Please Enable and Connect the Fuel Truck First!", 1, 0, 0);
+                    </script>
+                </binding>
+            </button>
+        
+            <button>
+                <legend>Stop</legend>
+                <padding>2</padding>
+                <pref-width>80</pref-width>
+                <pref-height>24</pref-height>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        if (getprop("services/fuel-truck/transfer") == 1) {
+                            setprop("services/fuel-truck/transfer", 0);
+                            setprop("services/fuel-truck/speed-text", " ");
+                            screen.log.write("Refueling aborted.", 0, 0.584, 1);
+                        }
+                        if (getprop("services/fuel-truck/clean") == 1) {
+                            setprop("services/fuel-truck/clean", 0);
+                            setprop("services/fuel-truck/speed-text", " ");
+                            screen.log.write("Fuel drain aborted.", 0, 0.584, 1);
+                        }
+                    </script>
+                </binding>
+            </button>
+            
+            <button>
+                <legend>Fast</legend>
+                <padding>2</padding>
+                <pref-width>80</pref-width>
+                <pref-height>24</pref-height>
+                <binding>
+                    <command>nasal</command>
+                    <script>
+                        if (getprop("services/fuel-truck/transfer") == 1) {
+                            setprop("services/fuel-truck/transfer", 0);
+                            setprop("consumables/fuel/tank/level-lbs", 0);
+                            setprop("consumables/fuel/tank[2]/level-lbs", 0);
+                            setprop("consumables/fuel/tank[1]/level-lbs", getprop("services/fuel-truck/request-lbs"));
+                            b777.balance_fuel();
+                            setprop("services/fuel-truck/speed-text", " ");
+                            screen.log.write("Airplane refueled.", 0, 0.584, 1);
+                        }
+
+                        if (getprop("services/fuel-truck/clean") == 1) {
+                            setprop("services/fuel-truck/clean", 0);
+                            setprop("consumables/fuel/tank/level-lbs", 0);
+                            setprop("consumables/fuel/tank[1]/level-lbs", 0);
+                            setprop("consumables/fuel/tank[2]/level-lbs", 0);
+                            setprop("services/fuel-truck/speed-text", " ");
+                            screen.log.write("Finished draining the fuel tanks...", 0, 0.584, 1);
+                        }
+                    </script>
+                </binding>
+            </button>
+            
+        </group>
+        
+        <text>
+            <halign>left</halign>
+            <property>services/fuel-truck/speed-text</property>
+            <live>true</live>
+        </text>
+    
+    </group>
+
+    <hrule/>
+    
+    <group>
+    <layout>table</layout>
+    
+        <text>
+            <label>Left wing tank (Lbs):</label>
+            <halign>right</halign>
+            <padding>0</padding>
+            <row>0</row>
+            <col>0</col>
+        </text>
+        
+        <text>
+            <label>Center tank (Lbs):</label>
+            <halign>right</halign>
+            <padding>0</padding>
+            <row>1</row>
+            <col>0</col>
+        </text>
+        
+        <text>
+            <label>Right wing tank (Lbs):</label>
+            <halign>right</halign>
+            <padding>0</padding>
+            <row>2</row>
+            <col>0</col>
+        </text>
+        
+        <input>
+            <row>0</row>
+            <col>1</col>
+            <halign>left</halign>
+            <padding>0</padding>
+            <pref-width>90</pref-width>
+            <property>consumables/fuel/tank/level-lbs</property>
+            <live>true</live>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </input>
+    
+        <input>
+            <row>1</row>
+            <col>1</col>
+            <halign>left</halign>
+            <padding>0</padding>
+            <pref-width>90</pref-width>
+            <property>consumables/fuel/tank[1]/level-lbs</property>
+            <live>true</live>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </input>
+        
+        <input>
+            <row>2</row>
+            <col>1</col>
+            <halign>left</halign>
+            <padding>0</padding>
+            <pref-width>90</pref-width>
+            <property>consumables/fuel/tank[2]/level-lbs</property>
+            <live>true</live>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </input>
+        
+        <text>
+            <label>Total:</label>
+            <halign>right</halign>
+            <padding>2</padding>
+            <row>3</row>
+            <col>0</col>
+        </text>
+        
+        <text>
+            <property>consumables/fuel/total-fuel-lbs</property>
+            <halign>left</halign>
+            <padding>2</padding>
+            <format>%.1f</format>
+            <row>3</row>
+            <col>1</col>
+            <live>true</live>
+        </text>
+        
+        <button>
+            <legend>Balance fuel</legend>
+            <row>1</row>
+            <col>2</col>
+            <padding>3</padding>
+            <pref-width>84</pref-width>
+            <pref-height>24</pref-height>
+            <halign>left</halign>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    b777.balance_fuel();
+                </script>
+            </binding>
+        </button>
+        
+        
+    
+    </group>
+    
+    <hrule/>
+    
+    <group>
+    
+        <layout>table</layout>
+        <text>
+            <row>0</row>
+            <col>0</col>
+            <label>Total payload weight:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>0</row>
+            <col>1</col>
+            <property>sim/weight[1]/weight-lb</property>
+            <live>true</live>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>1</row>
+            <col>0</col>
+            <label>Maximum payload weight:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>1</row>
+            <col>1</col>
+            <property>sim/weight[1]/max-lb</property>
+            <live>true</live>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>2</row>
+            <col>0</col>
+            <label>Gross weight:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>2</row>
+            <col>1</col>
+            <property>yasim/gross-weight-lbs</property>
+            <live>true</live>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>3</row>
+            <col>0</col>
+            <label>Maximum takeoff weight:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>3</row>
+            <col>1</col>
+            <property>sim/max-takeoff-weight</property>
+            <halign>left</halign>
+        </text>
+        
+        <text>
+            <row>4</row>
+            <col>0</col>
+            <label>Maximum landing weight:</label>
+            <halign>right</halign>
+        </text>
+        
+        <text>
+            <row>4</row>
+            <col>1</col>
+            <property>sim/max-landing-weight</property>
+            <halign>left</halign>
+        </text>
+    
+    </group>
+    
+    <hrule/>
+
+</PropertyList>

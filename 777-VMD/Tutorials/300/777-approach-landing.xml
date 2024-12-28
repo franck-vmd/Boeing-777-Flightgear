@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
+
+<PropertyList>
+
+    <name>Approach and Landing</name>
+    <description>
+You've made it all the up, had an uneventful flight roaring through the blue skies. Now you're close to your final destination.
+Passengers have had their menus. Naturally they expect a safe and smooth landing. And they expect to be home on time. 
+  
+This tutorial takes you through the steps of final approach and landing.     
+    </description>
+	
+    <audio-dir>Aircraft/777/Tutorials</audio-dir>
+
+    <step>
+		<message>Ok, I have the approach checklist...</message>
+    </step>
+
+    <end>
+		<message>Ok, you should be roaring through the skies! Continue with the "Approach and Landing" tutorial later.</message>
+    </end>
+
+</PropertyList>

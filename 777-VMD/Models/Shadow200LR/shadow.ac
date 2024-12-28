@@ -1,0 +1,47 @@
+AC3Db
+MATERIAL "shadow" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 32 trans 0.600
+OBJECT world
+name "Blender_exporter_v2.26__shadow.ac"
+kids 2
+OBJECT poly
+name "shadow"
+data 5
+Plane
+crease 40.0
+texture "ombre essay.png"
+texrep 1 1
+numvert 4
+-24.89172 0.21602 34.89197
+44.89172 0.48398 34.89197
+-24.89172 0.21602 -34.89197
+44.89172 0.48398 -34.89197
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0
+OBJECT poly
+name "shadow1"
+data 9
+Plane.002
+crease 40.0
+texture "ombre essay.png"
+texrep 1 1
+numvert 4
+-24.89172 2.86602 34.89197
+44.89172 3.13398 34.89197
+-24.89172 2.86602 -34.89197
+44.89172 3.13398 -34.89197
+numsurf 1
+SURF 0X0
+mat 0
+refs 4
+0 0 0
+1 1 0
+3 1 1
+2 0 1
+kids 0

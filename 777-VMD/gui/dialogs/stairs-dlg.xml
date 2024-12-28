@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<name>stairs_paint</name>
+	<layout>vbox</layout>
+
+	<text>
+		<label>Select stairs paint scheme</label>
+	</text>
+	
+	<hrule />
+	
+	<combo>
+		<halign>left</halign>
+		<name>stairs_paint</name>
+		<pref-width>300</pref-width>
+		<property>services/stairs/paint-end</property>
+		<value>blank.png</value>
+		<value>blue-shade.png</value>
+		<value>blue-stripes.png</value>
+		<value>dark-red.png</value>
+		<value>emirates.png</value>
+		<value>green-orange.png</value>
+		<value>malaysia.png</value>
+		<binding>
+			<command>dialog-apply</command>
+			<object-name>stairs_paint</object-name>
+		</binding>
+	</combo>
+	
+	<button>
+		<legend>Toggle Stairs Covers</legend>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/stairs/cover</property>
+		</binding>
+	</button>
+	
+	<hrule />
+	
+	<group>
+	<layout>hbox</layout>
+
+		<button>
+			<legend>Close</legend>
+			<default>true</default>
+			<key>Esc</key>
+		<padding>5</padding>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+	</group>
+
+</PropertyList>

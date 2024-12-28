@@ -1,0 +1,622 @@
+<?xml version="1.0"?>
+<!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
+
+<PropertyList>
+	<name>Introduction: Autopilot</name>
+	<description>
+Welcome aboard your 777 aircraft!
+
+Require an aircraft type conversion? Need an upgrade from another aircraft type (or older fgfs sim)?
+This tutorial quickly walks you through the features of the autopilot.
+</description>
+
+	<init>
+		<set>
+			<property>controls/electric/battery-switch</property>
+			<value>1</value>
+		</set>
+		<set>
+			<property>autopilot/settings/target-speed-kt</property>
+			<value>200</value>
+		</set>
+		<set>
+			<property>autopilot/settings/heading-bug-deg</property>
+			<value>360</value>
+		</set>
+		<set>
+			<property>autopilot/settings/track-bug-deg</property>
+			<value>360</value>
+		</set>
+		<set>
+			<property>autopilot/settings/counter-set-altitude-ft</property>
+			<value>10000</value>
+		</set>
+		<set>
+			<property>autopilot/locks/passive-mode</property>
+			<value>1</value>
+		</set>
+	</init>
+
+<step>
+	<message>This entire panel is the MCP (mode control panel) ("autopilot").</message>
+	<view>
+	    <heading-offset-deg>327.9</heading-offset-deg>
+	    <pitch-offset-deg>-13.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.6</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>63.4</field-of-view>
+	</view>
+	
+	<marker>
+	    <x-m>-1.8200</x-m>
+	    <y-m>-0.0683</y-m>
+	    <z-m>0.5733</z-m>
+	    <scale>5.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The autopilot master switch. Must be enabled for any autopilot mode to work
+	(cannot be engaged on ground).</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8292</x-m>
+	    <y-m>-0.2592</y-m>
+	    <z-m>0.5925</z-m>
+	    <scale>1.0000</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The PFD displays "A/P" whenever autopilot master switch is enabled.</message>
+	<view>
+	    <heading-offset-deg>357.2</heading-offset-deg>
+	    <pitch-offset-deg>-19.4</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.5</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>39.9</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8508</x-m>
+	    <y-m>-0.5459</y-m>
+	    <z-m>0.4417</z-m>
+	    <scale>1.6667</scale>
+	</marker>
+	<set>
+		<property>instrumentation/afds/ap-modes/mode-annunciator</property>
+		<value>A/P</value>
+	</set>
+</step>
+
+<step>
+	<message>The caution light comes on when the A/P disenganges (automatically or manually)
+	and this A/P warning sound is audible.</message>
+	<view>
+	    <heading-offset-deg>357.2</heading-offset-deg>
+	    <pitch-offset-deg>-19.4</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.5</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>39.9</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.7875</x-m>
+	    <y-m>-0.4633</y-m>
+	    <z-m>0.6042</z-m>
+	    <scale>1.7167</scale>
+	</marker>
+	<set>
+		<property>autopilot/locks/passive-mode</property>
+		<value>0</value>
+	</set>
+	<set>
+		<property>autopilot/locks/passive-mode</property>
+		<value>1</value>
+	</set>
+</step>
+
+<step>
+	<message>The EICAS text display also shows "A/P disengage" when A/P is switched off.</message>
+	<view>
+	    <heading-offset-deg>326.4</heading-offset-deg>
+	    <pitch-offset-deg>-21.6</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.5</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>39.9</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8566</x-m>
+	    <y-m>0.0458</y-m>
+	    <z-m>0.4542</z-m>
+	    <scale>3.0667</scale>
+	</marker>
+	<set>
+		<property>autopilot/locks/passive-mode</property>
+		<value>0</value>
+	</set>
+	<set>
+		<property>autopilot/locks/passive-mode</property>
+		<value>1</value>
+	</set>
+</step>
+
+<step>
+	<message>Auto-thrust (A/T) arm switches for left/right engine. Keep both switches in sync (unless you have a single-engine failure).</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8333</x-m>
+	    <y-m>-0.2267</y-m>
+	    <z-m>0.5992</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Switches must be enganged, otherwise A/T has no effect for left or right engine.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8333</x-m>
+	    <y-m>-0.2267</y-m>
+	    <z-m>0.5992</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Arm auto-thrust for left and right engine now (click)!</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8333</x-m>
+	    <y-m>-0.2267</y-m>
+	    <z-m>0.5992</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+	<exit>
+		<condition>
+			<and>
+				<property>instrumentation/afds/inputs/at-armed</property>
+				<property>instrumentation/afds/inputs/at-armed[1]</property>
+			</and>
+		</condition>
+	</exit>
+</step>
+
+<step>
+	<message>Main switch to enable auto-thrust (cannot be engaged on ground).</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8158</x-m>
+	    <y-m>-0.2267</y-m>
+	    <z-m>0.5458</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Displays selected A/T target speed.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8158</x-m>
+	    <y-m>-0.1725</y-m>
+	    <z-m>0.5975</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>A/T speed selector. Select 230 knots now (use mouse scroll wheel)!</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8158</x-m>
+	    <y-m>-0.1825</y-m>
+	    <z-m>0.5583</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+	<exit>
+		<condition>
+			<equals>
+				<property>autopilot/settings/target-speed-kt</property>
+				<value>230</value>
+			</equals>
+		</condition>
+	</exit>
+</step>
+
+<step>
+	<message>LNAV: lateral navigation (controls heading, follows route)</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8242</x-m>
+	    <y-m>-0.1342</y-m>
+	    <z-m>0.5942</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>VNAV (vertical navigation, changes altitude according to route)</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8242</x-m>
+	    <y-m>-0.1342</y-m>
+	    <z-m>0.5692</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>FLCH: flight level change. Climb/descend to selected target altitude - then hold altidude.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8200</x-m>
+	    <y-m>-0.1342</y-m>
+	    <z-m>0.5425</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Autopilot disengage. Panic bar. Hit button to disable all autopilot modes.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8167</x-m>
+	    <y-m>-0.0976</y-m>
+	    <z-m>0.5408</z-m>
+	    <scale>2.3334</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Selected autopilot target heading.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>-0.0526</y-m>
+	    <z-m>0.5967</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Heading hold. Fly fixed heading. Press button to hold current heading.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>-0.0576</y-m>
+	    <z-m>0.5433</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Inner switch: Target heading selector. Use left/middle mouse button to change target heading. Select heading 300 now (click)!</message> 
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>-0.0576</y-m>
+	    <z-m>0.5708</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+	<exit>
+		<condition>
+			<equals>
+				<property>autopilot/settings/heading-bug-deg</property>
+				<value>300</value>
+			</equals>
+		</condition>
+	</exit>
+</step>
+
+<step>
+	<message>Outer switch: bank limit selector. Use mouse scroll wheel to select maximum roll angle for autopilot. Select 25 degrees (max) now!</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>-0.0576</y-m>
+	    <z-m>0.5708</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+	<exit>
+		<condition>
+			<equals>
+				<property>instrumentation/afds/inputs/bank-limit-switch</property>
+				<value>5</value>
+			</equals>
+		</condition>
+	</exit>
+</step>
+
+<step>
+	<message>Vertical target speed. Displays selected climb/sink rate in ft/min.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>0.0199</y-m>
+	    <z-m>0.5958</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Vertical speed selector. Mouse scroll wheel changes target climb/sink rate.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>0.0124</y-m>
+	    <z-m>0.5592</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>VS/FPA main switch. Press button to engange/disengage fixed climb/sink rate.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>0.0474</y-m>
+	    <z-m>0.5442</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Target altitude display.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8250</x-m>
+	    <y-m>0.0816</y-m>
+	    <z-m>0.5958</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Altitude selector. Use mouse scroll wheel to change target altitude. Select 15000ft now (click)!</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>0.0816</y-m>
+	    <z-m>0.5708</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+	<exit>
+		<condition>
+			<equals>
+				<property>autopilot/settings/counter-set-altitude-ft</property>
+				<value>15000</value>
+			</equals>
+		</condition>
+	</exit>
+</step>
+
+<step>
+	<message>Altitude hold. Press button to engage vertical autopilot mode and hold current altitude.</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8142</x-m>
+	    <y-m>0.0816</y-m>
+	    <z-m>0.5442</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Localizer arm. Arms autopilot to engange on localizer as soon as signal is in range (uses NAV1 receiver).</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8250</x-m>
+	    <y-m>0.1291</y-m>
+	    <z-m>0.5658</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Approach arm. Arms autopilot to engange on localizer and glide slope, as soon as signals are in range (NAV1).</message>
+	<view>
+	    <heading-offset-deg>358.3</heading-offset-deg>
+	    <pitch-offset-deg>-16.8</pitch-offset-deg>
+	    <roll-offset-deg>0.0</roll-offset-deg>
+	    <x-offset-m>-0.2</x-offset-m>
+	    <y-offset-m>0.8</y-offset-m>
+	    <z-offset-m>-22.8</z-offset-m>
+	    <field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+	    <x-m>-1.8250</x-m>
+	    <y-m>0.1324</y-m>
+	    <z-m>0.5392</z-m>
+	    <scale>1.1667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>That's it. More tutorials are available.</message>
+</step>
+
+<end></end>
+
+</PropertyList>

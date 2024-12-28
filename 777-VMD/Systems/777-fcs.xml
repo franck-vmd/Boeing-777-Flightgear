@@ -1,0 +1,650 @@
+<?xml version="1.0"?>
+
+<!-- Boeing 777 Flight Control System -->
+<!-- Copyright (c) 2019 Joshua Davidson (Octal450) -->
+
+<PropertyList>
+	
+	<!-- Libraries -->
+	
+	<logic>
+		<input>
+			<or>
+				<equals>
+					<property>/gear/gear[0]/wow</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/gear/gear[1]/wow</property>
+					<value>1</value>
+				</equals>
+				<equals>
+					<property>/gear/gear[2]/wow</property>
+					<value>1</value>
+				</equals>
+			</or>
+		</input>
+		<output>/fcs/position/wow</output>
+	</logic>
+	
+	<logic>
+		<input>
+			<and>
+				<greater-than>
+					<property>/instrumentation/airspeed-indicator/indicated-mach</property>
+					<value>0.48</value> <!-- Close, but not quite right -->
+				</greater-than>
+				<equals>
+					<property>/fcs/position/wow</property>
+					<value>0</value>
+				</equals>
+			</and>
+		</input>
+		<output>/fcs/logic/outer-aileron-locked</output>
+	</logic>
+	
+	<filter>
+		<name>Outer Aileron Flap Droop</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<table>
+					<product>
+						<property>/surface-positions/flap-pos-norm</property>
+						<value>30</value>
+					</product>
+					<entry><ind> 1</ind><dep>0</dep></entry>
+					<entry><ind> 5</ind><dep>8</dep></entry>
+					<entry><ind>20</ind><dep>8</dep></entry>
+					<entry><ind>21</ind><dep>0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/droop-outer</output>
+	</filter>
+	
+	<filter>
+		<name>Inner Aileron Flap Droop</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<greater-than>
+					<property>/fcs/spoilers/input</property>
+					<value>0.01</value>
+				</greater-than>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<product>
+						<property>/surface-positions/flap-pos-norm</property>
+						<value>30</value>
+					</product>
+					<entry><ind> 1</ind><dep> 0</dep></entry>
+					<entry><ind> 5</ind><dep> 5</dep></entry>
+					<entry><ind>15</ind><dep>16</dep></entry>
+					<entry><ind>20</ind><dep>20</dep></entry>
+					<entry><ind>25</ind><dep>25</dep></entry>
+					<entry><ind>30</ind><dep>28</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/droop-inner</output>
+	</filter>
+	
+	<filter>
+		<name>Left Outer Aileron Flap Anti Droop</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<product>
+					<table>
+						<property>/fcs/fbw/roll/aileron-cmd</property>
+						<entry><ind>-1</ind><dep>-1</dep></entry>
+						<entry><ind> 0</ind><dep> 0</dep></entry>
+					</table>
+					<property>/fcs/droop-outer</property>
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/anti-droop-left-outer</output>
+	</filter>
+	
+	<filter>
+		<name>Left Inner Aileron Flap Anti Droop</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<product>
+					<table>
+						<property>/fcs/fbw/roll/aileron-cmd</property>
+						<entry><ind>-1</ind><dep>-1</dep></entry>
+						<entry><ind> 0</ind><dep> 0</dep></entry>
+					</table>
+					<property>/fcs/droop-inner</property>
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/anti-droop-left-inner</output>
+	</filter>
+	
+	<filter>
+		<name>Right Inner Aileron Flap Anti Droop</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<product>
+					<table>
+						<property>/fcs/fbw/roll/aileron-cmd</property>
+						<entry><ind>0</ind><dep> 0</dep></entry>
+						<entry><ind>1</ind><dep>-1</dep></entry>
+					</table>
+					<property>/fcs/droop-inner</property>
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/anti-droop-right-inner</output>
+	</filter>
+	
+	<filter>
+		<name>Right Outer Aileron Flap Anti Droop</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<product>
+					<table>
+						<property>/fcs/fbw/roll/aileron-cmd</property>
+						<entry><ind>0</ind><dep> 0</dep></entry>
+						<entry><ind>1</ind><dep>-1</dep></entry>
+					</table>
+					<property>/fcs/droop-outer</property>
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/anti-droop-right-outer</output>
+	</filter>
+	
+	<!-- Ailerons -->
+	
+	<filter>
+		<name>Left Outer Aileron</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/left-out-aileron/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind> 62</ind><dep>30</dep></entry>
+					<entry><ind>116</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/logic/outer-aileron-locked</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<expression>
+				<sum>
+					<table>
+						<property>/fcs/fbw/roll/aileron-cmd</property>
+						<entry><ind>-1</ind><dep>-30</dep></entry>
+						<entry><ind> 0</ind><dep>  0</dep></entry>
+						<entry><ind> 1</ind><dep> 10</dep></entry>
+					</table>
+					<property>/fcs/droop-outer</property>
+					<property>/fcs/anti-droop-left-outer</property>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/left-out-aileron/cmd-deg</output>
+		<min>-30</min>
+		<max>10</max>
+		<max-rate-of-change>85</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Left Outer Aileron Final</name>
+		<type>exponential</type>
+		<input>/fcs/left-out-aileron/cmd-deg</input>
+		<output>/fcs/left-out-aileron/final-deg</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Left Inner Aileron</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/left-in-aileron/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind> 62</ind><dep>32</dep></entry>
+					<entry><ind>116</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<sum>
+					<table>
+						<property>/fcs/fbw/roll/aileron-cmd</property>
+						<entry><ind>-1</ind><dep>-11</dep></entry>
+						<entry><ind> 0</ind><dep>  0</dep></entry>
+						<entry><ind> 1</ind><dep> 32</dep></entry>
+					</table>
+					<property>/fcs/droop-inner</property>
+					<property>/fcs/anti-droop-left-inner</property>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/left-in-aileron/cmd-deg</output>
+		<min>-11</min>
+		<max>32</max>
+		<max-rate-of-change>85</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Left Inner Aileron Final</name>
+		<type>exponential</type>
+		<input>/fcs/left-in-aileron/cmd-deg</input>
+		<output>/fcs/left-in-aileron/final-deg</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Right Inner Aileron</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/right-in-aileron/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind> 62</ind><dep>32</dep></entry>
+					<entry><ind>116</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<sum>
+					<table>
+						<property>/fcs/fbw/roll/aileron-cmd</property>
+						<entry><ind>-1</ind><dep> 32</dep></entry>
+						<entry><ind> 0</ind><dep>  0</dep></entry>
+						<entry><ind> 1</ind><dep>-11</dep></entry>
+					</table>
+					<property>/fcs/droop-inner</property>
+					<property>/fcs/anti-droop-right-inner</property>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/right-in-aileron/cmd-deg</output>
+		<min>-11</min>
+		<max>32</max>
+		<max-rate-of-change>85</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Right Inner Aileron Final</name>
+		<type>exponential</type>
+		<input>/fcs/right-in-aileron/cmd-deg</input>
+		<output>/fcs/right-in-aileron/final-deg</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Right Outer Aileron</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/right-out-aileron/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind> 62</ind><dep>30</dep></entry>
+					<entry><ind>116</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>
+			<condition>
+				<equals>
+					<property>/fcs/logic/outer-aileron-locked</property>
+					<value>1</value>
+				</equals>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<expression>
+				<sum>
+					<table>
+						<property>/fcs/fbw/roll/aileron-cmd</property>
+						<entry><ind>-1</ind><dep> 10</dep></entry>
+						<entry><ind> 0</ind><dep>  0</dep></entry>
+						<entry><ind> 1</ind><dep>-30</dep></entry>
+					</table>
+					<property>/fcs/droop-outer</property>
+					<property>/fcs/anti-droop-right-outer</property>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/right-out-aileron/cmd-deg</output>
+		<min>-30</min>
+		<max>10</max>
+		<max-rate-of-change>85</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Right Outer Aileron Final</name>
+		<type>exponential</type>
+		<input>/fcs/right-out-aileron/cmd-deg</input>
+		<output>/fcs/right-out-aileron/final-deg</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Aileron Total</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<product>
+					<sum> <!-- Total of -83 to 83 degrees -->
+						<property>/fcs/left-out-aileron/final-deg</property>
+						<property>/fcs/left-in-aileron/final-deg</property>
+						<product>
+							<property>/fcs/right-in-aileron/final-deg</property>
+							<value>-1.0</value>
+						</product>
+						<product>
+							<property>/fcs/right-out-aileron/final-deg</property>
+							<value>-1.0</value>
+						</product>
+					</sum>
+					<value>0.01204819277108433734939759036145</value> <!-- Normalize it to -1 to 1 for YASim --> <!-- 1/83 -->
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/output/roll-aileron</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<!-- Roll Total -->
+	
+	<filter> <!-- Normalize it to -1 to 1 and sum for YASim -->
+		<name>Roll Total</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<sum>
+					<product>
+						<property>/fcs/output/roll-aileron</property>
+						<value>0.6</value>
+					</product>
+					<product>
+						<property>/fcs/output/roll-spoiler</property>
+						<value>0.4</value>
+					</product>
+				</sum>
+			</expression>
+		</input>
+		<output>/fcs/output/roll</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<!-- Elevators -->
+	
+	<filter>
+		<name>Left Elevator</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/left-elevator/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind> 72</ind><dep>25</dep></entry>
+					<entry><ind>121</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/pitch/elevator-cmd</property>
+					<entry><ind>-1</ind><dep>-30</dep></entry>
+					<entry><ind> 0</ind><dep>  0</dep></entry>
+					<entry><ind> 1</ind><dep> 25</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/left-elevator/cmd-deg</output>
+		<min>-30</min>
+		<max>25</max>
+		<max-rate-of-change>85</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Left Elevator Final</name>
+		<type>exponential</type>
+		<input>/fcs/left-elevator/cmd-deg</input>
+		<output>/fcs/left-elevator/final-deg</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Right Elevator</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/right-elevator/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<expression>
+				<table>
+					<property>/velocities/airspeed-kt</property>
+					<entry><ind> 72</ind><dep>25</dep></entry>
+					<entry><ind>121</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/pitch/elevator-cmd</property>
+					<entry><ind>-1</ind><dep>-30</dep></entry>
+					<entry><ind> 0</ind><dep>  0</dep></entry>
+					<entry><ind> 1</ind><dep> 25</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/right-elevator/cmd-deg</output>
+		<min>-30</min>
+		<max>25</max>
+		<max-rate-of-change>85</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Right Elevator Final</name>
+		<type>exponential</type>
+		<input>/fcs/right-elevator/cmd-deg</input>
+		<output>/fcs/right-elevator/final-deg</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Elevator Total</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<product>
+					<sum> <!-- Total of -60 to 50 degrees -->
+						<property>/fcs/left-elevator/final-deg</property>
+						<property>/fcs/right-elevator/final-deg</property>
+					</sum>
+					<value>0.01666666666666666666666666666667</value> <!-- Normalize it to -1 to 1 for YASim --> <!-- 1/60 -->
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/output/pitch</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+	
+	<!-- Stabilizer -->
+	<!-- Not actually sent to YASim because YASim sucks and can't change elevator-trim property! -->
+	
+	<filter>
+		<name>Stabilizer</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/stabilizer/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<property>/fcs/stabilizer/cmd-deg</property>
+		</input>
+		<input>
+			<expression>
+				<product>
+					<sum>
+						<property>/controls/flight/elevator-trim</property>
+						<value>-0.125</value> <!-- Comepensation because YASim sucks -->
+					</sum>
+					<value>11</value>
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/stabilizer/cmd-deg</output>
+		<min>-11</min>
+		<max>4</max>
+	</filter>
+	
+	<filter>
+		<name>Stabilizer Final</name>
+		<type>noise-spike</type>
+		<input>/fcs/stabilizer/cmd-deg</input>
+		<output>/fcs/stabilizer/final-deg</output>
+		<max-rate-of-change>0.3</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Stabilizer Indicator</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/stabilizer/final-deg</property>
+					<entry><ind>-11</ind><dep>15</dep></entry>
+					<entry><ind>  4</ind><dep> 0</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/stabilizer/final-deg-ind</output>
+	</filter>
+	
+	<!-- Rudder -->
+	
+	<filter>
+		<name>Rudder</name>
+		<type>noise-spike</type>
+		<input>
+			<condition>
+				<not-equals>
+					<property>/fcs/rudder/hyd-avail</property>
+					<value>1</value>
+				</not-equals>
+			</condition>
+			<value>0</value>
+		</input>
+		<input>
+			<expression>
+				<table>
+					<property>/fcs/fbw/yaw/rudder-cmd</property>
+					<entry><ind>-1</ind><dep>-27.3</dep></entry>
+					<entry><ind> 0</ind><dep>  0.0</dep></entry>
+					<entry><ind> 1</ind><dep> 27.3</dep></entry>
+				</table>
+			</expression>
+		</input>
+		<output>/fcs/rudder/cmd-deg</output>
+		<min>-27.3</min>
+		<max>27.3</max>
+		<max-rate-of-change>80</max-rate-of-change>
+	</filter>
+	
+	<filter>
+		<name>Rudder Final</name>
+		<type>exponential</type>
+		<input>/fcs/rudder/cmd-deg</input>
+		<output>/fcs/rudder/final-deg</output>
+		<filter-time>0.04</filter-time>
+	</filter>
+	
+	<filter>
+		<name>Elevator Total</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<input>
+			<expression>
+				<product>
+					<!-- Total of -27.3 to 27.3 degrees -->
+					<property>/fcs/rudder/final-deg</property>
+					<value>0.03663003663003663003663003663004</value> <!-- Normalize it to -1 to 1 for YASim --> <!-- 1/27.3 -->
+				</product>
+			</expression>
+		</input>
+		<output>/fcs/output/yaw</output>
+		<min>-1.0</min>
+		<max>1.0</max>
+	</filter>
+
+</PropertyList>

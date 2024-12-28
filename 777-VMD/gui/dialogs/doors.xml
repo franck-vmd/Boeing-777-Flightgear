@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <name>doors</name>
+    <layout>vbox</layout>
+    <padding>20</padding>
+
+<group>
+
+    <layout>hbox</layout>
+    <text>
+    <label>Doors Close Open</label>
+    </text>
+    <empty><stretch>true</stretch></empty>
+
+<button>
+    <legend>x</legend>
+    <key>Esc</key>
+    <pref-width>16</pref-width>
+    <pref-height>16</pref-height>
+    <border>2</border>
+    <binding>
+    <command>dialog-close</command>
+    </binding>
+</button>
+    
+</group>
+
+<hrule/>
+    
+<group>
+    <stretch>true</stretch>  
+    <layout>hbox</layout>
+    <halign>center</halign>  
+    <text> 
+    <label>Doors L - Doors R</label>
+    </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+    <pref-width>70</pref-width>
+    <desc>Close</desc>
+    <legend>Close</legend>
+    <equal>true</equal>
+    <repeatable type="bool">false</repeatable>
+    <binding>
+    <command>nasal</command>
+    <script>
+     b777.doors.close("l1");
+     b777.doors.close("l2");
+     b777.doors.close("l3");
+     b777.doors.close("l4");
+     b777.doors.close("r1");
+     b777.doors.close("r2");
+     b777.doors.close("r3");
+     b777.doors.close("r4");
+     b777.doors.close("c54");
+     b777.doors.close("c55");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("l1");
+     b777.doors.open("l2");
+     b777.doors.open("l3");
+     b777.doors.open("l4");
+     b777.doors.open("r1");
+     b777.doors.open("r2");
+     b777.doors.open("r3");
+     b777.doors.open("r4");
+     b777.doors.open("c54");
+     b777.doors.open("c55");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+</group>
+   
+<hrule/>  
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Soutes</label>
+     </text>
+</group>
+
+<hrule/>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>     
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.close("c9");
+     b777.doors.close("c10");
+     b777.doors.close("c11");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("c9");
+     b777.doors.open("c10");
+     b777.doors.open("c11");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+</group>
+        
+<hrule/>
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>RADAR</label>
+     </text>
+</group>
+
+     <hrule/>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.close("c12");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("c12");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+</group>
+        
+<hrule/>
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>APU G-D</label>
+     </text>
+</group>
+
+<hrule/>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.close("c31");
+     b777.doors.close("c32");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("c31");
+     b777.doors.open("c32");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+</group>
+        
+<hrule/>
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Moteur G-D</label>
+     </text>
+</group>
+
+<hrule/>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.close("c1");
+     b777.doors.close("c2");
+     b777.doors.close("c3");
+     b777.doors.close("c4");
+     b777.doors.close("c5");
+     b777.doors.close("c6");
+     b777.doors.close("c7");
+     b777.doors.close("c8");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("c1");
+     b777.doors.open("c2");
+     b777.doors.open("c3");
+     b777.doors.open("c4");
+     b777.doors.open("c5");
+     b777.doors.open("c6");
+     b777.doors.open("c7");
+     b777.doors.open("c8");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>L R Gear</label>
+     </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.close("c33");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("c33");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Close-Open automatique</label>
+     </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+    <command>nasal</command>
+    <script>
+     b777.doors.close("l1");
+     b777.doors.close("l2");
+     b777.doors.close("l3");
+     b777.doors.close("l4");
+     b777.doors.close("r1");
+     b777.doors.close("r2");
+     b777.doors.close("r3");
+     b777.doors.close("r4");
+     b777.doors.close("c54");
+     b777.doors.close("c55");
+     b777.doors.close("c9");
+     b777.doors.close("c10");
+     b777.doors.close("c11");
+     b777.doors.close("c12");
+     b777.doors.close("c31");
+     b777.doors.close("c32");
+     b777.doors.close("c1");
+     b777.doors.close("c2");
+     b777.doors.close("c3");
+     b777.doors.close("c4");
+     b777.doors.close("c5");
+     b777.doors.close("c6");
+     b777.doors.close("c7");
+     b777.doors.close("c8");
+     b777.doors.close("c33");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+    <command>nasal</command>
+    <script>
+     b777.doors.open("l1");
+     b777.doors.open("l2");
+     b777.doors.open("l3");
+     b777.doors.open("l4");
+     b777.doors.open("r1");
+     b777.doors.open("r2");
+     b777.doors.open("r3");
+     b777.doors.open("r4");
+     b777.doors.open("c54");
+     b777.doors.open("c55");
+     b777.doors.open("c9");
+     b777.doors.open("c10");
+     b777.doors.open("c11");
+     b777.doors.open("c12");
+     b777.doors.open("c31");
+     b777.doors.open("c32");
+     b777.doors.open("c1");
+     b777.doors.open("c2");
+     b777.doors.open("c3");
+     b777.doors.open("c4");
+     b777.doors.open("c5");
+     b777.doors.open("c6");
+     b777.doors.open("c7");
+     b777.doors.open("c8");
+     b777.doors.open("c33");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>Open-Mix Hublot</label>
+     </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open-Mix</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/windowmix</property>
+      </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+</PropertyList>

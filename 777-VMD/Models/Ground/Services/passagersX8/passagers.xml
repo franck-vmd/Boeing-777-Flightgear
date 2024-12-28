@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>passagers.ac</path>
+  
+        <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+         <object-name>femme 1</object-name>
+         <object-name>femme 2</object-name>
+         <object-name>fille 1</object-name>
+         <object-name>homme 1</object-name>
+         <object-name>homme 2</object-name>
+        </effect>
+ 
+</PropertyList>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Copyright (c) 2019 Joshua Davidson (Octal450) -->
+
+<PropertyList>
+
+	<name>fbwsettings</name>
+	<layout>vbox</layout>
+
+    <group>
+        <layout>hbox</layout>
+        <text>
+            <halign>left</halign>
+            <label>FBW Settings</label>
+        </text>
+        <button>
+            <halign>right</halign>
+            <pref-width>20</pref-width>
+            <pref-height>20</pref-height>
+            <legend>X</legend>
+            <key>Esc</key>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
+	
+    <hrule/>
+	
+	<group>
+		<layout>vbox</layout>
+		
+		<button>
+			<legend>TOGGLE FBW</legend>
+            <pref-width>150</pref-width>
+			<binding>
+				<command>property-toggle</command>
+				<property>/fcs/pfc-enable</property>
+			</binding>
+			<live>true</live>
+		</button>
+		
+		<text>
+			<label>[ENABLED]</label>
+			<visible>
+				<equals>
+					<property>/fcs/pfc-enable</property>
+					<value>1</value>
+				</equals>
+			</visible>
+		</text>
+	
+	</group>
+	
+	<group>
+		<layout>hbox</layout>
+
+		<hrule>
+			<stretch type="bool">true</stretch>
+		</hrule>
+		<text>
+			<label>Options</label>
+		</text>
+		<hrule>
+			<stretch type="bool">true</stretch>
+		</hrule>
+	</group>
+	
+	<checkbox>
+		<label>Show FBW Bug on PFD</label>
+		<halign>left</halign>
+		<property>/fcs/fbw/show-fbw-bug</property>
+		<binding>
+			<command>property-toggle</command>
+			<property>/fcs/fbw/show-fbw-bug</property>
+		</binding>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<binding>
+			<command>nasal</command>
+			<script>b777.writeSettings();</script>
+		</binding>
+		<live>true</live>
+	</checkbox>
+	
+	<group>
+		<layout>hbox</layout>
+
+		<hrule>
+			<stretch type="bool">true</stretch>
+		</hrule>
+		<text>
+			<label>Roll</label>
+		</text>
+		<hrule>
+			<stretch type="bool">true</stretch>
+		</hrule>
+	</group>
+	
+	<group>
+		<layout>hbox</layout>
+		
+		<group>
+			<layout>vbox</layout>
+			
+			<text>
+				<label>L1:</label>
+			</text>
+			<slider>
+				<pref-height>150</pref-height>
+				<vertical>true</vertical>
+				<property>/fcs/left-out-aileron/final-deg</property>
+				<min>-30</min>
+				<max>10</max>
+				<step>0.003</step>
+				<live>true</live>
+			</slider>
+		</group>
+		
+		<group>
+			<layout>vbox</layout>
+			
+			<text>
+				<label>L2:</label>
+			</text>
+			<slider>
+				<pref-height>150</pref-height>
+				<vertical>true</vertical>
+				<property>/fcs/left-in-aileron/final-deg</property>
+				<min>-11</min>
+				<max>32</max>
+				<step>0.0032</step>
+				<live>true</live>
+			</slider>
+		</group>
+			
+		<group>
+			<layout>vbox</layout>
+			
+			<text>
+				<label>R2:</label>
+			</text>
+			<slider>
+				<pref-height>150</pref-height>
+				<vertical>true</vertical>
+				<property>/fcs/right-in-aileron/final-deg</property>
+				<min>-11</min>
+				<max>32</max>
+				<step>0.0032</step>
+				<live>true</live>
+			</slider>
+		</group>
+		
+		<group>
+			<layout>vbox</layout>
+			
+			<text>
+				<label>R1:</label>
+			</text>
+			<slider>
+				<pref-height>150</pref-height>
+				<vertical>true</vertical>
+				<property>/fcs/right-out-aileron/final-deg</property>
+				<min>-30</min>
+				<max>10</max>
+				<step>0.003</step>
+				<live>true</live>
+			</slider>
+		</group>
+	</group>
+	
+	<group>
+		<layout>hbox</layout>
+
+		<hrule>
+			<stretch type="bool">true</stretch>
+		</hrule>
+		<text>
+			<label>Pitch</label>
+		</text>
+		<hrule>
+			<stretch type="bool">true</stretch>
+		</hrule>
+	</group>
+	
+	<group>
+		<layout>hbox</layout>
+		
+		<group>
+			<layout>vbox</layout>
+			
+			<text>
+				<label>L:</label>
+			</text>
+			<slider>
+				<pref-height>150</pref-height>
+				<vertical>true</vertical>
+				<property>/fcs/left-elevator/final-deg</property>
+				<min>-30</min>
+				<max>25</max>
+				<step>0.003</step>
+				<live>true</live>
+			</slider>
+		</group>
+			
+		<group>
+			<layout>vbox</layout>
+	
+			<text>
+				<label>Trim:</label>
+			</text>
+			<slider>
+				<pref-height>150</pref-height>
+				<vertical>true</vertical>
+				<property>/fcs/stabilizer/final-deg</property>
+				<min>-11</min>
+				<max>4</max>
+				<step>0.0011</step>
+				<live>true</live>
+			</slider>
+		</group>
+		
+		<group>
+			<layout>vbox</layout>
+			
+			<text>
+				<label>R:</label>
+			</text>
+			<slider>
+				<pref-height>150</pref-height>
+				<vertical>true</vertical>
+				<property>/fcs/right-elevator/final-deg</property>
+				<min>-30</min>
+				<max>25</max>
+				<step>0.003</step>
+				<live>true</live>
+			</slider>
+		</group>
+	</group>
+	
+	<group>
+		<layout>hbox</layout>
+
+		<hrule>
+			<stretch type="bool">true</stretch>
+		</hrule>
+		<text>
+			<label>Rudder</label>
+		</text>
+		<hrule>
+			<stretch type="bool">true</stretch>
+		</hrule>
+	</group>
+	
+	<group>
+		<layout>hbox</layout>
+		
+		<group>
+			<layout>vbox</layout>
+			
+			<slider>
+				<pref-width>150</pref-width>
+				<property>/fcs/rudder/final-deg</property>
+				<min>-27.3</min>
+				<max>27.3</max>
+				<step>0.00273</step>
+				<live>true</live>
+			</slider>
+		</group>
+	</group>
+	<group>
+  
+  <hrule/>
+  </group>
+	
+</PropertyList>

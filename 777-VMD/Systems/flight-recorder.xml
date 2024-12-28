@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 777-200ER custom flight recorder configuration
+     Thorsten Brehm, September 2011
+-->
+
+<PropertyList>
+
+    <!-- selected active flight recorder configuration for replay system -->
+    <replay-config type="int">0</replay-config>
+
+<!--
+    <config n="0" include="Aircraft/Generic/flightrecorder/generic-jet.xml"/>
+ -->
+
+    <config n="0">
+        <name>B777 Flight Recorder</name>
+
+        <!-- include generic stuff -->
+        <signals include="Aircraft/Generic/flightrecorder/components/position.xml" />
+        <signals include="Aircraft/Generic/flightrecorder/components/controls.xml" />
+        <signals include="Aircraft/Generic/flightrecorder/components/surfaces.xml"/>
+        <signals include="Aircraft/Generic/flightrecorder/components/engine-jet.xml">
+            <count type="int">2</count>
+        </signals>
+        <signals include="Aircraft/Generic/flightrecorder/components/gear-retractable.xml">
+            <count type="int">3</count>
+        </signals>
+        <signals include="Aircraft/Generic/flightrecorder/components/tanks.xml">
+            <count type="int">7</count>
+        </signals>
+
+        <signals>  <!-- now the custom properties -->
+
+            <signals>
+                <!--  engine related signals -->
+                <count type="int">2</count>
+                <signal>
+                    <type>bool</type><property>controls/engines/engine[%i]/cutoff</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>controls/electric/engine[%i]/generator</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>controls/electric/engine[%i]/bus-tie</property>
+                </signal>
+                <signal>
+                    <type>bool</type><property>engines/engine[%i]/run</property>
+                </signal>
+                <signal>
+                    <type>int8</type><property>controls/engines/engine[%i]/reverser-act</property>
+                </signal>
+            </signals>
+
+            <signal>
+                <type>bool</type><property>controls/electric/APU-generator</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>systems/electrical/outputs/avionics</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/electric/battery-switch</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/electric/inverter-switch</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/instruments-norm</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/nav-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/beacon</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/strobe</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/wing-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/taxi-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/logo-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/cabin-lights</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/landing-light[0]</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/landing-light[1]</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>controls/lighting/landing-light[2]</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/AP</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/loc-armed</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/gs-armed</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>instrumentation/afds/inputs/vertical-index</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>instrumentation/afds/inputs/lateral-index</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/at-armed[0]</property>
+            </signal>
+            <signal>
+                <type>bool</type><property>instrumentation/afds/inputs/at-armed[1]</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>controls/flight/speedbrake-lever</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>autopilot/autobrake/step</property>
+            </signal>
+            <signal>
+                <type>int8</type><property>instrumentation/afds/inputs/autothrottle-index</property>
+            </signal>
+            <signal>
+                <type>int16</type><property>autopilot/settings/target-speed-kt</property>
+            </signal>
+            <signal>
+                <type>float</type><property>instrumentation/pfd/stallspeed-diff</property>
+            </signal>
+            <signal>
+                <type>int</type><property>autopilot/settings/actual-target-altitude-ft</property>
+            </signal>
+            <signal>
+                <type>int16</type><property>autopilot/settings/heading-bug-deg</property>
+            </signal>
+            <signal>
+                <type>float</type><property>gear/brake-thermal-energy</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[0]/compression-m</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[1]/compression-m</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[2]/compression-m</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[3]/compression-m</property> <!-- "virtual gear", contact point for left axle -->
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>gear/gear[4]/compression-m</property> <!-- "virtual gear", contact point for right axle -->
+            </signal>
+            <signal>
+                <type>float</type><property>controls/gear/nosegear-steering-cmd</property>
+            </signal>
+            <signal>
+                <type>float</type><property>controls/gear/maingear-steering-cmd</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>velocities/groundspeed-kt</property>
+            </signal>
+            <signal>
+                <type>float</type><property>position/gear-agl-ft</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>surface-positions/reverser-norm[0]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>surface-positions/reverser-norm[1]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/left-out-aileron/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/left-in-aileron/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/right-in-aileron/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/right-out-aileron/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/left-elevator/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/right-elevator/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>systems/wingflexer/params/</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/delta-sec</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/a-fuselage-mps2</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/k</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/K</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/m-wing-dry-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/d</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/D</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/f-lift-N</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/lift-node-lbs</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/z-ofs-m</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/m-wing-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-frac</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-node-1-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-node-2-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-node-3-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/params/fuel-node-4-kg</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/z-raw-m</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/d</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/sink-rate-fps</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/z-m</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>/sim/systems/wingflexer/z-max-m</property>
+                <interpolation>linear</interpolation>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/stabilizer/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/rudder/final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/spoilers/left-out-final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/spoilers/left-in-final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/spoilers/right-in-final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property>fcs/spoilers/right-out-final-deg</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[10]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[11]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[12]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[13]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[14]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[15]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[16]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[17]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[18]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[19]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[20]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[21]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[22]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[23]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[24]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[25]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[26]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[27]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[28]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[29]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[30]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[31]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[32]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[33]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[34]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[35]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[36]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[37]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[38]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[39]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[40]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[41]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[42]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[43]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[44]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[45]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[46]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[47]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[48]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[49]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[50]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[51]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[52]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[53]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[54]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[55]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[56]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[57]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[58]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[59]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[60]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[61]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[62]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[63]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[64]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[65]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[66]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[67]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[68]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[69]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[70]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[71]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[72]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[73]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[74]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[75]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[76]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[77]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[78]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[79]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[80]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[81]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[82]</property>
+            </signal>
+            <signal>
+               <type>bool</type>
+					<property>sim/sound/welcome</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/safety</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/pretakeoff</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/climb</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/cruise-seatbelt</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/descent</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/land</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/gate</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/emergency</property>
+				</signal>
+				<signal>
+					<type>bool</type>
+					<property>sim/sound/turbulence</property>
+				</signal>	       			
+        </signals>
+
+    </config>
+
+</PropertyList>

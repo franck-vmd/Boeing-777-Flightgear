@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+    <sim>
+        <walker>
+						<equipment-name>no Equipment</equipment-name>
+						<headgear>0</headgear>
+						<eyewear>0</eyewear>
+						<mask>0</mask>
+						<hair>1</hair>
+        </walker>
+
+  </sim>
+
+</PropertyList>

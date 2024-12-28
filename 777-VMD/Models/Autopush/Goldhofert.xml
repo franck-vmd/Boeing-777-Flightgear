@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- SETTINGS -->
+
+<!DOCTYPE PropertyList [
+ <!-- Property defining whether the pushback is enabled. -->
+ <!ENTITY ENABLED-PROP "sim/model/autopush/enabled">
+ <!-- Property defining whether the pushback is connected. -->
+ <!ENTITY CONNECTED-PROP "sim/model/autopush/connected">
+ <!-- Property for aircraft's front wheel rollspeed in m/s. -->
+ <!ENTITY ROLLSPEED-PROP "gear/gear[0]/rollspeed-ms">
+ <!-- Property for front wheel steering. -->
+ <!ENTITY YAW-PROP "sim/model/autopush/yaw">
+ <!-- Scaling factor for the steering property, must be equal to /sim/model/autopush/yaw-mult. -->
+ <!ENTITY YAW-MULT "60.0">
+ <!-- Property for gear compression in ft. -->
+ <!ENTITY COMPRESSION-PROP "gear/gear[0]/compression-ft">
+ <!-- Property for aircraft pitch in degrees, or pushback's pitch if it is variable. -->
+ <!ENTITY PITCH-PROP "orientation/pitch-deg">
+ <!-- Scaling factor for the pitch property. -->
+ <!ENTITY PITCH-FACTOR "0.0">
+ <!-- Pitch offset, must be equal to /sim/model/autopush/pitch-deg. If pitch is variable, must be "0.0". -->
+ <!ENTITY PITCH-OFFSET "0.0">
+]>
+
+
+<!--
+
+AUTOPUSH
+
+-->
+
+
+<PropertyList>
+  <path>Aircraft/777-VMD/Models/Autopush/Pushback/Goldhofert.ac</path>
+
+  <model>
+    <path>Aircraft/777-VMD/Models/Autopush/Pushback/Goldhofert-warning-light.xml</path>
+    <offsets>
+      <x-m>-5.40633</x-m>
+      <y-m>0.262391</y-m>
+      <z-m>2.24704</z-m>
+      <heading-deg>0</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/777-VMD/Models/Autopush/Pushback/Goldhofert-warning-light.xml</path>
+    <offsets>
+      <x-m>-4.28093</x-m>
+      <y-m>0.262391</y-m>
+      <z-m>2.24704</z-m>
+      <heading-deg>90</heading-deg>
+    </offsets>
+  </model>
+
+	<animation>
+		<type>material</type>
+		<texture>complet.png</texture>
+                <object-name>Mesh.000</object-name>
+       </animation>
+       
+       <animation>
+		<type>material</type>
+		<texture>vehicule59.png</texture>
+                <object-name>Mesh.003</object-name>
+                <object-name>Mesh.001</object-name>
+                <object-name>Mesh.002</object-name>
+                <object-name>Mesh.004</object-name>
+                <object-name>Mesh.005</object-name>
+                <object-name>Mesh.007</object-name>
+                <object-name>Mesh.009</object-name>
+                <object-name>wheelfl</object-name>
+                <object-name>wheelfr</object-name>
+                <object-name>wheelrl</object-name>
+                <object-name>wheelrr</object-name>
+       </animation>
+
+    <animation>
+		<type>pick</type>
+		<object-name>Mesh.001</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c34");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+ <animation>
+   <name>c34</name>
+   <type>rotate</type>
+   <object-name>Mesh.000</object-name>
+   <property>sim/multiplay/generic/float[56]</property>
+   <factor>180</factor>
+   <axis>
+     <x>0</x>
+     <y>0</y>
+     <z>1</z>
+   </axis>
+   <center>
+     <x-m>-4.58245</x-m>
+     <y-m>-0.009</y-m>
+     <z-m>0.5787</z-m>
+   </center>
+ </animation>
+
+    <animation>
+		<type>pick</type>
+		<object-name>Mesh.003</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c35");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+  <animation>
+    <type>translate</type>
+    <name>c35</name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.950000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.900000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.800000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.700000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.500000</ind><dep>2.500000</dep></entry>
+      <entry><ind>0.400000</ind><dep>5.000000</dep></entry>
+      <entry><ind>0.300000</ind><dep>5.000000</dep></entry>
+      <entry><ind>0.200000</ind><dep>5.000000</dep></entry>
+      <entry><ind>0.100000</ind><dep>5.000000</dep></entry>
+      <entry><ind>0.050000</ind><dep>5.000000</dep></entry>
+      <entry><ind>0.000000</ind><dep>5.000000</dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <name>c35</name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.950000</ind><dep>0.050000</dep></entry>
+      <entry><ind>0.900000</ind><dep>0.100000</dep></entry>
+      <entry><ind>0.800000</ind><dep>0.150000</dep></entry>
+      <entry><ind>0.700000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.500000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.400000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.300000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.200000</ind><dep>0.150000</dep></entry>
+      <entry><ind>0.100000</ind><dep>0.100000</dep></entry>
+      <entry><ind>0.050000</ind><dep>0.050000</dep></entry>
+      <entry><ind>0.000000</ind><dep>0.000000</dep></entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <name>c35</name>
+    <object-name>Mesh.002</object-name>
+    <object-name>wheelfl</object-name>
+    <object-name>wheelfr</object-name>
+    <object-name>wheelrl</object-name>
+    <object-name>wheelrr</object-name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.950000</ind><dep>0.050000</dep></entry>
+      <entry><ind>0.900000</ind><dep>0.100000</dep></entry>
+      <entry><ind>0.800000</ind><dep>0.150000</dep></entry>
+      <entry><ind>0.700000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.500000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.400000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.300000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.200000</ind><dep>0.150000</dep></entry>
+      <entry><ind>0.100000</ind><dep>0.100000</dep></entry>
+      <entry><ind>0.050000</ind><dep>0.050000</dep></entry>
+      <entry><ind>0.000000</ind><dep>0.000000</dep></entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <name>c35</name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>0.800000</dep></entry>
+      <entry><ind>0.950000</ind><dep>0.700000</dep></entry>
+      <entry><ind>0.900000</ind><dep>0.600000</dep></entry>
+      <entry><ind>0.800000</ind><dep>0.500000</dep></entry>
+      <entry><ind>0.700000</ind><dep>0.400000</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.500000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.400000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.300000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.200000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.100000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.050000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.000000</ind><dep>0.000000</dep></entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+        <center>
+            <x-m>6.99646</x-m>
+            <y-m>5.61966</y-m>
+            <z-m>-5.10007</z-m>
+        </center>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <name>c35</name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>0.300000</dep></entry>
+      <entry><ind>0.950000</ind><dep>0.250000</dep></entry>
+      <entry><ind>0.900000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.800000</ind><dep>0.100000</dep></entry>
+      <entry><ind>0.700000</ind><dep>0.050000</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.500000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.400000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.300000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.200000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.100000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.050000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.000000</ind><dep>0.000000</dep></entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <name>c35</name>
+    <object-name>Mesh.005</object-name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>1.100000</dep></entry>
+      <entry><ind>0.950000</ind><dep>1.000000</dep></entry>
+      <entry><ind>0.900000</ind><dep>0.800000</dep></entry>
+      <entry><ind>0.800000</ind><dep>0.400000</dep></entry>
+      <entry><ind>0.700000</ind><dep>0.200000</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.500000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.400000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.300000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.200000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.100000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.050000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.000000</ind><dep>0.000000</dep></entry>
+    </interpolation>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <name>c35</name>
+    <object-name>Mesh.004</object-name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>90</dep></entry>
+      <entry><ind>0.950000</ind><dep>80</dep></entry>
+      <entry><ind>0.900000</ind><dep>60</dep></entry>
+      <entry><ind>0.800000</ind><dep>50</dep></entry>
+      <entry><ind>0.700000</ind><dep>20</dep></entry>
+      <entry><ind>0.600000</ind><dep>0</dep></entry>
+      <entry><ind>0.500000</ind><dep>0</dep></entry>
+      <entry><ind>0.400000</ind><dep>0</dep></entry>
+      <entry><ind>0.300000</ind><dep>0</dep></entry>
+      <entry><ind>0.200000</ind><dep>0</dep></entry>
+      <entry><ind>0.100000</ind><dep>0</dep></entry>
+      <entry><ind>0.050000</ind><dep>0</dep></entry>
+      <entry><ind>0.000000</ind><dep>0</dep></entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+    <center>
+            <x-m>1.95656</x-m>
+            <y-m>0.726934</y-m>
+            <z-m>0.796334</z-m>
+        </center>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <name>c35</name>
+    <object-name>Mesh.009</object-name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>08</dep></entry>
+      <entry><ind>0.950000</ind><dep>07</dep></entry>
+      <entry><ind>0.900000</ind><dep>06</dep></entry>
+      <entry><ind>0.800000</ind><dep>05</dep></entry>
+      <entry><ind>0.700000</ind><dep>04</dep></entry>
+      <entry><ind>0.600000</ind><dep>03</dep></entry>
+      <entry><ind>0.500000</ind><dep>02</dep></entry>
+      <entry><ind>0.400000</ind><dep>01</dep></entry>
+      <entry><ind>0.300000</ind><dep>0</dep></entry>
+      <entry><ind>0.200000</ind><dep>0</dep></entry>
+      <entry><ind>0.100000</ind><dep>0</dep></entry>
+      <entry><ind>0.050000</ind><dep>0</dep></entry>
+      <entry><ind>0.000000</ind><dep>0</dep></entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+    <center>
+            <x-m>-0.73074</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.79857</z-m>
+        </center>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <name>c35</name>
+    <object-name>Mesh.007</object-name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>90</dep></entry>
+      <entry><ind>0.950000</ind><dep>80</dep></entry>
+      <entry><ind>0.900000</ind><dep>60</dep></entry>
+      <entry><ind>0.800000</ind><dep>50</dep></entry>
+      <entry><ind>0.700000</ind><dep>20</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.500000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.400000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.300000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.200000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.100000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.050000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.000000</ind><dep>0.000000</dep></entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+    <center>
+            <x-m>1.95656</x-m>
+            <y-m>-0.726934</y-m>
+            <z-m>0.796334</z-m>
+        </center>
+  </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>wheelfl</object-name>
+   <property>controls/gear/maingear-steering-cmd-norm</property>
+   <factor>45</factor>
+   <axis>
+     <x>0</x>
+     <y>0</y>
+     <z>1</z>
+   </axis>
+   <center>
+     <x-m>-2.8974</x-m>
+     <y-m>-1.3355</y-m>
+     <z-m>0.5809</z-m>
+   </center>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>wheelfl</object-name>
+   <property>sim/multiplay/generic/float[47]</property>
+   <factor>16.3</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+   <center>
+     <x-m>-2.8974</x-m>
+     <y-m>-1.3355</y-m>
+     <z-m>0.5809</z-m>
+   </center>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>wheelfr</object-name>
+   <property>controls/gear/maingear-steering-cmd-norm</property>
+   <factor>45</factor>
+   <axis>
+     <x>0</x>
+     <y>0</y>
+     <z>1</z>
+   </axis>
+   <center>
+     <x-m>-2.8974</x-m>
+     <y-m>1.3355</y-m>
+     <z-m>0.5809</z-m>
+   </center>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>wheelfr</object-name>
+   <property>sim/multiplay/generic/float[47]</property>
+   <factor>16.3</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+   <center>
+     <x-m>-2.8974</x-m>
+     <y-m>1.3355</y-m>
+     <z-m>0.5809</z-m>
+   </center>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>wheelrl</object-name>
+   <object-name>wheelrr</object-name>
+   <property>&ROLLSPEED-PROP;</property>
+   <factor>-16.3</factor>
+   <center>
+     <x-m>2.0501</x-m>
+     <y-m>0</y-m>
+     <z-m>0.5735</z-m>
+   </center>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+  <animation>
+    <type>spin</type>
+    <name>c35</name>
+    <object-name>wheelrl</object-name>
+    <object-name>wheelrr</object-name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.900000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.800000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.700000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.500000</ind><dep>22.500000</dep></entry>
+      <entry><ind>0.400000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.300000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.200000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.100000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.000000</ind><dep>0.000000</dep></entry>
+    </interpolation>
+   <center>
+     <x-m>2.0501</x-m>
+     <y-m>0</y-m>
+     <z-m>0.5735</z-m>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <name>c35</name>
+    <object-name>wheelfl</object-name>
+    <object-name>wheelfr</object-name>
+    <property>sim/multiplay/generic/float[57]</property>
+    <interpolation>
+      <entry><ind>1.000000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.900000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.800000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.700000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.600000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.500000</ind><dep>22.500000</dep></entry>
+      <entry><ind>0.400000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.300000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.200000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.100000</ind><dep>0.000000</dep></entry>
+      <entry><ind>0.000000</ind><dep>0.000000</dep></entry>
+    </interpolation>
+   <center>
+     <x-m>-2.8974</x-m>
+     <y-m>0.0</y-m>
+     <z-m>0.5809</z-m>
+   </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <animation>
+   <type>select</type>
+   <condition>
+     <property>&CONNECTED-PROP;</property>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <property>&YAW-PROP;</property>
+   <factor>&YAW-MULT;</factor>
+   <center>
+     <x-m>0</x-m>
+     <y-m>0</y-m>
+     <z-m>0</z-m>
+   </center>
+   <axis>
+     <x>0</x>
+     <y>0</y>
+     <z>-1</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>translate</type>
+   <property>&COMPRESSION-PROP;</property>
+   <factor>0.3048</factor>
+   <axis>
+     <x>0</x>
+     <y>0</y>
+     <z>1</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <property>&PITCH-PROP;</property>
+   <factor>&PITCH-FACTOR;</factor>
+   <offset-deg>&PITCH-OFFSET;</offset-deg>
+   <center>
+     <x-m>0</x-m>
+     <y-m>0</y-m>
+     <z-m>0</z-m>
+   </center>
+   <axis>
+     <x>0</x>
+     <y>1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+</PropertyList>

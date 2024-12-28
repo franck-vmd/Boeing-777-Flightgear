@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>ext_pwr-box.ac</path>
+
+<animation>
+		<type>material</type>
+		<texture>texture.png</texture>
+                <object-name>Cylinder.008</object-name>
+                <object-name>block</object-name>
+                <object-name>box</object-name>
+                <object-name>box.001</object-name>
+                <object-name>box.003</object-name>
+                <object-name>cylinder</object-name>
+                <object-name>cylinder.001</object-name>
+</animation>
+
+<effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect13</inherits-from>
+                <object-name>Cylinder.008</object-name>
+                <object-name>block</object-name>
+                <object-name>box</object-name>
+                <object-name>box.001</object-name>
+                <object-name>box.003</object-name>
+                <object-name>cylinder</object-name>
+                <object-name>cylinder.001</object-name>
+                <object-name>power_cart</object-name>
+                <object-name>primary</object-name>
+                <object-name>secondary</object-name>
+</effect>
+
+<!-- Translate the power box depending on the aircraft length -->
+
+<animation>
+    <type>translate</type>
+	<object>power_cart</object>
+	<object>primary</object>
+	<object>secondary</object>
+	<object>Plane</object>
+	<property>sim/model/ramp/x-m</property>
+	<offset-m>24.5221</offset-m>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>primary</object-name>
+	<condition>
+	    <and>
+			<equals>
+				<property>services/ext-pwr/primary</property>
+				<value>1</value>
+			</equals>
+			<less-than>
+				<property>velocities/groundspeed-kt</property>
+				<value>1</value>
+			</less-than>
+		</and>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>secondary</object-name>
+	<condition>
+	    <and>
+			<equals>
+				<property>services/ext-pwr/secondary</property>
+				<value>1</value>
+			</equals>
+			<less-than>
+				<property>velocities/groundspeed-kt</property>
+				<value>1</value>
+			</less-than>
+		</and>
+	</condition>
+</animation>
+
+<animation>
+	<type>translate</type>
+	<object>power_cart</object>
+	<object>primary</object>
+	<object>secondary</object>
+	<property>gear/gear[0]/compression-norm</property>
+	<interpolation>
+		<entry><ind>0.15</ind><dep>0.0</dep></entry>
+		<entry><ind>0.40</ind><dep>0.25</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>power_cart</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/ext-pwr/enable</property>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>primary</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/ext-pwr/primary</property>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>secondary</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>property-toggle</command>
+			<property>services/ext-pwr/secondary</property>
+		</binding>
+	</action>
+</animation>
+
+</PropertyList>

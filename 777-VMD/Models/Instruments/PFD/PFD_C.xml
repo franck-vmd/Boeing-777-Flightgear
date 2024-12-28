@@ -1,0 +1,2578 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+
+ <path>PFD_C.ac</path>
+
+     <animation>
+        <type>select</type>
+        <object-name>Power.off</object-name>
+        <condition>
+            <less-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+		<type>select</type>
+		<object-name>EFIS.screen</object-name>
+                <object-name>AI</object-name>
+                <object-name>AI.001</object-name>
+                <object-name>Hsi</object-name>
+                <object-name>Track</object-name>
+                <object-name>locscale</object-name>
+                <object-name>locpointer</object-name>
+                <object-name>coarseLocPointer</object-name>
+                <object-name>Display_1.010</object-name>
+                <object-name>Display_1.003</object-name>
+                <object-name>Display_1</object-name>
+                <object-name>Display_1.013</object-name>
+                <object-name>Display_1.011</object-name>
+                <object-name>Display_1.009</object-name>
+                <object-name>Display_1.012</object-name>
+                <object-name>Display_1.008</object-name>
+                <object-name>FDroll_rembrandt</object-name>
+                <object-name>FDpitch_rembrandt</object-name>
+                <object-name>FDroll</object-name>
+                <object-name>FDpitch</object-name>
+                <object-name>ASI</object-name>
+                <object-name>Asitext.010</object-name>
+                <object-name>speedtrend.down</object-name>
+                <object-name>StallSpeedInd</object-name>
+                <object-name>OverSpeedInd</object-name>
+                <object-name>speedtrend.up</object-name>
+                <object-name>Mode_announciator</object-name>
+                <object-name>Alt6</object-name>
+                <object-name>Alt5</object-name>
+                <object-name>Alt4</object-name>
+                <object-name>Alt3</object-name>
+                <object-name>Alt2</object-name>
+                <object-name>Alt1</object-name>
+                <object-name>runway_bar</object-name>
+                <object-name>VS_ind</object-name>
+                <object-name>gsscale</object-name>
+                <object-name>gspointer</object-name>
+                <object-name>coarseGSPointer</object-name>
+                <object-name>hdg-bug</object-name>
+                <object-name>Heading_mark</object-name>
+                <object-name>Display_1.004</object-name>
+                <object-name>IAS_window</object-name>
+                <object-name>Asitext.100</object-name>
+                <object-name>Asitext.001</object-name>
+                <object-name>Display_1.001</object-name>
+                <object-name>Alttext100</object-name>
+                <object-name>Omarker</object-name>
+                <object-name>Mmarker</object-name>
+                <object-name>Imarker</object-name>
+                <object-name>Box-alt-alert</object-name>
+                <object-name>Box-pitch</object-name>
+                <object-name>Box-roll</object-name>
+                <object-name>Box-speed</object-name>
+                <object-name>Box-mode</object-name>
+                <object-name>SpeedTarget</object-name>
+                <object-name>VrefMark</object-name>
+                <object-name>Bank_ind</object-name>
+                <object-name>Display_1.006</object-name>
+                <object-name>Roll.needle</object-name>
+                <object-name>Slip.needle</object-name>
+                <object-name>Display_1.007</object-name>
+                <object-name>Display_1.016</object-name>
+                <object-name>Display_1.021</object-name>
+                <object-name>Display_1.014</object-name>
+                <object-name>Display_1.020</object-name>
+                <object-name>Display_1.019</object-name>
+                <object-name>Display_1.002</object-name>
+                <object-name>Display_1.005</object-name>
+                <object-name>Display_1.017</object-name>
+                <object-name>Display_1.018</object-name>
+                <object-name>Display_1.015</object-name>
+                <object-name>Display_0.001</object-name>
+                <object-name>VSI.needle</object-name>
+                <object-name>Alttext10</object-name>
+                <object-name>minimum_tail_a</object-name>
+                <object-name>Backplane</object-name>
+                <object-name>minimum_tail</object-name>
+                <object-name>Alttext1000</object-name>
+                <object-name>runway</object-name>
+                <object-name>Alttext10000</object-name>
+                <object-name>AltitudeCursor</object-name>
+                <object-name>minimum_head_a</object-name>
+                <object-name>minimum_head</object-name>
+                <object-name>Display_0</object-name>
+                <object-name>Cube</object-name>
+		<condition>
+			<greater-than>
+				<property>systems/electrical/CPT-FLT-INST</property>
+				<value>24</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+     <!-- Text -->
+
+    <animation>
+        <type>material</type>
+        <object-name>tcws</object-name>
+        <condition>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>1.0</value>
+             </greater-than>
+        </condition>
+        <emission> <!--red-->
+            <red>0.8</red>
+            <green>0</green>
+            <blue>0</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type><!--blue-->
+        <object-name>UTC-TEXT</object-name>
+        <object-name>ET-TEXT</object-name>
+        <object-name>fbw-text</object-name>
+        <condition>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>1.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.4</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+        </emission>
+    </animation>
+
+     <animation>
+        <type>material</type><!--yellow-->
+        <object-name>INHG-STD-YEL</object-name>
+        <object-name>INHG-YEL</object-name>
+        <object-name>HPA-YEL</object-name>
+        <condition>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>1.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.9</red>
+            <green>0.7</green>
+            <blue>0.0</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type><!--magenta-->
+        <object-name>ALT-annunFL</object-name>
+        <object-name>ALT-annun100</object-name>
+        <object-name>IAS-annun</object-name>
+        <object-name>MACH-annun</object-name>
+        <object-name>HDG-annun</object-name>
+        <object-name>TRK-annun</object-name>
+        <condition>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>1.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.7</red>
+            <green>0.3</green>
+            <blue>0.5</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type><!--white-->
+        <object-name>RALT</object-name>
+        <object-name>MACH</object-name>
+        <object-name>ASIdigits</object-name>
+        <object-name>ALTdigits</object-name>
+        <object-name>PITCH arm</object-name>
+        <object-name>ROLL arm</object-name>
+        <object-name>VS-POS</object-name>
+        <object-name>VS-NEG</object-name>
+        <object-name>BARO-source</object-name>
+        <object-name>INHG-WHT</object-name>
+        <object-name>HPA-WHT</object-name>
+        <object-name>DME</object-name>
+        <object-name>UTC</object-name>
+        <object-name>GS</object-name>
+        <object-name>GS-TEXT</object-name>
+        <object-name>ET</object-name>
+        <condition>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>1.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0.7</red>
+            <green>0.7</green>
+            <blue>0.7</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type><!--green-->
+        <object-name>SPD</object-name>
+        <object-name>ROLL</object-name>
+        <object-name>PITCH</object-name>
+        <object-name>AP-annun</object-name>
+        <object-name>INHG</object-name>
+        <object-name>INHG-STD</object-name>
+        <object-name>HPA</object-name>
+        <object-name>MAG-annun</object-name>
+        <object-name>TRU-annun</object-name>
+        <object-name>mins</object-name>
+        <object-name>vref-text</object-name>
+        <object-name>vref</object-name>
+        <object-name>v1-text</object-name>
+        <object-name>vr-text</object-name>
+        <object-name>v2-text</object-name>
+        <object-name>flap-text</object-name>
+        <object-name>fl1-text</object-name>
+        <object-name>fl5-text</object-name>
+        <object-name>fl15-text</object-name>
+        <condition>
+             <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>1.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>0</red>
+            <green>0.8</green>
+            <blue>0.3</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Box-alt-alert</object-name>
+        <condition>
+            <property>autopilot/internal/alt-alert</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Display_0</object-name>
+        <property>autopilot/internal/alt-alert</property>
+        <factor>0.070</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Box-mode</object-name>
+        <condition>
+            <property>autopilot/internal/autopilot-transition</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Box-pitch</object-name>
+        <condition>
+            <property>autopilot/internal/pitch-transition</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Box-roll</object-name>
+        <condition>
+            <property>autopilot/internal/roll-transition</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Box-speed</object-name>
+        <condition>
+            <property>autopilot/internal/speed-transition</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>locscale</object-name>
+        <condition>
+            <and>
+                <property>instrumentation/nav/in-range</property>
+                <property>instrumentation/nav/nav-loc</property>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>locscale</object-name>
+        <property>autopilot/internal/presision-loc</property>
+        <factor>0.055</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>locpointer</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>instrumentation/nav/signal-quality-norm</property>
+                    <value>0.99</value>
+                </greater-than>
+                <less-than>
+                    <property>instrumentation/nav/heading-needle-deflection-ptr</property>
+                    <value>0.92</value>
+                </less-than>
+                <greater-than>
+                    <property>instrumentation/nav/heading-needle-deflection-ptr</property>
+                    <value>-0.92</value>
+                </greater-than>
+            </and>
+       </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>coarseLocPointer</object-name>
+        <condition>
+            <and>
+                <property>instrumentation/nav/in-range</property>
+                <property>instrumentation/nav/nav-loc</property>
+                <or>
+                    <greater-than>
+                        <property>instrumentation/nav/heading-needle-deflection-ptr</property>
+                        <value>0.92</value>
+                    </greater-than>
+                    <less-than>
+                        <property>instrumentation/nav/heading-needle-deflection-ptr</property>
+                        <value>-0.92</value>
+                    </less-than>
+                </or>
+            </and>
+       </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>gsscale</object-name>
+        <condition>
+            <and>
+                <property>instrumentation/nav/in-range</property>
+                <property>instrumentation/nav/has-gs</property>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>gspointer</object-name>
+        <condition>
+            <property>instrumentation/nav/gs-in-range</property>
+            <and>
+                <greater-than>
+                    <property>instrumentation/nav/gs-needle-deflection-norm</property>
+                    <value>-0.976</value>
+                </greater-than>
+                <less-than>
+                    <property>instrumentation/nav/gs-needle-deflection-norm</property>
+                    <value>0.976</value>
+                </less-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>coarseGSPointer</object-name>
+        <condition>
+            <or>
+                <greater-than>
+                    <property>instrumentation/nav/gs-needle-deflection-norm</property>
+                    <value>0.976</value>
+                </greater-than>
+                <less-than>
+                    <property>instrumentation/nav/gs-needle-deflection-norm</property>
+                    <value>-0.976</value>
+                </less-than>
+            </or>
+        </condition>
+        <property>instrumentation/nav/gs-needle-deflection-norm</property>
+        <condition>
+            <not><property>instrumentation/nav/gs-in-range</property></not>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Imarker</object-name>
+        <condition>
+            <property>instrumentation/marker-beacon/inner</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Mmarker</object-name>
+        <condition>
+            <property>instrumentation/marker-beacon/middle</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Omarker</object-name>
+        <condition>
+                <property>instrumentation/marker-beacon/outer</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>FDroll_rembrandt</object-name>
+        <object-name>FDpitch_rembrandt</object-name>
+        <condition>
+            <property>sim/rendering/rembrandt/enabled</property>
+            <or>
+                <property>instrumentation/afds/inputs/FD</property>
+                <property>instrumentation/afds/settings/auto-pop-up</property>
+            </or>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>FDroll</object-name>
+        <object-name>FDpitch</object-name>
+        <condition>
+            <not><property>sim/rendering/rembrandt/enabled</property></not>
+            <or>
+                <property>instrumentation/afds/inputs/FD</property>
+                <property>instrumentation/afds/settings/auto-pop-up</property>
+            </or>
+        </condition>
+    </animation>
+
+     <animation>
+        <type>translate</type>
+        <object-name>FDpitch</object-name>
+        <object-name>FDpitch_rembrandt</object-name>
+        <property>autopilot/fd/pitch-bar</property>
+        <factor>0.0006</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>FDroll</object-name>
+        <object-name>FDroll_rembrandt</object-name>
+        <property>autopilot/fd/roll-bar</property>
+        <factor>0.0002</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>gspointer</object-name>
+        <object-name>coarseGSPointer</object-name>
+        <property>instrumentation/nav/gs-needle-deflection-norm</property>
+        <factor>0.04</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>VrefMark</object-name>
+        <property>instrumentation/pfd/vref-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+
+    <animation>
+        <object-name>vref-text</object-name>
+        <property>instrumentation/pfd/vref-text-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+
+    <animation>
+        <object-name>fbw-text</object-name>
+        <property>instrumentation/pfd/fbw-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+
+    <animation>
+        <object-name>v1-text</object-name>
+        <property>instrumentation/pfd/v1-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+
+    <animation>
+        <object-name>vr-text</object-name>
+        <property>instrumentation/pfd/vr-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+
+    <animation>
+        <object-name>v2-text</object-name>
+        <property>instrumentation/pfd/v2-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>fbw-text</object-name>
+        <condition>
+            <and>
+                <not><property>fcs/fbw/pitch/trim-kts-sync</property></not>
+                <property>fcs/fbw/show-fbw-bug</property>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>v1-text</object-name>
+        <object-name>vr-text</object-name>
+        <object-name>v2-text</object-name>
+        <condition>
+            <property>instrumentation/weu/state/takeoff-mode</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>flap-text</object-name>
+        <property>instrumentation/pfd/flap-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>flap-text</object-name>
+        <condition>
+            <and>
+                <property>instrumentation/weu/state/flap-on</property>
+                <less-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>20000</value>
+                </less-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>fl1-text</object-name>
+        <property>instrumentation/pfd/fl1-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>fl1-text</object-name>
+        <condition>
+            <property>instrumentation/weu/state/fl1-on</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>fl5-text</object-name>
+        <property>instrumentation/pfd/fl5-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>fl5-text</object-name>
+        <condition>
+            <property>instrumentation/weu/state/fl5-on</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>fl15-text</object-name>
+        <property>instrumentation/pfd/fl15-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>fl15-text</object-name>
+        <condition>
+            <property>instrumentation/weu/state/fl15-on</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>SpeedTarget</object-name>
+        <property>instrumentation/pfd/target-speed-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.00102</factor>
+    </animation>
+
+    <animation>
+        <object-name>StallSpeedInd</object-name>
+        <property>instrumentation/pfd/stallspeed-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.0010</factor>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>StallSpeedInd</object-name>
+        <condition>
+            <property>instrumentation/weu/state/stall-warning</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <object-name>OverSpeedInd</object-name>
+        <property>instrumentation/pfd/overspeed-diff</property>
+        <type>textranslate</type>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+        <factor>0.00197</factor>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>locpointer</object-name>
+        <object-name>coarseLocPointer</object-name>
+        <property>instrumentation/nav/heading-needle-deflection-ptr</property>
+        <factor>-0.04</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>VSI.needle</object-name>
+        <property>velocities/vertical-speed-fps</property>
+        <interpolation>
+            <entry><ind>-100</ind><dep>-0.0385</dep></entry>
+            <entry><ind>-33.3333</ind><dep>-0.0265</dep></entry>
+            <entry><ind>-16.6666</ind><dep>-0.0147</dep></entry>
+            <entry><ind>16.6666</ind><dep>0.0147</dep></entry>
+            <entry><ind>33.3333</ind><dep>0.0265</dep></entry>
+            <entry><ind>100</ind><dep>0.0385</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>VSI.needle</object-name>
+        <property>velocities/vertical-speed-fps</property>
+        <interpolation>
+            <entry><ind>-100</ind><dep>-60.0</dep></entry>
+            <entry><ind>-33.3333</ind><dep>-50.0</dep></entry>
+            <entry><ind>-16.6666</ind><dep>-34.0</dep></entry>
+            <entry><ind>16.6666</ind><dep>34.0</dep></entry>
+            <entry><ind>33.3333</ind><dep>50.0</dep></entry>
+            <entry><ind>100</ind><dep>60.0</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0.002</x-m>
+            <y-m>0.082</y-m>
+            <z-m>0.007</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Heading_mark</object-name>
+        <property>autopilot/internal/crab-angle-hdg</property>
+        <interpolation>
+            <entry><ind>-54</ind><dep>-54</dep></entry>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>54</ind><dep>54</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0.002</x-m>
+            <y-m>-0.012</y-m>
+            <z-m>-0.120</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>hdg-bug</object-name>
+        <property>autopilot/internal/heading-bug-error-deg</property>
+        <interpolation>
+            <entry><ind>-54</ind><dep>-54</dep></entry>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>54</ind><dep>54</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0.002</x-m>
+            <y-m>-0.012</y-m>
+            <z-m>-0.120</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Track</object-name>
+        <property>autopilot/internal/crab-angle-trk</property>
+        <interpolation>
+            <entry><ind>-54</ind><dep>-54</dep></entry>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>54</ind><dep>54</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0.002</x-m>
+            <y-m>-0.012</y-m>
+            <z-m>-0.120</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Roll.needle</object-name>
+        <object-name>Slip.needle</object-name>
+        <property>orientation/roll-deg</property>
+        <center>
+            <x-m>0.002</x-m>
+            <y-m>-0.011</y-m>
+            <z-m>0.009</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Slip.needle</object-name>
+        <property>instrumentation/pfd/slip-skid</property>
+        <factor>0.001</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>texmultiple</type>
+        <object-name>AI</object-name>
+        <transform>
+            <property>orientation/pitch-deg</property>
+            <subtype>textranslate</subtype>
+            <factor>0.00468234</factor>
+            <axis>
+                <x>0</x>
+                <y>1</y>
+            </axis>
+        </transform>
+        <transform>
+            <property>orientation/roll-deg</property>
+            <subtype>texrotate</subtype>
+            <center>
+                <x>0.25</x>
+                <y>0.50</y>
+            </center>
+            <axis>
+                <x>0</x>
+                <y>0</y>
+                <z>-1</z>
+            </axis>
+        </transform>
+    </animation>
+
+    <animation>
+        <type>texrotate</type>
+        <object-name>Hsi</object-name>
+        <property>instrumentation/afds/inputs/reference-deg</property>
+        <center>
+            <x>0.75</x>
+            <y>0.75</y>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>ASI</object-name>
+        <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>560</ind><dep>0.7520</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+    </animation>
+
+<!-- ALT tape-->
+
+    <animation>
+        <type>select</type>
+        <object-name>Alt1</object-name>
+        <condition>
+            <less-than>
+                <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                <value>9600</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Alt2</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>9599.999</value>
+                </greater-than>
+                <less-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>19200</value>
+                </less-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Alt3</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>19199.999</value>
+                </greater-than>
+                <less-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>28800</value>
+                </less-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Alt4</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>28799.999</value>
+                </greater-than>
+                <less-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>38400</value>
+                </less-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Alt5</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>38399.999</value>
+                </greater-than>
+                <less-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <value>48000</value>
+                </less-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Alt6</object-name>
+        <condition>
+            <greater-than>
+                <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                <value>47999.999</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alt1</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <interpolation>
+            <entry><ind>-200</ind><dep>-0.0187</dep></entry>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>9600</ind><dep>0.9035</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alt2</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <interpolation>
+            <entry><ind>9600</ind><dep>0</dep></entry>
+            <entry><ind>19200</ind><dep>0.9035</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alt3</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <interpolation>
+            <entry><ind>19200</ind><dep>0</dep></entry>
+            <entry><ind>28800</ind><dep>0.9035</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alt4</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <interpolation>
+            <entry><ind>28800</ind><dep>0</dep></entry>
+            <entry><ind>38400</ind><dep>0.9035</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alt5</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <interpolation>
+            <entry><ind>38400</ind><dep>0</dep></entry>
+            <entry><ind>48000</ind><dep>0.9035</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alt6</object-name>
+        <property>instrumentation/altimeter/indicated-altitude-ft</property>
+        <interpolation>
+            <entry><ind>48000</ind><dep>0</dep></entry>
+            <entry><ind>57600</ind><dep>0.9035</dep></entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+    </animation>
+
+    <animation>
+        <object-name>AltitudeCursor</object-name>
+        <property>instrumentation/pfd/target-altitude-diff</property>
+        <type>translate</type>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.000142</factor>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>runway</object-name>
+        <property>instrumentation/pfd/runway-elevation-diff</property>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.000142</factor>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>runway_bar</object-name>
+        <property>instrumentation/pfd/runway-elevation-diff</property>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+        <factor>0.00038</factor>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>minimum_head</object-name>
+        <condition>
+            <less-than>
+                <property>instrumentation/pfd/minimum-diff</property>
+                <value>0</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>minimum_tail</object-name>
+        <condition>
+            <property>instrumentation/efis/inputs/minimums-mode</property>
+            <less-than>
+                <property>instrumentation/pfd/minimum-diff</property>
+                <value>0</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>minimum_head_a</object-name>
+        <condition>
+            <greater-than>
+                <property>instrumentation/pfd/minimum-diff</property>
+                <value>0</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>minimum_tail_a</object-name>
+        <condition>
+            <property>instrumentation/efis/inputs/minimums-mode</property>
+            <greater-than>
+                <property>instrumentation/pfd/minimum-diff</property>
+                <value>0</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>minimum_head</object-name>
+        <object-name>minimum_tail</object-name>
+        <object-name>minimum_head_a</object-name>
+        <object-name>minimum_tail_a</object-name>
+        <property>instrumentation/pfd/minimum-diff</property>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+        <factor>0.000142</factor>
+    </animation>
+
+<!-- Text -->
+
+    <text>
+        <name>SPD</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.042</y-m>
+            <z-m>0.088</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/afds/ap-modes/speed-mode</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.007</character-size>
+        <character-aspect-ratio type="double">1.4</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">64</width>
+            <height type="int">64</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>ROLL</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.009</y-m>
+            <z-m>0.088</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/afds/ap-modes/roll-mode</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.007</character-size>
+        <character-aspect-ratio type="double">1.4</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">64</width>
+            <height type="int">64</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>PITCH</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.024</y-m>
+            <z-m>0.088</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/afds/ap-modes/pitch-mode</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.007</character-size>
+        <character-aspect-ratio type="double">1.4</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">64</width>
+            <height type="int">64</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>ROLL arm</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.009</y-m>
+            <z-m>0.081</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/afds/ap-modes/roll-mode-arm</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.4</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">64</width>
+            <height type="int">64</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>PITCH arm</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.024</y-m>
+            <z-m>0.081</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/afds/ap-modes/pitch-mode-arm</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.4</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">64</width>
+            <height type="int">64</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>AP-annun</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.011</y-m>
+            <z-m>0.060</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/afds/ap-modes/mode-annunciator</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.01</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">64</width>
+            <height type="int">64</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>VS-POS</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.078</y-m>
+            <z-m>0.056</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%4.0f</format>
+        <property>instrumentation/afds/inputs/indicated-vs-fpm</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>VS-NEG</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.078</y-m>
+            <z-m>-0.038</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%4.0f</format>
+        <property>instrumentation/afds/inputs/indicated-vs-fpm</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>RALT</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.0105</y-m>
+            <z-m>-0.029</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%0.0f</format>
+        <offset>0.1</offset> <!--avoid some quirky "-0" indications-->
+        <truncate type="bool">true</truncate>
+        <property>autopilot/settings/radio-altimeter-indication</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.009</character-size>
+        <character-aspect-ratio type="double">1.4</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <animation>
+        <type>select</type>
+        <object-name>MACH</object-name>
+        <condition>
+            <greater-than-equals>
+                <property>autopilot/settings/pfd-mach-indication</property>
+                <value>400</value>
+            </greater-than-equals>
+        </condition>
+    </animation>
+
+    <text>
+        <name>MACH</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.076</y-m>
+            <z-m>-0.061</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">.%03.0f</format>
+        <property>autopilot/settings/pfd-mach-indication</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.010</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <animation>
+        <type>select</type>
+        <object-name>GS</object-name>
+        <object-name>GS-TEXT</object-name>
+        <condition>
+            <less-than>
+                <property>autopilot/settings/pfd-mach-indication</property>
+                <value>400</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <text>
+        <name>GS</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.072</y-m>
+            <z-m>-0.061</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%03.0f</format>
+        <property>velocities/groundspeed-kt</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.010</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>GS-TEXT</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.084</y-m>
+            <z-m>-0.062</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">literal</type>
+        <text>GS</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.0058</character-size>
+        <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>BARO-source</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.038</y-m>
+            <z-m>-0.061</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/altimeter/source-barometric</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.0058</character-size>
+        <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>INHG</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.058</y-m>
+            <z-m>-0.061</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%2.2f IN</format>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>INHG-YEL</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.058</y-m>
+            <z-m>-0.061</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%2.2f IN</format>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>INHG-STD</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.058</y-m>
+            <z-m>-0.060</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">literal</type>
+        <text>STD</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.009</character-size>
+        <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>INHG-STD-YEL</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.058</y-m>
+            <z-m>-0.060</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">literal</type>
+        <text>STD</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.009</character-size>
+        <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>INHG-WHT</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.058</y-m>
+            <z-m>-0.070</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%2.2f IN</format>
+        <property>instrumentation/efis/inhg-previos</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.007</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>HPA</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.058</y-m>
+            <z-m>-0.061</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%4.0f HPA</format>
+        <property>instrumentation/efis/inhg-kpa</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>HPA-YEL</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.058</y-m>
+            <z-m>-0.061</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%4.0f HPA</format>
+        <property>instrumentation/efis/inhg-kpa</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>HPA-WHT</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.058</y-m>
+            <z-m>-0.068</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%4.0f HPA</format>
+        <property>instrumentation/efis/inhg-kpa-previous</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <animation>
+        <type>select</type>
+        <object-name>ET</object-name>
+        <object-name>ET-TEXT</object-name>
+        <object-name>UTC</object-name>
+        <object-name>UTC-TEXT</object-name>
+        <condition>
+            <property>instrumentation/pfd/utc-et-enabled</property>
+        </condition>
+    </animation>
+
+    <text>
+        <name>ET</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.075</y-m>
+            <z-m>-0.083</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/clock/elapsed-string</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.3</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>ET-TEXT</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.086</y-m>
+            <z-m>-0.083</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">literal</type>
+        <text>ET</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.0058</character-size>
+        <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>UTC</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.070</y-m>
+            <z-m>-0.083</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/clock/indicated-string</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.3</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>UTC-TEXT</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.085</y-m>
+            <z-m>-0.083</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">literal</type>
+        <text>UTC</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.0058</character-size>
+        <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Asitext.100</object-name>
+        <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <scroll>1</scroll>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Asitext.010</object-name>
+        <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <scroll>1</scroll>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Asitext.001</object-name>
+        <property>instrumentation/airspeed-indicator/indicator-speed-kt</property>
+        <factor>0.1</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alttext10</object-name>
+        <property>instrumentation/altimeter/indicator-altitude-ft</property>
+        <factor>0.01</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alttext100</object-name>
+        <property>instrumentation/altimeter/indicator-altitude-ft</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <scroll>20</scroll>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alttext1000</object-name>
+        <property>instrumentation/altimeter/indicator-altitude-ft</property>
+        <factor>0.0001</factor>
+        <step>1000</step>
+        <scroll>20</scroll>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>Alttext10000</object-name>
+        <property>instrumentation/altimeter/indicator-altitude-ft</property>
+        <factor>0.00001</factor>
+        <step>10000</step>
+        <scroll>20</scroll>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <text>
+        <name>ALT-annunFL</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.056</y-m>
+            <z-m>0.0767</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%2.0f</format>
+        <property>autopilot/settings/counter-set-altitude-FL</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.010</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>ALT-annun100</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.0675</y-m>
+            <z-m>0.0758</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%03.0f</format>
+        <property>autopilot/settings/counter-set-altitude-100</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>IAS-annun</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.076</y-m>
+            <z-m>0.0764</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%3.0f</format>
+        <property>autopilot/settings/target-speed-kt</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.010</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>DME</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.040</y-m>
+            <z-m>0.0714</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">DME %3.1f</format>
+        <property>instrumentation/dme/indicated-distance-nm</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.007</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>MACH-annun</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.076</y-m>
+            <z-m>0.0764</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">.%03.0f</format>
+        <property>autopilot/settings/pfd-mach-target-indication</property>
+        <factor>1000.0</factor>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.010</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>HDG-annun</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>-0.080</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%3.0fH</format>
+        <property>autopilot/settings/heading-bug-deg</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>TRK-annun</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>-0.080</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%3.0fT</format>
+        <property>autopilot/settings/heading-bug-deg</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>MAG-annun</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.001</y-m>
+            <z-m>-0.080</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">literal</type>
+        <text>MAG</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>TRU-annun</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.001</y-m>
+            <z-m>-0.080</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">literal</type>
+        <text>TRU</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <animation>
+        <type>select</type>
+        <object-name>VS-POS</object-name>
+        <condition>
+            <greater-than-equals>
+                 <property>velocities/vertical-speed-fps</property>
+                <value>6.67</value>
+            </greater-than-equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>VS-NEG</object-name>
+        <condition>
+            <less-than-equals>
+                <property>velocities/vertical-speed-fps</property>
+                <value>-6.67</value>
+            </less-than-equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>DME</object-name>
+        <condition>
+            <property>instrumentation/dme/in-range</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>INHG</object-name>
+        <condition>
+            <and>
+                <not>
+                    <property>instrumentation/efis/inputs/kpa-mode</property>
+                </not>
+                <not>
+                    <property>instrumentation/efis/inputs/setting-std</property>
+                </not>
+                <less-than-equals>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <property>autopilot/settings/transition-altitude</property>
+                </less-than-equals>
+            </and>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>INHG-YEL</object-name>
+        <condition>
+            <and>
+                <not>
+                    <property>instrumentation/efis/inputs/kpa-mode</property>
+                </not>
+                <not>
+                    <property>instrumentation/efis/inputs/setting-std</property>
+                </not>
+                <greater-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <property>autopilot/settings/transition-altitude</property>
+                </greater-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>HPA</object-name>
+        <condition>
+            <and>
+                <property>instrumentation/efis/inputs/kpa-mode</property>
+                <not>
+                    <property>instrumentation/efis/inputs/setting-std</property>
+                </not>
+                <less-than-equals>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <property>autopilot/settings/transition-altitude</property>
+                </less-than-equals>
+            </and>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>HPA-YEL</object-name>
+        <condition>
+            <and>
+                <property>instrumentation/efis/inputs/kpa-mode</property>
+                <not>
+                    <property>instrumentation/efis/inputs/setting-std</property>
+                </not>
+                <greater-than>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <property>autopilot/settings/transition-altitude</property>
+                </greater-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>INHG-STD</object-name>
+        <condition>
+            <and>
+            <property>instrumentation/efis/inputs/setting-std</property>
+            <greater-than>
+                <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <property>autopilot/settings/transition-altitude</property>
+            </greater-than>
+        </and>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>INHG-STD-YEL</object-name>
+        <condition>
+            <and>
+                <property>instrumentation/efis/inputs/setting-std</property>
+                <less-than-equals>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <property>autopilot/settings/transition-altitude</property>
+                </less-than-equals>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>INHG-WHT</object-name>
+        <condition>
+            <and>
+                <not><property>instrumentation/efis/inputs/kpa-mode</property></not>
+                <property>instrumentation/efis/inputs/setting-std</property>
+                <less-than-equals>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <property>autopilot/settings/transition-altitude</property>
+                </less-than-equals>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>HPA-WHT</object-name>
+        <condition>
+            <and>
+                <property>instrumentation/efis/inputs/kpa-mode</property>
+                <property>instrumentation/efis/inputs/setting-std</property>
+                <less-than-equals>
+                    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+                    <property>autopilot/settings/transition-altitude</property>
+                </less-than-equals>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Ralt</object-name>
+        <object-name>RALT</object-name>
+        <condition>
+            <less-than>
+                <property>autopilot/settings/radio-altimeter-indication</property>
+                <value>2500</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>IAS-annun</object-name>
+        <condition>
+            <and>
+                <not-equals>
+                    <property>instrumentation/afds/ap-modes/speed-mode</property>
+                    <value>""</value>
+                </not-equals>
+                <not>
+                    <property>instrumentation/afds/inputs/ias-mach-selected</property>
+                </not>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>MACH-annun</object-name>
+        <condition>
+            <and>
+                <not-equals>
+                    <property>instrumentation/afds/ap-modes/speed-mode</property>
+                    <value>""</value>
+                </not-equals>
+                <property>instrumentation/afds/inputs/ias-mach-selected</property>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>ALT-annunFL</object-name>
+        <object-name>ALT-annun100</object-name>
+        <condition>
+            <not-equals>
+                <property>instrumentation/afds/ap-modes/pitch-mode</property>
+                <value>""</value>
+            </not-equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>MAG-annun</object-name>
+        <condition>
+            <not><property>systems/navigation/hdgref/reference</property></not>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>TRU-annun</object-name>
+        <condition>
+            <property>systems/navigation/hdgref/reference</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>HDG-annun</object-name>
+        <condition>
+            <not>
+                <property>instrumentation/efis/hdg-trk-selected</property>
+            </not>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>TRK-annun</object-name>
+        <condition>
+            <property>instrumentation/efis/hdg-trk-selected</property>
+        </condition>
+    </animation>
+
+    <!-- TCW display (time critical warnings) from GPWS -->
+    <text>
+        <name>tcws</name>
+        <offsets>
+            <x-m>0.014</x-m>
+            <y-m>-0.01</y-m>
+            <z-m>-0.044</z-m>
+        </offsets>
+        <alignment>center-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/mk-viii/outputs/warning</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.01</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">64</width>
+            <height type="int">64</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>vref-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.063</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>REF</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>vref</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>-0.062</y-m>
+            <z-m>-0.049</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%3.0f</format>
+        <property>instrumentation/weu/state/vref</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <animation>
+        <type>select</type>
+        <object-name>vref</object-name>
+        <condition>
+            <less-than>
+              <property>instrumentation/pfd/vref-diff</property>
+              <value>-55</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <text>
+        <name>fbw-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.067</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>- FBW</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>v1-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.067</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>- V1</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>vr-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.067</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>- VR</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>v2-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.067</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>- V2</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>flap-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.067</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>- UP</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>fl1-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.067</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>- 1</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>fl5-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.067</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>- 5</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>fl15-text</name>
+        <offsets>
+            <x-m>0.0025</x-m>
+            <y-m>-0.067</y-m>
+            <z-m>0.0105</z-m>
+        </offsets>
+        <alignment>left-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>- 15</text>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.004</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>mins</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.03</y-m>
+            <z-m>-0.054</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">text-value</type>
+        <property>instrumentation/efis/minimums-mode-text</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.006</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    <text>
+        <name>mins</name>
+        <offsets>
+            <x-m>0.004</x-m>
+            <y-m>0.03</y-m>
+            <z-m>-0.06</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type type="string">number-value</type>
+        <format type="string">%3.0f</format>
+        <property>instrumentation/efis/minimums</property>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.008</character-size>
+        <character-aspect-ratio type="double">1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <animation>
+        <object-name>speedtrend.up</object-name>
+        <property>instrumentation/pfd/speed-trend-up</property>
+        <type>textranslate</type>
+        <axis>
+            <x>0</x>
+            <y>0.8</y>
+        </axis>
+        <factor>1</factor> <!-- 0.048/+70knots-->
+    </animation>
+    <animation>
+        <object-name>speedtrend.down</object-name>
+        <property>instrumentation/pfd/speed-trend-down</property>
+        <type>textranslate</type>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+        </axis>
+        <factor>1</factor> <!-- 0.048/+70knots-->
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>speedtrend.up</object-name>
+        <condition>
+            <less-than>
+                <property>instrumentation/pfd/speed-trend-up</property>
+                <value>0.239</value>
+            </less-than>
+        </condition>
+    </animation>
+    <animation>
+        <type>select</type>
+        <object-name>speedtrend.down</object-name>
+        <condition>
+            <greater-than>
+                <property>instrumentation/pfd/speed-trend-down</property>
+                <value>-0.239</value>
+            </greater-than>
+        </condition>
+    </animation>
+</PropertyList>

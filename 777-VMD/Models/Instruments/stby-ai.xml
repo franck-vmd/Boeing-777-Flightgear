@@ -1,0 +1,129 @@
+<!-- 777-200
+Franck.VMD
+-->
+
+<PropertyList>
+ <path>stby-ai.ac</path>
+ 
+ <effect>
+        <name>777-interior</name>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
+        <object-name>StbyAIbezel</object-name>
+        <object-name>StbyAIbtn</object-name>
+        <object-name>AI</object-name>
+        <object-name>AI.001</object-name>
+        <object-name>Bank_ind</object-name>
+        <object-name>Display_1</object-name>
+        <object-name>Display_1.001</object-name>
+        <object-name>Plane.028</object-name>
+        <object-name>Roll.needle</object-name>
+        <object-name>Slip.needle</object-name>
+        <object-name>StbyAI.screenoff</object-name>
+    </effect>
+
+ <animation>
+        <type>rotate</type>
+        <object-name>Roll.needle</object-name>
+        <object-name>Slip.needle</object-name>
+        <property>orientation/roll-deg</property>
+        <center>
+            <x-m>-1.85329</x-m>
+            <y-m>-0.16053</y-m>
+            <z-m>0.46543</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Slip.needle</object-name>
+        <property>instrumentation/pfd/slip-skid</property>
+        <factor>0.0008</factor>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+   <animation>
+        <type>material</type>
+        <object-name>StbyAIbezel</object-name>
+        <object-name>StbyAIbtn</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+ <animation>
+   <type>texmultiple</type>
+   <object-name>AI</object-name>
+   <transform>
+     <property>orientation/pitch-deg</property>
+     <subtype>textranslate</subtype>
+     <factor>0.00435</factor>
+     <axis>
+       <x>0</x>
+       <y>1</y>
+       <z>0</z>
+     </axis>
+   </transform>
+   <transform>
+     <property>orientation/roll-deg</property>
+     <subtype>texrotate</subtype>
+     <center>
+       <x>0.25</x>
+       <y>0.50</y>
+     </center>
+     <axis>
+       <x>0</x>
+       <y>0</y>
+       <z>-1</z>
+     </axis>
+   </transform>
+ </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>StbyAI.screenoff</object-name>
+                <condition>
+                        <less-than>
+			<property>sim/multiplay/generic/float[75]</property>
+			<value>0.9</value>
+			</less-than>
+		</condition>
+    </animation>
+    
+    <animation>
+		<type>select</type>
+                <object-name>AI</object-name>
+                <object-name>AI.001</object-name>
+                <object-name>Bank_ind</object-name>
+                <object-name>Display_1</object-name>
+                <object-name>Display_1.001</object-name>
+                <object-name>Plane.028</object-name>
+                <object-name>Roll.needle</object-name>
+                <object-name>Slip.needle</object-name>
+                <condition>
+                        <greater-than>
+			<property>sim/multiplay/generic/float[75]</property>
+			<value>0.9</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+</PropertyList>

@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
+
+<PropertyList>
+	<name>Introduction: Cockpit</name>
+	<description>Welcome aboard your 777 aircraft!
+
+Require an aircraft type conversion? Need an upgrade from another aircraft type (or older fgfs sim)?
+This tutorial quickly walks you through the features of the cockpit in general.
+</description>
+
+<init>
+	<set>
+		<property>controls/electric/battery-switch</property>
+		<value>1</value>
+	</set>
+</init>
+
+<step>
+	<message>Welcome to the 777 cockpit introduction. Let's have a look - from left to right...</message>
+	<view>
+		<heading-offset-deg>342.2</heading-offset-deg>
+		<pitch-offset-deg>-36.6</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>120.0</field-of-view>
+	</view>
+</step>
+
+<step>
+	<message>Electronic flight bag (EFB) (airport map display).</message>
+	<view>
+		<heading-offset-deg>42.2</heading-offset-deg>
+		<pitch-offset-deg>-38.1</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>57.4</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.5084</x-m>
+		<y-m>-1.0250</y-m>
+		<z-m>0.3066</z-m>
+		<scale>10.6834</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Clock and timer. Use the timer to fly exact legs in a holding pattern.</message>
+	<view>
+		<heading-offset-deg>8.6</heading-offset-deg>
+		<pitch-offset-deg>-23.0</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>38.6</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8450</x-m>
+		<y-m>-0.6950</y-m>
+		<z-m>0.4092</z-m>
+		<scale>5.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The yoke. It'll rattle when you stall the plane.</message>
+	<view>
+		<heading-offset-deg>0.4</heading-offset-deg>
+		<pitch-offset-deg>-44.1</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.5</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>56.1</field-of-view>
+	</view>
+	<set>
+		<property>instrumentation/weu/actuators/stick-shaker</property>
+		<value>1</value>
+	</set>
+</step>
+
+<step>
+	<set>
+		<property>instrumentation/weu/actuators/stick-shaker</property>
+		<value>0</value>
+	</set>
+
+	<message>The "primary flight display" (PFD) - most important cockpit instrument (separate tutorial available).</message>
+	<view>
+		<heading-offset-deg>358.9</heading-offset-deg>
+		<pitch-offset-deg>-25.5</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>39.9</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8425</x-m>
+		<y-m>-0.5383</y-m>
+		<z-m>0.3975</z-m>
+		<scale>7.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Master warning and caution lights for urgent alerts.
+	You can click the lights to dismiss alerts and warning sounds (not now :) ).</message>
+	<view>
+		<heading-offset-deg>357.2</heading-offset-deg>
+		<pitch-offset-deg>-19.4</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.5</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>39.9</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.7875</x-m>
+		<y-m>-0.4633</y-m>
+		<z-m>0.6042</z-m>
+		<scale>1.7167</scale>
+	</marker>
+	<set>
+		<property>instrumentation/weu/light/master-caution</property>
+		<value>1</value>
+	</set>
+	<set>
+		<property>instrumentation/weu/light/master-warning</property>
+		<value>1</value>
+	</set>
+	<set>
+		<property>instrumentation/weu/sound/stall-horn</property>
+		<value>1</value>
+	</set>
+</step>
+
+<step>
+	<set>
+		<property>instrumentation/weu/light/master-caution</property>
+		<value>0</value>
+	</set>
+	<set>
+		<property>instrumentation/weu/light/master-warning</property>
+		<value>0</value>
+	</set>
+	<set>
+		<property>instrumentation/weu/sound/stall-horn</property>
+		<value>0</value>
+	</set>
+	
+	<message>The "navigation display" (ND). Displays traffic, route information and weather.</message>
+	<view>
+		<heading-offset-deg>342.6</heading-offset-deg>
+		<pitch-offset-deg>-25.6</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>39.9</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8425</x-m>
+		<y-m>-0.3117</y-m>
+		<z-m>0.3950</z-m>
+		<scale>7.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Standby attitude indicator (backup if PFD fails).</message>
+	<view>
+		<heading-offset-deg>331.7</heading-offset-deg>
+		<pitch-offset-deg>-25.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>41.3</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8358</x-m>
+		<y-m>-0.1550</y-m>
+		<z-m>0.4633</z-m>
+		<scale>3.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Standby airspeed indicator (backup if PFD fails).</message>
+	<view>
+		<heading-offset-deg>331.7</heading-offset-deg>
+		<pitch-offset-deg>-25.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>41.3</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8358</x-m>
+		<y-m>-0.1467</y-m>
+		<z-m>0.3717</z-m>
+		<scale>3.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Standby altimeter (backup if PFD fails).</message>
+	<view>
+		<heading-offset-deg>331.7</heading-offset-deg>
+		<pitch-offset-deg>-25.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>41.3</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8200</x-m>
+		<y-m>-0.1483</y-m>
+		<z-m>0.2775</z-m>
+		<scale>3.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Electronic flight instrument system (EFIS) control panel.</message>
+	<view>
+		<heading-offset-deg>2.8</heading-offset-deg>
+		<pitch-offset-deg>-9.3</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.3</x-offset-m>
+		<y-offset-m>0.7</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>37.7</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8292</x-m>
+		<y-m>-0.3608</y-m>
+		<z-m>0.5783</z-m>
+		<scale>6.6834</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The "mode control panel" (MCP) for autopilot (separate tutorial available).</message>
+	<view>
+		<heading-offset-deg>327.9</heading-offset-deg>
+		<pitch-offset-deg>-13.8</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>63.4</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8200</x-m>
+		<y-m>-0.0683</y-m>
+		<z-m>0.5733</z-m>
+		<scale>5.9500</scale>
+	</marker>
+	<set>
+		<property>autopilot/locks/passive-mode</property>
+		<value>0</value>
+	</set>
+	<set>
+		<property>autopilot/locks/passive-mode</property>
+		<value>1</value>
+	</set>
+</step>
+
+
+<step>
+	<message>The "Engine indication and crew alerting system" (EICAS).
+	Shows engine status and general text messages/alerts.</message>
+	<view>
+		<heading-offset-deg>359.2</heading-offset-deg>
+		<pitch-offset-deg>-26.5</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>0.1</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>53.7</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8442</x-m>
+		<y-m>0.0192</y-m>
+		<z-m>0.4033</z-m>
+		<scale>9.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Panel for gear and ground proximity warning system (GPWS).</message>
+	<view>
+		<heading-offset-deg>359.2</heading-offset-deg>
+		<pitch-offset-deg>-26.5</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>0.1</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>53.7</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8442</x-m>
+		<y-m>0.1792</y-m>
+		<z-m>0.3733</z-m>
+		<scale>9.9500</scale>
+	</marker>
+	<set>
+		<property>instrumentation/mk-viii/inputs/discretes/self-test</property>
+		<value>1</value>
+	</set>
+</step>
+
+<step>
+	<set>
+		<property>instrumentation/mk-viii/inputs/discretes/self-test</property>
+		<value>0</value>
+	</set>
+
+	<message>Separate set of copilot's instruments.</message>
+	<view>
+		<heading-offset-deg>316.5</heading-offset-deg>
+		<pitch-offset-deg>-22.5</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>0.0</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>91.2</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.8059</x-m>
+		<y-m>0.5083</y-m>
+		<z-m>0.3792</z-m>
+		<scale>13.9500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>The "control display unit" (CDU). Flight computer for route/fuel/payload/takeoff/approach calculations.</message>
+	<view>
+		<heading-offset-deg>356.8</heading-offset-deg>
+		<pitch-offset-deg>-59.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.2</x-offset-m>
+		<y-offset-m>1.2</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>31.7</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.7208</x-m>
+		<y-m>-0.1525</y-m>
+		<z-m>0.1642</z-m>
+		<scale>9.4667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Secondary EICAS display (not implemented).</message>
+	<view>
+		<heading-offset-deg>359.4</heading-offset-deg>
+		<pitch-offset-deg>-60.6</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>0.0</x-offset-m>
+		<y-offset-m>1.3</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>31.7</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.7208</x-m>
+		<y-m>0.0208</y-m>
+		<z-m>0.1642</z-m>
+		<scale>9.4667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Pedestal with thrust, flap and trim controls.</message>
+	<view>
+		<heading-offset-deg>359.2</heading-offset-deg>
+		<pitch-offset-deg>-60.1</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>0.0</x-offset-m>
+		<y-offset-m>0.6</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>74.8</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.3884</x-m>
+		<y-m>0.0208</y-m>
+		<z-m>0.1375</z-m>
+		<scale>9.4667</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Radio frequency controls (COM1+2, NAV1+2, ADF1+2).</message>
+	<view>
+		<heading-offset-deg>0.0</heading-offset-deg>
+		<pitch-offset-deg>-71.5</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.1</x-offset-m>
+		<y-offset-m>0.5</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>53.7</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.2417</x-m>
+		<y-m>-0.1008</y-m>
+		<z-m>0.0183</z-m>
+		<scale>4.0500</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Transponder and TCAS panel. Controls identification signal and
+	traffic collision alerting system.</message>
+	<view>
+		<heading-offset-deg>359.8</heading-offset-deg>
+		<pitch-offset-deg>-88.2</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>0.1</x-offset-m>
+		<y-offset-m>0.6</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>44.1</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.0942</x-m>
+		<y-m>0.1392</y-m>
+		<z-m>0.0183</z-m>
+		<scale>4.6834</scale>
+	</marker>
+	<set>
+		<property>instrumentation/tcas/inputs/mode</property>
+		<value>1</value>
+	</set>
+	<set>
+		<property>instrumentation/tcas/inputs/self-test</property>
+		<value>1</value>
+	</set>
+</step>
+
+<step>
+	<set>
+		<property>instrumentation/tcas/inputs/self-test</property>
+		<value>0</value>
+	</set>
+
+	<message>Overhead panel for engine, tank/fuel and lighting controls.</message>
+	<view>
+		<heading-offset-deg>0.0</heading-offset-deg>
+		<pitch-offset-deg>60.7</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.0</x-offset-m>
+		<y-offset-m>0.9</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>120.0</field-of-view>
+	</view>
+	<marker>
+		<x-m>-1.5084</x-m>
+		<y-m>-1.0250</y-m>
+		<z-m>0.3066</z-m>
+		<scale>10.6834</scale>
+	</marker>
+</step>
+
+<step>
+	<message>Thanks, that's the quick cockpit overview. More tutorials on specific instruments available.</message>
+	<view>
+		<heading-offset-deg>342.2</heading-offset-deg>
+		<pitch-offset-deg>-36.6</pitch-offset-deg>
+		<roll-offset-deg>0.0</roll-offset-deg>
+		<x-offset-m>-0.6</x-offset-m>
+		<y-offset-m>0.8</y-offset-m>
+		<z-offset-m>-22.8</z-offset-m>
+		<field-of-view>120.0</field-of-view>
+	</view>
+</step>
+
+<end></end>
+
+</PropertyList>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">16 ONE WORLD 777-200</name>
+				<texture>Liveries-200/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-200/AFR1OW.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-200/AFR3OW.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-200/AFR4OW.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-200/AFR5AAL.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-200/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-200/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-200/AFR8AAL.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-200/AFR9.png</texture>
+                        </fuselage7>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>OW</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+

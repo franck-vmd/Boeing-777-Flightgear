@@ -1,0 +1,2332 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>cargo_ramp_2.ac</path> 
+    
+       <animation>
+		<type>material</type>
+		<texture>container_trailer.png</texture>
+                <object-name>cargo1</object-name>
+                <object-name>cargo.001</object-name>
+                <object-name>croix1</object-name>
+                <object-name>croix2</object-name>
+                <object-name>plateau</object-name>
+                <object-name>clo</object-name>
+                <object-name>clor1</object-name>
+                <object-name>clor2</object-name>
+                <object-name>chaine1</object-name>
+                <object-name>chaine2</object-name>
+                <object-name>chaine3</object-name>
+                <object-name>chaine4</object-name>
+       </animation> 
+
+        <animation>
+		<type>material</type>
+		<texture>container_AKH.png</texture>
+                <object-name>caisse</object-name>
+       </animation> 
+
+       <animation>
+		<type>material</type>
+		<texture>complet.png</texture>
+                <object-name>clop</object-name>
+       </animation>          
+
+    <animation>
+        <type>pick</type>
+		<object-name>cargo12</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/cargo2/move7</property>
+            </binding>
+        </action>
+    </animation>
+
+   <!-- Animation cargo -->
+
+                <!-- Plateau 1 -->
+
+   <animation>
+    <type>rotate</type>
+    <object-name>croix302</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0</dep></entry>
+	<entry><ind> 0.025 </ind><dep>10</dep></entry>
+        <entry><ind> 0.050 </ind><dep>10</dep></entry>
+        <entry><ind> 0.075 </ind><dep>10</dep></entry>
+	<entry><ind> 0.100 </ind><dep>10</dep></entry>
+        <entry><ind> 0.125 </ind><dep>10</dep></entry>
+        <entry><ind> 0.150 </ind><dep>10</dep></entry>
+        <entry><ind> 0.175 </ind><dep>10</dep></entry>
+        <entry><ind> 0.200 </ind><dep>10</dep></entry>
+        <entry><ind> 0.225 </ind><dep>10</dep></entry>
+        <entry><ind> 0.250 </ind><dep>10</dep></entry>
+        <entry><ind> 0.275 </ind><dep>10</dep></entry>
+        <entry><ind> 0.300 </ind><dep>10</dep></entry>
+        <entry><ind> 0.325 </ind><dep>10</dep></entry>
+        <entry><ind> 0.350 </ind><dep>10</dep></entry>
+        <entry><ind> 0.375 </ind><dep>10</dep></entry>
+        <entry><ind> 0.400 </ind><dep>10</dep></entry>
+        <entry><ind> 0.425 </ind><dep>10</dep></entry>
+        <entry><ind> 0.450 </ind><dep>10</dep></entry>
+        <entry><ind> 0.475 </ind><dep>10</dep></entry>
+        <entry><ind> 0.500 </ind><dep>10</dep></entry>
+        <entry><ind> 0.525 </ind><dep>10</dep></entry>
+        <entry><ind> 0.550 </ind><dep>10</dep></entry>
+        <entry><ind> 0.575 </ind><dep>10</dep></entry>
+        <entry><ind> 0.600 </ind><dep>10</dep></entry>
+        <entry><ind> 0.625 </ind><dep>10</dep></entry>
+        <entry><ind> 0.650 </ind><dep>10</dep></entry>
+        <entry><ind> 0.675 </ind><dep>10</dep></entry>
+        <entry><ind> 0.700 </ind><dep>10</dep></entry>
+        <entry><ind> 0.725 </ind><dep>10</dep></entry>
+        <entry><ind> 0.750 </ind><dep>10</dep></entry>
+        <entry><ind> 0.775 </ind><dep>10</dep></entry>
+        <entry><ind> 0.800 </ind><dep>10</dep></entry>
+        <entry><ind> 0.825 </ind><dep>10</dep></entry>
+        <entry><ind> 0.850 </ind><dep>10</dep></entry>
+        <entry><ind> 0.875 </ind><dep>10</dep></entry>
+        <entry><ind> 0.900 </ind><dep>10</dep></entry>
+        <entry><ind> 0.925 </ind><dep>10</dep></entry>
+        <entry><ind> 0.950 </ind><dep>10</dep></entry>
+        <entry><ind> 0.975 </ind><dep>10</dep></entry>
+	<entry><ind> 1.000 </ind><dep>10</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>-12.99893</x-m>
+			<y-m>2.47249</y-m>
+			<z-m>-4.19985</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>croix30.0012</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0</dep></entry>
+	<entry><ind> 0.025 </ind><dep>20</dep></entry>
+        <entry><ind> 0.050 </ind><dep>20</dep></entry>
+        <entry><ind> 0.075 </ind><dep>20</dep></entry>
+	<entry><ind> 0.100 </ind><dep>20</dep></entry>
+        <entry><ind> 0.125 </ind><dep>20</dep></entry>
+        <entry><ind> 0.150 </ind><dep>20</dep></entry>
+        <entry><ind> 0.175 </ind><dep>20</dep></entry>
+        <entry><ind> 0.200 </ind><dep>20</dep></entry>
+        <entry><ind> 0.225 </ind><dep>20</dep></entry>
+        <entry><ind> 0.250 </ind><dep>20</dep></entry>
+        <entry><ind> 0.275 </ind><dep>20</dep></entry>
+        <entry><ind> 0.300 </ind><dep>20</dep></entry>
+        <entry><ind> 0.325 </ind><dep>20</dep></entry>
+        <entry><ind> 0.350 </ind><dep>20</dep></entry>
+        <entry><ind> 0.375 </ind><dep>20</dep></entry>
+        <entry><ind> 0.400 </ind><dep>20</dep></entry>
+        <entry><ind> 0.425 </ind><dep>20</dep></entry>
+        <entry><ind> 0.450 </ind><dep>20</dep></entry>
+        <entry><ind> 0.475 </ind><dep>20</dep></entry>
+        <entry><ind> 0.500 </ind><dep>20</dep></entry>
+        <entry><ind> 0.525 </ind><dep>20</dep></entry>
+        <entry><ind> 0.550 </ind><dep>20</dep></entry>
+        <entry><ind> 0.575 </ind><dep>20</dep></entry>
+        <entry><ind> 0.600 </ind><dep>20</dep></entry>
+        <entry><ind> 0.625 </ind><dep>20</dep></entry>
+        <entry><ind> 0.650 </ind><dep>20</dep></entry>
+        <entry><ind> 0.675 </ind><dep>20</dep></entry>
+        <entry><ind> 0.700 </ind><dep>20</dep></entry>
+        <entry><ind> 0.725 </ind><dep>20</dep></entry>
+        <entry><ind> 0.750 </ind><dep>20</dep></entry>
+        <entry><ind> 0.775 </ind><dep>20</dep></entry>
+        <entry><ind> 0.800 </ind><dep>20</dep></entry>
+        <entry><ind> 0.825 </ind><dep>20</dep></entry>
+        <entry><ind> 0.850 </ind><dep>20</dep></entry>
+        <entry><ind> 0.875 </ind><dep>20</dep></entry>
+        <entry><ind> 0.900 </ind><dep>20</dep></entry>
+        <entry><ind> 0.925 </ind><dep>20</dep></entry>
+        <entry><ind> 0.950 </ind><dep>20</dep></entry>
+        <entry><ind> 0.975 </ind><dep>20</dep></entry>
+	<entry><ind> 1.000 </ind><dep>20</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>-12.99892</x-m>
+			<y-m>4.21423</y-m>
+			<z-m>-3.97714</z-m>
+		</center>
+		<axis>
+		        <x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+   <animation>
+    <type>translate</type>
+    <object-name>cargo102</object-name>
+    <object-name>bobcat12</object-name>
+    <property>services/cargo2/position7</property>
+        <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.639</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.600 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.625 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.750 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.775 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.825 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.850 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.900 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.925 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0.639</dep></entry>
+        <entry><ind> 0.975 </ind><dep>0.639</dep></entry>
+	<entry><ind> 1.000 </ind><dep>0.639</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>clo102</object-name>
+    <object-name>clor102</object-name>
+    <object-name>clor202</object-name>
+    <object-name>clop102</object-name>
+    <property>services/cargo2/position7</property>
+        <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.050 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.075 </ind><dep>5.35</dep></entry>
+	<entry><ind> 0.100 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.125 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.150 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.175 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.200 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.225 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.250 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.275 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.300 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.325 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.350 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.375 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.400 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.425 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.450 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.475 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.500 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.525 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.550 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.575 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.600 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.625 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.650 </ind><dep>-3.5</dep></entry>
+        <entry><ind> 0.675 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.700 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.725 </ind><dep>-2.9</dep></entry>
+        <entry><ind> 0.750 </ind><dep>-2.9</dep></entry>
+        <entry><ind> 0.775 </ind><dep>-2.9</dep></entry>
+        <entry><ind> 0.800 </ind><dep>-2.9</dep></entry>
+        <entry><ind> 0.825 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.850 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.875 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.900 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.925 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.950 </ind><dep>5.35</dep></entry>
+        <entry><ind> 0.975 </ind><dep>5.35</dep></entry>
+	<entry><ind> 1.000 </ind><dep>5.35</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clor102</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0</dep></entry>
+        <entry><ind> 0.075 </ind><dep>360</dep></entry>
+	<entry><ind> 0.100 </ind><dep>360</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0</dep></entry>
+        <entry><ind> 0.225 </ind><dep>360</dep></entry>
+        <entry><ind> 0.250 </ind><dep>360</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0</dep></entry>
+        <entry><ind> 0.375 </ind><dep>360</dep></entry>
+        <entry><ind> 0.400 </ind><dep>360</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0</dep></entry>
+        <entry><ind> 0.525 </ind><dep>360</dep></entry>
+        <entry><ind> 0.550 </ind><dep>360</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0</dep></entry>
+        <entry><ind> 0.600 </ind><dep>0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0</dep></entry>
+        <entry><ind> 0.675 </ind><dep>360</dep></entry>
+        <entry><ind> 0.700 </ind><dep>360</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>360</dep></entry>
+        <entry><ind> 0.850 </ind><dep>360</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>360</dep></entry>
+	<entry><ind> 1.000 </ind><dep>360</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>-12.8009</x-m>
+			<y-m>22.4232</y-m>
+			<z-m>-5.14919</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>clor202</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0</dep></entry>
+        <entry><ind> 0.075 </ind><dep>360</dep></entry>
+	<entry><ind> 0.100 </ind><dep>360</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0</dep></entry>
+        <entry><ind> 0.225 </ind><dep>360</dep></entry>
+        <entry><ind> 0.250 </ind><dep>360</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0</dep></entry>
+        <entry><ind> 0.375 </ind><dep>360</dep></entry>
+        <entry><ind> 0.400 </ind><dep>360</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0</dep></entry>
+        <entry><ind> 0.525 </ind><dep>360</dep></entry>
+        <entry><ind> 0.550 </ind><dep>360</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0</dep></entry>
+        <entry><ind> 0.600 </ind><dep>0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0</dep></entry>
+        <entry><ind> 0.675 </ind><dep>360</dep></entry>
+        <entry><ind> 0.700 </ind><dep>360</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>360</dep></entry>
+        <entry><ind> 0.850 </ind><dep>360</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>360</dep></entry>
+	<entry><ind> 1.000 </ind><dep>360</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>-12.8009</x-m>
+			<y-m>26.7735</y-m>
+			<z-m>-5.14919</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+       <!-- bagagge a droite -->
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge2</object-name>
+    <property>services/cargo2/position7</property>
+     <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>5.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>13.85</dep></entry>
+	<entry><ind> 0.100 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.125 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.150 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.175 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.200 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.225 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.250 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.275 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.300 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.325 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.350 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.375 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.400 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.425 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.450 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.475 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.500 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.525 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.550 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.575 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.600 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.625 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.650 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.675 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.700 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.725 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.750 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.775 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.800 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.825 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.850 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.875 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.900 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.925 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.950 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.975 </ind><dep>33.375</dep></entry>
+	<entry><ind> 1.000 </ind><dep>33.375</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0012</object-name>
+    <property>services/cargo2/position7</property>
+     <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>5.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>13.85</dep></entry>
+        <entry><ind> 0.250 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.275 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.300 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.325 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.350 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.375 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.400 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.425 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.450 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.475 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.500 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.525 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.550 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.575 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.600 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.625 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.650 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.675 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.700 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.725 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.750 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.775 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.800 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.825 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.850 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.875 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.900 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.925 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.950 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.975 </ind><dep>33.375</dep></entry>
+	<entry><ind> 1.000 </ind><dep>33.375</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+   <animation>
+    <type>translate</type>
+    <object-name>bagagge.0022</object-name>
+    <property>services/cargo2/position7</property>
+     <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.012 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>5.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>13.85</dep></entry>
+        <entry><ind> 0.400 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.425 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.450 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.475 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.500 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.525 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.550 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.575 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.600 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.625 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.650 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.675 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.700 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.725 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.750 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.775 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.800 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.825 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.850 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.875 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.900 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.925 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.950 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.975 </ind><dep>33.375</dep></entry>
+	<entry><ind> 1.000 </ind><dep>33.375</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0032</object-name>
+    <property>services/cargo2/position7</property>
+     <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.012 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.500 </ind><dep>5.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>13.85</dep></entry>
+        <entry><ind> 0.550 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.575 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.600 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.625 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.650 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.675 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.700 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.725 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.750 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.775 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.800 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.825 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.850 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.875 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.900 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.925 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.950 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.975 </ind><dep>33.375</dep></entry>
+	<entry><ind> 1.000 </ind><dep>33.375</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0042</object-name>
+    <property>services/cargo2/position7</property>
+     <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.012 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.625 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.650 </ind><dep>5.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>13.85</dep></entry>
+        <entry><ind> 0.700 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.725 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.750 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.775 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.800 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.825 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.850 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.875 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.900 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.925 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.950 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.975 </ind><dep>33.375</dep></entry>
+	<entry><ind> 1.000 </ind><dep>33.375</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0052</object-name>
+    <property>services/cargo2/position7</property>
+     <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.012 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.625 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.775 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.800 </ind><dep>5.00</dep></entry>
+        <entry><ind> 0.825 </ind><dep>13.85</dep></entry>
+        <entry><ind> 0.850 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.875 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.900 </ind><dep>21.65</dep></entry>
+        <entry><ind> 0.925 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.950 </ind><dep>33.375</dep></entry>
+        <entry><ind> 0.975 </ind><dep>33.375</dep></entry>
+	<entry><ind> 1.000 </ind><dep>33.375</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+        <!-- bagagge en haut -->
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge2</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.175 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.200 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.225 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.250 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.275 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.300 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.325 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.350 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.375 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.400 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.425 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.450 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.475 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.500 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.525 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.550 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.575 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.600 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.625 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.650 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.675 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.700 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.725 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.750 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.775 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.800 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.825 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.850 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.875 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.900 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.925 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.950 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.975 </ind><dep>2.26</dep></entry>
+	<entry><ind> 1.000 </ind><dep>2.26</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0012</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.325 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.350 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.375 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.400 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.425 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.450 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.475 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.500 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.525 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.550 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.575 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.600 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.625 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.650 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.675 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.700 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.725 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.750 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.775 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.800 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.825 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.850 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.875 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.900 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.925 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.950 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.975 </ind><dep>2.26</dep></entry>
+	<entry><ind> 1.000 </ind><dep>2.26</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0022</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.475 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.500 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.525 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.550 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.575 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.600 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.625 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.650 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.675 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.700 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.725 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.750 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.775 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.800 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.825 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.850 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.875 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.900 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.925 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.950 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.975 </ind><dep>2.26</dep></entry>
+	<entry><ind> 1.000 </ind><dep>2.26</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0032</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.625 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.650 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.675 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.700 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.725 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.750 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.775 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.800 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.825 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.850 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.875 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.900 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.925 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.950 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.975 </ind><dep>2.26</dep></entry>
+	<entry><ind> 1.000 </ind><dep>2.26</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+   <animation>
+    <type>translate</type>
+    <object-name>bagagge.0042</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.625 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.775 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.800 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.825 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.850 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.875 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.900 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.925 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.950 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.975 </ind><dep>2.26</dep></entry>
+	<entry><ind> 1.000 </ind><dep>2.26</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0052</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.625 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.775 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.825 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.850 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.900 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.925 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.950 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.975 </ind><dep>2.26</dep></entry>
+	<entry><ind> 1.000 </ind><dep>2.26</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+           <!-- Plateau -->
+
+  <animation>
+    <type>translate</type>
+    <object-name>plateau12</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.175 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.325 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.475 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.625 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.775 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.825 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.850 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.900 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.925 </ind><dep>2.26</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.975 </ind><dep>0.00</dep></entry>
+	<entry><ind> 1.000 </ind><dep>0.00</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>cargo202</object-name>
+    <object-name>cargo302</object-name>
+    <object-name>chaine102</object-name>
+    <object-name>chaine202</object-name>
+    <object-name>chaine402</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.175 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.325 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.475 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.625 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.775 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.825 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.850 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.900 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.925 </ind><dep>1.50</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.975 </ind><dep>0.00</dep></entry>
+	<entry><ind> 1.000 </ind><dep>0.00</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>chaine302</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.175 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.325 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.475 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.625 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.775 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.825 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.850 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.900 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.925 </ind><dep>2.146</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.975 </ind><dep>0.00</dep></entry>
+	<entry><ind> 1.000 </ind><dep>0.00</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>cargo302</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>360</dep></entry>
+        <entry><ind> 0.175 </ind><dep>360</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>360</dep></entry>
+        <entry><ind> 0.325 </ind><dep>360</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>360</dep></entry>
+        <entry><ind> 0.475 </ind><dep>360</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>360</dep></entry>
+        <entry><ind> 0.625 </ind><dep>360</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>360</dep></entry>
+        <entry><ind> 0.775 </ind><dep>360</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.825 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.850 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.900 </ind><dep>360</dep></entry>
+        <entry><ind> 0.925 </ind><dep>360</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.975 </ind><dep>0.00</dep></entry>
+	<entry><ind> 1.000 </ind><dep>0.00</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>-13.0026</x-m>
+			<y-m>6.68106</y-m>
+			<z-m>-1.88115</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>croix102</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.175 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.325 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.475 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.825 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.850 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.900 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>-17.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.975 </ind><dep>0.00</dep></entry>
+	<entry><ind> 1.000 </ind><dep>0.00</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>-13.0026</x-m>
+			<y-m>6.64826</y-m>
+			<z-m>-5.29683</z-m>
+		</center>
+		<axis>
+		        <x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>croix202</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.175 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.325 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.475 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.750 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.825 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.850 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.875 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.900 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>34.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.975 </ind><dep>0.00</dep></entry>
+	<entry><ind> 1.000 </ind><dep>0.00</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>-13.0026</x-m>
+			<y-m>10.4407</y-m>
+			<z-m>-5.22677</z-m>
+		</center>
+		<axis>
+		        <x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+          <!-- bagagge sur l'avant -->
+
+   <animation>
+    <type>translate</type>
+    <object-name>bagagge2</object-name>
+    <property>services/cargo2/position7</property>
+          <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.225 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.250 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.275 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.300 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.325 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.350 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.375 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.400 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.425 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.450 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.475 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.500 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.525 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.550 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.575 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.600 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.625 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.650 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.675 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.700 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.725 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.750 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.775 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.800 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.825 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.850 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.875 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.900 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.925 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.950 </ind><dep>-6.21</dep></entry>
+        <entry><ind> 0.975 </ind><dep>-6.21</dep></entry>
+	<entry><ind> 1.000 </ind><dep>-6.21</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0012</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.125 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.150 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.175 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.200 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.225 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.250 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.275 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.300 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.325 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.350 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.375 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.400 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.425 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.450 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.475 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.500 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.525 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.550 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.575 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.600 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.625 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.650 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.675 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.700 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.725 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.750 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.775 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.800 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.825 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.850 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.875 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.900 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.925 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.950 </ind><dep>-8.80</dep></entry>
+        <entry><ind> 0.975 </ind><dep>-8.80</dep></entry>
+	<entry><ind> 1.000 </ind><dep>-8.80</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+   <animation>
+    <type>translate</type>
+    <object-name>bagagge.0022</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.125 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.150 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.175 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.200 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.225 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.250 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.275 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.300 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.325 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.350 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.375 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.400 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.425 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.450 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.475 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.500 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.525 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.550 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.575 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.600 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.625 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.650 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.675 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.700 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.725 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.750 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.775 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.800 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.825 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.850 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.875 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.900 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.925 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.950 </ind><dep>-11.30</dep></entry>
+        <entry><ind> 0.975 </ind><dep>-11.30</dep></entry>
+	<entry><ind> 1.000 </ind><dep>-11.30</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0032</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.125 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.150 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.175 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.200 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.225 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.250 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.275 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.300 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.325 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.350 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.375 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.400 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.425 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.450 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.475 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.500 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.525 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.550 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.575 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.600 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.625 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.650 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.675 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.700 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.725 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.750 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.775 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.800 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.825 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.850 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.875 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.900 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.925 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.950 </ind><dep>-10.45</dep></entry>
+        <entry><ind> 0.975 </ind><dep>-10.45</dep></entry>
+	<entry><ind> 1.000 </ind><dep>-10.45</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0042</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.125 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.150 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.175 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.200 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.225 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.250 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.275 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.300 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.325 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.350 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.375 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.400 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.425 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.450 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.475 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.500 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.525 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.550 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.575 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.600 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.625 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.650 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.675 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.700 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.725 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.750 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.775 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.800 </ind><dep>-16.50</dep></entry>
+        <entry><ind> 0.825 </ind><dep>-16.50</dep></entry>
+        <entry><ind> 0.850 </ind><dep>-16.50</dep></entry>
+        <entry><ind> 0.875 </ind><dep>-16.50</dep></entry>
+        <entry><ind> 0.900 </ind><dep>-16.50</dep></entry>
+        <entry><ind> 0.925 </ind><dep>-16.50</dep></entry>
+        <entry><ind> 0.950 </ind><dep>-16.50</dep></entry>
+        <entry><ind> 0.975 </ind><dep>-16.50</dep></entry>
+	<entry><ind> 1.000 </ind><dep>-16.50</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge.0052</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.125 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.150 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.175 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.200 </ind><dep>-4.60</dep></entry>
+        <entry><ind> 0.225 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.250 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.275 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.300 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.325 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.350 </ind><dep>-9.10</dep></entry>
+        <entry><ind> 0.375 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.400 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.425 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.450 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.475 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.500 </ind><dep>-13.60</dep></entry>
+        <entry><ind> 0.525 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.550 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.575 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.600 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.625 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.650 </ind><dep>-18.10</dep></entry>
+        <entry><ind> 0.675 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.700 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.725 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.750 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.775 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.800 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.825 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.850 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.875 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.900 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.925 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.950 </ind><dep>-22.60</dep></entry>
+        <entry><ind> 0.975 </ind><dep>-22.60</dep></entry>
+	<entry><ind> 1.000 </ind><dep>-22.60</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <!-- Animation cargo 2 -->
+
+  <animation>
+    <type>translate</type>
+    <object-name>bagagge remorque2</object-name>
+    <object-name>bagagge remorque.0012</object-name>
+    <object-name>bagagge remorque.0022</object-name>
+    <object-name>bagagge remorque.0032</object-name>
+    <object-name>bagagge remorque.0042</object-name>
+    <object-name>bagagge remorque.0052</object-name>
+    <object-name>bagagge remorque.0062</object-name>
+    <object-name>roue bagagge2</object-name>
+    <object-name>roue bagagge.0012</object-name>
+    <object-name>roue bagagge.0022</object-name>
+    <object-name>roue bagagge.0032</object-name>
+    <object-name>roue bagagge.0042</object-name>
+    <object-name>roue bagagge.0052</object-name>
+    <object-name>tracteur102</object-name>
+    <object-name>cloptracteur102</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>4.60</dep></entry>
+        <entry><ind> 0.125 </ind><dep>4.60</dep></entry>
+        <entry><ind> 0.150 </ind><dep>4.60</dep></entry>
+        <entry><ind> 0.175 </ind><dep>4.60</dep></entry>
+        <entry><ind> 0.200 </ind><dep>4.60</dep></entry>
+        <entry><ind> 0.225 </ind><dep>9.10</dep></entry>
+        <entry><ind> 0.250 </ind><dep>9.10</dep></entry>
+        <entry><ind> 0.275 </ind><dep>9.10</dep></entry>
+        <entry><ind> 0.300 </ind><dep>9.10</dep></entry>
+        <entry><ind> 0.325 </ind><dep>9.10</dep></entry>
+        <entry><ind> 0.350 </ind><dep>9.10</dep></entry>
+        <entry><ind> 0.375 </ind><dep>13.60</dep></entry>
+        <entry><ind> 0.400 </ind><dep>13.60</dep></entry>
+        <entry><ind> 0.425 </ind><dep>13.60</dep></entry>
+        <entry><ind> 0.450 </ind><dep>13.60</dep></entry>
+        <entry><ind> 0.475 </ind><dep>13.60</dep></entry>
+        <entry><ind> 0.500 </ind><dep>13.60</dep></entry>
+        <entry><ind> 0.525 </ind><dep>18.10</dep></entry>
+        <entry><ind> 0.550 </ind><dep>18.10</dep></entry>
+        <entry><ind> 0.575 </ind><dep>18.10</dep></entry>
+        <entry><ind> 0.600 </ind><dep>18.10</dep></entry>
+        <entry><ind> 0.625 </ind><dep>18.10</dep></entry>
+        <entry><ind> 0.650 </ind><dep>18.10</dep></entry>
+        <entry><ind> 0.675 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.700 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.725 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.750 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.775 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.800 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.825 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.850 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.875 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.900 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.925 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.950 </ind><dep>22.60</dep></entry>
+        <entry><ind> 0.975 </ind><dep>22.60</dep></entry>
+	<entry><ind> 1.000 </ind><dep>13.60</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+		        <x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+  </animation>
+
+  <!-- Rotation bagagge -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bagagge remorque.0062</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.525 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.550 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.575 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.600 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.675 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.700 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.725 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.850 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.875 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>0.00</dep></entry>
+	<entry><ind> 1.000 </ind><dep>0.00</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>38.567</x-m>
+			<y-m>33.3638</y-m>
+			<z-m>-4.84997</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bagagge2</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.150 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.175 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.200 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.225 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.250 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.275 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.300 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.325 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.350 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.375 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.400 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.425 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.450 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.475 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.525 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.550 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.575 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.600 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.675 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.700 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.725 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.850 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.875 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>90.0</dep></entry>
+	<entry><ind> 1.000 </ind><dep>90.0</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>16.0561</x-m>
+			<y-m>33.3577</y-m>
+			<z-m>-4.84604</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bagagge.0012</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.300 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.325 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.350 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.375 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.400 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.425 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.450 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.475 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.525 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.550 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.575 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.600 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.675 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.700 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.725 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.850 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.875 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>90.0</dep></entry>
+	<entry><ind> 1.000 </ind><dep>90.0</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>20.5561</x-m>
+			<y-m>33.3577</y-m>
+			<z-m>-4.84604</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bagagge.0022</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.450 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.475 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.525 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.550 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.575 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.600 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.675 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.700 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.725 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.850 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.875 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>90.0</dep></entry>
+	<entry><ind> 1.000 </ind><dep>90.0</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>25.0561</x-m>
+			<y-m>33.3577</y-m>
+			<z-m>-4.84604</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bagagge.0032</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.600 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.675 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.700 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.725 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.850 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.875 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>90.0</dep></entry>
+	<entry><ind> 1.000 </ind><dep>90.0</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>29.5561</x-m>
+			<y-m>33.3577</y-m>
+			<z-m>-4.84604</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bagagge.0042</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.500 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.525 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.550 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.575 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.600 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.625 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.650 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.675 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.700 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.725 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.850 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.875 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>90.0</dep></entry>
+	<entry><ind> 1.000 </ind><dep>90.0</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>34.0561</x-m>
+			<y-m>33.3577</y-m>
+			<z-m>-4.84604</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bagagge.0052</object-name>
+    <property>services/cargo2/position7</property>
+         <interpolation>
+        <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.025 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.050 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.075 </ind><dep>0.00</dep></entry>
+	<entry><ind> 0.100 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.125 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.150 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.175 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.200 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.225 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.250 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.275 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.300 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.325 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.350 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.375 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.400 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.425 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.450 </ind><dep>0.00</dep></entry>
+        <entry><ind> 0.475 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.500 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.525 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.550 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.575 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.600 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.625 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.650 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.675 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.700 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.725 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.750 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.775 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.800 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.825 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.850 </ind><dep>90.0</dep></entry>
+        <entry><ind> 0.875 </ind><dep>270.0</dep></entry>
+        <entry><ind> 0.900 </ind><dep>270.0</dep></entry>
+        <entry><ind> 0.925 </ind><dep>270.0</dep></entry>
+        <entry><ind> 0.950 </ind><dep>270.0</dep></entry>
+        <entry><ind> 0.975 </ind><dep>270.0</dep></entry>
+	<entry><ind> 1.000 </ind><dep>270.0</dep></entry>
+	</interpolation>
+		<center>
+			<x-m>38.567</x-m>
+			<y-m>33.3638</y-m>
+			<z-m>-4.84997</z-m>
+		</center>
+		<axis>
+		        <x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+  </animation>
+
+</PropertyList>

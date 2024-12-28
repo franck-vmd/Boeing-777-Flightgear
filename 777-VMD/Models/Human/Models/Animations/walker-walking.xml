@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<!--==  walker animation v1.1  ==-->
+
+<PropertyList>
+	<name type="string">walking</name>
+	<loop-enabled type="bool">true</loop-enabled>
+	<loop-to type="int">2</loop-to>
+	<trigger-upon type="string">Walking</trigger-upon>
+	<position>
+		<name type="string">neutral</name>
+		<rest-sec type="double">0</rest-sec>
+		<transit-sec type="double">0.12</transit-sec>
+		<limb>
+			<y-deg type="double">0</y-deg>
+			<z-m type="double">0</z-m>
+		</limb>
+		<limb n="1">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="2">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="3">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="4">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="5">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="6">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="7">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="8">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="9">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="10">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="11">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="12">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="13">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="14">
+			<y-deg type="double">0</y-deg>
+		</limb>
+	</position>
+	<position n="1">
+		<name type="string">right leg forward</name>
+		<rest-sec type="double">0</rest-sec>
+		<transit-sec type="double">0.12</transit-sec>
+		<limb>
+			<y-deg type="double">0</y-deg>
+			<z-m type="double">0</z-m>
+		</limb>
+		<limb n="1">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">2.5</z-deg>
+		</limb>
+		<limb n="2">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">-2.5</z-deg>
+		</limb>
+		<limb n="3">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">12.5</z-deg>
+		</limb>
+		<limb n="4">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="5">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="6">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">-12.5</z-deg>
+		</limb>
+		<limb n="7">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="8">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="9">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">-22</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="10">
+			<y-deg type="double">35</y-deg>
+		</limb>
+		<limb n="11">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="12">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">12.5</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="13">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="14">
+			<y-deg type="double">8</y-deg>
+		</limb>
+	</position>
+	<position n="2">
+		<name type="string">right forward</name>
+		<rest-sec type="double">0</rest-sec>
+		<transit-sec type="double">0.25</transit-sec>
+		<limb>
+			<y-deg type="double">0</y-deg>
+			<z-m type="double">0</z-m>
+		</limb>
+		<limb n="1">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">5</z-deg>
+		</limb>
+		<limb n="2">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">-5</z-deg>
+		</limb>
+		<limb n="3">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">25</z-deg>
+		</limb>
+		<limb n="4">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="5">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="6">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">-25</z-deg>
+		</limb>
+		<limb n="7">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="8">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="9">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">-25</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="10">
+			<y-deg type="double">-8</y-deg>
+		</limb>
+		<limb n="11">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="12">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">25</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="13">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="14">
+			<y-deg type="double">16</y-deg>
+		</limb>
+	</position>
+	<position n="3">
+		<name type="string">right down</name>
+		<rest-sec type="double">0</rest-sec>
+		<transit-sec type="double">0.25</transit-sec>
+		<limb>
+			<y-deg type="double">0</y-deg>
+			<z-m type="double">0</z-m>
+		</limb>
+		<limb n="1">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="2">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="3">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="4">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="5">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="6">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="7">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="8">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="9">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="10">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="11">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="12">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">-20</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="13">
+			<y-deg type="double">55</y-deg>
+		</limb>
+		<limb n="14">
+			<y-deg type="double">16</y-deg>
+		</limb>
+	</position>
+	<position n="4">
+		<name type="string">left forward</name>
+		<rest-sec type="double">0</rest-sec>
+		<transit-sec type="double">0.25</transit-sec>
+		<limb>
+			<y-deg type="double">0</y-deg>
+			<z-m type="double">0</z-m>
+		</limb>
+		<limb n="1">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">-5</z-deg>
+		</limb>
+		<limb n="2">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">5</z-deg>
+		</limb>
+		<limb n="3">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">-25</z-deg>
+		</limb>
+		<limb n="4">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="5">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="6">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">25</z-deg>
+		</limb>
+		<limb n="7">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="8">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="9">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">25</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="10">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="11">
+			<y-deg type="double">16</y-deg>
+		</limb>
+		<limb n="12">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">-25</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="13">
+			<y-deg type="double">-8</y-deg>
+		</limb>
+		<limb n="14">
+			<y-deg type="double">0</y-deg>
+		</limb>
+	</position>
+	<position n="5">
+		<name type="string">left down</name>
+		<rest-sec type="double">0</rest-sec>
+		<transit-sec type="double">0.25</transit-sec>
+		<limb>
+			<y-deg type="double">0</y-deg>
+			<z-m type="double">0</z-m>
+		</limb>
+		<limb n="1">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="2">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="3">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="4">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="5">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="6">
+			<x-deg type="double">-80</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="7">
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="8">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="9">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">-21</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="10">
+			<y-deg type="double">55</y-deg>
+		</limb>
+		<limb n="11">
+			<y-deg type="double">15</y-deg>
+		</limb>
+		<limb n="12">
+			<x-deg type="double">0</x-deg>
+			<y-deg type="double">0</y-deg>
+			<z-deg type="double">0</z-deg>
+		</limb>
+		<limb n="13">
+			<y-deg type="double">0</y-deg>
+		</limb>
+		<limb n="14">
+			<y-deg type="double">0</y-deg>
+		</limb>
+	</position>
+</PropertyList>

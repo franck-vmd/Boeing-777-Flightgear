@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--== walker animation v1.2 for FlightGear versions 1.0 and 1.9 OSG   ==-->
+
+<PropertyList>
+	<path>backpack.ac</path>
+
+	<animation>
+		<type>select</type>
+		<object-name>Backpack</object-name>
+		<condition>
+			<and>
+				<property>sim/walker/airborne</property>
+				<property>sim/walker/parachute-equipped</property>
+			</and>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Backpack</object-name>
+		<offset-deg>0</offset-deg>
+		<property>sim/model/walker[1]/limb[1]/y-deg</property>
+		<center>
+			<x-m>-0.015</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.212</z-m>
+		</center>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+</PropertyList>

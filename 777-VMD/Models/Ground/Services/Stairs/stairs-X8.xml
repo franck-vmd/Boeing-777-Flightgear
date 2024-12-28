@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+    <name>Mobile Stairs</name>
+    <path>stairs-X8.ac</path>
+
+<!-- LIVERY SELECT -->
+    <!-- Animation -->
+    <animation>
+        <type>material</type>
+        <object-name>paint_1</object-name>
+        <object-name>cover_1</object-name>
+        <object-name>paint_2</object-name>
+        <object-name>cover_2</object-name>
+        <object-name>paint_3</object-name>
+        <object-name>cover_3</object-name>
+        <object-name>paint_4</object-name>
+        <object-name>cover_4</object-name>
+        <property-base>/services/stairs</property-base>
+        <texture-prop>paint-end</texture-prop>
+    </animation>
+
+<animation>
+    <type>select</type>
+    <object-name>cover_1</object-name>
+    <object-name>cover-under_1</object-name>
+    <object-name>cover-rods_1</object-name>
+    <object-name>cover_2</object-name>
+    <object-name>cover-under_2</object-name>
+    <object-name>cover-rods_2</object-name>
+    <object-name>cover_3</object-name>
+    <object-name>cover-under_3</object-name>
+    <object-name>cover-rods_3</object-name>
+    <object-name>cover_4</object-name>
+    <object-name>cover-under_4</object-name>
+    <object-name>cover-rods_4</object-name>
+    <condition>
+        <property>services/stairs/cover</property>
+    </condition>
+</animation>
+
+<!-- Enable/disable individual stairs -->
+
+<animation>
+    <type>select</type>
+    <object-name>cover_1</object-name>
+    <object-name>cover-under_1</object-name>
+    <object-name>cover-rods_1</object-name>
+    <object-name>stairs_1</object-name>
+    <condition>
+        <property>services/stairs/stairs1_enable</property>
+    </condition>
+</animation>
+
+<animation>
+    <type>select</type>
+    <object-name>cover_2</object-name>
+    <object-name>cover-under_2</object-name>
+    <object-name>cover-rods_2</object-name>
+    <object-name>stairs_2</object-name>
+    <condition>
+        <property>services/stairs/stairs2_enable</property>
+    </condition>
+</animation>
+
+<animation>
+    <type>select</type>
+    <object-name>cover_3</object-name>
+    <object-name>cover-under_3</object-name>
+    <object-name>cover-rods_3</object-name>
+    <object-name>stairs_3</object-name>
+    <condition>
+        <property>services/stairs/stairs3_enable</property>
+    </condition>
+</animation>
+
+<animation>
+    <type>select</type>
+    <object-name>cover_4</object-name>
+    <object-name>cover-under_4</object-name>
+    <object-name>cover-rods_4</object-name>
+    <object-name>stairs_4</object-name>
+    <condition>
+        <property>services/stairs/stairs4_enable</property>
+    </condition>
+</animation>
+
+<!--Counteract gear compression -->
+
+<animation>
+    <type>translate</type>
+    <object-name>cover-rods_1</object-name>
+    <object-name>cover-rods_2</object-name>
+    <object-name>stairs_1</object-name>
+    <object-name>stairs_2</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+        <entry><ind>0.15</ind><dep>0.0</dep></entry>
+        <entry><ind>0.40</ind><dep>0.25</dep></entry>
+    </interpolation>
+    <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+    </axis>
+</animation>
+
+<animation>
+    <type>translate</type>
+    <object-name>cover-rods_3</object-name>
+    <object-name>stairs_3</object-name>
+    <object-name>cover-rods_4</object-name>
+    <object-name>stairs_4</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+        <entry><ind>0.15</ind><dep>0.0</dep></entry>
+        <entry><ind>0.40</ind><dep>0.25</dep></entry>
+    </interpolation>
+    <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+    </axis>
+</animation>
+
+<!--Enable pick to switch off individual stairs-->
+    <animation>
+        <type>pick</type>
+        <object-name>stairs_1</object-name>
+        <object-name>cover-rods_1</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/stairs/stairs1_enable</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>stairs_2</object-name>
+        <object-name>cover-rods_2</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/stairs/stairs2_enable</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>stairs_3</object-name>
+        <object-name>cover-rods_3</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/stairs/stairs3_enable</property>
+            </binding>
+        </action>
+    </animation>
+    
+    <animation>
+        <type>pick</type>
+        <object-name>stairs_4</object-name>
+        <object-name>cover-rods_4</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/stairs/stairs4_enable</property>
+            </binding>
+        </action>
+    </animation>
+        
+</PropertyList>

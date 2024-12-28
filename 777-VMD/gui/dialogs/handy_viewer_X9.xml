@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+<name>handyviewerx9</name>
+    <layout>vbox</layout>
+    <padding>20</padding>
+
+<group>
+  <layout>hbox</layout>
+  <text>
+     <label>Handy Viewer X9</label>
+  </text>
+  <empty><stretch>true</stretch></empty>
+
+  <button>
+      <legend>x</legend>
+      <key>Esc</key>
+      <pref-width>16</pref-width>
+      <pref-height>16</pref-height>
+      <border>2</border>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+ </group>
+
+<hrule/>
+
+<!-- Cockpit Views -->
+
+  <group>
+    <stretch>true</stretch>  
+    <layout>hbox</layout>
+    <halign>center</halign>  
+    <text> 
+	    <label>Cockpit</label>
+    </text>
+  </group>
+
+  <hrule/>
+ <!-- premier ligne  groupe  1 --> 
+  <group>  
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>CPT view</desc>
+      	<legend>CPT</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "0");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>FO view</desc>
+      	<legend>COPILOTE</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "8");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>CPT view push</desc>
+      	<legend>CPT Push</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "32");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>Radio-CDU view</desc>
+      	<legend>Radio-CDU</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "9");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+   </group>
+
+ <!-- deuxieme ligne groupe 1 --> 
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>Observer 1 View</desc>
+      	<legend>OBS 1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "13");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+    
+    <button>
+            <pref-width>70</pref-width>
+		<desc>EFB CPT View</desc>
+      	<legend>EFB CPT</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "20");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+    
+    <button>
+            <pref-width>70</pref-width>
+		<desc>EFB FO View</desc>
+      	<legend>EFB COP</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "21");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+    
+       <button>
+            <pref-width>70</pref-width>
+		<desc>OH View</desc>
+      	<legend>OH Panel</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "10");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+    
+  </group>
+
+  <hrule/>
+
+   <!-- Cabine View Walker -->
+   <group>
+    <stretch>true</stretch>  
+    <layout>hbox</layout>
+    <halign>center</halign>  
+    <text> 
+	    <label>View Walker Cabine / Ext</label>
+    </text>
+  </group>
+
+ <hrule/>
+
+  <group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+   <button>
+            <pref-width>70</pref-width>
+		<desc>Passenger View</desc>
+      	<legend>Walk int</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "43");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>Passerelle View</desc>
+      	<legend>Jetways</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+            <command>property-toggle</command>
+			<property>services/stairs/stairs1_enable</property>
+            </binding>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "44");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+  
+    <button>
+            <pref-width>70</pref-width>
+		<desc>Walk View</desc>
+      	<legend>Walk Ext</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+			<command>property-toggle</command>
+			<property>sim/walker/key-triggers/outside-toggle</property>
+		</binding>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "46");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>Walker Orbit View</desc>
+      	<legend>Walk OVi</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+			<command>property-toggle</command>
+			<property>sim/walker/key-triggers/outside-toggle</property>
+		</binding>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "47");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+   </group>
+
+  <hrule/>
+
+   <!-- Cabine View -->
+   <group>
+    <stretch>true</stretch>  
+    <layout>hbox</layout>
+    <halign>center</halign>  
+    <text> 
+	    <label>Cabine</label>
+    </text>
+  </group>
+
+ <hrule/>
+   <!-- premiere ligne groupe 2 -->
+  <group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+    
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager1</desc>
+      	<legend>Cuisine1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "24");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+    
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager1C</desc>
+      	<legend>S-1-Clas</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "25");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+    
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager2C</desc>
+      	<legend>Cab-C-1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "27");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+   <button>
+            <pref-width>70</pref-width>
+		<desc>passager3C</desc>
+      	<legend>Cab-C-2</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "29");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+  
+  </group>
+
+  <hrule/>
+
+  <!-- Cabine Porte View -->
+
+    <group>
+    <stretch>true</stretch>  
+    <layout>hbox</layout>
+    <halign>center</halign>  
+    <text> 
+	    <label>Cabine porte</label>
+    </text>
+  </group>
+
+  <hrule/>
+  <!-- premiere ligne groupe 3 -->
+  <group>
+  <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager1P</desc>
+      	<legend>Porte-L1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "31");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager1P</desc>
+      	<legend>Porte-R1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "33");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+   <button>
+            <pref-width>70</pref-width>
+		<desc>passager1C2</desc>
+      	<legend>Port-L2</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "26");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager1C2</desc>
+      	<legend>Port-R2</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "34");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+   </group>
+
+     <hrule/>
+
+  <!-- Cabine Hublot View -->
+
+    <group>
+    <stretch>true</stretch>  
+    <layout>hbox</layout>
+    <halign>center</halign>  
+    <text> 
+	    <label>Cabine Hublot</label>
+    </text>
+  </group>
+
+  <hrule/>
+
+     <group>
+  <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+    
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager2C3</desc>
+      	<legend>Cab-R1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "37");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager2C3</desc>
+      	<legend>Cab-L1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "38");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+    
+    <button>
+            <pref-width>70</pref-width>
+		<desc>passager3T</desc>
+      	<legend>Cab-MR1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "39");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+   <button>
+            <pref-width>70</pref-width>
+		<desc>passager3T</desc>
+      	<legend>Cab-ML1</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "40");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+   </group>
+
+  <hrule><stretch>true</stretch></hrule>
+
+<!-- External Views -->
+
+  <group>
+    <stretch>true</stretch>  
+    <layout>hbox</layout>
+    <halign>center</halign>  
+    <text> 
+	    <label>External</label>
+    </text>
+  </group>
+
+  <hrule/>
+   <!-- premiere ligne groupe 3 -->
+  <group>  
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>Front Gear view</desc>
+      	<legend>FGear</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "12");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>LWing View</desc>
+      	<legend>LWing</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "17");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>RWing View</desc>
+      	<legend>RWing</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "18");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+   <button>
+            <pref-width>70</pref-width>
+		<desc>Tail view</desc>
+      	<legend>Tail</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "19");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+  </group>
+   <!-- troisieme ligne groupe 3 -->
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>Helicopter View</desc>
+      	<legend>Heli</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "1");
+	    		</script>
+	  	</binding>
+    </button>
+     
+    <button>
+        <pref-width>70</pref-width>
+		<desc>Flyby View</desc>
+      	<legend>FlyBy</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "6");
+	    		</script>
+	  	</binding>
+    </button>
+
+   <button>
+            <pref-width>70</pref-width>
+		<desc>APU view</desc>
+      	<legend>APU</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "41");
+	    		</script>
+	  	</binding>
+    </button>
+     
+    <button>
+        <pref-width>70</pref-width>
+		<desc>Radar View</desc>
+      	<legend>RADAR</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "42");
+	    		</script>
+	  	</binding>
+    </button>
+    
+  </group>
+  <hrule />
+
+</PropertyList>
