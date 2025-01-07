@@ -7,7 +7,7 @@
    height="1024"
    id="svg5180"
    xml:space="preserve"
-   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="chkl.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,21 +25,26 @@
    inkscape:pageopacity="1"
    inkscape:pageshadow="2"
    inkscape:window-width="1920"
-   inkscape:window-height="946"
+   inkscape:window-height="988"
    id="namedview102"
    showgrid="false"
-   inkscape:zoom="0.65186336"
-   inkscape:cx="462.52024"
-   inkscape:cy="512.37732"
+   inkscape:zoom="0.460937"
+   inkscape:cx="403.52586"
+   inkscape:cy="269.01724"
    inkscape:window-x="0"
-   inkscape:window-y="27"
+   inkscape:window-y="0"
    inkscape:window-maximized="1"
    inkscape:current-layer="svg5180"
    inkscape:object-nodes="true"
    inkscape:snap-smooth-nodes="true"
    inkscape:showpageshadow="2"
    inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#d1d1d1" /><metadata
+   inkscape:deskcolor="#d1d1d1"
+   showguides="true"><sodipodi:guide
+     position="-213.32537,875.85016"
+     orientation="1,0"
+     id="guide865"
+     inkscape:locked="false" /></sodipodi:namedview><metadata
    id="metadata5186"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:creator><cc:Agent><dc:title>franck.VMD</dc:title></cc:Agent></dc:creator></cc:Work></rdf:RDF></metadata><defs
@@ -382,212 +387,249 @@
 
 
 <path
-   style="fill:#000000;stroke:#000000;stroke-width:0.993979px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-   d="M 2.1696279,4.6684158 H 1022.4456 V 1026.5061 H 8.5999387 Z"
+   style="fill:#000000;stroke:#000000;stroke-width:0.995873px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+   d="M 0.50108002,0.4979367 H 1023.502 V 1023.5021 H 6.9485645 Z"
    id="path1273"
-   inkscape:connector-curvature="0" /><g
-   inkscape:groupmode="layer"
-   id="layer1"
-   inkscape:label="Layer"
-   style="display:inline">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</g><text
+   inkscape:connector-curvature="0" /><rect
+   style="fill:#00ff00;stroke:#00ff00;stroke-width:3.02362;stroke-linejoin:round"
+   id="rect3331"
+   width="326.78152"
+   height="69.228157"
+   x="11.045483"
+   y="21.51181" /><rect
+   style="fill:#999999;stroke-width:37.8538"
+   id="rect8-5"
+   width="480"
+   height="60"
+   x="12"
+   y="280" /><rect
+   style="fill:#999999;stroke-width:37.8539"
+   id="rect8-9"
+   width="480"
+   height="60"
+   x="12"
+   y="200" /><rect
+   style="fill:#999999;stroke-width:37.8538"
+   id="rect8-2"
+   width="480"
+   height="60"
+   x="12"
+   y="440" /><rect
+   style="fill:#999999;stroke-width:37.8538"
+   id="rect8-91"
+   width="480"
+   height="60"
+   x="12"
+   y="600" /><rect
+   style="fill:#999999;stroke-width:37.8538"
+   id="rect8-6"
+   width="480"
+   height="60"
+   x="12"
+   y="360" /><rect
+   style="fill:#999999;stroke-width:37.8538"
+   id="rect8-93"
+   width="480"
+   height="60"
+   x="12"
+   y="520" /><rect
+   style="fill:#999999;stroke-width:37.8538"
+   id="rect8-27"
+   width="480"
+   height="60"
+   x="12"
+   y="680" /><rect
+   style="fill:#999999;stroke-width:37.8538"
+   id="rect8-60"
+   width="480"
+   height="60"
+   x="12"
+   y="840" /><rect
+   style="fill:#999999;stroke-width:37.8538"
+   id="rect8-0"
+   width="480"
+   height="60"
+   x="12"
+   y="760" /><rect
+   style="fill:#4d4d4d;stroke:none;stroke-width:2.32561;stroke-linejoin:round"
+   id="rect3331-3"
+   width="191.39027"
+   height="69.92617"
+   x="354.19159"
+   y="20" /><rect
+   style="fill:#4d4d4d;stroke:none;stroke-width:3.58088;stroke-linejoin:round"
+   id="rect3331-3-5"
+   width="453.75958"
+   height="69.92617"
+   x="556.41803"
+   y="20" /><rect
+   style="fill:#999999;stroke-width:27.6645"
+   id="rect8-62"
+   width="146.48447"
+   height="105.00994"
+   x="815.68481"
+   y="893.46765" /><text
    xml:space="preserve"
-   style="font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';fill:#ffffff;stroke-width:9.615"
-   x="120.96213"
-   y="192.87012"
-   id="text1"><tspan
-     sodipodi:role="line"
-     id="tspan1"
-     x="120.96213"
-     y="192.87012" /></text><text
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8-97"
+   transform="matrix(2.9983481,0,0,3.22512,-201.08991,276.07013)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1341">SECURE</tspan></text><text
    xml:space="preserve"
-   id="text2"
-   style="font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';white-space:pre;shape-inside:url(#rect2);display:inline;fill:#ffffff;stroke-width:9.615" /><text
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8-28"
+   transform="matrix(2.9983481,0,0,3.22512,-232.54522,199.92831)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1343">SHUTDOWN</tspan></text><text
    xml:space="preserve"
-   style="font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8-92"
+   transform="matrix(2.9983481,0,0,3.22512,-205.31136,122.47549)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1345">LANDING</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8-75"
+   transform="matrix(2.9983481,0,0,3.22512,-223.42213,41.304125)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1347">APPROACH</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8-23"
+   transform="matrix(2.9983481,0,0,3.22512,-273.24855,-39.340497)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1349">AFTER TAKEOFF</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8-2"
+   transform="matrix(2.9983481,0,0,3.22512,-250.71751,-198.96078)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1351">AFTER START</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8-9"
+   transform="matrix(2.9983481,0,0,3.22512,-250.56772,-278.01234)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1353">BEFORE START</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8-0"
+   transform="matrix(2.9983481,0,0,3.22512,-286.96064,-116.92779)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1355">BEFORE TAKEOFF</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;line-height:0;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-8"
+   transform="matrix(2.9983481,0,0,3.22512,-239.25235,-357.17089)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1357">PREFLIGHT</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-6-1"
+   transform="matrix(2.9983481,0,0,3.22512,466.38706,380.96364)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1359">MENU</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3-6"
+   transform="matrix(2.9983481,0,0,3.22512,482.13585,333.97535)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1361">EXIT </tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-3"
+   transform="matrix(2.9983481,0,0,3.22512,-11.726195,-457.1902)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1363">NORMAL MENU  </tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-6-7"
+   transform="matrix(2.9983481,0,0,3.22512,235.07425,-534.25036)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1365">NON-NORMAL MENU</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
+   x="122.98211"
+   y="186.74834"
+   id="text3-6"
+   transform="matrix(2.9983481,0,0,3.22512,8.6139652,-534.25036)"><tspan
+     x="122.98211"
+     y="186.74834"
+     id="tspan1367">RESETS</tspan></text><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';white-space:pre;inline-size:291.823;display:inline;fill:#ffffff;stroke-width:9.615"
    x="122.98211"
    y="186.74834"
    id="text3"
-   transform="matrix(2.9983481,0,0,3.22512,-94.014385,-542.65905)"><tspan
+   transform="matrix(2.9983481,0,0,3.22512,-331.62783,-534.25036)"><tspan
      x="122.98211"
      y="186.74834"
-     id="tspan3">BEFORE START CHECLISTE</tspan></text><text
-   xml:space="preserve"
-   id="text4"
-   style="font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';white-space:pre;shape-inside:url(#rect4);display:inline;fill:#ffffff;stroke-width:9.615" /><text
-   xml:space="preserve"
-   id="text5"
-   style="font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';white-space:pre;shape-inside:url(#rect5);display:inline;fill:#ffffff;stroke-width:9.615" /><text
-   xml:space="preserve"
-   style="font-size:37.69px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';fill:#ffffff;stroke-width:29.1084"
-   x="77.955147"
-   y="179.13676"
-   id="text6"
-   transform="scale(0.93085585,1.0742802)"><tspan
-     sodipodi:role="line"
-     id="tspan6"
-     x="77.955147"
-     y="179.13676"
-     style="stroke-width:29.1084">Flight deck door .......................Closed and locked      CM2 </tspan></text><text
-   xml:space="preserve"
-   id="text7"
-   style="font-size:12.4496px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';white-space:pre;shape-inside:url(#rect7);display:inline;fill:#ffffff;stroke-width:9.615" /><rect
-   style="fill:#999999;stroke-width:11.1528"
-   id="rect8"
-   width="50"
-   height="50"
-   x="16.820107"
-   y="154.6911" /><rect
-   style="fill:#999999;stroke-width:11.1528"
-   id="rect8-9"
-   width="50"
-   height="50"
-   x="17.069937"
-   y="238.65587" /><rect
-   style="fill:#999999;stroke-width:11.1528"
-   id="rect8-2"
-   width="50"
-   height="50"
-   x="17.364222"
-   y="319.47885" /><rect
-   style="fill:#999999;stroke-width:11.1528"
-   id="rect8-28"
-   width="50"
-   height="50"
-   x="15.597857"
-   y="397.34299" /><rect
-   style="fill:#999999;stroke-width:11.1528"
-   id="rect8-97"
-   width="50"
-   height="50"
-   x="18.746368"
-   y="472.18051" /><rect
-   style="fill:#999999;stroke-width:11.1528"
-   id="rect8-3"
-   width="50"
-   height="50"
-   x="17.384071"
-   y="553.13843" /><rect
-   style="fill:#999999;stroke-width:11.1528"
-   id="rect8-6"
-   width="50"
-   height="50"
-   x="17.756866"
-   y="628.92395" /><rect
-   style="fill:#999999;stroke-width:11.1528"
-   id="rect8-1"
-   width="50"
-   height="50"
-   x="19.13728"
-   y="711.88538" /></svg>
+     id="tspan1369">NORMAL MENU  </tspan></text><rect
+   style="fill:none;stroke:#ff00ff;stroke-width:5.54746;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+   id="rect8647-6"
+   width="28.987476"
+   height="2.4488857"
+   x="260.67844"
+   y="55.773731" /><rect
+   style="fill:none;stroke:#ff00ff;stroke-width:5.54746;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+   id="rect8647-6-1"
+   width="28.987476"
+   height="2.4488857"
+   x="195.03722"
+   y="55.773731" /><rect
+   style="fill:none;stroke:#ff00ff;stroke-width:6.52831;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+   id="rect8647-3"
+   width="1.1872807"
+   height="25.88937"
+   x="241.26416"
+   y="74.182518" /><rect
+   style="fill:none;stroke:#ff00ff;stroke-width:6.52831;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+   id="rect8647"
+   width="1.1872807"
+   height="25.88937"
+   x="241.26416"
+   y="10.74302" /><circle
+   style="fill:none;stroke:#ff00ff;stroke-width:10;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+   id="path7452"
+   cx="242.16267"
+   cy="55.422188"
+   r="20" /></svg>

@@ -1,4 +1,3 @@
-
 var Pipe = {
         feeder : [],
         fillColor:"rgba(0,255,0,1)",
@@ -88,187 +87,187 @@ var Pipe = {
         },
             radar : func() {
             var pipe = Pipe.new(me.group.getElementById("rad"));
-            var apuValve = "sim/multiplay/generic/float[29]";
-            var apuPump = "sim/multiplay/generic/float[29]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[29]";
+            var doorsClose = "sim/multiplay/generic/float[29]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             d1l : func() {
             var pipe = Pipe.new(me.group.getElementById("d1lopened"));
-            var apuValve = "sim/multiplay/generic/float[10]";
-            var apuPump = "sim/multiplay/generic/float[10]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[10]";
+            var doorsClose = "sim/multiplay/generic/float[10]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             d2l : func() {
             var pipe = Pipe.new(me.group.getElementById("d2lopened"));
-            var apuValve = "sim/multiplay/generic/float[20]";
-            var apuPump = "sim/multiplay/generic/float[20]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[20]";
+            var doorsClose = "sim/multiplay/generic/float[20]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             d3l : func() {
             var pipe = Pipe.new(me.group.getElementById("d3lopened"));
-            var apuValve = "sim/multiplay/generic/float[22]";
-            var apuPump = "sim/multiplay/generic/float[22]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[22]";
+            var doorsClose = "sim/multiplay/generic/float[22]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             d4l : func() {
             var pipe = Pipe.new(me.group.getElementById("d4lopened"));
-            var apuValve = "sim/multiplay/generic/float[24]";
-            var apuPump = "sim/multiplay/generic/float[24]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[24]";
+            var doorsClose = "sim/multiplay/generic/float[24]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             d1r : func() {
             var pipe = Pipe.new(me.group.getElementById("d1ropened"));
-            var apuValve = "sim/multiplay/generic/float[11]";
-            var apuPump = "sim/multiplay/generic/float[11]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[11]";
+            var doorsClose = "sim/multiplay/generic/float[11]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             d2r : func() {
             var pipe = Pipe.new(me.group.getElementById("d2ropened"));
-            var apuValve = "sim/multiplay/generic/float[21]";
-            var apuPump = "sim/multiplay/generic/float[21]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[21]";
+            var doorsClose = "sim/multiplay/generic/float[21]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             d3r : func() {
             var pipe = Pipe.new(me.group.getElementById("d3ropened"));
-            var apuValve = "sim/multiplay/generic/float[23]";
-            var apuPump = "sim/multiplay/generic/float[23]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[23]";
+            var doorsClose = "sim/multiplay/generic/float[23]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             d4r : func() {
             var pipe = Pipe.new(me.group.getElementById("d4ropened"));
-            var apuValve = "sim/multiplay/generic/float[25]";
-            var apuPump = "sim/multiplay/generic/float[25]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[25]";
+            var doorsClose = "sim/multiplay/generic/float[25]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             fwd : func() {
             var pipe = Pipe.new(me.group.getElementById("fwdopened"));
-            var apuValve = "sim/multiplay/generic/float[26]";
-            var apuPump = "sim/multiplay/generic/float[26]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[26]";
+            var doorsClose = "sim/multiplay/generic/float[26]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             aft : func() {
             var pipe = Pipe.new(me.group.getElementById("aftopened"));
-            var apuValve = "sim/multiplay/generic/float[27]";
-            var apuPump = "sim/multiplay/generic/float[27]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[27]";
+            var doorsClose = "sim/multiplay/generic/float[27]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             bulk : func() {
             var pipe = Pipe.new(me.group.getElementById("bulkopened"));
-            var apuValve = "sim/multiplay/generic/float[28]";
-            var apuPump = "sim/multiplay/generic/float[28]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[28]";
+            var doorsClose = "sim/multiplay/generic/float[28]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             apug : func() {
             var pipe = Pipe.new(me.group.getElementById("apugopened"));
-            var apuValve = "sim/multiplay/generic/float[53]";
-            var apuPump = "sim/multiplay/generic/float[53]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[53]";
+            var doorsClose = "sim/multiplay/generic/float[53]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
            apud : func() {
             var pipe = Pipe.new(me.group.getElementById("apudopened"));
-            var apuValve = "sim/multiplay/generic/float[54]";
-            var apuPump = "sim/multiplay/generic/float[54]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[54]";
+            var doorsClose = "sim/multiplay/generic/float[54]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             grdg : func() {
             var pipe = Pipe.new(me.group.getElementById("gropened"));
-            var apuValve = "sim/multiplay/generic/float[55]";
-            var apuPump = "sim/multiplay/generic/float[55]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[55]";
+            var doorsClose = "sim/multiplay/generic/float[55]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             engl1 : func() {
             var pipe = Pipe.new(me.group.getElementById("engl1opened"));
-            var apuValve = "sim/multiplay/generic/float[12]";
-            var apuPump = "sim/multiplay/generic/float[12]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[12]";
+            var doorsClose = "sim/multiplay/generic/float[12]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             engl2 : func() {
             var pipe = Pipe.new(me.group.getElementById("engl2opened"));
-            var apuValve = "sim/multiplay/generic/float[13]";
-            var apuPump = "sim/multiplay/generic/float[13]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[13]";
+            var doorsClose = "sim/multiplay/generic/float[13]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             engl3 : func() {
             var pipe = Pipe.new(me.group.getElementById("engl3opened"));
-            var apuValve = "sim/multiplay/generic/float[17]";
-            var apuPump = "sim/multiplay/generic/float[17]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[17]";
+            var doorsClose = "sim/multiplay/generic/float[17]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             engl4 : func() {
             var pipe = Pipe.new(me.group.getElementById("engl4opened"));
-            var apuValve = "sim/multiplay/generic/float[16]";
-            var apuPump = "sim/multiplay/generic/float[16]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[16]";
+            var doorsClose = "sim/multiplay/generic/float[16]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             engr1 : func() {
             var pipe = Pipe.new(me.group.getElementById("engr1opened"));
-            var apuValve = "sim/multiplay/generic/float[14]";
-            var apuPump = "sim/multiplay/generic/float[14]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[14]";
+            var doorsClose = "sim/multiplay/generic/float[14]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             engr2 : func() {
             var pipe = Pipe.new(me.group.getElementById("engr2opened"));
-            var apuValve = "sim/multiplay/generic/float[15]";
-            var apuPump = "sim/multiplay/generic/float[15]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[15]";
+            var doorsClose = "sim/multiplay/generic/float[15]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             engr3 : func() {
             var pipe = Pipe.new(me.group.getElementById("engr3opened"));
-            var apuValve = "sim/multiplay/generic/float[19]";
-            var apuPump = "sim/multiplay/generic/float[19]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[19]";
+            var doorsClose = "sim/multiplay/generic/float[19]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
             engr4 : func() {
             var pipe = Pipe.new(me.group.getElementById("engr4opened"));
-            var apuValve = "sim/multiplay/generic/float[18]";
-            var apuPump = "sim/multiplay/generic/float[18]";
-            pipe.openedBy(apuValve);
-            pipe.feededBy(apuPump);
-            me.registry.add(apuValve,pipe);
+            var doorsOpen = "sim/multiplay/generic/float[18]";
+            var doorsClose = "sim/multiplay/generic/float[18]";
+            pipe.openedBy(doorsOpen);
+            pipe.feededBy(doorsClose);
+            me.registry.add(doorsOpen,pipe);
         },
         update: func()
         {

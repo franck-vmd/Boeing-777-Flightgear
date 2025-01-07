@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <name>open-chkl</name>
+    <layout>vbox</layout>
+    <padding>20</padding>
+
+<group>
+
+    <layout>hbox</layout>
+    <text>
+    <label>CheckList</label>
+    </text>
+    <empty><stretch>true</stretch></empty>
+
+<button>
+    <legend>x</legend>
+    <key>Esc</key>
+    <pref-width>16</pref-width>
+    <pref-height>16</pref-height>
+    <border>2</border>
+    <binding>
+    <command>dialog-close</command>
+    </binding>
+</button>
+    
+</group>
+
+<hrule/>
+                
+    
+<group>
+  <layout>table</layout>
+     
+<button>
+     <legend>NORMAL MENU</legend>
+        <pref-width>110</pref-width>
+        <pref-height>50</pref-height>
+        <halign>left</halign>
+        <row>2</row>
+        <col>0</col>
+        <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl");</script>
+     </binding>
+</button>
+
+<button>
+     <legend>RESETS</legend>
+        <pref-width>65</pref-width>
+        <pref-height>50</pref-height>
+        <halign>left</halign>
+        <row>2</row>
+        <col>1</col>
+        <binding>
+    <command></command>
+    </binding>
+</button>
+
+<button>
+     <legend>NON-NORMAL MENU</legend>
+        <pref-width>140</pref-width>
+        <pref-height>50</pref-height>
+        <halign>left</halign>
+        <row>2</row>
+        <col>2</col>
+       <binding>
+    <command></command>
+    </binding>
+</button>
+</group>  
+        
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
+     <label>NORMAL MENU</label>
+     </text>
+</group>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>     
+
+<button>
+     <pref-width>160</pref-width>
+     <desc>PREFLIGHT</desc>
+     <legend>PREFLIGHT</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl1");</script>
+     </binding>
+</button>
+        
+</group>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+     <pref-width>160</pref-width>
+     <desc>BEFORE START</desc>
+     <legend>BEFORE START</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl2");</script>
+     </binding>
+</button>
+</group>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>160</pref-width>
+     <desc>AFTER START</desc>
+     <legend>AFTER START</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl3");</script>
+     </binding>
+</button>
+        
+</group>
+  
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+     <pref-width>160</pref-width>
+     <desc>BEFORE TAKEOFF</desc>
+     <legend>BEFORE TAKEOFF</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl4");</script>
+     </binding>
+</button>
+</group>
+
+ <group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>       
+<button>
+     <pref-width>160</pref-width>
+     <desc>AFTER TAKEOFF</desc>
+     <legend>AFTER TAKEOFF</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl5");</script>
+     </binding>
+</button>
+        
+</group>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>160</pref-width>
+     <desc>APPROACH</desc>
+     <legend>APPROACH</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl6");</script>
+     </binding>
+</button>
+</group>
+
+ <group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>       
+<button>
+     <pref-width>160</pref-width>
+     <desc>LANDING</desc>
+     <legend>LANDING</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl7");</script>
+     </binding>
+</button>
+
+</group>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>160</pref-width>
+     <desc>SHUTDOWN</desc>
+     <legend>SHUTDOWN</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl8");</script>
+     </binding>
+</button>
+</group>
+
+<group>
+ <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>left</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>       
+<button>
+     <pref-width>160</pref-width>
+     <desc>SECURE</desc>
+     <legend>SECURE</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>b777.mfdShow("chkl9");</script>
+     </binding>
+</button>
+
+</group>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>right</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+
+<button>
+    <legend>EXIT MENU</legend>
+    <key>Esc</key>
+    <pref-width>100</pref-width>
+    <pref-height>50</pref-height>
+    <border>2</border>
+    <binding>
+    <command>dialog-close</command>
+    </binding>
+</button>
+
+</group>
+<hrule/>
+
+</PropertyList>
