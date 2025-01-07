@@ -20,7 +20,7 @@ No Rembrandt
 
 START-UP BOEING 777-VMD
 
-[![FlightGear Boeing 777 Start-up](https://i.ibb.co/fk06mSd/Start-up.jpg)](https://www.youtube.com/watch?v=YdVb1Bmo-40 "FlightGear Boeing 777 Start-up")
+[![FlightGear Boeing 777 Start-up](https://i.ibb.co/DWtJjLH/Start-up.jpg)](https://www.youtube.com/watch?v=YdVb1Bmo-40 "FlightGear Boeing 777 Start-up")
 
 install Boeing 777-VMD
 
