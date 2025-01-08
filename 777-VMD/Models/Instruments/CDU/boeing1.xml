@@ -241,6 +241,10 @@ Franck.VMD
             <command>nasal</command>
             <script>cdu.key('LSK5L');</script>
         </binding>
+        <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[92]</property>
+            </binding>
     </action>
 </animation>
 

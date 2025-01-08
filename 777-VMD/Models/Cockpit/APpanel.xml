@@ -2473,6 +2473,10 @@ Franck.VMD
                 <command>nasal</command>
                 <script>b777.mfdShow("fctl");</script>
             </binding>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[91]</property>
+            </binding>
         </action>
     </animation>
     

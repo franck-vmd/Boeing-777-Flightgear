@@ -71,7 +71,8 @@ var canvas_chkl1 = {
             me.opened7v();
             me.opened8v();
             me.opened9v();
-            me.openedr9v();
+            me.opened10v();
+            me.opened11v();
         },
             opened1v : func() {
             var pipe = Pipe.new(me.group.getElementById("opened1v"));
@@ -91,16 +92,16 @@ var canvas_chkl1 = {
         },
             opened3v : func() {
             var pipe = Pipe.new(me.group.getElementById("opened3v"));
-            var apuValve = "gear/gear[1]/position-norm";
-            var apuPump = "gear/gear[1]/position-norm";
+            var apuValve = "instrumentation/afds/inputs/alt-knob";
+            var apuPump = "instrumentation/afds/inputs/alt-knob";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
         },
             opened4v : func() {
             var pipe = Pipe.new(me.group.getElementById("opened4v"));
-            var apuValve = "gear/gear[1]/position-norm";
-            var apuPump = "gear/gear[1]/position-norm";
+            var apuValve = "sim/multiplay/generic/float[92]";
+            var apuPump = "sim/multiplay/generic/float[92]";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
@@ -123,16 +124,16 @@ var canvas_chkl1 = {
         },
             opened7v : func() {
             var pipe = Pipe.new(me.group.getElementById("opened7v"));
-            var apuValve = "controls/flight/elevator-trim";
-            var apuPump = "controls/flight/elevator-trim";
+            var apuValve = "sim/multiplay/generic/float[91]";
+            var apuPump = "sim/multiplay/generic/float[91]";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
         },
             opened8v : func() {
             var pipe = Pipe.new(me.group.getElementById("opened8v"));
-            var apuValve = "gear/gear[1]/position-norm";
-            var apuPump = "gear/gear[1]/position-norm";
+            var apuValve = "controls/lighting/taxi-lights";
+            var apuPump = "controls/lighting/taxi-lights";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
@@ -145,18 +146,18 @@ var canvas_chkl1 = {
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
         },
-            openedr10v : func() {
-            var pipe = Pipe.new(me.group.getElementById("openedr10v"));
-            var apuValve = "gear/gear[1]/position-norm";
-            var apuPump = "gear/gear[1]/position-norm";
+            opened10v : func() {
+            var pipe = Pipe.new(me.group.getElementById("opened10v"));
+            var apuValve = "controls/lighting/beacon";
+            var apuPump = "controls/lighting/beacon";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
         },
-            openedr9v : func() {
-            var pipe = Pipe.new(me.group.getElementById("openedr9v"));
-            var apuValve = "gear/gear[1]/position-norm";
-            var apuPump = "gear/gear[1]/position-norm";
+            opened11v : func() {
+            var pipe = Pipe.new(me.group.getElementById("opened11v"));
+            var apuValve = "controls/lighting/beacon";
+            var apuPump = "controls/lighting/beacon";
             pipe.openedBy(apuValve);
             pipe.feededBy(apuPump);
             me.registry.add(apuValve,pipe);
