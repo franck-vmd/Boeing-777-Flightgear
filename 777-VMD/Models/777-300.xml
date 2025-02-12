@@ -808,6 +808,20 @@ Franck.VMD
         <usage>interior</usage>
         <path>Aircraft/777-VMD/Models/Cockpit/flightdeck-300.xml</path>
     </model>
+
+    <animation>
+     <type>translate</type>
+     <object-name>flightdeck-300</object-name>  
+     <property>b777/shake-effect/shaking</property>
+     <axis>
+   		<x1-m>  0</x1-m>
+   		<y1-m>  0</y1-m>
+   		<z1-m>  0</z1-m>
+       <x2-m>  0.5</x2-m>
+       <y2-m> -0.5</y2-m>
+       <z2-m>  0.8</z2-m>
+     </axis>
+    </animation>
     
     <!-- Seating -->
     

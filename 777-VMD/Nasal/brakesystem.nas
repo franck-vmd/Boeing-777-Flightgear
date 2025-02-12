@@ -72,10 +72,21 @@ var BrakeSystem =
                 var BrakeLevel=1.0;
             else
                 var BrakeLevel = (getprop("autopilot/autobrake/left-brake-output")+getprop("autopilot/autobrake/right-brake-output"))/2;
-            if ((OnGround)and(BrakeLevel>0))
+            if (OnGround)
             {
                 # absorb more energy
                 var V1 = getprop("velocities/groundspeed-kt");
+            
+                if(V1 > 15)
+				{
+					setprop("b777/shake-effect/effect",1);
+				}else{
+					setprop("b777/shake-effect/effect",0);
+				}
+				
+	            if (BrakeLevel>0)
+	            {
+
                 var Mass = getprop("yasim/gross-weight-lbs")/me.ScalingDivisor;
                 # absorb some kinetic energy:
                 # dE= 1/2 * m * V1^2 - 1/2 * m * V2^2) 
@@ -84,6 +95,9 @@ var BrakeSystem =
                 if (V2>0)
                     ThermalEnergy += Mass * (V1*V1 - V2*V2)/2;
             }
+            }else{
+					setprop("b777/shake-effect/effect",0);
+			}
 
             # cooling effect: reduce thermal energy by factor (1-m.CoolingFactor)^dt
             ThermalEnergy = ThermalEnergy * math.exp(me.LnCoolFactor * dt);

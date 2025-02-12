@@ -393,6 +393,7 @@
             <file>Nasal/autoannunciator.nas</file>
             <file>Nasal/fire.nas</file>
             <file>Nasal/interior-lighting.nas</file>
+            <file>Aircraft/777-VMD/Nasal/shake.nas</file>
         </b777>
         <dialogs>
             <file>Nasal/dialogs.nas</file>

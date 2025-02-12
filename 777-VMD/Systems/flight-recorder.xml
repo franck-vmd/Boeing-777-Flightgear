@@ -143,6 +143,12 @@
                 <type>float</type><property>gear/brake-thermal-energy</property>
             </signal>
             <signal>
+                <type>double</type><property type="string">b777/shake-effect/shaking</property>
+            </signal>
+            <signal>
+                <type>bool</type><property type="string">b777/shake-effect/effect</property>
+            </signal>
+            <signal>
                 <type>float</type>
                 <property>gear/gear[0]/compression-m</property>
             </signal>
