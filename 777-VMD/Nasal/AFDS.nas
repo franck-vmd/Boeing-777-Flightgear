@@ -1298,9 +1298,9 @@ var AFDS = {
                     {
                         if((current_alt < 12000) or (current_alt < (getprop("autopilot/route-manager/destination/field-elevation-ft") + 8000)))
                         {
-                            if((me.ias_setting.getValue() > 240) and !me.manual_intervention.getValue())
+                            if((me.ias_setting.getValue() > 250) and !me.manual_intervention.getValue())
                         {
-                            me.ias_setting.setValue(240);
+                            me.ias_setting.setValue(250);
                             }
                             me.descent_step += 1;
                         }
@@ -1350,7 +1350,7 @@ var AFDS = {
                     {
                         if((current_alt < 10000) and !me.manual_intervention.getValue())
                         {
-                            me.ias_setting.setValue(240);
+                            me.ias_setting.setValue(250);
                         }
                         else
                         {
@@ -1367,7 +1367,7 @@ var AFDS = {
                 }
                 elsif((current_alt < 10000) and !me.manual_intervention.getValue())
                 {
-                    me.ias_setting.setValue(240);
+                    me.ias_setting.setValue(250);
                 }
                 else
                 {
@@ -1389,7 +1389,7 @@ var AFDS = {
                     {
                         if((current_alt < 10000) and !me.manual_intervention.getValue())
                         {
-                            me.ias_setting.setValue(240);
+                            me.ias_setting.setValue(250);
                         }
                         else
                         {
