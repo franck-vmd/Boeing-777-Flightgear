@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">19 EMIRATES orange 777-300</name>
+				<name type="string">08 EMIRATES orange 777-300</name>
 				<texture>Liveries-300/AFR2.png</texture>
                         </livery>
 			<fuselage>
