@@ -16,19 +16,6 @@ Franck.VMD
         <object-name>GEAR_OVRD_TranspCover</object-name>
     </effect>
 
-    <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>gearCTL</object-name>
-        <object-name>BlockAltGr_Cover</object-name>
-        <object-name>AltGr.knob</object-name>
-        <object-name>BlockAltGr_Flange</object-name>
-        <object-name>BlockAltGr_Pivot</object-name>
-        <object-name>GearLever</object-name>
-        <object-name>GearLever.001</object-name>
-        <object-name>Lock.OVR</object-name>
-    </effect>
-
     <animation>
         <type>material</type>
         <object-name>Lettering_Gear</object-name>

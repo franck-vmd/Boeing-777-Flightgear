@@ -4,17 +4,6 @@ Franck.VMD
 
 <PropertyList>
  <path>stby-asi1.ac</path>
-
-   <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>Screw01</object-name>
-        <object-name>StbyAsi</object-name>
-        <object-name>StbyAsi.knob</object-name>
-        <object-name>StbyAsi.knob.001</object-name>
-        <object-name>StbyAsibtn</object-name>
-        <object-name>StbyAsi.screenoff</object-name>
-    </effect>
     
     <animation>
         <type>select</type>

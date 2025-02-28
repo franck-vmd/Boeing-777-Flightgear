@@ -5,28 +5,6 @@ Franck.VMD
 <PropertyList>
 
  <path>UEICAS1.ac</path>
-
-    <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>Bezel</object-name>
-        <object-name>Logo_Placard</object-name>
-        <object-name>EFIS.screenoff</object-name>
-        <object-name>EFIS.screen</object-name>
-        <object-name>Display_1</object-name>
-        <object-name>Display_1.001</object-name>
-        <object-name>Display_1.002</object-name>
-        <object-name>Display_1.003</object-name>
-        <object-name>Display_1.004</object-name>
-        <object-name>ND.screenL</object-name>
-        <object-name>ND.screenR</object-name>
-        <object-name>Power.off</object-name>
-        <object-name>Power.off.001</object-name>
-        <object-name>Power.offL</object-name>
-        <object-name>Power.offR</object-name>
-        <object-name>Power.offL.001</object-name>
-        <object-name>Power.offR.001</object-name>
-    </effect>
     
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>

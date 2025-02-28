@@ -1,9 +1,8 @@
 AC3Db
 MATERIAL "Material.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.050 0.050 0.050  spec 0.000 0.000 0.000  shi 32 trans 0.000
-MATERIAL "Material.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 32 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__flight_attendants_door1l.ac"
-kids 2
+kids 1
 OBJECT poly
 name "Flight_attend.1l"
 data 16
@@ -39523,25 +39522,4 @@ refs 4
 3729 0.424608 0.108421
 3727 0.417074 0.097057
 3731 0.408558 0.097567
-kids 0
-OBJECT poly
-name "Plane"
-data 5
-Plane
-crease 40.0
-texture "ombre.png"
-texrep 1 1
-numvert 4
--18.58856 -0.4892 2.12715
--17.75492 -0.4892 2.12715
--18.58856 -0.4892 1.2935
--17.75492 -0.4892 1.2935
-numsurf 1
-SURF 0X0
-mat 1
-refs 4
-0 0.0001 0.0001
-1 0.9999 0.0001
-3 0.9999 0.9999
-2 0.0001 0.9999
 kids 0

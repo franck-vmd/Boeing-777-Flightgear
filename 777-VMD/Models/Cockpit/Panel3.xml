@@ -11,15 +11,6 @@ Franck.VMD
         <object-name>HDGREF_TranspCover</object-name>
     </effect>
 
-    <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>HDGREF_Switch</object-name>
-        <object-name>HDGREF_Flange</object-name>
-        <object-name>Plate3</object-name>
-        <object-name>HDGREF_Base</object-name>
-    </effect>
-
     <animation>
         <type>material</type>
         <object-name>Lettering_FLP_L</object-name>

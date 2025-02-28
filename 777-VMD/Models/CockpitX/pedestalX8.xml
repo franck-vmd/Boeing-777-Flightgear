@@ -321,39 +321,6 @@ Franck.VMD
         </offsets>
     </model>
 
-    <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>Pedestal.OK</object-name>
-        <object-name>Border_LFront</object-name>
-        <object-name>LHThrottle</object-name>
-        <object-name>RHThrottle</object-name>
-        <object-name>LHRevThrust.lever</object-name>
-        <object-name>RHRevThrust.lever</object-name>
-        <object-name>SpdBrkLever</object-name>
-        <object-name>FlapLever</object-name>
-        <object-name>PitchTrim</object-name>
-        <object-name>APU_Fire_DISCH_L.btn</object-name>
-        <object-name>APU_Disch_L_Pivot</object-name>
-        <object-name>APU_Fire_DISCH_R.btn</object-name>
-        <object-name>APU_Disch_R_Pivot</object-name>
-        <object-name>CStab_Cover</object-name>
-        <object-name>RStab_Cover</object-name>
-        <object-name>Lcutoff.Knob</object-name>
-        <object-name>Lcutoff.Lever</object-name>
-        <object-name>Rcutoff.Knob</object-name>
-        <object-name>Rcutoff.Lever</object-name>
-        <object-name>BrkLever</object-name>
-        <object-name>RudderTrimMC</object-name>
-        <object-name>EVAC_Cover</object-name>
-        <object-name>EVAC_Test.btn</object-name>
-        <object-name>Telephone</object-name>
-        <object-name>Telephone_Chord.001</object-name>
-        <object-name>RudderTrim_Wing2</object-name>
-        <object-name>RudderTrim_Wing1</object-name>
-        <object-name>bar</object-name>
-    </effect>
-
 <!--  controls -->
 
     <animation>

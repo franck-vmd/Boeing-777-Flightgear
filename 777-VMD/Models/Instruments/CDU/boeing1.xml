@@ -20,14 +20,6 @@ Franck.VMD
         <object-name>Lettering_Commands</object-name>
         <object-name>Lettering_Btns</object-name>
     </effect>
-
-     <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>CDU</object-name>
-        <object-name>CDuscreen</object-name>
-        <object-name>Plane_Commands</object-name>
-     </effect>
      
      <animation>
    <type>textranslate</type> 

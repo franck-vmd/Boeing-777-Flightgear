@@ -7,12 +7,6 @@ Franck.VMD
 <path>OHpanel.ac</path>
 
     <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>Placard</object-name>
-     </effect>
-
-    <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>ADIRU_Placard</object-name>
         <object-name>AIR-EQCOOL_Placard</object-name>

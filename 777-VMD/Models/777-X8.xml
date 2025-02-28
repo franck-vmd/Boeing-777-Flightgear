@@ -818,16 +818,6 @@ Franck.VMD
    </effect>
     
     <model>
-        <name>shadow</name>
-        <path>Aircraft/777-VMD/Models/ShadowX8/shadow.xml</path>
-        <offsets>
-            <x-m>0</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-        </offsets>
-    </model>
-    
-    <model>
         <name>flightdeck-200</name>
         <usage>interior</usage>
         <path>Aircraft/777-VMD/Models/CockpitX/flightdeck-X8.xml</path>

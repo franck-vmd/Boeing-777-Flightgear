@@ -5,30 +5,6 @@ Franck.VMD
 <PropertyList>
 
 <path>mfd1.ac</path>
-
-
-        <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>DSPL_CTRL_AcryFace</object-name>
-        <object-name>DSPL_CTRL_Placard</object-name>
-        <object-name>DSPL_CTRL_Shutter.Bottom</object-name>
-        <object-name>DSPL_CTRL_Shutter.Top</object-name>
-        <object-name>DSPL_CTRL_Switch</object-name>
-        <object-name>EFIS_bezel</object-name>
-        <object-name>NDB2_Panel.001</object-name>
-        <object-name>Screw.000</object-name>
-        <object-name>Screw.002</object-name>
-        <object-name>Screw.003</object-name>
-        <object-name>Screw_Fixing.001</object-name>
-        <object-name>Screw_Fixing.002</object-name>
-        <object-name>Screw_Fixing.003</object-name>
-        <object-name>Screw_Fixing.004</object-name>
-        <object-name>Screw_Fixing.005</object-name>
-        <object-name>MFD.screen</object-name>
-        <object-name>MFD.screenoff</object-name>
-        <object-name>MFD.effect</object-name>
-    </effect>
     
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>

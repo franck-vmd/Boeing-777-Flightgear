@@ -98,25 +98,6 @@
 		<texture alias="../../params/texture" />
 	</animation>
 
-        <effect>
-         <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-                         <object-name>Head</object-name>
-                         <object-name>LeftUpperArm</object-name>
-		         <object-name>LeftLowerArm</object-name>
-		         <object-name>LeftHand</object-name>
-		         <object-name>RightUpperArm</object-name>
-		         <object-name>RightLowerArm</object-name>
-		         <object-name>RightHand</object-name>
-                         <object-name>RightFoot</object-name>
-                         <object-name>LeftFoot</object-name>
-                         <object-name>LeftLowerLeg</object-name>
-		         <object-name>LeftUpperLeg</object-name>
-                         <object-name>RightLowerLeg</object-name>
-                         <object-name>RightUpperLeg</object-name>
-                         <object-name>Body</object-name>
-               </effect>
-
          <animation>
         <type>material</type>
                          <object-name>Head</object-name>

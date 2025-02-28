@@ -17,26 +17,6 @@
         <object-name>Lettering_EFB</object-name>
    </effect>
 
-    <effect>
-       <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>EFB</object-name>
-        <object-name>Display</object-name>
-        <object-name>Display.001</object-name>
-        <object-name>Chart_1</object-name>		
-        <object-name>Chart_1_Rot</object-name>		
-        <object-name>Chart_2</object-name>
-        <object-name>Chart_4</object-name>
-        <object-name>Display_Keyboard</object-name>
-        <object-name>Display_Ovlay_1</object-name>
-        <object-name>LED_ON</object-name>
-        <object-name>ProcManual</object-name>		
-        <object-name>airportmarker</object-name>
-        <object-name>marker</object-name>
-        <object-name>worldmap</object-name>
-        <object-name>worldmap2</object-name>
-   </effect>
-
 <!-- Screen Display switches On when there's atleast 9 volts of power -->
 
 	<animation>

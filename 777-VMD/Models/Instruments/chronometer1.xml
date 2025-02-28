@@ -11,13 +11,6 @@ Franck.VMD
         <object-name>Lettering_CK</object-name>
     </effect>
 
-    <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>Screw01.000</object-name>
-        <object-name>Chrono.bezel</object-name>
-    </effect>
-
 <animation>
         <type>material</type>
         <object-name>Lettering_CK</object-name>

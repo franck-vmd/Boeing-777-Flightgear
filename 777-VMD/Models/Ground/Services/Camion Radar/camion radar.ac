@@ -2,10 +2,9 @@ AC3Db
 MATERIAL "camion" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
 MATERIAL "Material.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.448 0.448 0.448  shi 32 trans 0.000
 MATERIAL "lumiere" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 1.000 1.000 1.000  spec 0.522 0.522 0.522  shi 32 trans 0.257
-MATERIAL "Material.002" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 32 trans 0.500
 OBJECT world
 name "Blender_exporter_v2.26__camion radar.ac"
-kids 3
+kids 2
 OBJECT poly
 name "camion"
 data 6
@@ -63523,25 +63522,4 @@ refs 4
 3 0.860053 0.265822
 7 0.860053 0.265822
 11 0.860053 0.325024
-kids 0
-OBJECT poly
-name "ombreCat"
-data 9
-Plane.002
-crease 40.0
-texture "ombreRadar.png"
-texrep 1 1
-numvert 4
-5.42711 0.021 1.90585
-5.4288 0.021 -1.90103
--5.4288 0.021 1.90104
--5.42712 0.021 -1.90585
-numsurf 1
-SURF 0X0
-mat 3
-refs 4
-0 0.996878 -0.004512
-1 0.999058 0.986871
-3 0.003122 1.004513
-2 0.000942 0.013129
 kids 0

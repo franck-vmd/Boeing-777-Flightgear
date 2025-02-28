@@ -1,9 +1,8 @@
 AC3Db
 MATERIAL "ac3dmat1" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.150 0.150 0.120  shi 32 trans 0.000
-MATERIAL "Material.001" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 12 trans 0.500
 OBJECT world
 name "Blender_exporter_v2.26__bus-ba.ac"
-kids 4
+kids 2
 OBJECT poly
 name "Bus_Back"
 data 19
@@ -4465,46 +4464,4 @@ refs 16
 173 0.321533 0.764067
 172 0.318258 0.747601
 169 0.30893 0.733641
-kids 0
-OBJECT poly
-name "Planeback"
-data 9
-Plane.001
-crease 40.0
-texture "ombrebus.png"
-texrep 1 1
-numvert 4
-24.14932 -5.50026 29.99623
-33.50179 -5.50026 22.47215
-21.96469 -5.50026 27.28073
-31.31716 -5.50026 19.75664
-numsurf 1
-SURF 0X0
-mat 1
-refs 4
-0 -0.00014 0.001961
-1 1.00014 0.001961
-3 1.00014 0.998038
-2 -0.00014 0.998038
-kids 0
-OBJECT poly
-name "Planefront"
-data 5
-Plane
-crease 40.0
-texture "ombrebus.png"
-texrep 1 1
-numvert 4
--25.25511 -5.4127 30.97366
--13.25175 -5.4127 30.97366
--25.25511 -5.4127 27.48846
--13.25175 -5.4127 27.48846
-numsurf 1
-SURF 0X0
-mat 1
-refs 4
-0 -0.00014 0.001961
-1 1.00014 0.001961
-3 1.00014 0.998038
-2 -0.00014 0.998038
 kids 0

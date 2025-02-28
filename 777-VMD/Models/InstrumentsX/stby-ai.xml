@@ -4,22 +4,6 @@ Franck.VMD
 
 <PropertyList>
  <path>stby-ai.ac</path>
- 
- <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>StbyAIbezel</object-name>
-        <object-name>StbyAIbtn</object-name>
-        <object-name>AI</object-name>
-        <object-name>AI.001</object-name>
-        <object-name>Bank_ind</object-name>
-        <object-name>Display_1</object-name>
-        <object-name>Display_1.001</object-name>
-        <object-name>Plane.028</object-name>
-        <object-name>Roll.needle</object-name>
-        <object-name>Slip.needle</object-name>
-        <object-name>StbyAI.screenoff</object-name>
-    </effect>
 
  <animation>
         <type>rotate</type>

@@ -11,13 +11,6 @@ Franck.VMD
         <object-name>Lettering_R_MSP</object-name>
     </effect>
 
-    <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>Plate_BaseR</object-name>
-        <object-name>SidePlateR</object-name>
-    </effect>
-
     <animation>
         <type>material</type>
                 <object-name>Lettering_R_MSP</object-name>

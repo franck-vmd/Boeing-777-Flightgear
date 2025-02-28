@@ -4,12 +4,6 @@ Franck.VMD
 
 <PropertyList>
  <path>tcas-ctl.ac</path>
- 
-     <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>TCAS.pnl</object-name>
-    </effect>
     
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>

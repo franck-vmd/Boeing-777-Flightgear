@@ -10,13 +10,7 @@ Boeing 777-200 HDR Project Begins  /  Début du projet Boeing 777-200 HDR
 
 https://github.com/franck-vmd/Boeing-777-Flightgear-2048HDR
 
-ALS techniques notes
-
-ALS technical notes
-
-Non Rembrandt 
-
-No Rembrandt
+FlightGear Version 2024.1
 
 START-UP BOEING 777-VMD
 

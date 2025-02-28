@@ -12,26 +12,6 @@ Franck.VMD
         <object-name>EFIS_Lettering_Btns</object-name>
     </effect>
 
-    <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>EFIS.panel</object-name>
-        <object-name>RDR.wxr</object-name>
-        <object-name>RDR.sta</object-name>
-        <object-name>RDR.wpt</object-name>
-        <object-name>RDR.arpt</object-name>
-        <object-name>RDR.data</object-name>
-        <object-name>RDR.pos</object-name>
-        <object-name>RDR.terr</object-name>
-        <object-name>LVOR.toggle</object-name>
-        <object-name>RVOR.toggle</object-name>
-        <object-name>Rvoradf</object-name>
-        <object-name>Ladf.toggle</object-name>
-        <object-name>Lvoradf</object-name>
-        <object-name>Mtrs.btn</object-name>
-        <object-name>FPV.btn</object-name>
-    </effect>
-
     <animation>
         <type>material</type>
         <object-name>EFIS_Lettering</object-name>

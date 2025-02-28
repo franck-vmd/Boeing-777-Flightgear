@@ -2,10 +2,9 @@ AC3Db
 MATERIAL "DefaultWhite.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 64 trans 0.000
 MATERIAL "ac3dmat1.001" rgb 1.000 1.000 1.000  amb 0.200 0.200 0.200  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 10 trans 0.000
 MATERIAL "DefaultWhite" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 64 trans 0.000
-MATERIAL "Material.001" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 32 trans 0.500
 OBJECT world
 name "Blender_exporter_v2.26__volvo_deicing_truck.ac"
-kids 50
+kids 49
 OBJECT poly
 name "arm_light_01on"
 data 12
@@ -26291,27 +26290,6 @@ refs 4
 45 0.421598 0.532143
 37 0.421598 0.527723
 39 0.421598 0.527723
-kids 0
-OBJECT poly
-name "ombreCat"
-data 5
-Plane
-crease 40.0
-texture "ombreDecing.png"
-texrep 1 1
-numvert 4
--5.43431 0.02174 -1.80016
--5.38467 0.02174 2.0064
-5.42067 0.02174 -1.94173
-5.47032 0.02174 1.86484
-numsurf 1
-SURF 0X0
-mat 3
-refs 4
-0 0.996878 -0.004512
-1 0.999058 0.986871
-3 0.003122 1.004513
-2 0.000942 0.013129
 kids 0
 OBJECT poly
 name "warning"

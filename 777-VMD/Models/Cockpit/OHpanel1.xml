@@ -7,12 +7,6 @@ Franck.VMD
 <path>OHpanel1.ac</path>
 
     <effect>
-        <name>777-interior</name>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/777-interior</inherits-from>
-        <object-name>OHpanel</object-name>
-     </effect>
-
-    <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>OHpanel.Lettering_Day</object-name>
     </effect>

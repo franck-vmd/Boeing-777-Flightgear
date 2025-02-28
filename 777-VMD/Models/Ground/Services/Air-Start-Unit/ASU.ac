@@ -1,9 +1,8 @@
 AC3Db
 MATERIAL "DefaultWhite.003" rgb 1.000 1.000 1.000  amb 0.800 0.800 0.800  emis 0.000 0.000 0.000  spec 0.150 0.150 0.120  shi 32 trans 0.000
-MATERIAL "Material.001" rgb 0.000 0.000 0.000  amb 0.000 0.000 0.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 12 trans 0.500
 OBJECT world
 name "Blender_exporter_v2.26__ASU.ac"
-kids 4
+kids 3
 OBJECT poly
 name "ASU"
 data 12
@@ -7459,25 +7458,4 @@ refs 4
 435 0.711146 0.133531
 434 0.71178 0.160356
 430 0.706465 0.159941
-kids 0
-OBJECT poly
-name "Plane"
-data 5
-Plane
-crease 40.0
-texture "ombrepower2.png"
-texrep 1 1
-numvert 4
--5.54629 -5.3998 -6.69749
--6.7976 -5.3998 -5.1373
--3.98609 -5.3998 -5.44618
--5.2374 -5.3998 -3.88599
-numsurf 1
-SURF 0X0
-mat 1
-refs 4
-0 0 0
-1 1 0
-3 1 1
-2 0 1
 kids 0
