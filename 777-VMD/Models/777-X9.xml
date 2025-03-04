@@ -9647,7 +9647,7 @@ Franck.VMD
         <object-name>RInlets.001</object-name>
         <condition>
             <greater-than>
-                <property>engines/engine[0]/rpm</property>
+                <property>engines/engine[1]/rpm</property>
                 <value>72</value>
             </greater-than>
         </condition>
@@ -9658,7 +9658,7 @@ Franck.VMD
         <object-name>RInlets</object-name>
         <condition>
             <greater-than>
-                <property>engines/engine[0]/rpm</property>
+                <property>engines/engine[1]/rpm</property>
                 <value>36</value>
             </greater-than>
         </condition>
@@ -9678,7 +9678,7 @@ Franck.VMD
     <animation>
         <type>spin</type>
         <object-name>RInlets</object-name>
-        <property>engines/engine[0]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>10</factor>
         <center>
             <x-m>-5.96036</x-m>
