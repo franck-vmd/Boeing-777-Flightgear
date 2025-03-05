@@ -5,6 +5,7 @@ Franck.VMD
 <PropertyList>
  <path>stby-ai.ac</path>
 
+
  <animation>
         <type>rotate</type>
         <object-name>Roll.needle</object-name>

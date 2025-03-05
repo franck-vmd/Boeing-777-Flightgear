@@ -271,8 +271,8 @@
                 <item n="15">
                 <label>Flashlight</label>
                 <binding>
-                    <command>nasal</command>
-                    <script>b777.toggle_flashlight()</script>
+                    <command>property-toggle</command>
+                    <property>sim/multiplay/generic/float[93]</property>
                 </binding>
             </item>
                 </menu>

@@ -9,6 +9,7 @@ Franck.VMD
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>OHpanel.Lettering_Day</object-name>
+        <object-name>OHpanel.Lettering_Day.001</object-name>
     </effect>
 
     <animation>
@@ -31,6 +32,20 @@ Franck.VMD
             <factor-prop>controls/lighting/overhead-intencity</factor-prop>
         </emission>
     </animation>
+
+    <animation>
+   <type>select</type>
+        <object-name>OHpanel.Lettering_Day.001</object-name>
+        <condition>
+                <property>sim/multiplay/generic/float[93]</property>
+                <not>
+                    <greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+                    </greater-than>
+                </not>
+        </condition>   
+ </animation>
 
     <animation>
         <type>material</type>

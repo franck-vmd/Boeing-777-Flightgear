@@ -167,6 +167,8 @@ Franck.VMD
         <object-name>WING_Ice.knob.001</object-name>
         <object-name>FTR.knob.001</object-name>
         <object-name>LDG_ALT.knob.002</object-name>
+        <object-name>EXT_PWR_P_Switch</object-name>
+        <object-name>EXT_PWR_S_Switch</object-name>
     </animation>
     <animation>
         <type>material</type>

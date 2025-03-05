@@ -109,6 +109,7 @@ doors.new("c67", 01);
 doors.new("c68", 01);
 doors.new("c69", 01);
 doors.new("c70", 01);
+doors.new("c71", 01);
 
 doors.new("rat", 10);
 
