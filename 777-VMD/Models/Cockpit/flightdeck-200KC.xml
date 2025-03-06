@@ -2164,6 +2164,13 @@ Franck.VMD
         <object-name>Panel.Lwall_Cabinet</object-name>
         <object-name>Panel.Rwall_Cabinet</object-name>
         <object-name>cockpit.door</object-name>
+        <object-name>cockpit_WindowsD.004</object-name>
+        <object-name>cockpit_WindowsD.005</object-name>
+        <object-name>cockpit_WindowsD.006</object-name>
+        <object-name>cockpit_WindowsD.003</object-name>
+        <object-name>cockpit_WindowsG.004</object-name>
+        <object-name>cockpit_WindowsG.003</object-name>
+        <object-name>cockpit_Windows.003</object-name>
         <condition>
                 <greater-than>
                 <property>systems/electrical/CPT-FLT-INST</property>
