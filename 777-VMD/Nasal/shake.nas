@@ -22,7 +22,7 @@ var theShakeEffect = func{
 		  }, 0.03);
 		  settimer(func{
 		  	interpolate("b777/shake-effect/shaking", sf, 0.03);
-		  }, 0.06);
+		  }, 0.12);
 			settimer(theShakeEffect, 0.09);	
 		}else{
 		  	setprop("b777/shake-effect/shaking", 0);	
