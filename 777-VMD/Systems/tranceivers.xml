@@ -841,12 +841,13 @@
 
     <hrule/>
 
-  <button>
-    <legend>ATC Services in range</legend>
-    <binding>
-      <command>ATC-freq-search</command>
-    </binding>
-  </button>
+    <button>
+       <legend>ATC Services in range</legend>
+        <binding>
+           <command>dialog-show</command>
+           <dialog-name>atc-freq-search</dialog-name>
+        </binding>
+    </button>
 
     <group>
     </group>
