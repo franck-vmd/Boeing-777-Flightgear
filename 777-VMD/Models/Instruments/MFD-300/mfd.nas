@@ -92,6 +92,15 @@ var mfdListener = nil;
             m.statDisplay = canvas_stat.new(m.group);
             m.airDisplay = canvas_air.new(m.group);
             m.chklDisplay = canvas_chkl.new(m.group);
+            m.chkl1Display = canvas_chkl1.new(m.group);
+            m.chkl2Display = canvas_chkl2.new(m.group);
+            m.chkl3Display = canvas_chkl3.new(m.group);
+            m.chkl4Display = canvas_chkl4.new(m.group);
+            m.chkl5Display = canvas_chkl5.new(m.group);
+            m.chkl6Display = canvas_chkl6.new(m.group);
+            m.chkl7Display = canvas_chkl7.new(m.group);
+            m.chkl8Display = canvas_chkl8.new(m.group);
+            m.chkl9Display = canvas_chkl9.new(m.group);
             m.hydDisplay = canvas_hyd.new(m.group);
             m.fuelDisplay = FuelPanel.new(m.group);
             m.displayPanel(m.defaultPanel);
@@ -121,6 +130,24 @@ var mfdListener = nil;
                     me.display = me.airDisplay;
                 elsif (panel == "chkl")
                     me.display = me.chklDisplay;
+                elsif (panel == "chkl1")
+                    me.display = me.chkl1Display;
+                elsif (panel == "chkl2")
+                    me.display = me.chkl2Display;
+                elsif (panel == "chkl3")
+                    me.display = me.chkl3Display;
+                elsif (panel == "chkl4")
+                    me.display = me.chkl4Display;
+                elsif (panel == "chkl5")
+                    me.display = me.chkl5Display;
+                elsif (panel == "chkl6")
+                    me.display = me.chkl6Display;
+                elsif (panel == "chkl7")
+                    me.display = me.chkl7Display;
+                elsif (panel == "chkl8")
+                    me.display = me.chkl8Display;
+                elsif (panel == "chkl9")
+                    me.display = me.chkl9Display;
                 elsif (panel == "hyd")
                     me.display = me.hydDisplay;
                 elsif (panel == "fuel")

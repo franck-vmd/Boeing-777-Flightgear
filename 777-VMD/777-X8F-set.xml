@@ -362,6 +362,15 @@
             <file>Models/InstrumentsX/MFD-X8F/stat.nas</file>
             <file>Models/InstrumentsX/MFD-X8F/air.nas</file>
             <file>Models/InstrumentsX/MFD-X8F/chkl.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl1.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl2.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl3.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl4.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl5.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl6.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl7.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl8.nas</file>
+            <file>Models/InstrumentsX/MFD-X8F/chkl9.nas</file>e>
             <file>Models/InstrumentsX/MFD-X8F/hyd.nas</file>
             <file>Nasal/SWanimation.nas</file>
             <file>Nasal/runway.nas</file>

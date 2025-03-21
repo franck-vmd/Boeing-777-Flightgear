@@ -374,6 +374,15 @@
             <file>Models/Instruments/MFD-300/stat.nas</file>
             <file>Models/Instruments/MFD-300/air.nas</file>
             <file>Models/Instruments/MFD-300/chkl.nas</file>
+            <file>Models/Instruments/MFD-300/chkl1.nas</file>
+            <file>Models/Instruments/MFD-300/chkl2.nas</file>
+            <file>Models/Instruments/MFD-300/chkl3.nas</file>
+            <file>Models/Instruments/MFD-300/chkl4.nas</file>
+            <file>Models/Instruments/MFD-300/chkl5.nas</file>
+            <file>Models/Instruments/MFD-300/chkl6.nas</file>
+            <file>Models/Instruments/MFD-300/chkl7.nas</file>
+            <file>Models/Instruments/MFD-300/chkl8.nas</file>
+            <file>Models/Instruments/MFD-300/chkl9.nas</file>
             <file>Models/Instruments/MFD-300/hyd.nas</file>
             <file>Nasal/SWanimation.nas</file>
             <file>Nasal/runway.nas</file>

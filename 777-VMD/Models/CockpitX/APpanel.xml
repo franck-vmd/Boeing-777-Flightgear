@@ -22,6 +22,16 @@ Franck.VMD
         <object-name>IAS.dwn</object-name>
         <object-name>SPD.dec</object-name>
         <object-name>Circle.104</object-name>
+        <object-name>DSP.chkl0</object-name>
+        <object-name>DSP.chkl1</object-name>
+        <object-name>DSP.chkl2</object-name>
+        <object-name>DSP.chkl3</object-name>
+        <object-name>DSP.chkl4</object-name>
+        <object-name>DSP.chkl5</object-name>
+        <object-name>DSP.chkl6</object-name>
+        <object-name>DSP.chkl7</object-name>
+        <object-name>DSP.chkl8</object-name>
+        <object-name>DSP.chkl9</object-name>
     </effect>
 
     <animation>
@@ -2475,14 +2485,182 @@ Franck.VMD
     </animation>
     
    <animation>
+        <type>select</type>
+        <object-name>DSP.chkl0</object-name>
+        <object-name>DSP.chkl1</object-name>
+        <object-name>DSP.chkl2</object-name>
+        <object-name>DSP.chkl3</object-name>
+        <object-name>DSP.chkl4</object-name>
+        <object-name>DSP.chkl5</object-name>
+        <object-name>DSP.chkl6</object-name>
+        <object-name>DSP.chkl7</object-name>
+        <object-name>DSP.chkl8</object-name>
+        <object-name>DSP.chkl9</object-name>
+        <object-name>Mouse_Led1btn</object-name>
+        <condition>
+               <and>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>sim/multiplay/generic/float[89]</property>
+               </and>
+        </condition>
+    </animation>
+
+   <animation>
+        <type>pick</type>
+        <object-name>MouseCtr.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[89]</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+	<type>pick</type>
+	<object-name>MouseInbd.btn.001</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable> 
+		<binding>
+				<command>dialog-show</command>
+				<dialog-name>open-chkl</dialog-name>
+			</binding>
+	</action>
+</animation>
+
+    <animation>
         <type>pick</type>
         <object-name>DSP.chkl</object-name>
-        <action>
+        <object-name>DSP.chkl0</object-name>
+    <action>
             <button>0</button>
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
                 <script>b777.mfdShow("chkl");</script>
+            </binding>
+       </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl1</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl1");</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl2");</script>
+            </binding>
+        </action>
+    </animation>
+ 
+    <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl3</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl3");</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl4</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl4");</script>
+            </binding>
+        </action>
+    </animation>
+ 
+    <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl5</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl5");</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl6</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl6");</script>
+            </binding>
+        </action>
+    </animation>
+ 
+    <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl7</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl7");</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl8</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl8");</script>
+            </binding>
+        </action>
+    </animation>
+
+   <animation>
+        <type>pick</type>
+        <object-name>DSP.chkl9</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>b777.mfdShow("chkl9");</script>
             </binding>
         </action>
     </animation>
