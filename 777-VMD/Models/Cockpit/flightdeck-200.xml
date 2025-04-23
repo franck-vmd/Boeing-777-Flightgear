@@ -247,6 +247,17 @@ Franck.VMD
     </model>
 
     <model>
+        <name>EFB</name>
+        <path>Aircraft/777-VMD/Models/EFB/EFB.xml</path>
+        <offsets>
+            <x-m>-1.44</x-m>
+            <y-m>-0.74</y-m>
+            <z-m>0.8</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
         <name>EFB3</name>
         <path>Aircraft/777-VMD/Models/Instruments/EFB/EFB1.xml</path>
         <offsets>
@@ -882,7 +893,7 @@ Franck.VMD
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>sim/multiplay/generic/float[79]</property>
+                <property>/instrumentation/efb/available</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -896,7 +907,7 @@ Franck.VMD
 	<animation>
 		<type>translate</type>
 		<object-name>BoutonG2</object-name>
-		<property>sim/multiplay/generic/float[79]</property>
+		<property>/instrumentation/efb/available</property>
 		<factor>0.004</factor>
 		<axis>   
           <x1-m>-1.5134</x1-m>

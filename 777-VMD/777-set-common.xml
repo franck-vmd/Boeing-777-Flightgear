@@ -1070,6 +1070,8 @@ Service Ceiling: 43,100ft
                 <float n="91" alias="/aaa/door-positions/c69/position-norm"></float>
                 <float n="92" alias="/aaa/door-positions/c70/position-norm"></float>
                 <float n="93" alias="/aaa/door-positions/c71/position-norm"></float>
+                <float n="94" alias="/aaa/door-positions/c72/position-norm"></float>
+                <float n="95" alias="/aaa/door-positions/c73/position-norm"></float>
                 <string alias="/sim/multiplay/callsign"></string>
             </generic>
         </multiplay>
@@ -1111,6 +1113,11 @@ Service Ceiling: 43,100ft
             <path>instrumentation/nav/frequencies/standby-mhz</path>
             <path>instrumentation/nav[1]/frequencies/selected-mhz</path>
             <path>instrumentation/nav[1]/frequencies/standby-mhz</path>
+            <path>/instrumentation/efb/available</path>
+            <path>/instrumentation/efb/show-debug-apps</path>
+            <path>/instrumentation/efb/brightness</path>
+            <path>/instrumentation/efb/flightbag-companion-uri</path>
+            <path>/instrumentation/efb/allow-keyboard-grabbing</path>
         </aircraft-data>
         <weight n="0"><weight-lb type="double">400</weight-lb></weight>
 
@@ -1183,6 +1190,20 @@ Service Ceiling: 43,100ft
         
         <instrumentation>
             <path>Systems/instrumentation.xml</path>
+            <efb>
+            <available type="bool">false</available>
+            <power type="bool">false</power>
+            <brightness type="double">0.75</brightness>
+            <orientation-norm type="double">0</orientation-norm>
+            <selected-orientation-norm type="double">0</selected-orientation-norm>
+            <flightbag-companion-uri type="string">http://localhost:7675/</flightbag-companion-uri>
+            <background-image>Splash/E170/939.jpg</background-image>
+            <allow-keyboard-grabbing type="bool">false</allow-keyboard-grabbing>
+            <keyboard-grabbed type="int">0</keyboard-grabbed>
+            <input>
+                <keyboard type="string" />
+            </input>
+        </efb>
         </instrumentation>
 
         <sound>

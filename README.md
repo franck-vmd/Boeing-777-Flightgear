@@ -24,7 +24,7 @@ Wing flex
 
 [![FlightGear Wing flex 777 et texture 2048x2048 png](https://i.ibb.co/qyxT5gk/Flight-Gear-Wing-flex-777-et-texture-2048x2048-png.jpg)](https://www.youtube.com/watch?v=2gHmdEutdPw "FlightGear Wing flex 777 et texture 2048x2048 png")
 
-![Image](https://i.ibb.co/D471rSg/Tableau-777.jpg)
+![Image](https://i.ibb.co/RGkJ85hc/Tableau-boeing777.jpg)
 
 Français :
 
@@ -99,7 +99,7 @@ USAF :
 
 HUD :
 
-![Image](https://i.ibb.co/pdhgrmV/HUD777.jpg)
+![Image](https://i.ibb.co/Q33jckNy/HUD777.jpg)
 
 Interieur :
 
@@ -107,7 +107,7 @@ Interieur :
 
 Oxigene masque :
 
-![Image](https://i.ibb.co/zs0mDmF/Oxigene-masque.jpg)
+![Image](https://i.ibb.co/KcDhdgch/Oxigene-masque.jpg)
 
 Interieur-777-200F , 777-KFC , 777-300ERSF , 777-X8F:
 
@@ -206,7 +206,7 @@ USAF :
 
 HUD :
 
-![Image](https://i.ibb.co/pdhgrmV/HUD777.jpg)
+![Image](https://i.ibb.co/Q33jckNy/HUD777.jpg)
 
 Interior :
 

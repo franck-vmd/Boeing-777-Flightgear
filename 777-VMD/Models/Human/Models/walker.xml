@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 
-<PropertyList>
+<PropertyList include="equipment/flashlight.xml">
 <!--
 <nasal>
     <load>

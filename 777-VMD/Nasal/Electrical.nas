@@ -33,6 +33,7 @@ var APUgen=props.globals.initNode("controls/electric/APU-generator",0,"BOOL");
 var l_gen=props.globals.initNode("controls/electric/engine[0]/generator",0,"BOOL");
 var r_gen=props.globals.initNode("controls/electric/engine[1]/generator",0,"BOOL");
 var CDUswitch=props.globals.initNode("instrumentation/cdu/serviceable",0,"BOOL");
+var BLOCswitch=props.globals.initNode("instrumentation/bloc/serviceable",0,"BOOL");
 var DomeLtControl=props.globals.initNode("controls/lighting/dome-intencity",0,"DOUBLE");
 var DomeLtIntencity=props.globals.initNode("systems/electrical/domelight-int",0,"DOUBLE");
 var landinglights=props.globals.initNode("controls/lighting/landing-lights",0,"BOOL");

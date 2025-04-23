@@ -346,7 +346,7 @@
             <file>Nasal/Air.nas</file>
             <file>Nasal/Electrical.nas</file>
             <file>Nasal/engine.nas</file>
-            <file>Nasal/efb.nas</file>
+            <file>Nasal/efb59.nas</file>
             <file>Nasal/Hydraulics.nas</file>
             <file>Nasal/systems.nas</file>
             <file>Aircraft/777-VMD/Nasal/doors.nas</file>
@@ -393,6 +393,14 @@
             <file>Nasal/interior-lighting.nas</file>
             <file>Aircraft/777-VMD/Nasal/shake.nas</file>
         </b777>
+        <keyboardFixes>
+            <file>Aircraft/777-VMD/Nasal/keyboard.nas</file>
+            <file>Aircraft/777-VMD/Nasal/efb/keyboardHooks.nas</file>
+        </keyboardFixes>
+
+        <efb>
+            <file>Aircraft/777-VMD/Nasal/efb.nas</file>
+        </efb>
         <dialogs>
             <file>Nasal/dialogs.nas</file>
         </dialogs>

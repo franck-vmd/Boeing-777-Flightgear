@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <path>efb.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>EFBScreen</object-name>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Case</object-name>
+        <emission>
+            <red>0.5</red>
+            <green>0.5</green>
+            <blue>0.5</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Glass</object-name>
+        <transparency>
+            <alpha-prop>controls/lighting/master-bright-intencity</alpha-prop>
+            <factor>-0.5</factor>
+            <offset>0.5</offset>
+        </transparency>
+    </animation>
+
+
+    <animation>
+        <type>touch</type>
+        <object-name>EFBScreen</object-name>
+        <action>
+            <touch>0</touch>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script><![CDATA[
+                    var efb = efb.efb;
+                    if (efb != nil) {
+                        efb.touch(cmdarg().getValues());
+                    }
+                ]]></script>
+            </binding>
+        </action>
+    </animation>
+
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Glass</object-name>
+    </effect>
+
+    <animation>
+        <type>pick</type>
+        <object-name>Glass</object-name>
+        <action>
+            <button>3</button>
+            <binding>
+                <command>nasal</command>
+                <script><![CDATA[
+                    var efb = efb.efb;
+                    if (efb != nil) {
+                        efb.wheel(0, -1);
+                    }
+                ]]></script>
+            </binding>
+        </action>
+        <action>
+            <button>4</button>
+            <binding>
+                <command>nasal</command>
+                <script><![CDATA[
+                    var efb = efb.efb;
+                    if (efb != nil) {
+                        efb.wheel(0, 1);
+                    }
+                ]]></script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <condition>
+            <property>/instrumentation/efb/available</property>
+        </condition>
+    </animation>
+
+</PropertyList>
