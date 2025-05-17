@@ -21,7 +21,7 @@
             <halign>right</halign>
             <pref-width>16</pref-width>
             <pref-height>16</pref-height>
-            <legend>x</legend>
+            <legend/>
             <binding>
                 <command>dialog-close</command>
             </binding>
@@ -29,7 +29,7 @@
 
     </group>
     
-    <hrule/>
+    <hrule />
 
     <group>
     <layout>vbox</layout>
@@ -68,7 +68,7 @@
             <padding>2</padding>
             <property>consumables/fuel/total-fuel-lbs</property>
             <live>true</live>
-            <format>%.1f</format>
+            <format>%.1f Lbs</format>
         </text>
     
         <input>
@@ -84,7 +84,13 @@
             <binding>
                 <command>nasal</command>
                 <script>
+                    var TotalCapacity = getprop("consumables/fuel/tank/capacity-gal_us") + getprop("consumables/fuel/tank[1]/capacity-gal_us") + getprop("consumables/fuel/tank[2]/capacity-gal_us");
+                    var density = getprop("consumables/fuel/tank/density-ppg");
                     setprop("services/fuel-truck/request-lbs", getprop("services/fuel-truck/extra-lbs") + getprop("consumables/fuel/total-fuel-lbs"));
+                    if (getprop("services/fuel-truck/request-lbs") / density > TotalCapacity) {
+                        setprop("services/fuel-truck/request-lbs", TotalCapacity * density);
+                        setprop("services/fuel-truck/extra-lbs", getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/total-fuel-lbs"));
+                    }
                 </script>
             </binding>
         </input>
@@ -99,11 +105,22 @@
             <binding>
                 <command>dialog-apply</command>
             </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                    var TotalCapacity = getprop("consumables/fuel/tank/capacity-gal_us") + getprop("consumables/fuel/tank[1]/capacity-gal_us") + getprop("consumables/fuel/tank[2]/capacity-gal_us");
+                    var density = getprop("consumables/fuel/tank/density-ppg");
+                    if (getprop("services/fuel-truck/request-lbs") / density > TotalCapacity) {
+                        setprop("services/fuel-truck/request-lbs", TotalCapacity * density);
+                    }
+                    setprop("services/fuel-truck/extra-lbs", getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/total-fuel-lbs"));
+                </script>
+            </binding>
         </input>
         
         </group>
         
-        <hrule/>
+        <hrule />
         
         <group>
         <layout>vbox</layout>
@@ -143,6 +160,7 @@
                         if ((getprop("services/fuel-truck/enable") == 1) and (getprop("services/fuel-truck/connect") == 1)) {
                             setprop("services/fuel-truck/transfer", 1);
                             setprop("services/fuel-truck/extra-lbs", 0);
+                            setprop("services/fuel-truck/finished", 0);
                             screen.log.write("Refueling process started. Estimated refueling time: " ~ math.round((getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/total-fuel-lbs"))/6660) ~ " minutes.", 0, 0.584, 1);
                         } else
                             screen.log.write("Please Enable and Connect the Fuel Truck First!", 1, 0, 0);
@@ -195,7 +213,7 @@
             </button>
             
             <button>
-                <legend>Fast</legend>
+                <legend>Instant</legend>
                 <padding>2</padding>
                 <pref-width>80</pref-width>
                 <pref-height>24</pref-height>
@@ -209,6 +227,7 @@
                             setprop("consumables/fuel/tank[1]/level-lbs", getprop("services/fuel-truck/request-lbs"));
                             b777.balance_fuel();
                             setprop("services/fuel-truck/speed-text", " ");
+                            setprop("services/fuel-truck/finished", 1);
                             screen.log.write("Airplane refueled.", 0, 0.584, 1);
                         }
 
@@ -234,96 +253,122 @@
     
     </group>
 
-    <hrule/>
+    <hrule />
     
     <group>
     <layout>table</layout>
-    
-        <text>
-            <label>Left wing tank (Lbs):</label>
-            <halign>right</halign>
-            <padding>0</padding>
+    <empty><stretch>true</stretch></empty>
+        
+        <slider>
             <row>0</row>
             <col>0</col>
-        </text>
+            <label>Left main tank</label>
+            <pref-width>90</pref-width>
+            <property>consumables/fuel/tank/level-norm</property>
+            <halign>left</halign>
+            <min>0.0</min>
+            <max>1.00</max>
+            <step>0.01</step>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </slider>
         
         <text>
-            <label>Center tank (Lbs):</label>
+            <label> </label>
             <halign>right</halign>
-            <padding>0</padding>
-            <row>1</row>
-            <col>0</col>
-        </text>
-        
-        <text>
-            <label>Right wing tank (Lbs):</label>
-            <halign>right</halign>
-            <padding>0</padding>
-            <row>2</row>
-            <col>0</col>
-        </text>
-        
-        <input>
+            <padding>2</padding>
+            <pref-width>90</pref-width>
             <row>0</row>
             <col>1</col>
-            <halign>left</halign>
-            <padding>0</padding>
-            <pref-width>90</pref-width>
+        </text>
+        
+        <text>
             <property>consumables/fuel/tank/level-lbs</property>
-            <live>true</live>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-        </input>
-    
-        <input>
-            <row>1</row>
-            <col>1</col>
             <halign>left</halign>
-            <padding>0</padding>
-            <pref-width>90</pref-width>
-            <property>consumables/fuel/tank[1]/level-lbs</property>
+            <padding>2</padding>
+            <format>%.1f Lbs</format>
+            <row>0</row>
+            <col>2</col>
             <live>true</live>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-        </input>
+        </text>
         
-        <input>
-            <row>2</row>
-            <col>1</col>
-            <halign>left</halign>
-            <padding>0</padding>
+        <slider>
+            <row>1</row>
+            <col>0</col>
+            <label>Center tank</label>
             <pref-width>90</pref-width>
-            <property>consumables/fuel/tank[2]/level-lbs</property>
-            <live>true</live>
+            <property>consumables/fuel/tank[1]/level-norm</property>
+            <halign>left</halign>
+            <min>0.0</min>
+            <max>1.00</max>
+            <step>0.01</step>
             <binding>
                 <command>dialog-apply</command>
             </binding>
-        </input>
+            <live>true</live>
+        </slider>
+        
+        <text>
+            <property>consumables/fuel/tank[1]/level-lbs</property>
+            <halign>left</halign>
+            <padding>2</padding>
+            <format>%.1f Lbs</format>
+            <row>1</row>
+            <col>2</col>
+            <live>true</live>
+        </text>
+        
+        <slider>
+            <row>2</row>
+            <col>0</col>
+            <label>Right main tank</label>
+            <pref-width>90</pref-width>
+            <property>consumables/fuel/tank[2]/level-norm</property>
+            <halign>left</halign>
+            <min>0.0</min>
+            <max>1.00</max>
+            <step>0.01</step>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </slider>
+        
+        <text>
+            <property>consumables/fuel/tank[2]/level-lbs</property>
+            <halign>left</halign>
+            <padding>2</padding>
+            <pref-width>90</pref-width>
+            <format>%.1f Lbs</format>
+            <row>2</row>
+            <col>2</col>
+            <live>true</live>
+        </text>
         
         <text>
             <label>Total:</label>
             <halign>right</halign>
             <padding>2</padding>
             <row>3</row>
-            <col>0</col>
+            <col>1</col>
         </text>
         
         <text>
             <property>consumables/fuel/total-fuel-lbs</property>
             <halign>left</halign>
             <padding>2</padding>
-            <format>%.1f</format>
+            <format>%.1f Lbs</format>
             <row>3</row>
-            <col>1</col>
+            <col>2</col>
             <live>true</live>
         </text>
         
         <button>
             <legend>Balance fuel</legend>
             <row>1</row>
-            <col>2</col>
+            <col>3</col>
             <padding>3</padding>
             <pref-width>84</pref-width>
             <pref-height>24</pref-height>
@@ -335,12 +380,10 @@
                 </script>
             </binding>
         </button>
-        
-        
-    
+            
     </group>
     
-    <hrule/>
+    <hrule />
     
     <group>
     
@@ -420,6 +463,24 @@
     
     </group>
     
-    <hrule/>
+    <hrule />
+    
+    <group>
+    <layout>hbox</layout>
+
+        <button>
+            <legend>Close</legend>
+            <default>true</default>
+            <key>Esc</key>
+        <padding>5</padding>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+        
+    </group>
 
 </PropertyList>
