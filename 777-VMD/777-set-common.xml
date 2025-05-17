@@ -892,11 +892,11 @@ Service Ceiling: 43,100ft
                         <command>dialog-show</command>
                         <dialog-name>fuel_truck</dialog-name>
                        <condition>
-        <less-than>
-          <property>velocities/airspeed-kt</property>
-          <value>15</value>
-        </less-than>
-    </condition>
+                     <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>15</value>
+                    </less-than>
+                       </condition>
                     </binding>
                 </item>
                 <item n="5">                       
