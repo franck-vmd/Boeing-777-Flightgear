@@ -83,6 +83,30 @@ Franck.VMD
  </animation>
 
     <animation>
+		<type>select</type>
+                <object-name>AI</object-name>
+                <object-name>AI.001</object-name>
+                <object-name>Bank_ind</object-name>
+                <object-name>Display_1</object-name>
+                <object-name>Display_1.001</object-name>
+                <object-name>Display_1.002</object-name>
+                <object-name>Display_1.003</object-name>
+                <object-name>Display_1.004</object-name>
+                <object-name>FDpitch</object-name>
+                <object-name>FDpitch_rembrandt</object-name>
+                <object-name>FDroll</object-name>
+                <object-name>FDroll_rembrandt</object-name>
+                <object-name>Roll.needle</object-name>
+                <object-name>Slip.needle</object-name>
+		<condition>
+			<greater-than>
+				<property>systems/electrical/CPT-FLT-INST</property>
+				<value>24</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+    <animation>
         <type>select</type>
         <object-name>StbyAI.screenoff</object-name>
                 <condition>
@@ -100,7 +124,13 @@ Franck.VMD
                 <object-name>Bank_ind</object-name>
                 <object-name>Display_1</object-name>
                 <object-name>Display_1.001</object-name>
-                <object-name>Plane.028</object-name>
+                <object-name>Display_1.002</object-name>
+                <object-name>Display_1.003</object-name>
+                <object-name>Display_1.004</object-name>
+                <object-name>FDpitch</object-name>
+                <object-name>FDpitch_rembrandt</object-name>
+                <object-name>FDroll</object-name>
+                <object-name>FDroll_rembrandt</object-name>
                 <object-name>Roll.needle</object-name>
                 <object-name>Slip.needle</object-name>
                 <condition>
