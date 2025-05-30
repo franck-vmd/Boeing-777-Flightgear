@@ -408,13 +408,7 @@
         </dialogs>
         <cdu>
             <file>Models/Instruments/CDU/boeing.nas</file>
-            <file>Models/Instruments/CDU/library.nas</file>
-            <file>Models/Instruments/CDU/functions.nas</file>
-            <file>Models/Instruments/CDU/LEGS.nas</file>
         </cdu>
-        <datalink>
-            <file>Models/Instruments/CDU/datalink.nas</file>
-        </datalink>
         <pressurization>
 			<file>Aircraft/777-VMD/Nasal/cabin-pressure.nas</file>
 		</pressurization>
