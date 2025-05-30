@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
 
 <PropertyList>
@@ -11,7 +11,7 @@ Passengers have had their menus. Naturally they expect a safe and smooth landing
 This tutorial takes you through the steps of final approach and landing.     
     </description>
 	
-    <audio-dir>Aircraft/777/Tutorials</audio-dir>
+    <audio-dir>Aircraft/777-VMD/Tutorials</audio-dir>
 
     <step>
 		<message>Ok, I have the approach checklist...</message>

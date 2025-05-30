@@ -409,6 +409,9 @@
         <cdu>
             <file>Models/Instruments/CDU/boeing.nas</file>
         </cdu>
+        <pressurization>
+			<file>Aircraft/777-VMD/Nasal/cabin-pressure.nas</file>
+		</pressurization>
         <autopush>
          <file>Nasal/Autopush/autopush.nas</file>
         </autopush>

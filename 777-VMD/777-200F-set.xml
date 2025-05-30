@@ -399,6 +399,9 @@
         <datalink>
             <file>Models/Instruments/CDU/datalink.nas</file>
         </datalink>
+        <pressurization>
+			<file>Aircraft/777-VMD/Nasal/cabin-pressure.nas</file>
+		</pressurization>
         <autopush>
          <file>Nasal/Autopush/autopush.nas</file>
         </autopush>

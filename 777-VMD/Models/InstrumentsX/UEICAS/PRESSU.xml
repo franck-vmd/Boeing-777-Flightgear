@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<PropertyList>
+
+     <path>pressu.ac</path>
+     <!-- Valve needles -->
+<animation>
+	<type>rotate</type>
+	<object-name>outflow_needle.L</object-name>
+	<property>controls/pressurization/outflow-valve-pos[0]</property>
+	<factor>-170</factor>
+	<center>
+		<x-m>-0.0</x-m>
+		<y-m>-0.00334</y-m>
+		<z-m>0.0</z-m>
+	</center>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>outflow_needle.R</object-name>
+	<property>controls/pressurization/outflow-valve-pos[1]</property>
+	<factor>-170</factor>
+	<center>
+		<x-m>0.0</x-m>
+		<y-m>0.020249</y-m>
+		<z-m>0.0</z-m>
+	</center>
+	<axis>
+		<x>-1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+</PropertyList>

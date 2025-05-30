@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 	This is the Walker include file. To add the Walker to your Aircraft
 			simply replace the <PropertyList> Entry at the top of your -set file with this:
 			

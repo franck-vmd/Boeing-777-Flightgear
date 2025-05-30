@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 777-200
 Franck.VMD
 -->
@@ -7080,10 +7081,10 @@ Franck.VMD
  <!-- CABIN PRESSURIZATION PANEL --> 
  <!-- Landing Alt--> 
 
-<animation>
-	<type>pick</type>
-	<object-name>OutFlow_FWD.toggle</object-name>
-	<action>
+    <animation>
+        <type>pick</type>
+        <object-name>OutFlow_FWD.toggle</object-name>
+        <action>
 	    <button>0</button>
 	    <repeatable>true</repeatable>
 	    <binding>
@@ -7092,13 +7093,13 @@ Franck.VMD
 	    </binding>
 	    <binding>
 		<command>property-assign</command>
-		<property>controls/pressurization/valve-switch</property>
+		<property>controls/pressurization/valve-switch[0]</property>
 		<value>1</value>
 	    </binding>
 	    <mod-up>
 		<binding>
 		    <command>property-assign</command>
-		    <property>controls/pressurization/valve-switch</property>
+		    <property>controls/pressurization/valve-switch[0]</property>
 		    <value>0</value>
 		</binding>
 	    </mod-up>
@@ -7112,13 +7113,13 @@ Franck.VMD
 	    </binding>
 	    <binding>
 		<command>property-assign</command>
-		<property>controls/pressurization/valve-switch</property>
+		<property>controls/pressurization/valve-switch[0]</property>
 		<value>-1</value>
 	    </binding>
 	    <mod-up>
 		<binding>
 		    <command>property-assign</command>
-		    <property>controls/pressurization/valve-switch</property>
+		    <property>controls/pressurization/valve-switch[0]</property>
 		    <value>0</value>
 		</binding>
 	    </mod-up>
@@ -7129,50 +7130,51 @@ Franck.VMD
         <type>pick</type>
         <object-name>OutFlow_AFT.toggle</object-name>
         <action>
-            <button>0</button>
-            <button>3</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/air/outflow_aft</property>
-                <step>1</step>
-                <min>-1</min>
-                <max>1</max>
-                <wrap>0</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(2);</script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>OutFlow_AFT.toggle</object-name>
-        <action>
-            <button>1</button>
-            <button>4</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>controls/air/outflow_aft</property>
-                <step>-1</step>
-                <min>-1</min>
-                <max>1</max>
-                <wrap>0</wrap>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(2);</script>
-            </binding>
-        </action>
-    </animation>  
+	    <button>0</button>
+	    <repeatable>true</repeatable>
+	    <binding>
+		<command>nasal</command>
+		<script>pressurization.valve_adjust(1);</script>
+	    </binding>
+	    <binding>
+		<command>property-assign</command>
+		<property>controls/pressurization/valve-switch[1]</property>
+		<value>1</value>
+	    </binding>
+	    <mod-up>
+		<binding>
+		    <command>property-assign</command>
+		    <property>controls/pressurization/valve-switch[1]</property>
+		    <value>0</value>
+		</binding>
+	    </mod-up>
+	</action>
+	<action>
+	    <button>1</button>
+	    <repeatable>true</repeatable>
+	    <binding>
+		<command>nasal</command>
+		<script>pressurization.valve_adjust(-1);</script>
+	    </binding>
+	    <binding>
+		<command>property-assign</command>
+		<property>controls/pressurization/valve-switch[1]</property>
+		<value>-1</value>
+	    </binding>
+	    <mod-up>
+		<binding>
+		    <command>property-assign</command>
+		    <property>controls/pressurization/valve-switch[1]</property>
+		    <value>0</value>
+		</binding>
+	    </mod-up>
+	</action>
+</animation>  
      
      <animation>
         <type>rotate</type>
         <object-name>OutFlow_FWD.toggle</object-name>
-        <property>controls/pressurization/valve-switch</property>
+        <property>controls/pressurization/valve-switch[0]</property>
         <factor>15</factor>
         <center>
             <x-m>0.0121</x-m>
@@ -7189,7 +7191,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>OutFlow_AFT.toggle</object-name>
-        <property>controls/air/outflow_aft</property>
+        <property>controls/pressurization/valve-switch[1]</property>
         <factor>15</factor>
         <center>
             <x-m>0.0121</x-m>
@@ -7366,7 +7368,7 @@ Franck.VMD
     
 <animation>
         <type>pick</type>
-        <object-name>LDG_ALT.knob.001</object-name>
+        <object-name>LDG_ALT.knob</object-name>
         <action>
             <button>0</button>
             <repeatable>false</repeatable>
@@ -7385,6 +7387,7 @@ Franck.VMD
     
 <animation>
    <type>translate</type>
+   <object-name>LDG_ALT.knob</object-name>
    <object-name>LDG_ALT.knob.001</object-name>
     <property>controls/pressurization/landing-alt-manual</property>
    <factor>0.001</factor>
@@ -7398,18 +7401,28 @@ Franck.VMD
 <animation>
    <type>rotate</type>
    <object-name>LDG_ALT.knob</object-name>
+   <object-name>LDG_ALT.knob.001</object-name>
     <property>controls/pressurization/landing-alt-ft</property>
-   <factor>180</factor>
+   <interpolation>
+            <entry>
+                <ind>-1000</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>14000</ind>
+                <dep>180</dep>
+            </entry>
+        </interpolation>
+   <center>
+   <x-m>0.01166</x-m>
+   <y-m>0.339481</y-m>
+   <z-m>-0.263573</z-m>
+  </center>
    <axis>
      <x>-1</x>
      <y>0</y>
      <z>0</z>
    </axis>
-   <center>
-   <x-m>0.02480</x-m>
-   <y-m>0.33951</y-m>
-   <z-m>-0.26387</z-m>
-  </center>
  </animation>
  
 <animation>

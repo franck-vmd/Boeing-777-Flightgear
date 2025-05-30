@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
 
 <PropertyList>
@@ -10,7 +10,7 @@ This tutorial takes you through the final aircraft preparations - and actual tak
 Are you ready for takeoff?
 	</description>
 
-	<audio-dir>Aircraft/777/Tutorials</audio-dir>
+	<audio-dir>Aircraft/777-VMD/Tutorials</audio-dir>
 
 	<init>
 		<set>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 777-200
 Franck.VMD
 -->
@@ -33,6 +34,16 @@ Franck.VMD
     </model>
 
     <model>
+        <name>pressu</name>
+        <path>Aircraft/777-VMD/Models/Instruments/UEICAS/PRESSU.xml</path>
+        <offsets>
+            <x-m>0.003</x-m>
+            <y-m>0.006547</y-m>
+            <z-m>-0.071757</z-m>
+        </offsets>
+    </model>
+
+    <model>
         <name>EGT</name>
         <path>Aircraft/777-VMD/Models/Instruments/UEICAS/EGT.xml</path>
         <offsets>
@@ -57,8 +68,8 @@ Franck.VMD
 	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
-		<y-m>-0.037</y-m>
-		<z-m>-0.070</z-m>
+		<y-m>-0.058</y-m>
+		<z-m>-0.0703</z-m>
 	</offsets>
 	<overlay>
 		<params>
@@ -79,8 +90,8 @@ Franck.VMD
 	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
-		<y-m>-0.042</y-m>
-		<z-m>-0.078</z-m>
+		<y-m>-0.0571</y-m>
+		<z-m>-0.0785</z-m>
 	</offsets>
 	<overlay>
 		<params>
@@ -100,8 +111,8 @@ Franck.VMD
 	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
-		<y-m>-0.028</y-m>
-		<z-m>-0.078</z-m>
+		<y-m>-0.041</y-m>
+		<z-m>-0.0785</z-m>
 	</offsets>
 	<overlay>
 		<params>
@@ -120,8 +131,8 @@ Franck.VMD
 	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
-		<y-m>-0.028</y-m>
-		<z-m>-0.078</z-m>
+		<y-m>-0.041</y-m>
+		<z-m>-0.0785</z-m>
 	</offsets>
 	<overlay>
 		<params>
@@ -157,8 +168,8 @@ Franck.VMD
 	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
-		<y-m>-0.002</y-m>
-		<z-m>-0.070</z-m>
+		<y-m>-0.023</y-m>
+		<z-m>-0.0703</z-m>
 	</offsets>
 	<overlay>
 		<params>
@@ -179,8 +190,8 @@ Franck.VMD
 	<path>Aircraft/777-VMD/Models/Instruments/UEICAS/display-number.xml</path>
 	<offsets>
 		<x-m> 0.003</x-m>
-		<y-m>-0.002</y-m>
-		<z-m>-0.078</z-m>
+		<y-m>-0.0199</y-m>
+		<z-m>-0.0785</z-m>
 	</offsets>
 	<overlay>
 		<params>
@@ -201,7 +212,7 @@ Franck.VMD
         <name>fuelqty</name>
         <offsets>
             <x-m>0.003</x-m>
-            <y-m>0.072</y-m>
+            <y-m>0.076</y-m>
             <z-m>-0.075</z-m>
         </offsets>
         <alignment>right-center</alignment>
@@ -223,7 +234,7 @@ Franck.VMD
         <name>tank1qty</name>
         <offsets>
             <x-m>0.003</x-m>
-            <y-m>0.042</y-m>
+            <y-m>0.046</y-m>
             <z-m>-0.064</z-m>
         </offsets>
         <alignment>right-center</alignment>
@@ -245,7 +256,7 @@ Franck.VMD
         <name>tank2qty</name>
         <offsets>
             <x-m>0.003</x-m>
-            <y-m>0.066</y-m>
+            <y-m>0.070</y-m>
             <z-m>-0.064</z-m>
         </offsets>
         <alignment>right-center</alignment>
@@ -267,7 +278,7 @@ Franck.VMD
         <name>tank3qty</name>
         <offsets>
             <x-m>0.003</x-m>
-            <y-m>0.087</y-m>
+            <y-m>0.091</y-m>
             <z-m>-0.064</z-m>
         </offsets>
         <alignment>right-center</alignment>
@@ -290,7 +301,7 @@ Franck.VMD
         <name>fueltmp</name>
         <offsets>
             <x-m>0.003</x-m>
-            <y-m>0.059</y-m>
+            <y-m>0.063</y-m>
             <z-m>-0.083</z-m>
         </offsets>
         <alignment>left-center</alignment>
@@ -312,7 +323,7 @@ Franck.VMD
         <name>tat</name>
         <offsets>
             <x-m>0.003</x-m>
-            <y-m>-0.078</y-m>
+            <y-m>-0.075</y-m>
             <z-m>0.088</z-m>
         </offsets>
         <alignment>left-center</alignment>

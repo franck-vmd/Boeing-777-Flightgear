@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 777 tutorial, (c) 2011 Thorsten Brehm -->
 
 <PropertyList>
@@ -10,7 +10,7 @@ You've prepared your cockpit. Now it's time to start the engines and leave the p
 Are you ready to take controls?
 	</description>
 
-	<audio-dir>Aircraft/777/Tutorials</audio-dir>
+	<audio-dir>Aircraft/777-VMD/Tutorials</audio-dir>
 
 	<init>
 		<set>
