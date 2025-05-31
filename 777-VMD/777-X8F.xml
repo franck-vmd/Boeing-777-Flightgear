@@ -2,12 +2,12 @@
 <!--777-X8F  yasim
 
 Specs:
-777-X8 - 512 kN (115,300lb) General Electric GE90-115B
+777-X8F - 512 kN (115,300lb) General Electric GE90-115B
 
 Typical Cruise = 0.84 Mach / 35000 ft
 Max Speed = 0.87 / 35000 ft
 
-777-X8 - Range with 365 passengers 14,685km (7,930nm) - 15hrs.
+777-X8F - Range with 365 passengers 14,685km (7,930nm) - 15hrs.
 
 Wing span: 64.8m
 Length: 73.9 m
@@ -145,7 +145,7 @@ WEIGHT/lbs  Vref
     <control-speed control="EXTEND" transition-time="19"></control-speed>
   </gear>
 
-  <gear x="-6.39" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39" stiction="1.0">
+  <gear x="-6.99646" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
     <control-input axis="/autopilot/autobrake/left-brake-output" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
@@ -153,7 +153,7 @@ WEIGHT/lbs  Vref
     <control-speed control="EXTEND" transition-time="20"></control-speed>
   </gear>
 
-  <gear x="-6.39" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39" stiction="1.0">
+  <gear x="-6.99646" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
     <control-input axis="/autopilot/autobrake/right-brake-output" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
@@ -162,7 +162,7 @@ WEIGHT/lbs  Vref
   </gear>
 
   <!-- aft axle on left main gear -->
-  <gear x="-7.8" y="5.6" z="-6.22" compression="3.0" spring="1.2">
+  <gear x="-8.49013" y="5.6" z="-6.22" compression="3.0" spring="1.2">
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
     <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"></control-output>
     <control-speed control="EXTEND" transition-time="20"></control-speed>
@@ -172,7 +172,7 @@ WEIGHT/lbs  Vref
   </gear>
 
   <!-- aft axle on right main gear -->
-  <gear x="-7.8" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
+  <gear x="-8.49013" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
     <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"></control-output>
     <control-speed control="EXTEND" transition-time="20"></control-speed>
@@ -182,7 +182,7 @@ WEIGHT/lbs  Vref
   </gear>
 
   <!--  fake gear as tail contact point for tailstrikes -->
-  <gear x="-19.84" y="0.00" z="-3.38" compression="0.1" spring="1" damp="1" sfric="0.5" dfric="0.5">
+  <gear x="-31.4442" y="0.00" z="-1.75275" compression="0.1" spring="1" damp="1" sfric="0.5" dfric="0.5">
   </gear>
 
     <!-- apu -->

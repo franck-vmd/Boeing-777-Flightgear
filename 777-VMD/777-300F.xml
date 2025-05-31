@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-Boeing 777-300 YASim
+Boeing 777-300 ERSF YASim
 =======================
 
 The Boeing 777-300 is a stretched version of the 777, powered by the most powerful turbofan engines, seating 328 to 394 passengers in a typical three class seating arrangement or 550 passengers in a single economy class arrangement.
@@ -57,7 +57,7 @@ http://www.boeing.com/commercial/airports/faqs/arcandapproachspeeds.pdf
  Airport Reference Code and Approach Speeds for Boeings Airplanes
  http://www.boeing.com/commercial/airports/faqs/arcandapproachspeeds.pdf
 
- 772ER FG default + reference difference.
+ 777ERSF FG default + reference difference.
 -->
 <approach speed="145" aoa="3" fuel="0.2">
     <control-setting axis="/controls/engines/engine[0]/throttle-act" value="0.25"></control-setting>
@@ -70,7 +70,7 @@ http://www.boeing.com/commercial/airports/faqs/arcandapproachspeeds.pdf
 </approach>
 
 <!-- Cruise configuration -->
-<cruise speed="490" alt="38000" fuel="0.8">
+<cruise speed="512" alt="35000" fuel="0.8">
     <control-setting axis="/controls/engines/engine[0]/throttle-act" value="0.95"></control-setting>
     <control-setting axis="/controls/engines/engine[1]/throttle-act" value="0.95"></control-setting>
     <control-setting axis="/controls/flight/flaps" value="0.0"></control-setting>
@@ -84,9 +84,9 @@ http://www.boeing.com/commercial/airports/faqs/arcandapproachspeeds.pdf
 <cockpit x="28.0381" y="0.5" z="0.75"></cockpit>
 
 <!-- Fuselage -->
-<fuselage ax="30.685" ay="0" az="-0.64" bx="19.8525" by="0.00" bz="0.0" width="6.2" taper="0.0" midpoint="1.0"></fuselage>
-<fuselage ax="19.8525" ay="0" az="0" bx="-24.864" by="0.00" bz="0.0" width="6.2" taper="1.0" midpoint="0.5"></fuselage>
-<fuselage ax="-24.864" ay="0" az="0" bx="-42.5317" by="0.00" bz="1.2" width="6.2" taper="0.0" midpoint="0.0"></fuselage>
+<fuselage ax="32.3023" ay="0" az="-0.64" bx="21.4691" by="0.00" bz="0.0" width="6.2" taper="0.0" midpoint="1.0"></fuselage>
+<fuselage ax="21.4691" ay="0" az="0" bx="-24.7003" by="0.00" bz="0.0" width="6.2" taper="1.0" midpoint="0.5"></fuselage>
+<fuselage ax="-24.7003" ay="0" az="0" bx="-41.7003" by="0.00" bz="1.2" width="6.2" taper="0.0" midpoint="0.0"></fuselage>
 
 <!-- Engines body -->
 <fuselage ax="4.0" ay="9.8" az="-3" bx="-1.8" by="9.8" bz="-3" width="3.8" taper="1.0"></fuselage>
@@ -132,24 +132,24 @@ http://www.boeing.com/commercial/airports/faqs/arcandapproachspeeds.pdf
 GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
 -->
 <!-- due to a strange problem with yasim, add 3.6 to maximum n1 -->
-<jet x="1.16" y="9.89" z="-2.995" mass="16644" thrust="93700" spool-time="4.5" egt="825" tsfc="0.38" n1-idle="18.5" n1-max="112.6" n2-idle="70" n2-max="117" reverse="0.4">
+<jet x="1.16" y="9.89" z="-2.995" mass="19315" thrust="115540" spool-time="4.5" egt="825" tsfc="0.25" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121" reverse="0.4">
   <control-input axis="/controls/engines/engine[0]/throttle-act" control="THROTTLE"></control-input>
-  <control-input axis="/controls/engines/engine[0]/reverser-act" control="REVERSE_THRUST"></control-input>
+    <control-input axis="/controls/engines/engine[0]/reverser-act" control="REVERSE_THRUST"></control-input>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"></control-output>
     <control-speed control="REVERSE_THRUST" transition-time="3"></control-speed>
-<actionpt x="-2.7" y="9.89" z="-2.995"></actionpt>
-</jet>
+    <actionpt x="-2.7" y="9.89" z="-2.995"></actionpt>
+  </jet>
 
-<jet x="1.16" y="-9.89" z="-2.995" mass="16644" thrust="93700" spool-time="4.5" egt="825" tsfc="0.38" n1-idle="18.5" n1-max="112.6" n2-idle="70" n2-max="117" reverse="0.4">
+<jet x="1.16" y="-9.89" z="-2.995" mass="19315" thrust="115540" spool-time="4.5" egt="825" tsfc="0.25" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121" reverse="0.4">
   <control-input axis="/controls/engines/engine[1]/throttle-act" control="THROTTLE"></control-input>
-  <control-input axis="/controls/engines/engine[1]/reverser-act" control="REVERSE_THRUST"></control-input>
+    <control-input axis="/controls/engines/engine[1]/reverser-act" control="REVERSE_THRUST"></control-input>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"></control-output>
     <control-speed control="REVERSE_THRUST" transition-time="3"></control-speed>
-<actionpt x="-2.7" y="-9.89" z="-2.995"></actionpt>
-</jet>
+    <actionpt x="-2.7" y="-9.89" z="-2.995"></actionpt>
+  </jet>
 
   <!-- nose -->
-<gear x="24.5293" y="0.00" z="-5.55" compression="0.7" spring="1.2" damp="1" sfric="1.5" dfric="1.0">
+<gear x="24.5293" y="0.00" z="-5.55" compression="0.7" spring="1.2" damp="1" sfric="1.5" dfric="1.0" stiction="1.0">
     <!-- up to 70 degrees max steering angle with tiller, input is limited to 7 degrees with rudder (see Nasal/ground_steering.nas) -->
     <control-input control="STEER" axis="/controls/gear/nosegear-steering-cmd-norm" src0="-1.0" dst0="-1.2217304764" src1="1.0" dst1="1.2217304764"></control-input>
     <control-output control="STEER" prop="/controls/gear/nosegear-steering-angle-rad"></control-output>
@@ -158,7 +158,7 @@ GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
     <control-speed control="EXTEND" transition-time="19"></control-speed>
   </gear>
 
-  <gear x="-6.39" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
+  <gear x="-6.99646" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
     <control-input axis="/autopilot/autobrake/left-brake-output" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
@@ -166,7 +166,7 @@ GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
     <control-speed control="EXTEND" transition-time="20"></control-speed>
   </gear>
 
-  <gear x="-6.39" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
+  <gear x="-6.99646" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
     <control-input axis="/autopilot/autobrake/right-brake-output" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
@@ -175,7 +175,7 @@ GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
   </gear>
 
   <!-- aft axle on left main gear -->
-  <gear x="-7.8" y="5.6" z="-6.22" compression="3.0" spring="1.2">
+  <gear x="-8.49013" y="5.6" z="-6.22" compression="3.0" spring="1.2">
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
     <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"></control-output>
     <control-speed control="EXTEND" transition-time="20"></control-speed>
@@ -185,7 +185,7 @@ GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
   </gear>
 
   <!-- aft axle on right main gear -->
-  <gear x="-7.8" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
+  <gear x="-8.49013" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
     <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"></control-output>
     <control-speed control="EXTEND" transition-time="20"></control-speed>
@@ -195,7 +195,7 @@ GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
   </gear>
 
   <!--  fake gear as tail contact point for tailstrikes -->
-  <gear x="-19.84" y="0.00" z="-3.38" compression="0.1" spring="1" damp="1" sfric="0.5" dfric="0.5">
+  <gear x="-29.5371" y="0.00" z="34.4869" compression="0.1" spring="1" damp="1" sfric="0.5" dfric="0.5">
   </gear>
 
     <!-- apu -->
@@ -206,9 +206,9 @@ GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
     <control-speed control="FLAP0" transition-time="30"></control-speed>
   </vstab>
 
-  <tank x="-4.3" y="5" z="-1.5" jet="true" capacity="64100"></tank>
-  <tank x="-4.3" y="0" z="-2.5" jet="true" capacity="174900"></tank>
-  <tank x="-4.3" y="-5" z="-1.5" jet="true" capacity="64100"></tank>
+  <tank x="-4.3" y="5" z="-1.5" jet="true" capacity="69000"></tank>
+<tank x="-4.3" y="0" z="-2.5" jet="true" capacity="182800"></tank>
+<tank x="-4.3" y="-5" z="-1.5" jet="true" capacity="69000"></tank>
 
 <weight x="27.2381" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"></weight>
 <weight x="-9.0003" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"></weight>

@@ -40,8 +40,8 @@ Max Landing weight: 492,000 lbs
 
   <!-- Cruise configuration -->
   <cruise speed="512" alt="35000" fuel="0.8" glide-angle="0.0">
-      <control-setting axis="/controls/engines/engine[0]/throttle-act" value="0.95"></control-setting>
-      <control-setting axis="/controls/engines/engine[1]/throttle-act" value="0.95"></control-setting>
+      <control-setting axis="/controls/engines/engine[0]/throttle-act" value="0.90"></control-setting>
+      <control-setting axis="/controls/engines/engine[1]/throttle-act" value="0.90"></control-setting>
       <control-setting axis="/controls/flight/flaps" value="0.0"></control-setting>
       <control-setting axis="/controls/flight/elevator-trim" value="0"></control-setting>
       <control-setting axis="/controls/gear/gear-down" value="0"></control-setting>
@@ -57,7 +57,7 @@ Max Landing weight: 492,000 lbs
   <fuselage ax="4.0" ay="9.8" az="-3" bx="-1.8" by="9.8" bz="-3" width="3.8" taper="1.0"></fuselage>
   <fuselage ax="4.0" ay="-9.8" az="-3" bx="-1.8" by="-9.8" bz="-3" width="3.8" taper="1.0"></fuselage>
 
-  <wing x="-0.82" y="3.095" z="-1.66" length="31.48" chord="10.0" sweep="28.7" taper="0.15" dihedral="8" camber="0.01" incidence="2" twist="-2">
+  <wing x="-0.82" y="3.095" z="-1.66" length="31.48" chord="10.0" sweep="28.7" taper="0.15" dihedral="8" camber="0.01" incidence="2" twist="-2" flow="TRANSONIC" mcrit="0.86">
       <stall aoa="16" width="6" peak="1.5"></stall>
       <flap0 start="0" end=".56" lift="1.5" drag="1.7"></flap0>
       <flap1 start=".64" end=".88" lift="1.5" drag="1.2"></flap1>
@@ -76,7 +76,7 @@ Max Landing weight: 492,000 lbs
       <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"></control-output>
   </wing>
 
-  <hstab x="-31.59" y="1.5" z="1.0" chord="6.0" length="10.44" taper=".20" sweep="28" dihedral="9" camber="0.0">
+  <hstab x="-31.59" y="1.5" z="1.0" chord="6.0" length="10.44" taper=".20" sweep="28" dihedral="9" camber="0.0" flow="TRANSONIC" mcrit="0.87">
     <stall aoa="18" width="5" peak="1.5"></stall>
     <flap0 start="0" end="1" lift="1.4" drag="1.2"></flap0>
     <control-input axis="/fcs/output/pitch" control="FLAP0"></control-input>
@@ -91,32 +91,8 @@ Max Landing weight: 492,000 lbs
     <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"></control-output>
   </vstab>
 
-<!-- General Electric GE90-115B
-
-
-General characteristics
-
-    Type: axial flow, twin-shaft, bypass turbofan engine
-    Length: 287 in (7,290 mm)[14]
-    Diameter: overall: 135 in (3.429 m);[14] fan: 128 in (3.251 m)
-    Dry weight: 18,260 lb (8,283 kg)[14]
-
-Components
-
-    Compressors: axial: 1 wide chord swept fan, 4 low pressure stages, 9 high pressure stages
-    Turbines: axial: 6 low pressure stages, 2 high pressure stages
-
-Performance
-
-    Maximum thrust: max at sea level: 115,540 lbf (514 kN) ; world record set at 127,900 lbf (568,9 kN) 827 feet above sea level
-    Overall pressure ratio: 42:1
-    Thrust-to-weight ratio: approx. 6.3:1
-
-
--->
-
-  <!-- due to a strange problem with yasim, add 3.7 to maximum n1 -->
-  <jet x="1.16" y="9.89" z="-2.995" mass="18260" thrust="115540" spool-time="4.5" egt="825" tsfc="0.23 " epr="40" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121">
+  <!-- due to a strange problem with yasim, add 3.2 to maximum n1 -->
+  <jet x="1.16" y="9.89" z="-2.995" mass="13100" thrust="78910" spool-time="4.5" egt="840" tsfc="0.36 " epr="40" n1-idle="18.5" n1-max="103.7" n2-idle="70" n2-max="103.0" reverse="0.4">
     <control-input axis="/controls/engines/engine[0]/throttle-act" control="THROTTLE"></control-input>
     <control-input axis="/controls/engines/engine[0]/reverser-act" control="REVERSE_THRUST"></control-input>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"></control-output>
@@ -124,7 +100,7 @@ Performance
     <actionpt x="-2.7" y="9.89" z="-2.995"></actionpt>
   </jet>
 
-  <jet x="1.16" y="-9.89" z="-2.995" mass="18260" thrust="115540" spool-time="4.5" egt="825" tsfc="0.23" epr="40" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121">
+  <jet x="1.16" y="-9.89" z="-2.995" mass="13100" thrust="78910" spool-time="4.5" egt="840" tsfc="0.36" epr="40" n1-idle="18.5" n1-max="103.7" n2-idle="70" n2-max="103.0" reverse="0.4">
     <control-input axis="/controls/engines/engine[1]/throttle-act" control="THROTTLE"></control-input>
     <control-input axis="/controls/engines/engine[1]/reverser-act" control="REVERSE_THRUST"></control-input>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"></control-output>
@@ -133,7 +109,7 @@ Performance
   </jet>
 
   <!-- nose -->
-  <gear x="19.28" y="0.00" z="-5.55" compression="0.7" spring="1.2" damp="1" sfric="1.5" dfric="1.0">
+  <gear x="19.1793" y="0.00" z="-5.55" compression="0.7" spring="1.2" damp="1" sfric="1.5" dfric="1.0">
     <!-- up to 70 degrees max steering angle with tiller, input is limited to 7 degrees with rudder (see Nasal/ground_steering.nas) -->
     <control-input control="STEER" axis="/controls/gear/nosegear-steering-cmd-norm" src0="-1.0" dst0="-1.2217304764" src1="1.0" dst1="1.2217304764"></control-input>
     <control-output control="STEER" prop="/controls/gear/nosegear-steering-angle-rad"></control-output>
@@ -142,7 +118,7 @@ Performance
     <control-speed control="EXTEND" transition-time="19"></control-speed>
   </gear>
 
-  <gear x="-6.39" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
+  <gear x="-6.99646" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
     <control-input axis="/autopilot/autobrake/left-brake-output" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
@@ -150,7 +126,7 @@ Performance
     <control-speed control="EXTEND" transition-time="20"></control-speed>
   </gear>
 
-  <gear x="-6.39" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
+  <gear x="-6.99646" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
     <control-input axis="/autopilot/autobrake/right-brake-output" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
@@ -159,7 +135,7 @@ Performance
   </gear>
 
   <!-- aft axle on left main gear -->
-  <gear x="-7.8" y="5.6" z="-6.22" compression="3.0" spring="1.2">
+  <gear x="-8.49013" y="5.6" z="-6.22" compression="3.0" spring="1.2">
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
     <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"></control-output>
     <control-speed control="EXTEND" transition-time="20"></control-speed>
@@ -169,7 +145,7 @@ Performance
   </gear>
 
   <!-- aft axle on right main gear -->
-  <gear x="-7.8" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
+  <gear x="-8.49013" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
     <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"></control-output>
     <control-speed control="EXTEND" transition-time="20"></control-speed>
@@ -177,6 +153,11 @@ Performance
     <control-input control="STEER" axis="/controls/gear/maingear-steering-cmd-norm" src0="-1.0" dst0="-0.1396263402" src1="1.0" dst1="0.1396263402"></control-input>
     <control-output control="STEER" prop="/controls/gear/maingear-r-steering-angle-rad"></control-output>
   </gear>
+
+  <!--  fake gear as tail contact point for tailstrikes -->
+  <gear x="-29.5371" y="0.00" z="-1.75072" compression="0.1" spring="1" damp="1" sfric="0.5" dfric="0.5">
+  </gear>
+
     <!-- apu -->
   <vstab x="0" y="0" z="0" length="0" chord="0">
       <flap0 start="0" end="1" lift="0" drag="0"></flap0>
@@ -185,33 +166,16 @@ Performance
     <control-speed control="FLAP0" transition-time="30"></control-speed>
   </vstab>
 
-<!--Fuel
-
-Maximum Fuel Capacity   Basic - 47,890 U.S. gallons
-(181,280 L)
-With three optional fuel tanks -
-53,515 U.S. gallons (202,570 L)
-
-Source: http://www.boeing.com/commercial/777family/pf/pf_lrproduct.html
-
--->
-
-
   <tank x="-4.3" y="5" z="-1.5" jet="true" capacity="70475"></tank>
   <tank x="-4.3" y="0" z="-2.5" jet="true" capacity="180870"></tank>
   <tank x="-4.3" y="-5" z="-1.5" jet="true" capacity="70475"></tank>
 
-  <tank x="-4.3" y="1" z="-8" jet="true" capacity="12600"></tank>
-  <tank x="-4.3" y="0" z="-9.5" jet="true" capacity="12600"></tank>
-  <tank x="-4.3" y="-1" z="-8" jet="true" capacity="12600"></tank>
-
-
-
   <weight x="22.0" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"></weight>
   <weight x="-4.3" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"></weight>
   <weight x="19.19" y="0" z="0" mass-prop="sim/weight[2]/weight-lb"></weight>
-  <weight x="9.36" y="0" z="0" mass-prop="sim/weight[3]/weight-lb"></weight>
-  <weight x="-26.5" y="0" z="0" mass-prop="sim/weight[4]/weight-lb"></weight>
+  <weight x="12.58" y="0" z="0" mass-prop="sim/weight[3]/weight-lb"></weight>
+  <weight x="-12.71" y="0" z="0" mass-prop="sim/weight[4]/weight-lb"></weight>
+  <weight x="-26.5" y="0" z="0" mass-prop="sim/weight[5]/weight-lb"></weight>
 
   <ballast x="-30" y="0" z="4" mass="-40000"></ballast>
 
@@ -224,4 +188,5 @@ Source: http://www.boeing.com/commercial/777family/pf/pf_lrproduct.html
  <thruster x="-19.284" y="0Y" z="-5.4" vx="0" vy="0" vz="1" thrust="100000.0">
   <control-input axis="/sim/model/autopush/force-z-yasim" control="THROTTLE" src0="-1" src1="1" dst0="-1" dst1="1"/>
  </thruster>
+
 </airplane>

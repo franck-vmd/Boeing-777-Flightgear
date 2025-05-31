@@ -133,7 +133,7 @@ Vref30 = SQR(Landing Weight in Tonnes / 250) X 151
   </jet>
 
   <!-- nose -->
-  <gear x="19.28" y="0.00" z="-5.55" compression="0.7" spring="1.2" damp="1" sfric="1.5" dfric="1.0">
+  <gear x="19.1793" y="0.00" z="-5.55" compression="0.7" spring="1.2" damp="1" sfric="1.5" dfric="1.0">
     <!-- up to 70 degrees max steering angle with tiller, input is limited to 7 degrees with rudder (see Nasal/ground_steering.nas) -->
     <control-input control="STEER" axis="/controls/gear/nosegear-steering-cmd-norm" src0="-1.0" dst0="-1.2217304764" src1="1.0" dst1="1.2217304764"></control-input>
     <control-output control="STEER" prop="/controls/gear/nosegear-steering-angle-rad"></control-output>
@@ -142,7 +142,7 @@ Vref30 = SQR(Landing Weight in Tonnes / 250) X 151
     <control-speed control="EXTEND" transition-time="19"></control-speed>
   </gear>
 
-  <gear x="-6.39" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
+  <gear x="-6.99646" y="5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
     <control-input axis="/autopilot/autobrake/left-brake-output" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
@@ -150,7 +150,7 @@ Vref30 = SQR(Landing Weight in Tonnes / 250) X 151
     <control-speed control="EXTEND" transition-time="20"></control-speed>
   </gear>
 
-  <gear x="-6.39" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
+  <gear x="-6.99646" y="-5.6" z="-5.7" compression="0.8" spring="1.0" sfric="1" dfric="0.39">
     <control-input axis="/autopilot/autobrake/right-brake-output" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"></control-input>
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
@@ -159,7 +159,7 @@ Vref30 = SQR(Landing Weight in Tonnes / 250) X 151
   </gear>
 
   <!-- aft axle on left main gear -->
-  <gear x="-7.8" y="5.6" z="-6.22" compression="3.0" spring="1.2">
+  <gear x="-8.49013" y="5.6" z="-6.22" compression="3.0" spring="1.2">
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
     <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"></control-output>
     <control-speed control="EXTEND" transition-time="20"></control-speed>
@@ -169,7 +169,7 @@ Vref30 = SQR(Landing Weight in Tonnes / 250) X 151
   </gear>
 
   <!-- aft axle on right main gear -->
-  <gear x="-7.8" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
+  <gear x="-8.49013" y="-5.6" z="-6.22" compression="3.0" spring="1.2">
     <control-input axis="/controls/gear/gear-down" control="EXTEND"></control-input>
     <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"></control-output>
     <control-speed control="EXTEND" transition-time="20"></control-speed>
@@ -179,7 +179,7 @@ Vref30 = SQR(Landing Weight in Tonnes / 250) X 151
   </gear>
 
   <!--  fake gear as tail contact point for tailstrikes -->
-  <gear x="-19.84" y="0.00" z="-3.38" compression="0.1" spring="1" damp="1" sfric="0.5" dfric="0.5">
+  <gear x="-29.5371" y="0.00" z="-1.75072" compression="0.1" spring="1" damp="1" sfric="0.5" dfric="0.5">
   </gear>
 
     <!-- apu -->
