@@ -23,6 +23,17 @@
 </animation>
 
 <animation>
+	<type>select</type>
+	<object-name>outflow_needle.LM</object-name>
+     <condition>
+    <greater-than>
+		<property>controls/pressurization/valve-manual[0]</property>
+		<value>0</value>
+	</greater-than>
+	</condition>
+</animation>
+
+<animation>
 	<type>rotate</type>
 	<object-name>outflow_needle.R</object-name>
 	<property>controls/pressurization/outflow-valve-pos[1]</property>
@@ -37,6 +48,17 @@
 		<y>0</y>
 		<z>0</z>
 	</axis>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>outflow_needle.RM</object-name>
+     <condition>
+    <greater-than>
+		<property>controls/pressurization/valve-manual[1]</property>
+		<value>0</value>
+	</greater-than>
+	</condition>
 </animation>
 
 </PropertyList>

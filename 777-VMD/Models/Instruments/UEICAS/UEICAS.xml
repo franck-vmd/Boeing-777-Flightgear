@@ -38,7 +38,7 @@ Franck.VMD
         <path>Aircraft/777-VMD/Models/Instruments/UEICAS/PRESSU.xml</path>
         <offsets>
             <x-m>0.003</x-m>
-            <y-m>0.006547</y-m>
+            <y-m>0.003</y-m>
             <z-m>-0.071757</z-m>
         </offsets>
     </model>
