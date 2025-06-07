@@ -79,6 +79,7 @@ Franck.VMD
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
         <object-name>Fuselage.002</object-name>
+        <object-name>TrapRat</object-name>
         <object-name>Fuselage.003</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>Rmain.geardoor</object-name>
@@ -299,6 +300,10 @@ Franck.VMD
         <object-name>moteur2</object-name>
         <object-name>moteur3</object-name>
         <object-name>moteur4</object-name>
+        <object-name>Rat</object-name>
+        <object-name>HeliRat</object-name>
+        <object-name>HeliRat.001</object-name>
+        <object-name>HeliRat.002</object-name>
         <property-base>sim/model/fuselage6</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X8F/AFR8.png</texture>
@@ -369,6 +374,10 @@ Franck.VMD
         <object-name>ApuG</object-name>
         <object-name>ApuD</object-name>
         <object-name>Fuselage.004</object-name>
+        <object-name>Rat</object-name>
+        <object-name>HeliRat</object-name>
+        <object-name>HeliRat.001</object-name>
+        <object-name>HeliRat.002</object-name>
       </effect>
       
       <effect>
@@ -552,6 +561,7 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect32</inherits-from>
         <object-name>Fuselage.002</object-name>
+        <object-name>TrapRat</object-name>
     </effect>
     
     <effect>
@@ -2824,6 +2834,134 @@ Franck.VMD
 		  <z-m>-4.31325</z-m>
 		</slave-center>
 	</animation>
+
+    <animation>
+		<name>trap</name>
+		<type>rotate</type>
+		<object-name>TrapRat</object-name>
+		<property>/aaa/door-positions/c74/position-norm</property>
+		<interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.3</ind><dep>90</dep></entry>
+            <entry><ind>0.7</ind><dep>90</dep></entry>
+            <entry><ind>0.95</ind><dep>90</dep></entry>
+            <entry><ind>1</ind><dep>90</dep></entry>
+        </interpolation>
+        <axis>
+            <x1-m>10.1714</x1-m>
+            <y1-m>2.17068</y1-m>
+            <z1-m>-3.30622</z1-m>
+            <x2-m>11.7788</x2-m>
+            <y2-m>2.17068</y2-m>
+            <z2-m>-3.14783</z2-m>
+        </axis>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+	</animation>
+
+    <animation>
+		<name>rat</name>
+		<type>rotate</type>
+		<object-name>Rat</object-name>
+        <object-name>HeliRat</object-name>
+        <object-name>HeliRat.001</object-name>
+        <object-name>HeliRat.002</object-name>
+		<property>/aaa/door-positions/c74/position-norm</property>
+		<interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.3</ind><dep>0</dep></entry>
+            <entry><ind>0.7</ind><dep>-90</dep></entry>
+            <entry><ind>0.95</ind><dep>-90</dep></entry>
+            <entry><ind>1</ind><dep>-90</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>11.6573</x-m>
+            <y-m>1.95451</y-m>
+            <z-m>-3.13605</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+	</animation>
+
+   <animation>
+    <type>select</type>
+    <object-name>HeliRat.001</object-name>
+    <condition>
+        <less-than>
+            <property>/aaa/door-positions/c74/position-norm</property>
+            <value>0.95</value>
+        </less-than>
+        </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>HeliRat</object-name>
+    <condition>
+        <greater-than>
+            <property>/aaa/door-positions/c74/position-norm</property>
+            <value>0.95</value>
+        </greater-than>
+        </condition>
+  </animation>
+
+   <animation>
+    <type>select</type>
+    <object-name>HeliRat</object-name>
+    <condition>
+       <and>
+        <less-than>
+            <property>velocities/airspeed-kt</property>
+            <value>100</value>
+        </less-than>
+        <greater-than>
+            <property>/aaa/door-positions/c74/position-norm</property>
+            <value>0.95</value>
+        </greater-than>
+        </and>
+        </condition>
+  </animation>
+
+   <animation>
+    <type>select</type>
+    <object-name>HeliRat.002</object-name>
+    <condition>
+       <and>
+        <greater-than>
+            <property>velocities/airspeed-kt</property>
+            <value>100</value>
+        </greater-than>
+        <greater-than>
+            <property>/aaa/door-positions/c74/position-norm</property>
+            <value>0.95</value>
+        </greater-than>
+        </and>
+        </condition>
+  </animation>
+
+    <animation>
+        <type>spin</type>
+        <object-name>HeliRat</object-name>
+        <object-name>HeliRat.002</object-name>
+        <property>velocities/airspeed-kt</property>
+        <factor>20</factor>
+        <center>
+            <x-m>10.7797</x-m>
+            <y-m>1.9545</y-m>
+            <z-m>-2.79642</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
 
   <!--       Right Gear      -->
 
