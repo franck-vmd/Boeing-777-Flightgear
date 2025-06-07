@@ -112,7 +112,7 @@ var Pump = {
     var FuelPanel = {
         new : func(canvas_group)
         {
-            var m = { parents: [FuelPanel, MfDPanel.new("fuel",canvas_group,"Aircraft/777-VMD/Models/InstrumentsX/MFD-X8/fuel.svg",FuelPanel.update)] };
+            var m = { parents: [FuelPanel, MfDPanel.new("fuel",canvas_group,"Aircraft/777-VMD/Models/Instruments/MFD/fuel.svg",FuelPanel.update)] };
             m.context = m;
             m.initSvgIds(m.group);
             return m;
