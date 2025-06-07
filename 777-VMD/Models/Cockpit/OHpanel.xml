@@ -170,6 +170,10 @@ Franck.VMD
         <object-name>LDG_ALT.knob.002</object-name>
         <object-name>EXT_PWR_P_Switch</object-name>
         <object-name>EXT_PWR_S_Switch</object-name>
+        <object-name>LDG_ALT.knob.002</object-name>
+        <object-name>L-Lnd.toggle.001</object-name>
+        <object-name>C-Lnd.toggle.001</object-name>
+        <object-name>R-Lnd.toggle.001</object-name>
     </animation>
     <animation>
         <type>material</type>
@@ -1999,9 +2003,9 @@ Franck.VMD
      <z>0</z>
    </axis>
    <center>
-   <x-m>0.02480</x-m>
-   <y-m>0.12528</y-m>
-   <z-m>-0.09050</z-m>
+   <x-m>0.01166</x-m>
+   <y-m>0.125245</y-m>
+   <z-m>-0.090157</z-m>
   </center>
  </animation>
 
@@ -2417,9 +2421,21 @@ Franck.VMD
 
     <animation>
         <type>translate</type>
-   <object-name>RAM_Switch</object-name>
-        <property></property>
+      <object-name>RAM_Switch</object-name>
+        <property>sim/multiplay/generic/float[96]</property>
         <factor>-0.0023</factor>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+      <object-name>RAM_Placard</object-name>
+        <property>sim/multiplay/generic/float[96]</property>
+        <factor>-0.0033</factor>
         <axis>
             <x>1</x>
             <y>0</y>
@@ -4556,6 +4572,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>R-Lnd.toggle</object-name>
+        <object-name>R-Lnd.toggle.001</object-name>
         <property>controls/lighting/landing-light[2]</property>
         <factor>15</factor>
         <center>
@@ -4573,6 +4590,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>L-Lnd.toggle</object-name>
+        <object-name>L-Lnd.toggle.001</object-name>
         <property>controls/lighting/landing-light[1]</property>
         <factor>15</factor>
         <center>
@@ -4590,6 +4608,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>C-Lnd.toggle</object-name>
+        <object-name>C-Lnd.toggle.001</object-name>
         <property>controls/lighting/landing-light[0]</property>
         <factor>15</factor>
         <center>
@@ -5861,6 +5880,12 @@ Franck.VMD
             <binding>
                 <command>nasal</command>
                 <script>
+                b777.balance_fuel();
+            </script>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
                 controls.click(4);
             </script>
             </binding>
@@ -6161,16 +6186,65 @@ Franck.VMD
         <object-name>RAM_Switch</object-name>
         <action>
             <button>0</button>
-            <repeatable>false</repeatable>
+            <repeatable>true</repeatable>
             <binding>
-                <command>property-toggle</command>
-                <property></property>
+	       <command>nasal</command>
+	       <script>
+	       b777.doors.open("c74");
+	       </script>
+	    </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/electric/external-power[2]</property>
+                <value>1</value>
             </binding>
             <binding>
+                <condition>
+                 <greater-than>
+            <property>velocities/airspeed-kt</property>
+            <value>100</value>
+        </greater-than>
+                </condition>
+                <command>property-assign</command>
+                <property>systems/electrical/SEC2-EPC</property>
+               <value>1</value>
+            </binding>
+           <binding>
                 <command>nasal</command>
                 <script>
                 controls.click(2);
-            </script>
+                </script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RAM_Switch</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <binding>
+	       <command>nasal</command>
+	       <script>
+	       b777.doors.close("c74");
+	       </script>
+	    </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/electric/external-power[2]</property>
+                <value>0</value>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>systems/electrical/SEC2-EPC</property>
+                <value>0</value>
+            </binding>
+           <binding>
+                <command>nasal</command>
+                <script>
+                controls.click(2);
+                </script>
             </binding>
         </action>
     </animation>
@@ -7419,7 +7493,7 @@ Franck.VMD
 <animation>
    <type>translate</type>
    <object-name>LDG_ALT.knob</object-name>
-   <object-name>LDG_ALT.knob.001</object-name>
+   <object-name>LDG_ALT.knob.002</object-name>
     <property>controls/pressurization/landing-alt-manual</property>
    <factor>0.001</factor>
    <axis>
@@ -7432,7 +7506,7 @@ Franck.VMD
 <animation>
    <type>rotate</type>
    <object-name>LDG_ALT.knob</object-name>
-   <object-name>LDG_ALT.knob.001</object-name>
+   <object-name>LDG_ALT.knob.002</object-name>
     <property>controls/pressurization/landing-alt-ft</property>
    <interpolation>
             <entry>
@@ -7459,6 +7533,7 @@ Franck.VMD
 <animation>
 	<type>pick</type>
 	<object-name>LDG_ALT.knob</object-name>
+    <object-name>LDG_ALT.knob.002</object-name>
 	<action>
 	    <button>0</button>
 	    <button>3</button>
@@ -7563,6 +7638,17 @@ Franck.VMD
     </animation>
 
     <animation>
+   <type>select</type>
+        <object-name>RAM_Placard</object-name>
+        <condition>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        </condition>   
+ </animation>
+
+    <animation>
         <type>material</type>
                 <object-name>Lettering_CB</object-name>
                 <object-name>Lettering_Maint</object-name>
@@ -7605,6 +7691,7 @@ Franck.VMD
                 <object-name>APU_Switch</object-name>
                 <object-name>BATT_Switch</object-name>
                 <object-name>RAM_Switch</object-name>
+                <object-name>RAM_Switch.001</object-name>
                 <object-name>NOZZLE_L_Switch</object-name>
                 <object-name>NOZZLE_R_Switch</object-name>
                 <object-name>FJ_ARM_Switch</object-name>

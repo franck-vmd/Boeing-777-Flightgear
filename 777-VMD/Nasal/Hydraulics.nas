@@ -38,6 +38,7 @@ var HYDR = {
         m.APUgen = props.globals.initNode("controls/APU/apu-gen-switch", 0, "BOOL");
         m.GP1 = props.globals.getNode("systems/electrical/PRI-EPC");
         m.GP2 = props.globals.getNode("systems/electrical/SEC-EPC");
+        m.GP3 = props.globals.getNode("systems/electrical/SEC2-EPC");
         m.APUP = m.hydr.initNode("APUP-NORMAL", 0 , "BOOL");
         m.GP = m.hydr.initNode("GP-NORMAL", 0, "BOOL");
 		m.PushConn = props.globals.getNode("sim/model/autopush/connected", 0, "BOOL");
@@ -52,7 +53,7 @@ var HYDR = {
         {
             me.APUP.setValue(0);
         }
-        if(me.GP1.getValue() or me.GP2.getValue())
+        if(me.GP1.getValue() or me.GP2.getValue() or me.GP3.getValue())
         {
             me.GP.setValue(1);
         }

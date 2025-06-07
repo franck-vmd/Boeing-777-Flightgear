@@ -645,6 +645,62 @@
                 <property type="string">/sim/multiplay/generic/float[82]</property>
             </signal>
             <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[83]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[84]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[85]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[86]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[87]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[88]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[89]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[90]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[91]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[92]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[93]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[94]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[95]</property>
+            </signal>
+            <signal>
+                <type>float</type>
+                <property type="string">/sim/multiplay/generic/float[96]</property>
+            </signal>
+            <signal>
                <type>bool</type>
 					<property>sim/sound/welcome</property>
 				</signal>

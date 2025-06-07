@@ -15,6 +15,7 @@ var r_gcb = props.globals.initNode("systems/electrical/R-GCB",0,"BOOL");
 var apb = props.globals.initNode("systems/electrical/APB",0,"BOOL");
 var pri_epc = props.globals.initNode("systems/electrical/PRI-EPC",0,"BOOL");
 var sec_epc = props.globals.initNode("systems/electrical/SEC-EPC",0,"BOOL");
+var sec2_epc = props.globals.initNode("systems/electrical/SEC2-EPC",0,"BOOL");
 var l_btb = props.globals.initNode("systems/electrical/L-BTB",0,"BOOL");
 var r_btb = props.globals.initNode("systems/electrical/R-BTB",0,"BOOL");
 var main_bat_rly = props.globals.initNode("systems/electrical/MAIN-BAT-RLY",0,"BOOL");
@@ -23,6 +24,7 @@ var bat_cpt_isln_rely = props.globals.initNode("systems/electrical/BAT-CPT-ISLN-
 var cpt_fo_bus_tie_rely = props.globals.initNode("systems/electrical/CPT-FO-BUS-TIE-RLY",0,"BOOL");
 var primary_external  = props.globals.initNode("controls/electric/external-power",0,"BOOL");
 var secondary_external  = props.globals.initNode("controls/electric/external-power[1]",0,"BOOL");
+var secondary2_external  = props.globals.initNode("controls/electric/external-power[2]",0,"BOOL");
 var ac_tie_bus = props.globals.initNode("systems/electrical/AC_TIE_BUS",0,"DOUBLE");
 
 var vbus_count = 0;
@@ -33,7 +35,6 @@ var APUgen=props.globals.initNode("controls/electric/APU-generator",0,"BOOL");
 var l_gen=props.globals.initNode("controls/electric/engine[0]/generator",0,"BOOL");
 var r_gen=props.globals.initNode("controls/electric/engine[1]/generator",0,"BOOL");
 var CDUswitch=props.globals.initNode("instrumentation/cdu/serviceable",0,"BOOL");
-var BLOCswitch=props.globals.initNode("instrumentation/bloc/serviceable",0,"BOOL");
 var DomeLtControl=props.globals.initNode("controls/lighting/dome-intencity",0,"DOUBLE");
 var DomeLtIntencity=props.globals.initNode("systems/electrical/domelight-int",0,"DOUBLE");
 var landinglights=props.globals.initNode("controls/lighting/landing-lights",0,"BOOL");
@@ -248,6 +249,7 @@ var lidg = Alternator.new(0,"controls/electric/engine[0]/gen-switch","/engines/e
 var ridg = Alternator.new(1,"controls/electric/engine[1]/gen-switch","/engines/engine[1]/rpm",17.0,115.0,60.0);
 var external_primary = External.new(pri_epc);
 var external_secondary = External.new(sec_epc);
+var external_secondary2 = External.new(sec2_epc);
 var apu = APU.new(APUgen);
 
 #####################################
@@ -263,6 +265,7 @@ var init_switches = func{
     props.globals.getNode("systems/electrical/serviceable",0,"BOOL");
     props.globals.getNode("controls/electric/external-power",0,"BOOL");
     props.globals.getNode("controls/electric/external-power[1]",0,"BOOL");
+    props.globals.getNode("controls/electric/external-power[2]",0,"BOOL");
     setprop("controls/lighting/instrument-lights-norm",0.8);
     setprop("controls/lighting/efis-norm",0.8);
     setprop("controls/lighting/panel-norm",0.8);
@@ -416,6 +419,7 @@ update_virtual_bus = func( dt ) {
             apb.setValue(0);
             pri_epc.setValue(0);
             sec_epc.setValue(0);
+            sec2_epc.setValue(0);
             l_btb.setValue(1);
             r_btb.setValue(1);
         }
@@ -429,6 +433,7 @@ update_virtual_bus = func( dt ) {
             apb.setValue(0);
             pri_epc.setValue(0);
             sec_epc.setValue(0);
+            sec2_epc.setValue(0);
             l_btb.setValue(1);
             r_btb.setValue(1);
         }
@@ -468,11 +473,29 @@ update_virtual_bus = func( dt ) {
             }
         }
     }
+    elsif(external_secondary2.get_transition())
+    {
+        if(external_secondary2.valid)
+        {
+            apb.setValue(0);
+            l_gcb.setValue(0);
+            l_btb.setValue(1);
+            if(external_primary.valid)
+            {
+                r_btb.setValue(0);
+            }
+            else
+            {
+                r_gcb.setValue(0)
+            }
+        }
+    }
     elsif(apu.get_transition())
     {
         if(apu.valid)
         {
             sec_epc.setValue(0);
+            sec2_epc.setValue(0);
             pri_epc.setValue(0);
             if(external_primary.valid)
             {
@@ -494,6 +517,10 @@ update_virtual_bus = func( dt ) {
         l_main_ac.setValue(115);
     }
     elsif(external_secondary.valid)
+    {
+        l_main_ac.setValue(115);
+    }
+    elsif(external_secondary2.valid)
     {
         l_main_ac.setValue(115);
     }
@@ -523,6 +550,10 @@ update_virtual_bus = func( dt ) {
     {
         r_main_ac.setValue(115);
     }
+    elsif(external_secondary2.valid)
+    {
+        r_main_ac.setValue(115);
+    }
     elsif(apu.valid)
     {
         r_main_ac.setValue(115);
@@ -537,7 +568,7 @@ update_virtual_bus = func( dt ) {
     }
     r_xfr.setValue(r_main_ac.getValue());
 
-    if(lidg.valid or apu.valid or external_secondary.valid or external_primary.valid or ridg.valid)
+    if(lidg.valid or apu.valid or external_secondary.valid or external_secondary2.valid or external_primary.valid or ridg.valid)
     {
         ac_tie_bus.setValue(115);
     }
