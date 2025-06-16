@@ -66,11 +66,13 @@ Franck.VMD
             </and>
         </condition>
     </animation>
-    
+
     <animation>
         <type>material</type>
         <object-name>Tun2.knob.001</object-name>
         <object-name>Tun1.knob.001</object-name>
+        <object-name>Lettering_CS.R</object-name>
+        <object-name>Lettering_CS.RT</object-name>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
@@ -86,25 +88,6 @@ Franck.VMD
             <green>0.8</green>
             <blue>0.2</blue>
             <factor-prop>controls/lighting/GLRSFlood-intencity</factor-prop>
-        </emission>
-    </animation>
-    
-    <animation>
-        <type>material</type>
-        <object-name>Tun2.knob</object-name>
-        <object-name>Tun1.knob</object-name>
-        <condition>
-                <greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-                <property>controls/lighting/cockpit</property>
-        </condition>
-        <emission>
-            <red>0.2</red>
-            <green>0.2</green>
-            <blue>0.2</blue>
-            <factor-prop>controls/lighting/dome-intencity</factor-prop>
         </emission>
     </animation>
 
@@ -743,6 +726,84 @@ Franck.VMD
                 <property>instrumentation/comm[2]/frequencies/standby-mhz</property>
             </binding>
         </action>
+        <shift-action>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/rmu/unit/vhf-l</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/comm[0]/frequencies/standby-channel</property>
+                <factor>4</factor>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/rmu/unit/vhf-r</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/comm[1]/frequencies/standby-channel</property>
+                <factor>4</factor>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/rmu/unit/vhf-c</property>
+                    </and>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/comm[2]/frequencies/standby-channel</property>
+                <factor>4</factor>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/rmu/unit/vhf-l</property>
+                    </and>
+                </condition>
+                <command>property-assign</command>
+                <property>instrumentation/rmu/unit/standby-mhz</property>
+                <property>instrumentation/comm[0]/frequencies/standby-mhz</property>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/rmu/unit/vhf-r</property>
+                    </and>
+                </condition>
+                <command>property-assign</command>
+                <property>instrumentation/rmu/unit/standby-mhz</property>
+                <property>instrumentation/comm[1]/frequencies/standby-mhz</property>
+            </binding>
+            <binding>
+                <condition>
+                    <and>
+                        <property>systems/electrical/outputs/avionics</property>
+                        <property>instrumentation/rmu/unit/vhf-c</property>
+                    </and>
+                </condition>
+                <command>property-assign</command>
+                <property>instrumentation/rmu/unit/standby-mhz</property>
+                <property>instrumentation/comm[2]/frequencies/standby-mhz</property>
+            </binding>
+        </shift-action>
+        <hovered>
+            <binding>
+                <condition>
+                    <property>aircraft/settings/tooltips</property>
+                </condition>
+                <command>set-tooltip</command>
+                <tooltip-id>a6-att-ref</tooltip-id>
+                <label>Use Shift for 25 kHz steps</label>
+            </binding>
+        </hovered>
     </animation>
 
     <animation>
@@ -907,4 +968,44 @@ Franck.VMD
             </binding>
         </hovered>
     </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Tun2.knob</object-name>
+        <object-name>Tun1.knob</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+                <property>controls/lighting/cockpit</property>
+        </condition>
+        <emission>
+            <red>0.25</red>
+            <green>0.25</green>
+            <blue>0.25</blue>
+            <factor-prop>controls/lighting/dome-intencity</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>Tun2.knob.001</object-name>
+        <object-name>Tun1.knob.001</object-name>
+        <object-name>Lettering_CS.R</object-name>
+        <object-name>Lettering_CS.RT</object-name>
+        <condition>
+		<greater-than>
+                <property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+             </greater-than>
+        </condition>
+        <emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+            <factor-prop>controls/lighting/master-bright-intencity</factor-prop>
+        </emission>
+    </animation>
+
 </PropertyList>
