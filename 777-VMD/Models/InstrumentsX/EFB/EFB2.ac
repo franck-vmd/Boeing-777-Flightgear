@@ -1,24 +1,24 @@
 AC3Db
-MATERIAL "Lights.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Gloss.emit.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "Lights.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Lights.002" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Lights.007" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Gloss.emit.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "Lights.008" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Lights.009" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "droite.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 128 trans 0.000
-MATERIAL "Lights.003" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "interior.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
-MATERIAL "Material.001" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 64 trans 1.000
-MATERIAL "Lights.004" rgb 0.000 1.000 0.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "greenglow.008" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "greenglow.009" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Lights.005" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "Lights.006" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Lights.010" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "interior.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.500 0.500 0.500  shi 32 trans 0.000
+MATERIAL "Material.000" rgb 0.800 0.800 0.800  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 64 trans 1.000
+MATERIAL "Lights.011" rgb 0.000 1.000 0.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "greenglow.000" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "greenglow.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 0.000 0.000 0.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Lights.012" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
+MATERIAL "Lights.013" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 1.000 1.000 1.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__EFB2.ac"
 kids 128
 OBJECT poly
 name "airportmarker"
 data 17
-airportmarker.003
+airportmarker.000
 crease 45.0
 texture "symbols.png"
 texrep 1 1
@@ -69,7 +69,7 @@ kids 0
 OBJECT poly
 name "Btn.crsr-dn"
 data 15
-Btn.crsr-dn.003
+Btn.crsr-dn.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -122,7 +122,7 @@ kids 0
 OBJECT poly
 name "Btn.crsr-lh"
 data 15
-Btn.crsr-lh.003
+Btn.crsr-lh.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -175,7 +175,7 @@ kids 0
 OBJECT poly
 name "Btn.crsr-rh"
 data 15
-Btn.crsr-rh.003
+Btn.crsr-rh.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -228,7 +228,7 @@ kids 0
 OBJECT poly
 name "Btn.crsr-up"
 data 15
-Btn.crsr-up.003
+Btn.crsr-up.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -281,7 +281,7 @@ kids 0
 OBJECT poly
 name "Btn.DN"
 data 10
-Btn.DN.003
+Btn.DN.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -334,7 +334,7 @@ kids 0
 OBJECT poly
 name "Btn.enter"
 data 13
-Btn.enter.003
+Btn.enter.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -387,7 +387,7 @@ kids 0
 OBJECT poly
 name "Btn.menu"
 data 12
-Btn.menu.003
+Btn.menu.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -440,7 +440,7 @@ kids 0
 OBJECT poly
 name "Btn.pgback"
 data 14
-Btn.pgback.003
+Btn.pgback.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -493,7 +493,7 @@ kids 0
 OBJECT poly
 name "Btn.pgdn"
 data 12
-Btn.pgdn.003
+Btn.pgdn.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -546,7 +546,7 @@ kids 0
 OBJECT poly
 name "Btn.pgup"
 data 12
-Btn.pgup.003
+Btn.pgup.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -599,7 +599,7 @@ kids 0
 OBJECT poly
 name "Btn.UP"
 data 10
-Btn.UP.003
+Btn.UP.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -652,7 +652,7 @@ kids 0
 OBJECT poly
 name "Btn.xfr"
 data 11
-Btn.xfr.003
+Btn.xfr.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -705,7 +705,7 @@ kids 0
 OBJECT poly
 name "Btn.zoomin"
 data 14
-Btn.zoomin.003
+Btn.zoomin.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -758,7 +758,7 @@ kids 0
 OBJECT poly
 name "Btn.zoomout"
 data 15
-Btn.zoomout.003
+Btn.zoomout.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -811,7 +811,7 @@ kids 0
 OBJECT poly
 name "BtnLH"
 data 9
-BtnLH.024
+BtnLH.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -864,7 +864,7 @@ kids 0
 OBJECT poly
 name "BtnLH.001"
 data 9
-BtnLH.025
+BtnLH.001
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -917,7 +917,7 @@ kids 0
 OBJECT poly
 name "BtnLH.002"
 data 9
-BtnLH.026
+BtnLH.002
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -970,7 +970,7 @@ kids 0
 OBJECT poly
 name "BtnLH.003"
 data 9
-BtnLH.027
+BtnLH.003
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1023,7 +1023,7 @@ kids 0
 OBJECT poly
 name "BtnLH.004"
 data 9
-BtnLH.028
+BtnLH.004
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1076,7 +1076,7 @@ kids 0
 OBJECT poly
 name "BtnLH.005"
 data 9
-BtnLH.029
+BtnLH.005
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1129,7 +1129,7 @@ kids 0
 OBJECT poly
 name "BtnLH.006"
 data 9
-BtnLH.030
+BtnLH.006
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1182,7 +1182,7 @@ kids 0
 OBJECT poly
 name "BtnLH.007"
 data 9
-BtnLH.031
+BtnLH.007
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1235,7 +1235,7 @@ kids 0
 OBJECT poly
 name "BtnRH"
 data 9
-BtnRH.024
+BtnRH.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1288,7 +1288,7 @@ kids 0
 OBJECT poly
 name "BtnRH.001"
 data 9
-BtnRH.025
+BtnRH.001
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1341,7 +1341,7 @@ kids 0
 OBJECT poly
 name "BtnRH.002"
 data 9
-BtnRH.026
+BtnRH.002
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1394,7 +1394,7 @@ kids 0
 OBJECT poly
 name "BtnRH.003"
 data 9
-BtnRH.027
+BtnRH.003
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1447,7 +1447,7 @@ kids 0
 OBJECT poly
 name "BtnRH.004"
 data 9
-BtnRH.028
+BtnRH.004
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1500,7 +1500,7 @@ kids 0
 OBJECT poly
 name "BtnRH.005"
 data 9
-BtnRH.029
+BtnRH.005
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1553,7 +1553,7 @@ kids 0
 OBJECT poly
 name "BtnRH.006"
 data 9
-BtnRH.030
+BtnRH.006
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1606,7 +1606,7 @@ kids 0
 OBJECT poly
 name "BtnRH.007"
 data 9
-BtnRH.031
+BtnRH.007
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -1659,7 +1659,7 @@ kids 0
 OBJECT poly
 name "Chart_1"
 data 11
-Chart_1.003
+Chart_1.000
 crease 30.0
 texture "Blank_Test.jpg"
 texrep 1 1
@@ -1680,7 +1680,7 @@ kids 0
 OBJECT poly
 name "Chart_1_Rot"
 data 15
-Chart_1_Rot.003
+Chart_1_Rot.000
 crease 30.0
 texture "Blank_Test.jpg"
 texrep 1 1
@@ -1701,7 +1701,7 @@ kids 0
 OBJECT poly
 name "Chart_2"
 data 11
-Chart_2.003
+Chart_2.000
 crease 30.0
 texture "Blank_Test.jpg"
 texrep 1 1
@@ -1722,7 +1722,7 @@ kids 0
 OBJECT poly
 name "Chart_4"
 data 11
-Chart_4.003
+Chart_4.000
 crease 30.0
 texture "Blank_Test.jpg"
 texrep 1 1
@@ -1743,7 +1743,7 @@ kids 0
 OBJECT poly
 name "Chart_SEL_1"
 data 15
-Chart_SEL_1.003
+Chart_SEL_1.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -1764,7 +1764,7 @@ kids 0
 OBJECT poly
 name "Chart_SEL_2"
 data 15
-Chart_SEL_2.003
+Chart_SEL_2.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -1785,7 +1785,7 @@ kids 0
 OBJECT poly
 name "Chart_SEL_3"
 data 15
-Chart_SEL_3.003
+Chart_SEL_3.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -1806,7 +1806,7 @@ kids 0
 OBJECT poly
 name "Charts_APT"
 data 14
-Charts_APT.003
+Charts_APT.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -1827,7 +1827,7 @@ kids 0
 OBJECT poly
 name "Charts_IAP"
 data 14
-Charts_IAP.003
+Charts_IAP.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -1848,7 +1848,7 @@ kids 0
 OBJECT poly
 name "Charts_SID"
 data 14
-Charts_SID.003
+Charts_SID.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -1869,7 +1869,7 @@ kids 0
 OBJECT poly
 name "Charts_STAR"
 data 15
-Charts_STAR.003
+Charts_STAR.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -1890,7 +1890,7 @@ kids 0
 OBJECT poly
 name "Display"
 data 11
-Display.008
+Display.000
 crease 30.0
 texture "Blank_Test.jpg"
 texrep 1 1
@@ -1924,15 +1924,15 @@ numsurf 1
 SURF 0X0
 mat 4
 refs 4
-1 -0.003825 0.996148
-3 1.001357 0.996148
-2 1.001357 0.001842
-0 -0.003825 0.001842
+1 -0.003825 0.839763
+3 1.001357 0.839763
+2 1.001357 0.161147
+0 -0.003825 0.161147
 kids 0
 OBJECT poly
 name "Display_Keyboard"
 data 20
-Display_Keyboard.003
+Display_Keyboard.000
 crease 30.0
 texture "Keyboard_1.jpg"
 texrep 1 1
@@ -1953,7 +1953,7 @@ kids 0
 OBJECT poly
 name "Display_Ovlay_1"
 data 19
-Display_Ovlay_1.003
+Display_Ovlay_1.000
 crease 30.0
 texture "Blank_Test.jpg"
 texrep 1 1
@@ -1974,7 +1974,7 @@ kids 0
 OBJECT poly
 name "DRC_MarkerL"
 data 15
-DRC_MarkerL.003
+DRC_MarkerL.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -1995,7 +1995,7 @@ kids 0
 OBJECT poly
 name "DRC_MarkerR"
 data 15
-DRC_MarkerR.003
+DRC_MarkerR.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -2016,7 +2016,7 @@ kids 0
 OBJECT poly
 name "EFB"
 data 7
-EFB.003
+EFB.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -2126,7 +2126,7 @@ kids 0
 OBJECT poly
 name "IN_1"
 data 8
-IN_1.003
+IN_1.000
 crease 179.0
 numvert 4
 -1.50876 0.3777 -1.05684
@@ -2145,7 +2145,7 @@ kids 0
 OBJECT poly
 name "IN_2"
 data 8
-IN_2.003
+IN_2.000
 crease 179.0
 numvert 4
 -1.50408 0.36717 -1.05295
@@ -2164,7 +2164,7 @@ kids 0
 OBJECT poly
 name "IN_3"
 data 8
-IN_3.003
+IN_3.000
 crease 179.0
 numvert 4
 -1.49936 0.35657 -1.04904
@@ -2183,7 +2183,7 @@ kids 0
 OBJECT poly
 name "IN_4"
 data 8
-IN_4.003
+IN_4.000
 crease 179.0
 numvert 4
 -1.49469 0.34603 -1.04515
@@ -2202,7 +2202,7 @@ kids 0
 OBJECT poly
 name "IN_5"
 data 8
-IN_5.003
+IN_5.000
 crease 179.0
 numvert 4
 -1.49 0.3355 -1.04125
@@ -2221,7 +2221,7 @@ kids 0
 OBJECT poly
 name "IN_Marker"
 data 13
-IN_Marker.003
+IN_Marker.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -2242,7 +2242,7 @@ kids 0
 OBJECT poly
 name "K0"
 data 6
-K0.003
+K0.000
 crease 179.0
 numvert 4
 -1.4339 0.25856 -1.03934
@@ -2261,7 +2261,7 @@ kids 0
 OBJECT poly
 name "K1"
 data 6
-K1.003
+K1.000
 crease 179.0
 numvert 4
 -1.48543 0.29976 -1.01441
@@ -2280,7 +2280,7 @@ kids 0
 OBJECT poly
 name "K2"
 data 6
-K2.003
+K2.000
 crease 179.0
 numvert 4
 -1.45218 0.29971 -1.05453
@@ -2299,7 +2299,7 @@ kids 0
 OBJECT poly
 name "K3"
 data 6
-K3.003
+K3.000
 crease 179.0
 numvert 4
 -1.41892 0.29966 -1.09467
@@ -2318,7 +2318,7 @@ kids 0
 OBJECT poly
 name "K4"
 data 6
-K4.003
+K4.000
 crease 179.0
 numvert 4
 -1.47933 0.28603 -1.00934
@@ -2337,7 +2337,7 @@ kids 0
 OBJECT poly
 name "K5"
 data 6
-K5.003
+K5.000
 crease 179.0
 numvert 4
 -1.44609 0.28598 -1.04946
@@ -2356,7 +2356,7 @@ kids 0
 OBJECT poly
 name "K6"
 data 6
-K6.003
+K6.000
 crease 179.0
 numvert 4
 -1.41282 0.28593 -1.0896
@@ -2375,7 +2375,7 @@ kids 0
 OBJECT poly
 name "K7"
 data 6
-K7.003
+K7.000
 crease 179.0
 numvert 4
 -1.47323 0.27231 -1.00427
@@ -2394,7 +2394,7 @@ kids 0
 OBJECT poly
 name "K8"
 data 6
-K8.003
+K8.000
 crease 179.0
 numvert 4
 -1.43999 0.27226 -1.0444
@@ -2413,7 +2413,7 @@ kids 0
 OBJECT poly
 name "K9"
 data 6
-K9.003
+K9.000
 crease 179.0
 numvert 4
 -1.40672 0.27221 -1.08454
@@ -2432,7 +2432,7 @@ kids 0
 OBJECT poly
 name "K_MSG"
 data 9
-K_MSG.003
+K_MSG.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -2453,7 +2453,7 @@ kids 0
 OBJECT poly
 name "KBKSP"
 data 9
-KBKSP.003
+KBKSP.000
 crease 179.0
 numvert 4
 -1.39455 0.2448 -1.07441
@@ -2472,7 +2472,7 @@ kids 0
 OBJECT poly
 name "KCLRF"
 data 9
-KCLRF.003
+KCLRF.000
 crease 179.0
 numvert 4
 -1.46105 0.24489 -0.99415
@@ -2491,7 +2491,7 @@ kids 0
 OBJECT poly
 name "KDOT"
 data 8
-KDOT.003
+KDOT.000
 crease 179.0
 numvert 4
 -1.46715 0.25861 -0.99921
@@ -2510,7 +2510,7 @@ kids 0
 OBJECT poly
 name "KSIGN"
 data 9
-KSIGN.003
+KSIGN.000
 crease 179.0
 numvert 4
 -1.40064 0.25852 -1.07948
@@ -2529,7 +2529,7 @@ kids 0
 OBJECT poly
 name "LED_ON"
 data 10
-LED_ON.003
+LED_ON.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -2720,7 +2720,7 @@ kids 0
 OBJECT poly
 name "Lettering_Btn"
 data 17
-Lettering_Btn.003
+Lettering_Btn.000
 crease 30.0
 texture "Lettering_EFB.png"
 texrep 1 1
@@ -4201,7 +4201,7 @@ kids 0
 OBJECT poly
 name "Lettering_EFB"
 data 17
-Lettering_EFB.002
+Lettering_EFB.000
 crease 30.0
 texture "Lettering_EFB.png"
 texrep 1 1
@@ -4247,7 +4247,7 @@ kids 0
 OBJECT poly
 name "marker"
 data 10
-marker.003
+marker.000
 crease 45.0
 texture "symbols.png"
 texrep 1 1
@@ -4298,7 +4298,7 @@ kids 0
 OBJECT poly
 name "OUT_1"
 data 9
-OUT_1.003
+OUT_1.000
 crease 179.0
 numvert 4
 -1.46263 0.37763 -1.11251
@@ -4317,7 +4317,7 @@ kids 0
 OBJECT poly
 name "OUT_2"
 data 9
-OUT_2.003
+OUT_2.000
 crease 179.0
 numvert 4
 -1.45796 0.3671 -1.10862
@@ -4336,7 +4336,7 @@ kids 0
 OBJECT poly
 name "OUT_3"
 data 9
-OUT_3.003
+OUT_3.000
 crease 179.0
 numvert 4
 -1.45324 0.3565 -1.1047
@@ -4355,7 +4355,7 @@ kids 0
 OBJECT poly
 name "OUT_4"
 data 9
-OUT_4.003
+OUT_4.000
 crease 179.0
 numvert 4
 -1.44856 0.34598 -1.10082
@@ -4374,7 +4374,7 @@ kids 0
 OBJECT poly
 name "OUT_5"
 data 9
-OUT_5.003
+OUT_5.000
 crease 179.0
 numvert 4
 -1.44388 0.33543 -1.09692
@@ -4393,7 +4393,7 @@ kids 0
 OBJECT poly
 name "OUT_Marker"
 data 14
-OUT_Marker.003
+OUT_Marker.000
 crease 179.0
 texture "EFB.png"
 texrep 1 1
@@ -4414,7 +4414,7 @@ kids 0
 OBJECT poly
 name "ProcManual"
 data 14
-ProcManual.003
+ProcManual.000
 crease 45.0
 texture "manual.jpg"
 texrep 1 1
@@ -4465,7 +4465,7 @@ kids 0
 OBJECT poly
 name "PWR_btn"
 data 11
-PWR_btn.003
+PWR_btn.000
 crease 30.0
 texture "EFB.png"
 texrep 1 1
@@ -4656,7 +4656,7 @@ kids 0
 OBJECT poly
 name "VK_0"
 data 8
-VK_0.003
+VK_0.000
 crease 179.0
 numvert 4
 -1.48305 0.25711 -0.97858
@@ -4675,7 +4675,7 @@ kids 0
 OBJECT poly
 name "VK_1"
 data 8
-VK_1.003
+VK_1.000
 crease 179.0
 numvert 4
 -1.50998 0.29191 -0.97757
@@ -4694,7 +4694,7 @@ kids 0
 OBJECT poly
 name "VK_2"
 data 8
-VK_2.003
+VK_2.000
 crease 179.0
 numvert 4
 -1.49851 0.29188 -0.99142
@@ -4713,7 +4713,7 @@ kids 0
 OBJECT poly
 name "VK_3"
 data 8
-VK_3.003
+VK_3.000
 crease 179.0
 numvert 4
 -1.48705 0.29187 -1.00525
@@ -4732,7 +4732,7 @@ kids 0
 OBJECT poly
 name "VK_4"
 data 8
-VK_4.003
+VK_4.000
 crease 179.0
 numvert 4
 -1.50482 0.28028 -0.97328
@@ -4751,7 +4751,7 @@ kids 0
 OBJECT poly
 name "VK_5"
 data 8
-VK_5.003
+VK_5.000
 crease 179.0
 numvert 4
 -1.49334 0.28025 -0.98712
@@ -4770,7 +4770,7 @@ kids 0
 OBJECT poly
 name "VK_6"
 data 8
-VK_6.003
+VK_6.000
 crease 179.0
 numvert 4
 -1.48189 0.28024 -1.00096
@@ -4789,7 +4789,7 @@ kids 0
 OBJECT poly
 name "VK_7"
 data 8
-VK_7.003
+VK_7.000
 crease 179.0
 numvert 4
 -1.49966 0.26867 -0.96899
@@ -4808,7 +4808,7 @@ kids 0
 OBJECT poly
 name "VK_8"
 data 8
-VK_8.003
+VK_8.000
 crease 179.0
 numvert 4
 -1.48819 0.26866 -0.98284
@@ -4827,7 +4827,7 @@ kids 0
 OBJECT poly
 name "VK_9"
 data 8
-VK_9.003
+VK_9.000
 crease 179.0
 numvert 4
 -1.47673 0.26864 -0.99667
@@ -4846,7 +4846,7 @@ kids 0
 OBJECT poly
 name "VK_A"
 data 8
-VK_A.003
+VK_A.000
 crease 179.0
 numvert 4
 -1.48587 0.31505 -1.02767
@@ -4865,7 +4865,7 @@ kids 0
 OBJECT poly
 name "VK_B"
 data 8
-VK_B.003
+VK_B.000
 crease 179.0
 numvert 4
 -1.47441 0.31503 -1.0415
@@ -4884,7 +4884,7 @@ kids 0
 OBJECT poly
 name "VK_BKSP"
 data 11
-VK_BKSP.003
+VK_BKSP.000
 crease 179.0
 numvert 4
 -1.41425 0.257 -1.06161
@@ -4903,7 +4903,7 @@ kids 0
 OBJECT poly
 name "VK_C"
 data 8
-VK_C.003
+VK_C.000
 crease 179.0
 numvert 4
 -1.46295 0.31502 -1.05533
@@ -4922,7 +4922,7 @@ kids 0
 OBJECT poly
 name "VK_CLEAR"
 data 12
-VK_CLEAR.003
+VK_CLEAR.000
 crease 179.0
 numvert 4
 -1.43719 0.25703 -1.03392
@@ -4941,7 +4941,7 @@ kids 0
 OBJECT poly
 name "VK_D"
 data 8
-VK_D.003
+VK_D.000
 crease 179.0
 numvert 4
 -1.4515 0.31501 -1.06917
@@ -4960,7 +4960,7 @@ kids 0
 OBJECT poly
 name "VK_DASH"
 data 11
-VK_DASH.003
+VK_DASH.000
 crease 179.0
 numvert 4
 -1.4716 0.25708 -0.99241
@@ -4979,7 +4979,7 @@ kids 0
 OBJECT poly
 name "VK_DOT"
 data 10
-VK_DOT.003
+VK_DOT.000
 crease 179.0
 numvert 4
 -1.49453 0.25712 -0.96473
@@ -4998,7 +4998,7 @@ kids 0
 OBJECT poly
 name "VK_E"
 data 8
-VK_E.003
+VK_E.000
 crease 179.0
 numvert 4
 -1.44001 0.31498 -1.08303
@@ -5017,7 +5017,7 @@ kids 0
 OBJECT poly
 name "VK_F"
 data 8
-VK_F.003
+VK_F.000
 crease 179.0
 numvert 4
 -1.48072 0.30345 -1.02338
@@ -5036,7 +5036,7 @@ kids 0
 OBJECT poly
 name "VK_G"
 data 8
-VK_G.003
+VK_G.000
 crease 179.0
 numvert 4
 -1.46926 0.30342 -1.03721
@@ -5055,7 +5055,7 @@ kids 0
 OBJECT poly
 name "VK_H"
 data 8
-VK_H.003
+VK_H.000
 crease 179.0
 numvert 4
 -1.45779 0.30341 -1.05105
@@ -5074,7 +5074,7 @@ kids 0
 OBJECT poly
 name "VK_I"
 data 8
-VK_I.003
+VK_I.000
 crease 179.0
 numvert 4
 -1.44634 0.30339 -1.06488
@@ -5093,7 +5093,7 @@ kids 0
 OBJECT poly
 name "VK_J"
 data 8
-VK_J.003
+VK_J.000
 crease 179.0
 numvert 4
 -1.43485 0.30337 -1.07874
@@ -5112,7 +5112,7 @@ kids 0
 OBJECT poly
 name "VK_K"
 data 8
-VK_K.003
+VK_K.000
 crease 179.0
 numvert 4
 -1.47557 0.29186 -1.0191
@@ -5131,7 +5131,7 @@ kids 0
 OBJECT poly
 name "VK_L"
 data 8
-VK_L.003
+VK_L.000
 crease 179.0
 numvert 4
 -1.46411 0.29183 -1.03294
@@ -5150,7 +5150,7 @@ kids 0
 OBJECT poly
 name "VK_M"
 data 8
-VK_M.003
+VK_M.000
 crease 179.0
 numvert 4
 -1.45265 0.29182 -1.04677
@@ -5169,7 +5169,7 @@ kids 0
 OBJECT poly
 name "VK_N"
 data 8
-VK_N.003
+VK_N.000
 crease 179.0
 numvert 4
 -1.44119 0.29181 -1.0606
@@ -5188,7 +5188,7 @@ kids 0
 OBJECT poly
 name "VK_O"
 data 8
-VK_O.003
+VK_O.000
 crease 179.0
 numvert 4
 -1.4297 0.29179 -1.07446
@@ -5207,7 +5207,7 @@ kids 0
 OBJECT poly
 name "VK_P"
 data 8
-VK_P.003
+VK_P.000
 crease 179.0
 numvert 4
 -1.4704 0.28023 -1.01481
@@ -5226,7 +5226,7 @@ kids 0
 OBJECT poly
 name "VK_Q"
 data 8
-VK_Q.003
+VK_Q.000
 crease 179.0
 numvert 4
 -1.45894 0.28021 -1.02865
@@ -5245,7 +5245,7 @@ kids 0
 OBJECT poly
 name "VK_R"
 data 8
-VK_R.003
+VK_R.000
 crease 179.0
 numvert 4
 -1.44748 0.28019 -1.04247
@@ -5264,7 +5264,7 @@ kids 0
 OBJECT poly
 name "VK_S"
 data 8
-VK_S.003
+VK_S.000
 crease 179.0
 numvert 4
 -1.43603 0.28018 -1.0563
@@ -5283,7 +5283,7 @@ kids 0
 OBJECT poly
 name "VK_SHIFT"
 data 12
-VK_SHIFT.003
+VK_SHIFT.000
 crease 179.0
 numvert 4
 -1.50292 0.31508 -1.0071
@@ -5302,7 +5302,7 @@ kids 0
 OBJECT poly
 name "VK_SLASH"
 data 12
-VK_SLASH.003
+VK_SLASH.000
 crease 179.0
 numvert 4
 -1.42573 0.25701 -1.04775
@@ -5321,7 +5321,7 @@ kids 0
 OBJECT poly
 name "VK_SPACE"
 data 12
-VK_SPACE.003
+VK_SPACE.000
 crease 179.0
 numvert 4
 -1.44865 0.25705 -1.02009
@@ -5340,7 +5340,7 @@ kids 0
 OBJECT poly
 name "VK_SYMB"
 data 11
-VK_SYMB.003
+VK_SYMB.000
 crease 179.0
 numvert 4
 -1.52002 0.31511 -0.98646
@@ -5359,7 +5359,7 @@ kids 0
 OBJECT poly
 name "VK_T"
 data 8
-VK_T.003
+VK_T.000
 crease 179.0
 numvert 4
 -1.42454 0.28016 -1.07016
@@ -5378,7 +5378,7 @@ kids 0
 OBJECT poly
 name "VK_U"
 data 8
-VK_U.003
+VK_U.000
 crease 179.0
 numvert 4
 -1.46525 0.26861 -1.01052
@@ -5397,7 +5397,7 @@ kids 0
 OBJECT poly
 name "VK_V"
 data 8
-VK_V.003
+VK_V.000
 crease 179.0
 numvert 4
 -1.45379 0.2686 -1.02436
@@ -5416,7 +5416,7 @@ kids 0
 OBJECT poly
 name "VK_W"
 data 8
-VK_W.003
+VK_W.000
 crease 179.0
 numvert 4
 -1.44232 0.26859 -1.03818
@@ -5435,7 +5435,7 @@ kids 0
 OBJECT poly
 name "VK_X"
 data 8
-VK_X.003
+VK_X.000
 crease 179.0
 numvert 4
 -1.43086 0.26856 -1.05201
@@ -5454,7 +5454,7 @@ kids 0
 OBJECT poly
 name "VK_Y"
 data 8
-VK_Y.003
+VK_Y.000
 crease 179.0
 numvert 4
 -1.41938 0.26855 -1.06588
@@ -5473,7 +5473,7 @@ kids 0
 OBJECT poly
 name "VK_Z"
 data 8
-VK_Z.003
+VK_Z.000
 crease 179.0
 numvert 4
 -1.46011 0.25706 -1.00625
@@ -5492,7 +5492,7 @@ kids 0
 OBJECT poly
 name "worldmap"
 data 12
-worldmap.003
+worldmap.000
 crease 45.0
 texture "world-map.jpg"
 texrep 1 1
@@ -5543,7 +5543,7 @@ kids 0
 OBJECT poly
 name "worldmap2"
 data 13
-worldmap2.003
+worldmap2.000
 crease 45.0
 texture "world-map.jpg"
 texrep 1 1

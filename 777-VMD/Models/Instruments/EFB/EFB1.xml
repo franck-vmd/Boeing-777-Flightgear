@@ -36,12 +36,12 @@
 
      <animation>
         <type>material</type>
-                <object-name>Display</object-name>
+        <object-name>Display</object-name>
 		<object-name>LED_ON</object-name>
 		<object-name>worldmap</object-name>
 		<object-name>airportmarker</object-name>
 		<object-name>Chart</object-name>
-                <object-name>text</object-name>
+        <object-name>text</object-name>
                 <condition>
 		<greater-than>
 			<property>systems/electrical/CPT-FLT-INST</property>
