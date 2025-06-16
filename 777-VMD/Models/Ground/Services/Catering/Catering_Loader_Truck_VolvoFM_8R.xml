@@ -34,12 +34,6 @@
 		<texture>complet.png</texture>
                 <object-name>bobcat</object-name>
        </animation>
-
-       <animation>
-		<type>material</type>
-		<texture>ombreCat.png</texture>
-                <object-name>ombreCat</object-name>
-       </animation>
 	
 	
 	<effect>
@@ -66,8 +60,7 @@
 	<animation>
 		<type>select</type>
 		<object>cater_bridge1</object>
-                <object>bobcat</object>
-                <object>ombreCat</object>
+        <object>bobcat</object>
 		<object>cater_truck1</object>
 		<object>gourmet_cargo1</object>
 		<object>gourmet_railing1</object>
@@ -122,7 +115,7 @@
 	<animation>
 		<type>translate</type>
 		<object>cater_bridge1</object>
-                <object>bobcat</object>
+        <object>bobcat</object>
 		<object>cater_truck1</object>
 		<object>gourmet_cargo1</object>
 		<object>gourmet_railing1</object>
@@ -142,7 +135,7 @@
 	<animation>
 		<type>translate</type>
 		<object-name>cater_bridge1</object-name>
-                <object-name>bobcat</object-name>
+        <object-name>bobcat</object-name>
 		<property>services/catering/position2</property>
 		<interpolation>
 			<entry>
@@ -248,7 +241,7 @@
 <animation>
 	<type>translate</type>
 	<object>cater_bridge1</object>
-        <object>bobcat</object>
+    <object>bobcat</object>
 	<object>cater_truck1</object>
 	<object>gourmet_cargo1</object>
 	<object>gourmet_railing1</object>

@@ -9718,18 +9718,6 @@ Franck.VMD
      </offsets>
 </model>
 
-<!--Jetways-->
-
-<model>
-    <path>Aircraft/777-VMD/Models/Ground/Operations/Jetways/Jetway1.xml</path>
-    <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>1</value>
-        </less-than>
-    </condition>
-</model>
-
 <!--Stairs-->
 
 <model>
