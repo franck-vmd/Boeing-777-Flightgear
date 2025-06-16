@@ -234,6 +234,10 @@ Franck.VMD
             <command>nasal</command>
             <script>cdu.key('LSK5L');</script>
         </binding>
+        <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[92]</property>
+            </binding>
     </action>
 </animation>
 
@@ -469,33 +473,6 @@ Franck.VMD
         </binding>
     </action>
 </animation>
-
-<animation>
-    <type>translate</type>
-    <object-name>Power.ledact</object-name>
-    <property>/autopilot/route-manager/active</property>
-	<offset>0.002</offset>
-	<factor>0.002</factor>
-	<axis>
-	   <x>1</x>
-	   <y>0</y>
-	   <z>0</z>
-	  </axis>
-</animation>
-
-<animation>
-    <type>translate</type>
-    <object-name>Power.ledof</object-name>
-                <property>systems/electrical/CPT-FLT-INST</property>
-	<offset>0.002</offset>
-	<factor>-0.002</factor>
-	<axis>
-	   <x>1</x>
-	   <y>0</y>
-	   <z>0</z>
-	  </axis>
-</animation>
-
 
 <animation>
 	<type>pick</type>

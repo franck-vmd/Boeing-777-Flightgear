@@ -2,36 +2,7 @@
 
 <PropertyList>
 
-    <path>cargo_ramp_2.ac</path> 
-    
-       <animation>
-		<type>material</type>
-		<texture>container_trailer.png</texture>
-                <object-name>cargo1</object-name>
-                <object-name>cargo.001</object-name>
-                <object-name>croix1</object-name>
-                <object-name>croix2</object-name>
-                <object-name>plateau</object-name>
-                <object-name>clo</object-name>
-                <object-name>clor1</object-name>
-                <object-name>clor2</object-name>
-                <object-name>chaine1</object-name>
-                <object-name>chaine2</object-name>
-                <object-name>chaine3</object-name>
-                <object-name>chaine4</object-name>
-       </animation> 
-
-        <animation>
-		<type>material</type>
-		<texture>container_AKH.png</texture>
-                <object-name>caisse</object-name>
-       </animation> 
-
-       <animation>
-		<type>material</type>
-		<texture>complet.png</texture>
-                <object-name>clop</object-name>
-       </animation>          
+    <path>cargo_ramp_2.ac</path>            
 
     <animation>
         <type>pick</type>

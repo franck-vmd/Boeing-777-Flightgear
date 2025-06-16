@@ -15,23 +15,11 @@
                 <object-name>clo</object-name>
                 <object-name>clor1</object-name>
                 <object-name>clor2</object-name>
-                <object-name>chaine1</object-name>
-                <object-name>chaine2</object-name>
-                <object-name>chaine3</object-name>
-                <object-name>chaine4</object-name>
-       </animation> 
-
-        <animation>
-		<type>material</type>
-		<texture>container_AKH.png</texture>
-                <object-name>caisse</object-name>
-       </animation> 
-
-       <animation>
-		<type>material</type>
-		<texture>complet.png</texture>
-                <object-name>clop</object-name>
-       </animation>          
+                <object-name>chaine10</object-name>
+                <object-name>chaine20</object-name>
+                <object-name>chaine30</object-name>
+                <object-name>chaine40</object-name>
+       </animation>            
 
     <animation>
         <type>pick</type>

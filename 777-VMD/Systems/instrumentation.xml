@@ -136,6 +136,7 @@ This file selects the instrumentation modules that should be available.
         <bus-volts type="double">8.0</bus-volts>
         <encoder-path type="string">/instrumentation/altimeter</encoder-path>
         <kt70-compatibility type="bool">0</kt70-compatibility>
+        <mode-c-altitude>/instrumentation/encoder/mode-c-alt-ft</mode-c-altitude>
     </transponder>
 
     <encoder>

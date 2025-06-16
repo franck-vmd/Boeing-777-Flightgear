@@ -1492,7 +1492,9 @@ Franck.VMD
         <object-name>Lettering_CS.TPH</object-name>
         <object-name>ruddertrim.needle</object-name>
         <object-name>StabTrim_L_Mark</object-name>
+        <object-name>StabTrim_R_Mark</object-name>
         <object-name>StabTrim_L.plane</object-name>
+        <object-name>StabTrim_R.plane</object-name>
         <object-name>Audio.pnl.007</object-name>
         <object-name>DOOR_Placard.001</object-name>
         <object-name>DOOR_Switch.001</object-name>

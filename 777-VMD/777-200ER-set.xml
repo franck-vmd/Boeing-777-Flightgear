@@ -396,7 +396,6 @@
             <file>Aircraft/777-VMD/Nasal/shake.nas</file>
         </b777>
         <keyboardFixes>
-            <file>Aircraft/777-VMD/Nasal/keyboard.nas</file>
             <file>Aircraft/777-VMD/Nasal/efb/keyboardHooks.nas</file>
         </keyboardFixes>
 

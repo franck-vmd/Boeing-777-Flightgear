@@ -7196,13 +7196,13 @@ Franck.VMD
 	    </binding>
 	    <binding>
 		<command>property-assign</command>
-		<property>controls/pressurization/valve-switch[0]</property>
+		<property>controls/pressurization/valve-switch</property>
 		<value>1</value>
 	    </binding>
 	    <mod-up>
 		<binding>
 		    <command>property-assign</command>
-		    <property>controls/pressurization/valve-switch[0]</property>
+		    <property>controls/pressurization/valve-switch</property>
 		    <value>0</value>
 		</binding>
 	    </mod-up>
@@ -7216,13 +7216,13 @@ Franck.VMD
 	    </binding>
 	    <binding>
 		<command>property-assign</command>
-		<property>controls/pressurization/valve-switch[0]</property>
+		<property>controls/pressurization/valve-switch</property>
 		<value>-1</value>
 	    </binding>
 	    <mod-up>
 		<binding>
 		    <command>property-assign</command>
-		    <property>controls/pressurization/valve-switch[0]</property>
+		    <property>controls/pressurization/valve-switch</property>
 		    <value>0</value>
 		</binding>
 	    </mod-up>
@@ -7241,13 +7241,13 @@ Franck.VMD
 	    </binding>
 	    <binding>
 		<command>property-assign</command>
-		<property>controls/pressurization/valve-switch[1]</property>
+		<property>controls/pressurization/valve-switch</property>
 		<value>1</value>
 	    </binding>
 	    <mod-up>
 		<binding>
 		    <command>property-assign</command>
-		    <property>controls/pressurization/valve-switch[1]</property>
+		    <property>controls/pressurization/valve-switch</property>
 		    <value>0</value>
 		</binding>
 	    </mod-up>
@@ -7261,13 +7261,13 @@ Franck.VMD
 	    </binding>
 	    <binding>
 		<command>property-assign</command>
-		<property>controls/pressurization/valve-switch[1]</property>
+		<property>controls/pressurization/valve-switch</property>
 		<value>-1</value>
 	    </binding>
 	    <mod-up>
 		<binding>
 		    <command>property-assign</command>
-		    <property>controls/pressurization/valve-switch[1]</property>
+		    <property>controls/pressurization/valve-switch</property>
 		    <value>0</value>
 		</binding>
 	    </mod-up>
@@ -7277,8 +7277,8 @@ Franck.VMD
      <animation>
         <type>rotate</type>
         <object-name>OutFlow_FWD.toggle</object-name>
-        <property>controls/pressurization/valve-switch[0]</property>
-        <factor>15</factor>
+        <property>controls/pressurization/valve-switch</property>
+        <factor>-15</factor>
         <center>
             <x-m>0.0121</x-m>
             <y-m>0.2401</y-m>
@@ -7294,8 +7294,8 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>OutFlow_AFT.toggle</object-name>
-        <property>controls/pressurization/valve-switch[1]</property>
-        <factor>15</factor>
+        <property>controls/pressurization/valve-switch</property>
+        <factor>-15</factor>
         <center>
             <x-m>0.0121</x-m>
             <y-m>0.2949</y-m>

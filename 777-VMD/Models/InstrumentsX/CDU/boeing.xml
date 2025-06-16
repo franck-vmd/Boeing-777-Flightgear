@@ -34,6 +34,17 @@ Franck.VMD
 	  </axis>
 </animation>
 
+<animation>
+        <type>select</type>
+        <object-name>Power.ledact</object-name>
+        <condition>
+                <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        </condition>
+    </animation>
+
 <model>
     <path>display-text-value.xml</path>
     <offsets>

@@ -57,12 +57,46 @@ Syd Adams
             <z>0</z>
         </axis>
     </animation>
+ 
+    <animation>
+        <type>rotate</type>
+        <object-name>LH_ind1.001</object-name>
+        <property>engines/engine[0]/rpm</property>
+        <factor>1.755</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
     <animation>
         <type>rotate</type>
         <object-name>LH_ind2</object-name>
         <property>engines/engine[0]/rpm</property>
-        <factor>1.33</factor>
+        <factor>1.425</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>LH_ind2.001</object-name>
+        <property>engines/engine[0]/rpm</property>
+        <factor>1.095</factor>
         <center>
             <x-m>0</x-m>
             <y-m>-0.022</y-m>
@@ -79,7 +113,41 @@ Syd Adams
         <type>rotate</type>
         <object-name>LH_ind3</object-name>
         <property>engines/engine[0]/rpm</property>
-        <factor>0.66</factor>
+        <factor>0.765</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>LH_ind3.001</object-name>
+        <property>engines/engine[0]/rpm</property>
+        <factor>0.435</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>LH_ind4</object-name>
+        <property>engines/engine[0]/rpm</property>
+        <factor>0.105</factor>
         <center>
             <x-m>0</x-m>
             <y-m>-0.022</y-m>
@@ -95,8 +163,25 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind1</object-name>
-        <property>engines/engine[1]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <factor>2.085</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+ 
+    <animation>
+        <type>rotate</type>
+        <object-name>RH_ind1.001</object-name>
+        <property>engines/engine[0]/rpm</property>
+        <factor>1.755</factor>
         <center>
             <x-m>0</x-m>
             <y-m>0.022</y-m>
@@ -112,8 +197,25 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind2</object-name>
-        <property>engines/engine[1]/rpm</property>
-        <factor>1.33</factor>
+        <property>engines/engine[0]/rpm</property>
+        <factor>1.425</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>RH_ind2.001</object-name>
+        <property>engines/engine[0]/rpm</property>
+        <factor>1.095</factor>
         <center>
             <x-m>0</x-m>
             <y-m>0.022</y-m>
@@ -129,8 +231,42 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind3</object-name>
-        <property>engines/engine[1]/rpm</property>
-        <factor>0.66</factor>
+        <property>engines/engine[0]/rpm</property>
+        <factor>0.765</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>RH_ind3.001</object-name>
+        <property>engines/engine[0]/rpm</property>
+        <factor>0.435</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.022</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>RH_ind4</object-name>
+        <property>engines/engine[0]/rpm</property>
+        <factor>0.105</factor>
         <center>
             <x-m>0</x-m>
             <y-m>0.022</y-m>

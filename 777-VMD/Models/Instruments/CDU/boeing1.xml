@@ -475,33 +475,6 @@ Franck.VMD
 </animation>
 
 <animation>
-    <type>translate</type>
-    <object-name>Power.ledact</object-name>
-    <property>/autopilot/route-manager/active</property>
-	<offset>0.002</offset>
-	<factor>0.002</factor>
-	<axis>
-	   <x>1</x>
-	   <y>0</y>
-	   <z>0</z>
-	  </axis>
-</animation>
-
-<animation>
-    <type>translate</type>
-    <object-name>Power.ledof</object-name>
-                <property>systems/electrical/CPT-FLT-INST</property>
-	<offset>0.002</offset>
-	<factor>-0.002</factor>
-	<axis>
-	   <x>1</x>
-	   <y>0</y>
-	   <z>0</z>
-	  </axis>
-</animation>
-
-
-<animation>
 	<type>pick</type>
 	<object-name>Btn.prev-page</object-name>
 	<action>

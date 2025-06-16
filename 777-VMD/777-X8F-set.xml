@@ -384,7 +384,6 @@
             <file>Aircraft/777-VMD/Nasal/shake.nas</file>
         </b777>
         <keyboardFixes>
-            <file>Aircraft/777-VMD/Nasal/keyboard.nas</file>
             <file>Aircraft/777-VMD/Nasal/efb/keyboardHooks.nas</file>
         </keyboardFixes>
 
@@ -396,9 +395,6 @@
         </dialogs>
         <cdu>
             <file>Models/InstrumentsX/CDU/boeing.nas</file>
-            <file>Models/InstrumentsX/CDU/library.nas</file>
-            <file>Models/InstrumentsX/CDU/functions.nas</file>
-            <file>Models/InstrumentsX/CDU/LEGS.nas</file>
         </cdu>
         <datalink>
             <file>Models/InstrumentsX/CDU/datalink.nas</file>

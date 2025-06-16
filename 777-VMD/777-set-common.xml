@@ -1178,8 +1178,9 @@ Service Ceiling: 43,100ft
                 <path>Systems/777-sound.xml</path>
             </autopilot>
             <autopilot>
-		        <path>Systems/pressurization.xml</path>
-	        </autopilot>
+				<name>Cabin Pressurization</name>
+				<path>Aircraft/777-VMD/Systems/pressurization.xml</path>
+			</autopilot>
             <wingflexer include="Systems/wingflexer-params.xml"/>
             <autopilot>
                 <name>wing flexer property rule</name>

@@ -34,12 +34,6 @@
 		<texture>complet.png</texture>
                 <object-name>bobcat</object-name>
        </animation>
-
-       <animation>
-		<type>material</type>
-		<texture>ombreCat.png</texture>
-                <object-name>ombreCat</object-name>
-       </animation>
 	
 	
 	<effect>
@@ -67,7 +61,6 @@
 		<type>select</type>
 		<object>cater_bridge1</object>
                 <object>bobcat</object>
-                <object>ombreCat</object>
 		<object>cater_truck1</object>
 		<object>gourmet_cargo1</object>
 		<object>gourmet_railing1</object>
