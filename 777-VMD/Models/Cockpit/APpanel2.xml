@@ -2137,8 +2137,6 @@ Franck.VMD
     <animation>
         <type>pick</type>
         <object-name>ALT.knob</object-name>
-        <object-name>ALT.inc</object-name>
-        <object-name>ALT.dec</object-name>
         <action>
             <button>4</button> <!--  scroll down -->
             <repeatable>false</repeatable>
@@ -2180,8 +2178,6 @@ Franck.VMD
    <animation>
         <type>pick</type>
         <object-name>ALT.knob</object-name>
-        <object-name>ALT.inc</object-name>
-        <object-name>ALT.dec</object-name>
         <action>
             <button>3</button> <!--  scroll up -->
             <repeatable>false</repeatable>
@@ -2210,90 +2206,6 @@ Franck.VMD
                 <command>property-adjust</command>
                 <property>autopilot/settings/counter-set-altitude-ft</property>
                 <step>1000</step>
-                <min>0</min>
-                <max>50000</max>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(5);</script>
-            </binding>
-        </action>
-    </animation>
-
-   <animation>
-        <type>pick</type>
-        <object-name>ALT.inc</object-name>
-        <object-name>ALT.dec</object-name>
-        <action>
-            <button>0</button> <!--  left button -->
-            <repeatable>true</repeatable>
-            <binding>
-                <condition>
-                    <and>
-                        <property>systems/electrical/outputs/avionics</property>
-                        <not>
-                            <property>instrumentation/afds/inputs/alt-knob</property>
-                        </not>
-                    </and>
-                </condition>
-                <command>property-adjust</command>
-                <property>autopilot/settings/counter-set-altitude-ft</property>
-                <step>100</step>
-                <min>0</min>
-                <max>50000</max>
-            </binding>
-            <binding>
-                <condition>
-                    <and>
-                        <property>systems/electrical/outputs/avionics</property>
-                        <property>instrumentation/afds/inputs/alt-knob</property>
-                    </and>
-                </condition>
-                <command>property-adjust</command>
-                <property>autopilot/settings/counter-set-altitude-ft</property>
-                <step>1000</step>
-                <min>0</min>
-                <max>50000</max>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>controls.click(5);</script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>ALT.inc</object-name>
-        <object-name>ALT.dec</object-name>
-        <action>
-            <button>1</button> <!--  center button  -->
-            <repeatable>true</repeatable>
-            <binding>
-                <condition>
-                    <and>
-                        <property>systems/electrical/outputs/avionics</property>
-                        <not>
-                            <property>instrumentation/afds/inputs/alt-knob</property>
-                        </not>
-                    </and>
-                </condition>
-                <command>property-adjust</command>
-                <property>autopilot/settings/counter-set-altitude-ft</property>
-                <step>-100</step>
-                <min>0</min>
-                <max>50000</max>
-            </binding>
-            <binding>
-                <condition>
-                    <and>
-                        <property>systems/electrical/outputs/avionics</property>
-                        <property>instrumentation/afds/inputs/alt-knob</property>
-                    </and>
-                </condition>
-                <command>property-adjust</command>
-                <property>autopilot/settings/counter-set-altitude-ft</property>
-                <step>-1000</step>
                 <min>0</min>
                 <max>50000</max>
             </binding>

@@ -1,6 +1,5 @@
 AC3Db
 MATERIAL "lights.001" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 2.000 2.000 2.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
-MATERIAL "lights" rgb 1.000 1.000 1.000  amb 1.000 1.000 1.000  emis 2.000 2.000 2.000  spec 0.000 0.000 0.000  shi 0 trans 0.000
 MATERIAL "VtxPaint" rgb 0.800 0.800 0.800  amb 0.500 0.500 0.500  emis 0.000 0.000 0.000  spec 1.000 1.000 1.000  shi 31 trans 0.000
 OBJECT world
 name "Blender_exporter_v2.26__UEICAS.ac"
@@ -96,7 +95,7 @@ name "Gr-on.001"
 data 9
 Gr-on.001
 crease 45.0
-texture "Main_Displays.png"
+texture "ueicas.png"
 texrep 1 1
 numvert 6
 0.00058 -0.01751 -0.04741
@@ -107,19 +106,19 @@ numvert 6
 0.00058 0.00131 -0.05847
 numsurf 2
 SURF 0X0
-mat 1
+mat 0
 refs 4
-0 0.522018 0.430931
-1 0.529087 0.430931
-4 0.53714 0.486237
-3 0.513965 0.486237
+0 0.679479 0.611474
+1 0.686548 0.611474
+4 0.694601 0.66678
+3 0.671426 0.66678
 SURF 0X0
-mat 1
+mat 0
 refs 4
-5 0.53714 0.533879
-2 0.513965 0.533879
-3 0.513965 0.486237
-4 0.53714 0.486237
+5 0.694601 0.714422
+2 0.671426 0.714422
+3 0.671426 0.66678
+4 0.694601 0.66678
 kids 0
 OBJECT poly
 name "Plane.012"
@@ -133,7 +132,7 @@ numvert 4
 0 -0.08056 -0.0556
 numsurf 1
 SURF 0X20
-mat 2
+mat 1
 refs 4
 0 0 0
 3 0 0

@@ -645,7 +645,6 @@ Franck.VMD
     <animation>
         <type>knob</type>
         <object-name>Tun1.knob</object-name>
-        <object-name>Tun1.knob.001</object-name>
         <property>instrumentation/rmu/unit[2]/standby-mhz</property>
         <center>
             <x-m>0.007</x-m>
@@ -730,7 +729,6 @@ Franck.VMD
     <animation>
         <type>knob</type>
         <object-name>Tun2.knob</object-name>
-        <object-name>Tun2.knob.001</object-name>
         <property>instrumentation/rmu/unit[2]/standby-mhz</property>
         <center>
             <x-m>0.007</x-m>

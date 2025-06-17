@@ -340,11 +340,6 @@ Franck.VMD
     </model>
 
     <model>
-        <name>panel2</name>
-        <path>Aircraft/777-VMD/Models/Cockpit/panel1.xml</path>
-    </model>
-
-    <model>
         <name>plate4</name>
         <path>Aircraft/777-VMD/Models/Cockpit/plate4.xml</path>
         <offsets>
