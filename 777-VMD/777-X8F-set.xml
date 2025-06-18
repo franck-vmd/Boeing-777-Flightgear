@@ -2,16 +2,14 @@
 
     <sim n="0">
         <description>Boeing 777-X8 Freighter</description>
-        <aero>777-X8F</aero>
-        <max-payload type="double">408060</max-payload>
-        <max-landing-weight type="double">554000</max-landing-weight>
-        <max-takeoff-weight type="double">775000</max-takeoff-weight>
+        <aero>777-200F</aero>
+        <max-payload type="double">448500</max-payload>
+        <max-landing-weight type="double">575000</max-landing-weight>
+        <max-takeoff-weight type="double">766800</max-takeoff-weight>
         <startup>
             <splash-texture>Aircraft/777-VMD/gui/Previews/splash-X8F.png</splash-texture>
-        </startup>
-        
+        </startup>        
         <variant-of>777-X8</variant-of>
-
         <model n="0">
             <path>Aircraft/777-VMD/Models/777-X8F.xml</path>
 
@@ -38,7 +36,6 @@
                 </default_exit>
             </map>
         </model>
-        
         <view n="0">
             <config n="0">
                 <z-offset-m type="double">-25.65</z-offset-m>
@@ -297,7 +294,6 @@
             <max-lb type="double">230000</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
-        <aircraft-operator>AFR</aircraft-operator>
     </sim>
 
     <consumables n="0">
@@ -422,23 +418,6 @@
    <file>Aircraft/777-VMD/Systems/walk-views1 X8.nas</file>
   </WalkViews1>
     </nasal>
-    
-    <aircraft>
-     <jetway-pos>
-      <x-tra>-1.8</x-tra>
-      <y-rot>3.3</y-rot>
-      <z-rot>18.3</z-rot>
-      <hood-rot>-6</hood-rot>
-      <!--z-entrance-rotation>26</z-entrance-rotation-->
-     </jetway-pos>
-     <jetway2-pos>
-      <x-tra>2.8</x-tra>
-      <y-rot>8.0</y-rot>
-      <z-rot>48</z-rot>
-      <hood-rot>-5</hood-rot>
-      <!--z-entrance-rotation>49</z-entrance-rotation-->
-     </jetway2-pos>
-    </aircraft>
     
     <limits>
         <mass-and-balance>

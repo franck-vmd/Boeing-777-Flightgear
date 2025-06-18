@@ -387,12 +387,6 @@ Franck.VMD
 
     <effect>
         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect1</inherits-from>
-        <object-name>RFdoor.001</object-name>
-        <object-name>RFdoor.003</object-name>
-        <object-name>RRdoor.001</object-name>
-        <object-name>LFdoor.001</object-name>
-        <object-name>LFdoor.003</object-name>
-        <object-name>LRdoor.001</object-name>
         <object-name>Wings.003</object-name>
     </effect>
 
@@ -644,7 +638,6 @@ Franck.VMD
         <object-name>Run.spotR</object-name>
         <object-name>Run.spotL</object-name>
         <object-name>verre</object-name>
-        <object-name>sortiewclumiere</object-name>
         <object-name>LHLND.spot</object-name>
         <object-name>RHLND.spot</object-name>
         <object-name>CTRLND.spot</object-name>
@@ -668,10 +661,7 @@ Franck.VMD
     <effect>
         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
         <object-name>portecloison1</object-name>
-        <object-name>portecloison2</object-name>
         <object-name>portecloison3</object-name>
-        <object-name>portecloison4</object-name>
-        <object-name>portecloison5</object-name>
         <object-name>cloison</object-name>
         <object-name>mur</object-name>
         <object-name>Fuselage.003</object-name>
@@ -1509,51 +1499,6 @@ Franck.VMD
             <z>0</z>
         </axis>
 	</animation>
-	
-	<!--       plancher éclairage EXIT      -->
-	
-	<animation>
-        <type>material</type>
-        <object-name>plancher eclairage</object-name>
-        <condition>
-        <and>
-             <property>controls/electric/battery-switch</property>
-             <property>aaa/oh/PB59/IND1.toggle</property>
-        </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.0</blue>
-        </emission>
-    </animation>
-    
-    <animation>
-        <type>material</type>
-        <object-name>sortiewclumiere</object-name>
-        <condition>
-        <and>
-             <property>controls/electric/battery-switch</property>
-             <property>aaa/oh/PB59/IND1.toggle</property>
-        </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.8</blue>
-        </emission>
-    </animation>
-    
-    <animation>
-        <type>select</type>
-        <object-name>sortiewclumiere</object-name>
-        <condition>
-        <and>
-             <property>controls/electric/battery-switch</property>
-             <property>aaa/oh/PB59/IND1.toggle</property>
-        </and>
-        </condition>
-    </animation>
     
     <animation>
         <type>select</type>
@@ -1826,269 +1771,6 @@ Franck.VMD
     </axis>
     </animation>
 
-    <animation>
-        <type>rotate</type>
-        <object-name>LFdoor.001</object-name>
-        <property>gear/gear[0]/position-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.2</ind>
-                <dep>90</dep>
-            </entry>
-            <entry>
-                <ind>0.8</ind>
-                <dep>90</dep>
-            </entry>
-            <entry>
-                <ind>1.0</ind>
-                <dep>0</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>-21.0748</x-m>
-            <y-m>-0.562609</y-m>
-            <z-m>-2.56552</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0.04</y>
-            <z>0.2</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>LFdoor.002</object-name>
-        <property>gear/gear[0]/position-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.2</ind>
-                <dep>90</dep>
-            </entry>
-            <entry>
-                <ind>0.8</ind>
-                <dep>90</dep>
-            </entry>
-            <entry>
-                <ind>1.0</ind>
-                <dep>0</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>-22.174</x-m>
-            <y-m>-0.560435</y-m>
-            <z-m>-2.31998</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0.04</y>
-            <z>0.25</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>LFdoor.003</object-name>
-        <property>gear/gear[0]/position-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.2</ind>
-                <dep>90</dep>
-            </entry>
-            <entry>
-                <ind>0.8</ind>
-                <dep>90</dep>
-            </entry>
-            <entry>
-                <ind>1.0</ind>
-                <dep>0</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>-22.174</x-m>
-            <y-m>-0.560435</y-m>
-            <z-m>-2.31998</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0.04</y>
-            <z>0.25</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>RFdoor.001</object-name>
-        <property>gear/gear[0]/position-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.2</ind>
-                <dep>-90</dep>
-            </entry>
-            <entry>
-                <ind>0.8</ind>
-                <dep>-90</dep>
-            </entry>
-            <entry>
-                <ind>1.0</ind>
-                <dep>0</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>-21.0748</x-m>
-            <y-m>0.562609</y-m>
-            <z-m>-2.56552</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>-0.04</y>
-            <z>0.2</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>RFdoor.002</object-name>
-        <property>gear/gear[0]/position-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.2</ind>
-                <dep>-90</dep>
-            </entry>
-            <entry>
-                <ind>0.8</ind>
-                <dep>-90</dep>
-            </entry>
-            <entry>
-                <ind>1.0</ind>
-                <dep>0</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>-22.174</x-m>
-            <y-m>0.560706</y-m>
-            <z-m>-2.31898</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>-0.04</y>
-            <z>0.25</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>RFdoor.003</object-name>
-        <property>gear/gear[0]/position-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.2</ind>
-                <dep>-90</dep>
-            </entry>
-            <entry>
-                <ind>0.8</ind>
-                <dep>-90</dep>
-            </entry>
-            <entry>
-                <ind>1.0</ind>
-                <dep>0</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>-22.174</x-m>
-            <y-m>0.560706</y-m>
-            <z-m>-2.31898</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>-0.04</y>
-            <z>0.25</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>LRdoor.001</object-name>
-        <property>gear/gear[0]/position-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.2</ind>
-                <dep>-90</dep>
-            </entry>
-            <entry>
-                <ind>1.0</ind>
-                <dep>-90</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>-19.718</x-m>
-            <y-m>-0.562617</y-m>
-            <z-m>-2.77977</z-m>
-        </center>
-        <axis>
-            <x>1</x>
-            <y>-0.040</y>
-            <z>-0.136</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>RRdoor.001</object-name>
-        <property>gear/gear[0]/position-norm</property>
-        <interpolation>
-            <entry>
-                <ind>0</ind>
-                <dep>0</dep>
-            </entry>
-            <entry>
-                <ind>0.2</ind>
-                <dep>90</dep>
-            </entry>
-            <entry>
-                <ind>1.0</ind>
-                <dep>90</dep>
-            </entry>
-        </interpolation>
-        <center>
-            <x-m>-19.718</x-m>
-            <y-m>0.562617</y-m>
-            <z-m>-2.77977</z-m>
-        </center>
-        <axis>
-            <x>1</x>
-            <y>0.040</y>
-            <z>-0.136</z>
-        </axis>
-    </animation>
 
   <!-- scissor front -->
 
@@ -3714,107 +3396,6 @@ Franck.VMD
                 <value>01</value>
             </less-than>
          </condition>
-	</animation>
-    
-    <!-- Door Pick Animations cabine -->
-	
-	<animation>
-		<name>c16</name>
-		<type>rotate</type>
-		<object-name>portecloison2</object-name>
-		<property>sim/multiplay/generic/float[33]</property>
-		<factor>90</factor>
-        <center>
-            <x-m>25.1472</x-m>
-            <y-m>-0.38410</y-m>
-            <z-m>0.44339</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>-1</z>
-		</axis>
-	</animation>
-
-    <animation>
-		<type>pick</type>
-		<object-name>portecloison2</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c16");
-				</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<name>c18</name>
-		<type>rotate</type>
-		<object-name>portecloison4</object-name>
-		<property>sim/multiplay/generic/float[35]</property>
-		<factor>90</factor>
-        <center>
-            <x-m>11.7853</x-m>
-            <y-m>-0.38410</y-m>
-            <z-m>0.44339</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>-1</z>
-		</axis>
-	</animation>
-
-    <animation>
-		<type>pick</type>
-		<object-name>portecloison4</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c18");
-				</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<name>c19</name>
-		<type>rotate</type>
-		<object-name>portecloison5</object-name>
-		<property>sim/multiplay/generic/float[36]</property>
-		<factor>90</factor>
-        <center>
-            <x-m>-9.8882</x-m>
-            <y-m>-0.38410</y-m>
-            <z-m>0.44339</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-    <animation>
-		<type>pick</type>
-		<object-name>portecloison5</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c19");
-				</script>
-			</binding>
-		</action>
 	</animation>
 
     <!-- Door Pick Animations -->
@@ -5978,35 +5559,6 @@ Franck.VMD
         <y2-m>-12.4834</y2-m>
         <z2-m>0.083369</z2-m>
     </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>hinge1</object-name>
-        <property>surface-positions/flap-pos-norm</property>
-        <factor>20</factor>
-        <center>
-            <x-m>6.718</x-m>
-            <y-m>0</y-m>
-            <z-m>-2.155</z-m>
-        </center>
-        <axis>
-            <x>0.0</x>
-            <y>1.0</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>translate</type>
-        <object-name>Reversers</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
-        <factor>0.7</factor>
-        <axis>
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0</z>
-        </axis>
     </animation>
 
     <animation>

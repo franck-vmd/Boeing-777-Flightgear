@@ -35,23 +35,6 @@ Franck.VMD
 
     <animation>
         <type>rotate</type>
-        <object-name>Chrono.needle</object-name>
-        <property>instrumentation/clock/ET-sec</property>
-        <factor>6</factor>
-        <center>
-            <x-m>0.0</x-m>
-            <y-m>0</y-m>
-            <z-m>0.0</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
         <object-name>ET.switch</object-name>
         <property>instrumentation/clock/et-knob</property>
         <interpolation>

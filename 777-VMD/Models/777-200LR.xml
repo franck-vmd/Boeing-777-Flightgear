@@ -7258,18 +7258,6 @@ Franck.VMD
 
     <animation>
         <type>translate</type>
-        <object-name>Reversers</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
-        <factor>0.7</factor>
-        <axis>
-            <x>1.0</x>
-            <y>0.0</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>translate</type>
         <object-name>Reversers1</object-name>
         <object-name>Reversers1.002</object-name>
         <property>sim/multiplay/generic/float[6]</property>

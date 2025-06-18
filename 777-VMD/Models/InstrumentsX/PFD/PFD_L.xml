@@ -7,17 +7,6 @@ Franck.VMD
 
  <path>PFD_L.ac</path>
 
-     <animation>
-        <type>select</type>
-        <object-name>Power.off</object-name>
-        <condition>
-            <less-than>
-                <property>systems/electrical/outputs/efis</property>
-                <value>15</value>
-            </less-than>
-        </condition>
-    </animation>
-
     <animation>
 		<type>select</type>
                 <object-name>Hsi</object-name>
@@ -101,8 +90,6 @@ Franck.VMD
 		<type>select</type>
                 <object-name>AI</object-name>
                 <object-name>AI.001</object-name>
-                <object-name>FDroll_rembrandt</object-name>
-                <object-name>FDpitch_rembrandt</object-name>
                 <object-name>FDroll</object-name>
                 <object-name>FDpitch</object-name>
                 <object-name>Box-mode</object-name>
@@ -455,19 +442,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>FDroll_rembrandt</object-name>
-        <object-name>FDpitch_rembrandt</object-name>
-        <condition>
-            <property>sim/rendering/rembrandt/enabled</property>
-            <or>
-                <property>instrumentation/afds/inputs/FD</property>
-                <property>instrumentation/afds/settings/auto-pop-up</property>
-            </or>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
         <object-name>FDroll</object-name>
         <object-name>FDpitch</object-name>
         <condition>
@@ -482,7 +456,6 @@ Franck.VMD
      <animation>
         <type>translate</type>
         <object-name>FDpitch</object-name>
-        <object-name>FDpitch_rembrandt</object-name>
         <property>autopilot/fd/pitch-bar</property>
         <factor>0.0006</factor>
         <axis>
@@ -495,7 +468,6 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>FDroll</object-name>
-        <object-name>FDroll_rembrandt</object-name>
         <property>autopilot/fd/roll-bar</property>
         <factor>0.0002</factor>
         <axis>

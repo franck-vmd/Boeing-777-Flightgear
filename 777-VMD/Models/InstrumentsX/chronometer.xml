@@ -10,7 +10,6 @@ Franck.VMD
     <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>Plane.002</object-name>
-        <object-name>Lettering_CK</object-name>
     </effect>
 
         <animation>
@@ -41,27 +40,6 @@ Franck.VMD
         </emission>
     </animation>
 
-<animation>
-        <type>material</type>
-        <object-name>Lettering_CK</object-name>
-        <condition>
-             <greater-than>
-                <property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-             </greater-than>
-             <greater-than>
-                <property>/sim/time/sun-angle-rad</property>
-                <value>1.70</value>
-             </greater-than>
-        </condition>
-        <emission>
-            <red>0.2</red>
-            <green>0.8</green>
-            <blue>0.2</blue>
-            <factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
-        </emission>
-    </animation>
-
     <animation>
         <type>rotate</type>
         <object-name>Chrono.needle</object-name>
@@ -71,70 +49,6 @@ Franck.VMD
             <x-m>0.0</x-m>
             <y-m>0</y-m>
             <z-m>0.0</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>ET.switch</object-name>
-        <property>instrumentation/clock/et-knob</property>
-        <interpolation>
-            <entry><ind>-1</ind><dep>-144</dep></entry>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>35</dep></entry>
-        </interpolation>
-        <center>
-            <x-m>0</x-m>
-            <y-m>-0.032</y-m>
-            <z-m>-0.033</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>SET.switch</object-name>
-        <property>instrumentation/clock/set-knob</property>
-        <interpolation>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>30</dep></entry>
-            <entry><ind>2</ind><dep>60</dep></entry>
-            <entry><ind>3</ind><dep>90</dep></entry>
-        </interpolation>
-        <center>
-            <x-m>0</x-m>
-            <y-m>0.029</y-m>
-            <z-m>-0.033</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>rotate</type>
-        <object-name>UTC.switch</object-name>
-        <property>instrumentation/clock/time-knob</property>
-        <interpolation>
-            <entry><ind>-1</ind><dep>-135</dep></entry>
-            <entry><ind>0</ind><dep>0</dep></entry>
-            <entry><ind>1</ind><dep>35</dep></entry>
-        </interpolation>
-        <center>
-            <x-m>0</x-m>
-            <y-m>0.032</y-m>
-            <z-m>0.034</z-m>
         </center>
         <axis>
             <x>-1</x>
@@ -270,35 +184,5 @@ Franck.VMD
     </animation>
 
 <!--  Hotspots -->
-
-
-    <animation>
-        <type>pick</type>
-        <object-name>ET.switch</object-name>
-        <action>
-            <button>0</button>
-            <repeatable>false</repeatable>
-             <binding>
-                <command>property-toggle</command>
-                <property>instrumentation/clock/et-knob</property>
-            </binding>
-        </action>
-        <action>
-            <button>1</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-assign</command>
-                <property>instrumentation/clock/et-knob</property>
-                <value>-1</value>
-            </binding>
-            <mod-up>
-                <binding>
-                    <command>property-assign</command>
-                    <property>instrumentation/clock/et-knob</property>
-                    <value>0</value>
-                </binding>
-            </mod-up>
-        </action>
-    </animation>
 
 </PropertyList>
