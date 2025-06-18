@@ -626,7 +626,6 @@ Franck.VMD
         <object-name>Wingslumieredg</object-name>
         <object-name>Run.spotR</object-name>
         <object-name>Run.spotL</object-name>
-        <object-name>sortiewclumiere</object-name>
         <object-name>LHLND.spot</object-name>
         <object-name>RHLND.spot</object-name>
         <object-name>CTRLND.spot</object-name>
@@ -649,11 +648,6 @@ Franck.VMD
     
     <effect>
         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
-        <object-name>portecloison1</object-name>
-        <object-name>portecloison2</object-name>
-        <object-name>portecloison3</object-name>
-        <object-name>portecloison4</object-name>
-        <object-name>portecloison5</object-name>
         <object-name>cloison</object-name>
         <object-name>mur</object-name>
         <object-name>Fuselage.003</object-name>
@@ -1448,51 +1442,6 @@ Franck.VMD
                 <z>0</z>
             </axis>
         </animation>
-  
-  <!--       plancher éclairage EXIT      -->
-	
-	<animation>
-        <type>material</type>
-        <object-name>plancher eclairage</object-name>
-        <condition>
-        <and>
-             <property>controls/electric/battery-switch</property>
-             <property>aaa/oh/PB59/IND1.toggle</property>
-        </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.0</blue>
-        </emission>
-    </animation>
-    
-    <animation>
-        <type>material</type>
-        <object-name>sortiewclumiere</object-name>
-        <condition>
-        <and>
-             <property>controls/electric/battery-switch</property>
-             <property>aaa/oh/PB59/IND1.toggle</property>
-        </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.8</blue>
-        </emission>
-    </animation>
-    
-    <animation>
-        <type>select</type>
-        <object-name>sortiewclumiere</object-name>
-        <condition>
-        <and>
-             <property>controls/electric/battery-switch</property>
-             <property>aaa/oh/PB59/IND1.toggle</property>
-        </and>
-        </condition>
-    </animation>
     
     <animation>
         <type>select</type>
@@ -3409,173 +3358,6 @@ Franck.VMD
             <value>10</value>
             </less-than>
         </condition>
-	</animation>
-    
-    <!-- Door Pick Animations cabine -->
-    
-    <animation>
-		<name>c15</name>
-		<type>rotate</type>
-		<object-name>portecloison1</object-name>
-		<property>sim/multiplay/generic/float[32]</property>
-		<factor>90</factor>
-        <center>
-            <x-m>-7.95509</x-m>
-            <y-m>-0.384104</y-m>
-            <z-m>0.44339</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>-1</z>
-		</axis>
-	</animation>
-
-    <animation>
-		<type>pick</type>
-		<object-name>portecloison1</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c15");
-				</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<name>c16</name>
-		<type>rotate</type>
-		<object-name>portecloison2</object-name>
-		<property>sim/multiplay/generic/float[33]</property>
-		<factor>90</factor>
-        <center>
-            <x-m>23.2346</x-m>
-            <y-m>-0.384104</y-m>
-            <z-m>0.44339</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>-1</z>
-		</axis>
-	</animation>
-
-    <animation>
-		<type>pick</type>
-		<object-name>portecloison2</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c16");
-				</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<name>c17</name>
-		<type>rotate</type>
-		<object-name>portecloison3</object-name>
-		<property>sim/multiplay/generic/float[34]</property>
-		<factor>90</factor>
-        <center>
-            <x-m>11.5343</x-m>
-            <y-m>-0.384104</y-m>
-            <z-m>0.44339</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-    <animation>
-		<type>pick</type>
-		<object-name>portecloison3</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c17");
-				</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<name>c18</name>
-		<type>rotate</type>
-		<object-name>portecloison4</object-name>
-		<property>sim/multiplay/generic/float[35]</property>
-		<factor>90</factor>
-        <center>
-            <x-m>9.88263</x-m>
-            <y-m>-0.384104</y-m>
-            <z-m>0.44339</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>-1</z>
-		</axis>
-	</animation>
-
-    <animation>
-		<type>pick</type>
-		<object-name>portecloison4</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c18");
-				</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<name>c19</name>
-		<type>rotate</type>
-		<object-name>portecloison5</object-name>
-		<property>sim/multiplay/generic/float[36]</property>
-		<factor>90</factor>
-        <center>
-            <x-m>-6.94271</x-m>
-            <y-m>-0.384104</y-m>
-            <z-m>0.44339</z-m>
-        </center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-    <animation>
-		<type>pick</type>
-		<object-name>portecloison5</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("c19");
-				</script>
-			</binding>
-		</action>
 	</animation>
 
     <!-- Door Pick Animations -->
@@ -5718,18 +5500,6 @@ Franck.VMD
         <axis>
             <x>0.0</x>
             <y>1.0</y>
-            <z>0</z>
-        </axis>
-    </animation>
-
-    <animation>
-        <type>translate</type>
-        <object-name>Reversers</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
-        <factor>0.7</factor>
-        <axis>
-            <x>1.0</x>
-            <y>0.0</y>
             <z>0</z>
         </axis>
     </animation>
