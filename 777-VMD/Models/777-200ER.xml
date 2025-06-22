@@ -187,6 +187,10 @@ Franck.VMD
         <object-name>Wingsgr</object-name>
         <object-name>Wings.001</object-name>
         <object-name>Wings.002</object-name>
+        <object-name>Wings.005</object-name>
+        <object-name>Wings.006</object-name>
+        <object-name>Wings.007</object-name>
+        <object-name>Wings.008</object-name>
         <object-name>hinge1</object-name>
         <object-name>Laileron</object-name>
         <object-name>Lailerona</object-name>
@@ -540,8 +544,12 @@ Franck.VMD
         <object-name>Wingser</object-name>
         <object-name>Wingsfr</object-name>
         <object-name>Wingsgr</object-name>
-        <object-name>Wings.002</object-name>
         <object-name>Wings.001</object-name>
+        <object-name>Wings.002</object-name>
+        <object-name>Wings.005</object-name>
+        <object-name>Wings.006</object-name>
+        <object-name>Wings.007</object-name>
+        <object-name>Wings.008</object-name>
         <object-name>hinge1</object-name>
         <object-name>LFdoor</object-name>
         <object-name>LRdoor</object-name>
@@ -903,6 +911,8 @@ Franck.VMD
             <object-name>Rslath</object-name>
             <object-name>Strobe01</object-name>
             <object-name>Wings.002</object-name>
+            <object-name>Wings.007</object-name>
+            <object-name>Wings.008</object-name>
             <object-name>Wingsar</object-name>
             <object-name>Wingsbr</object-name>
             <object-name>Wingscr</object-name>
@@ -928,7 +938,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>3.66202</x-m>
@@ -968,6 +978,8 @@ Franck.VMD
             <object-name>Lslath</object-name>
             <object-name>Strobe02</object-name>
             <object-name>Wings.001</object-name>
+            <object-name>Wings.005</object-name>
+            <object-name>Wings.006</object-name>
             <object-name>Wingsal</object-name>
             <object-name>Wingsbl</object-name>
             <object-name>Wingscl</object-name>
@@ -993,7 +1005,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>3.66202</x-m>
@@ -1029,6 +1041,8 @@ Franck.VMD
             <object-name>Rslath</object-name>
             <object-name>Strobe01</object-name>
             <object-name>Wings.002</object-name>
+            <object-name>Wings.007</object-name>
+            <object-name>Wings.008</object-name>
             <object-name>Wingsbr</object-name>
             <object-name>Wingscr</object-name>
             <object-name>Wingsdr</object-name>
@@ -1051,7 +1065,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>4.82896</x-m>
@@ -1087,6 +1101,8 @@ Franck.VMD
             <object-name>Lslath</object-name>
             <object-name>Strobe02</object-name>
             <object-name>Wings.001</object-name>
+            <object-name>Wings.005</object-name>
+            <object-name>Wings.006</object-name>
             <object-name>Wingsbl</object-name>
             <object-name>Wingscl</object-name>
             <object-name>Wingsdl</object-name>
@@ -1109,7 +1125,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>4.82896</x-m>
@@ -1141,6 +1157,8 @@ Franck.VMD
             <object-name>Rslatg</object-name>
             <object-name>Rslath</object-name>
             <object-name>Strobe01</object-name>
+            <object-name>Wings.007</object-name>
+            <object-name>Wings.008</object-name>
             <object-name>Wingscr</object-name>
             <object-name>Wingsdr</object-name>
             <object-name>Wingser</object-name>
@@ -1160,7 +1178,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>5.84616</x-m>
@@ -1192,6 +1210,8 @@ Franck.VMD
             <object-name>Lslatg</object-name>
             <object-name>Lslath</object-name>
             <object-name>Strobe02</object-name>
+            <object-name>Wings.005</object-name>
+            <object-name>Wings.006</object-name>
             <object-name>Wingscl</object-name>
             <object-name>Wingsdl</object-name>
             <object-name>Wingsel</object-name>
@@ -1211,7 +1231,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>5.84616</x-m>
@@ -1239,6 +1259,7 @@ Franck.VMD
             <object-name>Rslatg</object-name>
             <object-name>Rslath</object-name>
             <object-name>Strobe01</object-name>
+            <object-name>Wings.008</object-name>
             <object-name>Wingsdr</object-name>
             <object-name>Wingser</object-name>
             <object-name>Wingsfr</object-name>
@@ -1255,7 +1276,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>7.82897</x-m>
@@ -1283,6 +1304,7 @@ Franck.VMD
             <object-name>Lslatg</object-name>
             <object-name>Lslath</object-name>
             <object-name>Strobe02</object-name>
+            <object-name>Wings.006</object-name>
             <object-name>Wingsdl</object-name>
             <object-name>Wingsel</object-name>
             <object-name>Wingsfl</object-name>
@@ -1299,7 +1321,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>7.82897</x-m>
@@ -1336,7 +1358,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>10.6909</x-m>
@@ -1373,7 +1395,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>10.6909</x-m>
@@ -1405,7 +1427,7 @@ Franck.VMD
             <object-name>Wingslumieredf</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>12.2709</x-m>
@@ -1437,7 +1459,7 @@ Franck.VMD
             <object-name>Wingslumierelf</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>12.2709</x-m>
@@ -1464,7 +1486,7 @@ Franck.VMD
             <object-name>WingslumiereRg</object-name>
             <object-name>Wingslumieredg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>14.028</x-m>
@@ -1491,7 +1513,7 @@ Franck.VMD
             <object-name>WingslumiereLg</object-name>
             <object-name>Wingslumierelg</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>5</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>14.028</x-m>
@@ -6835,6 +6857,8 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Wings.002</object-name>
+        <object-name>Wings.007</object-name>
+        <object-name>Wings.008</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <factor>-20</factor>
         <center>
@@ -6852,6 +6876,8 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Wings.002</object-name>
+        <object-name>Wings.007</object-name>
+        <object-name>Wings.008</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7033,6 +7059,8 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Wings.001</object-name>
+        <object-name>Wings.005</object-name>
+        <object-name>Wings.006</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <factor>20</factor>
         <center>
@@ -7050,6 +7078,8 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Wings.001</object-name>
+        <object-name>Wings.005</object-name>
+        <object-name>Wings.006</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>

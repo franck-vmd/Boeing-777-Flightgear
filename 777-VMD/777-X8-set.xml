@@ -403,6 +403,7 @@
             <file>Nasal/fire.nas</file>
             <file>Nasal/interior-lighting.nas</file>
             <file>Aircraft/777-VMD/Nasal/shake.nas</file>
+            <file>Aircraft/777-VMD/Nasal/pneumatic.nas</file>
         </b777>
         <keyboardFixes>
             <file>Aircraft/777-VMD/Nasal/efb/keyboardHooks.nas</file>

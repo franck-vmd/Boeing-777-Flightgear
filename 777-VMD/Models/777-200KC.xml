@@ -197,6 +197,10 @@ Franck.VMD
         <object-name>Wingshr</object-name>
         <object-name>Wings.001</object-name>
         <object-name>Wings.002</object-name>
+        <object-name>Wings.005</object-name>
+        <object-name>Wings.006</object-name>
+        <object-name>Wings.007</object-name>
+        <object-name>Wings.008</object-name>
         <object-name>hinge1</object-name>
         <object-name>Laileron</object-name>
         <object-name>Lailerona</object-name>
@@ -578,8 +582,12 @@ Franck.VMD
         <object-name>Wingsfr</object-name>
         <object-name>Wingsgr</object-name>
         <object-name>Wingshr</object-name>
-        <object-name>Wings.002</object-name>
         <object-name>Wings.001</object-name>
+        <object-name>Wings.002</object-name>
+        <object-name>Wings.005</object-name>
+        <object-name>Wings.006</object-name>
+        <object-name>Wings.007</object-name>
+        <object-name>Wings.008</object-name>
         <object-name>hinge1</object-name>
         <object-name>LFdoor</object-name>
         <object-name>LFdoor.002</object-name>
@@ -881,6 +889,8 @@ Franck.VMD
             <object-name>Rslath</object-name>
             <object-name>Strobe01</object-name>
             <object-name>Wings.002</object-name>
+            <object-name>Wings.007</object-name>
+            <object-name>Wings.008</object-name>
             <object-name>Wingsar</object-name>
             <object-name>Wingsbr</object-name>
             <object-name>Wingscr</object-name>
@@ -948,6 +958,8 @@ Franck.VMD
             <object-name>Lslath</object-name>
             <object-name>Strobe02</object-name>
             <object-name>Wings.001</object-name>
+            <object-name>Wings.005</object-name>
+            <object-name>Wings.006</object-name>
             <object-name>Wingsal</object-name>
             <object-name>Wingsbl</object-name>
             <object-name>Wingscl</object-name>
@@ -1011,6 +1023,8 @@ Franck.VMD
             <object-name>Rslath</object-name>
             <object-name>Strobe01</object-name>
             <object-name>Wings.002</object-name>
+            <object-name>Wings.007</object-name>
+            <object-name>Wings.008</object-name>
             <object-name>Wingsbr</object-name>
             <object-name>Wingscr</object-name>
             <object-name>Wingsdr</object-name>
@@ -1071,6 +1085,8 @@ Franck.VMD
             <object-name>Lslath</object-name>
             <object-name>Strobe02</object-name>
             <object-name>Wings.001</object-name>
+            <object-name>Wings.005</object-name>
+            <object-name>Wings.006</object-name>
             <object-name>Wingsbl</object-name>
             <object-name>Wingscl</object-name>
             <object-name>Wingsdl</object-name>
@@ -1127,6 +1143,8 @@ Franck.VMD
             <object-name>Rslatg</object-name>
             <object-name>Rslath</object-name>
             <object-name>Strobe01</object-name>
+            <object-name>Wings.007</object-name>
+            <object-name>Wings.008</object-name>
             <object-name>Wingscr</object-name>
             <object-name>Wingsdr</object-name>
             <object-name>Wingser</object-name>
@@ -1180,6 +1198,8 @@ Franck.VMD
             <object-name>Lslatg</object-name>
             <object-name>Lslath</object-name>
             <object-name>Strobe02</object-name>
+            <object-name>Wings.005</object-name>
+            <object-name>Wings.006</object-name>
             <object-name>Wingscl</object-name>
             <object-name>Wingsdl</object-name>
             <object-name>Wingsel</object-name>
@@ -1229,6 +1249,7 @@ Franck.VMD
             <object-name>Rslatg</object-name>
             <object-name>Rslath</object-name>
             <object-name>Strobe01</object-name>
+            <object-name>Wings.008</object-name>
             <object-name>Wingsdr</object-name>
             <object-name>Wingser</object-name>
             <object-name>Wingsfr</object-name>
@@ -1275,6 +1296,7 @@ Franck.VMD
             <object-name>Lslatg</object-name>
             <object-name>Lslath</object-name>
             <object-name>Strobe02</object-name>
+            <object-name>Wings.006</object-name>
             <object-name>Wingsdl</object-name>
             <object-name>Wingsel</object-name>
             <object-name>Wingsfl</object-name>
