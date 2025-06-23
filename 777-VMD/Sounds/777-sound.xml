@@ -258,6 +258,30 @@
 		</volume>
 	</pneumatic>
 
+    <rat>
+      <name>RAT</name>
+      <mode>looped</mode>
+      <path>Aircraft/777-VMD/Sounds/RAT.wav</path>
+      <condition>
+       <and>
+        <greater-than>
+            <property>velocities/airspeed-kt</property>
+            <value>100</value>
+        </greater-than>
+        <greater-than>
+            <property>/aaa/door-positions/c74/position-norm</property>
+            <value>0.95</value>
+        </greater-than>
+        </and>
+        </condition>
+      <volume>
+			<factor>1</factor>
+		</volume>
+       <pitch>
+            <value>1.8</value>
+        </pitch>
+    </rat>
+
     <pushback>
       <name>Pushback</name>
       <mode>looped</mode>
