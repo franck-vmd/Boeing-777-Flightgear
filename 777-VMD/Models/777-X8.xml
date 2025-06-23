@@ -1006,7 +1006,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>Strobe01</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>3.0441</x-m>
@@ -1079,7 +1079,7 @@ Franck.VMD
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>3.0441</x-m>
@@ -1142,7 +1142,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>Strobe01</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>4.9308</x-m>
@@ -1205,7 +1205,7 @@ Franck.VMD
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>4.9308</x-m>
@@ -1259,7 +1259,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>Strobe01</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>7.10498</x-m>
@@ -1313,7 +1313,7 @@ Franck.VMD
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>7.10498</x-m>
@@ -1358,7 +1358,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>Strobe01</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>9.48217</x-m>
@@ -1403,7 +1403,7 @@ Franck.VMD
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>9.48217</x-m>
@@ -1439,7 +1439,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>Strobe01</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>11.4253</x-m>
@@ -1475,7 +1475,7 @@ Franck.VMD
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>11.4253</x-m>
@@ -1506,7 +1506,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>Strobe01</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>13.2506</x-m>
@@ -1537,7 +1537,7 @@ Franck.VMD
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>13.2506</x-m>
@@ -1563,7 +1563,7 @@ Franck.VMD
             <object-name>whiteflash1</object-name>
             <object-name>Strobe01</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>15.2969</x-m>
@@ -1589,7 +1589,7 @@ Franck.VMD
             <object-name>rednav</object-name>
             <object-name>whiteflash2</object-name>
             <property>sim/systems/wingflexer/z-m</property>
-            <factor>3</factor>
+            <factor>6</factor>
             <offset-deg>0</offset-deg>
             <center>
                 <x-m>15.2969</x-m>
