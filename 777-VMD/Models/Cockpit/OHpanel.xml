@@ -7441,7 +7441,6 @@ Franck.VMD
             <binding>
                 <command>property-toggle</command>
                 <property>controls/pressurization/valve-manual[0]</property>
-               <value>0</value>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -7461,7 +7460,6 @@ Franck.VMD
             <binding>
                 <command>property-toggle</command>
                 <property>controls/pressurization/valve-manual[1]</property>
-               <value>0</value>
             </binding>
             <binding>
                 <command>nasal</command>
