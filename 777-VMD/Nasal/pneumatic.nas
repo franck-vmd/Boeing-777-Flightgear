@@ -9,20 +9,17 @@ var pneumatic = {
 	m.controls = props.globals.getNode("controls/pneumatic",1);
 	m.system = props.globals.getNode("systems/pneumatic",1);
 	# Switches
-	m.apu_valve = m.controls.initNode("APU-bleed-valve",0,"BOOL");
-	m.eng_bleed = [ m.controls.initNode("engine-bleed[0]",0,"BOOL"),
-			m.controls.initNode("engine-bleed[1]",0,"BOOL"),
-			m.controls.initNode("engine-bleed[2]",0,"BOOL"),
-			m.controls.initNode("engine-bleed[3]",0,"BOOL") ];
-	m.isln_l = m.controls.initNode("isolation-valve[0]",1,"BOOL");
-	m.isln_r = m.controls.initNode("isolation-valve[1]",1,"BOOL");
+	m.apu_valve = m.controls.initNode("bleedapu-switch",0,"BOOL");
+	m.eng_bleed = [ m.controls.initNode("bleedengl",0,"BOOL"),
+	                m.controls.initNode("bleedengr",0,"BOOL") ];
+	m.isln_l = m.controls.initNode("islationl-switch",1,"BOOL");
+	m.isln_r = m.controls.initNode("islationr-switch",1,"BOOL");
+    m.isln_c = m.controls.initNode("islationc-switch",1,"BOOL");
 
 	# Supplies
-	m.APU = m.system.initNode("APU-bleed",0,"BOOL");
+	m.APU = m.system.initNode("BLDAPUSwitchTimer/position-norm",0,"BOOL");
 	m.eng = [ props.globals.getNode("engines/engine[0]/n1-ind",1),
-		  props.globals.getNode("engines/engine[1]/n1-ind",1),
-		  props.globals.getNode("engines/engine[2]/n1-ind",1),
-		  props.globals.getNode("engines/engine[3]/n1-ind",1) ];
+		  props.globals.getNode("engines/engine[1]/n1-ind",1) ];
 	m.service = m.system.initNode("air-service",0,"BOOL");
 
 	# Packs
@@ -37,17 +34,14 @@ var pneumatic = {
 
 	# Demands
 	m.starter = [ props.globals.getNode("controls/engines/engine[0]/starter",1),
-		      props.globals.getNode("controls/engines/engine[1]/starter",1),
-		      props.globals.getNode("controls/engines/engine[2]/starter",1),
-		      props.globals.getNode("controls/engines/engine[3]/starter",1) ];
-	m.APU_gen = [ props.globals.getNode("systems/electrical/apu-generator[0]",1),
-		      props.globals.getNode("systems/electrical/apu-generator[1]",1) ];
+		      props.globals.getNode("controls/engines/engine[1]/starter",1) ];
+	m.APU_gen = [ props.globals.getNode("systems/electrical/apu-generator",1) ];
 	m.deice = props.globals.getNode("controls/anti-ice/wing-heat",1);
 	m.deice.setBoolValue(0);
 
 	# Output
 	m.bleed_air = [ m.system.initNode("bleed-air[0]",0,"BOOL"),
-			m.system.initNode("bleed-air[1]",0,"BOOL") ];
+	           m.system.initNode("bleed-air[1]",0,"BOOL") ];
 	m.pressure = [ m.system.initNode("pressure-norm[0]",0,"DOUBLE"),
 		       m.system.initNode("pressure-norm[1]",0,"DOUBLE") ];
 
@@ -66,12 +60,7 @@ var pneumatic = {
 	    if (me.APU.getBoolValue() and !me.apu_valve.getBoolValue())
 		supply_l = supply_l + 1.02;
 	}
-	if (me.eng[0].getValue() > 50 and me.eng_bleed[0].getBoolValue()) {
-		supply_l = supply_l + 1.08;
-	    if (me.isln_l.getBoolValue() and me.isln_r.getBoolValue())
-		supply_r = supply_r + 1.08;
-	}
-	if (me.eng[1].getValue() > 50 and me.eng_bleed[1].getBoolValue()) {
+	if (me.eng[0].getValue() > 50 and me.bleedengl.getBoolValue()) {
 		supply_l = supply_l + 1.08;
 	    if (me.isln_l.getBoolValue() and me.isln_r.getBoolValue())
 		supply_r = supply_r + 1.08;
@@ -84,14 +73,9 @@ var pneumatic = {
 	    if (me.APU.getBoolValue() and !me.apu_valve.getBoolValue())
 		supply_r = supply_r + 1.02;
 	}
-	if (me.eng[2].getValue() > 50 and me.eng_bleed[2].getBoolValue()) {
+	if (me.eng[1].getValue() > 50 and me.bleedengr.getBoolValue()) {
 		supply_r = supply_r + 1.08;
 	    if (me.isln_l.getBoolValue() and me.isln_r.getBoolValue())
-		supply_l = supply_l + 1.08;
-	}
-	if (me.eng[3].getValue() > 50 and me.eng_bleed[3].getBoolValue()) {
-		supply_r = supply_r + 1.08;
-	    if (me.isln_r.getBoolValue() and me.isln_l.getBoolValue())
 		supply_l = supply_l + 1.08;
 	}
 
@@ -142,12 +126,6 @@ var pneumatic = {
 		supply_l = supply_l - 0.05;
 	    if (me.isln_r.getBoolValue())
 		supply_r = supply_r - 0.05;
-	}
-	if (me.APU_gen[1].getValue() == 2 and !me.apu_valve.getBoolValue()) {
-	    if (me.isln_r.getBoolValue())
-		supply_r = supply_r - 0.05;
-	    if (me.isln_l.getBoolValue())
-		supply_l = supply_l - 0.05;
 	}
 
 	 # Packs
@@ -213,7 +191,7 @@ var pneumatic = {
 		    if (i == 1) {
 			if (getprop("systems/pressurization/relief-valve") or getprop("controls/pressurization/outflow-valve-pos[0]") == 0 or getprop("controls/pressurization/outflow-valve-pos[1]") == 0)
 			    status = 0;
-			if (getprop("gear/on-ground") and !getprop("controls/gear/brake-parking"))
+			if (getprop("gear/gear[2]/wow") and !getprop("controls/gear/brake-parking"))
 			    status = 0;
 		    }
 #		    me.pack_status[i].setValue(1);
@@ -264,33 +242,19 @@ var pneumatic = {
 		cutout_l = 0;
 		cutout_r = 0;
 	    }
-	    if (cutout_l == 1 and me.starter[1].getBoolValue()) {
+	    if (cutout_r == 1 and me.starter[1].getBoolValue()) {
 		me.starter[1].setBoolValue(0);
 		cutout_l = 0;
 		cutout_r = 0;
 	    }
-	    if (cutout_r == 1 and me.starter[2].getBoolValue()) {
-		me.starter[2].setBoolValue(0);
-		cutout_l = 0;
-		cutout_r = 0;
-	    }
-	    if (cutout_r == 1 and me.starter[3].getBoolValue()) {
-		me.starter[3].setBoolValue(0);
-		cutout_l = 0;
-		cutout_r = 0;
-	    }
-	}
-	if (cutout_r == 1 and me.pack_status[2].getValue() == 1) {
-		me.pack_status[2].setValue(-1);
-		cutout_l = 0;
-		cutout_r = 0;
-	}
-	if (middle == 0 and me.pack_status[1].getBoolValue()) {
-		me.pack_status[1].setValue(0);
-		me.pack_fault.setBoolValue(1);
 	}
 	if (cutout_l == 1 and me.pack_status[0].getValue() == 1) {
 		me.pack_status[0].setValue(-1);
+		cutout_l = 0;
+		cutout_r = 0;
+	}
+	if (cutout_r == 1 and me.pack_status[1].getValue() == 1) {
+		me.pack_status[1].setValue(-1);
 		cutout_l = 0;
 		cutout_r = 0;
 	}
@@ -309,9 +273,9 @@ var pneumatic = {
     },
 	
 };
-B748air = pneumatic.new();
+B777air = pneumatic.new();
 var air_loop = func {
-	B748air.update();
+	B777air.update();
 	settimer(air_loop,0.5);
 }
 setlistener("/sim/signals/fdm-initialized", func (init) {
@@ -324,15 +288,10 @@ setlistener("/sim/signals/fdm-initialized", func (init) {
 
 # Starter Listeners
 setlistener("controls/engines/engine[0]/starter", func(start) {
-	if (start.getBoolValue()) B748air.turn_starter(0);
+	if (start.getBoolValue()) B777air.turn_starter(0);
 },0,0);
 setlistener("controls/engines/engine[1]/starter", func(start) {
-	if (start.getBoolValue()) B748air.turn_starter(1);
+	if (start.getBoolValue()) B777air.turn_starter(1);
 },0,0);
-setlistener("controls/engines/engine[2]/starter", func(start) {
-	if (start.getBoolValue()) B748air.turn_starter(2);
-},0,0);
-setlistener("controls/engines/engine[3]/starter", func(start) {
-	if (start.getBoolValue()) B748air.turn_starter(3);
-},0,0);
+
 

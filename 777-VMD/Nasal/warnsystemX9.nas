@@ -336,7 +336,7 @@ var WEU =
 	# Advisory messages for heating and anti-ice systems
 	if (me.temp_c > 10 and ((me.wing_aiknob == 2) or (me.eng1_aiknob == 2) or (me.eng2_aiknob == 2)))
 	    append(me.msgs_advisory," ANTI-ICE ON"); 
-	if ((me.wheat_ls + me.wheat_lf + me.wheat_rf + me.wheat_rs)<3)
+	if ((me.wheat_ls + me.wheat_lf + me.wheat_rf + me.wheat_rs)<4)
 	    append(me.msgs_advisory," WINDOW HEAT");
 
 	## Memo Messages
@@ -381,6 +381,21 @@ var WEU =
 	    append(me.msgs_info,"SEATBELTS ON");
 	if ((me.smoking_sign>-1) and (me.seatbelts == -1))
 	    append(me.msgs_info,"NO SMOKING ON");
+
+    if (getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]"))
+	        append(me.msgs_info,"CABIN ALT AUTO");
+
+    if (getprop("autopilot/route-manager/active") and !getprop("controls/pressurization/landing-alt-manual"))
+		    append(me.msgs_info,"LANDING ALT");
+
+    	if (!getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]"))
+		append(me.msgs_advisory,"OUTFLOW VLV L, R");
+
+	if (!getprop("controls/pressurization/valve-manual[0]"))
+		append(me.msgs_advisory,"OUTFLOW VLV L");
+
+	if (!getprop("controls/pressurization/valve-manual[1]"))
+		append(me.msgs_advisory,"OUTFLOW VLV R");
 
        if (getprop("/aaa/door-positions/l1/position-norm")==1 or getprop("/aaa/door-positions/l2/position-norm")==1 or getprop("/aaa/door-positions/l3/position-norm")==1 or getprop("/aaa/door-positions/l4/position-norm")==1 or getprop("/aaa/door-positions/c54/position-norm")==1)
 			    append(me.msgs_caution,">DOOR L");

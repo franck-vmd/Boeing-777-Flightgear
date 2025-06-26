@@ -26,10 +26,10 @@
 	<type>select</type>
 	<object-name>outflow_needle.LM</object-name>
      <condition>
-    <greater-than>
+    <less-than>
 		<property>controls/pressurization/valve-manual[0]</property>
-		<value>0</value>
-	</greater-than>
+		<value>1</value>
+	</less-than>
 	</condition>
 </animation>
 
@@ -54,10 +54,10 @@
 	<type>select</type>
 	<object-name>outflow_needle.RM</object-name>
      <condition>
-    <greater-than>
+    <less-than>
 		<property>controls/pressurization/valve-manual[1]</property>
-		<value>0</value>
-	</greater-than>
+		<value>1</value>
+	</less-than>
 	</condition>
 </animation>
 

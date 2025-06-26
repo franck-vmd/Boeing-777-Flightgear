@@ -89,26 +89,26 @@ var WEU =
         m.flap_override = 0;
         m.ap_mode       = 0;
         m.ap_disengaged = 0;
-	m.at_mode       = 0;
+	    m.at_mode       = 0;
         m.at_disconnect = 0;
         me.rudder_trim  = 0;
         me.elev_trim    = 0;
-	me.autobrake	= 0;
-	me.autobrakerto = 0;
-	me.apu_bleed	= 0;
-	me.engl_bleed	= 0;
-	me.engr_bleed	= 0;
-	me.pack_l	= 0;
-	me.pack_r	= 0;
-	me.trim_air_l	= 0;
-	me.trim_air_r	= 0;
-	me.battery	= 0;
-	me.recirc_fans	= 0;
-	me.smoking_sign	= 0;
-	me.seatbelts	= 0;
-	me.fuel_c_pump1	= 0;
-	me.fuel_c_pump2	= 0;
-	me.fuel_c_qty	= 0;	
+	    me.autobrake	= 0;
+	    me.autobrakerto = 0;
+	    me.apu_bleed	= 0;
+	    me.engl_bleed	= 0;
+	    me.engr_bleed	= 0;
+	    me.pack_l	= 0;
+	    me.pack_r	= 0;
+	    me.trim_air_l	= 0;
+	    me.trim_air_r	= 0;
+	    me.battery	= 0;
+	    me.recirc_fans	= 0;
+	    me.smoking_sign	= 0;
+	    me.seatbelts	= 0;
+	    me.fuel_c_pump1	= 0;
+	    me.fuel_c_pump2	= 0;
+	    me.fuel_c_qty	= 0;	
 
         # internal states
         m.active_warnings = 0;
@@ -127,8 +127,8 @@ var WEU =
         setlistener("controls/flight/elevator-trim",    func { Weu.update_listener_inputs() } );
         setlistener("sim/freeze/replay-state",          func { Weu.update_listener_inputs() } );
         setlistener(prop1 ~ "/serviceable",             func { Weu.update_listener_inputs() } );
-	setlistener("autopilot/autobrake/step",		func { Weu.update_listener_inputs() } );
-	setlistener("autopilot/autobrake/rto-selected",	func { Weu.update_listener_inputs() } );
+	    setlistener("autopilot/autobrake/step",		func { Weu.update_listener_inputs() } );
+	    setlistener("autopilot/autobrake/rto-selected",	func { Weu.update_listener_inputs() } );
 
 	# Air Systems
 	setlistener("controls/air/bleedapu-switch",	func { Weu.update_listener_inputs() } );
@@ -148,7 +148,7 @@ var WEU =
 	# Electrical
         setlistener("controls/electric/APU-generator",  func { Weu.update_listener_inputs() } );
         setlistener("systems/electrical/outputs/avionics",func { Weu.update_listener_inputs() } );
-	setlistener("controls/electric/battery-switch",	func { Weu.update_listener_inputs() } );
+	    setlistener("controls/electric/battery-switch",	func { Weu.update_listener_inputs() } );
 
 	# Fuel
 	setlistener("controls/fuel/tank[1]/boost-pump-switch",	func { Weu.update_listener_inputs() } );
@@ -336,7 +336,7 @@ var WEU =
 	# Advisory messages for heating and anti-ice systems
 	if (me.temp_c > 10 and ((me.wing_aiknob == 2) or (me.eng1_aiknob == 2) or (me.eng2_aiknob == 2)))
 	    append(me.msgs_advisory," ANTI-ICE ON"); 
-	if ((me.wheat_ls + me.wheat_lf + me.wheat_rf + me.wheat_rs)<3)
+	if ((me.wheat_ls + me.wheat_lf + me.wheat_rf + me.wheat_rs)<4)
 	    append(me.msgs_advisory," WINDOW HEAT");
 
 	## Memo Messages
@@ -381,6 +381,21 @@ var WEU =
 	    append(me.msgs_info,"SEATBELTS ON");
 	if ((me.smoking_sign>-1) and (me.seatbelts == -1))
 	    append(me.msgs_info,"NO SMOKING ON");
+
+       if (getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]"))
+	        append(me.msgs_info,"CABIN ALT AUTO");
+
+    if (getprop("autopilot/route-manager/active") and !getprop("controls/pressurization/landing-alt-manual"))
+		    append(me.msgs_info,"LANDING ALT");
+
+    	if (!getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]"))
+		append(me.msgs_advisory,"OUTFLOW VLV L, R");
+
+	if (!getprop("controls/pressurization/valve-manual[0]"))
+		append(me.msgs_advisory,"OUTFLOW VLV L");
+
+	if (!getprop("controls/pressurization/valve-manual[1]"))
+		append(me.msgs_advisory,"OUTFLOW VLV R");
 
        if (getprop("/aaa/door-positions/l1/position-norm")==1 or getprop("/aaa/door-positions/l2/position-norm")==1 or getprop("/aaa/door-positions/l3/position-norm")==1 or getprop("/aaa/door-positions/l4/position-norm")==1 or getprop("/aaa/door-positions/c54/position-norm")==1)
 			    append(me.msgs_caution,">DOOR L");

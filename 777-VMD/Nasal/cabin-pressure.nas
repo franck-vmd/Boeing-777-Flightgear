@@ -88,12 +88,12 @@ var update_alt = func {
 	    atten_m.setValue(14000);
 	    b_val = 0.6;
 	}
-	if (abs(diff) > 28000 and abs(diff) <= 38000) {
+	if (abs(diff) > 28000 and abs(diff) <= 51000) {
 	    atten_m.setValue(28000);
 	    b_val = 0.52;
 	}
-	if (abs(diff) > 38000) {
-	    atten_m.setValue(38000);
+	if (abs(diff) > 51000) {
+	    atten_m.setValue(51000);
 	    b_val = 0.14;
 	}
 	if (diff < 0) b_val = -1 * b_val;
@@ -105,10 +105,10 @@ var update_alt = func {
 	# Calculate target cabin rate
 	var VS = getprop("/velocities/vertical-speed-fps") * 60;
 	if (mode.getValue() == 1) {
-	    if (getprop("autopilot/settings/actual-target-altitude-ft") > 11000) {
+	    if (getprop("autopilot/settings/actual-target-altitude-ft") > 8000) {
 		var alt_set = getprop("autopilot/settings/actual-target-altitude-ft");
 	    } else {
-		var alt_set = 39000;
+		var alt_set = 50000;
 	    }
 	    if (alt_set - pressure_alt.getValue() > 2000) {
 		if (VS != 0) {
@@ -246,7 +246,7 @@ var update_mode = func {
 # Manual Mode updater
 var update_manual = func {
 	valve_max.setValue(0.5);
-	if (cabin_alt.getValue() > 11000) {
+	if (cabin_alt.getValue() > 8000) {
 	    if (manual0.getBoolValue()) valve0.setValue(0);
 	    if (manual1.getBoolValue()) valve1.setValue(0);
 	}

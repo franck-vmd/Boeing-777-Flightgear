@@ -2708,6 +2708,10 @@ Franck.VMD
         <object-name>HDG.sel</object-name>
         <object-name>BLimit.knob.001</object-name>
         <object-name>ALTmode.knob.001</object-name>
+        <object-name>SPD.inc</object-name>
+        <object-name>IAS.up</object-name>
+        <object-name>IAS.dwn</object-name>
+        <object-name>SPD.dec</object-name>
         <condition>
 		<greater-than>
 			<property>systems/electrical/CPT-FLT-INST</property>
