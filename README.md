@@ -103,15 +103,15 @@ HUD :
 
 Interior :
 
-![Image](https://i.ibb.co/F6jrQnW/interior.jpg)
+![Image](https://i.ibb.co/mSbTmQt/interieur.jpg)
 
 oxygen mask :
 
-![Image](https://i.ibb.co/h2BkwH8/oxygen-mask.jpg)
+![Image](https://i.ibb.co/KcDhdgch/Oxigene-masque.jpg)
 
 Interior-777-200F , 777-KFC , 777-300ERSF , 777-X8F:
 
-![Image](https://i.ibb.co/XJFQ9tx/interior-777-F.jpg)
+![Image](https://i.ibb.co/gMwP5Zr/interieur-777-F.jpg)
 
 WingTips X8 , X8F , X9:
 
