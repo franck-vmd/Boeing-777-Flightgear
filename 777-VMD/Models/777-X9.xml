@@ -740,30 +740,8 @@ Franck.VMD
         <object-name>Taxi.flare2</object-name>
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>Fuselagelumiere-r</object-name>
-        <object-name>Wingslumiere</object-name>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
-        <object-name>Run.spotR</object-name>
-        <object-name>Run.spotL</object-name>
         <object-name>verre</object-name>
         <object-name>sortiewclumiere</object-name>
-        <object-name>LHLND.spot</object-name>
-        <object-name>RHLND.spot</object-name>
-        <object-name>CTRLND.spot</object-name>
         <object-name>spot ext</object-name>
     </effect>
     
@@ -834,6 +812,16 @@ Franck.VMD
        <z2-m>  0.8</z2-m>
      </axis>
     </animation>
+
+    <model>
+        <name>LandingLights</name>
+        <path>Aircraft/777-VMD/Models/Lights/light-9.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
+    </model>
     
     <!-- Seating -->
     
@@ -982,20 +970,6 @@ Franck.VMD
             <object-name>Wingser</object-name>
             <object-name>Wingsfr</object-name>
             <object-name>Wingsgr</object-name>
-            <object-name>WingslumiereRa</object-name>
-            <object-name>WingslumiereRb</object-name>
-            <object-name>WingslumiereRc</object-name>
-            <object-name>WingslumiereRd</object-name>
-            <object-name>WingslumiereRe</object-name>
-            <object-name>WingslumiereRf</object-name>
-            <object-name>WingslumiereRg</object-name>
-            <object-name>Wingslumiereda</object-name>
-            <object-name>Wingslumieredb</object-name>
-            <object-name>Wingslumieredc</object-name>
-            <object-name>Wingslumieredd</object-name>
-            <object-name>Wingslumierede</object-name>
-            <object-name>Wingslumieredf</object-name>
-            <object-name>Wingslumieredg</object-name>
             <object-name>greenflash</object-name>
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
@@ -1055,20 +1029,6 @@ Franck.VMD
             <object-name>Wingsel</object-name>
             <object-name>Wingsfl</object-name>
             <object-name>Wingsgl</object-name>
-            <object-name>WingslumiereLa</object-name>
-            <object-name>WingslumiereLb</object-name>
-            <object-name>WingslumiereLc</object-name>
-            <object-name>WingslumiereLd</object-name>
-            <object-name>WingslumiereLe</object-name>
-            <object-name>WingslumiereLf</object-name>
-            <object-name>WingslumiereLg</object-name>
-            <object-name>Wingslumierela</object-name>
-            <object-name>Wingslumierelb</object-name>
-            <object-name>Wingslumierelc</object-name>
-            <object-name>Wingslumiereld</object-name>
-            <object-name>Wingslumierele</object-name>
-            <object-name>Wingslumierelf</object-name>
-            <object-name>Wingslumierelg</object-name>
             <object-name>Strobe02</object-name>
             <object-name>redflash</object-name>
             <object-name>rednav</object-name>
@@ -1120,18 +1080,6 @@ Franck.VMD
             <object-name>Wingser</object-name>
             <object-name>Wingsfr</object-name>
             <object-name>Wingsgr</object-name>
-            <object-name>WingslumiereRb</object-name>
-            <object-name>WingslumiereRc</object-name>
-            <object-name>WingslumiereRd</object-name>
-            <object-name>WingslumiereRe</object-name>
-            <object-name>WingslumiereRf</object-name>
-            <object-name>WingslumiereRg</object-name>
-            <object-name>Wingslumieredb</object-name>
-            <object-name>Wingslumieredc</object-name>
-            <object-name>Wingslumieredd</object-name>
-            <object-name>Wingslumierede</object-name>
-            <object-name>Wingslumieredf</object-name>
-            <object-name>Wingslumieredg</object-name>
             <object-name>greenflash</object-name>
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
@@ -1183,18 +1131,6 @@ Franck.VMD
             <object-name>Wingsel</object-name>
             <object-name>Wingsfl</object-name>
             <object-name>Wingsgl</object-name>
-            <object-name>WingslumiereLb</object-name>
-            <object-name>WingslumiereLc</object-name>
-            <object-name>WingslumiereLd</object-name>
-            <object-name>WingslumiereLe</object-name>
-            <object-name>WingslumiereLf</object-name>
-            <object-name>WingslumiereLg</object-name>
-            <object-name>Wingslumierelb</object-name>
-            <object-name>Wingslumierelc</object-name>
-            <object-name>Wingslumiereld</object-name>
-            <object-name>Wingslumierele</object-name>
-            <object-name>Wingslumierelf</object-name>
-            <object-name>Wingslumierelg</object-name>
             <object-name>Strobe02</object-name>
             <object-name>redflash</object-name>
             <object-name>rednav</object-name>
@@ -1239,16 +1175,6 @@ Franck.VMD
             <object-name>Wingser</object-name>
             <object-name>Wingsfr</object-name>
             <object-name>Wingsgr</object-name>
-            <object-name>WingslumiereRc</object-name>
-            <object-name>WingslumiereRd</object-name>
-            <object-name>WingslumiereRe</object-name>
-            <object-name>WingslumiereRf</object-name>
-            <object-name>WingslumiereRg</object-name>
-            <object-name>Wingslumieredc</object-name>
-            <object-name>Wingslumieredd</object-name>
-            <object-name>Wingslumierede</object-name>
-            <object-name>Wingslumieredf</object-name>
-            <object-name>Wingslumieredg</object-name>
             <object-name>greenflash</object-name>
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
@@ -1293,16 +1219,6 @@ Franck.VMD
             <object-name>Wingsel</object-name>
             <object-name>Wingsfl</object-name>
             <object-name>Wingsgl</object-name>
-            <object-name>WingslumiereLc</object-name>
-            <object-name>WingslumiereLd</object-name>
-            <object-name>WingslumiereLe</object-name>
-            <object-name>WingslumiereLf</object-name>
-            <object-name>WingslumiereLg</object-name>
-            <object-name>Wingslumierelc</object-name>
-            <object-name>Wingslumiereld</object-name>
-            <object-name>Wingslumierele</object-name>
-            <object-name>Wingslumierelf</object-name>
-            <object-name>Wingslumierelg</object-name>
             <object-name>Strobe02</object-name>
             <object-name>redflash</object-name>
             <object-name>rednav</object-name>
@@ -1340,14 +1256,6 @@ Franck.VMD
             <object-name>Wingser</object-name>
             <object-name>Wingsfr</object-name>
             <object-name>Wingsgr</object-name>
-            <object-name>WingslumiereRd</object-name>
-            <object-name>WingslumiereRe</object-name>
-            <object-name>WingslumiereRf</object-name>
-            <object-name>WingslumiereRg</object-name>
-            <object-name>Wingslumieredd</object-name>
-            <object-name>Wingslumierede</object-name>
-            <object-name>Wingslumieredf</object-name>
-            <object-name>Wingslumieredg</object-name>
             <object-name>greenflash</object-name>
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
@@ -1385,14 +1293,6 @@ Franck.VMD
             <object-name>Wingsel</object-name>
             <object-name>Wingsfl</object-name>
             <object-name>Wingsgl</object-name>
-            <object-name>WingslumiereLd</object-name>
-            <object-name>WingslumiereLe</object-name>
-            <object-name>WingslumiereLf</object-name>
-            <object-name>WingslumiereLg</object-name>
-            <object-name>Wingslumiereld</object-name>
-            <object-name>Wingslumierele</object-name>
-            <object-name>Wingslumierelf</object-name>
-            <object-name>Wingslumierelg</object-name>
             <object-name>Strobe02</object-name>
             <object-name>redflash</object-name>
             <object-name>rednav</object-name>
@@ -1423,12 +1323,6 @@ Franck.VMD
             <object-name>Wingser</object-name>
             <object-name>Wingsfr</object-name>
             <object-name>Wingsgr</object-name>
-            <object-name>WingslumiereRe</object-name>
-            <object-name>WingslumiereRf</object-name>
-            <object-name>WingslumiereRg</object-name>
-            <object-name>Wingslumierede</object-name>
-            <object-name>Wingslumieredf</object-name>
-            <object-name>Wingslumieredg</object-name>
             <object-name>greenflash</object-name>
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
@@ -1459,12 +1353,6 @@ Franck.VMD
             <object-name>Wingsel</object-name>
             <object-name>Wingsfl</object-name>
             <object-name>Wingsgl</object-name>
-            <object-name>WingslumiereLe</object-name>
-            <object-name>WingslumiereLf</object-name>
-            <object-name>WingslumiereLg</object-name>
-            <object-name>Wingslumierele</object-name>
-            <object-name>Wingslumierelf</object-name>
-            <object-name>Wingslumierelg</object-name>
             <object-name>Strobe02</object-name>
             <object-name>redflash</object-name>
             <object-name>rednav</object-name>
@@ -1492,10 +1380,6 @@ Franck.VMD
             <object-name>Rslatg</object-name>
             <object-name>Wingsfr</object-name>
             <object-name>Wingsgr</object-name>
-            <object-name>WingslumiereRf</object-name>
-            <object-name>WingslumiereRg</object-name>
-            <object-name>Wingslumieredf</object-name>
-            <object-name>Wingslumieredg</object-name>
             <object-name>greenflash</object-name>
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
@@ -1523,10 +1407,6 @@ Franck.VMD
             <object-name>Lslatg</object-name>
             <object-name>Wingsfl</object-name>
             <object-name>Wingsgl</object-name>
-            <object-name>WingslumiereLf</object-name>
-            <object-name>WingslumiereLg</object-name>
-            <object-name>Wingslumierelf</object-name>
-            <object-name>Wingslumierelg</object-name>
             <object-name>Strobe02</object-name>
             <object-name>redflash</object-name>
             <object-name>rednav</object-name>
@@ -1551,8 +1431,6 @@ Franck.VMD
             <object-name>BaileD</object-name>
             <object-name>Rslatg</object-name>
             <object-name>Wingsgr</object-name>
-            <object-name>WingslumiereRg</object-name>
-            <object-name>Wingslumieredg</object-name>
             <object-name>greenflash</object-name>
             <object-name>greennav</object-name>
             <object-name>whiteflash1</object-name>
@@ -1577,8 +1455,6 @@ Franck.VMD
             <object-name>BaileG</object-name>
             <object-name>Lslatg</object-name>
             <object-name>Wingsgl</object-name>
-            <object-name>WingslumiereLg</object-name>
-            <object-name>Wingslumierelg</object-name>
             <object-name>Strobe02</object-name>
             <object-name>redflash</object-name>
             <object-name>rednav</object-name>
@@ -8698,66 +8574,7 @@ Franck.VMD
     </animation>
 
     <animation>
-    <type>select</type>
-        <object-name>CTRLND.spot2</object-name>
-    <condition>
-        <and>
-                <property>sim/multiplay/generic/int[2]</property>
-        <equals>
-            <property>gear/gear[0]/position-norm</property>
-            <value>1.0</value>
-        </equals>
-        </and>
-        <not>
-          <property>controls/lighting/landing-light[0]</property>
-        </not>
-    </condition>
-    </animation>
-
-    <animation>
         <type>select</type>
-        <object-name>Wingslumiere</object-name>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
-        <object-name>WingslumiereLa</object-name>
-        <object-name>WingslumiereLb</object-name>
-        <object-name>WingslumiereLc</object-name>
-        <object-name>WingslumiereLd</object-name>
-        <object-name>WingslumiereLe</object-name>
-        <object-name>WingslumiereLf</object-name>
-        <object-name>WingslumiereLg</object-name>
-        <object-name>WingslumiereRa</object-name>
-        <object-name>WingslumiereRb</object-name>
-        <object-name>WingslumiereRc</object-name>
-        <object-name>WingslumiereRd</object-name>
-        <object-name>WingslumiereRe</object-name>
-        <object-name>WingslumiereRf</object-name>
-        <object-name>WingslumiereRg</object-name>
-        <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/wing-lights</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>Run.spotL</object-name>
         <object-name>LHLND.flare.001</object-name>
         <condition>
             <greater-than>
@@ -8769,7 +8586,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>Run.spotR</object-name>
         <object-name>RHLND.flare.001</object-name>
         <condition>
             <greater-than>
@@ -8781,7 +8597,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>LHLND.spot</object-name>
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>LHLND.flare</object-name>
         <condition>
@@ -8791,7 +8606,6 @@ Franck.VMD
 
      <animation>
         <type>select</type>
-        <object-name>RHLND.spot</object-name>
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>RHLND.flare</object-name>
         <condition>
@@ -8803,37 +8617,10 @@ Franck.VMD
         <type>select</type>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
-        <object-name>CTRLND.spot</object-name>
         <condition>
             <property>controls/lighting/landing-light[0]</property>
         </condition>
     </animation>
-
-<!-- FX / Lights 
-
-    <animation>
-        <type>select</type>
-        <object-name>CTRLND.spot</object-name>
-        <condition>
-            <and>
-                <not><property>sim/rendering/rembrandt/enabled</property></not>
-                <not><property>sim/rendering/shaders/skydome</property></not>
-                <greater-than>
-                    <property>sim/multiplay/generic/int[4]</property>
-                    <value>5</value>
-                </greater-than>
-                <equals>
-                    <property>gear/gear[0]/position-norm</property>
-                    <value>1.0</value>
-                </equals>
-                <greater-than>
-                    <property>sim/time/sun-angle-rad</property>
-                    <value>1.55</value>
-                </greater-than>
-            </and>
-        </condition>
-    </animation>
-      -->
 
     <animation>
         <type>translate</type>
