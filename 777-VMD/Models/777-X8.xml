@@ -7821,22 +7821,6 @@ Franck.VMD
         <object-name>Lslate</object-name>
         <object-name>Lslatf</object-name>
         <object-name>Lslatg</object-name>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
         <property>surface-positions/slats</property>
         <factor>0.7</factor>
         <axis>
@@ -7864,22 +7848,6 @@ Franck.VMD
         <object-name>Lslate</object-name>
         <object-name>Lslatf</object-name>
         <object-name>Lslatg</object-name>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
         <property>surface-positions/slats</property>
         <factor>0.13</factor>
         <axis>
@@ -7899,14 +7867,6 @@ Franck.VMD
         <object-name>Lslate</object-name>
         <object-name>Lslatf</object-name>
         <object-name>Lslatg</object-name>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
         <property>surface-positions/slats</property>
         <factor>-0.1</factor>
         <axis>
@@ -7926,14 +7886,6 @@ Franck.VMD
         <object-name>Rslate</object-name>
         <object-name>Rslatf</object-name>
         <object-name>Rslatg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
         <property>surface-positions/slats</property>
         <factor>0.1</factor>
         <axis>
@@ -7953,14 +7905,6 @@ Franck.VMD
         <object-name>Lslate</object-name>
         <object-name>Lslatf</object-name>
         <object-name>Lslatg</object-name>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
         <property>surface-positions/slats</property>
         <factor>0.7</factor>
         <center>
@@ -7985,14 +7929,6 @@ Franck.VMD
         <object-name>Rslate</object-name>
         <object-name>Rslatf</object-name>
         <object-name>Rslatg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
         <property>surface-positions/slats</property>
         <factor>-0.7</factor>
         <center>
