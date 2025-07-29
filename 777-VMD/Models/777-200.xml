@@ -764,6 +764,16 @@ Franck.VMD
         <path>Aircraft/777-VMD/Models/Cockpit/flightdeck-200.xml</path>
     </model>
 
+   <model>
+        <name>LandingLights</name>
+        <path>Aircraft/777-VMD/Models/Lights/light-200.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
+    </model>
+
     <animation>
      <type>translate</type>
      <object-name>flightdeck-200</object-name>  
@@ -6366,9 +6376,9 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers1</object-name>
 		<object-name>Reversers1.001</object-name>
-                <object-name>Reversers1.002</object-name>
+        <object-name>Reversers1.002</object-name>
 		<object-name>cage3</object-name>
-                <object-name>cage3.001</object-name>
+        <object-name>cage3.001</object-name>
 		<property>sim/multiplay/generic/float[16]</property>
 		<factor>35</factor>
         <center>
@@ -6388,9 +6398,9 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers2</object-name>
 		<object-name>Reversers2.001</object-name>
-                <object-name>Reversers2.002</object-name>
+        <object-name>Reversers2.002</object-name>
 		<object-name>cage1</object-name>
-                <object-name>cage1.001</object-name>
+        <object-name>cage1.001</object-name>
 		<property>sim/multiplay/generic/float[17]</property>
 		<factor>45</factor>
         <center>
@@ -6410,9 +6420,9 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers3</object-name>
 		<object-name>Reversers3.001</object-name>
-                <object-name>Reversers3.002</object-name>
+        <object-name>Reversers3.002</object-name>
 		<object-name>cage2</object-name>
-                <object-name>cage2.001</object-name>
+        <object-name>cage2.001</object-name>
 		<property>sim/multiplay/generic/float[18]</property>
 		<factor>45</factor>
         <center>
@@ -6432,9 +6442,9 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers4</object-name>
 		<object-name>Reversers4.001</object-name>
-                <object-name>Reversers4.002</object-name>
+        <object-name>Reversers4.002</object-name>
 		<object-name>cage4</object-name>
-                <object-name>cage4.001</object-name>
+        <object-name>cage4.001</object-name>
 		<property>sim/multiplay/generic/float[19]</property>
 		<factor>35</factor>
         <center>
@@ -7890,66 +7900,7 @@ Franck.VMD
     </animation>
 
     <animation>
-    <type>select</type>
-        <object-name>CTRLND.spot2</object-name>
-    <condition>
-        <and>
-                <property>sim/multiplay/generic/int[2]</property>
-        <equals>
-            <property>gear/gear[0]/position-norm</property>
-            <value>1.0</value>
-        </equals>
-        </and>
-        <not>
-          <property>controls/lighting/landing-light[0]</property>
-        </not>
-    </condition>
-    </animation>
-
-    <animation>
         <type>select</type>
-        <object-name>Wingslumiere</object-name>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
-        <object-name>WingslumiereLa</object-name>
-        <object-name>WingslumiereLb</object-name>
-        <object-name>WingslumiereLc</object-name>
-        <object-name>WingslumiereLd</object-name>
-        <object-name>WingslumiereLe</object-name>
-        <object-name>WingslumiereLf</object-name>
-        <object-name>WingslumiereLg</object-name>
-        <object-name>WingslumiereRa</object-name>
-        <object-name>WingslumiereRb</object-name>
-        <object-name>WingslumiereRc</object-name>
-        <object-name>WingslumiereRd</object-name>
-        <object-name>WingslumiereRe</object-name>
-        <object-name>WingslumiereRf</object-name>
-        <object-name>WingslumiereRg</object-name>
-        <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/wing-lights</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>Run.spotL</object-name>
         <object-name>LHLND.flare2</object-name>
         <condition>
             <greater-than>
@@ -7961,7 +7912,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>Run.spotR</object-name>
         <object-name>RHLND.flare2</object-name>
         <condition>
             <greater-than>
@@ -7973,7 +7923,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>LHLND.spot</object-name>
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>LHLND.flare</object-name>
         <condition>
@@ -7983,7 +7932,6 @@ Franck.VMD
     
     <animation>
         <type>select</type>
-        <object-name>RHLND.spot</object-name>
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>RHLND.flare</object-name>
         <condition>
@@ -7995,7 +7943,6 @@ Franck.VMD
         <type>select</type>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
-        <object-name>CTRLND.spot</object-name>
         <condition>
             <property>controls/lighting/landing-light[0]</property>
         </condition>

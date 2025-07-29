@@ -48,7 +48,7 @@ Franck.VMD
         <object-name>wiper.r</object-name>
         <property-base>sim/model/fuselage</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-X9/AFR1.png</texture>
+        <texture>Liveries-X9/AFR1BOER.png</texture>
     </animation>
 
     <animation>
@@ -70,7 +70,7 @@ Franck.VMD
         <object-name>entry3rC2</object-name>
         <property-base>sim/model/fuselage8</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-X9/AFR1rac.png</texture>
+        <texture>Liveries-X9/AFR1BOERrac.png</texture>
     </animation>
 
     <animation>
@@ -99,7 +99,7 @@ Franck.VMD
         <object-name>Rmain.geardoor.001</object-name>
         <property-base>sim/model/fuselage1</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-X9/AFR3.png</texture>
+        <texture>Liveries-X9/AFR3BOER.png</texture>
     </animation>
     
     <animation>
@@ -162,7 +162,7 @@ Franck.VMD
         <object-name>entry4rC2</object-name>
         <property-base>sim/model/fuselage2</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-X9/AFR4.png</texture>
+        <texture>Liveries-X9/AFR4BOER.png</texture>
     </animation>
     
     <animation>
@@ -189,7 +189,7 @@ Franck.VMD
         <object-name>Wings.005</object-name>
         <property-base>sim/model/fuselage3</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-X9/AFR5.png</texture>
+        <texture>Liveries-X9/AFR5BOER.png</texture>
     </animation>
 
     <animation>
@@ -359,7 +359,7 @@ Franck.VMD
         <object-name>HeliRat.002</object-name>
         <property-base>sim/model/fuselage6</property-base>
         <texture-prop>texture</texture-prop>
-        <texture>Liveries-X9/AFR8.png</texture>
+        <texture>Liveries-X9/AFR8BOER.png</texture>
     </animation>
     
     <animation>
