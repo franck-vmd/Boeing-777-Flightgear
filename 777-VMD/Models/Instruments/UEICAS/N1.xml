@@ -163,7 +163,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind1</object-name>
-        <property>engines/engine[0]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>2.085</factor>
         <center>
             <x-m>0</x-m>
@@ -180,7 +180,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind1.001</object-name>
-        <property>engines/engine[0]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>1.755</factor>
         <center>
             <x-m>0</x-m>
@@ -197,7 +197,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind2</object-name>
-        <property>engines/engine[0]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>1.425</factor>
         <center>
             <x-m>0</x-m>
@@ -214,7 +214,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind2.001</object-name>
-        <property>engines/engine[0]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>1.095</factor>
         <center>
             <x-m>0</x-m>
@@ -231,7 +231,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind3</object-name>
-        <property>engines/engine[0]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>0.765</factor>
         <center>
             <x-m>0</x-m>
@@ -248,7 +248,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind3.001</object-name>
-        <property>engines/engine[0]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>0.435</factor>
         <center>
             <x-m>0</x-m>
@@ -265,7 +265,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind4</object-name>
-        <property>engines/engine[0]/rpm</property>
+        <property>engines/engine[1]/rpm</property>
         <factor>0.105</factor>
         <center>
             <x-m>0</x-m>
@@ -336,6 +336,48 @@ Syd Adams
         <font>helvetica_bold.txf</font>
         <character-size>0.009</character-size>
         <character-aspect-ratio type="double">1.5</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+
+    <text>
+        <name>eng1-rev</name>
+        <offsets>
+            <x-m>0.002</x-m>
+            <y-m>-0.003</y-m>
+            <z-m>0.015</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>REV</text>
+        <format>%3.1f</format>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.007</character-size>
+        <character-aspect-ratio>1.2</character-aspect-ratio>
+        <font-resolution>
+            <width type="int">32</width>
+            <height type="int">32</height>
+        </font-resolution>
+    </text>
+    
+   <text>
+        <name>eng2-rev</name>
+        <offsets>
+            <x-m>0.002</x-m>
+            <y-m>0.041</y-m>
+            <z-m>0.015</z-m>
+        </offsets>
+        <alignment>right-center</alignment>
+        <axis-alignment>yz-plane</axis-alignment>
+        <type>literal</type>
+        <text>REV</text>
+        <format>%3.1f</format>
+        <font>helvetica_bold.txf</font>
+        <character-size>0.007</character-size>
+        <character-aspect-ratio>1.2</character-aspect-ratio>
         <font-resolution>
             <width type="int">32</width>
             <height type="int">32</height>
@@ -436,57 +478,285 @@ Syd Adams
 			<blue>0</blue>
 		</specular>
     </animation>
-
-    <!--animation>
-        <name>MAGENTA</name>
+    
+    <animation>
+        <name>GREEN1-rev</name>
         <type>material</type>
-		<emission>
-			<red>0.9</red>
-			<green>0.0</green>
-			<blue>0.9</blue>
-		</emission>
-		<ambient>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</ambient>
-		<diffuse>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</diffuse>
-		<specular>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</specular>
-    </animation-->
+        <object-name>eng1-rev</object-name>
+        <emission>
+            <red>0.0</red>
+            <green>0.9</green>
+            <blue>0.0</blue>
+        </emission>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <specular>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </specular>
+        <condition>
+            <equals>
+                <property>surface-positions/reverser-norm[0]</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <name>AMBER1</name>
+        <type>material</type>
+        <object-name>eng1-rev</object-name>
+        <emission>
+            <red>1.0</red>
+            <green>0.58</green>
+            <blue>0.2</blue>
+        </emission>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <specular>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </specular>
+        <condition>
+            <and>
+            <less-than>
+                <property>surface-positions/reverser-norm[0]</property>
+                <value>1</value>
+            </less-than>
+            <greater-than>
+                <property>surface-positions/reverser-norm[0]</property>
+                <value>0</value>
+            </greater-than>
+            </and>
+        </condition>
+    </animation>
 
     <animation>
-        <name>GREEN</name>
+        <name>GREEN1-lmt</name>
         <type>material</type>
         <object-name>eng1-lmt</object-name>
+        <emission>
+            <red>0.0</red>
+            <green>0.9</green>
+            <blue>0.0</blue>
+        </emission>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <specular>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </specular>
+        <condition>
+            <equals>
+                <property>surface-positions/reverser-norm[0]</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>eng1-lmt</object-name>
+            <property>controls/engines/engine[0]/reverser-act</property>
+            <factor>-0.001</factor>
+            <offset-m>0.001</offset-m>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        <condition>
+            <equals>
+                <property>surface-positions/reverser-norm[0]</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+ 
+    <animation>
+        <type>translate</type>
+        <object-name>eng1-rev</object-name>
+            <property>controls/engines/engine[0]/reverser-act</property>
+            <factor>0.001</factor>
+            <offset-m>-0.001</offset-m>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        <condition>
+            <equals>
+                <property>surface-positions/reverser-norm[0]</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <name>GREEN2-rev</name>
+        <type>material</type>
+        <object-name>eng2-rev</object-name>
+        <emission>
+            <red>0.0</red>
+            <green>0.9</green>
+            <blue>0.0</blue>
+        </emission>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <specular>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </specular>
+        <condition>
+            <equals>
+                <property>surface-positions/reverser-norm[1]</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <name>AMBER2</name>
+        <type>material</type>
+        <object-name>eng2-rev</object-name>
+        <emission>
+            <red>1.0</red>
+            <green>0.58</green>
+            <blue>0.2</blue>
+        </emission>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <specular>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </specular>
+        <condition>
+            <and>
+            <less-than>
+                <property>surface-positions/reverser-norm[1]</property>
+                <value>1</value>
+            </less-than>
+            <greater-than>
+                <property>surface-positions/reverser-norm[1]</property>
+                <value>0</value>
+            </greater-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <name>GREEN2-lmt</name>
+        <type>material</type>
         <object-name>eng2-lmt</object-name>
-		<emission>
-			<red>0.0</red>
-			<green>0.9</green>
-			<blue>0.0</blue>
-		</emission>
-		<ambient>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</ambient>
-		<diffuse>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</diffuse>
-		<specular>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-		</specular>
+        <emission>
+            <red>0.0</red>
+            <green>0.9</green>
+            <blue>0.0</blue>
+        </emission>
+        <ambient>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </ambient>
+        <diffuse>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </diffuse>
+        <specular>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+        </specular>
+        <condition>
+            <equals>
+                <property>surface-positions/reverser-norm[1]</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+        <object-name>eng2-lmt</object-name>
+            <property>controls/engines/engine[1]/reverser-act</property>
+            <factor>-0.001</factor>
+            <offset-m>0.001</offset-m>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        <condition>
+            <equals>
+                <property>surface-positions/reverser-norm[1]</property>
+                <value>0</value>
+            </equals>
+        </condition>
+    </animation>
+ 
+    <animation>
+        <type>translate</type>
+        <object-name>eng2-rev</object-name>
+            <property>controls/engines/engine[1]/reverser-act</property>
+            <factor>0.001</factor>
+            <offset-m>-0.001</offset-m>
+            <axis>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </axis>
+        <condition>
+            <equals>
+                <property>surface-positions/reverser-norm[1]</property>
+                <value>0</value>
+            </equals>
+        </condition>
     </animation>
 
 </PropertyList>

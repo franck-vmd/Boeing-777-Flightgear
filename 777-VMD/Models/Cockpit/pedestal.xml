@@ -346,7 +346,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>LHRevThrust.lever</object-name>
-        <property>sim/multiplay/generic/float[76]</property>
+        <property>sim/multiplay/generic/float[6]</property>
         <factor>60</factor>
         <center>
             <x-m>-1.41748</x-m>
@@ -363,7 +363,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>RHRevThrust.lever</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <factor>60</factor>
         <center>
             <x-m>-1.41748</x-m>
@@ -381,6 +381,9 @@ Franck.VMD
         <type>rotate</type>
         <object-name>LHThrottle</object-name>
         <property>controls/engines/engine[0]/throttle-lever</property>
+         <condition>
+			<property>engines/engine[0]/rpm</property>
+        </condition>
         <factor>39</factor>
         <center>
             <x-m>-1.4276</x-m>
@@ -398,6 +401,9 @@ Franck.VMD
         <type>rotate</type>
         <object-name>RHThrottle</object-name>
         <property>controls/engines/engine[1]/throttle-lever</property>
+         <condition>
+			<property>engines/engine[1]/rpm</property>
+        </condition>
         <factor>39</factor>
         <center>
             <x-m>-1.4276</x-m>

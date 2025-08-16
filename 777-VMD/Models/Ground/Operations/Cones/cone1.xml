@@ -6,9 +6,7 @@
 
 <animation>
     <type>select</type>
-    <object-name>Cone4</object-name>
-    <object-name>Cone5</object-name>
-    <object-name>Cone6</object-name>
+    <object-name>Cone1</object-name>
     <condition>
         <equals>
             <property>services/cones/cone1-enable</property>
@@ -19,9 +17,7 @@
 
 <animation>
     <type>translate</type>
-    <object-name>Cone4</object-name>
-    <object-name>Cone5</object-name>
-    <object-name>Cone6</object-name>
+    <object-name>Cone1</object-name>
     <property>gear/gear[0]/compression-norm</property>
     <interpolation>
         <entry><ind>0.18</ind><dep>0</dep></entry>
@@ -36,9 +32,7 @@
   
 <animation>
     <type>pick</type>
-    <object-name>Cone4</object-name>
-    <object-name>Cone5</object-name>
-    <object-name>Cone6</object-name>
+    <object-name>Cone1</object-name>
     <action>
         <button>0</button>
         <binding>

@@ -18,6 +18,10 @@ var Engine = {
         m.reverser_cmd = props.globals.getNode("controls/engines/engine["~eng_num~"]/reverser",1);
         m.reverser_cmd.setBoolValue(0);
         m.reverser = props.globals.getNode("controls/engines/engine["~eng_num~"]/reverser-act",1);
+        m.engreverl = props.globals.getNode("systems/hydraulics/LEDP-NORMAL",1);
+        m.engreverl.setDoubleValue(0);
+        m.engreverr = props.globals.getNode("systems/hydraulics/REDP-NORMAL",1);
+        m.engreverr.setDoubleValue(0);
         m.throttle = props.globals.getNode("controls/engines/engine["~eng_num~"]/throttle-act",1);
         m.throttle.setDoubleValue(0);
         m.cutoff = props.globals.getNode("controls/engines/engine["~eng_num~"]/cutoff",1);

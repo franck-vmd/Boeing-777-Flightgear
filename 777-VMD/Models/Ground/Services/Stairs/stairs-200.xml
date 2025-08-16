@@ -49,7 +49,7 @@
     <object-name>cover-under_1</object-name>
     <object-name>cover-rods_1</object-name>
     <object-name>stairs_1</object-name>
-    <object-name>ombre1</object-name>
+    <object-name>stairs_1.001</object-name>>
     <condition>
         <property>services/stairs/stairs1_enable</property>
     </condition>
@@ -61,7 +61,7 @@
     <object-name>cover-under_2</object-name>
     <object-name>cover-rods_2</object-name>
     <object-name>stairs_2</object-name>
-    <object-name>ombre2</object-name>
+    <object-name>stairs_2.001</object-name>
     <condition>
         <property>services/stairs/stairs2_enable</property>
     </condition>
@@ -73,7 +73,7 @@
     <object-name>cover-under_3</object-name>
     <object-name>cover-rods_3</object-name>
     <object-name>stairs_3</object-name>
-    <object-name>ombre3</object-name>
+    <object-name>stairs_3.001</object-name>
     <condition>
         <property>services/stairs/stairs3_enable</property>
     </condition>
@@ -85,7 +85,7 @@
     <object-name>cover-under_4</object-name>
     <object-name>cover-rods_4</object-name>
     <object-name>stairs_4</object-name>
-    <object-name>ombre4</object-name>
+    <object-name>stairs_4.001</object-name>
     <condition>
         <property>services/stairs/stairs4_enable</property>
     </condition>
@@ -95,10 +95,8 @@
 
 <animation>
     <type>translate</type>
-    <object-name>cover-rods_1</object-name>
-    <object-name>cover-rods_2</object-name>
-    <object-name>stairs_1</object-name>
-    <object-name>stairs_2</object-name>
+    <object-name>stairs_1.001</object-name>
+    <object-name>stairs_2.001</object-name>
     <property>gear/gear[0]/compression-norm</property>
     <interpolation>
         <entry><ind>0.15</ind><dep>0.0</dep></entry>
@@ -113,14 +111,12 @@
 
 <animation>
     <type>translate</type>
-    <object-name>cover-rods_3</object-name>
-    <object-name>stairs_3</object-name>
-    <object-name>cover-rods_4</object-name>
-    <object-name>stairs_4</object-name>
-    <property>gear/gear[1]/compression-norm</property>
+    <object-name>stairs_3.001</object-name>
+    <object-name>stairs_4.001</object-name>
+    <property>gear/gear[0]/compression-norm</property>
     <interpolation>
         <entry><ind>0.15</ind><dep>0.0</dep></entry>
-        <entry><ind>0.40</ind><dep>0.25</dep></entry>
+        <entry><ind>0.40</ind><dep>0.30</dep></entry>
     </interpolation>
     <axis>
         <x>0</x>

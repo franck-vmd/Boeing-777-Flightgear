@@ -95,7 +95,7 @@ var HYDR = {
                 me.REDP_fine.setValue(1);
             }
         }
-        if(((lidg.get_output_volts() > 80) or me.APUP.getValue() or me.GP.getValue()) and me.c1elec_switch.getValue())
+        if(((lidg.get_output_volts() > 80) or (ridg.get_output_volts() > 80) or me.APUP.getValue() or me.GP.getValue()) and me.c1elec_switch.getValue())
         {
             me.C1ACMP.setValue(1);
             me.C1ACMP_fine.setValue(1);
@@ -112,7 +112,7 @@ var HYDR = {
                 me.C1ACMP_fine.setValue(1);
             }
         }
-        if(((lidg.get_output_volts() > 80) or me.APUP.getValue() or me.GP.getValue()) and me.c2elec_switch.getValue())
+        if(((lidg.get_output_volts() > 80) or (ridg.get_output_volts() > 80) or me.APUP.getValue() or me.GP.getValue()) and me.c2elec_switch.getValue())
         {
             me.C2ACMP.setValue(1);
             me.C2ACMP_fine.setValue(1);
@@ -146,7 +146,7 @@ var HYDR = {
                 me.LACMP_fine.setValue(1);
             }
         }
-        if((lidg.get_output_volts() > 80) and me.racmp_switch.getValue() > 0)
+        if((ridg.get_output_volts() > 80) and me.racmp_switch.getValue() > 0)
         {
             me.RACMP.setValue(1);
             me.RACMP_fine.setValue(1);
@@ -163,7 +163,7 @@ var HYDR = {
                 me.RACMP_fine.setValue(1);
             }
         }
-        if((lidg.get_output_volts() > 80) and me.c1adp_switch.getValue() > 0)
+        if((lidg.get_output_volts() > 80) or (ridg.get_output_volts() > 80) and me.c1adp_switch.getValue() > 0)
         {
             me.C1ADP.setValue(1);
             me.C1ADP_fine.setValue(1);
@@ -180,7 +180,7 @@ var HYDR = {
                 me.C1ADP_fine.setValue(1);
             }
         }
-        if((lidg.get_output_volts() > 80) and me.c2adp_switch.getValue() > 0)
+        if((lidg.get_output_volts() > 80) or (ridg.get_output_volts() > 80) and me.c2adp_switch.getValue() > 0)
         {
             me.C2ADP.setValue(1);
             me.C2ADP_fine.setValue(1);

@@ -4,4 +4,20 @@
 
   <path>van_silver.ac</path>
 
+   <animation>
+    <type>translate</type>
+    <object-name>van</object-name>
+    <object-name>pilote</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+        <entry><ind>0.15</ind><dep>0.0</dep></entry>
+        <entry><ind>0.40</ind><dep>0.30</dep></entry>
+    </interpolation>
+    <axis>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+    </axis>
+</animation>
+
 </PropertyList>

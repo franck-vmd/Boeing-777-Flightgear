@@ -1290,11 +1290,11 @@ var elevatorTrimTimer = maketimer(0.05, func {
 setprop("/systems/acconfig/options/show-fbw-bug", 0);
 
 var readSettings = func {
-	io.read_properties(getprop("/sim/fg-home") ~ "/Export/777-config.xml", "/systems/acconfig/options");
+	io.read_properties(getprop("/sim/fg-home") ~ "/Export/777-v2-config.xml", "/systems/acconfig/options");
 	setprop("/fcs/fbw/show-fbw-bug", getprop("/systems/acconfig/options/show-fbw-bug"));
 }
 
 var writeSettings = func {
 	setprop("/systems/acconfig/options/show-fbw-bug", getprop("/fcs/fbw/show-fbw-bug"));
-	io.write_properties(getprop("/sim/fg-home") ~ "/Export/777-config.xml", "/systems/acconfig/options");
+	io.write_properties(getprop("/sim/fg-home") ~ "/Export/777-v2-config.xml", "/systems/acconfig/options");
 }

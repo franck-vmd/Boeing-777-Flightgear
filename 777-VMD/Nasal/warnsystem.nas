@@ -342,8 +342,6 @@ var WEU =
 	## Memo Messages
         if (me.parkbrake)
             append(me.msgs_info,"PARK BRK SET");
-        if (me.reverser)
-            append(me.msgs_info,"L R THRUST REV SET");
         if (me.spdbrk_armed)
             append(me.msgs_info,"SPEEDBRAKE ARMED");
         if (me.apu_running)

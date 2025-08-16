@@ -6,7 +6,7 @@
 
 <animation>
     <type>select</type>
-    <object-name>Cone6</object-name>
+    <object-name>Cone2</object-name>
     <condition>
         <equals>
             <property>services/cones/cone2-enable</property>
@@ -16,7 +16,7 @@
 </animation>
 
 <animation>
-    <object-name>Cone6</object-name>
+    <object-name>Cone2</object-name>
     <property>gear/gear[2]/compression-norm</property>
     <interpolation>
         <entry><ind>0.18</ind><dep>0</dep></entry>
@@ -31,7 +31,7 @@
   
 <animation>
     <type>pick</type>
-    <object-name>Cone6</object-name>
+    <object-name>Cone2</object-name>
     <action>
         <button>0</button>
         <binding>

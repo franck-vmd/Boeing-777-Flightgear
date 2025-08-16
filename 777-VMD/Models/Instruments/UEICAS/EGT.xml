@@ -130,7 +130,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind1</object-name>
-        <property>engines/engine[0]/egt</property>
+        <property>engines/engine[1]/egt</property>
         <factor>0.2142</factor>
         <center>
             <x-m>0</x-m>
@@ -147,7 +147,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind1.001</object-name>
-        <property>engines/engine[0]/egt</property>
+        <property>engines/engine[1]/egt</property>
         <factor>0.1792</factor>
         <center>
             <x-m>0</x-m>
@@ -164,7 +164,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind2</object-name>
-        <property>engines/engine[0]/egt</property>
+        <property>engines/engine[1]/egt</property>
         <factor>0.1442</factor>
         <center>
             <x-m>0</x-m>
@@ -181,7 +181,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind2.001</object-name>
-        <property>engines/engine[0]/egt</property>
+        <property>engines/engine[1]/egt</property>
         <factor>0.1092</factor>
         <center>
             <x-m>0</x-m>
@@ -198,7 +198,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind3</object-name>
-        <property>engines/engine[0]/egt</property>
+        <property>engines/engine[1]/egt</property>
         <factor>0.0742</factor>
         <center>
             <x-m>0</x-m>
@@ -215,7 +215,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind3.001</object-name>
-        <property>engines/engine[0]/egt</property>
+        <property>engines/engine[1]/egt</property>
         <factor>0.0392</factor>
         <center>
             <x-m>0</x-m>
@@ -232,7 +232,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>RH_ind4</object-name>
-        <property>engines/engine[0]/egt</property>
+        <property>engines/engine[1]/egt</property>
         <factor>0.0042</factor>
         <center>
             <x-m>0</x-m>
