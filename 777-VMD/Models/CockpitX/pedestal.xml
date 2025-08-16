@@ -445,6 +445,9 @@ Franck.VMD
         <type>rotate</type>
         <object-name>LHThrottle</object-name>
         <property>controls/engines/engine[0]/throttle-lever</property>
+        <condition>
+			<property>engines/engine[0]/rpm</property>
+        </condition>
         <factor>39</factor>
         <center>
             <x-m>-1.4276</x-m>
@@ -462,6 +465,9 @@ Franck.VMD
         <type>rotate</type>
         <object-name>RHThrottle</object-name>
         <property>controls/engines/engine[1]/throttle-lever</property>
+        <condition>
+			<property>engines/engine[1]/rpm</property>
+        </condition>
         <factor>39</factor>
         <center>
             <x-m>-1.4276</x-m>
