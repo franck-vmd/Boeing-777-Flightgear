@@ -430,7 +430,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>RHRevThrust.lever</object-name>
-        <property>sim/multiplay/generic/float[6]</property>
+        <property>sim/multiplay/generic/float[76]</property>
         <factor>60</factor>
         <center>
             <x-m>-1.41748</x-m>
