@@ -6352,7 +6352,7 @@ Franck.VMD
             <repeatable>false</repeatable>
             <binding>
                 <command>property-adjust</command>
-                conditi<property>controls/hydraulics/system/LACMP-switch</property>
+                <property>controls/hydraulics/system/LACMP-switch</property>
                 <step>1</step>
                 <min>0</min>
                 <max>2</max>
