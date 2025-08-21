@@ -18,7 +18,7 @@ var ground_services = {
     
     # Payload System
     
-    if (getprop("sim/aero") != "777-200F") {
+    if (getprop("sim/aero") != "777-200F-v2") {
         # The 777-200F has its own payload dialog. For the other types, the max number of first/business/economy pax and catering has to be defined, so we
         # overwrite the dialog with the values specified in their respective -set files.
         var payload = gui.Dialog.new("sim/gui/dialogs/payload/dialog", "gui/dialogs/payload-dlg.xml");

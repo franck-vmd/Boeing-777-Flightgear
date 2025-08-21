@@ -43,7 +43,11 @@ if (!contains(globals.canvas.Element, 'canvasToLocal')) {
 if (!contains(globals.canvas.Element, 'imageSize')) {
     globals.canvas.Image.imageSize = func {
         var sizeNodes = me._node.getChildren('size');
-        return [sizeNodes[0].getValue(), sizeNodes[1].getValue()];
+        if (size(sizeNodes) > 1) {
+            return [sizeNodes[0].getValue(), sizeNodes[1].getValue()];
+        }
+
+        return [1, 1]; # I don't really know what to return, for now 1x1
     };
 }
 
