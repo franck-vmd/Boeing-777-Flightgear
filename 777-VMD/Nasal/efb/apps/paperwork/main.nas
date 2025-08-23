@@ -1861,5 +1861,5 @@ var PaperworkApp = {
 
 };
 
-registerApp('paperwork', '', 'paperwork.png', PaperworkApp);
+registerApp('paperwork', '', PaperworkApp);
 

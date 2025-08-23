@@ -830,4 +830,4 @@ var ChartsApp = {
         },
 };
 
-registerApp('charts', '', 'flightbag.png', ChartsApp);
+registerApp('charts', '', ChartsApp);

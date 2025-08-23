@@ -11,46 +11,6 @@ var systemAppBasedir = acdir ~ '/Nasal/efb/apps';
 var customAppBasedir = acdir ~ '/Nasal/efbapps';
 var globalAppBasedir = fgdir ~ '/Export/efbapps';
 
-# Compatibility shim: canvasToLocal
-if (!contains(globals.canvas.Element, 'canvasToLocal')) {
-    globals.canvas.Element.canvasToLocal = func (xy) {
-        var tf = me._node.getChildren('tf');
-        if (tf == nil)
-            tf = [];
-        for (var i = size(tf) - 1; i >= 0; i -= 1) {
-            var tff = tf[i];
-            var m = tff.getValues()['m'];
-            var ma = m[0] * m[3] - m[1] * m[2];
-            # reverse:
-            xy[0] -= m[4];
-            xy[1] -= m[5];
-            xy = [
-                ( xy[0] * m[3] - xy[1] * m[2]) / ma,
-                (-xy[0] * m[1] + xy[1] * m[0]) / ma,
-            ];
-        }
-        var p = me.getParent();
-        if (p == nil or !isa(p, globals.canvas.Element)) {
-            return xy;
-        }
-        else {
-            return p.canvasToLocal(xy);
-        }
-    };
-};
-
-# Compatibility shim: imageSize
-if (!contains(globals.canvas.Element, 'imageSize')) {
-    globals.canvas.Image.imageSize = func {
-        var sizeNodes = me._node.getChildren('size');
-        if (size(sizeNodes) > 1) {
-            return [sizeNodes[0].getValue(), sizeNodes[1].getValue()];
-        }
-
-        return [1, 1]; # I don't really know what to return, for now 1x1
-    };
-}
-
 # Fix: writexml() from Nasal's IO library is incorrect. This version here should
 # encode strings correctly.
 

@@ -9542,11 +9542,6 @@ Franck.VMD
 
   <model>
    <path>Aircraft/777-VMD/Models/Ground/Services/Services300.xml</path>
-     <offsets>
-  	<x-m>0</x-m>
-  	<y-m>0</y-m>
-  	<z-m>0</z-m>
-     </offsets>
   </model>
 
 <!-- De-icing Truck -->
@@ -9682,10 +9677,9 @@ Franck.VMD
 		</equals>
 	</condition>
 	<offsets>
-		<x-m>-32.35</x-m>
-		<y-m>5</y-m>
-		<z-m>-5.33</z-m>
-		<heading-deg>180</heading-deg>
+		<x-m>-5.5</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
 	</offsets>
 </model>
 
@@ -9867,11 +9861,6 @@ Franck.VMD
 	<model>
  <name>evacuation</name>
  <path>Aircraft/777-VMD/Models/Ground/Services/Evacuation/evacuation300.xml</path>
- <offsets>
-  <x-m>0</x-m>
-  <y-m>0</y-m>
-  <z-m>0</z-m>
- </offsets>
 </model>
 
 <animation>
@@ -9887,11 +9876,6 @@ Franck.VMD
 <model>
  <name>oxygenmasks</name>
  <path>Aircraft/777-VMD/Models/Ground/Services/Oxygen_masks/oxygen_mask300.xml</path>
- <offsets>
-  <x-m>0</x-m>
-  <y-m>0</y-m>
-  <z-m>0</z-m>
- </offsets>
 </model>
 
 <animation>

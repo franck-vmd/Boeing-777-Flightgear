@@ -9593,10 +9593,9 @@ Franck.VMD
 		</equals>
 	</condition>
 	<offsets>
-		<x-m>-32.35</x-m>
-		<y-m>5</y-m>
-		<z-m>-5.33</z-m>
-		<heading-deg>180</heading-deg>
+		<x-m>-5.5</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
 	</offsets>
 </model>
 
