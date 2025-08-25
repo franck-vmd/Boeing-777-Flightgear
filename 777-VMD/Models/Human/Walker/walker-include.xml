@@ -201,7 +201,7 @@
 		</flashlight>
 	</walker>
 
-		<view n="138">
+		<view n="139">
 			<name>Walk View</name>
 			<type>lookfrom</type>
 			<enabled type="bool">true</enabled>
@@ -222,7 +222,7 @@
 				</limits>
 			</config>
 		</view>
-		<view n="139">
+		<view n="140">
 			<name>Walker Orbit View</name>
 			<type>lookat</type>
 			<enabled type="bool">true</enabled>
@@ -726,9 +726,6 @@
 	</input>
 
 	<nasal n="0">
-                <pilot>
-		<file>Aircraft/777-VMD/Models/Human/Nasal/pilot-movment.nas</file>
-	        </pilot>
 		<walk>
 			<file>Aircraft/777-VMD/Models/Human/Nasal/walk.nas</file>
 			<script>main_loop();</script>
@@ -736,9 +733,9 @@
 		<walker>
 			<file>Aircraft/777-VMD/Models/Human/Nasal/walker-animate.nas</file>
 		</walker>
-                <walkview>
-                        <file>Aircraft/777-VMD/Models/Human/Nasal/walkview.nas</file>
-                </walkview>
+        <walkview>
+            <file>Aircraft/777-VMD/Models/Human/Nasal/walkview.nas</file>
+        </walkview>
 	</nasal>
 
 </PropertyList>

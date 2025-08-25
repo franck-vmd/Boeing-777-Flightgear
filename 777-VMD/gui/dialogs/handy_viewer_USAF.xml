@@ -241,10 +241,6 @@
       	<equal>true</equal>
 	  	<repeatable type="bool">false</repeatable>
 	  	<binding>
-			<command>property-toggle</command>
-			<property>sim/walker/key-triggers/outside-toggle</property>
-		</binding>
-	  	<binding>
 	    		<command>nasal</command>
 	    		<script>
 	      		setprop("/sim/current-view/view-number", "47");
@@ -259,10 +255,6 @@
       	<legend>Walk OVi</legend>
       	<equal>true</equal>
 	  	<repeatable type="bool">false</repeatable>
-	  	<binding>
-			<command>property-toggle</command>
-			<property>sim/walker/key-triggers/outside-toggle</property>
-		</binding>
 	  	<binding>
 	    		<command>nasal</command>
 	    		<script>

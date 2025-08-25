@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<PropertyList include="equipment/flashlight.xml">
-<!--
-<nasal>
-    <load>
-      update.add("Aircraft/777-VMD/Models/Human/Models/Themes", "sim/multiplay/generic/string[10]");
-    </load>
-    <unload>
-      livery_update.stop();
-    </unload>
-  </nasal>
--->
+<PropertyList>
 
  <model>
 	<name>male</name>
@@ -28,16 +18,6 @@
    </equals>
   </condition>
  </animation>
-
-<!--
- <animation>
-  <type>scale</type>
-  <object-name>male</object-name>
-  <x-offset>1.1</x-offset>
-  <y-offset>1.0</y-offset>
-  <z-offset>0.9</z-offset>
- </animation>
--->
 
  <model>
 	<name>female</name>
@@ -102,16 +82,5 @@
    </equals>
   </condition>
  </animation>
-<!--
- <animation>
-  <type>scale</type>
-  <object-name>female</object-name>
-  <x-offset>1.07</x-offset>
-  <y-offset>1.082</y-offset>
-  <z-offset>1.082</z-offset>
- </animation>
 
-0.075 up
-0.0092 aft
--->
 </PropertyList>

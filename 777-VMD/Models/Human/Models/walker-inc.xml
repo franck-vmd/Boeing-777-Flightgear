@@ -209,38 +209,6 @@
   </condition>
  </animation>
 
-<!-- Tool right Hand 
-
- <animation>
-	<name>toolright</name>
-  <object-name>tool1r</object-name>
- </animation>	
-
-	<model> 
-		<path>Aircraft/Generic/Human/Models/equipment/m1911.xml</path>
-		<name>tool1r</name>
-	<offsets>
-		<x-m>0.02795</x-m>
-		<y-m>0.81761</y-m>
-		<z-m>0.46898</z-m>
-		<pitch-deg>-90</pitch-deg>
-		<heading-deg></heading-deg>
-		<roll-deg>90.0</roll-deg>
-	</offsets>
-	</model>
- <animation>
-  <type>select</type>
-  <object-name>tool1r</object-name>
-  <condition>
-   <equals>
-		<property alias="../../../../appearence-props/toolr"/>
-    <value>1</value>
-   </equals>
-  </condition>
- </animation>
-
--->
-
 <!-- Character -->
  <model>
 	<name>char0</name>
@@ -367,10 +335,6 @@
  <animation>
   <type>select</type>
 	<object-name>head</object-name>
-
-	<object-name>hair</object-name>
-	<object-name>hathair</object-name>
-
 	<object-name>eyes</object-name>
 	<object-name>headgear</object-name>
 	<object-name>eyewear</object-name>
@@ -383,26 +347,10 @@
   </condition>
  </animation>
 
- <animation>
-  <type>select</type>
-	<object-name>hair</object-name>
-  <condition>
- <equals>
-    <property alias="../../../../appearence-props/hair"/>
-		<value>1</value>
-   </equals>
-  </condition>
- </animation>
- <animation>
-  <type>select</type>
-	<object-name>hathair</object-name>
-  <condition>
- <equals>
-    <property alias="../../../../appearence-props/hair"/>
-		<value>2</value>
-   </equals>
-  </condition>
- </animation>
+	<model>
+		<name>flashlight</name>
+		<path>equipment/flashlight.xml</path>
+	</model>
 
 <!-- hip -->
 	<animation>
