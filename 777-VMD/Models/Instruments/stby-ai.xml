@@ -6,8 +6,7 @@ Franck.VMD
 <PropertyList>
  <path>stby-ai.ac</path>
 
-
- <animation>
+<animation>
         <type>rotate</type>
         <object-name>Roll.needle</object-name>
         <object-name>Slip.needle</object-name>
@@ -94,11 +93,10 @@ Franck.VMD
                 <object-name>Display_1.003</object-name>
                 <object-name>Display_1.004</object-name>
                 <object-name>FDpitch</object-name>
-                <object-name>FDpitch_rembrandt</object-name>
                 <object-name>FDroll</object-name>
-                <object-name>FDroll_rembrandt</object-name>
                 <object-name>Roll.needle</object-name>
                 <object-name>Slip.needle</object-name>
+                <object-name>Plane.028</object-name>
 		<condition>
 			<greater-than>
 				<property>systems/electrical/CPT-FLT-INST</property>
@@ -111,10 +109,16 @@ Franck.VMD
         <type>select</type>
         <object-name>StbyAI.screenoff</object-name>
                 <condition>
+                 <and>
                         <less-than>
 			<property>sim/multiplay/generic/float[75]</property>
 			<value>0.9</value>
 			</less-than>
+            <less-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </less-than>
+          </and>
 		</condition>
     </animation>
     
@@ -129,11 +133,10 @@ Franck.VMD
                 <object-name>Display_1.003</object-name>
                 <object-name>Display_1.004</object-name>
                 <object-name>FDpitch</object-name>
-                <object-name>FDpitch_rembrandt</object-name>
                 <object-name>FDroll</object-name>
-                <object-name>FDroll_rembrandt</object-name>
                 <object-name>Roll.needle</object-name>
                 <object-name>Slip.needle</object-name>
+                <object-name>Plane.028</object-name>
                 <condition>
                         <greater-than>
 			<property>sim/multiplay/generic/float[75]</property>
