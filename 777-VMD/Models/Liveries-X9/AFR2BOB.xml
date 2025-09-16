@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">4 BOEING BLANC 777x9</name>
+				<texture>Liveries-X9/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-X9/AFR1BOB.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-X9/AFR3BOB.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-X9/AFR4BOB.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-X9/AFR5BOB.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-X9/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-X9/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-X9/AFR8BOB.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-X9/AFR9.png</texture>
+                        </fuselage7>
+                        <fuselage8>
+                                <texture>Liveries-X9/AFR1BOBrac.png</texture>
+                        </fuselage8>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>BOB</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+
