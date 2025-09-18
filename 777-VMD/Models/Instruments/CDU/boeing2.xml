@@ -27,7 +27,7 @@ Franck.VMD
    <object-name>CDuscreen</object-name> 		
    <property>/sim/time/sun-angle-rad</property>
    <step>1.70</step>
-   <factor>0.286</factor>
+   <factor>0.256</factor>
    <center>
      <x-m>0</x-m>
      <y-m>0</y-m>

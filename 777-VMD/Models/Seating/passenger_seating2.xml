@@ -7,7 +7,8 @@
         <animation>
 		<type>material</type>
 		<object-name>siegespremiere1</object-name>
-		<object-name>siegespremiere1.001</object-name>
+		<object-name>tv</object-name>
+        <object-name>tv2</object-name>
 		<object-name>tablette1D</object-name>
 		<object-name>tablette2D</object-name>
 		<object-name>tablette3D</object-name>
@@ -18,23 +19,64 @@
 		<texture>chambreensemble.png</texture>
 	</animation>
 
+     <animation>
+    <type>select</type>
+    <object-name>tv</object-name>
+    <condition>
+        <and>
+        <greater-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+        </and>
+        </condition>
+  </animation>
+
          <animation>
 		<type>material</type>
 		<object-name>siegespremiere2</object-name>
 		<texture>vitres.png</texture>
 	</animation>
-	
-       <effect>
-         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
-                         <object-name>siegespremiere1</object-name>
-                         <object-name>siegespremiere1.001</object-name>
-                         <object-name>tablette1D</object-name>
+
+    <animation>
+        <type>material</type>
+                 <object-name>siegespremiere1</object-name>
+                 <object-name>tv</object-name>
+                 <object-name>tablette1D</object-name>
 		         <object-name>tablette2D</object-name>
 		         <object-name>tablette3D</object-name>
 		         <object-name>tablette1G</object-name>
 		         <object-name>tablette2G</object-name>
 		         <object-name>tablette3G</object-name>
-       </effect>
+                 <object-name>dossier1D</object-name>
+                 <object-name>dossier2D</object-name>
+                 <object-name>dossier3D</object-name>
+                 <object-name>dossier1G</object-name>
+                 <object-name>dossier2G</object-name>
+                 <object-name>dossier3G</object-name>
+                 <object-name>siegespremiere1lumiere</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
                
        <effect>
        <inherits-from>Effects/model-transparent</inherits-from>
@@ -51,8 +93,8 @@
         </and>
         </condition>
         <emission>
-            <red>0.8</red>
-            <green>0.8</green>
+            <red>1.0</red>
+            <green>1.0</green>
             <blue>0.0</blue>
         </emission>
     </animation>
@@ -645,7 +687,5 @@
 			</binding>
 		</action>
 	</animation>
-
-  
  
 </PropertyList>
