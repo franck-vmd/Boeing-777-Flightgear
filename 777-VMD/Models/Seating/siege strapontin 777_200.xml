@@ -6,6 +6,13 @@
   
          <animation>
 		<type>material</type>
+               <object-name>siegeC</object-name>
+               <object-name>siegeB1</object-name>
+               <object-name>siegeB2</object-name>
+               <object-name>siegeB3</object-name>
+               <object-name>siegeB6</object-name>
+               <object-name>siegeB7</object-name>
+               <object-name>siegeB8</object-name>
 		<texture>sieges.png</texture>
 	 </animation>
 

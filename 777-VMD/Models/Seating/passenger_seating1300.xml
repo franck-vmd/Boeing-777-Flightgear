@@ -6,13 +6,51 @@
   
   <animation>
 		<type>material</type>
+           <object-name>Sieges777300</object-name>
+           <object-name>Sieges777300lumiere</object-name>
+           <object-name>Sieges777300tv</object-name>
 		<texture>texture_sieges2.png</texture>
 	</animation>
 
-        <effect>
-         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
-                         <object-name>Sieges777300</object-name>
-               </effect>
+               <animation>
+        <type>material</type>
+        <object-name>Sieges777300</object-name>
+        <object-name>Sieges777300lumiere</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+     <animation>
+    <type>select</type>
+    <object-name>Sieges777300tv</object-name>
+    <condition>
+         <or>
+         <less-than>
+                <property>systems/electrical/outputs/efis</property>
+                <value>15</value>
+            </less-than>
+        <less-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</less-than>
+        </or>
+        </condition>
+  </animation>
                
                <animation>
         <type>material</type>
@@ -25,7 +63,7 @@
         </condition>
         <emission>
             <red>0.0</red>
-            <green>0.8</green>
+            <green>1.0</green>
             <blue>0.0</blue>
         </emission>
     </animation>
