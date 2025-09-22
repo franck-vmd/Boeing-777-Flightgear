@@ -12,7 +12,7 @@
         <primary-set type="bool">true</primary-set>
         <model n="0">
             <path>Aircraft/777-VMD/Models/777-200-v2.xml</path>
-  
+
             <door>
                 <position-x-m type="float">-18.30</position-x-m>
                 <position-y-m type="float"> -2.95</position-y-m>

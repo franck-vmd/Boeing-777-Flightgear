@@ -443,6 +443,14 @@
    <file>Aircraft/777-VMD/Systems/walk-views1.nas</file>
   </WalkViews1>
     </nasal>
+
+    <aircraft>
+	<icao>
+		<wake-turbulence-category>H</wake-turbulence-category>
+		<type type="string">B772</type>
+		<surveillance type="string">S</surveillance>
+	</icao>
+</aircraft>
     
     <aircraft>
      <jetway-pos>

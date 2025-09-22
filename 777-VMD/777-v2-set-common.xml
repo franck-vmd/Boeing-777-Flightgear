@@ -1091,6 +1091,7 @@ Service Ceiling: 43,100ft
             <parkpos-offset-m type="double">0.0</parkpos-offset-m>
         </dimensions>
         <aircraft-class type="string">gate</aircraft-class>
+        <aircraft-operator type="string"/>
         <aircraft-data>
             <path>sim/dimensions/radius-m</path>
             <path>sim/dimensions/parkpos-offset-m</path>
