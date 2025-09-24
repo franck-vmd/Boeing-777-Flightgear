@@ -200,11 +200,15 @@ Franck.VMD
         <object-name>Raileronb</object-name>
         <object-name>Rflap1</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap1.001</object-name>
+        <object-name>Rflap2.001</object-name>
         <object-name>Rflap4</object-name>
         <object-name>Rflap5</object-name>
         <object-name>Rflap6</object-name>
         <object-name>Lflap1</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap1.001</object-name>
+        <object-name>Lflap2.001</object-name>
         <object-name>Lflap4</object-name>
         <object-name>Lflap5</object-name>
         <object-name>Lflap6</object-name>
@@ -453,6 +457,8 @@ Franck.VMD
         <object-name>Lbrakea</object-name>
         <object-name>Lflap1</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap1.001</object-name>
+        <object-name>Lflap2.001</object-name>
         <object-name>Lflap4</object-name>
         <object-name>Lflap4a</object-name>
         <object-name>Lflap4b</object-name>
@@ -500,6 +506,8 @@ Franck.VMD
         <object-name>Rbrake1b</object-name>
         <object-name>Rflap1</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap1.001</object-name>
+        <object-name>Rflap2.001</object-name>
         <object-name>Rflap4</object-name>
         <object-name>Rflap4a</object-name>
         <object-name>Rflap4b</object-name>
@@ -875,6 +883,8 @@ Franck.VMD
             <object-name>Raileronb</object-name>
             <object-name>Rbrake1</object-name>
             <object-name>Rbrake1a</object-name>
+            <object-name>Rflap1.001</object-name>
+            <object-name>Rflap2.001</object-name>
             <object-name>Rbrake1b</object-name>
             <object-name>Rbrakea</object-name>
             <object-name>Rflap4</object-name>
@@ -928,6 +938,8 @@ Franck.VMD
             <object-name>Laileronb</object-name>
             <object-name>Lbrake1</object-name>
             <object-name>Lbrake1a</object-name>
+            <object-name>Lflap1.001</object-name>
+            <object-name>Lflap2.001</object-name>
             <object-name>Lbrake1b</object-name>
             <object-name>Lbrakea</object-name>
             <object-name>Lflap4</object-name>
@@ -6639,7 +6651,9 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <factor>-35</factor>
         <axis>
@@ -6655,6 +6669,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -6696,6 +6711,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -6737,6 +6753,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -6778,6 +6795,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <factor>-35</factor>
         <axis>
@@ -6793,6 +6811,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -6834,6 +6853,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -6875,6 +6895,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7075,7 +7096,9 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <factor>35</factor>
         <axis>
@@ -7091,6 +7114,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7132,6 +7156,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7173,6 +7198,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7214,6 +7240,7 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <factor>35</factor>
         <axis>
@@ -7229,6 +7256,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7270,6 +7298,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7311,6 +7340,7 @@ Franck.VMD
     <animation>
         <type>translate</type>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
