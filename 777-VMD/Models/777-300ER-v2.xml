@@ -224,11 +224,15 @@ Franck.VMD
         <object-name>Raileronb</object-name>
         <object-name>Rflap1</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap1.001</object-name>
+        <object-name>Rflap2.001</object-name>
         <object-name>Rflap4</object-name>
         <object-name>Rflap5</object-name>
         <object-name>Rflap6</object-name>
         <object-name>Lflap1</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap1.001</object-name>
+        <object-name>Lflap2.001</object-name>
         <object-name>Lflap4</object-name>
         <object-name>Lflap5</object-name>
         <object-name>Lflap6</object-name>
@@ -486,6 +490,8 @@ Franck.VMD
         <object-name>Lbrakea</object-name>
         <object-name>Lflap1</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap1.001</object-name>
+        <object-name>Lflap2.001</object-name>
         <object-name>Lflap4</object-name>
         <object-name>Lflap4a</object-name>
         <object-name>Lflap4b</object-name>
@@ -533,6 +539,8 @@ Franck.VMD
         <object-name>Rbrake1b</object-name>
         <object-name>Rflap1</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap1.001</object-name>
+        <object-name>Rflap2.001</object-name>
         <object-name>Rflap4</object-name>
         <object-name>Rflap4a</object-name>
         <object-name>Rflap4b</object-name>
@@ -928,6 +936,8 @@ Franck.VMD
             <object-name>Raileronb</object-name>
             <object-name>Rbrake1</object-name>
             <object-name>Rbrake1a</object-name>
+            <object-name>Rflap1.001</object-name>
+            <object-name>Rflap2.001</object-name>
             <object-name>Rbrake1b</object-name>
             <object-name>Rbrakea</object-name>
             <object-name>Rflap4</object-name>
@@ -982,6 +992,8 @@ Franck.VMD
             <object-name>Laileronb</object-name>
             <object-name>Lbrake1</object-name>
             <object-name>Lbrake1a</object-name>
+            <object-name>Lflap1.001</object-name>
+            <object-name>Lflap2.001</object-name>
             <object-name>Lbrake1b</object-name>
             <object-name>Lbrakea</object-name>
             <object-name>Lflap4</object-name>
@@ -7249,24 +7261,25 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
         <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
-        <factor>-30</factor>
-        <center>
-            <x-m>7.670</x-m>
-            <y-m>14.203</y-m>
-            <z-m>-1.0</z-m>
-        </center>
+        <factor>-35</factor>
         <axis>
-            <x>0.0</x>
-            <y>-0.992</y>
-            <z>-0.130</z>
+            <x1-m>7.42721</x1-m>
+            <y1-m>7.87875</y1-m>
+            <z1-m>-1.24409</z1-m>
+            <x2-m>7.42721</x2-m>
+            <y2-m>3.26999</y2-m>
+            <z2-m>-1.88596</z2-m>
         </axis>
     </animation>
 
     <animation>
         <type>translate</type>
-        <object-name>Rflap2</object-name>
+        <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7274,17 +7287,259 @@ Franck.VMD
                 <dep>0</dep>
             </entry>
             <entry>
+                <ind>0.033</ind>
+                <dep>0.071666667</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.143333334</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.215000001</dep>
+            </entry>
+            <entry>
                 <ind>0.666</ind>
-                <dep>0</dep>
+                <dep>0.286666668</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.358333335</dep>
             </entry>
             <entry>
                 <ind>1.0</ind>
-                <dep>0.8</dep>
+                <dep>0.430000002</dep>
             </entry>
         </interpolation>
         <axis>
-            <x>1.0</x>
+            <x>1</x>
             <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.10</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.25</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.36</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap1</object-name>
+        <object-name>Rflap1.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.0125</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.05</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.060</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.070</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.075</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>-35</factor>
+        <axis>
+            <x1-m>7.42721</x1-m>
+            <y1-m>7.87875</y1-m>
+            <z1-m>-1.24409</z1-m>
+            <x2-m>7.42721</x2-m>
+            <y2-m>3.26999</y2-m>
+            <z2-m>-1.88596</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0792</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.1584</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.2376</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.3168</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.396</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.60</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.55</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.75</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>1.00</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>1.40</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Rflap2</object-name>
+        <object-name>Rflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.05</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.12</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.18</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.21</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
             <z>0</z>
         </axis>
     </animation>
@@ -7420,14 +7675,14 @@ Franck.VMD
         <object-name>Rbrake</object-name>
         <object-name>Rbrakea</object-name>
         <property>sim/multiplay/generic/float[60]</property>
-        <factor>-1</factor>
+        <factor>1</factor>
         <axis>
-            <x1-m>6.673</x1-m>
-            <y1-m>3.269</y1-m>
-            <z1-m>-1.108</z1-m>
-            <x2-m>6.737</x2-m>
-            <y2-m>8.286</y2-m>
-            <z2-m>-0.487</z2-m>
+            <x1-m>7.36553</x1-m>
+            <y1-m>8.36381</y1-m>
+            <z1-m>-0.551504</z1-m>
+            <x2-m>7.30558</x2-m>
+            <y2-m>3.26943</y2-m>
+            <z2-m>-1.1814</z2-m>>
         </axis>
     </animation>
 
@@ -7451,24 +7706,25 @@ Franck.VMD
     <animation>
         <type>rotate</type>
         <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
         <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
-        <factor>30</factor>
-        <center>
-            <x-m>7.670</x-m>
-            <y-m>-14.203</y-m>
-            <z-m>-1.0</z-m>
-        </center>
+        <factor>35</factor>
         <axis>
-            <x>0.0</x>
-            <y>0.992</y>
-            <z>-0.130</z>
+            <x1-m>7.42721</x1-m>
+            <y1-m>-7.87875</y1-m>
+            <z1-m>-1.24409</z1-m>
+            <x2-m>7.42721</x2-m>
+            <y2-m>-3.26999</y2-m>
+            <z2-m>-1.88596</z2-m>
         </axis>
     </animation>
 
     <animation>
         <type>translate</type>
-        <object-name>Lflap2</object-name>
+        <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
         <property>surface-positions/flap-pos-norm</property>
         <interpolation>
             <entry>
@@ -7476,18 +7732,301 @@ Franck.VMD
                 <dep>0</dep>
             </entry>
             <entry>
+                <ind>0.033</ind>
+                <dep>0.071666667</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.143333334</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.215000001</dep>
+            </entry>
+            <entry>
                 <ind>0.666</ind>
-                <dep>0</dep>
+                <dep>0.286666668</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.358333335</dep>
             </entry>
             <entry>
                 <ind>1.0</ind>
-                <dep>0.8</dep>
+                <dep>0.430000002</dep>
             </entry>
         </interpolation>
         <axis>
-            <x>1.0</x>
+            <x>1</x>
             <y>0</y>
             <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.10</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.25</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.36</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap1</object-name>
+        <object-name>Lflap1.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.0125</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.05</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.060</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.070</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.075</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>35</factor>
+        <axis>
+            <x1-m>7.42721</x1-m>
+            <y1-m>-7.87875</y1-m>
+            <z1-m>-1.24409</z1-m>
+            <x2-m>7.42721</x2-m>
+            <y2-m>-3.26999</y2-m>
+            <z2-m>-1.88596</z2-m>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0792</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.1584</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.2376</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.3168</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.396</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.60</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.55</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.75</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>1.00</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>1.40</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Lflap2</object-name>
+        <object-name>Lflap2.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.05</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.12</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.15</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.18</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.21</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>Cube.001</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.033</ind>
+                <dep>0.0</dep>
+            </entry>
+            <entry>
+                <ind>0.166</ind>
+                <dep>0.10</dep>
+            </entry>
+            <entry>
+                <ind>0.5</ind>
+                <dep>0.20</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>0.20</dep>
+            </entry>
+            <entry>
+                <ind>0.833</ind>
+                <dep>0.30</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0.43</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
         </axis>
     </animation>
 
@@ -7624,12 +8163,12 @@ Franck.VMD
         <property>sim/multiplay/generic/float[50]</property>
         <factor>-1</factor>
         <axis>
-            <x1-m>6.737</x1-m>
-            <y1-m>-8.363</y1-m>
-            <z1-m>-0.479</z1-m>
-            <x2-m>6.672</x2-m>
-            <y2-m>-3.270</y2-m>
-            <z2-m>-1.113</z2-m>
+            <x1-m>7.36553</x1-m>
+            <y1-m>-8.36381</y1-m>
+            <z1-m>-0.551504</z1-m>
+            <x2-m>7.30558</x2-m>
+            <y2-m>-3.26943</y2-m>
+            <z2-m>-1.1814</z2-m>>
         </axis>
     </animation>
 
@@ -7688,7 +8227,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>hinge1</object-name>
         <property>surface-positions/flap-pos-norm</property>
-        <factor>20</factor>
+        <factor>37</factor>
         <center>
             <x-m>6.718</x-m>
             <y-m>0</y-m>
