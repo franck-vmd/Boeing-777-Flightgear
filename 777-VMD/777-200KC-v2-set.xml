@@ -2,7 +2,7 @@
 
     <sim n="0">
         <description>Boeing 777 USAF-v2</description>
-        <aero>777-200F-v2</aero>
+        <aero>777-200KC-v2</aero>
         <max-payload type="double">448500</max-payload>
         <max-landing-weight type="double">575000</max-landing-weight>
         <max-takeoff-weight type="double">766800</max-takeoff-weight>
