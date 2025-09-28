@@ -7164,7 +7164,7 @@ Franck.VMD
         <object-name>LHelevator</object-name>
         <object-name>LHstab</object-name>
         <property>fcs/stabilizer/final-deg</property>
-        <factor>1</factor>
+        <factor>-1</factor>
         <center>
             <x-m>37.5713</x-m>
             <y-m>0.0</y-m>
@@ -7181,14 +7181,14 @@ Franck.VMD
         <type>rotate</type>
         <object-name>LHelevator</object-name>
         <property>fcs/left-elevator/final-deg</property>
-        <factor>1</factor>
+        <factor>-1</factor>
         <axis>
-        <x1-m>44.1485</x1-m>
-        <y1-m>-11.7456</y1-m>
-        <z1-m>2.48855</z1-m>
-        <x2-m>39.1791</x2-m>
-        <y2-m>-1.0264</y2-m>
-        <z2-m>1.31161</z2-m>
+        <x1-m>38.8676</x1-m>
+        <y1-m>-1.02359</y1-m>
+        <z1-m>1.10814</z1-m>
+        <x2-m>44.2292</x2-m>
+        <y2-m>-11.7456</y2-m>
+        <z2-m>2.48256</z2-m>
     </axis>
     <axis>
 	<x>0</x>
@@ -7219,14 +7219,14 @@ Franck.VMD
         <type>rotate</type>
         <object-name>RHelevator</object-name>
         <property>fcs/right-elevator/final-deg</property>
-        <factor>-1</factor>
+        <factor>1</factor>
         <axis>
-        <x1-m>44.1485</x1-m>
-        <y1-m>11.7456</y1-m>
-        <z1-m>2.48855</z1-m>
-        <x2-m>39.1791</x2-m>
-        <y2-m>1.0264</y2-m>
-        <z2-m>1.31161</z2-m>
+        <x1-m>38.8676</x1-m>
+        <y1-m>1.02359</y1-m>
+        <z1-m>1.10814</z1-m>
+        <x2-m>44.2292</x2-m>
+        <y2-m>11.7456</y2-m>
+        <z2-m>2.48256</z2-m>
     </axis>
     <axis>
 	<x>0</x>
