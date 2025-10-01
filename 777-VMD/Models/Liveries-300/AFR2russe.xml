@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">23 AREOFLOT</name>
+				<texture>Liveries-300/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-300/AFR1RUS.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-300/AFR3RUS.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-300/AFR4RUS.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-300/AFR5RUS.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-300/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-300/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-300/AFR8RUS.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-300/AFR9.png</texture>
+                        </fuselage7>
+                        <fuselage8>
+                                <texture>Liveries-300/AFR1RUSrac.png</texture>
+                        </fuselage8>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>RUSSE</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+
