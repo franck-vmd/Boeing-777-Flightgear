@@ -452,22 +452,16 @@ Franck.VMD
 </animation>
 
 <animation>
-    <type>pick</type>
-    <object-name>Btn.exec</object-name>
-    <condition>
-     <equals>
-      <property>autopilot/route-manager/isArmed</property>
-      <value>1</value>
-     </equals>
-    </condition>
-    <action>
-        <button>0</button>
-        <repeatable>false</repeatable>
-        <binding>
-            <command>nasal</command>
-            <script>cdu.execPushed();</script>
-        </binding>
-    </action>
+	<type>pick</type>
+	<object-name>Btn.exec</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>  
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('EXEC');</script>
+		</binding>
+	</action>
 </animation>
 
 <animation>
