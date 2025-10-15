@@ -272,7 +272,6 @@ Franck.VMD
             <command>nasal</command>
             <script>cdu.key('LSK6R');</script>
         </binding>
-
     </action>
 </animation>
 
