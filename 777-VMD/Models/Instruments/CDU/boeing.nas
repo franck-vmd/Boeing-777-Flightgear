@@ -724,7 +724,7 @@ var cduHold = {
   createHoldWPs : func() {
     if (me.active) {
       # calculate distance and radius...
-      me.distance = me.minutes * me.speedKts / 240;
+      me.distance = me.minutes * me.speedKts / 250;
       me.radius = me.distance / math.pi;
       
       
@@ -853,6 +853,9 @@ var key = func(v) {
           }
           if (cduDisplay == "INIT_REF"){
             cduDisplay = "IDENT";
+          }
+          if (cduDisplay == "MENU"){
+            cduDisplay = "FMC";
           }
           if (cduDisplay == "NAV_RAD"){
             setprop("instrumentation/nav[0]/frequencies/selected-mhz",cduInput);
@@ -1096,6 +1099,9 @@ var cdu = func{
       }
       if (display == "ALTN_NAV_RAD") {
         output.title = "ALTN NAV RADIO";
+      }
+      if (display == "FMC") {
+        output.title = "JUMP TO";
       }
       if (display == "VNAV") {
 	output.title = "ACT ECON CLB";

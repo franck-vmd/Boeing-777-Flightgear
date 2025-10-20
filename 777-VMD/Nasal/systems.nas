@@ -51,6 +51,8 @@ else if(vmodel == "-200KC-v2")
     aircraft.livery.init("Aircraft/777-VMD/Models/Liveries-200KC");
 }
 
+setprop("/sim/menubar/default/menu[3]/enabled", 0);
+
 #EFIS specific class
 # ie: var efis = EFIS.new("instrumentation/efis");
 var EFIS = {
