@@ -125,13 +125,6 @@ Franck.VMD
         <object-name>entry5lP</object-name>
         <object-name>entry5lPE</object-name>
         <object-name>entry5lC2</object-name>
-        <object-name>entry4l</object-name>
-        <object-name>entry4l2</object-name>
-        <object-name>entry4lA</object-name>
-        <object-name>entry4lC</object-name>
-        <object-name>entry4lP</object-name>
-        <object-name>entry4lPE</object-name>
-        <object-name>entry4lC2</object-name>
         <object-name>entry1r</object-name>
         <object-name>entry1r2</object-name>
         <object-name>entry1rA</object-name>
@@ -153,13 +146,6 @@ Franck.VMD
         <object-name>entry5rP</object-name>
         <object-name>entry5rPE</object-name>
         <object-name>entry5rC2</object-name>
-        <object-name>entry4r</object-name>
-        <object-name>entry4r2</object-name>
-        <object-name>entry4rA</object-name>
-        <object-name>entry4rC</object-name>
-        <object-name>entry4rP</object-name>
-        <object-name>entry4rPE</object-name>
-        <object-name>entry4rC2</object-name>
         <property-base>sim/model/fuselage2</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X8/AFR4.png</texture>
@@ -645,13 +631,6 @@ Franck.VMD
         <object-name>entry2lP</object-name>
         <object-name>entry2lPE</object-name>
         <object-name>entry2lC2</object-name>
-        <object-name>entry4l</object-name>
-        <object-name>entry4l2</object-name>
-        <object-name>entry4lA</object-name>
-        <object-name>entry4lC</object-name>
-        <object-name>entry4lP</object-name>
-        <object-name>entry4lPE</object-name>
-        <object-name>entry4lC2</object-name>
         <object-name>entry5l</object-name>
         <object-name>entry5l2</object-name>
         <object-name>entry5lA</object-name>
@@ -673,13 +652,6 @@ Franck.VMD
         <object-name>entry2rP</object-name>
         <object-name>entry2rPE</object-name>
         <object-name>entry2rC2</object-name>
-        <object-name>entry4r</object-name>
-        <object-name>entry4r2</object-name>
-        <object-name>entry4rA</object-name>
-        <object-name>entry4rC</object-name>
-        <object-name>entry4rP</object-name>
-        <object-name>entry4rPE</object-name>
-        <object-name>entry4rC2</object-name>
         <object-name>entry5r.001</object-name>
         <object-name>entry5r2</object-name>
         <object-name>entry5rA</object-name>
@@ -791,8 +763,6 @@ Franck.VMD
         <object-name>entry2rG</object-name>
         <object-name>entry3lG</object-name>
         <object-name>entry3rG</object-name>
-        <object-name>entry4lG</object-name>
-        <object-name>entry4rG</object-name>
         <object-name>entry5lG</object-name>
         <object-name>entry5rG</object-name>
    </effect>
@@ -3950,48 +3920,6 @@ Franck.VMD
 			</binding>
 		</action>
           <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry4l</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("l4");
-				</script>
-			</binding>
-		</action>
-          <condition>
-        <less-than>
-            <property>velocities/groundspeed-kt</property>
-            <value>30</value>
-        </less-than>
-        </condition>
-	</animation>
-
-	<animation>
-		<type>pick</type>
-		<object-name>entry4r</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				 b777.doors.toggle("r4");
-				</script>
-			</binding>
-		</action>
-         <condition>
         <less-than>
             <property>velocities/groundspeed-kt</property>
             <value>30</value>

@@ -8918,47 +8918,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>Wingslumiere</object-name>
-        <object-name>Wingslumierel</object-name>
-        <object-name>Wingslumierela</object-name>
-        <object-name>Wingslumierelb</object-name>
-        <object-name>Wingslumierelc</object-name>
-        <object-name>Wingslumiereld</object-name>
-        <object-name>Wingslumierele</object-name>
-        <object-name>Wingslumierelf</object-name>
-        <object-name>Wingslumierelg</object-name>
-        <object-name>Wingslumiered</object-name>
-        <object-name>Wingslumiereda</object-name>
-        <object-name>Wingslumieredb</object-name>
-        <object-name>Wingslumieredc</object-name>
-        <object-name>Wingslumieredd</object-name>
-        <object-name>Wingslumierede</object-name>
-        <object-name>Wingslumieredf</object-name>
-        <object-name>Wingslumieredg</object-name>
-        <object-name>WingslumiereLa</object-name>
-        <object-name>WingslumiereLb</object-name>
-        <object-name>WingslumiereLc</object-name>
-        <object-name>WingslumiereLd</object-name>
-        <object-name>WingslumiereLe</object-name>
-        <object-name>WingslumiereLf</object-name>
-        <object-name>WingslumiereLg</object-name>
-        <object-name>WingslumiereRa</object-name>
-        <object-name>WingslumiereRb</object-name>
-        <object-name>WingslumiereRc</object-name>
-        <object-name>WingslumiereRd</object-name>
-        <object-name>WingslumiereRe</object-name>
-        <object-name>WingslumiereRf</object-name>
-        <object-name>WingslumiereRg</object-name>
-        <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/wing-lights</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
         <object-name>Run.spotL</object-name>
         <object-name>LHLND.flare2</object-name>
         <condition>
