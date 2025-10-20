@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">23 VARIG 777-200</name>
+				<name type="string">23 VARIG</name>
 				<texture>Liveries-200ER/AFR2.png</texture>
                         </livery>
 			<fuselage>

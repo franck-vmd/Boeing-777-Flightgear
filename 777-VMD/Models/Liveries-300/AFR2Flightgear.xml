@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">22 FLIGHTGEAR 300</name>
+				<name type="string">22 FLIGHTGEAR</name>
 				<texture>Liveries-300/AFR2.png</texture>
                         </livery>
 			<fuselage>

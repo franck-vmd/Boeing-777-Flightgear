@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">20 TAM 777-300</name>
+				<name type="string">20 TAM</name>
 				<texture>Liveries-300/AFR2.png</texture>
                         </livery>
 			<fuselage>
