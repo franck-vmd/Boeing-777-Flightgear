@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">01 AIR FRANCE 777-F</name>
+				<name type="string">01 AIR FRANCE</name>
 				<texture>Liveries-F/AFR2.png</texture>
                         </livery>
 			<fuselage>

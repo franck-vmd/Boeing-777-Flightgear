@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">08 BB8 777-F</name>
+				<name type="string">08 BB8</name>
 				<texture>Liveries-F/AFR2.png</texture>
                         </livery>
 			<fuselage>

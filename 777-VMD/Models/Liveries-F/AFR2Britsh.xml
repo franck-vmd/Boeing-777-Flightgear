@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">18 British Airways 777-F</name>
+				<name type="string">18 British Airways</name>
 				<texture>Liveries-F/AFR2.png</texture>
                         </livery>
 			<fuselage>

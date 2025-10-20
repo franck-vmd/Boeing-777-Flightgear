@@ -4,7 +4,7 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">18 panda 777-F</name>
+				<name type="string">18 panda</name>
 				<texture>Liveries-300F/AFR2.png</texture>
                         </livery>
 			<fuselage>
