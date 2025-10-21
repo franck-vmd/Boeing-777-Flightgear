@@ -430,6 +430,7 @@ Franck.VMD
         <object-name>HeliRat.001</object-name>
         <object-name>HeliRat.002</object-name>
         <object-name>window mix exterieur</object-name>
+        <object-name>mur.001</object-name>
       </effect>
       
       <effect>
@@ -723,9 +724,9 @@ Franck.VMD
         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect19</inherits-from>
         <object-name>plafond</object-name>
     </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
+
+    <animation>
+        <type>material</type>
         <object-name>portecloison1</object-name>
         <object-name>portecloison2</object-name>
         <object-name>portecloison3</object-name>
@@ -739,19 +740,32 @@ Franck.VMD
         <object-name>galleycart</object-name>
         <object-name>cafetiere1</object-name>
         <object-name>window mix interieur</object-name>
+        <object-name>plafond</object-name>
+        <object-name>mur</object-name>
+        <object-name>rideau</object-name>
         <object-name>bar</object-name>
         <object-name>coca</object-name>
         <object-name>fanta</object-name>
         <object-name>sprite</object-name>
         <object-name>bouteilleN</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect29</inherits-from>
-        <object-name>mur</object-name>
-        <object-name>mur.001</object-name>
-        <object-name>mur.002</object-name>
-    </effect>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
 
     <effect>
        <name>exterior-glass</name>
@@ -8442,7 +8456,6 @@ Franck.VMD
     
     <animation>
         <type>select</type>
-        <object-name>mur.001</object-name>
         <object-name>window mix exterieur</object-name>
         <object-name>window mix interieur</object-name>
         <condition>
@@ -8450,17 +8463,6 @@ Franck.VMD
                 <property>controls/switches/windowmix</property>
                 <value>00</value>
             </greater-than>
-        </condition>
-    </animation>
-    
-    <animation>
-        <type>select</type>
-        <object-name>mur.002</object-name>
-        <condition>
-            <less-than>
-                <property>controls/switches/windowmix</property>
-                <value>01</value>
-            </less-than>
         </condition>
     </animation>
 
