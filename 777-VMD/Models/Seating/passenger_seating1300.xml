@@ -9,6 +9,7 @@
            <object-name>Sieges777300</object-name>
            <object-name>Sieges777300lumiere</object-name>
            <object-name>Sieges777300tv</object-name>
+           <object-name>Sieges777300tvnoir</object-name>
 		<texture>texture_sieges2.png</texture>
 	</animation>
 
@@ -16,6 +17,7 @@
         <type>material</type>
         <object-name>Sieges777300</object-name>
         <object-name>Sieges777300lumiere</object-name>
+        <object-name>Sieges777300tv</object-name>
         <condition>
          <and>
 		<greater-than>
@@ -37,7 +39,7 @@
 
      <animation>
     <type>select</type>
-    <object-name>Sieges777300tv</object-name>
+    <object-name>Sieges777300tvnoir</object-name>
     <condition>
          <or>
          <less-than>
@@ -49,6 +51,23 @@
                 <value>1.0</value>
 		</less-than>
         </or>
+        </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Sieges777300tv</object-name>
+    <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
         </condition>
   </animation>
                
