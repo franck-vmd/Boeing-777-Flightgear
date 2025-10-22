@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>passagers.ac</path>
+
+
+    <animation>
+        <type>material</type>
+         <object-name>femme01</object-name>
+         <object-name>femme02</object-name>
+         <object-name>fille01</object-name>
+         <object-name>homme01</object-name>
+         <object-name>homme02</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+ 
+</PropertyList>

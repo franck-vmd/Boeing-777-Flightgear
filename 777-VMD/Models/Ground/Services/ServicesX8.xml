@@ -107,7 +107,7 @@
 
   <model>
  <name>passagers</name>
- <path>Aircraft/777-VMD/Models/Ground/Services/passagersX8/passagers.xml</path>
+ <path>Aircraft/777-VMD/Models/Ground/Services/passagersX8/passagersX8.xml</path>
  <condition>
         <property>controls/switches/passagers</property>
     </condition>
