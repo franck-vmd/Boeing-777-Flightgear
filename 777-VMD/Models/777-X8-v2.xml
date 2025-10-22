@@ -718,6 +718,15 @@ Franck.VMD
         <object-name>verre</object-name>
         <object-name>sortiewclumiere</object-name>
         <object-name>spot ext</object-name>
+        <object-name>glassehublot</object-name>
+        <object-name>entry1lG</object-name>
+        <object-name>entry1rG</object-name>
+        <object-name>entry2lG</object-name>
+        <object-name>entry2rG</object-name>
+        <object-name>entry3lG</object-name>
+        <object-name>entry3rG</object-name>
+        <object-name>entry5lG</object-name>
+        <object-name>entry5rG</object-name>
     </effect>
     
     <effect>
@@ -766,20 +775,6 @@ Franck.VMD
             <blue>0.8</blue>
         </emission>
     </animation>
-
-    <effect>
-       <name>exterior-glass</name>
-       <inherits-from>Aircraft/777-VMD/Models/Effects/exterior-glass</inherits-from>
-        <object-name>glassehublot</object-name>
-        <object-name>entry1lG</object-name>
-        <object-name>entry1rG</object-name>
-        <object-name>entry2lG</object-name>
-        <object-name>entry2rG</object-name>
-        <object-name>entry3lG</object-name>
-        <object-name>entry3rG</object-name>
-        <object-name>entry5lG</object-name>
-        <object-name>entry5rG</object-name>
-   </effect>
     
     <model>
         <name>flightdeck-200</name>

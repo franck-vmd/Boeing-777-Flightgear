@@ -244,7 +244,7 @@
                         </binding>
                     </item>
                  <item n="9">
-                    <label>Handy Viewer X9</label>
+                    <label>Handy Viewer X</label>
                     <name>handyviewerx9</name>
                     <binding>
                         <command>dialog-show</command>
