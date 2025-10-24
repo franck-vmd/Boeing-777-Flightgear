@@ -80,6 +80,7 @@ Franck.VMD
         <object-name>RHelevator</object-name>
         <object-name>LHelevator</object-name>
         <object-name>Wings4</object-name>
+        <object-name>redlight</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X8/AFR2.png</texture>
@@ -415,47 +416,14 @@ Franck.VMD
        </animation>
     
     <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect33</inherits-from>
-        <object-name>Fuselage</object-name>
-        <object-name>Fuselage.007</object-name>
-        <object-name>Fuselage.008</object-name>
-        <object-name>queu pointe</object-name>
-        <object-name>entry8r</object-name>
-        <object-name>entry10r</object-name>
-        <object-name>ApuG</object-name>
-        <object-name>ApuD</object-name>
-        <object-name>Fuselage.004</object-name>
-        <object-name>Rat</object-name>
-        <object-name>HeliRat</object-name>
-        <object-name>HeliRat.001</object-name>
-        <object-name>HeliRat.002</object-name>
-        <object-name>window mix exterieur</object-name>
-        <object-name>mur.001</object-name>
-      </effect>
-      
-      <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect34</inherits-from>
-        <object-name>Fuselageraccord</object-name>
-    </effect>
-
-    <effect>
         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect1</inherits-from>
-        <object-name>Wings.003</object-name>
-    </effect>
+        <object-name>Fuselage</object-name>
+        <object-name>redlight</object-name>
+      </effect>
 
-   <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect21</inherits-from>
-        <object-name>Wings.004</object-name>
-    </effect>
-
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect4</inherits-from>
-        <object-name>taxiL-on</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect36</inherits-from>
-        <object-name>taxiL-on.001</object-name>
+     <effect>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect2</inherits-from>
+        <object-name>Fuselage.002</object-name>
     </effect>
     
     <effect>
@@ -595,29 +563,25 @@ Franck.VMD
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
+        <object-name>entry8r</object-name>
+        <object-name>ApuG</object-name>
+        <object-name>ApuD</object-name>
+        <object-name>Fuselage.004</object-name>
+        <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>Rmain.geardoor</object-name>
         <object-name>Lgear1</object-name>
         <object-name>Rgear1</object-name>
         <object-name>BaileG</object-name>
         <object-name>BaileD</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect32</inherits-from>
-        <object-name>Fuselage.002</object-name>
+        <object-name>Rudder</object-name>
+        <object-name>Tail</object-name>
         <object-name>TrapRat</object-name>
     </effect>
     
     <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect15</inherits-from>
-        <object-name>Rudder</object-name>
-        <object-name>LRudder</object-name>
-        <object-name>Tail</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect16</inherits-from>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect4</inherits-from>
         <object-name>entry1l</object-name>
         <object-name>entry1l2</object-name>
         <object-name>entry1lA</object-name>
@@ -661,9 +625,19 @@ Franck.VMD
         <object-name>entry5rPE</object-name>
         <object-name>entry5rC2</object-name>
     </effect>
+
+     <effect>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect5</inherits-from>
+        <object-name>Reversers1</object-name>
+        <object-name>Reversers4</object-name>
+        <object-name>moteur2</object-name>
+        <object-name>moteur3</object-name>
+        <object-name>LHEngChrome</object-name>
+    </effect>
     
     <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect37</inherits-from>
+        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect8</inherits-from>
+        <object-name>Fuselageraccord</object-name>
         <object-name>entry3l</object-name>
         <object-name>entry3l2</object-name>
         <object-name>entry3lA</object-name>
@@ -678,16 +652,6 @@ Franck.VMD
         <object-name>entry3rP</object-name>
         <object-name>entry3rPE</object-name>
         <object-name>entry3rC2</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect17</inherits-from>
-        <object-name>Reversers1</object-name>
-        <object-name>Reversers4</object-name>
-        <object-name>moteur2</object-name>
-        <object-name>moteur3</object-name>
-        <object-name>LHEngChrome</object-name>
-        <object-name>redlight</object-name>
     </effect>
 
     <effect>
@@ -727,11 +691,6 @@ Franck.VMD
         <object-name>entry3rG</object-name>
         <object-name>entry5lG</object-name>
         <object-name>entry5rG</object-name>
-    </effect>
-    
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect19</inherits-from>
-        <object-name>plafond</object-name>
     </effect>
 
     <animation>
@@ -7917,6 +7876,50 @@ Franck.VMD
     </animation>
 
     <animation>
+        <type>material</type>
+        <object-name>taxiL-on</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/taxi-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>taxiL-on.001</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/landing-light[0]</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
         <type>select</type>
         <object-name>LHLND.flare.001</object-name>
         <condition>
@@ -8225,10 +8228,10 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <offset-m>6.93</offset-m>
         <axis>
-            <x>-0.886</x>
-            <y>0</y>
-            <z>0.463</z>
-        </axis>
+        <x>-9.02606</x>
+        <y>0.0</y>
+        <z>3.15021</z>
+    </axis>
     </animation>
 
     <animation>
@@ -8261,10 +8264,10 @@ Franck.VMD
         <object-name>Beacon02</object-name>
         <offset-m>3.56</offset-m>
         <axis>
-            <x>-0.047</x>
-            <y>0</y>
-            <z>-0.999</z>
-        </axis>
+        <x>-0.11561</x>
+        <y>0.0</y>
+        <z>-3.49722</z>
+    </axis>
     </animation>
 
     <animation>

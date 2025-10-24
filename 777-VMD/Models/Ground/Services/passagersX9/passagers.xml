@@ -4,28 +4,30 @@
 
   <path>passagers.ac</path>
 
-        <effect>
-         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
-         <object-name>femme 2 cheveux</object-name>
-         <object-name>femme 2 jambe</object-name>
-         <object-name>femme 2 vissage</object-name>
-         <object-name>femme cheveux</object-name>
-         <object-name>femme jambe</object-name>
-         <object-name>femme vissage</object-name>
-         <object-name>girl L Eye</object-name>
-         <object-name>girl R Eye</object-name>
-         <object-name>girl face</object-name>
-         <object-name>girl hair</object-name>
-         <object-name>girl hand</object-name>
-         <object-name>girl hupper</object-name>
-         <object-name>girl jambe</object-name>
-         <object-name>girl shoes</object-name>
-         <object-name>homme 1 cheveux</object-name>
-         <object-name>homme 1 jambe</object-name>
-         <object-name>homme 1 vissage</object-name>
-         <object-name>homme 2 cheveux</object-name>
-         <object-name>homme 2 jambe</object-name>
-         <object-name>homme 2 vissage</object-name>
-        </effect>
+        <animation>
+        <type>material</type>
+         <object-name>femme01</object-name>
+         <object-name>femme02</object-name>
+         <object-name>fille01</object-name>
+         <object-name>homme01</object-name>
+         <object-name>homme02</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
  
 </PropertyList>

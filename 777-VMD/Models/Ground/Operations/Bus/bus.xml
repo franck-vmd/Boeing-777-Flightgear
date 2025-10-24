@@ -15,7 +15,7 @@
          <inherits-from>Aircraft/777-VMD/Models/Effects/reflect14</inherits-from>
                 <object-name>Bus_Front</object-name>
                 <object-name>Bus_Back</object-name>
-</effect>
+       </effect>
     
 	<animation>
 		<type>select</type>

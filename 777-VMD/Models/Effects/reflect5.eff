@@ -4,10 +4,11 @@
     <inherits-from>Effects/model-combined-deferred</inherits-from>
     <parameters>
         <normalmap-enabled type="int">0</normalmap-enabled>
-        <reflection-enabled type="int">0</reflection-enabled>
-        <reflection-dynamic type="int">0</reflection-dynamic>
+        <reflection-enabled type="int">1</reflection-enabled>
+        <reflection-dynamic type="int">1</reflection-dynamic>
         <reflect_map-enabled type="int">0</reflect_map-enabled>
         <reflection-correction type="float">0.1</reflection-correction>
+        <rain-enabled type="int">2</rain-enabled>
         <lightmap-enabled type="int">1</lightmap-enabled>
         <lightmap-multi type="int">1</lightmap-multi>
         <lightmap-factor type="float" n="0"><use>systems/electrical/outputs/cabin-lights</use></lightmap-factor>
@@ -36,8 +37,8 @@
                 <negative-z>Aircraft/777-VMD/Models/Effects/777-sky2/5.png</negative-z>
             </images>
         </texture>
-                <reflection-rainbow type="float">0.0</reflection-rainbow>
-                <reflection-fresnel type="float">0.0</reflection-fresnel>
-        <ambient_correction>0.0</ambient_correction>
+                <reflection-rainbow type="float">0.05</reflection-rainbow>
+                <reflection-fresnel type="float">0.1</reflection-fresnel>
+        <ambient_correction>0.1</ambient_correction>
     </parameters>
 </PropertyList>

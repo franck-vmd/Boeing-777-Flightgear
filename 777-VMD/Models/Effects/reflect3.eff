@@ -13,7 +13,7 @@
         <lightmap-multi type="int">1</lightmap-multi>
         <lightmap-factor type="float" n="0"><use>systems/electrical/outputs/logo-lights</use></lightmap-factor>
         <lightmap-color type="vec3d" n="0">0.03 0.03 0.03</lightmap-color>
-        <lightmap-factor type="float" n="1"><use>systems/electrical/outputs/landing-light</use></lightmap-factor>
+        <lightmap-factor type="float" n="1"><use>systems/electrical/outputs/landing-light[1]</use></lightmap-factor>
         <lightmap-color type="vec3d" n="1">0.03 0.03 0.03</lightmap-color>
         <lightmap-factor type="float" n="2"><use>systems/electrical/outputs/beacon</use></lightmap-factor>
         <lightmap-color type="vec3d" n="2">0.03 0.00 0.00</lightmap-color>

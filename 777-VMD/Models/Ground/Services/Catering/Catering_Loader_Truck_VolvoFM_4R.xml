@@ -37,7 +37,7 @@
 	
 	
 	<effect>
-         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect8</inherits-from>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect15</inherits-from>
                 <object-name>cater_truck1</object-name>
                 <object-name>roue</object-name>
        </effect>

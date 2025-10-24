@@ -333,6 +333,88 @@ Franck.VMD
       <range-m>100</range-m>
     </light> 
 
+    <light>
+      <name>TailL</name>
+      <type>spot</type>
+      <position>
+        <x-m>34.6276</x-m>
+        <y-m>-5</y-m>
+        <z-m>4.15</z-m>
+      </position>
+      <direction>
+        <pitch-deg>145</pitch-deg>
+        <roll-deg>0</roll-deg>
+        <heading-deg>-150</heading-deg>
+      </direction>
+      <ambient>
+          <r>0.15</r>
+          <g>0.15</g>
+          <b>0.15</b>
+          <a>1.0</a>
+      </ambient>
+      <diffuse>
+          <r>0.7</r>
+          <g>0.7</g>
+          <b>0.6</b>
+          <a>1.0</a>
+      </diffuse>
+      <specular>
+          <r>0.8</r>
+          <g>0.8</g>
+          <b>0.8</b>
+          <a>1.0</a>
+      </specular>
+      <attenuation>
+          <c>0.5</c>
+          <l>0.01</l>
+          <q>0.0001</q>
+      </attenuation>
+      <spot-exponent>5</spot-exponent>
+      <spot-cutoff>60</spot-cutoff>
+      <range-m>100</range-m>
+    </light>
+
+    <light>
+      <name>TailR</name>
+      <type>spot</type>
+      <position>
+        <x-m>34.6276</x-m>
+        <y-m>5</y-m>
+        <z-m>4.15</z-m>
+      </position>
+      <direction>
+        <pitch-deg>145</pitch-deg>
+        <roll-deg>0</roll-deg>
+        <heading-deg>150</heading-deg>
+      </direction>
+      <ambient>
+          <r>0.15</r>
+          <g>0.15</g>
+          <b>0.15</b>
+          <a>1.0</a>
+      </ambient>
+      <diffuse>
+          <r>0.7</r>
+          <g>0.7</g>
+          <b>0.6</b>
+          <a>1.0</a>
+      </diffuse>
+      <specular>
+          <r>0.8</r>
+          <g>0.8</g>
+          <b>0.8</b>
+          <a>1.0</a>
+      </specular>
+      <attenuation>
+          <c>0.5</c>
+          <l>0.01</l>
+          <q>0.0001</q>
+      </attenuation>
+      <spot-exponent>5</spot-exponent>
+      <spot-cutoff>60</spot-cutoff>
+      <range-m>100</range-m>
+    </light>
+
     <animation>
         <type>select</type>
         <object-name>CTRLND.spot</object-name>
@@ -413,6 +495,28 @@ Franck.VMD
        <condition>
             <greater-than>
                 <property>systems/electrical/outputs/wing-lights</property>
+                <value>5</value>
+            </greater-than>
+        </condition>
+   </animation>
+
+   <animation>
+       <type>select</type>
+       <object-name>TailL</object-name>
+       <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/logo-lights</property>
+                <value>5</value>
+            </greater-than>
+        </condition>
+   </animation>
+
+   <animation>
+       <type>select</type>
+       <object-name>TailR</object-name>
+       <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/logo-lights</property>
                 <value>5</value>
             </greater-than>
         </condition>

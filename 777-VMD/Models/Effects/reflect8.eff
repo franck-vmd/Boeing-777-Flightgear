@@ -19,7 +19,7 @@
         <lightmap-factor type="float" n="3">0.0</lightmap-factor>
         <lightmap-color type="vec3d" n="3">1.0 1.0 1.0</lightmap-color>
         <texture n="3">
-            <image>Aircraft/777-VMD/Models/Effects/lightmap-F7.png</image>
+            <image>Aircraft/777-VMD/Models/Effects/lightmap-F14.png</image>
             <filter>linear-mipmap-linear</filter>
             <wrap-s>clamp</wrap-s>
             <wrap-t>clamp</wrap-t>

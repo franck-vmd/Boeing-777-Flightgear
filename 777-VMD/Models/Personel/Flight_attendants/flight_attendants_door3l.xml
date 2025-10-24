@@ -10,9 +10,26 @@
 		<texture>ensemble.png</texture>
 	</animation>
 
-        <effect>
-         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect20</inherits-from>
-                         <object-name>Flight_attend.3l</object-name>
-               </effect>
+       <animation>
+        <type>material</type>
+        <object-name>Flight_attend.3l</object-name>
+        <condition>
+         <and>
+		<greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+        <greater-than>
+			<property>systems/electrical/outputs/cabin-lights</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
  
 </PropertyList>

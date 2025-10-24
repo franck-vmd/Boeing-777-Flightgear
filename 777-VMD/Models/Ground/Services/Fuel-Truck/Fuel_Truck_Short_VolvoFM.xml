@@ -67,7 +67,7 @@
 </animation>
 
         <effect>
-         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect8</inherits-from>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect15</inherits-from>
                 <object-name>Cube</object-name>
                 <object-name>Cube.003</object-name>
                 <object-name>Cube.004</object-name>
