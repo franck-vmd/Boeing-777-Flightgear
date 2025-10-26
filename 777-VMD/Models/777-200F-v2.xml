@@ -7936,6 +7936,11 @@ Franck.VMD
 			<value>1</value>
 		</equals>
 	</condition>
+    <offsets>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>-0.04</z-m>
+	</offsets>
 </model>
 
 <!-- Engine Safety Cones -->

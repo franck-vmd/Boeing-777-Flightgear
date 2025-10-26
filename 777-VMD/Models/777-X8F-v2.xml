@@ -7549,7 +7549,6 @@ Franck.VMD
 <!-- Camion Radar -->
 
 <model>
-	<name>camion</name>
 	<path>Aircraft/777-VMD/Models/Ground/Services/CamionRadar/CamionRadar.xml</path>
 	<condition>
 		<equals>
@@ -7557,8 +7556,8 @@ Franck.VMD
 			<value>1</value>
 		</equals>
 	</condition>
-	<offsets>
-		<x-m>-0.5</x-m>
+    <offsets>
+		<x-m>-3.2</x-m>
 		<y-m>0</y-m>
 		<z-m>0</z-m>
 	</offsets>

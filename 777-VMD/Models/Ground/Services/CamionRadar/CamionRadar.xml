@@ -53,10 +53,18 @@
     <animation>
 	<type>translate</type>
 	    <object>camion</object>
-	<property>gear/gear[0]/compression-norm</property>
+		<object>bac_nacelle</object>
+		<object>cube1</object>
+		<object>cube2</object>
+		<object>cube3</object>
+		<object>cube4</object>
+		<object>cube5</object>
+		<object>siren</object>
+        <object>Light</object>
+	<property>gear/gear[1]/compression-norm</property>
 	<interpolation>
 		<entry><ind>0.15</ind><dep>0.0</dep></entry>
-		<entry><ind>0.40</ind><dep>0.25</dep></entry>
+		<entry><ind>0.40</ind><dep>0.10</dep></entry>
 	</interpolation>
 	<axis>
 		<x>0</x>
