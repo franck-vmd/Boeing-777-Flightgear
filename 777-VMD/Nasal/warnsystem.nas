@@ -380,14 +380,11 @@ var WEU =
 	if ((me.smoking_sign>-1) and (me.seatbelts == -1))
 	    append(me.msgs_info,"NO SMOKING ON");
 
-       if (getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]"))
+       if (getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]") and getprop("autopilot/route-manager/active"))
 	        append(me.msgs_info,"CABIN ALT AUTO");
 
-    if (getprop("autopilot/route-manager/active") and !getprop("controls/pressurization/landing-alt-manual"))
+    if (getprop("autopilot/route-manager/active") and getprop("controls/pressurization/landing-alt-manual"))
 		    append(me.msgs_info,"LANDING ALT");
-
-    	if (!getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]"))
-		append(me.msgs_advisory,"OUTFLOW VLV L, R");
 
 	if (!getprop("controls/pressurization/valve-manual[0]"))
 		append(me.msgs_advisory,"OUTFLOW VLV L");
