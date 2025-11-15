@@ -20,7 +20,7 @@ var payload_boarding = {
     props.globals.initNode("services/payload/pax-random-nr", 0);
     props.globals.initNode("services/payload/pax-boarding", 0);
     props.globals.initNode("services/payload/pax-force-deboard", 0);
-    props.globals.initNode("services/stairs/stairs1_enable", 0);
+    props.globals.initNode("services/stairs/stairs1_enable", 1);
     props.globals.initNode("services/stairs/stairs2_enable", 0);
     props.globals.initNode("services/stairs/stairs3_enable", 0);
     props.globals.initNode("services/stairs/stairs4_enable", 0);

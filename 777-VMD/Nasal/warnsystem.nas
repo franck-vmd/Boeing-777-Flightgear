@@ -567,15 +567,15 @@ var WEU =
         me.enabled       = (getprop("systems/electrical/outputs/avionics") and
                             (getprop("sim/freeze/replay-state")!=1) and
                             me.serviceable.getValue());
-        me.speedbrake    = getprop("controls/flight/speedbrake");
-        me.spdbrk_armed  = (getprop("controls/flight/speedbrake-lever")==1); #2=extended (not armed...)
-        me.reverser      = getprop("controls/engines/engine/reverser-act");
-        me.gear_down     = getprop("controls/gear/gear-down");
-        me.parkbrake     = getprop("controls/gear/brake-parking");
-        me.gear_override = getprop("instrumentation/mk-viii/inputs/discretes/gear-override");
-        me.apu_running   = getprop("controls/electric/APU-generator");
-        me.rudder_trim   = getprop("controls/flight/rudder-trim");
-        me.elev_trim     = getprop("controls/flight/elevator-trim");
+    me.speedbrake    = getprop("controls/flight/speedbrake");
+    me.spdbrk_armed  = (getprop("controls/flight/speedbrake-lever")==1); #2=extended (not armed...)
+    me.reverser      = getprop("controls/engines/engine/reverser-act");
+    me.gear_down     = getprop("controls/gear/gear-down");
+    me.parkbrake     = getprop("controls/gear/brake-parking");
+    me.gear_override = getprop("instrumentation/mk-viii/inputs/discretes/gear-override");
+    me.apu_running   = getprop("controls/electric/APU-generator");
+    me.rudder_trim   = getprop("controls/flight/rudder-trim");
+    me.elev_trim     = getprop("controls/flight/elevator-trim");
 	me.autobrake	 = getprop("autopilot/autobrake/step");
 	me.autobrakerto	 = getprop("autopilot/autobrake/rto-selected");
 	me.apu_bleed	 = getprop("controls/air/bleedapu-switch");

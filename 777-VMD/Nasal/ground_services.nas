@@ -35,9 +35,9 @@ var ground_services = {
         
     # External Power
     
-    setprop("services/ext-pwr/enable", 0);
+    setprop("services/ext-pwr/enable", 1);
     setprop("services/ext-pwr/was_enabled", 0);
-    setprop("services/ext-pwr/primary", 0);
+    setprop("services/ext-pwr/primary", 1);
     setprop("services/ext-pwr/secondary", 0);
     
     # Chocks

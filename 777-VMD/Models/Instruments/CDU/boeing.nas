@@ -1128,14 +1128,14 @@ var cdu = func{
         if (getprop("autopilot/route-manager/departure/airport") != nil){
           output.center[0] = getprop("autopilot/route-manager/departure/airport");
         }
-        output.right[0] = "ARR>";
+        output.right[0] = "";
         if (getprop("autopilot/route-manager/destination/airport") != nil){
           output.center[1] = getprop("autopilot/route-manager/destination/airport");
         }
         output.right[1] = "ARR>";
-        output.left[2] = "<DEP";
-        output.right[2] = "ARR>";
-        output.right[3] = "ARR>";
+        output.left[2] = "";
+        output.right[2] = "";
+        output.right[3] = "";
         output.leftTitle[5] ="DEP";
         output.left[5] = "<----";
         output.center[5] = "OTHER";
