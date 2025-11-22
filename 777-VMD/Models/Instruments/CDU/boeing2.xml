@@ -458,7 +458,7 @@ Franck.VMD
         <repeatable>false</repeatable>
         <binding>
             <command>nasal</command>
-            <script>cdu.exec();</script>
+            <script>cdu.key('exec');</script>
         </binding>
         <binding>
             <condition>
@@ -1073,7 +1073,7 @@ Franck.VMD
         <repeatable>false</repeatable>
         <binding>
             <command>nasal</command>
-            <script>cdu.del();</script>
+            <script>cdu.delete();</script>
         </binding>
 	</action>
 </animation>

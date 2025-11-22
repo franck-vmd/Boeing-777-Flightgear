@@ -2,21 +2,21 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="1024"
    height="1024"
    id="svg5180"
    xml:space="preserve"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="stat.svg"><sodipodi:namedview
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="stat.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -26,18 +26,21 @@
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
    inkscape:window-width="1920"
-   inkscape:window-height="960"
+   inkscape:window-height="988"
    id="namedview95"
    showgrid="false"
-   inkscape:zoom="0.651864"
-   inkscape:cx="223.37525"
-   inkscape:cy="601.263"
+   inkscape:zoom="0.46093745"
+   inkscape:cx="348.20342"
+   inkscape:cy="490.30513"
    inkscape:window-x="0"
-   inkscape:window-y="27"
+   inkscape:window-y="0"
    inkscape:window-maximized="1"
-   inkscape:current-layer="layer4"
+   inkscape:current-layer="layer1"
    showguides="true"
-   inkscape:guide-bbox="true" /><metadata
+   inkscape:guide-bbox="true"
+   inkscape:showpageshadow="2"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1" /><metadata
    id="metadata5186"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /><dc:creator><cc:Agent><dc:title>Gijs de Rooy</dc:title></cc:Agent></dc:creator></cc:Work></rdf:RDF></metadata><defs
@@ -248,9 +251,9 @@
    inkscape:label="black"
    style="display:inline"><path
      inkscape:connector-curvature="0"
-     d="m 0,0 0,1024 c 0,0 827.746,-0.37 1024,0 L 1024,0"
+     d="m 0,0 v 1024 c 0,0 827.746,-0.37 1024,0 V 0"
      id="bg"
-     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline"
+     style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
      inkscape:label="#path5356" /></g><g
    inkscape:groupmode="layer"
    id="layer1"
@@ -366,15 +369,6 @@
    width="1024"
    height="1024"
    inkscape:label="#use3133" /><use
-   x="0"
-   y="0"
-   xlink:href="#use3133"
-   inkscape:transform-center-x="4.25653"
-   inkscape:transform-center-y="0.0199865"
-   id="use3135"
-   transform="matrix(-1,0,0,1,972.892,0)"
-   width="1024"
-   height="1024" /><use
    inkscape:label="#use3133"
    height="1024"
    width="1024"
@@ -497,7 +491,7 @@
      x="237.19699"
      sodipodi:role="line"
      id="tspan3039"
-     style="font-size:22px;line-height:179.99999523%;fill:#50c8ff;fill-opacity:1">HYD QTY</tspan></text>
+     style="font-size:22px;line-height:180%;fill:#50c8ff;fill-opacity:1">HYD QTY</tspan></text>
 
 
 
@@ -801,7 +795,7 @@
    x="237.19699"
    y="176.86273"
    id="text3905"><tspan
-     style="font-size:22px;line-height:179.99999523%;fill:#50c8ff;fill-opacity:1"
+     style="font-size:22px;line-height:180%;fill:#50c8ff;fill-opacity:1"
      id="tspan3907"
      sodipodi:role="line"
      x="237.19699"
@@ -818,7 +812,7 @@
      x="237.19699"
      sodipodi:role="line"
      id="tspan3911"
-     style="font-size:22px;line-height:179.99999523%;fill:#50c8ff;fill-opacity:1">HYD TEMP</tspan></text>
+     style="font-size:22px;line-height:180%;fill:#50c8ff;fill-opacity:1">HYD TEMP</tspan></text>
 
 
 </g></svg>

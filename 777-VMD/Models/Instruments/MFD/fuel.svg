@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.88769528"
-     inkscape:cx="400.47526"
-     inkscape:cy="372.8757"
+     inkscape:zoom="0.44384764"
+     inkscape:cx="839.25196"
+     inkscape:cy="515.94281"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer4"
      showgrid="false"
      borderlayer="true"
      inkscape:window-width="1920"
@@ -61,14 +61,14 @@
      style="display:inline"
      sodipodi:insensitive="true">
     <rect
-       style="fill:#000000;stroke:none"
+       style="display:inline;fill:#000000;stroke:none"
        id="rect2998"
        width="1024"
        height="1024"
        x="0"
        y="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 249.81625,670.37122 1.11029,-63.84193"
        id="path3259"
        inkscape:connector-curvature="0" />
@@ -269,14 +269,6 @@
      inkscape:label="pumps"
      style="display:inline"
      sodipodi:insensitive="true">
-    <rect
-       style="fill:none;stroke:#ffffff;stroke-width:5.02998;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4215-4"
-       width="72.249458"
-       height="58.925922"
-       x="1614.589"
-       y="745.82581"
-       ry="0" />
     <rect
        style="fill:#000000;stroke:#ffffff;stroke-width:5.02998;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rightfwdpump"

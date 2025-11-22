@@ -527,7 +527,7 @@ var cduLegs = {
         return "";
       }
     }
-    else if (key == "EXEC"){
+    else if (key == "exec"){
       return me.jumpToSelectedWaypoint(cduInput);
     }
   },
@@ -550,6 +550,10 @@ var cduLegs = {
     }
     else {
       setprop("autopilot/route-manager/input","@INSERT"~wpIndex~":"~cduInput);
+      return "";
+    }
+    if (cduInput == "EXEC"){
+      setprop("autopilot/route-manager/input","@JUMP"~wpIndex);
       return "";
     }
   },
@@ -584,6 +588,7 @@ var cduLegs = {
         
     var activeWp = me.getActiveWP();
     var waypoints = me.getWaypoints();
+    var fp = flightplan();
     var waypointsLength = size(waypoints);
     
     if (me.page >= me.getPageCount()) {
@@ -601,6 +606,7 @@ var cduLegs = {
         var ident = currentWpNode.getChild("id").getValue();
         var alt = currentWpNode.getChild("altitude-ft").getValue();
         var speedNode = currentWpNode.getChild("speed-kts");
+        var fp = flightplan();
         
         
         output.left[line] = ident;

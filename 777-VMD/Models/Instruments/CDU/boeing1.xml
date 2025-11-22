@@ -451,15 +451,15 @@ Franck.VMD
 </animation>
 
 <animation>
-    <type>pick</type>
-    <object-name>Btn.exec</object-name>
-    <action>
-        <button>0</button>
-        <repeatable>false</repeatable>
-        <binding>
-            <command>nasal</command>
-            <script>cdu.exec();</script>
-        </binding>
+	<type>pick</type>
+	<object-name>Btn.exec</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('exec');</script>
+		</binding>
         <binding>
             <condition>
                 <equals>
@@ -470,7 +470,7 @@ Franck.VMD
             <command>nasal</command>
             <script>cdu.input('EXEC');</script>
         </binding>
-    </action>
+	</action>
 </animation>
 
 <animation>
@@ -1072,7 +1072,7 @@ Franck.VMD
         <repeatable>false</repeatable>
         <binding>
             <command>nasal</command>
-            <script>cdu.del();</script>
+            <script>cdu.delete();</script>
         </binding>
 	</action>
 </animation>

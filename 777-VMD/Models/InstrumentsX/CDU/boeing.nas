@@ -527,7 +527,7 @@ var cduLegs = {
         return "";
       }
     }
-    else if (key == "EXEC"){
+    else if (key == "exec"){
       return me.jumpToSelectedWaypoint(cduInput);
     }
   },
@@ -550,6 +550,10 @@ var cduLegs = {
     }
     else {
       setprop("autopilot/route-manager/input","@INSERT"~wpIndex~":"~cduInput);
+      return "";
+    }
+    if (cduInput == "EXEC"){
+      setprop("autopilot/route-manager/input","@JUMP"~wpIndex);
       return "";
     }
   },
@@ -584,6 +588,7 @@ var cduLegs = {
         
     var activeWp = me.getActiveWP();
     var waypoints = me.getWaypoints();
+    var fp = flightplan();
     var waypointsLength = size(waypoints);
     
     if (me.page >= me.getPageCount()) {
@@ -601,6 +606,7 @@ var cduLegs = {
         var ident = currentWpNode.getChild("id").getValue();
         var alt = currentWpNode.getChild("altitude-ft").getValue();
         var speedNode = currentWpNode.getChild("speed-kts");
+        var fp = flightplan();
         
         
         output.left[line] = ident;
@@ -724,7 +730,7 @@ var cduHold = {
   createHoldWPs : func() {
     if (me.active) {
       # calculate distance and radius...
-      me.distance = me.minutes * me.speedKts / 240;
+      me.distance = me.minutes * me.speedKts / 250;
       me.radius = me.distance / math.pi;
       
       
@@ -853,6 +859,9 @@ var key = func(v) {
           }
           if (cduDisplay == "INIT_REF"){
             cduDisplay = "IDENT";
+          }
+          if (cduDisplay == "MENU"){
+            cduDisplay = "FMC";
           }
           if (cduDisplay == "NAV_RAD"){
             setprop("instrumentation/nav[0]/frequencies/selected-mhz",cduInput);
@@ -1097,6 +1106,9 @@ var cdu = func{
       if (display == "ALTN_NAV_RAD") {
         output.title = "ALTN NAV RADIO";
       }
+      if (display == "FMC") {
+        output.title = "JUMP TO";
+      }
       if (display == "VNAV") {
 	output.title = "ACT ECON CLB";
 	output.rightTitle[2] = "TRANS ALT";
@@ -1122,14 +1134,14 @@ var cdu = func{
         if (getprop("autopilot/route-manager/departure/airport") != nil){
           output.center[0] = getprop("autopilot/route-manager/departure/airport");
         }
-        output.right[0] = "ARR>";
+        output.right[0] = "";
         if (getprop("autopilot/route-manager/destination/airport") != nil){
           output.center[1] = getprop("autopilot/route-manager/destination/airport");
         }
         output.right[1] = "ARR>";
-        output.left[2] = "<DEP";
-        output.right[2] = "ARR>";
-        output.right[3] = "ARR>";
+        output.left[2] = "";
+        output.right[2] = "";
+        output.right[3] = "";
         output.leftTitle[5] ="DEP";
         output.left[5] = "<----";
         output.center[5] = "OTHER";

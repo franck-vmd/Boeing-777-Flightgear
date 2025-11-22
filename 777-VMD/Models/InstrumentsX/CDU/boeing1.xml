@@ -27,7 +27,7 @@ Franck.VMD
    <object-name>CDuscreen</object-name> 		
    <property>/sim/time/sun-angle-rad</property>
    <step>1.70</step>
-   <factor>0.286</factor>
+   <factor>0.256</factor>
    <center>
      <x-m>0</x-m>
      <y-m>0</y-m>
@@ -234,10 +234,6 @@ Franck.VMD
             <command>nasal</command>
             <script>cdu.key('LSK5L');</script>
         </binding>
-        <binding>
-                <command>property-toggle</command>
-                <property>sim/multiplay/generic/float[92]</property>
-            </binding>
     </action>
 </animation>
 
@@ -276,7 +272,6 @@ Franck.VMD
             <command>nasal</command>
             <script>cdu.key('LSK6R');</script>
         </binding>
-
     </action>
 </animation>
 
@@ -456,22 +451,26 @@ Franck.VMD
 </animation>
 
 <animation>
-    <type>pick</type>
-    <object-name>Btn.exec</object-name>
-    <condition>
-     <equals>
-      <property>autopilot/route-manager/isArmed</property>
-      <value>1</value>
-     </equals>
-    </condition>
-    <action>
-        <button>0</button>
-        <repeatable>false</repeatable>
+	<type>pick</type>
+	<object-name>Btn.exec</object-name>
+	<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>cdu.key('exec');</script>
+		</binding>
         <binding>
+            <condition>
+                <equals>
+                    <property>instrumentation/cdu/display</property>
+                    <value>RTE1_LEGS</value>
+                </equals>
+            </condition>
             <command>nasal</command>
-            <script>cdu.execPushed();</script>
+            <script>cdu.input('EXEC');</script>
         </binding>
-    </action>
+	</action>
 </animation>
 
 <animation>
@@ -1073,7 +1072,7 @@ Franck.VMD
         <repeatable>false</repeatable>
         <binding>
             <command>nasal</command>
-            <script>cdu.del();</script>
+            <script>cdu.delete();</script>
         </binding>
 	</action>
 </animation>
