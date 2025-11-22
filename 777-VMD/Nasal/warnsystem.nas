@@ -405,7 +405,13 @@ var WEU =
 			    append(me.msgs_caution,">APU DOOR");
 
                  if (getprop("/aaa/door-positions/c33/position-norm")==1)
-			    append(me.msgs_caution,">GEAR DOOR");	    
+			    append(me.msgs_caution,">GEAR DOOR");	
+
+                 if (getprop("/aaa/door-positions/c14/position-norm")==1)
+			    append(me.msgs_caution,">COCKPIT DOOR"); 
+
+                 if (getprop("controls/switches/DOOR_Switch")==1)
+			    append(me.msgs_caution,">DOOR LOCK FAIL");   
 
                  if (getprop("/aaa/door-positions/c12/position-norm")==1 or getprop("/aaa/door-positions/c13/position-norm")==1)
 			    append(me.msgs_caution,">RADAR DOOR");
