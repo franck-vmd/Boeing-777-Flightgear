@@ -385,7 +385,7 @@ var start_updates = func {
     {
         # airborne startup
         Startup();
-        b777.afds.current_wp_local = getprop("sim/gui/dialogs/route-manager/selection");
+        b777.afds.current_wp = getprop("sim/gui/dialogs/route-manager/selection");
         setprop("controls/gear/brake-parking",0);
         setprop("controls/lighting/taxi-lights",0);
         setprop("instrumentation/afds/ap-modes/pitch-mode", "TO/GA");

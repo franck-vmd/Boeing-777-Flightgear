@@ -458,6 +458,7 @@
             <first-max-nr>22</first-max-nr>
             <business-max-nr>70</business-max-nr>
             <economy-max-nr>273</economy-max-nr>
+            <belly-max-lbs>30650</belly-max-lbs>
             <catering-max-lbs>6850</catering-max-lbs>
         </payload>
     </services>

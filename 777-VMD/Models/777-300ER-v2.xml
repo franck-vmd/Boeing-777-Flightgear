@@ -8921,25 +8921,7 @@ Franck.VMD
     </animation>
 
     <animation>
-    <type>select</type>
-        <object-name>CTRLND.spot2</object-name>
-    <condition>
-        <and>
-                <property>sim/multiplay/generic/int[2]</property>
-        <equals>
-            <property>gear/gear[0]/position-norm</property>
-            <value>1.0</value>
-        </equals>
-        </and>
-        <not>
-          <property>controls/lighting/landing-light[0]</property>
-        </not>
-    </condition>
-    </animation>
-
-    <animation>
         <type>select</type>
-        <object-name>Run.spotL</object-name>
         <object-name>LHLND.flare2</object-name>
         <condition>
             <greater-than>
@@ -8951,7 +8933,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>Run.spotR</object-name>
         <object-name>RHLND.flare2</object-name>
         <condition>
             <greater-than>
@@ -8963,7 +8944,6 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>LHLND.spot</object-name>
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>LHLND.flare</object-name>
         <condition>
@@ -8973,7 +8953,6 @@ Franck.VMD
     
     <animation>
         <type>select</type>
-        <object-name>RHLND.spot</object-name>
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>RHLND.flare</object-name>
         <condition>
@@ -8985,7 +8964,6 @@ Franck.VMD
         <type>select</type>
         <object-name>CTRLND.flare</object-name>
         <object-name>CTRLND.flare.001</object-name>
-        <object-name>CTRLND.spot</object-name>
         <condition>
             <property>controls/lighting/landing-light[0]</property>
         </condition>
@@ -9119,9 +9097,12 @@ Franck.VMD
         <object-name>Strobe01</object-name>
         <offset-m>34.79</offset-m>
     <axis>
-        <x>15.5138</x>
-        <y>31.0908</y>
-        <z>1.64374</z>
+        <x1-m>0.0</x1-m>
+        <y1-m>0.0</y1-m>
+        <z1-m>0.0</z1-m>
+        <x2-m>15.5138</x2-m>
+        <y2-m>31.0908</y2-m>
+        <z2-m>1.64374</z2-m>
     </axis>
     <axis>
 	<x>0</x>
@@ -10029,6 +10010,11 @@ Franck.VMD
 
   <model>
    <path>Aircraft/777-VMD/Models/Ground/Services/Services300.xml</path>
+     <offsets>
+  	<x-m>0</x-m>
+  	<y-m>0</y-m>
+  	<z-m>0</z-m>
+     </offsets>
   </model>
 
 <!-- De-icing Truck -->
@@ -10347,6 +10333,11 @@ Franck.VMD
 	<model>
  <name>evacuation</name>
  <path>Aircraft/777-VMD/Models/Ground/Services/Evacuation/evacuation300.xml</path>
+ <offsets>
+  <x-m>0</x-m>
+  <y-m>0</y-m>
+  <z-m>0</z-m>
+ </offsets>
 </model>
 
 <animation>
@@ -10362,6 +10353,11 @@ Franck.VMD
 <model>
  <name>oxygenmasks</name>
  <path>Aircraft/777-VMD/Models/Ground/Services/Oxygen_masks/oxygen_mask300.xml</path>
+ <offsets>
+  <x-m>0</x-m>
+  <y-m>0</y-m>
+  <z-m>0</z-m>
+ </offsets>
 </model>
 
 <animation>

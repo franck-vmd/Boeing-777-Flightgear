@@ -43,7 +43,7 @@ var AFDS = {
         m.altitude_alert_from_in = 0;
         m.top_of_descent = 0;
         m.vorient = 0;
-        m.current_wp_local = 0;
+        m.current_wp = 0;
 
         m.hdg_trk_selected = props.globals.initNode("instrumentation/efis/hdg-trk-selected",0,"BOOL");
         m.heading_reference=props.globals.initNode("systems/navigation/hdgref/reference",0,"BOOL");
