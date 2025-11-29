@@ -150,8 +150,7 @@ Franck.VMD
         <object-name>LRudder</object-name>
         <object-name>Fuselage.001</object-name>
         <object-name>taxiL-on</object-name>
-        <object-name>taxiL-on.001</object-name>
-        <object-name>taxiL-on.002</object-name>
+        <object-name>CTRLND-on</object-name>
         <object-name>Rfan</object-name>
         <object-name>Lfan</object-name>
         <object-name>LInlets</object-name>
@@ -163,7 +162,8 @@ Franck.VMD
         <object-name>Lgear.tubing</object-name>
         <object-name>Wheelwell</object-name>
         <object-name>Wings.003</object-name>
-        <object-name>Wings.004</object-name>
+        <object-name>WingsLightL</object-name>
+        <object-name>WingsLightR</object-name>
         <property-base>sim/model/fuselage3</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-200ER/AFR5.png</texture>
@@ -635,16 +635,6 @@ Franck.VMD
     </effect>
 
     <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect6</inherits-from>
-        <object-name>Wings.004</object-name>
-    </effect>
-
-    <effect>
-        <inherits-from>Aircraft/777-VMD/Models/Effects/reflect7</inherits-from>
-        <object-name>Wings.003</object-name>
-    </effect>
-
-    <effect>
         <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>redflash</object-name>
         <object-name>whiteflash</object-name>
@@ -657,16 +647,14 @@ Franck.VMD
         <object-name>Beacon01</object-name>
         <object-name>Beacon02</object-name>
         <object-name>LHLND.flare</object-name>
-        <object-name>LHLND.flare2</object-name>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
         <object-name>RHLND.flare</object-name>
-        <object-name>RHLND.flare2</object-name>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <object-name>rlight</object-name>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>sortiewclumiere</object-name>
@@ -8247,20 +8235,29 @@ Franck.VMD
         <object-name>greennav</object-name>
         <object-name>rednav</object-name>
         <condition>
+          <and>
+          <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <greater-than>
             <property>sim/multiplay/generic/int[7]</property>
             <value>5</value>
             </greater-than>
+          </and>
         </condition>
     </animation>
     
     <animation>
     <type>select</type>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
-        <object-name>taxiL-on</object-name>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
     <condition>
         <and>
+          <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
                 <property>sim/multiplay/generic/int[2]</property>
         <equals>
             <property>gear/gear[0]/position-norm</property>
@@ -8272,7 +8269,7 @@ Franck.VMD
 
     <animation>
         <type>material</type>
-        <object-name>taxiL-on</object-name>
+        <object-name>taxi-on</object-name>
         <condition>
          <and>
 		<greater-than>
@@ -8294,7 +8291,7 @@ Franck.VMD
 
     <animation>
         <type>material</type>
-        <object-name>taxiL-on.001</object-name>
+        <object-name>CTRLND-on</object-name>
         <condition>
          <and>
 		<greater-than>
@@ -8316,33 +8313,38 @@ Franck.VMD
 
     <animation>
         <type>select</type>
-        <object-name>LHLND.flare2</object-name>
-        <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/L-RwayLight</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>RHLND.flare2</object-name>
-        <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/R-RwayLight</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
         <object-name>Fuselagelumiere-l</object-name>
         <object-name>LHLND.flare</object-name>
         <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+          <or>
             <property>controls/lighting/landing-light[1]</property>
+            <property>controls/lighting/L-RwayLight</property>
+          </or>
         </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>WingsLightL</object-name>
+        <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+          <or>
+            <property>controls/lighting/landing-light[1]</property>
+            <property>controls/lighting/L-RwayLight</property>
+          </or>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
     </animation>
     
     <animation>
@@ -8350,15 +8352,46 @@ Franck.VMD
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>RHLND.flare</object-name>
         <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <or>
             <property>controls/lighting/landing-light[2]</property>
+            <property>controls/lighting/R-RwayLight</property>
+          </or>
         </condition>
     </animation>
 
     <animation>
-        <type>select</type>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
+        <type>material</type>
+        <object-name>WingsLightR</object-name>
         <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <or>
+            <property>controls/lighting/landing-light[2]</property>
+            <property>controls/lighting/R-RwayLight</property>
+          </or>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
+        <condition>
+             <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <property>controls/lighting/landing-light[0]</property>
         </condition>
     </animation>
@@ -8687,174 +8720,6 @@ Franck.VMD
         <offset>1.0</offset>
         <min>1</min>
         <max>500.0</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>RHLND.flare</object-name>
-        <center>
-            <x-m>-3.574</x-m>
-            <y-m>3.778</y-m>
-            <z-m>-1.502</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-    
-    <animation>
-        <type>flash</type>
-        <object-name>RHLND.flare2</object-name>
-        <center>
-            <x-m>-3.574</x-m>
-            <y-m>3.778</y-m>
-            <z-m>-1.502</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>LHLND.flare</object-name>
-        <center>
-            <x-m>-3.574</x-m>
-            <y-m>-3.778</y-m>
-            <z-m>-1.502</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-    
-    <animation>
-        <type>flash</type>
-        <object-name>LHLND.flare2</object-name>
-        <center>
-            <x-m>-3.574</x-m>
-            <y-m>-3.778</y-m>
-            <z-m>-1.502</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>CTRLND.flare</object-name>
-        <center>
-            <x-m>-19.5552</x-m>
-            <y-m>0.3</y-m>
-            <z-m>-2.81289</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-        <type>flash</type>
-        <object-name>CTRLND.flare.001</object-name>
-        <center>
-            <x-m>-19.5552</x-m>
-            <y-m>-0.3</y-m>
-            <z-m>-2.81289</z-m>
-        </center>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-        <power>10</power>
-        <factor>2</factor>
-        <offset>0</offset>
-        <two-sides type="bool">false</two-sides>
-        <min>1</min>
-        <max>5</max>
-    </animation>
-
-    <animation>
-    <type>flash</type>
-    <object-name>Taxi.flare1</object-name>
-    <center>
-        <x-m>-19.57923</x-m>
-        <y-m>0.40417</y-m>
-        <z-m>-3.11739</z-m>
-    </center>
-    <axis>
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-    <power>4.5</power>
-    <factor>0.9</factor>
-    <offset>0</offset>
-    <two-sides type="bool">false</two-sides>
-    <min>0.5</min>
-    <max>5</max>
-    </animation>
-    
-    <animation>
-    <type>flash</type>
-    <object-name>Taxi.flare2</object-name>
-    <center>
-        <x-m>-19.57923</x-m>
-        <y-m>-0.40417</y-m>
-        <z-m>-3.11739</z-m>
-    </center>
-    <axis>
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-    </axis>
-    <power>4.5</power>
-    <factor>0.9</factor>
-    <offset>0</offset>
-    <two-sides type="bool">false</two-sides>
-    <min>0.5</min>
-    <max>5</max>
     </animation>
     
       <animation>

@@ -419,7 +419,13 @@ Franck.VMD
         <type>select</type>
         <object-name>CTRLND.spot</object-name>
         <condition>
+         <and>
+            <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <property>controls/lighting/landing-light[0]</property>
+          </and>
         </condition>
     </animation>
 
@@ -428,6 +434,10 @@ Franck.VMD
         <object-name>CTRLND.spot2</object-name>
         <condition>
         <and>
+              <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
                 <property>sim/multiplay/generic/int[2]</property>
         <equals>
             <property>gear/gear[0]/position-norm</property>
@@ -444,7 +454,16 @@ Franck.VMD
        <type>select</type>
        <object-name>LHLND.spot</object-name>
        <condition>
+          <and>
+            <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <property>controls/lighting/landing-light[1]</property>
+          </and>
+          <not>
+                <property>systems/electrical/outputs/L-RwayLight</property>
+        </not>
         </condition>
    </animation>
 
@@ -452,7 +471,16 @@ Franck.VMD
         <type>select</type>
         <object-name>RHLND.spot</object-name>
         <condition>
+           <and>
+            <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <property>controls/lighting/landing-light[2]</property>
+          </and>
+          <not>
+                <property>systems/electrical/outputs/R-RwayLight</property>
+        </not>
         </condition>
     </animation>
 
@@ -460,10 +488,13 @@ Franck.VMD
        <type>select</type>
        <object-name>Run.spotL</object-name>
        <condition>
+          <and>
             <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
                 <property>systems/electrical/outputs/L-RwayLight</property>
-                <value>5</value>
-            </greater-than>
+             </and>
         </condition>
    </animation>
 
@@ -471,54 +502,49 @@ Franck.VMD
        <type>select</type>
        <object-name>Run.spotR</object-name>
        <condition>
+             <and>
             <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
                 <property>systems/electrical/outputs/R-RwayLight</property>
-                <value>5</value>
-            </greater-than>
+            </and>
         </condition>
-   </animation>  
-
-   <animation>
-       <type>select</type>
-       <object-name>WingR</object-name>
-       <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/wing-lights</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-   </animation>  
+   </animation>   
    
    <animation>
        <type>select</type>
        <object-name>WingL</object-name>
+       <object-name>WingR</object-name>
        <condition>
+           <and>
+            <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <greater-than>
                 <property>systems/electrical/outputs/wing-lights</property>
                 <value>5</value>
             </greater-than>
+           </and>
         </condition>
    </animation>
 
    <animation>
        <type>select</type>
        <object-name>TailL</object-name>
-       <condition>
-            <greater-than>
-                <property>systems/electrical/outputs/logo-lights</property>
-                <value>5</value>
-            </greater-than>
-        </condition>
-   </animation>
-
-   <animation>
-       <type>select</type>
        <object-name>TailR</object-name>
        <condition>
+           <and>
+            <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
             <greater-than>
                 <property>systems/electrical/outputs/logo-lights</property>
                 <value>5</value>
             </greater-than>
+          </and>
         </condition>
    </animation>
  
