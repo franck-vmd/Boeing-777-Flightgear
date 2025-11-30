@@ -1517,17 +1517,17 @@ Franck.VMD
     </animation>
 
     <animation>
+        <animation>
         <name>Frontgear</name>
         <object-name>Frtstrut</object-name>
         <object-name>FrtGear</object-name>
         <object-name>FrtGear.lines</object-name>
-        <object-name>taxiL-on</object-name>
-        <object-name>taxiL-on.001</object-name>
-        <object-name>taxiL-on.002</object-name>
-        <object-name>Taxi.flare1</object-name>
-        <object-name>Taxi.flare2</object-name>
-        <object-name>CTRLND.flare</object-name>
-        <object-name>CTRLND.flare.001</object-name>
+        <object-name>taxi-on</object-name>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
+        <object-name>CTRLND-on</object-name>
     </animation>
 
     <animation>
