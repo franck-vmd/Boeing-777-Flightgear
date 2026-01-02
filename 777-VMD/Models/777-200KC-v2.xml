@@ -1457,7 +1457,6 @@ Franck.VMD
         <object-name>FrtStrut</object-name>   
     </animation>
 
-    <animation>
         <animation>
         <name>Frontgear</name>
         <object-name>Frtstrut</object-name>

@@ -429,4 +429,9 @@
         </mass-and-balance>
     </limits>
 
+    <yasim>
+        <empty-weight-lbs type = "float">318300</empty-weight-lbs>
+        <zero-fuel-weight-lbs type = "float">318300</zero-fuel-weight-lbs>
+    </yasim>
+
 </PropertyList>

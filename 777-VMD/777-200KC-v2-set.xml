@@ -302,7 +302,7 @@
 
        <multiplay>
 	 <generic>
-	    <int n="0"
+	    <int n="14"
 	    alias="/tanker"/>
 	  </generic>
 	</multiplay>
@@ -356,7 +356,7 @@
             <file>Nasal/gpws.nas</file>
             <file>Nasal/ground_services.nas</file>
             <file>Nasal/payload.nas</file>
-            <file>Nasal/warnsystem.nas</file>
+            <file>Nasal/warnsystem200F.nas</file>
             <file>Nasal/Cabinalert.nas</file>
             <file>Nasal/brakesystem.nas</file>
             <file>Nasal/ground_steering.nas</file>
@@ -442,6 +442,11 @@
             <maximum-zero-fuel-mass-lbs>547000</maximum-zero-fuel-mass-lbs>
         </mass-and-balance>
     </limits>
+
+    <yasim>
+        <empty-weight-lbs type = "float">318300</empty-weight-lbs>
+        <zero-fuel-weight-lbs type = "float">318300</zero-fuel-weight-lbs>
+    </yasim>
 
     <instrumentation>
   <radar>

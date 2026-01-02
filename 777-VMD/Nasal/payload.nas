@@ -47,21 +47,22 @@ var payload_boarding = {
     
     # Catering
     
-    props.globals.initNode("services/payload/catering-request-lbs", 0);
-    props.globals.initNode("services/payload/catering-onboard-lbs", 0);
-    props.globals.initNode("services/payload/catering-loading", 0);
-    props.globals.initNode("services/payload/catering-trolley-lbs", 0);
-    props.globals.initNode("services/payload/catering-trolley-nr", 0);
-    props.globals.initNode("services/payload/catering-galley-0-trolley-nr", 0);
-    props.globals.initNode("services/payload/catering-galley-1-trolley-nr", 0);
-    props.globals.initNode("services/payload/catering-galley-2-trolley-nr", 0);
-    props.globals.initNode("services/payload/catering-galley-3-trolley-nr", 0);
-    props.globals.initNode("services/payload/catering-galley-0-full", 0);
-    props.globals.initNode("services/payload/catering-galley-1-full", 0);
-    props.globals.initNode("services/payload/catering-galley-2-full", 0);
-    props.globals.initNode("services/payload/catering-galley-3-full", 0);
-    props.globals.initNode("services/payload/catering-cycle-nr", 0);
-    props.globals.initNode("services/payload/catering-skipcycle-nr", 0);
+    props.globals.initNode("services/payload/catering1-request-lbs", 0);
+    props.globals.initNode("services/payload/catering1-onboard-lbs", 0);
+    props.globals.initNode("services/payload/catering2-request-lbs", 0);
+    props.globals.initNode("services/payload/catering2-onboard-lbs", 0);
+    props.globals.initNode("services/payload/catering3-request-lbs", 0);
+    props.globals.initNode("services/payload/catering3-onboard-lbs", 0);
+    props.globals.initNode("services/payload/catering4-request-lbs", 0);
+    props.globals.initNode("services/payload/catering4-onboard-lbs", 0);
+    props.globals.initNode("services/payload/catering1-loading", 0);
+    props.globals.initNode("services/payload/catering2-loading", 0);
+    props.globals.initNode("services/payload/catering3-loading", 0);
+    props.globals.initNode("services/payload/catering4-loading", 0);
+    props.globals.initNode("services/catering/enable", 0);
+    props.globals.initNode("services/catering/enable1", 0);
+    props.globals.initNode("services/catering/enable2", 0);
+    props.globals.initNode("services/catering/enable3", 0);
     
     # Crew
     
@@ -81,9 +82,9 @@ var payload_boarding = {
                 
         #Passenger boarding
         
-        # First: each passenger weighs between 85 and 189 Lbs (random for each passenger) and has 110 Lbs of luggage
-        # Business: each passenger weighs between 85 and 189 Lbs (random for each passenger) and has 88 Lbs of luggage
-        # Economy: each passenger weighs between 85 and 189 Lbs (random for each passenger) and has 33 Lbs of luggage
+        # First: each passenger weighs between 85 and 189 Lbs (random for each passenger) and has 70 Lbs of luggage
+        # Business: each passenger weighs between 85 and 189 Lbs (random for each passenger) and has 70 Lbs of luggage
+        # Economy: each passenger weighs between 85 and 189 Lbs (random for each passenger) and has 50 Lbs of luggage
         
         # Passengers are boarding quite randomly (classwise) and the same amount of passengers will weigh a different amount with each flight. The average should be around the worldwide average weight of 137 Lbs pp.
         # First class passengers will only (de)board via door 1L, unless it is not connected with a staircase or jetway, in that case they will (de)board via door 2L. They will never (de)board via door 3L or 4L.
@@ -115,12 +116,12 @@ var payload_boarding = {
                         if ((getprop("services/payload/pax-request-nr") - getprop("services/payload/pax-onboard-nr")) > (getprop("services/payload/first-request-nr"))) {
                             if (getprop("services/payload/pax-random-nr") <= getprop("services/payload/first-request-nr")) {
                                 setprop("services/payload/first-onboard-nr", getprop("services/payload/first-onboard-nr") + 1.0);
-                                setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-onboard-lbs") + 195 + math.round(rand() * 104)));
+                                setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-onboard-lbs") + 137 + math.round(rand() * 0)));
                                 setprop("services/payload/passenger-added", 1);
                             }
                         } else {
                             setprop("services/payload/first-onboard-nr", getprop("services/payload/first-onboard-nr") + 1.0);
-                            setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-onboard-lbs") + 195 + math.round(rand() * 104)));
+                            setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-onboard-lbs") + 137 + math.round(rand() * 0)));
                             setprop("services/payload/passenger-added", 1);
                         }
                     }
@@ -131,12 +132,12 @@ var payload_boarding = {
                         if ((getprop("services/payload/pax-request-nr") - getprop("services/payload/pax-onboard-nr")) > (getprop("services/payload/economy-request-nr"))) {
                             if (getprop("services/payload/pax-random-nr") >= (getprop("services/payload/pax-request-nr") - getprop("services/payload/economy-request-nr"))) {
                                 setprop("services/payload/economy-onboard-nr", getprop("services/payload/economy-onboard-nr") + 1.0);
-                                setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 118 + rand() * 104));
+                                setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 137 + rand() * 0));
                                 setprop("services/payload/passenger-added", 1);
                             }
                         } else {
                             setprop("services/payload/economy-onboard-nr", getprop("services/payload/economy-onboard-nr") + 1.0);
-                            setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 118 + rand() * 104));
+                            setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 137 + rand() * 0));
                             setprop("services/payload/passenger-added", 1);
                         }
                     }
@@ -144,7 +145,7 @@ var payload_boarding = {
                     if (getprop("services/payload/passenger-added") != 1) {
                         if (getprop("services/payload/business-onboard-nr") < getprop("services/payload/business-request-nr")) {
                             setprop("services/payload/business-onboard-nr", getprop("services/payload/business-onboard-nr") + 1.0);
-                            setprop("services/payload/business-onboard-lbs", math.round(getprop("services/payload/business-onboard-lbs") + 173 + rand() * 104));
+                            setprop("services/payload/business-onboard-lbs", math.round(getprop("services/payload/business-onboard-lbs") + 137 + rand() * 0));
                         }
                     }
                 }
@@ -164,12 +165,12 @@ var payload_boarding = {
                             if ((getprop("services/payload/pax-request-nr") - getprop("services/payload/pax-onboard-nr")) > (getprop("services/payload/first-request-nr"))) {
                                 if (getprop("services/payload/pax-random-nr") <= getprop("services/payload/first-request-nr")) {
                                     setprop("services/payload/first-onboard-nr", getprop("services/payload/first-onboard-nr") + 1.0);
-                                    setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-onboard-lbs") + 195 + math.round(rand() * 104)));
+                                    setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-onboard-lbs") + 137 + math.round(rand() * 0)));
                                     setprop("services/payload/passenger-added", 1);
                                 }
                             } else {
                                 setprop("services/payload/first-onboard-nr", getprop("services/payload/first-onboard-nr") + 1.0);
-                                setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-onboard-lbs") + 195 + math.round(rand() * 104)));
+                                setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-onboard-lbs") + 137 + math.round(rand() * 0)));
                                 setprop("services/payload/passenger-added", 1);
                             }
                         }
@@ -179,12 +180,12 @@ var payload_boarding = {
                         if ((getprop("services/payload/pax-request-nr") - getprop("services/payload/pax-onboard-nr")) > (getprop("services/payload/economy-request-nr"))) {
                             if (getprop("services/payload/pax-random-nr") >= (getprop("services/payload/pax-request-nr") - getprop("services/payload/economy-request-nr"))) {
                                 setprop("services/payload/economy-onboard-nr", getprop("services/payload/economy-onboard-nr") + 1.0);
-                                setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 118 + rand() * 104));
+                                setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 137 + rand() * 0));
                                 setprop("services/payload/passenger-added", 1);
                             }
                         } else {
                             setprop("services/payload/economy-onboard-nr", getprop("services/payload/economy-onboard-nr") + 1.0);
-                            setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 118 + rand() * 104));
+                            setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 137 + rand() * 0));
                             setprop("services/payload/passenger-added", 1);
                         }
                     }
@@ -192,7 +193,7 @@ var payload_boarding = {
                     if (getprop("services/payload/passenger-added") != 1) {
                         if (getprop("services/payload/business-onboard-nr") < getprop("services/payload/business-request-nr")) {
                             setprop("services/payload/business-onboard-nr", getprop("services/payload/business-onboard-nr") + 1.0);
-                            setprop("services/payload/business-onboard-lbs", math.round(getprop("services/payload/business-onboard-lbs") + 173 + rand() * 104));
+                            setprop("services/payload/business-onboard-lbs", math.round(getprop("services/payload/business-onboard-lbs") + 137 + rand() * 0));
                         }
                     }
                 }
@@ -202,7 +203,7 @@ var payload_boarding = {
                 if (getprop("services/stairs/stairs3_enable") == 1) {
                     if (getprop("services/payload/economy-onboard-nr") < getprop("services/payload/economy-request-nr")) {
                         setprop("services/payload/economy-onboard-nr", getprop("services/payload/economy-onboard-nr") + 1);
-                        setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 118 + rand() * 104));
+                        setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 137 + rand() * 0));
                     }
                 }
                 
@@ -211,7 +212,7 @@ var payload_boarding = {
                 if (getprop("services/stairs/stairs4_enable") == 1) {
                     if (getprop("services/payload/economy-onboard-nr") < getprop("services/payload/economy-request-nr")) {
                         setprop("services/payload/economy-onboard-nr", getprop("services/payload/economy-onboard-nr") + 1);
-                        setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 118 + rand() * 104));
+                        setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-onboard-lbs") + 137 + rand() * 0));
                     }
                 }
                 
@@ -445,282 +446,136 @@ var payload_boarding = {
                 }
             }
         }
-        
-        
-        # Catering Loading
-        
-        if (getprop("services/payload/catering-loading") == 1) {
-        
-            var prepgalley0trolley = 0;
-            var prepgalley1trolley = 0;
-            var prepgalley2trolley = 0;
-            var prepgalley3trolley = 0;
-            var prepgalleytotal = 0;
+
+        if (getprop("services/payload/catering1-loading") == 1) {
             
-            # Catering trolley Loading preparation
-            # Define how heavy the catering trolleys are. A standard trolley weighs about 33 Lbs empty (Wikipedia information) and we assume it can contain up to 67 Lbs of food and drinks.
-            
-            if (math.round((getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) / 100) < ((getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) / 100)) {
-                prepgalleytotal = math.round((getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) / 100) + 1.0;
-            } else {
-                prepgalleytotal = math.round((getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) / 100);
+            # Baggage Loading
+            # Define loading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/catering/enable")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round((getprop("services/payload/catering1-request-lbs") - getprop("services/payload/catering1-onboard-lbs")) / (150 * (getprop("services/catering/enable"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            if (getprop("services/payload/catering1-onboard-lbs") < getprop("services/payload/catering1-request-lbs")) {
+                setprop("services/payload/catering1-onboard-lbs", getprop("services/payload/catering1-onboard-lbs") + getprop("/services/payload/baggage-speed"));
+                if (getprop("services/payload/catering1-onboard-lbs") >= getprop("services/payload/catering1-request-lbs")) {
+                    setprop("services/payload/catering1-onboard-lbs", getprop("services/payload/catering1-request-lbs"));
+                    setprop("services/payload/catering1-loading", 0);
+                    screen.log.write("catering loading complete.", 0, 0.584, 1);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                }
             }
-            setprop("services/payload/catering-trolley-lbs", (getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) / prepgalleytotal);
             
-            # Check if  the defined trolleys fit into the catering galleys, based on the number of catering truck connected (each galley has another capacity and is accessed by one defined catering truck)
-            # After this check, the system will jump to the actual loading process by setting the catering-loading property to 3.
-            
-            if (getprop("services/catering/position")) {
-                if (math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
-                    prepgalley0trolley = math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
-                    prepgalleytotal = prepgalleytotal - prepgalley0trolley;
+        } elsif (getprop("services/payload/catering1-loading") == 2) {
+            #Define unloading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/catering/enable")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round(getprop("services/payload/catering1-onboard-lbs") / (150 * (getprop("services/catering/enable"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            #unload
+            if (getprop("services/payload/catering1-onboard-lbs") > 0) {
+                if (getprop("services/payload/catering1-onboard-lbs") <= getprop("services/payload/baggage-speed")) {
+                    setprop("services/payload/catering1-onboard-lbs", 0);
+                    setprop("services/payload/catering1-loading", 0);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                    screen.log.write("catering unloading complete.", 0, 0.584, 1);
                 } else {
-                    prepgalley0trolley = getprop("services/payload/catering-galley-0-trolley-nr") + math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
-                    prepgalleytotal = prepgalleytotal - prepgalley0trolley;
+                    setprop("services/payload/catering1-onboard-lbs", getprop("services/payload/catering1-onboard-lbs") - getprop("services/payload/baggage-speed"))
                 }
             }
-            if (getprop("services/catering/position1")) {
-                if (math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
-                    prepgalley1trolley = math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
-                    prepgalleytotal = prepgalleytotal - prepgalley1trolley;
+        }
+    
+        if (getprop("services/payload/catering2-loading") == 1) {
+            
+            # Baggage Loading
+            # Define loading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/catering/enable1")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round((getprop("services/payload/catering2-request-lbs") - getprop("services/payload/catering2-onboard-lbs")) / (150 * (getprop("services/catering/enable1"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            if (getprop("services/payload/catering2-onboard-lbs") < getprop("services/payload/catering2-request-lbs")) {
+                setprop("services/payload/catering2-onboard-lbs", getprop("services/payload/catering2-onboard-lbs") + getprop("/services/payload/baggage-speed"));
+                if (getprop("services/payload/catering2-onboard-lbs") >= getprop("services/payload/catering2-request-lbs")) {
+                    setprop("services/payload/catering2-onboard-lbs", getprop("services/payload/catering2-request-lbs"));
+                    setprop("services/payload/catering2-loading", 0);
+                    screen.log.write("catering loading complete.", 0, 0.584, 1);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                }
+            }
+            
+        } elsif (getprop("services/payload/catering2-loading") == 2) {
+            #Define unloading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/catering/enable1")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round(getprop("services/payload/catering2-onboard-lbs") / (150 * (getprop("services/catering/enable1"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            #unload
+            if (getprop("services/payload/catering2-onboard-lbs") > 0) {
+                if (getprop("services/payload/catering2-onboard-lbs") <= getprop("services/payload/baggage-speed")) {
+                    setprop("services/payload/catering2-onboard-lbs", 0);
+                    setprop("services/payload/catering2-loading", 0);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                    screen.log.write("catering unloading complete.", 0, 0.584, 1);
                 } else {
-                    prepgalley1trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[2]/max-lb") - getprop("sim/weight[2]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
-                    prepgalleytotal = prepgalleytotal - prepgalley1trolley;
+                    setprop("services/payload/catering2-onboard-lbs", getprop("services/payload/catering2-onboard-lbs") - getprop("services/payload/baggage-speed"))
                 }
             }
-            if (getprop("services/catering/position2")) {
-                if (math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
-                    prepgalley2trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
-                    prepgalleytotal = prepgalleytotal - prepgalley2trolley;
+        }
+
+        if (getprop("services/payload/catering3-loading") == 1) {
+            
+            # Baggage Loading
+            # Define loading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/catering/enable2")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round((getprop("services/payload/catering3-request-lbs") - getprop("services/payload/catering3-onboard-lbs")) / (150 * (getprop("services/catering/enable2"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            if (getprop("services/payload/catering3-onboard-lbs") < getprop("services/payload/catering3-request-lbs")) {
+                setprop("services/payload/catering3-onboard-lbs", getprop("services/payload/catering3-onboard-lbs") + getprop("/services/payload/baggage-speed"));
+                if (getprop("services/payload/catering3-onboard-lbs") >= getprop("services/payload/catering3-request-lbs")) {
+                    setprop("services/payload/catering3-onboard-lbs", getprop("services/payload/catering3-request-lbs"));
+                    setprop("services/payload/catering3-loading", 0);
+                    screen.log.write("catering loading complete.", 0, 0.584, 1);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                }
+            }
+            
+        } elsif (getprop("services/payload/catering3-loading") == 2) {
+            #Define unloading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/catering/enable2")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round(getprop("services/payload/catering3-onboard-lbs") / (150 * (getprop("services/catering/enable2"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            #unload
+            if (getprop("services/payload/catering3-onboard-lbs") > 0) {
+                if (getprop("services/payload/catering3-onboard-lbs") <= getprop("services/payload/baggage-speed")) {
+                    setprop("services/payload/catering3-onboard-lbs", 0);
+                    setprop("services/payload/catering3-loading", 0);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                    screen.log.write("catering unloading complete.", 0, 0.584, 1);
                 } else {
-                    prepgalley2trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[3]/max-lb") - getprop("sim/weight[3]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
-                    prepgalleytotal = prepgalleytotal - prepgalley2trolley;
+                    setprop("services/payload/catering3-onboard-lbs", getprop("services/payload/catering3-onboard-lbs") - getprop("services/payload/baggage-speed"))
                 }
             }
-            if (getprop("services/catering/position3")) {
-                if (math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) < ((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"))) {
-                    prepgalley3trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs"));
-                    prepgalleytotal = prepgalleytotal - prepgalley3trolley;
+        }
+
+        if (getprop("services/payload/catering4-loading") == 1) {
+            
+            # Baggage Loading
+            # Define loading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/catering/enable3")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round((getprop("services/payload/catering4-request-lbs") - getprop("services/payload/catering4-onboard-lbs")) / (150 * (getprop("services/catering/enable3"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            if (getprop("services/payload/catering4-onboard-lbs") < getprop("services/payload/catering4-request-lbs")) {
+                setprop("services/payload/catering4-onboard-lbs", getprop("services/payload/catering4-onboard-lbs") + getprop("/services/payload/baggage-speed"));
+                if (getprop("services/payload/catering4-onboard-lbs") >= getprop("services/payload/catering4-request-lbs")) {
+                    setprop("services/payload/catering4-onboard-lbs", getprop("services/payload/catering4-request-lbs"));
+                    setprop("services/payload/catering4-loading", 0);
+                    screen.log.write("catering loading complete.", 0, 0.584, 1);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                }
+            }
+            
+        } elsif (getprop("services/payload/catering4-loading") == 2) {
+            #Define unloading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/catering/enable3")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round(getprop("services/payload/catering4-onboard-lbs") / (150 * (getprop("services/catering/enable3"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            #unload
+            if (getprop("services/payload/catering4-onboard-lbs") > 0) {
+                if (getprop("services/payload/catering4-onboard-lbs") <= getprop("services/payload/baggage-speed")) {
+                    setprop("services/payload/catering4-onboard-lbs", 0);
+                    setprop("services/payload/catering4-loading", 0);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                    screen.log.write("catering unloading complete.", 0, 0.584, 1);
                 } else {
-                    prepgalley3trolley = getprop("services/payload/catering-galley-1-trolley-nr") + math.round((getprop("sim/weight[4]/max-lb") - getprop("sim/weight[4]/weight-lb")) / getprop("services/payload/catering-trolley-lbs")) - 1.0;
-                    prepgalleytotal = prepgalleytotal - prepgalley3trolley;
+                    setprop("services/payload/catering4-onboard-lbs", getprop("services/payload/catering4-onboard-lbs") - getprop("services/payload/baggage-speed"))
                 }
-            }
-            if (prepgalleytotal > 0) {
-                if ((getprop("services/catering/position") + getprop("services/catering/position1") + getprop("services/catering/position2") + getprop("services/catering/position3")) < 4) {
-                    setprop("services/payload/catering-loading", 0);
-                    screen.log.write("Captain, we don't have enough space for " ~ prepgalleytotal ~ " trolleys of food and drinks. Please connect some more catering trucks, so we can use all the catering galleys.", 1, 0, 0);
-                } else {
-                    setprop("services/payload/catering-loading", 0);
-                    screen.log.write("Captain, we don't have enough space for " ~ prepgalleytotal ~ " trolleys of food and drinks. Please reduce the amount of catering you wish to take on this flight.", 1, 0, 0);
-                }
-            } else {
-                # The Cycle number and skipcycle-number are used to slowly load the catering in line with the time the baggage loading takes, for more realism. If the baggage is not loading, a trolley is loaded per catering truck every three cycles.
-                
-                setprop("services/payload/catering-cycle-nr", 0);
-                if ((getprop("services/payload/baggage-loading") == 0) or (getprop("services/payload/belly-request-lbs") == 0)) {
-                    setprop("services/payload/catering-skipcycle-nr", 3);
-                } else {
-                    if ((((getprop("services/payload/belly-request-lbs") - getprop("services/payload/belly-onboard-lbs")) / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable")))) / (prepgalley0trolley + prepgalley1trolley + prepgalley2trolley + prepgalley3trolley)) < 4) {
-                        setprop("services/payload/catering-skipcycle-nr", 3);
-                    } else {
-                        setprop("services/payload/catering-skipcycle-nr", ((getprop("services/payload/belly-request-lbs") - getprop("services/payload/belly-onboard-lbs")) / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable")))) / (prepgalley0trolley + prepgalley1trolley + prepgalley2trolley + prepgalley3trolley));
-                        
-                        setprop("services/payload/catering-skipcycle-nr", math.round(getprop("services/payload/catering-skipcycle-nr")));
-                    }
-                }
-                
-                # Ready to proceed to the actual catering loading process.
-                setprop("services/payload/catering-loading", 4);
-            }			
-        } elsif (getprop("services/payload/catering-loading") == 2) {
-            
-            # Catering trolley unloading preparation
-            
-            setprop("services/payload/catering-cycle-nr", 0);
-            setprop("services/payload/catering-skipcycle-nr", 3);
-            setprop("services/payload/catering-trolley-lbs", getprop("services/payload/catering-onboard-lbs") / getprop("services/payload/catering-trolley-nr"));
-            if (getprop("services/payload/catering-onboard-lbs") <= 0) {
-                setprop("services/payload/catering-loading", 0);
-                screen.log.write("Captain, the catering galleys are empty, we can not unload the catering trolleys.", 1, 0, 0);
-            } else {
-                setprop("services/payload/catering-loading", 4);
-            }
-            
-        } elsif (getprop("services/payload/catering-loading") == 3) {
-            # Catering trolley loading process after preparation.
-            setprop("services/payload/catering-cycle-nr", getprop("services/payload/catering-cycle-nr") + 1);
-            
-            if ((getprop("services/catering/position1") != 1) and (getprop("services/catering/position2") != 1) and (getprop("services/catering/position3") != 1)) {
-                setprop("services/payload/catering-loading", 0);
-                screen.log.write("Captain, the catering trucks are disconnected, we cannot continue loading the catering trolleys.", 1, 0, 0);
-            }
-            
-            # Catering Truck 
-            if (getprop("services/payload/catering-request-lbs") > getprop("services/payload/catering-onboard-lbs")) {
-                if ((getprop("services/catering/position") == 1) and ((getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")) == math.round(getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")))) {
-                    if ((getprop("sim/weight[2]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[2]/max-lb")) {
-                        setprop("services/payload/catering-galley-0-full", 0);
-                        setprop("services/payload/catering-galley-0-trolley-nr", getprop("services/payload/catering-galley-0-trolley-nr") + 1.0);
-                        setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + 1.0);
-                        setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb")));
-                    } else {
-                        setprop("services/payload/catering-galley-0-full", 1);
-                        if ((getprop("services/payload/catering-galley-0-full") + getprop("services/payload/catering-galley-1-full") + getprop("services/payload/catering-galley-2-full") + getprop("services/payload/catering-galley-3-full")) == 4) {
-                            if (getprop("services/payload/catering-onboard-lbs") < getprop("services/payload/catering-request-lbs")) {
-                                setprop("services/payload/catering-loading", 0);
-                                screen.log.write("Captain, it seems something went wrong with the catering trucks, the loading process is stopped because the available galleys are full.", 1, 0, 0);
-                            }
-                        }
-                    }
-                }
-            }
-            
-            # Catering Truck 1
-            if (getprop("services/payload/catering-request-lbs") > getprop("services/payload/catering-onboard-lbs")) {
-                if ((getprop("services/catering/position1") == 1) and ((getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")) == math.round(getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")))) {
-                    if ((getprop("sim/weight[2]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[2]/max-lb")) {
-                        setprop("services/payload/catering-galley-1-full", 0);
-                        setprop("services/payload/catering-galley-1-trolley-nr", getprop("services/payload/catering-galley-1-trolley-nr") + 1.0);
-                        setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + 1.0);
-                        setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb")));
-                    } else {
-                        setprop("services/payload/catering-galley-1-full", 1);
-                        if ((getprop("services/payload/catering-galley-0-full") + getprop("services/payload/catering-galley-1-full") + getprop("services/payload/catering-galley-2-full") + getprop("services/payload/catering-galley-3-full")) == 4) {
-                            if (getprop("services/payload/catering-onboard-lbs") < getprop("services/payload/catering-request-lbs")) {
-                                setprop("services/payload/catering-loading", 0);
-                                screen.log.write("Captain, it seems something went wrong with the catering trucks, the loading process is stopped because the available galleys are full.", 1, 0, 0);
-                            }
-                        }
-                    }
-                }
-            }
-            
-            # Catering Truck 2
-            if (getprop("services/payload/catering-request-lbs") > getprop("services/payload/catering-onboard-lbs")) {
-                if ((getprop("services/catering/position2") == 1) and (((getprop("services/payload/catering-cycle-nr") + 1) / getprop("services/payload/catering-skipcycle-nr")) == math.round((getprop("services/payload/catering-cycle-nr") + 1) / getprop("services/payload/catering-skipcycle-nr")))) {
-                    if ((getprop("sim/weight[3]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[3]/max-lb")) {
-                        setprop("services/payload/catering-galley-2-full", 0);
-                        setprop("services/payload/catering-galley-2-trolley-nr", getprop("services/payload/catering-galley-2-trolley-nr") + 1.0);
-                        setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + 1.0);
-                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("sim/weight[3]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb")));
-                    } else {
-                        setprop("services/payload/catering-galley-2-full", 1);
-                        if ((getprop("services/payload/catering-galley-0-full") + getprop("services/payload/catering-galley-1-full") + getprop("services/payload/catering-galley-2-full") + getprop("services/payload/catering-galley-3-full")) == 4) {
-                            if (getprop("services/payload/catering-onboard-lbs") < getprop("services/payload/catering-request-lbs")) {
-                                setprop("services/payload/catering-loading", 0);
-                                screen.log.write("Captain, it seems something went wrong with the catering trucks, the loading process is stopped because the available galleys are full.", 1, 0, 0);
-                            }
-                        }
-                    }
-                }
-            }
-            
-            # Catering Truck 3
-            if (getprop("services/payload/catering-request-lbs") > getprop("services/payload/catering-onboard-lbs")) {
-                if ((getprop("services/catering/position3") == 1) and (((getprop("services/payload/catering-cycle-nr") + 2) / getprop("services/payload/catering-skipcycle-nr")) == math.round((getprop("services/payload/catering-cycle-nr") + 2) / getprop("services/payload/catering-skipcycle-nr")))) {
-                    if ((getprop("sim/weight[4]/weight-lb") + getprop("services/payload/catering-trolley-lbs")) < getprop("sim/weight[4]/max-lb")) {
-                        setprop("services/payload/catering-galley-3-full", 0);
-                        setprop("services/payload/catering-galley-3-trolley-nr", getprop("services/payload/catering-galley-3-trolley-nr") + 1.0);
-                        setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + 1.0);
-                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("sim/weight[4]/weight-lb") + getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb") + getprop("sim/weight[3]/weight-lb") + getprop("sim/weight[4]/weight-lb")));
-                    } else {
-                        setprop("services/payload/catering-galley-3-full", 1);
-                        if ((getprop("services/payload/catering-galley-0-full") + getprop("services/payload/catering-galley-1-full") + getprop("services/payload/catering-galley-2-full") + getprop("services/payload/catering-galley-3-full")) == 4) {
-                            if (getprop("services/payload/catering-onboard-lbs") < getprop("services/payload/catering-request-lbs")) {
-                                setprop("services/payload/catering-loading", 0);
-                                screen.log.write("Captain, it seems something went wrong with the catering trucks, the loading process is stopped because the available galleys are full.", 1, 0, 0);
-                            }
-                        }
-                    }
-                }
-            }		
-            
-            # Check if the catering process has finished
-            if (getprop("services/payload/catering-onboard-lbs") >= getprop("services/payload/catering-request-lbs")) {
-                setprop("services/payload/catering-loading", 0);
-                screen.log.write("Catering loading process finished. Please disconnect the catering trucks.", 0, 0.584, 1);
-            }
-         } elsif (getprop("services/payload/catering-loading") == 4) {
-        
-            # Catering unloading process
-            
-            setprop("services/payload/catering-cycle-nr", getprop("services/payload/catering-cycle-nr") + 1.0);
-             
-            # Catering Truck 
-            if (getprop("sim/weight[2]/weight-lb") > 0) {
-                if ((getprop("services/catering/position") == 1) and (getprop("services/payload/catering-galley-0-trolley-nr") != 0)) {
-                    if ((getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")) == math.round(getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr"))) {
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-galley-0-trolley-nr", getprop("services/payload/catering-galley-0-trolley-nr") - 1.0);
-                    }
-                } elsif (getprop("services/catering/position") != 1) {
-                    setprop("services/payload/catering-loading", 0);
-                    screen.log.write("Captain, catering galley 0 is not empty, but there is no catering truck connected to it. Please connect a catering truck before you start unloading.", 1, 0, 0);
-                }
-            } 
-                
-            # Catering Truck 1
-            if (getprop("sim/weight[2]/weight-lb") > 0) {
-                if ((getprop("services/catering/position1") == 1) and (getprop("services/payload/catering-galley-1-trolley-nr") != 0)) {
-                    if ((getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr")) == math.round(getprop("services/payload/catering-cycle-nr") / getprop("services/payload/catering-skipcycle-nr"))) {
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-galley-1-trolley-nr", getprop("services/payload/catering-galley-1-trolley-nr") - 1.0);
-                    }
-                } elsif (getprop("services/catering/position1") != 1) {
-                    setprop("services/payload/catering-loading", 0);
-                    screen.log.write("Captain, catering galley 1 is not empty, but there is no catering truck connected to it. Please connect a catering truck before you start unloading.", 1, 0, 0);
-                }
-            }
-            
-            # Catering Truck 2
-            if (getprop("sim/weight[3]/weight-lb") > 0) {
-                if ((getprop("services/catering/position2") == 1) and (getprop("services/payload/catering-galley-2-trolley-nr") != 0)) {
-                    if (((getprop("services/payload/catering-cycle-nr") + 1) / getprop("services/payload/catering-skipcycle-nr")) == math.round((getprop("services/payload/catering-cycle-nr") + 1) / getprop("services/payload/catering-skipcycle-nr"))) {
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("sim/weight[3]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-galley-2-trolley-nr", getprop("services/payload/catering-galley-2-trolley-nr") - 1.0);
-                    }
-                } elsif (getprop("services/catering/position2") != 1) {
-                    setprop("services/payload/catering-loading", 0);
-                    screen.log.write("Captain, catering galley 2 is not empty, but there is no catering truck connected to it. Please connect a catering truck before you start unloading.", 1, 0, 0);
-                }
-            }
-            
-            # Catering Truck 3
-            if (getprop("sim/weight[4]/weight-lb") > 0) {
-                if ((getprop("services/catering/position3") == 1) and (getprop("services/payload/catering-galley-3-trolley-nr") != 0)) {
-                    if (((getprop("services/payload/catering-cycle-nr") + 2) / getprop("services/payload/catering-skipcycle-nr")) == math.round((getprop("services/payload/catering-cycle-nr") + 2) / getprop("services/payload/catering-skipcycle-nr"))) {
-                        setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("sim/weight[4]/weight-lb") - getprop("services/payload/catering-trolley-lbs")));
-                        setprop("services/payload/catering-galley-3-trolley-nr", getprop("services/payload/catering-galley-3-trolley-nr") - 1.0);
-                    }
-                } elsif (getprop("services/catering/position3") != 1) {
-                    setprop("services/payload/catering-loading", 0);
-                    screen.log.write("Captain, catering galley 3 is not empty, but there is no catering truck connected to it. Please connect a catering truck before you start unloading.", 1, 0, 0);
-                }
-            }
-            
-            # Check if the catering unloading process has finished.
-            if (getprop("services/payload/catering-onboard-lbs") < 100) {
-                setprop("services/payload/catering-loading", 0);
-                setprop("services/payload/catering-onboard-lbs", 0);
-                setprop("sim/weight[2]/weight-lb", 0);
-                setprop("sim/weight[3]/weight-lb", 0);
-                setprop("sim/weight[4]/weight-lb", 0);
-                setprop("services/payload/catering-trolley-lbs", 0);
-                setprop("services/payload/catering-trolley-nr", 0);
-                setprop("services/payload/catering-galley-0-trolley-nr", 0);
-                setprop("services/payload/catering-galley-1-trolley-nr", 0);
-                setprop("services/payload/catering-galley-2-trolley-nr", 0);
-                setprop("services/payload/catering-galley-3-trolley-nr", 0);
-                screen.log.write("Captain, the catering galleys are empty, we can now start refilling them or disconnect the catering trucks.", 0, 0.584, 1);
             }
         }
         
@@ -737,15 +592,19 @@ var payload_boarding = {
         
         # Write to weight properties, but check if we are not overloading first.
         
-        setprop("services/payload/weight-total-lbs", getprop("services/payload/pax-onboard-lbs") + getprop("services/payload/belly-onboard-lbs") + getprop("services/payload/crew-onboard-lbs") + getprop("services/payload/catering-onboard-lbs"));
-        if ((getprop("services/payload/weight-total-lbs") >= getprop("sim/weight[1]/max-lb")) and ((getprop("services/payload/baggage-loading") == 1) or (getprop("services/payload/pax-boarding") == 1))) {
+        setprop("services/payload/weight-total-lbs", getprop("services/payload/pax-onboard-lbs") + getprop("services/payload/belly-onboard-lbs") + getprop("services/payload/crew-onboard-lbs") + getprop("services/payload/catering1-onboard-lbs") + getprop("services/payload/catering2-onboard-lbs") + getprop("services/payload/catering3-onboard-lbs") + getprop("services/payload/catering4-onboard-lbs"));
+        if ((getprop("services/payload/weight-total-lbs") >= getprop("sim/weight[1]/max-lb")) and ((getprop("services/payload/baggage-loading") == 1) or (getprop("services/payload/catering1-loading") == 1) or (getprop("services/payload/catering2-loading") == 1) or (getprop("services/payload/catering3-loading") == 1) or (getprop("services/payload/catering4-loading") == 1) or (getprop("services/payload/pax-boarding") == 1))) {
             setprop("services/payload/baggage-loading", 0);
             setprop("services/payload/pax-boarding", 0);
             screen.log.write("Captain, we are overloading the aircraft. Please reduce the number of passengers or cargo on board. Boarding & loading stopped.", 1, 0, 0);
         }
         
-        setprop("services/payload/expected-weight-lbs", getprop("services/payload/belly-request-lbs") + getprop("services/payload/catering-request-lbs") + getprop("services/payload/first-request-nr") * 247 + getprop("services/payload/business-request-nr") * 225 + getprop("services/payload/economy-request-nr") * 170 + getprop("services/payload/crew-request-nr") * 150);
+        setprop("services/payload/expected-weight-lbs", getprop("services/payload/belly-request-lbs") + getprop("services/payload/catering1-request-lbs") + getprop("services/payload/catering2-request-lbs") + getprop("services/payload/catering3-request-lbs") + getprop("services/payload/catering4-request-lbs") + getprop("services/payload/first-request-nr") * 137 + getprop("services/payload/business-request-nr") * 137 + getprop("services/payload/economy-request-nr") * 137 + getprop("services/payload/crew-request-nr") * 150);
         setprop("sim/weight[1]/weight-lb", getprop("services/payload/pax-onboard-lbs") + getprop("services/payload/belly-onboard-lbs"));
+        setprop("sim/weight[2]/weight-lb", getprop("services/payload/catering1-onboard-lbs"));
+        setprop("sim/weight[3]/weight-lb", getprop("services/payload/catering2-onboard-lbs"));
+        setprop("sim/weight[4]/weight-lb", getprop("services/payload/catering3-onboard-lbs"));
+        setprop("sim/weight[5]/weight-lb", getprop("services/payload/catering4-onboard-lbs"));
         setprop("sim/weight/weight-lb", getprop("services/payload/crew-onboard-lbs"));
         setprop("services/payload/SOB-nr", (getprop("services/payload/pax-onboard-nr") + getprop("services/payload/crew-onboard-nr")));
 
@@ -767,11 +626,11 @@ var _adjustspeed = func() {
         if (getprop("services/payload/speed") == 0) {
             if (getprop("services/payload/pax-boarding") == 1) {
                 setprop("services/payload/first-onboard-nr", getprop("services/payload/first-request-nr"));
-                setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-request-nr") * 247));
+                setprop("services/payload/first-onboard-lbs", math.round(getprop("services/payload/first-request-nr") * 137));
                 setprop("services/payload/business-onboard-nr", getprop("services/payload/business-request-nr"));
-                setprop("services/payload/business-onboard-lbs", math.round(getprop("services/payload/business-request-nr") * 225));
+                setprop("services/payload/business-onboard-lbs", math.round(getprop("services/payload/business-request-nr") * 137));
                 setprop("services/payload/economy-onboard-nr", getprop("services/payload/economy-request-nr"));
-                setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-request-nr") * 170));
+                setprop("services/payload/economy-onboard-lbs", math.round(getprop("services/payload/economy-request-nr") * 137));
             } elsif (getprop("services/payload/pax-boarding") == 2) {
                 setprop("services/payload/first-onboard-nr", 0);
                 setprop("services/payload/first-onboard-lbs", 0);
@@ -787,51 +646,28 @@ var _adjustspeed = func() {
                 setprop("services/payload/belly-onboard-lbs", 0);
             }
             
-            if (getprop("services/payload/catering-loading") == 1 or (getprop("services/payload/catering-loading") == 3)) {
-                if (getprop("services/payload/catering-request-lbs") < getprop("sim/weight[2]/max-lb")) {
-                    setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("services/payload/catering-request-lbs")));
-                } else {
-                    setprop("sim/weight[2]/weight-lb", sprintf("%i",getprop("sim/weight[2]/max-lb")));
-                }
-                setprop("services/payload/catering-galley-1-trolley-nr", math.round(getprop("sim/weight[2]/weight-lb") / 100));
-                setprop("services/payload/catering-trolley-lbs", getprop("sim/weight[2]/weight-lb") / getprop("services/payload/catering-galley-1-trolley-nr"));
-                setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-galley-1-trolley-nr"));
-                setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("sim/weight[2]/weight-lb")));
-                
-                if (getprop("services/payload/catering-onboard-lbs") < getprop("services/payload/catering-request-lbs")) {
-                    if ((getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) < getprop("sim/weight[3]/max-lb")) {
-                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")));
-                    } else {
-                        setprop("sim/weight[3]/weight-lb", sprintf("%i",getprop("sim/weight[3]/max-lb")));
-                    }
-                    setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") + getprop("sim/weight[3]/weight-lb")));
-                    setprop("services/payload/catering-galley-2-trolley-nr", math.round(getprop("sim/weight[3]/weight-lb") / getprop("services/payload/catering-trolley-lbs")));
-                    setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + getprop("services/payload/catering-galley-2-trolley-nr"));
-                }
-                
-                if (getprop("services/payload/catering-onboard-lbs") < getprop("services/payload/catering-request-lbs")) {
-                    if ((getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")) < getprop("sim/weight[4]/max-lb")) {
-                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("services/payload/catering-request-lbs") - getprop("services/payload/catering-onboard-lbs")));
-                    } else {
-                        setprop("sim/weight[4]/weight-lb", sprintf("%i",getprop("sim/weight[4]/max-lb")));
-                    }
-                    setprop("services/payload/catering-onboard-lbs", sprintf("%i",getprop("services/payload/catering-onboard-lbs") + getprop("sim/weight[4]/weight-lb")));
-                    setprop("services/payload/catering-galley-3-trolley-nr", math.round(getprop("sim/weight[4]/weight-lb") / getprop("services/payload/catering-trolley-lbs")));
-                    setprop("services/payload/catering-trolley-nr", getprop("services/payload/catering-trolley-nr") + getprop("services/payload/catering-galley-3-trolley-nr"));
-                }
-                screen.log.write("Captain, catering loading completed.", 0, 0.584, 1);
-            } elsif (getprop("services/payload/catering-loading") == 2 or (getprop("services/payload/catering-loading") == 4)) {
-                setprop("sim/weight[2]/weight-lb", 0);
-                setprop("sim/weight[3]/weight-lb", 0);
-                setprop("sim/weight[4]/weight-lb", 0);
-                setprop("services/payload/catering-onboard-lbs", 0);
-                setprop("services/payload/catering-trolley-nr", 0);
-                setprop("services/payload/catering-trolley-lbs", 0);
-                setprop("services/payload/catering-galley-0-trolley-nr", 0);
-                setprop("services/payload/catering-galley-1-trolley-nr", 0);
-                setprop("services/payload/catering-galley-2-trolley-nr", 0);
-                setprop("services/payload/catering-galley-3-trolley-nr", 0);
-                screen.log.write("Captain, catering unloading completed.", 0, 0.584, 1);
+            if (getprop("services/payload/catering1-loading") == 1) {
+                setprop("services/payload/catering1-onboard-lbs", getprop("services/payload/catering1-request-lbs") - 1.0);
+            } elsif (getprop("services/payload/catering1-loading") == 2) {
+                setprop("services/payload/catering1-onboard-lbs", 0);
+            }
+        
+            if (getprop("services/payload/catering2-loading") == 1) {
+                setprop("services/payload/catering2-onboard-lbs", getprop("services/payload/catering2-request-lbs") - 1.0);
+            } elsif (getprop("services/payload/catering2-loading") == 2) {
+                setprop("services/payload/catering2-onboard-lbs", 0);
+            }
+
+            if (getprop("services/payload/catering3-loading") == 1) {
+                setprop("services/payload/catering3-onboard-lbs", getprop("services/payload/catering3-request-lbs") - 1.0);
+            } elsif (getprop("services/payload/catering3-loading") == 2) {
+                setprop("services/payload/catering2-onboard-lbs", 0);
+            }
+
+            if (getprop("services/payload/catering4-loading") == 1) {
+                setprop("services/payload/catering4-onboard-lbs", getprop("services/payload/catering4-request-lbs") - 1.0);
+            } elsif (getprop("services/payload/catering4-loading") == 2) {
+                setprop("services/payload/catering4-onboard-lbs", 0);
             }
                 
         setprop("services/payload/speed", 6.0); #Reset the speed to normal.

@@ -103,11 +103,11 @@ setlistener("controls/electric/engine[1]/gen-bu-switch", func {
         if(getprop("controls/electric/engine[1]/gen-bu-switch")) RGENBUST.open();
         else RGENBUST.close();
 });
-setlistener("controls/fuel/tank/boost-pump-switch", func {
+setlistener("controls/fuel/tank[0]/boost-pump-switch", func {
         if(getprop("controls/fuel/tank/boost-pump-switch")) LPUMP1ST.open();
         else LPUMP1ST.close();
 });
-setlistener("controls/fuel/tank/boost-pump-switch[1]", func {
+setlistener("controls/fuel/tank[0]/boost-pump-switch[1]", func {
         if(getprop("controls/fuel/tank/boost-pump-switch[1]")) LPUMP2ST.open();
         else LPUMP2ST.close();
 });

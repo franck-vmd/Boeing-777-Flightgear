@@ -1994,7 +1994,7 @@ Franck.VMD
    <type>rotate</type>
    <object-name>FTR.knob</object-name>
    <object-name>FTR.knob.001</object-name>
-    <property>/controls/fuel/FuelToRemain</property>
+    <property>consumables/fuel/tank/level-norm</property>
    <factor>360</factor>
    <axis>
      <x>-1</x>
@@ -5856,6 +5856,11 @@ Franck.VMD
             <binding>
                 <command>property-toggle</command>
                 <property>controls/fuel/jitteson-arm-switch</property>
+            </binding>
+            <binding>
+                <command>property-toggle</command>
+                <property>services/fuel-truck/clean</property>
+                <value>1</value>
             </binding>
             <binding>
                 <command>nasal</command>

@@ -207,7 +207,7 @@
         <pref-width>250</pref-width>
         <property>services/payload/belly-request-lbs</property>
         <min>0.0</min>
-        <max>126080.0</max>
+        <max>230000.0</max>
         <step>1.0</step>
         <binding>
             <command>dialog-apply</command>
@@ -226,7 +226,7 @@
                 <command>property-adjust</command>
                 <property>services/payload/belly-request-lbs</property>
                 <step>1.0</step>
-                <max>126080.0</max>
+                <max>230000.0</max>
                 <command>dialog-apply</command>
             </binding>
             <halign>left</halign>

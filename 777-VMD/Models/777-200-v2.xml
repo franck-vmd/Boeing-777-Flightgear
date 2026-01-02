@@ -1815,7 +1815,7 @@ Franck.VMD
         <type>rotate</type>
         <object-name>Lstrut</object-name>
         <property>gear/gear[1]/position-norm</property>
-        <offset-deg>-9.62</offset-deg>
+        <offset-deg>-12.5</offset-deg>
         <center>
             <x-m>6.99646</x-m>
             <y-m>-5.61966</y-m>

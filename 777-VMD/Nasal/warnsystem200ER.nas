@@ -108,7 +108,8 @@ var WEU =
 	    me.seatbelts	= 0;
 	    me.fuel_c_pump1	= 0;
 	    me.fuel_c_pump2	= 0;
-	    me.fuel_c_qty	= 0;	
+	    me.fuel_c_qty	= 0;
+        me.grosswt	= 0;	
 
         # internal states
         m.active_warnings = 0;
@@ -279,6 +280,12 @@ var WEU =
 	if ((me.fuel_l_qty<4500) or (me.fuel_r_qty<4500))
 	{
 	    append(me.msgs_caution,"FUEL QTY LOW");
+	}
+
+    # POIDS
+	if (getprop("yasim/gross-weight-lbs") > 656000)
+	{
+	    append(me.msgs_caution,">EXCEED GROSS WEIGHT");
 	}
 	
 	# Activates if airspeed below minimum maneuvering speed

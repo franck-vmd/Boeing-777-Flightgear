@@ -298,24 +298,31 @@
             <min-lb type="double">0</min-lb>
         </weight>
         <weight n="2">
-            <!--  Front Catering Galley -->
-            <name>Front Catering Galley</name>
+            <!--  Doors 1 Catering Galley -->
+            <name>Catering1</name>
             <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">2325</max-lb>
+            <max-lb type="double">1638</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <weight n="3">
-            <!--  Center Catering Galley -->
-            <name>Center Catering Galley</name>
+            <!--  Doors 2 Catering Galley -->
+            <name>Catering2</name>
             <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">1850</max-lb>
+            <max-lb type="double">1710</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <weight n="4">
-            <!--  Rear Catering Galley -->
-            <name>Rear Catering Galley</name>
+            <!--  Doors 4 Catering Galley -->
+            <name>Catering3</name>
             <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">2675</max-lb>
+            <max-lb type="double">1800</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        <weight n="5">
+            <!--  Doors 5 Catering Galley -->
+            <name>Catering4</name>
+            <weight-lb type="double">0</weight-lb>
+            <max-lb type="double">1800</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <aircraft-operator>AFR</aircraft-operator>
@@ -462,13 +469,22 @@
      </jetway2-pos>
     </aircraft>
     
-    <services>
+    <services> <!--Max nr of passengers in each class. Data from https://en.wikipedia.org/wiki/Boeing_777#Specifications-->
         <payload>
             <first-max-nr>22</first-max-nr>
             <business-max-nr>70</business-max-nr>
-            <economy-max-nr>273</economy-max-nr>
-            <catering-max-lbs>6850</catering-max-lbs>
+            <economy-max-nr>274</economy-max-nr>
+            <belly-max-lbs>21960</belly-max-lbs>
+            <catering1-max-lbs>1638</catering1-max-lbs>
+            <catering2-max-lbs>1710</catering2-max-lbs>
+            <catering3-max-lbs>1800</catering3-max-lbs>
+            <catering4-max-lbs>1800</catering4-max-lbs>
         </payload>
     </services>
+
+    <yasim>
+        <empty-weight-lbs type = "float">366940</empty-weight-lbs>
+        <zero-fuel-weight-lbs type = "float">366940</zero-fuel-weight-lbs>
+    </yasim>
 
 </PropertyList>

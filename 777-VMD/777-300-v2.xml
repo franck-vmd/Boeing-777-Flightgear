@@ -121,11 +121,8 @@ http://www.boeing.com/commercial/airports/faqs/arcandapproachspeeds.pdf
   </vstab>
 
 
-<!-- General Electric GE90-94B
-
-GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
--->
-<!-- due to a strange problem with yasim, add 3.6 to maximum n1 -->
+<!-- GE90-115B -->
+<!-- due to a strange problem with yasim, add 3.7 to maximum n1 -->
 <jet x="1.16" y="9.89" z="-2.995" mass="19315" thrust="115540" spool-time="4.5" egt="825" tsfc="0.25" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121" reverse="0.4">
   <control-input axis="/controls/engines/engine[0]/throttle-act" control="THROTTLE"></control-input>
     <control-input axis="/controls/engines/engine[0]/reverser-act" control="REVERSE_THRUST"></control-input>

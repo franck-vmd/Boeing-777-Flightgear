@@ -3,7 +3,7 @@
     <sim n="0">
         <description>Boeing 777-200LR-v2</description>
         <aero>777-200LR-v2</aero>
-        <max-payload type="double">440000</max-payload>
+        <max-payload type="double">459000</max-payload>
         <max-landing-weight type="double">492000</max-landing-weight>
         <max-takeoff-weight type="double">766000</max-takeoff-weight>
         <startup>
@@ -290,31 +290,38 @@
         </tutorials>
 
          <weight n="1">
-            <!--  328 pax max @ 180 lbs -->
+            <!--  328 pax max @ 180 lbs + cargo -->
             <name>Pax/Baggage</name>
-            <weight-lb type="double">44840</weight-lb>
-            <max-lb type="double">131000</max-lb>
+            <weight-lb type="double">42456</weight-lb>
+            <max-lb type="double">65244</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <weight n="2">
-            <!--  Front Catering Galley -->
-            <name>Front Catering Galley</name>
+            <!--  Doors 1 Catering Galley -->
+            <name>Catering1</name>
             <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">1725</max-lb>
+            <max-lb type="double">1152</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <weight n="3">
-            <!--  Center Catering Galley -->
-            <name>Center Catering Galley</name>
+            <!--  Doors 2 Catering Galley -->
+            <name>Catering2</name>
             <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">2525</max-lb>
+            <max-lb type="double">1368</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <weight n="4">
-            <!--  Rear Catering Galley -->
-            <name>Rear Catering Galley</name>
+            <!--  Doors 4 Catering Galley -->
+            <name>Catering3</name>
             <weight-lb type="double">0</weight-lb>
-            <max-lb type="double">2675</max-lb>
+            <max-lb type="double">1584</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        <weight n="5">
+            <!--  Doors 5 Catering Galley -->
+            <name>Catering4</name>
+            <weight-lb type="double">0</weight-lb>
+            <max-lb type="double">1584</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <aircraft-operator>AFR</aircraft-operator>
@@ -366,7 +373,7 @@
             <file>Nasal/gpws.nas</file>
             <file>Nasal/ground_services.nas</file>
             <file>Nasal/payload.nas</file>
-            <file>Nasal/warnsystem.nas</file>
+            <file>Nasal/warnsystem200LR.nas</file>
             <file>Nasal/Cabinalert.nas</file>
             <file>Nasal/brakesystem.nas</file>
             <file>Nasal/ground_steering.nas</file>
@@ -463,12 +470,20 @@
     
     <services> <!--Max nr of passengers in each class. Data from https://en.wikipedia.org/wiki/Boeing_777#Specifications-->
         <payload>
-            <first-max-nr>16</first-max-nr>
-            <business-max-nr>58</business-max-nr>
-            <economy-max-nr>227</economy-max-nr>
-            <belly-max-lbs>30650</belly-max-lbs>
-            <catering-max-lbs>6925</catering-max-lbs>
+            <first-max-nr>40</first-max-nr>
+            <business-max-nr>30</business-max-nr>
+            <economy-max-nr>230</economy-max-nr>
+            <belly-max-lbs>18000</belly-max-lbs>
+            <catering1-max-lbs>1152</catering1-max-lbs>
+            <catering2-max-lbs>1368</catering2-max-lbs>
+            <catering3-max-lbs>1584</catering3-max-lbs>
+            <catering4-max-lbs>1584</catering4-max-lbs>
         </payload>
     </services>
+
+   <yasim>
+        <empty-weight-lbs type = "float">320000</empty-weight-lbs>
+        <zero-fuel-weight-lbs type = "float">320000</zero-fuel-weight-lbs>
+    </yasim>
     
 </PropertyList>

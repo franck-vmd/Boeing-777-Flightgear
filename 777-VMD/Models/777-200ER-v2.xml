@@ -537,7 +537,6 @@ Franck.VMD
         <object-name>RFdoor</object-name>
         <object-name>RRdoor</object-name>
         <object-name>Rmain.geardoor</object-name>
-        <object-name>taxiL-on.002</object-name>
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
@@ -563,6 +562,8 @@ Franck.VMD
         <object-name>HeliRat.002</object-name>
         <object-name>window mix exterieur</object-name>
         <object-name>mur.001</object-name>
+        <object-name>taxi-on</object-name>
+        <object-name>CTRLND-on</object-name>
     </effect>
     
     <effect>
@@ -1451,7 +1452,6 @@ Franck.VMD
     </animation>
 
     <animation>
-        <animation>
         <name>Frontgear</name>
         <object-name>Frtstrut</object-name>
         <object-name>FrtGear</object-name>
@@ -8401,12 +8401,9 @@ Franck.VMD
         <object-name>whiteflash</object-name>
         <offset-m>37.73</offset-m>
         <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>37.727</x2-m>
-        <y2-m>0.0</y2-m>
-        <z2-m>0.64848</z2-m>
+        <x>37.727</x>
+        <y>0.0</y>
+        <z>0.64848</z>
     </axis>
     <axis>
 	<x>1</x>
@@ -8420,12 +8417,9 @@ Franck.VMD
         <object-name>whiteflash1</object-name>
         <offset-m>34.65</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>16.8026</x2-m>
-        <y2-m>30.266</y2-m>
-        <z2-m>1.52646</z2-m>
+        <x>16.8026</x>
+        <y>30.266</y>
+        <z>1.52646</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -8439,12 +8433,9 @@ Franck.VMD
         <object-name>whiteflash2</object-name>
         <offset-m>34.65</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>16.8026</x2-m>
-        <y2-m>-30.266</y2-m>
-        <z2-m>1.52646</z2-m>
+        <x>16.8026</x>
+        <y>-30.266</y>
+        <z>1.52646</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -8465,12 +8456,9 @@ Franck.VMD
     <object-name>redflash</object-name>
        <offset-m>34.02</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>15.262</x2-m>
-        <y2-m>-30.3628</y2-m>
-        <z2-m>1.54798</z2-m>
+        <x>15.262</x>
+        <y>-30.3628</y>
+        <z>1.54798</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -8489,12 +8477,9 @@ Franck.VMD
     <object-name>greenflash</object-name>
     <offset-m>34.02</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>15.262</x2-m>
-        <y2-m>30.3628</y2-m>
-        <z2-m>1.54798</z2-m>
+        <x>15.262</x>
+        <y>30.3628</y>
+        <z>1.54798</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -8524,12 +8509,9 @@ Franck.VMD
         <object-name>Strobe01</object-name>
         <offset-m>34.02</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>15.262</x2-m>
-        <y2-m>30.3628</y2-m>
-        <z2-m>1.54798</z2-m>
+        <x>15.262</x>
+        <y>30.3628</y>
+        <z>1.54798</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -8568,12 +8550,9 @@ Franck.VMD
         <object-name>Strobe02</object-name>
         <offset-m>34.02</offset-m>
     <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>15.262</x2-m>
-        <y2-m>-30.3628</y2-m>
-        <z2-m>1.54798</z2-m>
+        <x>15.262</x>
+        <y>-30.3628</y>
+        <z>1.54798</z>
     </axis>
     <axis>
 	<x>0</x>
@@ -8612,12 +8591,9 @@ Franck.VMD
         <object-name>Strobe03</object-name>
         <offset-m>37.9</offset-m>
         <axis>
-        <x1-m>0.0</x1-m>
-        <y1-m>0.0</y1-m>
-        <z1-m>0.0</z1-m>
-        <x2-m>37.8568</x2-m>
-        <y2-m>0.0</y2-m>
-        <z2-m>1.90724</z2-m>
+        <x>37.8568</x>
+        <y>0.0</y>
+        <z>1.90724</z>
     </axis>
     <axis>
 	<x>1</x>

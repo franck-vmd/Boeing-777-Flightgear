@@ -94,17 +94,18 @@ MAC 278.51 in - 7.074154 m
     <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"></control-output>
   </vstab>
 
-  <!-- due to a strange problem with yasim, add 3.2 to maximum n1 -->
-  <jet x="1.16" y="9.89" z="-2.995" mass="13100" thrust="78910" spool-time="4.5" egt="840" tsfc="0.36 " epr="40" n1-idle="18.5" n1-max="103.7" n2-idle="70" n2-max="103.0" reverse="0.4">
-    <control-input axis="/controls/engines/engine[0]/throttle-act" control="THROTTLE"></control-input>
+<!-- GE90-115B -->
+<!-- due to a strange problem with yasim, add 3.7 to maximum n1 -->
+<jet x="1.16" y="9.89" z="-2.995" mass="19315" thrust="115540" spool-time="4.5" egt="825" tsfc="0.25" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121" reverse="0.4">
+  <control-input axis="/controls/engines/engine[0]/throttle-act" control="THROTTLE"></control-input>
     <control-input axis="/controls/engines/engine[0]/reverser-act" control="REVERSE_THRUST"></control-input>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[0]"></control-output>
     <control-speed control="REVERSE_THRUST" transition-time="3"></control-speed>
     <actionpt x="-2.7" y="9.89" z="-2.995"></actionpt>
   </jet>
 
-  <jet x="1.16" y="-9.89" z="-2.995" mass="13100" thrust="78910" spool-time="4.5" egt="840" tsfc="0.36" epr="40" n1-idle="18.5" n1-max="103.7" n2-idle="70" n2-max="103.0" reverse="0.4">
-    <control-input axis="/controls/engines/engine[1]/throttle-act" control="THROTTLE"></control-input>
+<jet x="1.16" y="-9.89" z="-2.995" mass="19315" thrust="115540" spool-time="4.5" egt="825" tsfc="0.25" n1-idle="18.5" n1-max="114.2" n2-idle="70" n2-max="121" reverse="0.4">
+  <control-input axis="/controls/engines/engine[1]/throttle-act" control="THROTTLE"></control-input>
     <control-input axis="/controls/engines/engine[1]/reverser-act" control="REVERSE_THRUST"></control-input>
     <control-output control="REVERSE_THRUST" prop="/surface-positions/reverser-norm[1]"></control-output>
     <control-speed control="REVERSE_THRUST" transition-time="3"></control-speed>

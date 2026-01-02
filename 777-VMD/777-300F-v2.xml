@@ -49,7 +49,7 @@ http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/0ba57594067
 http://www.boeing.com/commercial/airports/faqs/arcandapproachspeeds.pdf
 
 -->
-<airplane mass="366940" version="2018.1" mtow-lbs="775000">
+<airplane mass="366640" version="2018.1" mtow-lbs="775000">
 
 <!-- Approach configuration
  Reference :

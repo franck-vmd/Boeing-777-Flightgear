@@ -536,14 +536,11 @@ Franck.VMD
         <object-name>Wings.008</object-name>
         <object-name>hinge1</object-name>
         <object-name>LFdoor</object-name>
-        <object-name>LFdoor.002</object-name>
         <object-name>LRdoor</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>RFdoor</object-name>
-        <object-name>RFdoor.002</object-name>
         <object-name>RRdoor</object-name>
         <object-name>Rmain.geardoor</object-name>
-        <object-name>taxiL-on.002</object-name>
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
@@ -569,6 +566,8 @@ Franck.VMD
         <object-name>HeliRat.002</object-name>
         <object-name>window mix exterieur</object-name>
         <object-name>mur.001</object-name>
+        <object-name>taxi-on</object-name>
+        <object-name>CTRLND-on</object-name>
     </effect>
     
     <effect>
@@ -1517,7 +1516,6 @@ Franck.VMD
     </animation>
 
     <animation>
-        <animation>
         <name>Frontgear</name>
         <object-name>Frtstrut</object-name>
         <object-name>FrtGear</object-name>
@@ -1542,7 +1540,7 @@ Franck.VMD
     </animation>
     
     <!--Goldhofert -->
-
+    
   <animation>
     <type>rotate</type>
     <name>c35</name>
@@ -1569,7 +1567,7 @@ Franck.VMD
     </axis>
         <center>
             <x-m>6.99646</x-m>
-            <y-m>5.61966</y-m>
+            <y-m>0.0</y-m>
             <z-m>-5.10007</z-m>
         </center>
   </animation>
@@ -1851,7 +1849,7 @@ Franck.VMD
             </less-than>
             <less-than>
             <property>velocities/groundspeed-kt</property>
-            <value>10</value>
+            <value>30</value>
             </less-than>
         </condition>
 	</animation>
@@ -2649,7 +2647,6 @@ Franck.VMD
 
   <!--       Right Gear      -->
 
-
     <animation>
 		<name>c33</name>
 		<type>rotate</type>
@@ -3272,7 +3269,7 @@ Franck.VMD
     <animation>
 		<type>rotate</type>
 		<object-name>Fuselage.007</object-name>
-		<property>sim/multiplay/generic/float[77]</property>
+             <property>sim/multiplay/generic/float[77]</property>
 		<interpolation>
                 <entry><ind>0</ind><dep>0</dep></entry>
                 <entry><ind>0.01</ind><dep>30</dep></entry>
@@ -3296,7 +3293,7 @@ Franck.VMD
 	<animation>
 		<type>translate</type>
 		<object-name>Fuselage.007</object-name>
-		<property>sim/multiplay/generic/float[77]</property>
+             <property>sim/multiplay/generic/float[77]</property>
 		<interpolation>
                 <entry><ind>0</ind><dep>0</dep></entry>
                 <entry><ind>0.01</ind><dep>0.04</dep></entry>
@@ -6285,9 +6282,9 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers1</object-name>
 		<object-name>Reversers1.001</object-name>
-                <object-name>Reversers1.002</object-name>
+        <object-name>Reversers1.002</object-name>
 		<object-name>cage3</object-name>
-                <object-name>cage3.001</object-name>
+        <object-name>cage3.001</object-name>
 		<property>sim/multiplay/generic/float[16]</property>
 		<factor>35</factor>
         <center>
@@ -6307,9 +6304,9 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers2</object-name>
 		<object-name>Reversers2.001</object-name>
-                <object-name>Reversers2.002</object-name>
+        <object-name>Reversers2.002</object-name>
 		<object-name>cage1</object-name>
-                <object-name>cage1.001</object-name>
+        <object-name>cage1.001</object-name>
 		<property>sim/multiplay/generic/float[17]</property>
 		<factor>45</factor>
         <center>
@@ -6329,9 +6326,9 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers3</object-name>
 		<object-name>Reversers3.001</object-name>
-                <object-name>Reversers3.002</object-name>
+        <object-name>Reversers3.002</object-name>
 		<object-name>cage2</object-name>
-                <object-name>cage2.001</object-name>
+        <object-name>cage2.001</object-name>
 		<property>sim/multiplay/generic/float[18]</property>
 		<factor>45</factor>
         <center>
@@ -6351,9 +6348,9 @@ Franck.VMD
 		<type>rotate</type>
 		<object-name>Reversers4</object-name>
 		<object-name>Reversers4.001</object-name>
-                <object-name>Reversers4.002</object-name>
+        <object-name>Reversers4.002</object-name>
 		<object-name>cage4</object-name>
-                <object-name>cage4.001</object-name>
+        <object-name>cage4.001</object-name>
 		<property>sim/multiplay/generic/float[19]</property>
 		<factor>35</factor>
         <center>
@@ -8789,7 +8786,7 @@ Franck.VMD
         <max>500.0</max>
     </animation>
 
-      <animation>
+    <animation>
         <type>select</type>
         <object-name>window mix exterieur</object-name>
         <object-name>window mix interieur</object-name>
@@ -8800,7 +8797,7 @@ Franck.VMD
             </greater-than>
         </condition>
     </animation>
-    
+
 <!--   engines   -->
 
     <animation>
@@ -9028,18 +9025,18 @@ Franck.VMD
 	 <model>
   <path>Aircraft/777-VMD/Models/Effects/vapour1.xml</path>
   <offsets>
-   <x-m>18.85</x-m>
-   <y-m>-32.38</y-m>
-   <z-m>3.0</z-m>
+   <x-m>17</x-m>
+   <y-m>-30.266</y-m>
+   <z-m>2.4</z-m>
   </offsets>
  </model>
  
  <model>
   <path>Aircraft/777-VMD/Models/Effects/vapour1.xml</path>
   <offsets>
-   <x-m>18.85</x-m>
-   <y-m>32.38</y-m>
-   <z-m>3.0</z-m>
+   <x-m>17</x-m>
+   <y-m>30.266</y-m>
+   <z-m>2.4</z-m>
   </offsets>
  </model>
 
