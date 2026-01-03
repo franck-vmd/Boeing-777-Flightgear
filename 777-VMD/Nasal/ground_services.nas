@@ -18,6 +18,13 @@ var ground_services = {
     setprop("services/fuel-truck/request-lbs", getprop("consumables/fuel/total-fuel-lbs"));
     setprop("services/fuel-truck/extra-lbs", 0);
     setprop("services/fuel-truck/speed-text", " ");
+
+    # External Power
+    
+    setprop("services/ext-pwr/enable", 1);
+    setprop("services/ext-pwr/was_enabled", 0);
+    setprop("services/ext-pwr/primary", 1);
+    setprop("services/ext-pwr/secondary", 0);
     
     # Payload System
     
@@ -43,13 +50,6 @@ var ground_services = {
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[15]/binding/max", getprop("services/payload/catering4-max-lbs"));
     }
     setprop("services/stairs/flaps-jammed", 0);
-        
-    # External Power
-    
-    setprop("services/ext-pwr/enable", 1);
-    setprop("services/ext-pwr/was_enabled", 0);
-    setprop("services/ext-pwr/primary", 1);
-    setprop("services/ext-pwr/secondary", 0);
     
     # Chocks
     
