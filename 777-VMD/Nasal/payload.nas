@@ -577,8 +577,7 @@ var payload_boarding = {
                     setprop("services/payload/catering4-onboard-lbs", getprop("services/payload/catering4-onboard-lbs") - getprop("services/payload/baggage-speed"))
                 }
             }
-        }
-        
+        }        
         
         #Crew
         
@@ -605,7 +604,7 @@ var payload_boarding = {
         setprop("sim/weight[3]/weight-lb", getprop("services/payload/catering2-onboard-lbs"));
         setprop("sim/weight[4]/weight-lb", getprop("services/payload/catering3-onboard-lbs"));
         setprop("sim/weight[5]/weight-lb", getprop("services/payload/catering4-onboard-lbs"));
-        setprop("sim/weight/weight-lb", getprop("services/payload/crew-onboard-lbs"));
+        setprop("sim/weight[0]/weight-lb", getprop("services/payload/crew-onboard-lbs"));
         setprop("services/payload/SOB-nr", (getprop("services/payload/pax-onboard-nr") + getprop("services/payload/crew-onboard-nr")));
 
     },

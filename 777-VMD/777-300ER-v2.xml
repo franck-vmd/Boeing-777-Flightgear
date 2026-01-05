@@ -199,9 +199,10 @@ WEIGHT/lbs  Vref
 
 <weight x="27.2381" y="0" z="0" mass-prop="sim/weight[0]/weight-lb"></weight>
 <weight x="-9.0003" y="0" z="0" mass-prop="sim/weight[1]/weight-lb"></weight>
-<weight x="13.86" y="0" z="0" mass-prop="sim/weight[2]/weight-lb"></weight>
-<weight x="-17.3" y="0" z="0" mass-prop="sim/weight[3]/weight-lb"></weight>
-<weight x="-31.5" y="0" z="0" mass-prop="sim/weight[4]/weight-lb"></weight>
+<weight x="24.42" y="0" z="0" mass-prop="sim/weight[2]/weight-lb"></weight>
+<weight x="13.86" y="0" z="0" mass-prop="sim/weight[3]/weight-lb"></weight>
+<weight x="-17.3" y="0" z="0" mass-prop="sim/weight[4]/weight-lb"></weight>
+<weight x="-31.5" y="0" z="0" mass-prop="sim/weight[5]/weight-lb"></weight>
 
   <ballast x="-34.7003" y="0" z="4" mass="-70000"></ballast>
 

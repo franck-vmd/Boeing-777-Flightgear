@@ -25,6 +25,24 @@ var ground_services = {
     setprop("services/ext-pwr/was_enabled", 0);
     setprop("services/ext-pwr/primary", 1);
     setprop("services/ext-pwr/secondary", 0);
+
+    # Camion Radar
+    
+    setprop("services/camion/enable4", 0);
+    setprop("services/camion/move4", 0);	
+    setprop("services/camion/position4", 0);
+    
+    # Camion cargo
+    setprop("services/cargo/move5", 0);	
+    setprop("services/cargo/position5", 0);
+
+    # Camion cargo1
+    setprop("services/cargo1/move6", 0);	
+    setprop("services/cargo1/position6", 0);
+
+    # Camion cargo2
+    setprop("services/cargo2/move7", 0);	
+    setprop("services/cargo2/position7", 0);
     
     # Payload System
     
@@ -40,6 +58,7 @@ var ground_services = {
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[5]/max", getprop("services/payload/catering2-max-lbs"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[6]/max", getprop("services/payload/catering3-max-lbs"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[7]/max", getprop("services/payload/catering4-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[8]/max", getprop("services/payload/crew-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[1]/binding/max", getprop("services/payload/first-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[3]/binding/max", getprop("services/payload/business-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[5]/binding/max", getprop("services/payload/economy-max-nr"));
@@ -48,6 +67,7 @@ var ground_services = {
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[11]/binding/max", getprop("services/payload/catering2-max-lbs"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[13]/binding/max", getprop("services/payload/catering3-max-lbs"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[15]/binding/max", getprop("services/payload/catering4-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[17]/binding/max", getprop("services/payload/crew-max-nr"));
     }
     setprop("services/stairs/flaps-jammed", 0);
     
@@ -71,24 +91,6 @@ var ground_services = {
     setprop("services/catering/enable3", 0);
     setprop("services/catering/move3", 0);	
     setprop("services/catering/position3", 0);
-    
-    # Camion Radar
-    
-    setprop("services/camion/enable4", 0);
-    setprop("services/camion/move4", 0);	
-    setprop("services/camion/position4", 0);
-    
-    # Camion cargo
-    setprop("services/cargo/move5", 0);	
-    setprop("services/cargo/position5", 0);
-
-    # Camion cargo1
-    setprop("services/cargo1/move6", 0);	
-    setprop("services/cargo1/position6", 0);
-
-    # Camion cargo2
-    setprop("services/cargo2/move7", 0);	
-    setprop("services/cargo2/position7", 0);
 
     # De-icing Truck
 	

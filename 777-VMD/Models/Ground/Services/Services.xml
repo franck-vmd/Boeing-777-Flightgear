@@ -118,23 +118,4 @@
  </offsets>
 </model>
 
-  <model>
- <name>windowmix</name>
- <path>Aircraft/777-VMD/Models/Ground/Services/Baggage 2/bagage2.xml</path>
- <condition>
-      <and>
-        <property>controls/switches/bagage2</property>
-        <less-than>
-        <property>velocities/airspeed-kt</property>
-        <value>15</value>
-      </less-than>
-      </and>
-    </condition>
- <offsets>
-  <x-m>0</x-m>
-  <y-m>0</y-m>
-  <z-m>0</z-m>
- </offsets>
-</model>
-
 </PropertyList>

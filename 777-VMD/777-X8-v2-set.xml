@@ -3,7 +3,7 @@
     <sim n="0">
         <description>Boeing 777-X8-v2</description>
         <aero>777-X8-v2</aero>
-        <max-payload type="double">408060</max-payload>
+        <max-payload type="double">455000</max-payload>
         <max-landing-weight type="double">554000</max-landing-weight>
         <max-takeoff-weight type="double">775000</max-takeoff-weight>
         <startup>
@@ -290,11 +290,19 @@
             <!-- <tutorial include="Tutorials/X8/777-approach-landing.xml"/> -->
         </tutorials>
 
-        <weight n="1">
+        <weight n="0">
+            <name>Crew</name>
+            <!--Std. 11 cabin crew + 2 pilots @ 150 Lbs. (including 13 lbs of luggage) each.
+            Max 18 cabin crew + 2 pilots @ 150 Lbs.-->
+            <weight-lb type="double">1950</weight-lb>
+            <max-lb type="double">3300</max-lb>
+            <min-lb type="double">300</min-lb>
+         </weight>
+         <weight n="1">
             <!--  365 pax max-->
             <name>Pax/Baggage</name>
-            <weight-lb type="double">70420</weight-lb>
-            <max-lb type="double">154000</max-lb>
+            <weight-lb type="double">44400</weight-lb>
+            <max-lb type="double">87458</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <weight n="2">
@@ -474,11 +482,12 @@
             <first-max-nr>40</first-max-nr>
             <business-max-nr>30</business-max-nr>
             <economy-max-nr>230</economy-max-nr>
-            <belly-max-lbs>18000</belly-max-lbs>
+            <belly-max-lbs>37372</belly-max-lbs>
             <catering1-max-lbs>1152</catering1-max-lbs>
             <catering2-max-lbs>1368</catering2-max-lbs>
             <catering3-max-lbs>1584</catering3-max-lbs>
             <catering4-max-lbs>1584</catering4-max-lbs>
+            <crew-max-nr>22</crew-max-nr>
         </payload>
     </services>
 

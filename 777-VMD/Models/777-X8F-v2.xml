@@ -394,25 +394,35 @@ Franck.VMD
         <object-name>LUsupport</object-name>
         <object-name>Laileron</object-name>
         <object-name>Lailerona</object-name>
-        <object-name>Laileronb</object-name>
         <object-name>Laxle</object-name>
         <object-name>Laxle.001</object-name>
         <object-name>Laxle.002</object-name>
         <object-name>Laxle.003</object-name>
         <object-name>Lbrake</object-name>
+        <object-name>Lbrake.001</object-name>
+        <object-name>Lbrake.001a</object-name>
+        <object-name>Lbrake.002</object-name>
         <object-name>Lbrake1</object-name>
-        <object-name>Lbrake1a</object-name>
-        <object-name>Lbrake1b</object-name>
-        <object-name>Lbrakea</object-name>
+        <object-name>Lbrake1.001</object-name>
+        <object-name>Lbrake1.002</object-name>
+        <object-name>Lbrake1.003</object-name>
+        <object-name>Lbrake1.004</object-name>
+        <object-name>Lbrake1.005</object-name>
+        <object-name>Rbrake</object-name>
+        <object-name>Rbrake.001</object-name>
+        <object-name>Rbrake.001a</object-name>
+        <object-name>Rbrake.002</object-name>
+        <object-name>Rbrake1</object-name>
+        <object-name>Rbrake1.001</object-name>
+        <object-name>Rbrake1.002</object-name>
+        <object-name>Rbrake1.003</object-name>
+        <object-name>Rbrake1.004</object-name>
+        <object-name>Rbrake1.005</object-name>
         <object-name>Lflap1</object-name>
-        <object-name>Lflap2</object-name>
-        <object-name>Lflap1.001</object-name>
-        <object-name>Lflap2.001</object-name>
+        <object-name>Lflap1a</object-name>
         <object-name>Lflap4</object-name>
         <object-name>Lflap4a</object-name>
         <object-name>Lflap4b</object-name>
-        <object-name>Lflap5</object-name>
-        <object-name>Lflap6</object-name>
         <object-name>Lflaperon</object-name>
         <object-name>Lgear</object-name>
         <object-name>Lgear.tubing</object-name>
@@ -431,7 +441,14 @@ Franck.VMD
         <object-name>Lslate</object-name>
         <object-name>Lslatf</object-name>
         <object-name>Lslatg</object-name>
-        <object-name>Lslath</object-name>
+        <object-name>Rslat</object-name>
+        <object-name>Rslata</object-name>
+        <object-name>Rslatb</object-name>
+        <object-name>Rslatc</object-name>
+        <object-name>Rslatd</object-name>
+        <object-name>Rslate</object-name>
+        <object-name>Rslatf</object-name>
+        <object-name>Rslatg</object-name>
         <object-name>Lstrut</object-name>
         <object-name>Lwing.geardoor</object-name>
         <object-name>RBdamper</object-name>
@@ -443,25 +460,15 @@ Franck.VMD
         <object-name>RUsupport</object-name>
         <object-name>Raileron</object-name>
         <object-name>Railerona</object-name>
-        <object-name>Raileronb</object-name>
         <object-name>Raxle</object-name>
         <object-name>Raxle.001</object-name>
         <object-name>Raxle.002</object-name>
         <object-name>Raxle.003</object-name>
-        <object-name>Rbrake</object-name>
-        <object-name>Rbrakea</object-name>
-        <object-name>Rbrake1</object-name>
-        <object-name>Rbrake1a</object-name>
-        <object-name>Rbrake1b</object-name>
         <object-name>Rflap1</object-name>
-        <object-name>Rflap2</object-name>
-        <object-name>Rflap1.001</object-name>
-        <object-name>Rflap2.001</object-name>
+        <object-name>Rflap1a</object-name>
         <object-name>Rflap4</object-name>
         <object-name>Rflap4a</object-name>
         <object-name>Rflap4b</object-name>
-        <object-name>Rflap5</object-name>
-        <object-name>Rflap6</object-name>
         <object-name>Rflaperon</object-name>
         <object-name>Rgear</object-name>
         <object-name>Rgear.tubing</object-name>
@@ -472,29 +479,12 @@ Franck.VMD
         <object-name>Rlockbrace.001</object-name>
         <object-name>Rlockbrace1.001</object-name>
         <object-name>Rramdoor</object-name>
-        <object-name>Rslat</object-name>
-        <object-name>Rslata</object-name>
-        <object-name>Rslatb</object-name>
-        <object-name>Rslatc</object-name>
-        <object-name>Rslatd</object-name>
-        <object-name>Rslate</object-name>
-        <object-name>Rslatf</object-name>
-        <object-name>Rslatg</object-name>
-        <object-name>Rslath</object-name>
         <object-name>Rstrut</object-name>
         <object-name>Rwing.geardoor</object-name>
         <object-name>wiper.l</object-name>
         <object-name>wiper.r</object-name>
         <object-name>Wheelwell</object-name>
         <object-name>Wings</object-name>
-        <object-name>Wingsal</object-name>
-        <object-name>Wingsbl</object-name>
-        <object-name>Wingscl</object-name>
-        <object-name>Wingsdl</object-name>
-        <object-name>Wingsel</object-name>
-        <object-name>Wingsfl</object-name>
-        <object-name>Wingsgl</object-name>
-        <object-name>Wingshl</object-name>
         <object-name>Wingsar</object-name>
         <object-name>Wingsbr</object-name>
         <object-name>Wingscr</object-name>
@@ -502,49 +492,41 @@ Franck.VMD
         <object-name>Wingser</object-name>
         <object-name>Wingsfr</object-name>
         <object-name>Wingsgr</object-name>
-        <object-name>Wingshr</object-name>
-        <object-name>Wings.001</object-name>
-        <object-name>Wings.002</object-name>
+        <object-name>Wingsal</object-name>
+        <object-name>Wingsbl</object-name>
+        <object-name>Wingscl</object-name>
+        <object-name>Wingsdl</object-name>
+        <object-name>Wingsel</object-name>
+        <object-name>Wingsfl</object-name>
+        <object-name>Wingsgl</object-name>
         <object-name>Wings.005</object-name>
-        <object-name>Wings.006</object-name>
-        <object-name>Wings.007</object-name>
-        <object-name>Wings.008</object-name>
-        <object-name>hinge1</object-name>
         <object-name>LFdoor</object-name>
-        <object-name>LFdoor.002</object-name>
         <object-name>LRdoor</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>RFdoor</object-name>
-        <object-name>RFdoor.002</object-name>
         <object-name>RRdoor</object-name>
         <object-name>Rmain.geardoor</object-name>
         <object-name>taxiL-on.002</object-name>
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
+        <object-name>entry8r</object-name>
+        <object-name>ApuG</object-name>
+        <object-name>ApuD</object-name>
+        <object-name>Fuselage.004</object-name>
+        <object-name>Fuselage.007</object-name>
+        <object-name>Fuselage.008</object-name>
         <object-name>Lmain.geardoor</object-name>
         <object-name>Rmain.geardoor</object-name>
         <object-name>Lgear1</object-name>
         <object-name>Rgear1</object-name>
-        <object-name>Rudder</object-name>
-        <object-name>LRudder</object-name>
-        <object-name>Tail</object-name>
-        <object-name>Fuselage.004</object-name>
-        <object-name>Fuselage.007</object-name>
-        <object-name>Fuselage.008</object-name>
-        <object-name>queu pointe</object-name>
-        <object-name>entry8r</object-name>
-        <object-name>entry10r</object-name>
-        <object-name>entry11l</object-name>
-        <object-name>ApuG</object-name>
-        <object-name>ApuD</object-name>
-        <object-name>Fuselage.004</object-name>
-        <object-name>Rat</object-name>
-        <object-name>HeliRat</object-name>
-        <object-name>HeliRat.001</object-name>
-        <object-name>HeliRat.002</object-name>
         <object-name>BaileG</object-name>
         <object-name>BaileD</object-name>
+        <object-name>Rudder</object-name>
+        <object-name>Tail</object-name>
+        <object-name>TrapRat</object-name>
+        <object-name>entry10r</object-name>
+        <object-name>entry11l</object-name>
     </effect>
     
     <effect>

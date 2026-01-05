@@ -356,11 +356,11 @@
         <label>Lbs  </label>
         <halign>left</halign>
     </text>
-    
+
     <text>
         <row>2</row>
         <col>0</col>
-        <label>Crew </label>
+        <label>Catering1</label>
         <halign>right</halign>
     </text>
     
@@ -373,9 +373,9 @@
             <padding>0</padding>
             <binding>
                 <command>property-adjust</command>
-                <property>services/payload/crew-request-nr</property>
-                <step>-1.0</step>
-                <min>2.0</min>
+                <property>services/payload/catering1-request-lbs</property>
+                <step>-18.0</step>
+                <min>36.0</min>
                 <command>dialog-apply</command>
             </binding>
             <halign>left</halign>
@@ -384,11 +384,11 @@
     <slider>
         <row>2</row>
         <col>2</col>
-        <width>2000</width>
-        <property>services/payload/crew-request-nr</property>
-        <min>2.0</min>
-        <max>4.0</max>
-        <step>1.0</step>
+        <pref-width>250</pref-width>
+        <property>services/payload/catering1-request-lbs</property>
+        <min>36.0</min>
+        <max>72.0</max>
+        <step>18.0</step>
         <binding>
             <command>dialog-apply</command>
         </binding>
@@ -404,9 +404,9 @@
             <padding>0</padding>
             <binding>
                 <command>property-adjust</command>
-                <property>services/payload/crew-request-nr</property>
-                <step>1.0</step>
-                <max>4.0</max>
+                <property>services/payload/catering1-request-lbs</property>
+                <step>18.0</step>
+                <max>72.0</max>
                 <command>dialog-apply</command>
             </binding>
             <halign>left</halign>
@@ -415,7 +415,7 @@
     <text>
         <row>2</row>
         <col>4</col>
-        <property>services/payload/crew-request-nr</property>
+        <property>services/payload/catering1-request-lbs</property>
         <live>true</live>
         <halign>left</halign>
     </text>
@@ -455,7 +455,7 @@
         <col>10</col>
         <stretch>true</stretch>
     </empty>
-
+    
     <empty>
         <row>2</row>
         <col>11</col>
@@ -479,11 +479,11 @@
         <col>14</col>
         <stretch>true</stretch>
     </empty>
-    
+
     <text>
         <row>2</row>
         <col>15</col>
-        <property>services/payload/crew-onboard-lbs</property>
+        <property>services/payload/catering1-onboard-lbs</property>
         <live>true</live>
         <halign>right</halign>
     </text>
@@ -494,13 +494,13 @@
         <stretch>true</stretch>
     </empty>
 
-   <empty>
+    <empty>
         <row>2</row>
         <col>17</col>
         <stretch>true</stretch>
     </empty>
 
-   <empty>
+    <empty>
         <row>2</row>
         <col>18</col>
         <stretch>true</stretch>
@@ -532,6 +532,186 @@
     
     <text>
         <row>2</row>
+        <col>23</col>
+        <label>Lbs</label>
+        <halign>right</halign>
+    </text>
+    
+    <text>
+        <row>3</row>
+        <col>0</col>
+        <label>Crew </label>
+        <halign>right</halign>
+    </text>
+    
+    <button>
+            <row>3</row>
+            <col>1</col>
+            <legend>-</legend>
+            <pref-width>20</pref-width>
+            <pref-height>20</pref-height>
+            <padding>0</padding>
+            <binding>
+                <command>property-adjust</command>
+                <property>services/payload/crew-request-nr</property>
+                <step>-1.0</step>
+                <min>2.0</min>
+                <command>dialog-apply</command>
+            </binding>
+            <halign>left</halign>
+    </button>
+    
+    <slider>
+        <row>3</row>
+        <col>2</col>
+        <width>2000</width>
+        <property>services/payload/crew-request-nr</property>
+        <min>2.0</min>
+        <max>4.0</max>
+        <step>1.0</step>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </slider>
+    
+    <button>
+            <row>3</row>
+            <col>3</col>
+            <legend>+</legend>
+            <pref-width>20</pref-width>
+            <pref-height>20</pref-height>
+            <padding>0</padding>
+            <binding>
+                <command>property-adjust</command>
+                <property>services/payload/crew-request-nr</property>
+                <step>1.0</step>
+                <max>4.0</max>
+                <command>dialog-apply</command>
+            </binding>
+            <halign>left</halign>
+    </button>
+    
+    <text>
+        <row>3</row>
+        <col>4</col>
+        <property>services/payload/crew-request-nr</property>
+        <live>true</live>
+        <halign>left</halign>
+    </text>
+
+    <empty>
+        <row>3</row>
+        <col>5</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>6</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>7</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>8</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>9</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>10</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>11</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>12</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>13</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>14</col>
+        <stretch>true</stretch>
+    </empty>
+    
+    <text>
+        <row>3</row>
+        <col>15</col>
+        <property>services/payload/crew-onboard-lbs</property>
+        <live>true</live>
+        <halign>right</halign>
+    </text>
+
+    <empty>
+        <row>3</row>
+        <col>16</col>
+        <stretch>true</stretch>
+    </empty>
+
+   <empty>
+        <row>3</row>
+        <col>17</col>
+        <stretch>true</stretch>
+    </empty>
+
+   <empty>
+        <row>3</row>
+        <col>18</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>19</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>20</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>21</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>22</col>
+        <stretch>true</stretch>
+    </empty>
+    
+    <text>
+        <row>3</row>
         <col>23</col>
         <label>Lbs  </label>
         <halign>left</halign>
@@ -851,7 +1031,7 @@
         <binding>
             <command>nasal</command>
                 <script>
-                    if ((getprop("services/payload/baggage-truck1-enable") == 1) or (getprop("services/payload/baggage-truck2-enable") == 1)) {
+                    if ((getprop("services/payload/bagage2") == 1) and (getprop("services/payload/baggage-truck1-enable") == 1) and (getprop("services/payload/baggage-truck2-enable") == 1) and (getprop("services/payload/cargo_service") == 1) and (getprop("services/catering/enable") == 1)) {
                         setprop("services/payload/baggage-loading", 1);
                         var loadingtime = math.round((getprop("services/payload/belly-request-lbs") - getprop("services/payload/belly-onboard-lbs")) / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable"))) / 60 * getprop("services/payload/speed"));
                         screen.log.write("Baggage loading started. Estimated loading time: " ~ loadingtime ~ " minutes.", 0, 0.584, 1);
@@ -880,6 +1060,32 @@
             <value>"Normal"</value>
         </binding>
     </button>
+
+    <button>
+        <row>0</row>
+        <col>2</col>
+        <halign>left</halign>
+        <legend>catering1</legend>
+        <pref-width>120</pref-width>
+        <pref-height>24</pref-height>
+        <binding>
+            <command>nasal</command>
+                <script>
+                    <![CDATA[
+                    if (((getprop("services/catering/enable") != 0)) and (getprop("services/payload/catering1-request-lbs") != 0)) {
+                        if (getprop("services/payload/catering1-max-lbs") < getprop("services/payload/catering1-request-lbs")) {
+                            screen.log.write("Captain, we can't load so many catering trolleys, please reduce the requested catering weight", 1, 0, 0);
+                        } else {
+                            setprop("services/payload/catering1-loading", 1);
+                            screen.log.write("Catering loading started.", 0, 0.584, 1);
+                        }
+                    } elsif (getprop("services/payload/catering1-request-lbs") != 0) {
+                        screen.log.write("Please enable at least one catering truck first!", 1, 0, 0);
+                    }
+                    ]]>
+                </script>
+        </binding>
+    </button>
     
     <button>
         <row>1</row>
@@ -890,7 +1096,7 @@
         <binding>
             <command>nasal</command>
                 <script>
-                    if ((getprop("services/payload/baggage-truck1-enable") == 1) or (getprop("services/payload/baggage-truck2-enable") == 1)) {
+                    if ((getprop("services/payload/bagage2") == 1) and (getprop("services/payload/baggage-truck1-enable") == 1) and (getprop("services/payload/baggage-truck2-enable") == 1) and (getprop("services/payload/cargo_service") == 1) and (getprop("services/catering/enable") == 1)) {
                         setprop("services/payload/baggage-loading", 2);
                         var loadingtime = math.round(getprop("services/payload/belly-onboard-lbs") / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable"))) / 60 * getprop("services/payload/speed"));
                         screen.log.write("Baggage unloading started. Estimated unloading time: " ~ loadingtime ~ " minutes.", 0, 0.584, 1);
@@ -916,6 +1122,28 @@
             <command>property-assign</command>
             <property>services/payload/speed-text</property>
             <value>"Fast"</value>
+        </binding>
+    </button>
+
+    <button>
+        <row>1</row>
+        <col>2</col>
+        <halign>left</halign>
+        <legend>uncatering</legend>
+        <pref-width>120</pref-width>
+        <pref-height>24</pref-height>
+        <binding>
+            <command>nasal</command>
+                <script>
+                    <![CDATA[
+                    if (((getprop("services/catering/enable") != 0)) and (getprop("services/payload/catering1-onboard-lbs") != 0)) {
+                        setprop("services/payload/catering1-loading", 2);
+                        screen.log.write("Catering and waste unloading started.", 0, 0.584, 1);
+                    } elsif (getprop("services/payload/catering1-onboard-lbs") != 0) {
+                        screen.log.write("Please enable a catering truck to the galleys that contain trolleys first!", 1, 0, 0);
+                    }
+                    ]]>
+                </script>
         </binding>
     </button>
     
@@ -947,6 +1175,28 @@
             <command>property-assign</command>
             <property>services/payload/speed</property>
             <value>0</value>
+        </binding>
+    </button>
+
+    <button>
+        <legend>stop</legend>
+        <pref-width>120</pref-width>
+        <pref-height>24</pref-height>
+        <row>2</row>
+        <col>2</col>
+        <halign>left</halign>
+        <binding>
+            <command>nasal</command>
+            <script>
+                if ((getprop("services/payload/catering1-loading") == 1) or (getprop("services/payload/catering1-loading") == 3)) {
+                    setprop("services/payload/catering1-loading", 0);
+                    screen.log.write("Catering loading stopped.", 0, 0.584, 1);
+                } elsif ((getprop("services/payload/catering1-loading") == 2) or (getprop("services/payload/catering1-loading") == 4)) {
+                    setprop("services/payload/catering1-loading", 0);
+                    screen.log.write("Catering unloading stopped.", 0, 0.584, 1);
+                }
+                setprop("services/payload/loadingtime_remaining", " ");
+            </script>
         </binding>
     </button>
 

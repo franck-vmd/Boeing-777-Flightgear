@@ -1341,7 +1341,7 @@
         <pref-width>250</pref-width>
         <property>services/payload/crew-request-nr</property>
         <min>2.0</min>
-        <max>20.0</max>
+        <max>0.0</max>
         <step>1.0</step>
         <binding>
             <command>dialog-apply</command>
@@ -1360,7 +1360,7 @@
                 <command>property-adjust</command>
                 <property>services/payload/crew-request-nr</property>
                 <step>1.0</step>
-                <max>20.0</max>
+                <max>0.0</max>
                 <command>dialog-apply</command>
             </binding>
             <halign>left</halign>

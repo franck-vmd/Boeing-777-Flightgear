@@ -957,15 +957,6 @@ Service Ceiling: 43,100ft
         </default>
     </menubar>
 
-    <weight n="0">
-        <name>Crew</name>
-        <!--Std. 11 cabin crew + 2 pilots @ 150 Lbs. (including 13 lbs of luggage) each.
-        Max 18 cabin crew + 2 pilots @ 150 Lbs.-->
-        <weight-lb type="double">1950</weight-lb>
-        <max-lb type="double">3000</max-lb>
-        <min-lb type="double">300</min-lb>
-    </weight>
-
         <multiplay>
             <generic>
                 <int n="0" alias="/systems/electrical/outputs/strobe"></int>
