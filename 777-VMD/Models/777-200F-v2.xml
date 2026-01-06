@@ -7438,6 +7438,12 @@ Franck.VMD
 <model>
  <name>Pushback</name>
  <path>Aircraft/777-VMD/Models/Autopush/Goldhofert.xml</path>
+    <condition>
+		<equals>
+			<property>sim/model/autopush/enabled</property>
+			<value>1</value>
+		</equals>
+	</condition>
  <offsets>
   <x-m>-19.284</x-m>
   <y-m>0.0</y-m>
@@ -7583,7 +7589,7 @@ Franck.VMD
     <path>Aircraft/777-VMD/Models/Ground/Services/cargo/cargo.xml</path>
     <condition>
       <and>
-        <property>services/payload/cargo_service</property>
+        <property>services/cargo/enable5</property>
         <less-than>
           <property>velocities/airspeed-kt</property>
           <value>15</value>

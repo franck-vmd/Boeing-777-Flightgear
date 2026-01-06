@@ -951,7 +951,7 @@
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
         <label>Cargo</label>
-        <property>services/payload/cargo_service</property>
+        <property>services/cargo/enable5</property>
         <binding>
             <command>dialog-apply</command>
         </binding>
