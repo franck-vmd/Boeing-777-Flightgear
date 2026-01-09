@@ -4,13 +4,81 @@
 
     <path>cargo_ramp_2.ac</path>   
 
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Light</object-name>
+        <object-name>Light.001</object-name>
+        <object-name>Light.002</object-name>
+    </effect>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>Light</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>13.4343</x-m>
+      <y-m>5.85255</y-m>
+      <z-m>-1.39427</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+   <animation>
+    <type>rotate</type>
+    <object-name>Light.001</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>18.6045</x-m>
+      <y-m>28.2535</y-m>
+      <z-m>-3.15916</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Light.002</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>10.9181</x-m>
+      <y-m>33.3462</y-m>
+      <z-m>-2.37707</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Light</object-name>
+    <object-name>Light.001</object-name>
+    <object-name>Light.002</object-name>
+  </animation>
+
     <animation>
 	<type>translate</type>
 	            <object-name>cargo12</object-name>
                 <object-name>clo102</object-name>
+                <object-name>sirenclo102</object-name>
+                <object-name>siren2</object-name>
                 <object-name>clop102</object-name>
                 <object-name>cloptracteur102</object-name>
                 <object-name>tracteur102</object-name>
+                <object-name>sirentracteur102</object-name>
                 <object-name>clor102</object-name>
                 <object-name>clor202</object-name>
                 <object-name>bagagge remorque2</object-name>
@@ -30,7 +98,9 @@
 		<y>0</y>
 		<z>1</z>
 	</axis>
-</animation>         
+</animation>    
+
+        
 
     <animation>
         <type>pick</type>
@@ -169,6 +239,7 @@
    <animation>
     <type>translate</type>
     <object-name>cargo102</object-name>
+    <object-name>siren2</object-name>
     <object-name>bobcat12</object-name>
     <property>services/cargo2/position7</property>
    <interpolation>
@@ -232,6 +303,7 @@
     <object-name>clor102</object-name>
     <object-name>clor202</object-name>
     <object-name>clop102</object-name>
+    <object-name>sirenclo102</object-name>
     <property>services/cargo2/position7</property>
    <interpolation>
         <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
@@ -1856,6 +1928,7 @@
     <object-name>roue bagagge.0042</object-name>
     <object-name>roue bagagge.0052</object-name>
     <object-name>tracteur102</object-name>
+    <object-name>sirentracteur102</object-name>
     <object-name>cloptracteur102</object-name>
     <property>services/cargo2/position7</property>
    <interpolation>

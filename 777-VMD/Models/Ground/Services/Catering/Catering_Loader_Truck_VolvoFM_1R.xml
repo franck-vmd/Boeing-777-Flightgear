@@ -27,6 +27,8 @@
                 <object-name>gourmet_railing1</object-name>
                 <object-name>gourmet_scissor_inner1</object-name>
                 <object-name>gourmet_scissor_outer1</object-name>
+                <object-name>Light</object-name>
+                <object-name>siren</object-name>
        </animation>
 
        <animation>
@@ -56,6 +58,16 @@
                 <object-name>gourmet_scissor_inner1</object-name>
                 <object-name>gourmet_scissor_outer1</object-name>
        </effect>
+
+        <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Light</object-name>
+    </effect>
+
+    <animation>
+    <type>noshadow</type>
+    <object-name>Light</object-name>
+  </animation>
        
 	<animation>
 		<type>select</type>
@@ -109,6 +121,23 @@
             </binding>
         </action>
     </animation>	
+
+    <animation>
+    <type>rotate</type>
+    <object-name>Light</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>-13.4437</x-m>
+      <y-m>5.76139</y-m>
+      <z-m>-1.65635</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
 	
 	# Positioning
 	
@@ -160,6 +189,7 @@
 		<type>translate</type>
 		<object-name>gourmet_railing1</object-name>
 		<object-name>gourmet_cargo1</object-name>
+        <object-name>siren</object-name>
 		<property>services/catering/position</property>
 		<factor>3.8</factor>
 		<axis>
@@ -244,6 +274,7 @@
     <object>bobcat</object>
 	<object>cater_truck1</object>
 	<object>gourmet_cargo1</object>
+    <object>siren</object>
 	<object>gourmet_railing1</object>
 	<object>gourmet_scissor_inner1</object>
 	<object>gourmet_scissor_outer1</object>

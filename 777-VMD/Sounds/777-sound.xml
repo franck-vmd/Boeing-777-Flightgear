@@ -285,7 +285,7 @@
     <pushback>
       <name>Pushback</name>
       <mode>looped</mode>
-      <path>Aircraft/777-VMD/Sounds/pushback.wav</path>
+      <path>Aircraft/777-VMD/Sounds/De-Icing1.wav</path>
       <condition>
          <property>sim/model/autopush/enabled</property>
       </condition>
@@ -299,7 +299,7 @@
     </pushback>
 
     <pushback1>
-      <name>Fuel1</name>
+      <name>Pushback1</name>
       <mode>looped</mode>
       <path>Aircraft/777-VMD/Sounds/De-Icing2.wav</path>
       <condition>
@@ -343,13 +343,11 @@
       <condition>
           <and>
              <property>services/fuel-truck/enable</property>
-           </and>
-           <and>
              <property>services/fuel-truck/connect</property>
            </and>
 		</condition>
       <volume>
-        <property>services/fuel-truck/connect</property>
+        <property>services/fuel-truck/enable</property>
         <factor>1.00</factor>
         <offset>0.00</offset>
         <min>0.3</min>

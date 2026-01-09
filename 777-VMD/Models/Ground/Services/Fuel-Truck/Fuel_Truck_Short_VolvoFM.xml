@@ -9,6 +9,7 @@
 	<object>fuel_pipe_disconnected</object>
 	<object>fuel_truck</object>
 	<object>handle</object>
+    <object>siren</object>
 	<property>gear/gear[1]/compression-norm</property>
 	<interpolation>
 		<entry><ind>0.15</ind><dep>0.0</dep></entry>
@@ -48,6 +49,15 @@
                 <object-name>Cylinder.014</object-name>
                 <object-name>Cylinder.017</object-name>
 </animation>
+
+      <animation>
+		<type>material</type>
+		<texture>Catering_Loader_Truck_VolvoFM_cargo.png</texture>
+                <object-name>Light</object-name>
+                <object-name>siren</object-name>
+       </animation>
+
+         
 
 <animation>
 		<type>material</type>
@@ -112,6 +122,33 @@
                 <object-name>fuel_pipe_disconnected</object-name>
                 <object-name>handle</object-name>
 </effect>
+
+     <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Light</object-name>
+    </effect>
+
+    <animation>
+    <type>noshadow</type>
+    <object-name>Light</object-name>
+  </animation>
+
+   <animation>
+    <type>rotate</type>
+    <object-name>Light</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>7.06682</x-m>
+      <y-m>-12.2303</y-m>
+      <z-m>-2.37878</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
 
 <animation>
 	<type>select</type>
