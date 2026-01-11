@@ -14,6 +14,9 @@
                 <object-name>tracteur</object-name>
                 <object-name>clor1</object-name>
                 <object-name>clor2</object-name>
+                <object-name>sirenclo10</object-name>
+                <object-name>siren</object-name>
+                <object-name>sirentracteur10</object-name>
 	<property>gear/gear[0]/compression-norm</property>
 	<interpolation>
 		<entry><ind>0.18</ind><dep>0</dep></entry>
@@ -53,7 +56,72 @@
 		<type>material</type>
 		<texture>complet.png</texture>
                 <object-name>clop</object-name>
-       </animation>          
+       </animation>    
+
+     <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Light</object-name>
+        <object-name>Light.001</object-name>
+        <object-name>Light.002</object-name>
+    </effect>    
+
+    <animation>
+    <type>rotate</type>
+    <object-name>Light</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>23.3258</x-m>
+      <y-m>-7.52102</y-m>
+      <z-m>-0.450287</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+   <animation>
+    <type>rotate</type>
+    <object-name>Light.001</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>18.3064</x-m>
+      <y-m>-26.4938</y-m>
+      <z-m>-3.15916</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Light.002</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>26.4909</x-m>
+      <y-m>-29.8424</y-m>
+      <z-m>-2.37707</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>Light</object-name>
+    <object-name>Light.001</object-name>
+    <object-name>Light.002</object-name>
+  </animation>      
 
     <animation>
         <type>pick</type>
@@ -310,6 +378,7 @@
    <animation>
     <type>translate</type>
     <object-name>cargo.001</object-name>
+    <object-name>siren</object-name>
     <object-name>bobcat</object-name>
     <property>services/cargo/position5</property>
         <interpolation>
@@ -373,6 +442,7 @@
     <object-name>clor1</object-name>
     <object-name>clor2</object-name>
     <object-name>clop</object-name>
+    <object-name>sirenclo10</object-name>
     <property>services/cargo/position5</property>
         <interpolation>
         <entry><ind> 0.000 </ind><dep>0.00</dep></entry>
@@ -3526,6 +3596,7 @@
     <type>translate</type>
     <object-name>cargo59</object-name>
     <object-name>tracteur</object-name>
+    <object-name>sirentracteur10</object-name>
     <object-name>cloptracteur</object-name>
     <property>services/cargo/position5</property>
          <interpolation>
