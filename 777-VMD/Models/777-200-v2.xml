@@ -9157,7 +9157,7 @@ Franck.VMD
     <offsets>
         <x-m>0.0</x-m>
         <y-m>0.0</y-m>
-        <z-m>0.0</z-m>
+        <z-m>-0.12</z-m>
     </offsets>
 </model>
 
@@ -9187,7 +9187,7 @@ Franck.VMD
     <offsets>
   	<x-m>0</x-m>
   	<y-m>0</y-m>
-  	<z-m>0.2</z-m>
+  	<z-m>0.1</z-m>
      </offsets>
 </model>
 
@@ -9196,7 +9196,7 @@ Franck.VMD
     <offsets>
   	<x-m>0</x-m>
   	<y-m>0</y-m>
-  	<z-m>0.1</z-m>
+  	<z-m>0.07</z-m>
      </offsets>
 </model>
 
@@ -9205,7 +9205,7 @@ Franck.VMD
     <offsets>
   	<x-m>0</x-m>
   	<y-m>0</y-m>
-  	<z-m>0</z-m>
+  	<z-m>-0.07</z-m>
      </offsets>
 </model>
 
@@ -9214,7 +9214,7 @@ Franck.VMD
     <offsets>
   	<x-m>0</x-m>
   	<y-m>0</y-m>
-  	<z-m>0.1</z-m>
+  	<z-m>-0.09</z-m>
      </offsets>
 </model>
 

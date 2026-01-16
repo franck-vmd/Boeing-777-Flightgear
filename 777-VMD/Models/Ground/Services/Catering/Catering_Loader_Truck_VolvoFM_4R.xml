@@ -150,6 +150,7 @@
 		<object>gourmet_railing1</object>
 		<object>gourmet_scissor_inner1</object>
 		<object>gourmet_scissor_outer1</object>
+        <object>cater_base17</object>
 		<property>sim/model/ramp/x-m</property>
 		<offset-m>57.284</offset-m>
 		<axis>
@@ -182,6 +183,7 @@
 	<animation>
 		<type>translate</type>
 		<object-name>cater_bridge1</object-name>
+        <object-name>gourmet_railing1</object-name>
         <object-name>bobcat</object-name>
 		<property>services/catering/position3</property>
 		<interpolation>
@@ -205,13 +207,35 @@
 	
 	<animation>
 		<type>translate</type>
-		<object-name>gourmet_railing1</object-name>
 		<object-name>gourmet_cargo1</object-name>
         <object-name>siren</object-name>
 		<property>services/catering/position3</property>
 		<factor>3.8</factor>
 		<axis>
 			<z>1</z>
+		</axis>
+	</animation>
+
+   <animation>
+		<type>translate</type>
+		<object-name>cater_base17</object-name>
+		<property>services/catering/position3</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0.0</dep>
+			</entry>
+			<entry>
+				<ind>0.05</ind>
+				<dep>0.37</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>0.37</dep>
+			</entry>
+		</interpolation> 
+		<axis>
+			<z>-1</z>
 		</axis>
 	</animation>
 	
@@ -296,6 +320,8 @@
 	<object>gourmet_railing1</object>
 	<object>gourmet_scissor_inner1</object>
 	<object>gourmet_scissor_outer1</object>
+    <object>roue</object>
+    <object>cater_base17</object>
 	<property>gear/gear[0]/compression-norm</property>
 	<interpolation>
 		<entry><ind>0.15</ind><dep>0.0</dep></entry>

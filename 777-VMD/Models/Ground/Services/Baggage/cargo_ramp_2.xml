@@ -71,26 +71,43 @@
 
     <animation>
 	<type>translate</type>
-	            <object-name>cargo12</object-name>
-                <object-name>clo102</object-name>
-                <object-name>sirenclo102</object-name>
-                <object-name>siren2</object-name>
-                <object-name>clop102</object-name>
-                <object-name>cloptracteur102</object-name>
-                <object-name>tracteur102</object-name>
-                <object-name>sirentracteur102</object-name>
-                <object-name>clor102</object-name>
-                <object-name>clor202</object-name>
-                <object-name>bagagge remorque2</object-name>
                 <object-name>bagagge remorque.0012</object-name>
                 <object-name>bagagge remorque.0022</object-name>
                 <object-name>bagagge remorque.0032</object-name>
                 <object-name>bagagge remorque.0042</object-name>
                 <object-name>bagagge remorque.0052</object-name>
                 <object-name>bagagge remorque.0062</object-name>
+                <object-name>bagagge remorque2</object-name>
+                <object-name>bagagge.0012</object-name>
+                <object-name>bagagge.0022</object-name>
+                <object-name>bagagge.0032</object-name>
+                <object-name>bagagge.0042</object-name>
+                <object-name>bagagge.0052</object-name>
+                <object-name>bagagge2</object-name>
+                <object-name>bobcat12</object-name>
+                <object-name>cargo102</object-name>
+                <object-name>cargo12</object-name>
+                <object-name>cargo202</object-name>
+                <object-name>cargo302</object-name>
+                <object-name>chaine102</object-name>
+                <object-name>chaine202</object-name>
+                <object-name>chaine302</object-name>
+                <object-name>chaine402</object-name>
+                <object-name>clo102</object-name>
+                <object-name>clop102</object-name>
+                <object-name>cloptracteur102</object-name>
+                <object-name>clor102</object-name>
+                <object-name>clor202</object-name>
+                <object-name>croix102</object-name>
+                <object-name>croix302</object-name>
+                <object-name>plateau12</object-name>
+                <object-name>siren2</object-name>
+                <object-name>sirenclo102</object-name>
+                <object-name>sirentracteur102</object-name>
+                <object-name>tracteur102</object-name>
 	<property>gear/gear[0]/compression-norm</property>
 	<interpolation>
-		<entry><ind>0.0</ind><dep>0</dep></entry>
+		<entry><ind>0.18</ind><dep>0</dep></entry>
 		<entry><ind>0.21</ind><dep>0.20</dep></entry>
 	</interpolation>
 	<axis>

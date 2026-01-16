@@ -6,16 +6,7 @@
 
        <animation>
 	<type>translate</type>
-	            <object-name>cargo1</object-name>
-                <object-name>clo10</object-name>
-                <object-name>sirenclo10</object-name>
-                <object-name>siren</object-name>
-                <object-name>clop10</object-name>
-                <object-name>cloptracteur10</object-name>
-                <object-name>tracteur10</object-name>
-                <object-name>sirentracteur10</object-name>
-                <object-name>clor10</object-name>
-                <object-name>clor20</object-name>
+                <object-name>bagagge</object-name>
                 <object-name>bagagge remorque</object-name>
                 <object-name>bagagge remorque.001</object-name>
                 <object-name>bagagge remorque.002</object-name>
@@ -23,6 +14,32 @@
                 <object-name>bagagge remorque.004</object-name>
                 <object-name>bagagge remorque.005</object-name>
                 <object-name>bagagge remorque.006</object-name>
+                <object-name>bagagge.001</object-name>
+                <object-name>bagagge.002</object-name>
+                <object-name>bagagge.003</object-name>
+                <object-name>bagagge.004</object-name>
+                <object-name>bagagge.005</object-name>
+                <object-name>bobcat1</object-name>
+                <object-name>cargo1</object-name>
+                <object-name>cargo10</object-name>
+                <object-name>cargo20</object-name>
+                <object-name>cargo30</object-name>
+                <object-name>chaine10</object-name>
+                <object-name>chaine20</object-name>
+                <object-name>chaine30</object-name>
+                <object-name>chaine40</object-name>
+                <object-name>clo10</object-name>
+                <object-name>clop10</object-name>
+                <object-name>cloptracteur10</object-name>
+                <object-name>clor10</object-name>
+                <object-name>clor20</object-name>
+                <object-name>croix10</object-name>
+                <object-name>croix30</object-name>
+                <object-name>plateau1</object-name>
+                <object-name>siren</object-name>
+                <object-name>sirenclo10</object-name>
+                <object-name>sirentracteur10</object-name>
+                <object-name>tracteur10</object-name>
 	<property>gear/gear[0]/compression-norm</property>
 	<interpolation>
 		<entry><ind>0.18</ind><dep>0</dep></entry>
