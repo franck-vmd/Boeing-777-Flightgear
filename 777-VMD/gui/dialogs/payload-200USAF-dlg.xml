@@ -1031,7 +1031,7 @@
         <binding>
             <command>nasal</command>
                 <script>
-                    if ((getprop("services/payload/bagage2") == 1) and (getprop("services/payload/baggage-truck1-enable") == 1) and (getprop("services/payload/baggage-truck2-enable") == 1) and (getprop("services/payload/cargo_service") == 1) and (getprop("services/catering/enable") == 1)) {
+                    if ((getprop("services/payload/bagage2") == 1) or (getprop("services/payload/baggage-truck1-enable") == 1) or (getprop("services/payload/baggage-truck2-enable") == 1) and (getprop("services/payload/cargo_service") == 1) and (getprop("services/catering/enable") == 1)) {
                         setprop("services/payload/baggage-loading", 1);
                         var loadingtime = math.round((getprop("services/payload/belly-request-lbs") - getprop("services/payload/belly-onboard-lbs")) / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable"))) / 60 * getprop("services/payload/speed"));
                         screen.log.write("Baggage loading started. Estimated loading time: " ~ loadingtime ~ " minutes.", 0, 0.584, 1);
@@ -1096,7 +1096,7 @@
         <binding>
             <command>nasal</command>
                 <script>
-                    if ((getprop("services/payload/bagage2") == 1) and (getprop("services/payload/baggage-truck1-enable") == 1) and (getprop("services/payload/baggage-truck2-enable") == 1) and (getprop("services/payload/cargo_service") == 1) and (getprop("services/catering/enable") == 1)) {
+                    if ((getprop("services/payload/bagage2") == 1) or (getprop("services/payload/baggage-truck1-enable") == 1) or (getprop("services/payload/baggage-truck2-enable") == 1) and (getprop("services/payload/cargo_service") == 1) and (getprop("services/catering/enable") == 1)) {
                         setprop("services/payload/baggage-loading", 2);
                         var loadingtime = math.round(getprop("services/payload/belly-onboard-lbs") / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable"))) / 60 * getprop("services/payload/speed"));
                         screen.log.write("Baggage unloading started. Estimated unloading time: " ~ loadingtime ~ " minutes.", 0, 0.584, 1);
