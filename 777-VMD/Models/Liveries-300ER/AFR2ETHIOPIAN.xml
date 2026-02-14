@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name type="string">36 ETHIOPIAN</name>
+				<texture>Liveries-300ER/AFR2.png</texture>
+                        </livery>
+			<fuselage>
+                                <texture>Liveries-300ER/AFR1ETH.png</texture>
+                        </fuselage>
+                        <fuselage1>
+                                <texture>Liveries-300ER/AFR3.png</texture>
+                        </fuselage1>
+                        <fuselage2>
+                                <texture>Liveries-300ER/AFR4ETH.png</texture>
+                        </fuselage2>
+                        <fuselage3>
+                                <texture>Liveries-300ER/AFR5ETH.png</texture>
+                        </fuselage3>
+                        <fuselage4>
+                                <texture>Liveries-300ER/AFR6.png</texture>
+                        </fuselage4>
+                        <fuselage5>
+                                <texture>Liveries-300ER/AFR7.png</texture>
+                        </fuselage5>
+                        <fuselage6>
+                                <texture>Liveries-300ER/AFR8LAT.png</texture>
+                        </fuselage6>
+                        <fuselage7>
+                                <texture>Liveries-300ER/AFR9.png</texture>
+                        </fuselage7>
+                        <fuselage8>
+                                <texture>Liveries-300ER/AFR1rac.png</texture>
+                        </fuselage8>
+		</model>
+                <aircraft-class>gate</aircraft-class>
+                <aircraft-operator>ETH</aircraft-operator>
+	</sim>
+</PropertyList>
+
+
+
