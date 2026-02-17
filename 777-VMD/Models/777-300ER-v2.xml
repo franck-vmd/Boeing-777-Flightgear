@@ -78,8 +78,6 @@ Franck.VMD
         <object-name>RHstab</object-name>
         <object-name>RHelevator</object-name>
         <object-name>LHelevator</object-name>
-        <object-name>Wings4</object-name>
-        <object-name>redlight</object-name>
         <property-base>sim/model/livery</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-300ER/AFR2.png</texture>
@@ -186,6 +184,8 @@ Franck.VMD
         <object-name>Wings.003</object-name>
         <object-name>WingsLightL</object-name>
         <object-name>WingsLightR</object-name>
+        <object-name>Wings4</object-name>
+        <object-name>redlight</object-name>
         <property-base>sim/model/fuselage3</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-300ER/AFR5.png</texture>
