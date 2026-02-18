@@ -355,7 +355,7 @@
             <file>Nasal/AFDS.nas</file>
             <file>Nasal/tyresmoke.nas</file>
             <file>Nasal/gpws.nas</file>
-            <file>Nasal/ground_services.nas</file>
+            <file>Nasal/ground_servicesX8F.nas</file>
             <file>Nasal/payload.nas</file>
             <file>Nasal/warnsystemX9.nas</file>
             <file>Nasal/Cabinalert.nas</file>

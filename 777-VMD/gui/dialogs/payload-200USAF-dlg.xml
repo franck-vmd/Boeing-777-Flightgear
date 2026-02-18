@@ -8,7 +8,7 @@
     <group>
     <layout>hbox</layout>
         <text>
-            <label>Freight</label>
+            <label>Freight-USAF</label>
         </text>
         
         <empty>
@@ -894,7 +894,7 @@
         <col>1</col>
         <pref-width>120</pref-width>
         <pref-height>20</pref-height>
-        <label>Front Bag Truck</label>
+        <label>Front Baggage Truck</label>
         <property>services/payload/baggage-truck1-enable</property>
         <binding>
             <command>dialog-apply</command>
@@ -1033,7 +1033,7 @@
                 <script>
                     if ((getprop("services/payload/bagage2") == 1) or (getprop("services/payload/baggage-truck1-enable") == 1) or (getprop("services/payload/baggage-truck2-enable") == 1) and (getprop("services/payload/cargo_service") == 1) and (getprop("services/catering/enable") == 1)) {
                         setprop("services/payload/baggage-loading", 1);
-                        var loadingtime = math.round((getprop("services/payload/belly-request-lbs") - getprop("services/payload/belly-onboard-lbs")) / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable"))) / 60 * getprop("services/payload/speed"));
+                        var loadingtime = math.round((getprop("services/payload/belly-request-lbs") - getprop("services/payload/belly-onboard-lbs")) / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable") + getprop("services/payload/baggage-truck2-enable"))) / 60 * getprop("services/payload/speed"));
                         screen.log.write("Baggage loading started. Estimated loading time: " ~ loadingtime ~ " minutes.", 0, 0.584, 1);
                         setprop("services/payload/loadingtime_remaining", "Est. " ~ loadingtime ~ " min remaining");
                     } else {
