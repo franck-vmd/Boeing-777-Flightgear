@@ -1535,11 +1535,11 @@ Franck.VMD
         <interpolation>
             <entry>
                 <ind>0</ind>
-                <dep>105</dep>
+                <dep>110</dep>
             </entry>
             <entry>
                 <ind>0.2</ind>
-                <dep>105</dep>
+                <dep>110</dep>
             </entry>
             <entry>
                 <ind>1.0</ind>
@@ -1547,14 +1547,74 @@ Franck.VMD
             </entry>
         </interpolation>
         <center>
-            <x-m>-19.284</x-m>
+            <x-m>-19.2902</x-m>
             <y-m>0.0</y-m>
-            <z-m>-2.347</z-m>
+            <z-m>-2.59959</z-m>
         </center>
         <axis>
             <x>0</x>
             <y>1</y>
             <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>FrtGear.008</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>-110</dep>
+            </entry>
+            <entry>
+                <ind>0.2</ind>
+                <dep>-110</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-19.4018</x-m>
+            <y-m>0.636766</y-m>
+            <z-m>-2.623</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>FrtGear.010</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>-0.158</dep>
+            </entry>
+            <entry>
+                <ind>0.2</ind>
+                <dep>-0.158</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>0</dep>
+            </entry>
+        </interpolation>
+        <center>
+            <x-m>-19.4018</x-m>
+            <y-m>0.636766</y-m>
+            <z-m>-2.623</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
         </axis>
     </animation>
 
@@ -1598,9 +1658,9 @@ Franck.VMD
             </entry>
         </interpolation>
         <center>
-            <x-m>-21.0644</x-m>
-            <y-m>-0.66</y-m>
-            <z-m>-2.55551</z-m>
+            <x-m>-21.072</x-m>
+            <y-m>-0.76742</y-m>
+            <z-m>-2.48246</z-m>
         </center>
         <axis>
             <x>-1</x>
@@ -1632,9 +1692,9 @@ Franck.VMD
             </entry>
         </interpolation>
         <center>
-            <x-m>-21.0644</x-m>
-            <y-m>0.66</y-m>
-            <z-m>-2.55551</z-m>
+            <x-m>-21.072</x-m>
+            <y-m>0.76742</y-m>
+            <z-m>-2.48246</z-m>
         </center>
         <axis>
             <x>-1</x>
@@ -1662,9 +1722,9 @@ Franck.VMD
             </entry>
         </interpolation>
         <center>
-            <x-m>-19.7198</x-m>
-            <y-m>-0.66</y-m>
-            <z-m>-2.7701</z-m>
+            <x-m>-19.766</x-m>
+            <y-m>-0.769063</y-m>
+            <z-m>-2.70092</z-m>
         </center>
         <axis>
             <x>1</x>
@@ -1692,9 +1752,9 @@ Franck.VMD
             </entry>
         </interpolation>
         <center>
-            <x-m>-19.7198</x-m>
-            <y-m>0.66</y-m>
-            <z-m>-2.7701</z-m>
+            <x-m>-19.766</x-m>
+            <y-m>0.769063</y-m>
+            <z-m>-2.70092</z-m>
         </center>
         <axis>
             <x>1</x>
@@ -1738,6 +1798,137 @@ Franck.VMD
 		  <z-m>-4.22749</z-m>
 		</slave-center>
 	</animation>
+
+    <!-- scissor front traint 1 -->
+
+          <animation>
+		<type>locked-track</type>
+		<object-name>FrtGear.002</object-name> 
+		<center>
+		  <x-m>-19.5486</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-3.44839</z-m>
+		</center>
+		<lock-axis>
+		  <x>0</x>
+		  <y>1</y> 
+		  <z>0</z>
+		</lock-axis>
+		<track-axis> 
+		  <x>0</x>
+		  <y>0</y>
+		  <z>1</z>
+		</track-axis>
+		
+		<target-name>FrtGear.007</target-name> 
+		<target-center>  
+		  <x-m>-21.4222</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-1.25964</z-m>
+		</target-center>
+		
+		<slave-name>FrtGear.003</slave-name>
+		<slave-center>  
+		  <x-m>-20.0227</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-2.56656</z-m>
+		</slave-center>
+	</animation>
+
+    <!-- scissor front traint 2 -->
+
+          <animation>
+		<type>locked-track</type>
+		<object-name>FrtGear.005</object-name> 
+		<center>
+		  <x-m>-19.1269</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-2.11959</z-m>
+		</center>
+		<lock-axis>
+		  <x>0</x>
+		  <y>1</y> 
+		  <z>0</z>
+		</lock-axis>
+		<track-axis> 
+		  <x>0</x>
+		  <y>0</y>
+		  <z>1</z>
+		</track-axis>
+		
+		<target-name>Cube.002</target-name> 
+		<target-center>  
+		  <x-m>-20.0232</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-2.56696</z-m>
+		</target-center>
+		
+		<slave-name>FrtGear.004</slave-name>
+		<slave-center>  
+		  <x-m>-19.6849</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-2.38441</z-m>
+		</slave-center>
+	</animation>
+
+    <!-- scissor front traint 3 -->
+
+          <animation>
+    <type>locked-track</type>
+
+    <object-name>FrtGear.006</object-name>
+    <center>
+      <x-m>-19.7425</x-m>
+	  <y-m>0</y-m>
+	  <z-m>-2.32538</z-m>
+    </center>
+    <lock-axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </lock-axis>
+    <track-axis>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </track-axis>
+
+    <target-name>FrtGear.011</target-name>
+    <target-center>
+      <x-m>-19.1269</x-m>
+      <y-m>0</y-m>
+      <z-m>-2.11959</z-m>
+    </target-center>
+
+  </animation>
+
+   <animation>
+        <type>translate</type>
+        <object-name>FrtGear.009</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.1</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>0.3</ind><dep>0.05</dep></entry>
+            <entry><ind>0.4</ind><dep>0.03</dep></entry>
+            <entry><ind>0.5</ind><dep>0.03</dep></entry>
+            <entry><ind>0.6</ind><dep>0.03</dep></entry>
+            <entry><ind>0.7</ind><dep>0.05</dep></entry>
+            <entry><ind>0.8</ind><dep>0.05</dep></entry>
+            <entry><ind>0.9</ind><dep>0.05</dep></entry>
+            <entry><ind>0.95</ind><dep>0.05</dep></entry>
+            <entry><ind>0.97</ind><dep>0.05</dep></entry>
+            <entry><ind>0.98</ind><dep>0.05</dep></entry>
+            <entry><ind>0.99</ind><dep>0.05</dep></entry>
+            <entry><ind>1</ind><dep>0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
   <!--       Left Gear      -->
 
