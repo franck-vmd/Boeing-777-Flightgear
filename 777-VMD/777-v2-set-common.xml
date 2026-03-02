@@ -706,7 +706,7 @@
             <name>APU</name>
             <enabled type="bool">false</enabled>
             <type>lookfrom</type>
-        <internal type="bool">true</internal>
+        <internal type="bool">false</internal>
         <config>
             <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
             <from-model type="bool">true</from-model>
@@ -721,7 +721,7 @@
             <name>RADAR</name>
             <enabled type="bool">false</enabled>
             <type>lookfrom</type>
-        <internal type="bool">true</internal>
+        <internal type="bool">false</internal>
         <config>
             <default-field-of-view-deg type="double">70.0</default-field-of-view-deg>
             <from-model type="bool">true</from-model>
@@ -736,7 +736,7 @@
    <!-- Copilot's position. -->
    <name>Passenger View</name>
    <enabled type="bool">false</enabled>
-   <internal>true</internal>
+   <internal type="bool">true</internal>
    <config>
     <!-- x/y/z == right/up/back -->
     <from-model type="bool">true</from-model>
@@ -752,7 +752,7 @@
    <!-- Copilot's position. -->
    <name>Passerelle View</name>
    <enabled type="bool">false</enabled>
-   <internal>true</internal>
+   <internal type="bool">false</internal>
    <config>
     <!-- x/y/z == right/up/back -->
     <from-model type="bool">true</from-model>
