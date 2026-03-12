@@ -672,7 +672,6 @@ Franck.VMD
         <object-name>Fuselagelumiere-r</object-name>
         <object-name>sortiewclumiere</object-name>
         <object-name>spot ext</object-name>
-        <object-name>rideau</object-name>
         <object-name>glassehublot</object-name>
         <object-name>entry1lG</object-name>
         <object-name>entry1rG</object-name>
@@ -682,6 +681,7 @@ Franck.VMD
         <object-name>entry3rG</object-name>
         <object-name>entry4lG</object-name>
         <object-name>entry4rG</object-name>
+        <object-name>cloison</object-name>
     </effect>
     
     <animation>
@@ -695,7 +695,6 @@ Franck.VMD
         <object-name>plancher</object-name>
         <object-name>window mix interieur</object-name>
         <object-name>mur</object-name>
-        <object-name>rideau</object-name>
         <condition>
          <and>
 		<greater-than>
