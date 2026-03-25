@@ -681,11 +681,11 @@ Franck.VMD
         <object-name>entry3rG</object-name>
         <object-name>entry4lG</object-name>
         <object-name>entry4rG</object-name>
-        <object-name>cloison</object-name>
     </effect>
     
     <animation>
         <type>material</type>
+        <object-name>porterepos</object-name>
         <object-name>portecloison1</object-name>
         <object-name>portecloison2</object-name>
         <object-name>portecloison3</object-name>
@@ -695,6 +695,7 @@ Franck.VMD
         <object-name>plancher</object-name>
         <object-name>window mix interieur</object-name>
         <object-name>mur</object-name>
+        <object-name>rideau</object-name>
         <condition>
          <and>
 		<greater-than>
@@ -1498,8 +1499,6 @@ Franck.VMD
         <object-name>entry5r</object-name>
         <object-name>entry6r</object-name>
         <object-name>entry7r</object-name>
-        <object-name>entry8r.001</object-name>
-        <object-name>entry9r</object-name>
         <object-name>queu pointe</object-name>
         <object-name>redlight</object-name>
         <object-name>rlight</object-name>
@@ -3678,6 +3677,39 @@ Franck.VMD
 	</animation>
     
     <!-- Door Pick Animations cabine -->
+
+    <animation>
+		<name>c15</name>
+		<type>rotate</type>
+		<object-name>porterepos</object-name>
+		<property>sim/multiplay/generic/float[97]</property>
+		<factor>90</factor>
+        <center>
+            <x-m>-18.0949</x-m>
+            <y-m>-0.79719</y-m>
+            <z-m>0.429875</z-m>
+        </center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+    <animation>
+		<type>pick</type>
+		<object-name>porterepos</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 b777.doors.toggle("c75");
+				</script>
+			</binding>
+		</action>
+	</animation>
     
     <animation>
 		<name>c15</name>

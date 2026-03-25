@@ -222,13 +222,24 @@
       	<equal>true</equal>
 	  	<repeatable type="bool">false</repeatable>
 	  	<binding>
-            <command>property-toggle</command>
-			<property>services/stairs/stairs1_enable</property>
-            </binding>
-	  	<binding>
 	    		<command>nasal</command>
 	    		<script>
 	      		setprop("/sim/current-view/view-number", "45");
+	      		view.resetView();
+	    		</script>
+	  	</binding>
+    </button>
+
+    <button>
+            <pref-width>70</pref-width>
+		<desc>Passe View</desc>
+      	<legend>Repos</legend>
+      	<equal>true</equal>
+	  	<repeatable type="bool">false</repeatable>
+	  	<binding>
+	    		<command>nasal</command>
+	    		<script>
+	      		setprop("/sim/current-view/view-number", "47");
 	      		view.resetView();
 	    		</script>
 	  	</binding>
@@ -243,7 +254,7 @@
 	  	<binding>
 	    		<command>nasal</command>
 	    		<script>
-	      		setprop("/sim/current-view/view-number", "47");
+	      		setprop("/sim/current-view/view-number", "48");
 	      		view.resetView();
 	    		</script>
 	  	</binding>
@@ -258,7 +269,7 @@
 	  	<binding>
 	    		<command>nasal</command>
 	    		<script>
-	      		setprop("/sim/current-view/view-number", "48");
+	      		setprop("/sim/current-view/view-number", "49");
 	      		view.resetView();
 	    		</script>
 	  	</binding>

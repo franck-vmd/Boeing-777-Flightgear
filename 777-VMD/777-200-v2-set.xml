@@ -216,6 +216,16 @@
             <z-offset-m type="double">-18.00</z-offset-m>
             </config>
         </view>
+        <view n="137">
+            <config n="0">
+            <z-offset-m type="double">27.20</z-offset-m>
+            </config>
+        </view>
+        <view n="138">
+            <config n="0">
+            <z-offset-m type="double">-18.3171</z-offset-m>
+            </config>
+        </view>
         
         <hud>
     	        <path n="2">Aircraft/777-VMD/Models/Cockpit/Hud/HUD2.xml</path>
@@ -450,6 +460,9 @@
   <WalkViews1>
    <file>Aircraft/777-VMD/Systems/walk-views1.nas</file>
   </WalkViews1>
+  <WalkViews2>
+   <file>Aircraft/777-VMD/Systems/walk-views2.nas</file>
+  </WalkViews2>
     </nasal>
     
     <aircraft>

@@ -605,8 +605,8 @@ var get_out = func (loc) {
 		setprop("sim/walker/keep-inside-offset-y", getprop("sim/current-view/y-offset-m"));
 		setprop("sim/walker/keep-inside-offset-z", getprop("sim/current-view/z-offset-m"));
 		setprop("sim/walker/keep-pitch-offset-deg", getprop("sim/current-view/pitch-offset-deg"));
-		setprop("sim/view[110]/enabled",1);
-		setprop("sim/view[111]/enabled",1);
+		setprop("sim/view[150]/enabled",1);
+		setprop("sim/view[151]/enabled",1);
 		head_add = getprop("sim/current-view/heading-offset-deg");
 	}
 	var c_airspeed_mps = getprop("velocities/airspeed-kt") * 0.51444444;
@@ -764,8 +764,8 @@ setprop("sim/current-view/view-number", 0);
 	setprop("sim/walker/parachute-opened-altitude-ft", 0);
 	parachute_deployed_sec = 0;
 	setprop("sim/walker/parachute-opened-sec", 0);
-	setprop("sim/view[110]/enabled", 0);
-	setprop("sim/view[111]/enabled", 0);
+	setprop("sim/view[150]/enabled", 0);
+	setprop("sim/view[151]/enabled", 0);
 }
 
 var reinit_walker = func {

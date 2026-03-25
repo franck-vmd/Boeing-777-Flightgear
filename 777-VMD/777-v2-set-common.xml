@@ -779,6 +779,22 @@
             <y-offset-m type="double">0.85</y-offset-m>
         </config>
     </view>
+  <view n="138">
+   <!-- Copilot's position. -->
+   <name>Passe View</name>
+   <enabled type="bool">false</enabled>
+   <internal type="bool">false</internal>
+   <config>
+    <!-- x/y/z == right/up/back -->
+    <from-model type="bool">true</from-model>
+    <from-model-idx type="int">0</from-model-idx>
+    <x-offset-m type="double">-1.35</x-offset-m>
+    <y-offset-m type="double">0.0</y-offset-m>
+    <heading-offset-deg type="double">270.0</heading-offset-deg>
+    <pitch-offset-deg type="double">0.0</pitch-offset-deg>
+    <default-field-of-view-deg type="double"> 65 </default-field-of-view-deg>
+   </config>
+  </view>
     
     <hud n="0">
         <enable3d n="0">false</enable3d>
@@ -1070,6 +1086,7 @@ Service Ceiling: 43,100ft
                 <float n="94" alias="/aaa/door-positions/c72/position-norm"></float>
                 <float n="95" alias="/aaa/door-positions/c73/position-norm"></float>
                 <float n="96" alias="/aaa/door-positions/c74/position-norm"></float>
+                <float n="97" alias="/aaa/door-positions/c75/position-norm"></float>
                 <string alias="/sim/multiplay/callsign"></string>
             </generic>
         </multiplay>

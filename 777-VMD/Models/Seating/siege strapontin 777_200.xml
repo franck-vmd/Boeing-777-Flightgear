@@ -13,6 +13,7 @@
                <object-name>siegeB6</object-name>
                <object-name>siegeB7</object-name>
                <object-name>siegeB8</object-name>
+               <object-name>siegeB9</object-name>
 		<texture>sieges.png</texture>
 	 </animation>
 
@@ -25,6 +26,7 @@
                <object-name>siegeB6</object-name>
                <object-name>siegeB7</object-name>
                <object-name>siegeB8</object-name>
+               <object-name>siegeB9</object-name>
         <condition>
          <and>
 		<greater-than>
@@ -139,6 +141,24 @@
     <animation>
         <type>pick</type>
                 <object-name>siegeB8</object-name>
+         <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>sim/multiplay/generic/float[82]</property>
+            </binding>
+            <binding>
+                <command>nasal</command>
+                <script>
+                controls.cuvette;
+                </script>
+            </binding>
+          </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+                <object-name>siegeB9</object-name>
          <action>
             <button>0</button>
             <binding>
@@ -275,6 +295,26 @@
             <z>0.0</z>
         </axis>
     </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>siegeB9</object-name>
+        <property>sim/multiplay/generic/float[82]</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0.0</dep></entry>
+            <entry><ind>1</ind><dep>95</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>-16.3758</x-m>
+            <y-m>0.0</y-m>
+            <z-m>1.98164</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>-1.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
     
     <!-- sieges translate -->
     
@@ -390,6 +430,26 @@
             <x-m>25.389</x-m>
             <y-m>0.0</y-m>
             <z-m>-0.13447</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>-1</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>siegeB9</object-name>
+        <property>sim/multiplay/generic/float[82]</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0.0</dep></entry>
+            <entry><ind>1</ind><dep>0.07</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>-16.3758</x-m>
+            <y-m>0.0</y-m>
+            <z-m>1.98164</z-m>
         </center>
         <axis>
             <x>0</x>
