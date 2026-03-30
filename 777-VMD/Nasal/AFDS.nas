@@ -43,7 +43,7 @@ var AFDS = {
         m.altitude_alert_from_in = 0;
         m.top_of_descent = 0;
         m.vorient = 0;
-        m.current_wp_local = 0;
+        m.current_wp = 0;
 
         m.hdg_trk_selected = props.globals.initNode("instrumentation/efis/hdg-trk-selected",0,"BOOL");
         m.heading_reference=props.globals.initNode("systems/navigation/hdgref/reference",0,"BOOL");
@@ -709,39 +709,48 @@ var AFDS = {
         me.AP_speed_mode.setValue(me.spd_list[idx]);
     },
 #################
-    wpChanged : func{
-        if((getprop("autopilot/route-manager/wp/id")=="") or
+    wpChanged: func() {
+        if ((getprop("autopilot/route-manager/wp/id") == "") or
             !me.FMC_active.getValue() and
             (me.lateral_mode.getValue() == 3) and
             me.AP.getValue())
         {
             # LNAV active, but route manager is disabled now => switch to HDG HOLD (current heading)
-            me.input(0,2);
+            me.input(0, 2);
+        } else if (me.FMC_active.getValue()) {
+            # Route manager is active, update waypoint type
+            var f = flightplan();
+            var current_wp = me.FMC_current_wp.getValue();
+            if (current_wp < f.getPlanSize()) {
+                var wp = f.getWP(current_wp);
+                if (wp != nil) {
+                    me.waypoint_type = wp.wp_type;
+                    me.getNextRestriction(current_wp);
+                }
+            }
         }
     },
 #################
-    getNextRestriction: func(curWp)
-    {
-        var f= flightplan();
-        var i = curWp;
-        var legWP = f.getWP(i);
-        while((legWP.alt_cstr_type == nil) and (i < f.indexOfWP(f.destination_runway)))
-        {
-            i += 1;
-            legWP = f.getWP(i);
+    getNextRestriction: func(curWp) {
+        var f = flightplan();
+        var legWP = f.getWP(curWp);
+        var destinationRunwayIdx = f.indexOfWP(f.destination_runway);
+        
+        while((legWP.alt_cstr_type == nil) and (curWp < destinationRunwayIdx)) {
+            curWp += 1;
+            legWP = f.getWP(curWp);
         }
-        me.altitude_restriction_idx = i;
+        me.altitude_restriction_idx = curWp;
         me.altitude_restriction_type = legWP.alt_cstr_type;
-        me.altitude_restriction = int((legWP.alt_cstr + 50) / 100 )* 100;
-        if((getprop("autopilot/route-manager/total-distance")
-            - getprop("autopilot/route-manager/route/wp["~i~"]/distance-along-route-nm")) < me.top_of_descent)
-        {
+        var restriction = int((legWP.alt_cstr + 50) / 100 ) * 100;
+        me.altitude_restriction = restriction;
+        if ((getprop("autopilot/route-manager/total-distance")
+            - getprop("autopilot/route-manager/route/wp["~curWp~"]/distance-along-route-nm")) < me.top_of_descent) {
             me.altitude_restriction_descent = 1;
-        }
-        else
-        {
+        } else {
             me.altitude_restriction_descent = 0;
         }
+        return restriction;
     },
 #################
     ap_update : func{
@@ -1750,7 +1759,7 @@ var AFDS = {
         }
         elsif(me.step==5)           #LNAV/VNAV calculation
         {
-            var f= flightplan();
+            var f = flightplan();
             var total_distance = getprop("autopilot/route-manager/total-distance");
             var distance = total_distance - getprop("autopilot/route-manager/distance-remaining-nm");
             var destination_elevation = getprop("autopilot/route-manager/destination/field-elevation-ft");
@@ -1796,11 +1805,19 @@ var AFDS = {
                 }
 
                 var leg = f.currentWP();
-                if(leg == nil)
-                {
-                    me.step+=1;
-                    if(me.step>6) me.step =0;
+                var current_wp = me.FMC_current_wp.getValue();
+            
+                if (leg == nil) {
+                    me.step += 1;
+                    if (me.step > 6) me.step = 0;
                     return;
+                }
+            
+                if (current_wp < f.getPlanSize()) {
+                    var wp = f.getWP(current_wp);
+                    if (wp != nil) {
+                        me.waypoint_type = wp.wp_type;
+                    }
                 }
                 var groundspeed = getprop("velocities/groundspeed-kt");
                 var log_distance = getprop("instrumentation/gps/wp/wp[1]/distance-nm");
@@ -1842,48 +1859,39 @@ var AFDS = {
                             gmt -= 24 * 3600;
                         }
                         me.estimated_time_arrival.setValue(gmt_hour * 100 + int((gmt - gmt_hour * 3600) / 60));
-                        if(me.current_wp_local < (max_wpt - 2))
-                        {
-                            if(getprop("autopilot/route-manager/route/wp["~(me.current_wp_local + 1)~"]/leg-bearing-true-deg") == nil)
-                            {
-                                setprop("autopilot/route-manager/route/wp["~(me.current_wp_local + 1)~"]/leg-bearing-true-deg", getprop("instrumentation/gps/wp/wp[1]/bearing-deg"));
-                            }
-                            if(getprop("autopilot/route-manager/route/wp["~(me.current_wp_local + 1)~"]/leg-distance-nm") > 1.0)
-                            {
-                                var change_wp = abs(getprop("autopilot/route-manager/route/wp["~(me.current_wp_local + 1)~"]/leg-bearing-true-deg")
-                                 - getprop("orientation/heading-deg"));
-                            }
-                            else
-                            {
-                                var change_wp = abs(getprop("autopilot/route-manager/route/wp["~(me.current_wp_local + 2)~"]/leg-bearing-true-deg")
-                                 - getprop("orientation/heading-deg"));
-                            }
+                    if (current_wp < (max_wpt - 2)) {
+                        if (getprop("autopilot/route-manager/route/wp["~(current_wp + 1)~"]/leg-bearing-true-deg") == nil) {
+                            setprop("autopilot/route-manager/route/wp["~(current_wp + 1)~"]/leg-bearing-true-deg", getprop("instrumentation/gps/wp/wp[1]/bearing-deg"));
                         }
-                        else
-                        {
-                            change_wp = 0;
+                        if (getprop("autopilot/route-manager/route/wp["~(current_wp + 1)~"]/leg-distance-nm") > 1.0) {
+                            var change_wp = abs(getprop("autopilot/route-manager/route/wp["~(current_wp + 1)~"]/leg-bearing-true-deg")
+                                - getprop("orientation/heading-deg"));
+                        } else {
+                            var change_wp = abs(getprop("autopilot/route-manager/route/wp["~(current_wp + 2)~"]/leg-bearing-true-deg")
+                                - getprop("orientation/heading-deg"));
                         }
-                        var alignment = abs(getprop("autopilot/route-manager/wp/true-bearing-deg")
-                            - getprop("orientation/heading-deg"));
-                        if(change_wp > 180) change_wp = (360 - change_wp);
-                        if((((me.waypoint_type != 'hdgToAlt') and
-                                (((leg.fly_type == 'flyBy') and ((me.heading_change_rate * change_wp) > wpt_eta) and (alignment < 85))
-                                or (log_distance < 0.6))                                )
-                            or ((me.waypoint_type == 'hdgToAlt') and (current_alt > me.altitude_restriction))
-                            ) and (me.current_wp_local < max_wpt))
-                        {
-                            me.current_wp_local += 1;
-                            me.FMC_current_wp.setValue(me.current_wp_local);
-                            me.waypoint_type = f.getWP(me.current_wp_local).wp_type;
-                            afds.getNextRestriction(me.current_wp_local);
-                            me.FMC_last_distance.setValue(total_distance);
-                        }
-                        else
-                        {
-                            me.FMC_last_distance.setValue(log_distance);
-                        }
+                    } else {
+                        change_wp = 0;
+                    }
+                    var alignment = abs(getprop("autopilot/route-manager/wp/true-bearing-deg")
+                        - getprop("orientation/heading-deg"));
+                    if (change_wp > 180) change_wp = (360 - change_wp);
+                    if ((((me.waypoint_type != 'hdgToAlt') and
+                            (((leg.fly_type == 'Hold') and ((me.heading_change_rate * change_wp) > wpt_eta) and (alignment < 85)) 
+                            or (log_distance < 0.6)))
+                        or ((me.waypoint_type == 'hdgToAlt') and (current_alt > me.altitude_restriction))
+                        ) and (current_wp < max_wpt)) {
+                        current_wp += 1;
+                        me.FMC_current_wp.setValue(current_wp);
+                        me.waypoint_type = f.getWP(current_wp).wp_type;
+                        me.getNextRestriction(current_wp);
+                        me.FMC_last_distance.setValue(total_distance);
+                    } else {
+                        me.FMC_last_distance.setValue(log_distance);
                     }
                 }
+            }
+                #Les options sont : « flyOver », « flyBy » ou « Hold ».
                 if((me.FMC_destination_ils.getValue() == 0) #FMC autotune function
                     and (me.lateral_mode.getValue() == 3))  #LNAV engaged
                 {

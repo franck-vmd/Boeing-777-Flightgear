@@ -1946,13 +1946,13 @@ Service Ceiling: 43,100ft
             <volume type="double">0</volume>
         </nav>
         <dme n="0">
-            <serviceable>true</serviceable>
+            <serviceable type="bool">true</serviceable>
             <frequencies>
                 <source>/instrumentation/nav[0]/frequencies/selected-mhz</source>
             </frequencies>
         </dme>
         <dme n="1">
-            <serviceable>true</serviceable>
+            <serviceable type="bool">true</serviceable>
             <frequencies>
                 <source>/instrumentation/nav[1]/frequencies/selected-mhz</source>
             </frequencies>
