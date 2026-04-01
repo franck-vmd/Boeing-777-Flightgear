@@ -1126,8 +1126,10 @@ Service Ceiling: 43,100ft
             <path>instrumentation/comm[2]/frequencies/standby-mhz</path>
             <path>instrumentation/nav/frequencies/selected-mhz</path>
             <path>instrumentation/nav/frequencies/standby-mhz</path>
+            <path>instrumentation/nav/radials/selected-deg</path>
             <path>instrumentation/nav[1]/frequencies/selected-mhz</path>
             <path>instrumentation/nav[1]/frequencies/standby-mhz</path>
+            <path>instrumentation/nav[1]/radials/selected-deg</path>
             <path>/instrumentation/efb/available</path>
             <path>/instrumentation/efb/show-debug-apps</path>
             <path>/instrumentation/efb/brightness</path>
@@ -1970,7 +1972,7 @@ Service Ceiling: 43,100ft
             <tx-switch type="int">0</tx-switch>
         </transponder>
         <encoder>
-            <serviceable>true</serviceable>
+            <serviceable type="bool">true</serviceable>
         </encoder>
         <cdu n="0">
             <serviceable type="bool">true</serviceable>

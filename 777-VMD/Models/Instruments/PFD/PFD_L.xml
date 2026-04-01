@@ -9,75 +9,54 @@ Franck.VMD
 
     <animation>
 		<type>select</type>
-                <object-name>Hsi</object-name>
-                <object-name>Track</object-name>
-                <object-name>coarseLocPointer</object-name>
-                <object-name>Display_1.010</object-name>
-                <object-name>Display_1.003</object-name>
-                <object-name>Display_1</object-name>
-                <object-name>Display_1.013</object-name>
-                <object-name>Display_1.011</object-name>
-                <object-name>Display_1.009</object-name>
-                <object-name>Display_1.012</object-name>
-                <object-name>Display_1.008</object-name>
                 <object-name>ASI</object-name>
-                <object-name>Asitext.010</object-name>
-                <object-name>speedtrend.down</object-name>
-                <object-name>StallSpeedInd</object-name>
-                <object-name>OverSpeedInd</object-name>
-                <object-name>speedtrend.up</object-name>
-                <object-name>Mode_announciator</object-name>
-                <object-name>Alt6</object-name>
-                <object-name>Alt5</object-name>
-                <object-name>Alt4</object-name>
-                <object-name>Alt3</object-name>
-                <object-name>Alt2</object-name>
                 <object-name>Alt1</object-name>
-                <object-name>runway_bar</object-name>
-                <object-name>VS_ind</object-name>
-                <object-name>hdg-bug</object-name>
-                <object-name>Heading_mark</object-name>
-                <object-name>Display_1.004</object-name>
-                <object-name>IAS_window</object-name>
-                <object-name>Asitext.100</object-name>
-                <object-name>Asitext.001</object-name>
-                <object-name>Display_1.001</object-name>
+                <object-name>Alt2</object-name>
+                <object-name>Alt3</object-name>
+                <object-name>Alt4</object-name>
+                <object-name>Alt5</object-name>
+                <object-name>Alt6</object-name>
+                <object-name>AltitudeCursor</object-name>
+                <object-name>Alttext10</object-name>
                 <object-name>Alttext100</object-name>
-                <object-name>Omarker</object-name>
-                <object-name>Mmarker</object-name>
-                <object-name>Imarker</object-name>
+                <object-name>Alttext1000</object-name>
+                <object-name>Alttext10000</object-name>
+                <object-name>Asitext.001</object-name>
+                <object-name>Asitext.010</object-name>
+                <object-name>Asitext.100</object-name>
+                <object-name>Backplane</object-name>
+                <object-name>Bank_ind</object-name>
                 <object-name>Box-alt-alert</object-name>
                 <object-name>Box-pitch</object-name>
                 <object-name>Box-roll</object-name>
                 <object-name>Box-speed</object-name>
-                <object-name>SpeedTarget</object-name>
-                <object-name>VrefMark</object-name>
-                <object-name>Bank_ind</object-name>
-                <object-name>Display_1.006</object-name>
-                <object-name>Display_1.007</object-name>
-                <object-name>Display_1.016</object-name>
-                <object-name>Display_1.021</object-name>
-                <object-name>Display_1.014</object-name>
-                <object-name>Display_1.020</object-name>
-                <object-name>Display_1.019</object-name>
-                <object-name>Display_1.002</object-name>
-                <object-name>Display_1.005</object-name>
-                <object-name>Display_1.017</object-name>
-                <object-name>Display_1.018</object-name>
-                <object-name>Display_1.015</object-name>
-                <object-name>Display_0.001</object-name>
-                <object-name>VSI.needle</object-name>
-                <object-name>Alttext10</object-name>
-                <object-name>minimum_tail_a</object-name>
-                <object-name>Backplane</object-name>
-                <object-name>minimum_tail</object-name>
-                <object-name>Alttext1000</object-name>
-                <object-name>runway</object-name>
-                <object-name>Alttext10000</object-name>
-                <object-name>AltitudeCursor</object-name>
-                <object-name>minimum_head_a</object-name>
-                <object-name>minimum_head</object-name>
                 <object-name>Display_0</object-name>
+                <object-name>Display_0.001</object-name>
+                <object-name>EFIS.screenfond</object-name>
+                <object-name>Heading_mark</object-name>
+                <object-name>Hsi</object-name>
+                <object-name>IAS_window</object-name>
+                <object-name>Imarker</object-name>
+                <object-name>Mmarker</object-name>
+                <object-name>Mode_announciator</object-name>
+                <object-name>Omarker</object-name>
+                <object-name>OverSpeedInd</object-name>
+                <object-name>SpeedTarget</object-name>
+                <object-name>StallSpeedInd</object-name>
+                <object-name>Track</object-name>
+                <object-name>VSI.needle</object-name>
+                <object-name>VS_ind</object-name>
+                <object-name>VrefMark</object-name>
+                <object-name>coarseLocPointer</object-name>
+                <object-name>hdg-bug</object-name>
+                <object-name>minimum_head</object-name>
+                <object-name>minimum_head_a</object-name>
+                <object-name>minimum_tail</object-name>
+                <object-name>minimum_tail_a</object-name>
+                <object-name>runway</object-name>
+                <object-name>runway_bar</object-name>
+                <object-name>speedtrend.down</object-name>
+                <object-name>speedtrend.up</object-name>
 		<condition>
 			<greater-than>
 				<property>systems/electrical/CPT-FLT-INST</property>

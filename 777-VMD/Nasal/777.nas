@@ -181,8 +181,10 @@ var load_state = func {
         setprop("instrumentation/comm[2]/frequencies/standby-mhz", 135.705);
         setprop("instrumentation/nav/frequencies/selected-mhz", 109.50);
         setprop("instrumentation/nav/frequencies/standby-mhz", 109.55);
+        setprop("instrumentation/nav/radials/selected-deg", 284);
         setprop("instrumentation/nav[1]/frequencies/selected-mhz", 110.10);
         setprop("instrumentation/nav[1]/frequencies/standby-mhz", 111.70);
+        setprop("instrumentation/nav[1]/radials/selected-deg", 326);
         print("Radio channels ..... Loaded");
     } else {
         setprop("instrumentation/rmu/unit/selected-mhz", getprop("instrumentation/comm/frequencies/selected-mhz"));

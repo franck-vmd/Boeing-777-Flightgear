@@ -460,16 +460,6 @@ Franck.VMD
 			<command>nasal</command>
 			<script>cdu.key('exec');</script>
 		</binding>
-        <binding>
-            <condition>
-                <equals>
-                    <property>instrumentation/cdu/display</property>
-                    <value>RTE1_LEGS</value>
-                </equals>
-            </condition>
-            <command>nasal</command>
-            <script>cdu.input('EXEC');</script>
-        </binding>
 	</action>
 </animation>
 
