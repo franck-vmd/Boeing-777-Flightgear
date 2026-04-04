@@ -105,6 +105,8 @@
  </offsets>
 </model>
 
+  <!--Passagers-->
+
   <model>
  <name>passagers</name>
  <path>Aircraft/777-VMD/Models/Ground/Services/passagersX8/passagersX8.xml</path>
@@ -117,5 +119,20 @@
   <z-m>0</z-m>
  </offsets>
 </model>
+
+ <!--Air-->
+
+ <model>
+    <name>air-conditioning</name>
+    <path>Aircraft/777-VMD/Models/Ground/Services/air-conditioning/air-conditioning.xml</path>
+    <condition>
+        <property>controls/switches/air</property>
+    </condition>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m>0</z-m>
+    </offsets>
+ </model>
 
 </PropertyList>

@@ -77,6 +77,26 @@
 
    <checkbox>
       <halign>left</halign>
+      <label>air conditioning</label>
+      <property>controls/switches/air</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/air</property>
+      </binding>
+    </checkbox>
+
+    <checkbox>
+      <halign>left</halign>
+      <label>air conditioning functioning</label>
+      <property>controls/switches/air1</property>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/air1</property>
+      </binding>
+    </checkbox>
+
+   <checkbox>
+      <halign>left</halign>
       <label>passagers</label>
       <property>controls/switches/passagers</property>
       <binding>
