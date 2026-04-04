@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>air.ac</path>
+
+     <animation>
+	<type>translate</type>
+                <object-name>air</object-name>
+                <object-name>airL</object-name>
+                <object-name>airR</object-name>
+                <object-name>airC</object-name>
+                <object-name>airA</object-name>
+	<property>gear/gear[1]/compression-norm</property>
+	<interpolation>
+		<entry><ind>0.15</ind><dep>0.0</dep></entry>
+		<entry><ind>0.40</ind><dep>0.25</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+     <animation>
+		<type>material</type>
+		<texture>air.png</texture>
+                <object-name>air</object-name>
+                <object-name>airL</object-name>
+                <object-name>airR</object-name>
+                <object-name>airC</object-name>
+                <object-name>airA</object-name>
+     </animation>
+
+     <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect13</inherits-from>
+                <object-name>air</object-name>
+                <object-name>airL</object-name>
+                <object-name>airR</object-name>
+                <object-name>airC</object-name>
+                <object-name>airA</object-name>
+     </effect>
+
+     <animation>
+	<type>select</type>
+	<object-name>airA</object-name>
+	<condition>
+		<equals>
+			<property>controls/switches/air1</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>airC</object-name>
+	<condition>
+		<equals>
+			<property>controls/switches/air1</property>
+			<value>0</value>
+		</equals>
+	</condition>
+</animation>
+
+     <animation>
+        <type>spin</type>
+        <object-name>airL</object-name>
+        <property>controls/switches/air1</property>
+           <factor>20</factor>
+        <axis>
+            <x1-m>-10.0003</x1-m>
+            <y1-m>8.68119</y1-m>
+            <z1-m>-4.10857</z1-m>
+            <x2-m>-10.0551</x2-m>
+            <y2-m>8.56282</y2-m>
+            <z2-m>-4.10857</z2-m>
+        </axis>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>spin</type>
+        <object-name>airR</object-name>
+        <property>controls/switches/air1</property>
+        <factor>20</factor>
+        <axis>
+            <x1-m>-10.8193</x1-m>
+            <y1-m>9.06054</y1-m>
+            <z1-m>-4.10857</z1-m>
+            <x2-m>-10.8741</x2-m>
+            <y2-m>8.94217</y2-m>
+            <z2-m>-4.10857</z2-m>
+        </axis>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+</PropertyList>

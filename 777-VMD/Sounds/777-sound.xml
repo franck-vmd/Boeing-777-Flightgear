@@ -281,6 +281,24 @@
             <value>1.8</value>
         </pitch>
     </rat>
+  
+    <airc>
+      <name>air-conditioning</name>
+      <mode>looped</mode>
+      <path>Aircraft/777-VMD/Sounds/RAT.wav</path>
+      <condition>
+        <and>
+         <property>controls/switches/air</property>
+         <property>controls/switches/air1</property>
+        </and>
+      </condition>
+      <volume>
+			<factor>1</factor>
+		</volume>
+       <pitch>
+            <value>1.8</value>
+        </pitch>
+    </airc>
 
     <pushback>
       <name>Pushback</name>
