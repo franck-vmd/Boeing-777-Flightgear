@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+
+	<!-- catering truck implemented on the 777 by franck.VMD -->
+	<path>lavatory_Truck_VolvoFM.ac</path>
+	
+	# Visible or not
+	
+	<animation>
+		<type>material</type>
+		<texture>Catering_Loader_Truck_VolvoFM.png</texture>
+                <object-name>cater_truck1</object-name>
+                <object-name>roue</object-name>
+       </animation>
+       
+       <animation>
+		<type>material</type>
+		<texture>lavatory.png</texture>
+                <object-name>cater_base14</object-name>
+                <object-name>cater_base15</object-name>
+                <object-name>cater_base16</object-name>
+                <object-name>cater_base17</object-name>
+                <object-name>cater_bridge1</object-name>
+                <object-name>lavatory_cargo1</object-name>
+                <object-name>Light</object-name>
+                <object-name>siren</object-name>
+                <object>lavatory_pipe</object>
+	            <object>lavatory_pipe_disconnected</object>
+       </animation>
+
+       <animation>
+		<type>material</type>
+		<texture>complet.png</texture>
+                <object-name>bobcat</object-name>
+       </animation>
+	
+	
+	<effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect15</inherits-from>
+                <object-name>cater_truck1</object-name>
+                <object-name>roue</object-name>
+       </effect>
+       
+       <effect>
+         <inherits-from>Aircraft/777-VMD/Models/Effects/reflect13</inherits-from>
+                <object-name>cater_backplate</object-name>
+                <object-name>cater_base14</object-name>
+                <object-name>cater_base15</object-name>
+                <object-name>cater_base16</object-name>
+                <object-name>cater_base17</object-name>
+                <object-name>cater_bridge1</object-name>
+                <object-name>lavatory_cargo1</object-name>
+                <object>lavatory_pipe</object>
+	            <object>lavatory_pipe_disconnected</object>
+       </effect>
+
+        <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <object-name>Light</object-name>
+    </effect>
+
+    <animation>
+    <type>noshadow</type>
+    <object-name>Light</object-name>
+  </animation>
+       
+	<animation>
+		<type>select</type>
+		<object>cater_bridge1</object>
+        <object>bobcat</object>
+		<object>cater_truck1</object>
+		<object>lavatory_cargo1</object>
+		<condition>
+			<and>
+				<equals>
+					<property>controls/switches/lavatory</property>
+					<value>1</value>
+				</equals>
+				<less-than>
+						<property>velocities/groundspeed-kt</property>
+					<value>1</value>
+				</less-than>
+			</and>
+		</condition>
+	</animation>
+
+    <animation>
+	<type>select</type>
+	<object-name>lavatory_pipe</object-name>
+    <object-name>lavatory_pipe.001</object-name>
+	<condition>
+		<equals>
+			<property>controls/switches/lavatory1</property>
+			<value>1</value>
+		</equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>lavatory_pipe_disconnected</object-name>
+	<condition>
+		<equals>
+			<property>controls/switches/lavatory1</property>
+			<value>0</value>
+		</equals>
+	</condition>
+</animation>
+	
+	# Pick animations
+	
+	<animation>
+        <type>pick</type>
+		<object-name>cater_bridge1</object-name>
+		<object-name>lavatory_cargo1</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/switches/lavatory1</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+		<object-name>cater_truck1</object-name>
+        <action>
+            <button>0</button>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/switches/lavatory</property>
+            </binding>
+        </action>
+    </animation>	
+
+    <animation>
+    <type>rotate</type>
+    <object-name>Light</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-270.0</factor>
+    <center>
+      <x-m>33.1225</x-m>
+      <y-m>-3.42752</y-m>
+      <z-m>-2.6864</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+	# Elevator Animation
+
+	<animation>
+		<type>translate</type>
+		<object-name>cater_bridge1</object-name>
+        <object-name>bobcat</object-name>
+		<property>controls/switches/lavatory1</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0.0</dep>
+			</entry>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0.0</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>1.37</dep>
+			</entry>
+		</interpolation> 
+		<axis>
+			<z>1</z>
+		</axis>
+	</animation>
+
+    <animation>
+		<type>translate</type>
+		<object-name>cater_base17</object-name>
+		<property>controls/switches/lavatory1</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0.0</dep>
+			</entry>
+			<entry>
+				<ind>0.05</ind>
+				<dep>0.37</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>0.37</dep>
+			</entry>
+		</interpolation> 
+		<axis>
+			<z>-1</z>
+		</axis>
+	</animation>
+
+<animation>
+	<type>translate</type>
+	<object>cater_bridge1</object>
+    <object>bobcat</object>
+	<object>cater_truck1</object>
+	<object>lavatory_cargo1</object>
+    <object>siren</object>
+    <object>roue</object>
+    <object>cater_base17</object>
+	<property>gear/gear[0]/compression-norm</property>
+	<interpolation>
+		<entry><ind>0.15</ind><dep>0.0</dep></entry>
+		<entry><ind>0.40</ind><dep>0.15</dep></entry>
+	</interpolation>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+</PropertyList>

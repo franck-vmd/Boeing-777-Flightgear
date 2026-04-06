@@ -91,6 +91,12 @@ var save_state = func {
         setprop("aircraft/settings/services/deicing_truck/enable", getprop("services/deicing_truck/enable"));
         setprop("aircraft/settings/services/deicing_truck/de-ice", getprop("services/deicing_truck/de-ice"));
         setprop("aircraft/settings/services/deicing_truck/crane", getprop("services/deicing_truck/crane"));
+        setprop("aircraft/settings/controls/switches/air", getprop("controls/switches/air"));
+        setprop("aircraft/settings/controls/switches/air1", getprop("controls/switches/air1"));
+        setprop("aircraft/settings/controls/switches/water", getprop("controls/switches/water"));
+        setprop("aircraft/settings/controls/switches/water1", getprop("controls/switches/water1"));
+        setprop("aircraft/settings/controls/switches/lavatory", getprop("controls/switches/lavatory"));
+        setprop("aircraft/settings/controls/switches/lavatory1", getprop("controls/switches/lavatory1"));
     };
     
     # Write everything to the aircraft specific config file
@@ -246,6 +252,12 @@ var load_state = func {
             setprop("services/deicing_truck/enable", getprop("aircraft/settings/services/deicing_truck/enable"));
             setprop("services/deicing_truck/de-ice", getprop("aircraft/settings/services/deicing_truck/de-ice"));
             setprop("services/deicing_truck/crane", getprop("aircraft/settings/services/deicing_truck/crane"));
+            setprop("controls/switches/air", getprop("aircraft/settings/controls/switches/air"));
+            setprop("controls/switches/air1", getprop("aircraft/settings/controls/switches/air1"));
+            setprop("controls/switches/water", getprop("aircraft/settings/controls/switches/water"));
+            setprop("controls/switches/water1", getprop("aircraft/settings/controls/switches/water1"));
+            setprop("controls/switches/lavatory", getprop("aircraft/settings/controls/switches/lavatory"));
+            setprop("controls/switches/lavatory1", getprop("aircraft/settings/controls/switches/lavatory1"));
             print("Previous ground services ..... Loaded");
         };
     };

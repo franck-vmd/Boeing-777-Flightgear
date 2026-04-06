@@ -97,6 +97,21 @@ var ground_services = {
     setprop("services/deicing_truck/enable", 0);
     setprop("services/deicing_truck/de-ice", 0);
 
+    # Air-Conditioning
+	
+    setprop("controls/switches/air", 0);
+    setprop("controls/switches/air1", 0);
+
+    # water
+	
+    setprop("controls/switches/water", 0);
+    setprop("controls/switches/water1", 0);
+
+    # lavatory
+	
+    setprop("controls/switches/lavatory", 0);
+    setprop("controls/switches/lavatory1", 0);
+
     _startstop_gsv();
     
     },
