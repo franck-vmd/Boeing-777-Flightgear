@@ -282,10 +282,16 @@ var WEU =
 	    append(me.msgs_caution,"FUEL QTY LOW");
 	}
 
-    # POIDS
-	if (getprop("yasim/gross-weight-lbs") > 766000)
+    # POIDS takeoff
+	if (getprop("yasim/gross-weight-lbs") > 766000) and (getprop("position/gear-agl-ft") < 500))
 	{
 	    append(me.msgs_caution,">EXCEED GROSS WEIGHT");
+	}
+
+    # POIDS landing
+	if ((getprop("yasim/gross-weight-lbs") > 445000) and (getprop("position/gear-agl-ft") > 2000))
+	{
+	    append(me.msgs_caution,">EXCEED LANDING WEIGHT");
 	}
 	
 	# Activates if airspeed below minimum maneuvering speed
@@ -418,7 +424,46 @@ var WEU =
 			    append(me.msgs_caution,">COCKPIT DOOR"); 
 
                  if (getprop("controls/switches/DOOR_Switch")==1)
-			    append(me.msgs_caution,">DOOR LOCK FAIL");   
+			    append(me.msgs_caution,">DOOR LOCK FAIL"); 
+
+                 if (getprop("services/ext-pwr/enable")==1)
+			    append(me.msgs_caution,">EXTERNAL POWER"); 
+
+                 if (getprop("services/ASU/enable")==1)
+			    append(me.msgs_caution,">AIR START"); 
+
+                 if (getprop("controls/switches/air")==1)
+			    append(me.msgs_caution,">AIR CONDITIONING");
+
+                 if (getprop("controls/switches/protection")==1)
+			    append(me.msgs_caution,">ENGINE PROTECTION");
+
+                 if (getprop("controls/switches/lavatory")==1)
+			    append(me.msgs_caution,">LAVATORY");
+
+                 if (getprop("controls/switches/water")==1)
+			    append(me.msgs_caution,">WATER");
+
+                 if (getprop("services/camion/enable4")==1)
+			    append(me.msgs_caution,">CAMION RADAR");
+
+                 if (getprop("sim/model/autopush/enabled")==1)
+			    append(me.msgs_caution,">AUTOPUSH");
+
+                 if (getprop("services/fuel-truck/enable")==1)
+			    append(me.msgs_caution,">FUEL TRUCK");
+     
+                 if (getprop("services/catering/enable")==1 or getprop("services/catering/enable1")==1 or getprop("services/catering/enable2")==1 or getprop("services/catering/enable3")==1)
+			    append(me.msgs_caution,">CATERING");
+
+                 if (getprop("services/payload/baggage-truck1-enable")==1 or getprop("services/payload/baggage-truck2-enable")==1 or getprop("services/payload/bagage2")==1)
+			    append(me.msgs_caution,">BAGGAGE");
+
+                 if (getprop("services/chocks/left")==1 or getprop("services/chocks/nose")==1 or getprop("services/chocks/right")==1)
+			    append(me.msgs_caution,">CHOCK");
+
+                 if (getprop("services/stairs/stairs1_enable")==1 or getprop("services/stairs/stairs2_enable")==1 or getprop("services/stairs/stairs3_enable")==1 or getprop("services/stairs/stairs4_enable")==1 or getprop("services/stairs/stairs5_enable")==1)
+			    append(me.msgs_caution,">STAIR");
 
                  if (getprop("/aaa/door-positions/c12/position-norm")==1 or getprop("/aaa/door-positions/c13/position-norm")==1)
 			    append(me.msgs_caution,">RADAR DOOR");
