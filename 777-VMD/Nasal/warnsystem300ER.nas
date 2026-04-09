@@ -283,13 +283,13 @@ var WEU =
 	}
 
     # POIDS takeoff
-	if (getprop("yasim/gross-weight-lbs") > 656000) and (getprop("position/gear-agl-ft") < 500))
+	if (getprop("yasim/gross-weight-lbs") > 775000) and (getprop("position/gear-agl-ft") < 500))
 	{
 	    append(me.msgs_caution,">EXCEED GROSS WEIGHT");
 	}
 
     # POIDS landing
-	if ((getprop("yasim/gross-weight-lbs") > 460000) and (getprop("position/gear-agl-ft") > 2500) and (getprop("position/gear-agl-ft") < 6000))
+	if ((getprop("yasim/gross-weight-lbs") > 554000) and (getprop("position/gear-agl-ft") > 2500) and (getprop("position/gear-agl-ft") < 6000))
 	{
 	    append(me.msgs_caution,">EXCEED LANDING WEIGHT");
 	}

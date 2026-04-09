@@ -289,7 +289,7 @@ var WEU =
 	}
 
     # POIDS landing
-	if ((getprop("yasim/gross-weight-lbs") > 554000) and (getprop("position/gear-agl-ft") > 2000))
+	if ((getprop("yasim/gross-weight-lbs") > 554000) and (getprop("position/gear-agl-ft") > 2500) and (getprop("position/gear-agl-ft") < 6000))
 	{
 	    append(me.msgs_caution,">EXCEED LANDING WEIGHT");
 	}

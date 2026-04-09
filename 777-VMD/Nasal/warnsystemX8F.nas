@@ -89,27 +89,26 @@ var WEU =
         m.flap_override = 0;
         m.ap_mode       = 0;
         m.ap_disengaged = 0;
-	    m.at_mode       = 0;
+	m.at_mode       = 0;
         m.at_disconnect = 0;
         me.rudder_trim  = 0;
         me.elev_trim    = 0;
-	    me.autobrake	= 0;
-	    me.autobrakerto = 0;
-	    me.apu_bleed	= 0;
-	    me.engl_bleed	= 0;
-	    me.engr_bleed	= 0;
-	    me.pack_l	= 0;
-	    me.pack_r	= 0;
-	    me.trim_air_l	= 0;
-	    me.trim_air_r	= 0;
-	    me.battery	= 0;
-	    me.recirc_fans	= 0;
-	    me.smoking_sign	= 0;
-	    me.seatbelts	= 0;
-	    me.fuel_c_pump1	= 0;
-	    me.fuel_c_pump2	= 0;
-	    me.fuel_c_qty	= 0;
-        me.grosswt	= 0;	
+	me.autobrake	= 0;
+	me.autobrakerto = 0;
+	me.apu_bleed	= 0;
+	me.engl_bleed	= 0;
+	me.engr_bleed	= 0;
+	me.pack_l	= 0;
+	me.pack_r	= 0;
+	me.trim_air_l	= 0;
+	me.trim_air_r	= 0;
+	me.battery	= 0;
+	me.recirc_fans	= 0;
+	me.smoking_sign	= 0;
+	me.seatbelts	= 0;
+	me.fuel_c_pump1	= 0;
+	me.fuel_c_pump2	= 0;
+	me.fuel_c_qty	= 0;	
 
         # internal states
         m.active_warnings = 0;
@@ -128,8 +127,8 @@ var WEU =
         setlistener("controls/flight/elevator-trim",    func { Weu.update_listener_inputs() } );
         setlistener("sim/freeze/replay-state",          func { Weu.update_listener_inputs() } );
         setlistener(prop1 ~ "/serviceable",             func { Weu.update_listener_inputs() } );
-	    setlistener("autopilot/autobrake/step",		func { Weu.update_listener_inputs() } );
-	    setlistener("autopilot/autobrake/rto-selected",	func { Weu.update_listener_inputs() } );
+	setlistener("autopilot/autobrake/step",		func { Weu.update_listener_inputs() } );
+	setlistener("autopilot/autobrake/rto-selected",	func { Weu.update_listener_inputs() } );
 
 	# Air Systems
 	setlistener("controls/air/bleedapu-switch",	func { Weu.update_listener_inputs() } );
@@ -149,7 +148,7 @@ var WEU =
 	# Electrical
         setlistener("controls/electric/APU-generator",  func { Weu.update_listener_inputs() } );
         setlistener("systems/electrical/outputs/avionics",func { Weu.update_listener_inputs() } );
-	    setlistener("controls/electric/battery-switch",	func { Weu.update_listener_inputs() } );
+	setlistener("controls/electric/battery-switch",	func { Weu.update_listener_inputs() } );
 
 	# Fuel
 	setlistener("controls/fuel/tank[1]/boost-pump-switch",	func { Weu.update_listener_inputs() } );
@@ -283,13 +282,13 @@ var WEU =
 	}
 
     # POIDS takeoff
-	if (getprop("yasim/gross-weight-lbs") > 656000) and (getprop("position/gear-agl-ft") < 500))
+	if (getprop("yasim/gross-weight-lbs") > 766800) and (getprop("position/gear-agl-ft") < 500))
 	{
 	    append(me.msgs_caution,">EXCEED GROSS WEIGHT");
 	}
 
     # POIDS landing
-	if ((getprop("yasim/gross-weight-lbs") > 460000) and (getprop("position/gear-agl-ft") > 2500) and (getprop("position/gear-agl-ft") < 6000))
+	if ((getprop("yasim/gross-weight-lbs") > 575000) and (getprop("position/gear-agl-ft") > 2500) and (getprop("position/gear-agl-ft") < 6000))
 	{
 	    append(me.msgs_caution,">EXCEED LANDING WEIGHT");
 	}
@@ -358,7 +357,7 @@ var WEU =
         if (me.spdbrk_armed)
             append(me.msgs_info,"SPEEDBRAKE ARMED");
         if (me.apu_running)
-            append(me.msgs_info,"APU RUNNING");        
+            append(me.msgs_info,"APU RUNNING");
 	if (me.autobrake>=0)
 	{
 	    # 777 manual: EICAS memo messages display the selected autobrake settings:
@@ -393,11 +392,14 @@ var WEU =
 	if ((me.smoking_sign>-1) and (me.seatbelts == -1))
 	    append(me.msgs_info,"NO SMOKING ON");
 
-       if (getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]") and getprop("autopilot/route-manager/active"))
+    if (getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]"))
 	        append(me.msgs_info,"CABIN ALT AUTO");
 
-    if (getprop("autopilot/route-manager/active") and getprop("controls/pressurization/landing-alt-manual"))
+    if (getprop("autopilot/route-manager/active") and !getprop("controls/pressurization/landing-alt-manual"))
 		    append(me.msgs_info,"LANDING ALT");
+
+    	if (!getprop("controls/pressurization/valve-manual[0]") and getprop("controls/pressurization/valve-manual[1]"))
+		append(me.msgs_advisory,"OUTFLOW VLV L, R");
 
 	if (!getprop("controls/pressurization/valve-manual[0]"))
 		append(me.msgs_advisory,"OUTFLOW VLV L");
@@ -456,7 +458,7 @@ var WEU =
                  if (getprop("services/catering/enable")==1 or getprop("services/catering/enable1")==1 or getprop("services/catering/enable2")==1 or getprop("services/catering/enable3")==1)
 			    append(me.msgs_caution,">CATERING");
 
-                 if (getprop("services/payload/baggage-truck1-enable")==1 or getprop("services/payload/baggage-truck2-enable")==1 or getprop("services/payload/bagage2")==1)
+                 if (getprop("services/payload/baggage-truck1-enable")==1 or getprop("services/cargo/enable5")==1 or getprop("services/payload/baggage-truck2-enable")==1 or getprop("services/payload/bagage2")==1)
 			    append(me.msgs_caution,">BAGGAGE");
 
                  if (getprop("services/chocks/left")==1 or getprop("services/chocks/nose")==1 or getprop("services/chocks/right")==1)
@@ -464,6 +466,12 @@ var WEU =
 
                  if (getprop("services/stairs/stairs1_enable")==1 or getprop("services/stairs/stairs2_enable")==1 or getprop("services/stairs/stairs3_enable")==1 or getprop("services/stairs/stairs4_enable")==1 or getprop("services/stairs/stairs5_enable")==1)
 			    append(me.msgs_caution,">STAIR");
+
+                 if (getprop("/aaa/door-positions/c51/position-norm")==0)
+			    append(me.msgs_caution,">WINGTIPS-FOLD");	    
+			    
+	             if (getprop("/aaa/door-positions/c51/position-norm")==1)
+			    append(me.msgs_info,">WINGTIPS-EXTEND");
 
                  if (getprop("/aaa/door-positions/c12/position-norm")==1 or getprop("/aaa/door-positions/c13/position-norm")==1)
 			    append(me.msgs_caution,">RADAR DOOR");
@@ -625,15 +633,15 @@ var WEU =
         me.enabled       = (getprop("systems/electrical/outputs/avionics") and
                             (getprop("sim/freeze/replay-state")!=1) and
                             me.serviceable.getValue());
-    me.speedbrake    = getprop("controls/flight/speedbrake");
-    me.spdbrk_armed  = (getprop("controls/flight/speedbrake-lever")==1); #2=extended (not armed...)
-    me.reverser      = getprop("controls/engines/engine/reverser-act");
-    me.gear_down     = getprop("controls/gear/gear-down");
-    me.parkbrake     = getprop("controls/gear/brake-parking");
-    me.gear_override = getprop("instrumentation/mk-viii/inputs/discretes/gear-override");
-    me.apu_running   = getprop("controls/electric/APU-generator");
-    me.rudder_trim   = getprop("controls/flight/rudder-trim");
-    me.elev_trim     = getprop("controls/flight/elevator-trim");
+        me.speedbrake    = getprop("controls/flight/speedbrake");
+        me.spdbrk_armed  = (getprop("controls/flight/speedbrake-lever")==1); #2=extended (not armed...)
+        me.reverser      = getprop("controls/engines/engine/reverser-act");
+        me.gear_down     = getprop("controls/gear/gear-down");
+        me.parkbrake     = getprop("controls/gear/brake-parking");
+        me.gear_override = getprop("instrumentation/mk-viii/inputs/discretes/gear-override");
+        me.apu_running   = getprop("controls/electric/APU-generator");
+        me.rudder_trim   = getprop("controls/flight/rudder-trim");
+        me.elev_trim     = getprop("controls/flight/elevator-trim");
 	me.autobrake	 = getprop("autopilot/autobrake/step");
 	me.autobrakerto	 = getprop("autopilot/autobrake/rto-selected");
 	me.apu_bleed	 = getprop("controls/air/bleedapu-switch");
