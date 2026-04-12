@@ -283,7 +283,7 @@ var WEU =
 	}
 
     # POIDS takeoff
-	if (getprop("yasim/gross-weight-lbs") > 775000) and (getprop("position/gear-agl-ft") < 500))
+	if ((getprop("yasim/gross-weight-lbs") > 775000) and (getprop("position/gear-agl-ft") < 500))
 	{
 	    append(me.msgs_caution,">EXCEED GROSS WEIGHT");
 	}
