@@ -456,6 +456,7 @@ Franck.VMD
      <animation>
         <type>translate</type>
         <object-name>FDpitch</object-name>
+        <object-name>FDpitch_rembrandt</object-name>
         <property>autopilot/fd/pitch-bar</property>
         <factor>0.0006</factor>
         <axis>
