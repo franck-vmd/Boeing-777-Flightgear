@@ -9,7 +9,7 @@
     <group>
     <layout>hbox</layout>
         <text>
-            <label>Freight 300F</label>
+            <label>Freight</label>
         </text>
         
         <empty>
