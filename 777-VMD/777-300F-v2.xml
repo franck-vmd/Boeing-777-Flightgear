@@ -49,7 +49,7 @@ http://rgl.faa.gov/Regulatory_and_Guidance_Library/rgMakeModel.nsf/0/0ba57594067
 http://www.boeing.com/commercial/airports/faqs/arcandapproachspeeds.pdf
 
 -->
-<airplane mass="366640" version="2018.1" mtow-lbs="775000">
+<airplane mass="366940" version="2018.1" mtow-lbs="775000">
 
 <!-- Approach configuration
  Reference :
@@ -216,6 +216,7 @@ GEN ELEC-GE 90-94B Thrust=93700 lb Mass=16644 lb Cruise SFC 0.545 (lb/hr/lb) ??
 <weight x="13.86" y="0" z="0" mass-prop="sim/weight[3]/weight-lb"></weight>
 <weight x="-17.3" y="0" z="0" mass-prop="sim/weight[4]/weight-lb"></weight>
 <weight x="-31.5" y="0" z="0" mass-prop="sim/weight[5]/weight-lb"></weight>
+<weight x="-1.0" y="0" z="0" mass-prop="sim/weight[6]/weight-lb"></weight>
 
   <ballast x="-34.7003" y="0" z="4" mass="-70000"></ballast>
 

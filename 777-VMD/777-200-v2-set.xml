@@ -341,6 +341,13 @@
             <max-lb type="double">1494</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
+        <weight n="6">
+            <!--  Doors 6 Catering Galley -->
+            <name>Water1</name>
+            <weight-lb type="double">0</weight-lb>
+            <max-lb type="double">2740</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
         <aircraft-operator>AFR</aircraft-operator>
     </sim>
 
@@ -487,11 +494,12 @@
             <first-max-nr>34</first-max-nr>
             <business-max-nr>24</business-max-nr>
             <economy-max-nr>230</economy-max-nr>
-            <belly-max-lbs>17280</belly-max-lbs>
+            <belly-max-lbs>14540</belly-max-lbs>
             <catering1-max-lbs>1152</catering1-max-lbs>
             <catering2-max-lbs>1368</catering2-max-lbs>
             <catering3-max-lbs>1494</catering3-max-lbs>
             <catering4-max-lbs>1494</catering4-max-lbs>
+            <water1-max-lbs>2740</water1-max-lbs>
             <crew-max-nr>20</crew-max-nr>
         </payload>
     </services>

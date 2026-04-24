@@ -58,7 +58,8 @@ var ground_services = {
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[5]/max", getprop("services/payload/catering2-max-lbs"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[6]/max", getprop("services/payload/catering3-max-lbs"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[7]/max", getprop("services/payload/catering4-max-lbs"));
-        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[8]/max", getprop("services/payload/crew-max-nr"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[8]/max", getprop("services/payload/water1-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/slider[9]/max", getprop("services/payload/crew-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[1]/binding/max", getprop("services/payload/first-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[3]/binding/max", getprop("services/payload/business-max-nr"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[5]/binding/max", getprop("services/payload/economy-max-nr"));
@@ -67,7 +68,8 @@ var ground_services = {
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[11]/binding/max", getprop("services/payload/catering2-max-lbs"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[13]/binding/max", getprop("services/payload/catering3-max-lbs"));
         setprop("sim/gui/dialogs/payload/dialog/group[1]/button[15]/binding/max", getprop("services/payload/catering4-max-lbs"));
-        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[17]/binding/max", getprop("services/payload/crew-max-nr"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[17]/binding/max", getprop("services/payload/water1-max-lbs"));
+        setprop("sim/gui/dialogs/payload/dialog/group[1]/button[19]/binding/max", getprop("services/payload/crew-max-nr"));
     }
     setprop("services/stairs/flaps-jammed", 0);
     
@@ -92,6 +94,21 @@ var ground_services = {
     setprop("services/catering/move3", 0);	
     setprop("services/catering/position3", 0);
 
+    # Camion Radar
+    
+    setprop("services/camion/enable4", 0);
+    setprop("services/camion/move4", 0);
+    setprop("services/camion/position4", 0);
+
+    # WATER and LAVATORY Truck
+
+    setprop("services/water/enable8", 0);
+    setprop("services/water/move8", 0);	
+    setprop("services/water/position8", 0);
+    setprop("services/lavatory/enable9", 0);
+    setprop("services/lavatory/move9", 0);	
+    setprop("services/lavatory/position9", 0);
+
     # De-icing Truck
 	
     setprop("services/deicing_truck/enable", 0);
@@ -101,16 +118,6 @@ var ground_services = {
 	
     setprop("controls/switches/air", 0);
     setprop("controls/switches/air1", 0);
-
-    # water
-	
-    setprop("controls/switches/water", 0);
-    setprop("controls/switches/water1", 0);
-
-    # lavatory
-	
-    setprop("controls/switches/lavatory", 0);
-    setprop("controls/switches/lavatory1", 0);
 
     _startstop_gsv();
     
@@ -281,10 +288,14 @@ var ground_services = {
         var cater_move1 = getprop("services/catering/move1");
         var cater_move2 = getprop("services/catering/move2");
         var cater_move3 = getprop("services/catering/move3");
+        var cater_move8 = getprop("services/water/move8");
+        var cater_move9 = getprop("services/lavatory/move9");
         var cater_position = getprop("services/catering/position");
         var cater_position1 = getprop("services/catering/position1");
         var cater_position2 = getprop("services/catering/position2");
         var cater_position3 = getprop("services/catering/position3");
+        var cater_position8 = getprop("services/water/position8");
+        var cater_position9 = getprop("services/lavatory/position9");
         
         if (getprop("services/catering/enable") != 0) {
             if (cater_position < cater_move) { #raise catering truck 
@@ -373,6 +384,46 @@ var ground_services = {
             setprop("services/camion/position4", 0);
             setprop("services/camion/move4", 0);
         }
+        
+        var cater_move = getprop("services/water/move8");
+        var cater_position = getprop("services/water/position8");
+        
+        if (getprop("services/water/enable8") != 0) {
+            if (cater_position < cater_move) { #raise catering truck 
+                setprop("services/water/position8", cater_position + 0.005);  
+                if (cater_move - getprop("services/water/position8") < 0.0001) {
+                    setprop("services/water/position8", cater_move);
+                }
+            } elsif (cater_position > cater_move) { #lower catering truck 
+                setprop("services/water/position8", cater_position - 0.005);  
+                if ((getprop("services/water/position8") - cater_move) < 0.0001) {
+                    setprop("services/water/position8", cater_move);
+                }
+            }
+        } else {
+            setprop("services/water/position8", 0);
+            setprop("services/water/move8", 0);
+        }
+
+        var cater_move = getprop("services/lavatory/move9");
+        var cater_position = getprop("services/lavatory/position9");
+        
+        if (getprop("services/lavatory/enable9") != 0) {
+            if (cater_position < cater_move) { #raise catering truck 
+                setprop("services/lavatory/position9", cater_position + 0.005);  
+                if (cater_move - getprop("services/lavatory/position9") < 0.0001) {
+                    setprop("services/lavatory/position9", cater_move);
+                }
+            } elsif (cater_position > cater_move) { #lower catering truck 
+                setprop("services/lavatory/position9", cater_position - 0.005);  
+                if ((getprop("services/lavatory/position9") - cater_move) < 0.0001) {
+                    setprop("services/lavatory/position9", cater_move);
+                }
+            }
+        } else {
+            setprop("services/lavatory/position9", 0);
+            setprop("services/lavatory/move9", 0);
+        }
 
         var cater_move = getprop("services/cargo/move5");
         var cater_position = getprop("services/cargo/position5");
@@ -437,7 +488,7 @@ var ground_services = {
         # Pax and baggage
         
         # Gui update for the weight & payload dialog (code is in payload.nas, but Gui update needs the faster timer of the ground services system)
-        setprop("services/payload/expected-weight-lbs", getprop("services/payload/belly-request-lbs") + getprop("services/payload/catering1-request-lbs") + getprop("services/payload/catering2-request-lbs") + getprop("services/payload/catering3-request-lbs") + getprop("services/payload/catering4-request-lbs") + getprop("services/payload/first-request-nr") * 137 + getprop("services/payload/business-request-nr") * 137 + getprop("services/payload/economy-request-nr") * 137 + getprop("services/payload/crew-request-nr") * 150);
+        setprop("services/payload/expected-weight-lbs", getprop("services/payload/belly-request-lbs") + getprop("services/payload/catering1-request-lbs") + getprop("services/payload/catering2-request-lbs") + getprop("services/payload/catering3-request-lbs") + getprop("services/payload/catering4-request-lbs") + getprop("services/payload/water1-request-lbs") + getprop("services/payload/first-request-nr") * 137 + getprop("services/payload/business-request-nr") * 137 + getprop("services/payload/economy-request-nr") * 137 + getprop("services/payload/crew-request-nr") * 150);
         setprop("services/payload/pax-request-nr", getprop("services/payload/first-request-nr") + getprop("services/payload/business-request-nr") + getprop("services/payload/economy-request-nr"));
         
         # Make sure a Jetway and Stair cannot be connected to the same door at the same time.

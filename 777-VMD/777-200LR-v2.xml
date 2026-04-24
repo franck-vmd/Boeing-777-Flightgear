@@ -177,6 +177,7 @@ Max Landing weight: 492,000 lbs
   <weight x="12.58" y="0" z="0" mass-prop="sim/weight[3]/weight-lb"></weight>
   <weight x="-12.71" y="0" z="0" mass-prop="sim/weight[4]/weight-lb"></weight>
   <weight x="-26.5" y="0" z="0" mass-prop="sim/weight[5]/weight-lb"></weight>
+  <weight x="-1.0" y="0" z="0" mass-prop="sim/weight[6]/weight-lb"></weight>
 
   <ballast x="-30" y="0" z="4" mass="-40000"></ballast>
 

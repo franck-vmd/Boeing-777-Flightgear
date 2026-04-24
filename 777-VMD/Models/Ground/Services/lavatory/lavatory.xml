@@ -73,7 +73,7 @@
 		<condition>
 			<and>
 				<equals>
-					<property>controls/switches/lavatory</property>
+					<property>services/lavatory/enable9</property>
 					<value>1</value>
 				</equals>
 				<less-than>
@@ -90,7 +90,7 @@
     <object-name>lavatory_pipe.001</object-name>
 	<condition>
 		<equals>
-			<property>controls/switches/lavatory1</property>
+			<property>services/lavatory/position9</property>
 			<value>1</value>
 		</equals>
 	</condition>
@@ -101,7 +101,7 @@
 	<object-name>lavatory_pipe_disconnected</object-name>
 	<condition>
 		<equals>
-			<property>controls/switches/lavatory1</property>
+			<property>services/lavatory/position9</property>
 			<value>0</value>
 		</equals>
 	</condition>
@@ -117,7 +117,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/switches/lavatory1</property>
+                <property>services/lavatory/move9</property>
             </binding>
         </action>
     </animation>
@@ -129,7 +129,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/switches/lavatory</property>
+                <property>services/lavatory/enable9</property>
             </binding>
         </action>
     </animation>	
@@ -157,14 +157,14 @@
 		<type>translate</type>
 		<object-name>cater_bridge1</object-name>
         <object-name>bobcat</object-name>
-		<property>controls/switches/lavatory1</property>
+		<property>services/lavatory/position9</property>
 		<interpolation>
 			<entry>
 				<ind>0.0</ind>
 				<dep>0.0</dep>
 			</entry>
 			<entry>
-				<ind>0.0</ind>
+				<ind>0.5</ind>
 				<dep>0.0</dep>
 			</entry>
 			<entry>
@@ -180,7 +180,7 @@
     <animation>
 		<type>translate</type>
 		<object-name>cater_base17</object-name>
-		<property>controls/switches/lavatory1</property>
+		<property>services/lavatory/position9</property>
 		<interpolation>
 			<entry>
 				<ind>0.0</ind>

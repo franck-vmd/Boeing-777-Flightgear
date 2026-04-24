@@ -95,46 +95,6 @@
       </binding>
     </checkbox>
 
-    <checkbox>
-      <halign>left</halign>
-      <label>lavatory</label>
-      <property>controls/switches/lavatory</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>controls/switches/lavatory</property>
-      </binding>
-    </checkbox>
-
-    <checkbox>
-      <halign>left</halign>
-      <label>lavatory functioning</label>
-      <property>controls/switches/lavatory1</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>controls/switches/lavatory1</property>
-      </binding>
-    </checkbox>
-
-    <checkbox>
-      <halign>left</halign>
-      <label>water</label>
-      <property>controls/switches/water</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>controls/switches/water</property>
-      </binding>
-    </checkbox>
-
-    <checkbox>
-      <halign>left</halign>
-      <label>water functioning</label>
-      <property>controls/switches/water1</property>
-      <binding>
-        <command>property-toggle</command>
-        <property>controls/switches/water1</property>
-      </binding>
-    </checkbox>
-
    <checkbox>
       <halign>left</halign>
       <label>passagers</label>

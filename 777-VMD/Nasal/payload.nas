@@ -63,7 +63,15 @@ var payload_boarding = {
     props.globals.initNode("services/catering/enable1", 0);
     props.globals.initNode("services/catering/enable2", 0);
     props.globals.initNode("services/catering/enable3", 0);
+
+    # Water and Lavatory
     
+    props.globals.initNode("services/payload/water1-request-lbs", 0);
+    props.globals.initNode("services/payload/water1-onboard-lbs", 0);
+    props.globals.initNode("services/payload/water1-loading", 0);
+    props.globals.initNode("services/water/enable8", 0);
+    props.globals.initNode("services/lavatory/enable9", 0);
+
     # Crew
     
     props.globals.initNode("services/payload/crew-request-nr", 2.0);
@@ -577,7 +585,40 @@ var payload_boarding = {
                     setprop("services/payload/catering4-onboard-lbs", getprop("services/payload/catering4-onboard-lbs") - getprop("services/payload/baggage-speed"))
                 }
             }
-        }        
+        } 
+
+        if (getprop("services/payload/water1-loading") == 1) {
+            
+            # Baggage Loading
+            # Define loading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/water/enable8")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round((getprop("services/payload/water1-request-lbs") - getprop("services/payload/water1-onboard-lbs")) / (150 * (getprop("services/water/enable8"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            if (getprop("services/payload/water1-onboard-lbs") < getprop("services/payload/water1-request-lbs")) {
+                setprop("services/payload/water1-onboard-lbs", getprop("services/payload/water1-onboard-lbs") + getprop("/services/payload/baggage-speed"));
+                if (getprop("services/payload/water1-onboard-lbs") >= getprop("services/payload/water1-request-lbs")) {
+                    setprop("services/payload/water1-onboard-lbs", getprop("services/payload/water1-request-lbs"));
+                    setprop("services/payload/water1-loading", 0);
+                    screen.log.write("water loading complete.", 0, 0.584, 1);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                }
+            }
+            
+        } elsif (getprop("services/payload/water1-loading") == 2) {
+            #Define unloading speed based on the number of baggage trucks connected.
+            setprop("services/payload/baggage-speed", math.round((getprop("services/water/enable8")) * (50 + rand() * 200)));
+            setprop("services/payload/loadingtime_remaining", "Est. " ~ math.round(getprop("services/payload/water1-onboard-lbs") / (150 * (getprop("services/water/enable8"))) / 60 * getprop("services/payload/speed")) ~ " min remaining");
+            #unload
+            if (getprop("services/payload/water1-onboard-lbs") > 0) {
+                if (getprop("services/payload/water1-onboard-lbs") <= getprop("services/payload/baggage-speed")) {
+                    setprop("services/payload/water1-onboard-lbs", 0);
+                    setprop("services/payload/water1-loading", 0);
+                    setprop("services/payload/loadingtime_remaining", " ");
+                    screen.log.write("water unloading complete.", 0, 0.584, 1);
+                } else {
+                    setprop("services/payload/water1-onboard-lbs", getprop("services/payload/water1-onboard-lbs") - getprop("services/payload/baggage-speed"))
+                }
+            }
+        }       
         
         #Crew
         
@@ -591,19 +632,20 @@ var payload_boarding = {
         
         # Write to weight properties, but check if we are not overloading first.
         
-        setprop("services/payload/weight-total-lbs", getprop("services/payload/pax-onboard-lbs") + getprop("services/payload/belly-onboard-lbs") + getprop("services/payload/crew-onboard-lbs") + getprop("services/payload/catering1-onboard-lbs") + getprop("services/payload/catering2-onboard-lbs") + getprop("services/payload/catering3-onboard-lbs") + getprop("services/payload/catering4-onboard-lbs"));
-        if ((getprop("services/payload/weight-total-lbs") >= getprop("sim/weight[1]/max-lb")) and ((getprop("services/payload/baggage-loading") == 1) or (getprop("services/payload/catering1-loading") == 1) or (getprop("services/payload/catering2-loading") == 1) or (getprop("services/payload/catering3-loading") == 1) or (getprop("services/payload/catering4-loading") == 1) or (getprop("services/payload/pax-boarding") == 1))) {
+        setprop("services/payload/weight-total-lbs", getprop("services/payload/pax-onboard-lbs") + getprop("services/payload/belly-onboard-lbs") + getprop("services/payload/crew-onboard-lbs") + getprop("services/payload/catering1-onboard-lbs") + getprop("services/payload/catering2-onboard-lbs") + getprop("services/payload/catering3-onboard-lbs") + getprop("services/payload/catering4-onboard-lbs") + getprop("services/payload/water1-onboard-lbs"));
+        if ((getprop("services/payload/weight-total-lbs") >= getprop("sim/weight[1]/max-lb")) and ((getprop("services/payload/baggage-loading") == 1) or (getprop("services/payload/catering1-loading") == 1) or (getprop("services/payload/catering2-loading") == 1) or (getprop("services/payload/catering3-loading") == 1) or (getprop("services/payload/catering4-loading") == 1) or (getprop("services/payload/water1-loading") == 1) or (getprop("services/payload/pax-boarding") == 1))) {
             setprop("services/payload/baggage-loading", 0);
             setprop("services/payload/pax-boarding", 0);
             screen.log.write("Captain, we are overloading the aircraft. Please reduce the number of passengers or cargo on board. Boarding & loading stopped.", 1, 0, 0);
         }
         
-        setprop("services/payload/expected-weight-lbs", getprop("services/payload/belly-request-lbs") + getprop("services/payload/catering1-request-lbs") + getprop("services/payload/catering2-request-lbs") + getprop("services/payload/catering3-request-lbs") + getprop("services/payload/catering4-request-lbs") + getprop("services/payload/first-request-nr") * 137 + getprop("services/payload/business-request-nr") * 137 + getprop("services/payload/economy-request-nr") * 137 + getprop("services/payload/crew-request-nr") * 150);
+        setprop("services/payload/expected-weight-lbs", getprop("services/payload/belly-request-lbs") + getprop("services/payload/catering1-request-lbs") + getprop("services/payload/catering2-request-lbs") + getprop("services/payload/catering3-request-lbs") + getprop("services/payload/catering4-request-lbs") + getprop("services/payload/water1-request-lbs") + getprop("services/payload/first-request-nr") * 137 + getprop("services/payload/business-request-nr") * 137 + getprop("services/payload/economy-request-nr") * 137 + getprop("services/payload/crew-request-nr") * 150);
         setprop("sim/weight[1]/weight-lb", getprop("services/payload/pax-onboard-lbs") + getprop("services/payload/belly-onboard-lbs"));
         setprop("sim/weight[2]/weight-lb", getprop("services/payload/catering1-onboard-lbs"));
         setprop("sim/weight[3]/weight-lb", getprop("services/payload/catering2-onboard-lbs"));
         setprop("sim/weight[4]/weight-lb", getprop("services/payload/catering3-onboard-lbs"));
         setprop("sim/weight[5]/weight-lb", getprop("services/payload/catering4-onboard-lbs"));
+        setprop("sim/weight[6]/weight-lb", getprop("services/payload/water1-onboard-lbs"));
         setprop("sim/weight[0]/weight-lb", getprop("services/payload/crew-onboard-lbs"));
         setprop("services/payload/SOB-nr", (getprop("services/payload/pax-onboard-nr") + getprop("services/payload/crew-onboard-nr")));
 
@@ -660,13 +702,19 @@ var _adjustspeed = func() {
             if (getprop("services/payload/catering3-loading") == 1) {
                 setprop("services/payload/catering3-onboard-lbs", getprop("services/payload/catering3-request-lbs") - 1.0);
             } elsif (getprop("services/payload/catering3-loading") == 2) {
-                setprop("services/payload/catering2-onboard-lbs", 0);
+                setprop("services/payload/catering3-onboard-lbs", 0);
             }
 
             if (getprop("services/payload/catering4-loading") == 1) {
                 setprop("services/payload/catering4-onboard-lbs", getprop("services/payload/catering4-request-lbs") - 1.0);
             } elsif (getprop("services/payload/catering4-loading") == 2) {
                 setprop("services/payload/catering4-onboard-lbs", 0);
+            }
+
+            if (getprop("services/payload/water1-loading") == 1) {
+                setprop("services/payload/water1-onboard-lbs", getprop("services/payload/water1-request-lbs") - 1.0);
+            } elsif (getprop("services/payload/water1-loading") == 2) {
+                setprop("services/payload/water1-onboard-lbs", 0);
             }
                 
         setprop("services/payload/speed", 6.0); #Reset the speed to normal.

@@ -2,13 +2,14 @@
 
 <PropertyList>
 
-    <name>payload_200F</name>
+    <name>payload_300F</name>
     <layout>vbox</layout>
+    <padding>500</padding>
 
     <group>
     <layout>hbox</layout>
         <text>
-            <label>Freight</label>
+            <label>Freight 300F</label>
         </text>
         
         <empty>
@@ -46,11 +47,11 @@
         <stretch>true</stretch>
     </empty>
     
-    <empty>
+    <text>
         <row>0</row>
         <col>2</col>
-        <stretch>true</stretch>
-    </empty>
+        <label>Requested</label>
+    </text>
 
     <empty>
         <row>0</row>
@@ -58,11 +59,12 @@
         <stretch>true</stretch>
     </empty>
     
-    <empty>
+    <text>
         <row>0</row>
         <col>4</col>
-        <stretch>true</stretch>
-    </empty>
+        <label>On board</label>
+        <halign>left</halign>
+    </text>
 
     <empty>
         <row>0</row>
@@ -88,11 +90,11 @@
         <stretch>true</stretch>
     </empty>
 
-    <text>
+    <empty>
         <row>0</row>
         <col>9</col>
-        <label>Requested</label>
-    </text>
+        <stretch>true</stretch>
+    </empty>
 
     <empty>
         <row>0</row>
@@ -123,59 +125,13 @@
         <col>14</col>
         <stretch>true</stretch>
     </empty>
-
-    <empty>
+    
+    <text>
         <row>0</row>
         <col>15</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>0</row>
-        <col>16</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <text>
-        <row>0</row>
-        <col>17</col>
-        <label>On board</label>
-        <halign>left</halign>
-    </text>
-
-    <empty>
-        <row>0</row>
-        <col>18</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <text>
-        <row>0</row>
-        <col>19</col>
         <label>Weight</label>
-        <halign>left</halign>
+        <halign>right</halign>
     </text>
-
-    <empty>
-        <row>0</row>
-        <col>20</col>
-        <stretch>true</stretch>
-    </empty>
-    
-    <text>
-        <row>0</row>
-        <col>21</col>
-        <label>Lbs</label>
-        <halign>left</halign>
-    </text>
-
-   </group>
-
-    <hrule />
-    
-    <group>
-
-    <layout>table</layout>
     
     <text>
         <row>1</row>
@@ -194,8 +150,8 @@
             <binding>
                 <command>property-adjust</command>
                 <property>services/payload/belly-request-lbs</property>
-                <step>-1.0</step>
-                <min>0</min>
+                <step>-10.0</step>
+                <min>0.0</min>
                 <command>dialog-apply</command>
             </binding>
             <halign>left</halign>
@@ -207,8 +163,8 @@
         <pref-width>250</pref-width>
         <property>services/payload/belly-request-lbs</property>
         <min>0.0</min>
-        <max>230000.0</max>
-        <step>1.0</step>
+        <max>0.0</max>
+        <step>10.0</step>
         <binding>
             <command>dialog-apply</command>
         </binding>
@@ -225,8 +181,8 @@
             <binding>
                 <command>property-adjust</command>
                 <property>services/payload/belly-request-lbs</property>
-                <step>1.0</step>
-                <max>230000.0</max>
+                <step>10.0</step>
+                <max>0.0</max>
                 <command>dialog-apply</command>
             </binding>
             <halign>left</halign>
@@ -240,11 +196,13 @@
         <halign>left</halign>
     </text>
 
-    <empty>
+    <text>
         <row>1</row>
         <col>5</col>
-        <stretch>true</stretch>
-    </empty>
+        <property>services/payload/belly-onboard-lbs</property>
+        <live>true</live>
+        <halign>right</halign>
+    </text>
 
     <empty>
         <row>1</row>
@@ -276,11 +234,13 @@
         <stretch>true</stretch>
     </empty>
 
-    <empty>
+    <text>
         <row>1</row>
         <col>11</col>
-        <stretch>true</stretch>
-    </empty>
+        <property>services/payload/belly-onboard-lbs</property>
+        <live>true</live>
+        <halign>left</halign>
+    </text>
     
    <empty>
         <row>1</row>
@@ -303,58 +263,8 @@
    <text>
         <row>1</row>
         <col>15</col>
-        <property>services/payload/belly-onboard-lbs</property>
-        <live>true</live>
+        <label>Lbs</label>
         <halign>right</halign>
-    </text>
-
-    <empty>
-        <row>1</row>
-        <col>16</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>1</row>
-        <col>17</col>
-        <stretch>true</stretch>
-    </empty>
-
-   <empty>
-        <row>1</row>
-        <col>18</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>1</row>
-        <col>19</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>1</row>
-        <col>20</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>1</row>
-        <col>21</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>1</row>
-        <col>22</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <text>
-        <row>1</row>
-        <col>23</col>
-        <label>Lbs  </label>
-        <halign>left</halign>
     </text>
 
     <text>
@@ -420,11 +330,13 @@
         <halign>left</halign>
     </text>
 
-    <empty>
+    <text>
         <row>2</row>
         <col>5</col>
-        <stretch>true</stretch>
-    </empty>
+        <property>services/payload/catering1-onboard-lbs</property>
+        <live>true</live>
+        <halign>right</halign>
+    </text>
 
     <empty>
         <row>2</row>
@@ -456,11 +368,13 @@
         <stretch>true</stretch>
     </empty>
     
-    <empty>
+    <text>
         <row>2</row>
         <col>11</col>
-        <stretch>true</stretch>
-    </empty>
+        <property>services/payload/catering1-onboard-lbs</property>
+        <live>true</live>
+        <halign>left</halign>
+    </text>
 
     <empty>
         <row>2</row>
@@ -483,69 +397,153 @@
     <text>
         <row>2</row>
         <col>15</col>
-        <property>services/payload/catering1-onboard-lbs</property>
+        <label>Lbs</label>
+        <halign>right</halign>
+    </text>
+
+    <text>
+        <row>3</row>
+        <col>0</col>
+        <label>Water</label>
+        <halign>right</halign>
+    </text>
+    
+    <button>
+            <row>3</row>
+            <col>1</col>
+            <legend>-</legend>
+            <pref-width>20</pref-width>
+            <pref-height>20</pref-height>
+            <padding>0</padding>
+            <binding>
+                <command>property-adjust</command>
+                <property>services/payload/water1-request-lbs</property>
+                <step>-10.0</step>
+                <min>0.0</min>
+                <command>dialog-apply</command>
+            </binding>
+            <halign>left</halign>
+    </button>
+    
+    <slider>
+        <row>3</row>
+        <col>2</col>
+        <pref-width>250</pref-width>
+        <property>services/payload/water1-request-lbs</property>
+        <min>0.0</min>
+        <max>0.0</max>
+        <step>10.0</step>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <live>true</live>
+    </slider>
+    
+    <button>
+            <row>3</row>
+            <col>3</col>
+            <legend>+</legend>
+            <pref-width>20</pref-width>
+            <pref-height>20</pref-height>
+            <padding>0</padding>
+            <binding>
+                <command>property-adjust</command>
+                <property>services/payload/water1-request-lbs</property>
+                <step>10.0</step>
+                <max>0.0</max>
+                <command>dialog-apply</command>
+            </binding>
+            <halign>left</halign>
+    </button>
+    
+    <text>
+        <row>3</row>
+        <col>4</col>
+        <property>services/payload/water1-request-lbs</property>
+        <live>true</live>
+        <halign>left</halign>
+    </text>
+
+    <text>
+        <row>3</row>
+        <col>5</col>
+        <property>services/payload/water1-onboard-lbs</property>
         <live>true</live>
         <halign>right</halign>
     </text>
 
     <empty>
-        <row>2</row>
-        <col>16</col>
+        <row>3</row>
+        <col>6</col>
         <stretch>true</stretch>
     </empty>
 
     <empty>
-        <row>2</row>
-        <col>17</col>
+        <row>3</row>
+        <col>7</col>
         <stretch>true</stretch>
     </empty>
 
     <empty>
-        <row>2</row>
-        <col>18</col>
+        <row>3</row>
+        <col>8</col>
         <stretch>true</stretch>
     </empty>
 
     <empty>
-        <row>2</row>
-        <col>19</col>
+        <row>3</row>
+        <col>9</col>
         <stretch>true</stretch>
     </empty>
 
     <empty>
-        <row>2</row>
-        <col>20</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>2</row>
-        <col>21</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>2</row>
-        <col>22</col>
+        <row>3</row>
+        <col>10</col>
         <stretch>true</stretch>
     </empty>
     
     <text>
-        <row>2</row>
-        <col>23</col>
+        <row>3</row>
+        <col>11</col>
+        <property>services/payload/water1-onboard-lbs</property>
+        <live>true</live>
+        <halign>left</halign>
+    </text>
+
+    <empty>
+        <row>3</row>
+        <col>12</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>13</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>3</row>
+        <col>14</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <text>
+        <row>3</row>
+        <col>15</col>
         <label>Lbs</label>
         <halign>right</halign>
     </text>
     
     <text>
-        <row>3</row>
+        <row>4</row>
         <col>0</col>
         <label>Crew </label>
         <halign>right</halign>
     </text>
     
     <button>
-            <row>3</row>
+            <row>4</row>
             <col>1</col>
             <legend>-</legend>
             <pref-width>20</pref-width>
@@ -562,9 +560,9 @@
     </button>
     
     <slider>
-        <row>3</row>
+        <row>4</row>
         <col>2</col>
-        <width>2000</width>
+        <pref-width>250</pref-width>
         <property>services/payload/crew-request-nr</property>
         <min>2.0</min>
         <max>4.0</max>
@@ -576,7 +574,7 @@
     </slider>
     
     <button>
-            <row>3</row>
+            <row>4</row>
             <col>3</col>
             <legend>+</legend>
             <pref-width>20</pref-width>
@@ -593,128 +591,82 @@
     </button>
     
     <text>
-        <row>3</row>
+        <row>4</row>
         <col>4</col>
         <property>services/payload/crew-request-nr</property>
         <live>true</live>
         <halign>left</halign>
     </text>
 
-    <empty>
-        <row>3</row>
-        <col>5</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>6</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>7</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>8</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>9</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>10</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>11</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>12</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>13</col>
-        <stretch>true</stretch>
-    </empty>
-
-    <empty>
-        <row>3</row>
-        <col>14</col>
-        <stretch>true</stretch>
-    </empty>
-    
     <text>
-        <row>3</row>
-        <col>15</col>
-        <property>services/payload/crew-onboard-lbs</property>
+        <row>4</row>
+        <col>5</col>
+        <property>services/payload/crew-onboard-nr</property>
         <live>true</live>
         <halign>right</halign>
     </text>
 
     <empty>
-        <row>3</row>
-        <col>16</col>
-        <stretch>true</stretch>
-    </empty>
-
-   <empty>
-        <row>3</row>
-        <col>17</col>
-        <stretch>true</stretch>
-    </empty>
-
-   <empty>
-        <row>3</row>
-        <col>18</col>
+        <row>4</row>
+        <col>6</col>
         <stretch>true</stretch>
     </empty>
 
     <empty>
-        <row>3</row>
-        <col>19</col>
+        <row>4</row>
+        <col>7</col>
         <stretch>true</stretch>
     </empty>
 
     <empty>
-        <row>3</row>
-        <col>20</col>
+        <row>4</row>
+        <col>8</col>
         <stretch>true</stretch>
     </empty>
 
     <empty>
-        <row>3</row>
-        <col>21</col>
+        <row>4</row>
+        <col>9</col>
         <stretch>true</stretch>
     </empty>
 
     <empty>
-        <row>3</row>
-        <col>22</col>
+        <row>4</row>
+        <col>10</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <text>
+        <row>4</row>
+        <col>11</col>
+        <property>services/payload/crew-onboard-lbs</property>
+        <live>true</live>
+        <halign>left</halign>
+    </text>
+
+    <empty>
+        <row>4</row>
+        <col>12</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>4</row>
+        <col>13</col>
+        <stretch>true</stretch>
+    </empty>
+
+    <empty>
+        <row>4</row>
+        <col>14</col>
         <stretch>true</stretch>
     </empty>
     
     <text>
-        <row>3</row>
-        <col>23</col>
-        <label>Lbs  </label>
-        <halign>left</halign>
+        <row>4</row>
+        <col>15</col>
+        <label>Lbs</label>
+        <halign>right</halign>
     </text>
 
 </group>
@@ -728,12 +680,29 @@
 <text>
     <row>0</row>
     <col>0</col>
-    <label>Expected payload weight:</label>
+    <label>Souls on Board:</label>
     <halign>right</halign>
+    <padding>0</padding>
 </text>
 
 <text>
     <row>0</row>
+    <col>1</col>
+    <property>services/payload/SOB-nr</property>
+    <live>true</live>
+    <halign>left</halign>
+</text>
+
+<text>
+    <row>1</row>
+    <col>0</col>
+    <label>Expected crew &amp; payload weight:</label>
+    <halign>right</halign>
+    <padding>0</padding>
+</text>
+
+<text>
+    <row>1</row>
     <col>1</col>
     <property>services/payload/expected-weight-lbs</property>
     <live>true</live>
@@ -741,29 +710,31 @@
 </text>
 
 <text>
-    <row>1</row>
+    <row>2</row>
     <col>0</col>
-    <label>Total payload weight:</label>
+    <label>Total crew &amp; payload weight:</label>
     <halign>right</halign>
+    <padding>0</padding>
 </text>
 
 <text>
-    <row>1</row>
+    <row>2</row>
     <col>1</col>
-    <property>sim/weight[1]/weight-lb</property>
+    <property>services/payload/weight-total-lbs</property>
     <live>true</live>
     <halign>left</halign>
 </text>
 
 <text>
-    <row>2</row>
+    <row>3</row>
     <col>0</col>
-    <label>Maximum payload weight:</label>
+    <label>Maximum crew &amp; payload weight:</label>
     <halign>right</halign>
+    <padding>0</padding>
 </text>
 
 <text>
-    <row>2</row>
+    <row>3</row>
     <col>1</col>
     <property>sim/weight[1]/max-lb</property>
     <live>true</live>
@@ -771,46 +742,49 @@
 </text>
 
 <text>
-    <row>3</row>
-    <col>0</col>
+    <row>1</row>
+    <col>2</col>
     <label>Gross weight:</label>
     <halign>right</halign>
 </text>
 
 <text>
-    <row>3</row>
-    <col>1</col>
+    <row>1</row>
+    <col>3</col>
     <property>yasim/gross-weight-lbs</property>
     <live>true</live>
     <halign>left</halign>
+    <padding>3</padding>
 </text>
 
 <text>
-    <row>4</row>
-    <col>0</col>
+    <row>2</row>
+    <col>2</col>
     <label>Maximum takeoff weight:</label>
     <halign>right</halign>
 </text>
 
 <text>
-    <row>4</row>
-    <col>1</col>
+    <row>2</row>
+    <col>3</col>
     <property>sim/max-takeoff-weight</property>
     <halign>left</halign>
+    <padding>3</padding>
 </text>
 
 <text>
-    <row>5</row>
-    <col>0</col>
+    <row>3</row>
+    <col>2</col>
     <label>Maximum landing weight:</label>
     <halign>right</halign>
 </text>
 
 <text>
-    <row>5</row>
-    <col>1</col>
+    <row>3</row>
+    <col>3</col>
     <property>sim/max-landing-weight</property>
     <halign>left</halign>
+    <padding>3</padding>
 </text>
 
 </group>
@@ -1015,6 +989,62 @@
         <live>true</live>
     </checkbox>
 
+    <checkbox>
+        <row>5</row>
+        <col>1</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Water Truck</label>
+        <property>services/water/enable8</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>5</row>
+        <col>2</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Connect Water</label>
+        <property>services/water/move8</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+
+    <checkbox>
+        <row>6</row>
+        <col>1</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Lavatory Truck</label>
+        <property>services/lavatory/enable9</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+    
+    <checkbox>
+        <row>6</row>
+        <col>2</col>
+        <pref-width>120</pref-width>
+        <pref-height>20</pref-height>
+        <label>Connect Lavatory</label>
+        <property>services/lavatory/move9</property>
+        <binding>
+            <command>dialog-apply</command>
+        </binding>
+        <halign>left</halign>
+        <live>true</live>
+    </checkbox>
+
 </group>
 
 <hrule />
@@ -1031,14 +1061,16 @@
         <binding>
             <command>nasal</command>
                 <script>
-                    if ((getprop("services/payload/bagage2") == 1) or (getprop("services/payload/baggage-truck1-enable") == 1) or (getprop("services/payload/baggage-truck2-enable") == 1) and (getprop("services/payload/cargo_service") == 1) and (getprop("services/catering/enable") == 1)) {
+                    <![CDATA[
+                    if (((getprop("services/payload/baggage-truck1-enable") == 1) and (getprop("services/payload/baggage-truck2-enable") == 1)) and (getprop("services/payload/belly-request-lbs")!=0)) {
                         setprop("services/payload/baggage-loading", 1);
-                        var loadingtime = math.round((getprop("services/payload/belly-request-lbs") - getprop("services/payload/belly-onboard-lbs")) / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable") + getprop("services/payload/baggage-truck2-enable"))) / 60 * getprop("services/payload/speed"));
+                        var loadingtime = math.round((getprop("services/payload/belly-request-lbs") - getprop("services/payload/belly-onboard-lbs")) / (150 * (getprop("services/payload/baggage-truck1-enable") + getprop("services/payload/baggage-truck2-enable"))) / 60 * getprop("services/payload/speed"));
                         screen.log.write("Baggage loading started. Estimated loading time: " ~ loadingtime ~ " minutes.", 0, 0.584, 1);
                         setprop("services/payload/loadingtime_remaining", "Est. " ~ loadingtime ~ " min remaining");
                     } else {
                         screen.log.write("Please enable a baggage truck first!", 1, 0, 0);
                     }
+                    ]]>
                 </script>
         </binding>
     </button>
@@ -1074,7 +1106,7 @@
                     <![CDATA[
                     if (((getprop("services/catering/enable") != 0)) and (getprop("services/payload/catering1-request-lbs") != 0)) {
                         if (getprop("services/payload/catering1-max-lbs") < getprop("services/payload/catering1-request-lbs")) {
-                            screen.log.write("Captain, we can't load so many catering trolleys, please reduce the requested catering weight", 1, 0, 0);
+                            screen.log.write("Captain, we can't load so many catering , please reduce the requested catering weight", 1, 0, 0);
                         } else {
                             setprop("services/payload/catering1-loading", 1);
                             screen.log.write("Catering loading started.", 0, 0.584, 1);
@@ -1084,6 +1116,76 @@
                     }
                     ]]>
                 </script>
+        </binding>
+    </button>
+
+    <button>
+        <row>0</row>
+        <col>3</col>
+        <halign>left</halign>
+        <legend>water</legend>
+        <pref-width>120</pref-width>
+        <pref-height>24</pref-height>
+        <binding>
+            <command>nasal</command>
+                <script>
+                    <![CDATA[
+                    if (((getprop("services/water/enable8") != 0)) and (getprop("services/payload/water1-request-lbs") != 0)) {
+                        if (getprop("services/payload/water1-max-lbs") < getprop("services/payload/water1-request-lbs")) {
+                            screen.log.write("Captain, we can't load so many water, please reduce the requested water weight", 1, 0, 0);
+                        } else {
+                            setprop("services/payload/water1-loading", 1);
+                            screen.log.write("Water loading started.", 0, 0.584, 1);
+                        }
+                    } elsif (getprop("services/payload/water1-request-lbs") != 0) {
+                        screen.log.write("Please enable at least one water truck first!", 1, 0, 0);
+                    }
+                    ]]>
+                </script>
+        </binding>
+    </button>
+
+    <button>
+        <row>1</row>
+        <col>3</col>
+        <halign>left</halign>
+        <legend>unwater</legend>
+        <pref-width>120</pref-width>
+        <pref-height>24</pref-height>
+        <binding>
+            <command>nasal</command>
+                <script>
+                    <![CDATA[
+                    if (((getprop("services/lavatory/enable9") != 0)) and (getprop("services/payload/water1-onboard-lbs") != 0)) {
+                        setprop("services/payload/water1-loading", 2);
+                        screen.log.write("Lavatory and waste unloading started.", 0, 0.584, 1);
+                    } elsif (getprop("services/payload/water1-onboard-lbs") != 0) {
+                        screen.log.write("Please enable a lavatory truck first!", 1, 0, 0);
+                    }
+                    ]]>
+                </script>
+        </binding>
+    </button>
+
+    <button>
+        <legend>stop</legend>
+        <pref-width>120</pref-width>
+        <pref-height>24</pref-height>
+        <row>2</row>
+        <col>3</col>
+        <halign>left</halign>
+        <binding>
+            <command>nasal</command>
+            <script>
+                if ((getprop("services/payload/water1-loading") == 1) or (getprop("services/payload/water1-loading") == 3)) {
+                    setprop("services/payload/water1-loading", 0);
+                    screen.log.write("Water loading stopped.", 0, 0.584, 1);
+                } elsif ((getprop("services/payload/water1-loading") == 2) or (getprop("services/payload/water1-loading") == 4)) {
+                    setprop("services/payload/water1-loading", 0);
+                    screen.log.write("Lavatory unloading stopped.", 0, 0.584, 1);
+                }
+                setprop("services/payload/loadingtime_remaining", " ");
+            </script>
         </binding>
     </button>
     
@@ -1140,7 +1242,7 @@
                         setprop("services/payload/catering1-loading", 2);
                         screen.log.write("Catering and waste unloading started.", 0, 0.584, 1);
                     } elsif (getprop("services/payload/catering1-onboard-lbs") != 0) {
-                        screen.log.write("Please enable a catering truck to the galleys that contain trolleys first!", 1, 0, 0);
+                        screen.log.write("Please enable a catering truck first!", 1, 0, 0);
                     }
                     ]]>
                 </script>

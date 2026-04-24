@@ -32,6 +32,8 @@ var save_state = func {
         setprop("aircraft/settings/weight/catering3-onboard-lbs", getprop("services/payload/catering3-onboard-lbs"));
         setprop("aircraft/settings/weight/catering4-request-lbs", getprop("services/payload/catering4-request-lbs"));
         setprop("aircraft/settings/weight/catering4-onboard-lbs", getprop("services/payload/catering4-onboard-lbs"));
+        setprop("aircraft/settings/weight/water1-request-lbs", getprop("services/payload/water1-request-lbs"));
+        setprop("aircraft/settings/weight/water1-onboard-lbs", getprop("services/payload/water1-onboard-lbs"));
         setprop("aircraft/settings/weight/crew-request-nr", getprop("services/payload/crew-request-nr"));
         setprop("aircraft/settings/weight/crew-onboard-nr", getprop("services/payload/crew-onboard-nr"));
         setprop("aircraft/settings/weight/crew-onboard-lbs", getprop("services/payload/crew-onboard-lbs"));
@@ -41,6 +43,7 @@ var save_state = func {
         setprop("aircraft/settings/weight/weight4-lbs", getprop("sim/weight[3]/weight-lb"));
         setprop("aircraft/settings/weight/weight5-lbs", getprop("sim/weight[4]/weight-lb"));
         setprop("aircraft/settings/weight/weight6-lbs", getprop("sim/weight[5]/weight-lb"));
+        setprop("aircraft/settings/weight/weight7-lbs", getprop("sim/weight[6]/weight-lb"));
     };
     
     if (getprop("aircraft/settings/ground_services_persistent")) {
@@ -76,9 +79,15 @@ var save_state = func {
         setprop("aircraft/settings/services/catering/enable3", getprop("services/catering/enable3"));
         setprop("aircraft/settings/services/catering/position3", getprop("services/catering/position3"));
         setprop("aircraft/settings/services/catering/move3", getprop("services/catering/move3"));
-        setprop("aircraft/settings/services/camion/enable04", getprop("services/camion/enable4"));
+        setprop("aircraft/settings/services/camion/enable4", getprop("services/camion/enable4"));
         setprop("aircraft/settings/services/camion/position4", getprop("services/camion/position4"));
         setprop("aircraft/settings/services/camion/move4", getprop("services/camion/move4"));
+        setprop("aircraft/settings/services/water/enable8", getprop("services/water/enable8"));
+        setprop("aircraft/settings/services/water/position8", getprop("services/water/position8"));
+        setprop("aircraft/settings/services/water/move8", getprop("services/water/move8"));
+        setprop("aircraft/settings/services/lavatory/enable9", getprop("services/lavatory/enable9"));
+        setprop("aircraft/settings/services/lavatory/position9", getprop("services/lavatory/position9"));
+        setprop("aircraft/settings/services/lavatory/move9", getprop("services/lavatory/move9"));
         setprop("aircraft/settings/services/autopush/enabled", getprop("sim/model/autopush/enabled"));
         setprop("aircraft/settings/services/bus/bus1", getprop("services/bus/bus1-enable"));
         setprop("aircraft/settings/services/bus/bus2", getprop("services/bus/bus2-enable"));
@@ -93,10 +102,6 @@ var save_state = func {
         setprop("aircraft/settings/services/deicing_truck/crane", getprop("services/deicing_truck/crane"));
         setprop("aircraft/settings/controls/switches/air", getprop("controls/switches/air"));
         setprop("aircraft/settings/controls/switches/air1", getprop("controls/switches/air1"));
-        setprop("aircraft/settings/controls/switches/water", getprop("controls/switches/water"));
-        setprop("aircraft/settings/controls/switches/water1", getprop("controls/switches/water1"));
-        setprop("aircraft/settings/controls/switches/lavatory", getprop("controls/switches/lavatory"));
-        setprop("aircraft/settings/controls/switches/lavatory1", getprop("controls/switches/lavatory1"));
     };
     
     # Write everything to the aircraft specific config file
@@ -162,6 +167,8 @@ var load_state = func {
                 setprop("services/payload/catering3-onboard-lbs", getprop("aircraft/settings/weight/catering3-onboard-lbs"));
                 setprop("services/payload/catering4-request-lbs", getprop("aircraft/settings/weight/catering4-request-lbs"));
                 setprop("services/payload/catering4-onboard-lbs", getprop("aircraft/settings/weight/catering4-onboard-lbs"));
+                setprop("services/payload/water1-request-lbs", getprop("aircraft/settings/weight/water1-request-lbs"));
+                setprop("services/payload/water1-onboard-lbs", getprop("aircraft/settings/weight/water1-onboard-lbs"));
             }
             setprop("services/payload/crew-request-nr", getprop("aircraft/settings/weight/crew-request-nr"));
             setprop("services/payload/crew-onboard-nr", getprop("aircraft/settings/weight/crew-onboard-nr"));
@@ -172,6 +179,7 @@ var load_state = func {
             setprop("sim/weight[3]/weight-lb", getprop("aircraft/settings/weight/weight4-lbs"));
             setprop("sim/weight[4]/weight-lb", getprop("aircraft/settings/weight/weight5-lbs"));
             setprop("sim/weight[5]/weight-lb", getprop("aircraft/settings/weight/weight6-lbs"));
+            setprop("sim/weight[6]/weight-lb", getprop("aircraft/settings/weight/weight7-lbs"));
             print("Weight state ..... Loaded");
         };
     };
@@ -240,6 +248,12 @@ var load_state = func {
             setprop("services/camion/enable4", getprop("aircraft/settings/services/camion/enable4"));
             setprop("services/camion/position4", getprop("aircraft/settings/services/camion/position4"));
             setprop("services/camion/move4", getprop("aircraft/settings/services/camion/move4"));
+            setprop("services/water/enable8", getprop("aircraft/settings/services/water/enable8"));
+            setprop("services/water/position8", getprop("aircraft/settings/services/water/position8"));
+            setprop("services/water/move8", getprop("aircraft/settings/services/water/move8"));
+            setprop("services/lavatory/enable9", getprop("aircraft/settings/services/lavatory/enable9"));
+            setprop("services/lavatory/position9", getprop("aircraft/settings/services/lavatory/position9"));
+            setprop("services/lavatory/move9", getprop("aircraft/settings/services/lavatory/move9"));
             setprop("sim/model/autopush/enabled", getprop("aircraft/settings/services/autopush/enabled"));
             setprop("services/bus/bus1-enable", getprop("aircraft/settings/services/bus/bus1"));
             setprop("services/bus/bus1-enable", getprop("aircraft/settings/services/bus/bus1"));
@@ -254,10 +268,6 @@ var load_state = func {
             setprop("services/deicing_truck/crane", getprop("aircraft/settings/services/deicing_truck/crane"));
             setprop("controls/switches/air", getprop("aircraft/settings/controls/switches/air"));
             setprop("controls/switches/air1", getprop("aircraft/settings/controls/switches/air1"));
-            setprop("controls/switches/water", getprop("aircraft/settings/controls/switches/water"));
-            setprop("controls/switches/water1", getprop("aircraft/settings/controls/switches/water1"));
-            setprop("controls/switches/lavatory", getprop("aircraft/settings/controls/switches/lavatory"));
-            setprop("controls/switches/lavatory1", getprop("aircraft/settings/controls/switches/lavatory1"));
             print("Previous ground services ..... Loaded");
         };
     };

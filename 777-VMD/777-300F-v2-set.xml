@@ -3,7 +3,7 @@
     <sim n="0">
         <description>Boeing 777-300 Freighter-v2</description>
         <aero>777-300F-v2</aero>
-        <max-payload type="double">408360</max-payload>
+        <max-payload type="double">408060</max-payload>
         <max-landing-weight type="double">554000</max-landing-weight>
         <max-takeoff-weight type="double">775000</max-takeoff-weight>
         <startup>
@@ -17,12 +17,6 @@
 
             <door>
                 <position-x-m type="float">-23.85</position-x-m>
-                <position-y-m type="float"> -2.95</position-y-m>
-                <position-z-m type="float"> -0.42</position-z-m>
-                <jetway-hood-deg type="float">3</jetway-hood-deg>
-            </door>
-            <door>
-                <position-x-m type="float">-13.49</position-x-m>
                 <position-y-m type="float"> -2.95</position-y-m>
                 <position-z-m type="float"> -0.42</position-z-m>
                 <jetway-hood-deg type="float">3</jetway-hood-deg>
@@ -236,10 +230,10 @@
                 </item>
                     <item n="3">
                         <label>Weight and payload</label>
-                        <name>payload_200F</name>
+                        <name>payload_300F</name>
                         <binding>
                             <command>dialog-show</command>
-                            <dialog-name>payload_200F</dialog-name>
+                            <dialog-name>payload_300F</dialog-name>
                         </binding>
                     </item>
                  <item n="9">
@@ -300,7 +294,7 @@
         <weight n="1">
             <name>Cargo</name>
             <weight-lb type="double">90000</weight-lb>
-            <max-lb type="double">230000</max-lb>
+            <max-lb type="double">230672</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <weight n="2">
@@ -308,6 +302,34 @@
             <name>Catering1</name>
             <weight-lb type="double">0</weight-lb>
             <max-lb type="double">72</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        <weight n="3">
+            <!--  Doors 2 Catering Galley -->
+            <name>Catering2</name>
+            <weight-lb type="double">0</weight-lb>
+            <max-lb type="double">0</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        <weight n="4">
+            <!--  Doors 4 Catering Galley -->
+            <name>Catering3</name>
+            <weight-lb type="double">0</weight-lb>
+            <max-lb type="double">0</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        <weight n="5">
+            <!--  Doors 5 Catering Galley -->
+            <name>Catering4</name>
+            <weight-lb type="double">0</weight-lb>
+            <max-lb type="double">0</max-lb>
+            <min-lb type="double">0</min-lb>
+        </weight>
+        <weight n="6">
+            <!--  Doors 6 Catering Galley -->
+            <name>Water1</name>
+            <weight-lb type="double">0</weight-lb>
+            <max-lb type="double">2740</max-lb>
             <min-lb type="double">0</min-lb>
         </weight>
         <aircraft-operator>AFR</aircraft-operator>
@@ -437,34 +459,20 @@
       <hood-rot>-6</hood-rot>
       <!--z-entrance-rotation>26</z-entrance-rotation-->
      </jetway-pos>
-     <jetway2-pos>
-      <x-tra>2.8</x-tra>
-      <y-rot>8.0</y-rot>
-      <z-rot>48</z-rot>
-      <hood-rot>-5</hood-rot>
-      <!--z-entrance-rotation>49</z-entrance-rotation-->
-     </jetway2-pos>
     </aircraft>
-
-    <limits>
-        <mass-and-balance>
-            <maximum-ramp-mass-lbs>775000</maximum-ramp-mass-lbs>
-            <maximum-takeoff-mass-lbs>775000</maximum-takeoff-mass-lbs>
-            <maximum-landing-mass-lbs>554000</maximum-landing-mass-lbs>
-            <maximum-zero-fuel-mass-lbs>366640</maximum-zero-fuel-mass-lbs>
-        </mass-and-balance>
-    </limits>
 
     <services> 
         <payload>
+            <belly-max-lbs>227260</belly-max-lbs>
             <catering1-max-lbs>72</catering1-max-lbs>
+            <water1-max-lbs>2740</water1-max-lbs>
             <crew-max-nr>4</crew-max-nr>
         </payload>
     </services>
 
     <yasim>
-        <empty-weight-lbs type = "float">366640</empty-weight-lbs>
-        <zero-fuel-weight-lbs type = "float">366640</zero-fuel-weight-lbs>
+        <empty-weight-lbs type = "float">366940</empty-weight-lbs>
+        <zero-fuel-weight-lbs type = "float">366940</zero-fuel-weight-lbs>
     </yasim>
     
 </PropertyList>
