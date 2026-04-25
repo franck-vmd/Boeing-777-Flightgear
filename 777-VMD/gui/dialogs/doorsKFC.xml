@@ -417,6 +417,58 @@
      <layout>hbox</layout>
      <halign>center</halign>  
      <text> 
+     <label>Tanker</label>
+     </text>
+</group>
+
+<hrule/>
+
+<group>
+    <stretch>true</stretch>
+    <layout>hbox</layout>
+    <halign>fill</halign>
+    <valign>top</valign>
+    <default-padding>6</default-padding>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Close</desc>
+     <legend>Close</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.close("c50");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+        
+<button>
+     <pref-width>70</pref-width>
+     <desc>Open</desc>
+     <legend>Open</legend>
+     <equal>true</equal>
+     <repeatable type="bool">false</repeatable>
+     <binding>
+     <command>nasal</command>
+     <script>
+     b777.doors.open("c50");
+     controls.click(2);
+     </script>
+     </binding>
+</button>
+
+</group>
+
+<hrule/>
+
+<group>
+     <stretch>true</stretch>  
+     <layout>hbox</layout>
+     <halign>center</halign>  
+     <text> 
      <label>Close-Open automatique</label>
      </text>
 </group>
@@ -457,6 +509,7 @@
      b777.doors.close("c8");
      b777.doors.close("c33");
      b777.doors.close("c30");
+     b777.doors.close("c50");
      controls.click(2);
      </script>
      </binding>
@@ -489,6 +542,7 @@
      b777.doors.open("c8");
      b777.doors.open("c33");
      b777.doors.open("c30");
+     b777.doors.open("c50");
      controls.click(2);
      </script>
      </binding>

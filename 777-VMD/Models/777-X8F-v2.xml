@@ -124,7 +124,6 @@ Franck.VMD
         <object-name>LInlets.001</object-name>
         <object-name>RInlets.001</object-name>
         <object-name>RInlets</object-name>
-        <object-name>FrtGear.lines</object-name>
         <object-name>Rgear.tubing</object-name>
         <object-name>Lgear.tubing</object-name>
         <object-name>Wheelwell</object-name>
@@ -357,6 +356,7 @@ Franck.VMD
         <object-name>Rstrut</object-name>
         <object-name>Lgear</object-name>
         <object-name>Rgear</object-name>
+        <object-name>FrtGear.lines</object-name>
         <property-base>sim/model/fuselage7</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-X8F/AFR9.png</texture>
