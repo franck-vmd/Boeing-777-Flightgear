@@ -1,7 +1,7 @@
 <PropertyList include="777-v2-set-common.xml">
 
     <sim n="0">
-        <description>Boeing 777 Freighter-v2</description>
+        <description>Boeing 777-200 Freighter-v2</description>
         <aero>777-200F-v2</aero>
         <max-payload type="double">448500</max-payload>
         <max-landing-weight type="double">575000</max-landing-weight>
@@ -9,17 +9,19 @@
         <startup>
             <splash-texture>Aircraft/777-VMD/gui/Previews/splash-cargo.png</splash-texture>
         </startup>
+
         <variant-of>777-200-v2</variant-of>
+
         <model n="0">
             <path>Aircraft/777-VMD/Models/777-200F-v2.xml</path>
 
-        <door>
+             <door>
                 <position-x-m type="float">-18.30</position-x-m>
                 <position-y-m type="float"> -2.95</position-y-m>
                 <position-z-m type="float"> -0.42</position-z-m>
                 <jetway-hood-deg type="float">3</jetway-hood-deg>
             </door>
-	    <ramp>
+	        <ramp>
 	            <x-m type="float">-19.284</x-m>
                 <class type="string">1</class>
             </ramp>
@@ -333,6 +335,14 @@
         </weight>
         <aircraft-operator>AFR</aircraft-operator>
     </sim>
+
+    <consumables n="0">
+        <fuel n="0">
+            <tank n="3"><name>Rear A</name></tank>
+            <tank n="4"><name>Rear B</name></tank>
+            <tank n="5"><name>Rear C</name></tank>
+        </fuel>
+    </consumables>
 
     <instrumentation n="0">
         <cdu n="0">
