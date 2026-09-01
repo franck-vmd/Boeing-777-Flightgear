@@ -2770,9 +2770,9 @@ Franck.VMD
 		<type>locked-track</type>
 		<object-name>FUdamper</object-name> 
 		<center>
-		  <x-m>-26.142</x-m>
+		  <x-m>-26.1415</x-m>
 		  <y-m>0</y-m>
-		  <z-m>-3.87775</z-m>
+		  <z-m>-3.87774</z-m>
 		</center>
 		<lock-axis>
 		  <x>0</x>
@@ -2787,18 +2787,149 @@ Franck.VMD
 		
 		<target-name>FrtStrut</target-name> 
 		<target-center>  
-		  <x-m>-26.1762</x-m>
+		  <x-m>-26.1756</x-m>
 		  <y-m>0</y-m>
 		  <z-m>-4.53875</z-m>
 		</target-center>
 		
 		<slave-name>FLdamper</slave-name>
 		<slave-center>  
-		  <x-m>-25.7491</x-m>
+		  <x-m>-25.7485</x-m>
 		  <y-m>0</y-m>
-		  <z-m>-4.22748</z-m>
+		  <z-m>-4.22749</z-m>
 		</slave-center>
 	</animation>
+
+      <!-- scissor front traint 1 -->
+
+          <animation>
+		<type>locked-track</type>
+		<object-name>FrtGear.002</object-name> 
+		<center>
+		  <x-m>-26.60922</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-3.44839</z-m>
+		</center>
+		<lock-axis>
+		  <x>0</x>
+		  <y>1</y> 
+		  <z>0</z>
+		</lock-axis>
+		<track-axis> 
+		  <x>0</x>
+		  <y>0</y>
+		  <z>1</z>
+		</track-axis>
+		
+		<target-name>FrtGear.007</target-name> 
+		<target-center>  
+		  <x-m>-28.48282</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-1.25964</z-m>
+		</target-center>
+		
+		<slave-name>FrtGear.003</slave-name>
+		<slave-center>  
+		  <x-m>-27.08332</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-2.56656</z-m>
+		</slave-center>
+	</animation>
+
+    <!-- scissor front traint 2 -->
+
+          <animation>
+		<type>locked-track</type>
+		<object-name>FrtGear.005</object-name> 
+		<center>
+		  <x-m>-26.45752</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-2.11959</z-m>
+		</center>
+		<lock-axis>
+		  <x>0</x>
+		  <y>1</y> 
+		  <z>0</z>
+		</lock-axis>
+		<track-axis> 
+		  <x>0</x>
+		  <y>0</y>
+		  <z>1</z>
+		</track-axis>
+		
+		<target-name>Cube.002</target-name> 
+		<target-center>  
+		  <x-m>-27.08382</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-2.56696</z-m>
+		</target-center>
+		
+		<slave-name>FrtGear.004</slave-name>
+		<slave-center>  
+		  <x-m>-26.74552</x-m>
+		  <y-m>0</y-m>
+		  <z-m>-2.38441</z-m>
+		</slave-center>
+	</animation>
+
+    <!-- scissor front traint 3 -->
+
+          <animation>
+    <type>locked-track</type>
+
+    <object-name>FrtGear.006</object-name>
+    <center>
+      <x-m>-26.80312</x-m>
+	  <y-m>0</y-m>
+	  <z-m>-2.32538</z-m>
+    </center>
+    <lock-axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </lock-axis>
+    <track-axis>
+      <x>0</x>
+      <y>0</y>
+      <z>0</z>
+    </track-axis>
+
+    <target-name>FrtGear.011</target-name>
+    <target-center>
+      <x-m>-26.18752</x-m>
+      <y-m>0</y-m>
+      <z-m>-2.11959</z-m>
+    </target-center>
+
+  </animation>
+
+   <animation>
+        <type>translate</type>
+        <object-name>FrtGear.009</object-name>
+        <property>gear/gear[0]/position-norm</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.1</ind><dep>0</dep></entry>
+            <entry><ind>0.2</ind><dep>0</dep></entry>
+            <entry><ind>0.3</ind><dep>0.05</dep></entry>
+            <entry><ind>0.4</ind><dep>0.03</dep></entry>
+            <entry><ind>0.5</ind><dep>0.03</dep></entry>
+            <entry><ind>0.6</ind><dep>0.03</dep></entry>
+            <entry><ind>0.7</ind><dep>0.05</dep></entry>
+            <entry><ind>0.8</ind><dep>0.05</dep></entry>
+            <entry><ind>0.9</ind><dep>0.05</dep></entry>
+            <entry><ind>0.95</ind><dep>0.05</dep></entry>
+            <entry><ind>0.97</ind><dep>0.05</dep></entry>
+            <entry><ind>0.98</ind><dep>0.05</dep></entry>
+            <entry><ind>0.99</ind><dep>0.05</dep></entry>
+            <entry><ind>1</ind><dep>0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
 
   <!--       Left Gear      -->
 
@@ -9395,205 +9526,24 @@ Franck.VMD
           </and>
         </condition>
     </animation>
-       
+    
     <animation>
-        <type>select</type>
-        <object-name>RHLND.flare</object-name>
-        <condition>
-            <and>
-           <greater-than>
+    <type>select</type>
+        <object-name>Taxi.flareL</object-name>
+        <object-name>Taxi.flareR</object-name>
+    <condition>
+        <and>
+          <greater-than>
 			<property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
 		</greater-than>
-            <property>controls/lighting/landing-light[2]</property>
-          </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>material</type>
-        <object-name>WingsLightR</object-name>
-        <condition>
-         <and>
-		<greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-			<property>systems/electrical/outputs/landing-light[2]</property>
-         </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.8</blue>
-        </emission>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>Fuselagelumiere-r</object-name>
-        <condition>
-         <and>
-           <greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-            <or>
-            <property>controls/lighting/landing-light[2]</property>
-            <property>controls/lighting/R-RwayLight</property>
-          </or>
-      </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>RHLND.flare.001</object-name>
-        <condition>
-         <and>
-		<greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-                <property>systems/electrical/outputs/R-RwayLight</property>
-          </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>material</type>
-        <object-name>Wings.Rlight</object-name>
-        <condition>
-         <and>
-		<greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-			<property>controls/lighting/R-RwayLight</property>
-         </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.8</blue>
-        </emission>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>LHLND.flare</object-name>
-        <condition>
-            <and>
-           <greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-            <property>controls/lighting/landing-light[1]</property>
-          </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>material</type>
-        <object-name>WingsLightL</object-name>
-        <condition>
-         <and>
-		<greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-			<property>systems/electrical/outputs/landing-light[1]</property>
-         </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.8</blue>
-        </emission>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>Fuselagelumiere-l</object-name>
-        <condition>
-         <and>
-           <greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-            <or>
-            <property>controls/lighting/landing-light[1]</property>
-            <property>controls/lighting/L-RwayLight</property>
-          </or>
-      </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>LHLND.flare.001</object-name>
-        <condition>
-         <and>
-		<greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-                <property>systems/electrical/outputs/L-RwayLight</property>
-          </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>material</type>
-        <object-name>Wings.Llight</object-name>
-        <condition>
-         <and>
-		<greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-			<property>controls/lighting/L-RwayLight</property>
-         </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.8</blue>
-        </emission>
-    </animation>
-
-    <animation>
-        <type>select</type>
-        <object-name>CTRLND.flareL</object-name>
-        <object-name>CTRLND.flareR</object-name>
-        <condition>
-           <and>
-             <greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-            <property>controls/lighting/landing-light[0]</property>
-         </and>
-        </condition>
-    </animation>
-
-    <animation>
-        <type>material</type>
-        <object-name>CTRLND-on</object-name>
-        <condition>
-         <and>
-		<greater-than>
-			<property>systems/electrical/CPT-FLT-INST</property>
-                <value>24.0</value>
-		</greater-than>
-			<property>systems/electrical/outputs/landing-light[0]</property>
-         </and>
-        </condition>
-        <emission>
-            <red>0.8</red>
-            <green>0.8</green>
-            <blue>0.8</blue>
-        </emission>
+                <property>sim/multiplay/generic/int[2]</property>
+        <equals>
+            <property>gear/gear[0]/position-norm</property>
+            <value>1.0</value>
+        </equals>
+        </and>
+    </condition>
     </animation>
 
     <animation>
@@ -9619,22 +9569,110 @@ Franck.VMD
     </animation>
 
     <animation>
-    <type>select</type>
-        <object-name>Taxi.flareL</object-name>
-        <object-name>Taxi.flareR</object-name>
-    <condition>
-        <and>
-          <greater-than>
+        <type>material</type>
+        <object-name>CTRLND-on</object-name>
+        <condition>
+         <and>
+		<greater-than>
 			<property>systems/electrical/CPT-FLT-INST</property>
                 <value>24.0</value>
 		</greater-than>
-                <property>sim/multiplay/generic/int[2]</property>
-        <equals>
-            <property>gear/gear[0]/position-norm</property>
-            <value>1.0</value>
-        </equals>
-        </and>
-    </condition>
+        <greater-than>
+			<property>systems/electrical/outputs/landing-light[0]</property>
+                <value>1.0</value>
+		</greater-than>
+         </and>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>Fuselagelumiere-l</object-name>
+        <object-name>LHLND.flare</object-name>
+        <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+          <or>
+            <property>controls/lighting/landing-light[1]</property>
+            <property>controls/lighting/L-RwayLight</property>
+          </or>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>WingsLightL</object-name>
+        <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+          <or>
+            <property>controls/lighting/landing-light[1]</property>
+            <property>controls/lighting/L-RwayLight</property>
+          </or>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+    
+    <animation>
+        <type>select</type>
+        <object-name>Fuselagelumiere-r</object-name>
+        <object-name>RHLND.flare</object-name>
+        <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <or>
+            <property>controls/lighting/landing-light[2]</property>
+            <property>controls/lighting/R-RwayLight</property>
+          </or>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>WingsLightR</object-name>
+        <condition>
+           <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <or>
+            <property>controls/lighting/landing-light[2]</property>
+            <property>controls/lighting/R-RwayLight</property>
+          </or>
+        </condition>
+        <emission>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>CTRLND.flareL</object-name>
+        <object-name>CTRLND.flareR</object-name>
+        <condition>
+             <greater-than>
+			<property>systems/electrical/CPT-FLT-INST</property>
+                <value>24.0</value>
+		</greater-than>
+            <property>controls/lighting/landing-light[0]</property>
+        </condition>
     </animation>
 
     <animation>
