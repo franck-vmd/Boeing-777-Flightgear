@@ -42,7 +42,7 @@ if you contacted me before making any changes to this software.
 					</greater-than>
 					<less-than>
 						<property>engines/engine[0]/rpm</property>
-						<value>18.5</value>
+						<value>18</value>
 					</less-than>
 				</and>
 		</condition>
