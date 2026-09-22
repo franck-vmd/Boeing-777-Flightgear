@@ -403,6 +403,12 @@ Franck.VMD
         <object-name>Lgear</object-name>
         <object-name>Rgear</object-name>
         <object-name>FrtGear.lines</object-name>
+        <object-name>FrtGearVerinL1</object-name>
+        <object-name>FrtGearVerinR1</object-name>
+        <object-name>FrtGearVerinL2</object-name>
+        <object-name>FrtGearVerinL1.001</object-name>
+        <object-name>FrtGearVerinR2</object-name>
+        <object-name>FrtGearVerinR1.001</object-name>
         <property-base>sim/model/fuselage7</property-base>
         <texture-prop>texture</texture-prop>
         <texture>Liveries-200/AFR9.png</texture>
@@ -621,6 +627,12 @@ Franck.VMD
         <object-name>Valve8R</object-name>
         <object-name>ValveAR</object-name>
         <object-name>ValveAL</object-name>
+        <object-name>FrtGearVerinL1</object-name>
+        <object-name>FrtGearVerinR1</object-name>
+        <object-name>FrtGearVerinL2</object-name>
+        <object-name>FrtGearVerinL1.001</object-name>
+        <object-name>FrtGearVerinR2</object-name>
+        <object-name>FrtGearVerinR1.001</object-name>
     </effect>
     
     <effect>
@@ -2382,6 +2394,8 @@ Franck.VMD
         <object-name>CTRLND.flareL</object-name>
         <object-name>CTRLND.flareR</object-name>
         <object-name>CTRLND-on</object-name>
+        <object-name>FrtGearVerinL1</object-name>
+        <object-name>FrtGearVerinR1</object-name>
     </animation>
 
     <animation>
