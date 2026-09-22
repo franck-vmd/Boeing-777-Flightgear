@@ -8,7 +8,9 @@
 		<type>material</type>
 		<texture>bus.png</texture>
                 <object-name>Bus_Front</object-name>
+                <object-name>Bus_Front-roue</object-name>
                 <object-name>Bus_Back</object-name>
+                <object-name>Bus_Back-roue</object-name>
        </animation>
 
        <effect>
@@ -20,7 +22,7 @@
 	<animation>
 		<type>select</type>
         <object-name>Bus_Front</object-name>
-        <object-name>Planefront</object-name>
+        <object-name>Bus_Front-roue</object-name>
 		<condition>
             <equals>
                 <property>services/bus/bus1-enable</property>
@@ -32,7 +34,7 @@
 	<animation>
 		<type>select</type>
         <object-name>Bus_Back</object-name>
-        <object-name>Planeback</object-name>
+        <object-name>Bus_Back-roue</object-name>
 		<condition>
             <equals>
                 <property>services/bus/bus2-enable</property>
@@ -43,8 +45,10 @@
   
     <animation>
         <type>translate</type>
-        <object-name>Bus_Front</object-name>
-        <object-name>Bus_Back</object-name>
+                <object-name>Bus_Front</object-name>
+                <object-name>Bus_Front-roue</object-name>
+                <object-name>Bus_Back</object-name>
+                <object-name>Bus_Back-roue</object-name>
         <property>gear/gear[0]/compression-norm</property>
         <interpolation>
             <entry><ind>0.18</ind><dep>0</dep></entry>

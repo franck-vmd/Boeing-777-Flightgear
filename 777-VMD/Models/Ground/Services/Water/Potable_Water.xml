@@ -86,12 +86,11 @@
     <animation>
 	<type>select</type>
 	<object-name>water_pipe</object-name>
-    <object-name>water_pipe.001</object-name>
 	<condition>
-		<equals>
+		<greater-than>
 			<property>services/water/position8</property>
-			<value>1</value>
-		</equals>
+			<value>0.999</value>
+		</greater-than>
 	</condition>
 </animation>
 
@@ -99,10 +98,10 @@
 	<type>select</type>
 	<object-name>water_pipe_disconnected</object-name>
 	<condition>
-		<equals>
+		<less-than>
 			<property>services/water/position8</property>
-			<value>0</value>
-		</equals>
+			<value>1.0</value>
+		</less-than>
 	</condition>
 </animation>
 	
@@ -163,7 +162,7 @@
 				<dep>0.0</dep>
 			</entry>
 			<entry>
-				<ind>0.5</ind>
+				<ind>0.05</ind>
 				<dep>0.0</dep>
 			</entry>
 			<entry>
@@ -212,8 +211,8 @@
 	<object>water_pipe_disconnected</object>
 	<property>gear/gear[0]/compression-norm</property>
 	<interpolation>
-		<entry><ind>0.15</ind><dep>0.0</dep></entry>
-		<entry><ind>0.40</ind><dep>0.15</dep></entry>
+		<entry><ind>0.00</ind><dep>0.0</dep></entry>
+		<entry><ind>1</ind><dep>0.15</dep></entry>
 	</interpolation>
 	<axis>
 		<x>0</x>

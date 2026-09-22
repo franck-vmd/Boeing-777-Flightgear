@@ -10,6 +10,8 @@
 		<type>material</type>
 		<texture>volvo_deicing_truck.png</texture>
                 <object-name>camion</object-name>
+                <object-name>camion.001</object-name>
+                <object-name>cater_base17</object-name>
        </animation>
        
        <animation>
@@ -23,6 +25,7 @@
                 <object-name>cube5</object-name>
                 <object-name>siren</object-name>
                 <object-name>Light</object-name>
+                <object-name>cater_base16</object-name>
        </animation>
 
      <effect>
@@ -33,6 +36,7 @@
 	<animation>
 		<type>select</type>
 		<object>camion</object>
+        <object>camion.001</object>
 		<object>bac_nacelle</object>
 		<object>cube1</object>
 		<object>cube2</object>
@@ -41,6 +45,8 @@
 		<object>cube5</object>
 		<object>siren</object>
         <object>Light</object>
+        <object-name>cater_base16</object-name>
+        <object-name>cater_base17</object-name>
 		<condition>
 			<and>
 				<equals>
@@ -58,6 +64,7 @@
     <animation>
 	<type>translate</type>
 	    <object>camion</object>
+        <object>camion.001</object>
 		<object>bac_nacelle</object>
 		<object>cube1</object>
 		<object>cube2</object>
@@ -66,6 +73,8 @@
 		<object>cube5</object>
 		<object>siren</object>
         <object>Light</object>
+        <object-name>cater_base16</object-name>
+        <object-name>cater_base17</object-name>
 	<property>gear/gear[1]/compression-norm</property>
 	<interpolation>
 		<entry><ind>0.15</ind><dep>0.0</dep></entry>
@@ -135,9 +144,33 @@
  	
 	# Elevator Animation
 
+    <animation>
+		<type>translate</type>
+		<object-name>cater_base17</object-name>
+		<property>services/camion/position4</property>
+		<interpolation>
+			<entry>
+				<ind>0.0</ind>
+				<dep>0.0</dep>
+			</entry>
+			<entry>
+				<ind>0.05</ind>
+				<dep>0.33</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>0.33</dep>
+			</entry>
+		</interpolation> 
+		<axis>
+			<z>-1</z>
+		</axis>
+	</animation>
+
 	<animation>
 		<type>rotate</type>
 		<object-name>cube1</object-name>
+        <object-name>camion.001</object-name>
 		<property>services/camion/position4</property>
 		<factor>100</factor>
 		<center>

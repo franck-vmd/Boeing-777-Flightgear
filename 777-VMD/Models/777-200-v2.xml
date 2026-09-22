@@ -358,6 +358,7 @@ Franck.VMD
         <object-name>FrtGear.010</object-name>
         <object-name>FrtGear.011</object-name>
         <object-name>FrtGear.012</object-name>
+        <object-name>FrtGear.013</object-name>
         <object-name>FrtStrut</object-name>
         <object-name>FrtStrut.001</object-name>
         <object-name>FrtWheel</object-name>
@@ -2436,9 +2437,9 @@ Franck.VMD
         <property>controls/gear/nosegear-steering-cmd-norm</property>
         <factor>70</factor>
         <center>
-            <x-m>-19.284</x-m>
+            <x-m>-19.2861</x-m>
             <y-m>0.0</y-m>
-            <z-m>-2.347</z-m>
+            <z-m>-3.88444</z-m>
         </center>
         <axis>
             <x>0</x>
@@ -2446,6 +2447,126 @@ Franck.VMD
             <z>-1.0</z>
         </axis>
     </animation>
+
+    <!-- Lower Cylinder L -->
+
+  <animation>
+    <type>locked-track</type>
+
+    <object-name>FrtGearVerinL2</object-name>
+    <center>
+      <x-m>-19.4124</x-m>
+      <y-m>-0.20979</y-m>
+      <z-m>-3.88441</z-m>
+    </center>
+    <lock-axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </lock-axis>
+    <track-axis>
+      <x>-0.583</x>
+      <y>-0.11639</y>
+      <z>0.0</z>
+    </track-axis>
+
+    <target-name>FrtGearVerinL1.001</target-name>
+    <target-center>
+      <x-m>-19.9954</x-m>
+      <y-m>-0.32618</y-m>
+      <z-m>-3.88441</z-m>
+    </target-center>
+  </animation>
+
+   <!-- Upper Cylinder L -->
+
+  <animation>
+    <type>locked-track</type>
+
+    <object-name>FrtGearVerinL1</object-name>
+    <center>
+      <x-m>-19.6418</x-m>
+      <y-m>-0.255505</y-m>
+      <z-m>-3.88441</z-m>
+    </center>
+    <lock-axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </lock-axis>
+    <track-axis>
+      <x>0.2294</x>
+      <y>0.04572</y>
+      <z>0.0</z>
+    </track-axis>
+
+    <target-name>CubeSL</target-name>
+    <target-center>
+      <x-m>-19.4124</x-m>
+      <y-m>-0.20979</y-m>
+      <z-m>-3.88441</z-m>
+    </target-center>
+  </animation>
+
+   <!-- Lower Cylinder R -->
+
+  <animation>
+    <type>locked-track</type>
+
+    <object-name>FrtGearVerinR2</object-name>
+    <center>
+      <x-m>-19.4124</x-m>
+      <y-m>0.20979</y-m>
+      <z-m>-3.88441</z-m>
+    </center>
+    <lock-axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </lock-axis>
+    <track-axis>
+      <x>-0.583</x>
+      <y>0.11639</y>
+      <z>0.0</z>
+    </track-axis>
+
+    <target-name>FrtGearVerinR1.001</target-name>
+    <target-center>
+      <x-m>-19.9954</x-m>
+      <y-m>0.32618</y-m>
+      <z-m>-3.88441</z-m>
+    </target-center>
+  </animation>
+
+   <!-- Upper Cylinder R -->
+
+  <animation>
+    <type>locked-track</type>
+
+    <object-name>FrtGearVerinR1</object-name>
+    <center>
+      <x-m>-19.6418</x-m>
+      <y-m>0.255505</y-m>
+      <z-m>-3.88441</z-m>
+    </center>
+    <lock-axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </lock-axis>
+    <track-axis>
+      <x>0.2294</x>
+      <y>-0.04572</y>
+      <z>0.0</z>
+    </track-axis>
+
+    <target-name>CubeSR</target-name>
+    <target-center>
+      <x-m>-19.4124</x-m>
+      <y-m>0.20979</y-m>
+      <z-m>-3.88441</z-m>
+    </target-center>
+  </animation>
 
     <animation>
         <type>rotate</type>

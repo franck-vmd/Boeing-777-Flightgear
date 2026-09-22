@@ -6,27 +6,26 @@
 <animation>
 		<type>material</type>
 		<texture>texture.png</texture>
-                <object-name>Cylinder.008</object-name>
+                <object-name>Cylindre.008</object-name>
                 <object-name>block</object-name>
                 <object-name>box</object-name>
                 <object-name>box.001</object-name>
                 <object-name>box.003</object-name>
                 <object-name>cylinder</object-name>
                 <object-name>cylinder.001</object-name>
+                <object-name>primary</object-name>
+                <object-name>secondary</object-name>
+                <object-name>power_cart</object-name>
 </animation>
 
 <effect>
          <inherits-from>Aircraft/777-VMD/Models/Effects/reflect13</inherits-from>
-                <object-name>Cylinder.008</object-name>
                 <object-name>block</object-name>
-                <object-name>box</object-name>
                 <object-name>box.001</object-name>
                 <object-name>box.003</object-name>
                 <object-name>cylinder</object-name>
                 <object-name>cylinder.001</object-name>
                 <object-name>power_cart</object-name>
-                <object-name>primary</object-name>
-                <object-name>secondary</object-name>
 </effect>
 
 <!-- Translate the power box depending on the aircraft length -->
