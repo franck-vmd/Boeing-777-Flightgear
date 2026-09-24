@@ -8590,10 +8590,67 @@ Franck.VMD
         <animation>
 		<name>C9</name>
 		<type>rotate</type>
+		<object-name>entry5rp2</object-name>
+		<property>sim/multiplay/generic/float[26]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.5</ind><dep>-50</dep></entry>
+            <entry><ind>0.10</ind><dep>-50</dep></entry>
+			<entry><ind>0.25</ind><dep>-50</dep></entry>
+            <entry><ind>0.50</ind><dep>-50</dep></entry>
+			<entry><ind>1</ind><dep>0</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>-13.2957</x-m>
+            <y-m>1.96027</y-m>
+            <z-m>-2.40609</z-m>
+        </center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+       <animation>
+		<name>C9</name>
+		<type>rotate</type>
+		<object-name>entry5rp1</object-name>
+		<property>sim/multiplay/generic/float[26]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.5</ind><dep>0</dep></entry>
+            <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+            <entry><ind>0.50</ind><dep>20</dep></entry>
+			<entry><ind>1</ind><dep>20</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>-11.8988</x-m>
+            <y-m>2.38736</y-m>
+            <z-m>-1.98256</z-m>
+        </center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+       <animation>
+		<name>C9</name>
+		<type>rotate</type>
 		<object-name>entry5r</object-name>
 		<property>sim/multiplay/generic/float[26]</property>
-		<factor>135</factor>
-        <center>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.5</ind><dep>0</dep></entry>
+            <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+            <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>135</dep></entry>
+		</interpolation>
+            <center>
             <x-m>-12.8399</x-m>
             <y-m>3.00771</y-m>
             <z-m>-0.752129</z-m>
@@ -8608,10 +8665,42 @@ Franck.VMD
         <animation>
 		<name>C10</name>
 		<type>rotate</type>
+		<object-name>entry6rp</object-name>
+		<property>sim/multiplay/generic/float[27]</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.5</ind><dep>0</dep></entry>
+            <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>30</dep></entry>
+            <entry><ind>0.50</ind><dep>30</dep></entry>
+			<entry><ind>1</ind><dep>30</dep></entry>
+		</interpolation>
+            <center>
+            <x-m>15.5979</x-m>
+            <y-m>2.74775</y-m>
+            <z-m>-1.44166</z-m>
+        </center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+       <animation>
+		<name>C10</name>
+		<type>rotate</type>
 		<object-name>entry6r</object-name>
 		<property>sim/multiplay/generic/float[27]</property>
-		<factor>135</factor>
-        <center>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>0.5</ind><dep>0</dep></entry>
+            <entry><ind>0.10</ind><dep>0</dep></entry>
+			<entry><ind>0.25</ind><dep>0</dep></entry>
+            <entry><ind>0.50</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>135</dep></entry>
+		</interpolation>
+            <center>
             <x-m>16.0297</x-m>
             <y-m>3.0077</y-m>
             <z-m>-0.75213</z-m>
