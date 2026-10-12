@@ -5,9 +5,8 @@
 		<model>
 			<livery>
 				<name type="string">23 VARIG</name>
-				<texture>Liveries-200LR/AFR2.png</texture>
                         </livery>
-			<fuselage>
+			            <fuselage>
                                 <texture>Liveries-200LR/AFR1VA.png</texture>
                         </fuselage>
                         <fuselage1>

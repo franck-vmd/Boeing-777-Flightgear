@@ -5,9 +5,8 @@
 		<model>
 			<livery>
 				<name type="string">16 ONE WORLD</name>
-				<texture>Liveries-200LR/AFR2.png</texture>
                         </livery>
-			<fuselage>
+			            <fuselage>
                                 <texture>Liveries-200LR/AFR1OW.png</texture>
                         </fuselage>
                         <fuselage1>

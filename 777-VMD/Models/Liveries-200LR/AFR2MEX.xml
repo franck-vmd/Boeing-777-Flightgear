@@ -4,10 +4,9 @@
 	<sim>
 		<model>
 			<livery>
-				<name type="string">28 MEXICO</name>
-				<texture>Liveries-200LR/AFR2.png</texture>
+				<name type="string">30 MEXICO</name>
                         </livery>
-			<fuselage>
+			            <fuselage>
                                 <texture>Liveries-200LR/AFR1MEX.png</texture>
                         </fuselage>
                         <fuselage1>

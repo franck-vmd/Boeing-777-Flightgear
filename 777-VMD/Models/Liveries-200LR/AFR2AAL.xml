@@ -5,9 +5,8 @@
 		<model>
 			<livery>
 				<name type="string">13 AIR AAL</name>
-				<texture>Liveries-200LR/AFR2.png</texture>
                         </livery>
-			<fuselage>
+			            <fuselage>
                                 <texture>Liveries-200LR/AFR1AAL.png</texture>
                         </fuselage>
                         <fuselage1>
