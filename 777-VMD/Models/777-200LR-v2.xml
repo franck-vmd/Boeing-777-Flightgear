@@ -11903,6 +11903,28 @@ Franck.VMD
   </offsets>
  </model>
 
+ <!-- fuel L-->
+	
+	 <model>
+  <path>Aircraft/777-VMD/Models/Effects/fuel.xml</path>
+  <offsets>
+   <x-m>14.20</x-m>
+   <y-m>-23.4657</y-m>
+   <z-m>0.777881</z-m>
+  </offsets>
+ </model>
+
+  <!-- fuel R-->
+	
+	 <model>
+  <path>Aircraft/777-VMD/Models/Effects/fuel.xml</path>
+  <offsets>
+   <x-m>14.20</x-m>
+   <y-m>23.4657</y-m>
+   <z-m>0.777881</z-m>
+  </offsets>
+ </model>
+
 <!-- contrails -->
 
 <model>

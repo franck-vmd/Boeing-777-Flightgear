@@ -46,22 +46,6 @@
         </text>
         
         <text>
-            <label>Request Fuel Extra (Lbs):</label>
-            <halign>right</halign>
-            <padding>1</padding>
-            <row>1</row>
-            <col>0</col>
-        </text>
-        
-        <text>
-            <label>Request Fuel Total (Lbs):</label>
-            <halign>right</halign>
-            <padding>1</padding>
-            <row>2</row>
-            <col>0</col>
-        </text>
-        
-        <text>
             <row>0</row>
             <col>1</col>
             <halign>left</halign>
@@ -70,53 +54,6 @@
             <live>true</live>
             <format>%.1f Lbs</format>
         </text>
-    
-        <input>
-            <row>1</row>
-            <col>1</col>
-            <halign>left</halign>
-            <padding>1</padding>
-            <property>services/fuel-truck/extra-lbs</property>
-            <live>true</live>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                    var TotalCapacity = getprop("consumables/fuel/tank[0]/capacity-gal_us") + getprop("consumables/fuel/tank[1]/capacity-gal_us") + getprop("consumables/fuel/tank[2]/capacity-gal_us");
-                    var density = getprop("consumables/fuel/tank/density-ppg");
-                    setprop("services/fuel-truck/request-lbs", getprop("services/fuel-truck/extra-lbs") + getprop("consumables/fuel/total-fuel-lbs"));
-                    if (getprop("services/fuel-truck/request-lbs") / density > TotalCapacity) {
-                        setprop("services/fuel-truck/request-lbs", TotalCapacity * density);
-                        setprop("services/fuel-truck/extra-lbs", getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/total-fuel-lbs"));
-                    }
-                </script>
-            </binding>
-        </input>
-        
-        <input>
-            <row>2</row>
-            <col>1</col>
-            <halign>left</halign>
-            <padding>1</padding>
-            <property>services/fuel-truck/request-lbs</property>
-            <live>true</live>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                    var TotalCapacity = getprop("consumables/fuel/tank[0]/capacity-gal_us") + getprop("consumables/fuel/tank[1]/capacity-gal_us") + getprop("consumables/fuel/tank[2]/capacity-gal_us");
-                    var density = getprop("consumables/fuel/tank/density-ppg");
-                    if (getprop("services/fuel-truck/request-lbs") / density > TotalCapacity) {
-                        setprop("services/fuel-truck/request-lbs", TotalCapacity * density);
-                    }
-                    setprop("services/fuel-truck/extra-lbs", getprop("services/fuel-truck/request-lbs") - getprop("consumables/fuel/total-fuel-lbs"));
-                </script>
-            </binding>
-        </input>
         
         </group>
         

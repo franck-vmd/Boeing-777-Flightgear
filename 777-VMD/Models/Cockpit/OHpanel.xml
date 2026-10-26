@@ -1994,8 +1994,8 @@ Franck.VMD
    <type>rotate</type>
    <object-name>FTR.knob</object-name>
    <object-name>FTR.knob.001</object-name>
-    <property>consumables/fuel/tank/level-norm</property>
-   <factor>360</factor>
+    <property>consumables/fuel/total-fuel-lbs</property>
+   <factor>1</factor>
    <axis>
      <x>-1</x>
      <y>0</y>
@@ -3228,52 +3228,6 @@ Franck.VMD
             <binding>
                 <command>property-adjust</command>
                 <property>controls/lighting/GLRSFlood-intencity</property>
-                <step>-0.1</step>
-                <min>0</min>
-                <max>1</max>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                controls.click(2);
-                </script>
-            </binding>
-        </action>
-    </animation>
-
-<animation>
-        <type>pick</type>
-        <object-name>FTR.knob</object-name>
-        <action>
-            <button>0</button>
-            <button>3</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>/controls/fuel/FuelToRemain</property>
-                <step>0.1</step>
-                <min>0</min>
-                <max>1</max>
-            </binding>
-            <binding>
-                <command>nasal</command>
-                <script>
-                controls.click(2);
-                </script>
-            </binding>
-        </action>
-    </animation>
-
-    <animation>
-        <type>pick</type>
-        <object-name>FTR.knob</object-name>
-        <action>
-            <button>1</button>
-            <button>4</button>
-            <repeatable>false</repeatable>
-            <binding>
-                <command>property-adjust</command>
-                <property>/controls/fuel/FuelToRemain</property>
                 <step>-0.1</step>
                 <min>0</min>
                 <max>1</max>
